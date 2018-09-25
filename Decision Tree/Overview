@@ -17,6 +17,6 @@ In case of classification tree, the value (class) obtained by terminal node in t
 in that region. Thus, if an unseen data observation falls in that region, we’ll make its prediction with mode value.
 
 # Stopping Criteria used in splitting - Pruning and Pre-pruning
-
-
+Pre-pruning that stop growing the tree earlier, before it perfectly classifies the training set.
+Post-pruning that allows the tree to perfectly classify the training set, and then post prune the tree. 
 
