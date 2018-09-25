@@ -5,3 +5,8 @@ about the population. Quantities such as means, standard deviations and proporti
 when we are talking about a population. Since we usually cannot get data from the whole population, we cannot know the values 
 of the parameters for that population. We can, however, calculate estimates of these quantities for our sample. When they are calculated 
 from sample data, these quantities are called “statistics.” 
+
+Parametric statistical procedures rely on the shape of distribution of the underlying population
+Non-parametric procedure doesn't rely on those assumptions.
+
+
