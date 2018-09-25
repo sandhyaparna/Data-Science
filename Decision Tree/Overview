@@ -8,4 +8,14 @@ Difference between pruning and pre-pruning?
 
 Splitting happens based on the variable that creates best homogeneous sets
 
+# How Decision Tree predicts a Numeric Target?
+In case of regression tree, the value obtained by terminal nodes in the training data is the mean response of observation falling in that
+region. Thus, if an unseen data observation falls in that region, we’ll make its prediction with mean value
+
+# How Decision Tree predicts a Categorical Target?
+In case of classification tree, the value (class) obtained by terminal node in the training data is the mode of observations falling 
+in that region. Thus, if an unseen data observation falls in that region, we’ll make its prediction with mode value.
+
+
+
 
