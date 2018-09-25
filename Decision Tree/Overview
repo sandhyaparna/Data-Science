@@ -16,6 +16,7 @@ region. Thus, if an unseen data observation falls in that region, we’ll make i
 In case of classification tree, the value (class) obtained by terminal node in the training data is the mode of observations falling 
 in that region. Thus, if an unseen data observation falls in that region, we’ll make its prediction with mode value.
 
+# Stopping Criteria used in splitting - Pruning and Pre-pruning
 
 
 
