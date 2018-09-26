@@ -21,10 +21,15 @@ in that region. Thus, if an unseen data observation falls in that region, we’l
 Pre-pruning that stop growing the tree earlier, before it perfectly classifies the training set.
 Post-pruning that allows the tree to perfectly classify the training set, and then post prune the tree. 
 
-<b>Splitting Criteria</b>
+Splitting Criteria
 Gini Index
 Chi-square
-Information Gain
+Information Gain: Info Gain is the difference between entropy of 'Root node' and 'Decision node'
+
+
+
 Reduction in Variance
 
+   
+   
    
