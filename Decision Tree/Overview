@@ -24,5 +24,7 @@ Post-pruning that allows the tree to perfectly classify the training set, and th
 <b>Splitting Criteria</b>
 Gini Index
 Chi-square
+Information Gain
+Reduction in Variance
 
    
