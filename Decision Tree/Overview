@@ -4,7 +4,6 @@ Pruning - http://www.saedsayad.com/decision_tree_overfitting.htm
 
 
 
-# 
 Difference between pruning and pre-pruning?
 
 Splitting happens based on the variable that creates best homogeneous sets
