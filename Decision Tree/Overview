@@ -4,9 +4,7 @@ Pruning - http://www.saedsayad.com/decision_tree_overfitting.htm
 
 # General view on DT, how it works, parameter tunuing
 # RapidMiner
-# Codes in python and R, work on two diff types of datasets - Balanced and UnBalanced
-
-
+# Codes in python and R, work on two diff types of datasets - Balanced and UnBalanced, see what all parameters can be changed and how it impacts different datasets
 
 Difference between pruning and pre-pruning?
 
