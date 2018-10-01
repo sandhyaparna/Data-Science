@@ -9,16 +9,16 @@ Predictor variables are not independent <br/>
 Nonlinear model - Predictor variables have nonlinear relationship among them (There is no equation to express relationship between independent and dependant variables <br/>
 
 ## Algorithms
-ID3 - Information Gain (Binnary splitting of Continuous var)
-C4.5 - Gain ratio (Binnary splitting of Continuous var)
-CART - Gini Index (Binnary splitting of Continuous var)
-CHAID - (Multiway splitting of Continuous var)
+ID3 - Information Gain (Binnary splitting of Continuous var) <br/>
+C4.5 - Gain ratio (Binnary splitting of Continuous var) <br/>
+CART - Gini Index (Binnary splitting of Continuous var) <br/>
+CHAID - (Multiway splitting of Continuous var) <br/>
 
 ## Splitting Criteria
-Gini Index
-Chi-square
+Gini Index <br/>
+Chi-square <br/>
 
-####Information Gain
+#### Information Gain
 Info Gain is the difference between entropy of 'Root node' and 'Decision node'. Entropy for each node is the degree 
 of homogenity i.e. if a node  is completely homogeneous, its entropy is 0; if a node or var equally divided between say for example 
 A,B or C then it is 1. Split happens when Info gain is high.
