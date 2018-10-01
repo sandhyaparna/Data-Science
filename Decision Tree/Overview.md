@@ -9,10 +9,14 @@ Predictor variables are not independent <br/>
 Nonlinear model - Predictor variables have nonlinear relationship among them (There is no equation to express relationship between independent and dependant variables <br/>
 
 ## Algorithms
-ID3 - Information Gain
+ID3 - Information Gain (Binnary splitting of Continuous var)
+C4.5 - Gain ratio (Binnary splitting of Continuous var)
+CART - Gini Index (Binnary splitting of Continuous var)
+CHAID - (Binnary splitting of Continuous var)
 
 ## Binning
-Bining of Continuous variables is performed to avoid binary splitting
+Bining of Continuous variables is performed to avoid binary splitting <br/>
+
 
 
 # Links
