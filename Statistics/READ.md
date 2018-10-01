@@ -14,7 +14,7 @@ Non-parametric procedure doesn't rely on those assumptions.
 ### Advantages
 Parametric: Have more statistical power than non-parametric. It is more able to lead tp a rejection of H0 i.e p-value 
 is lower compared to that of a corresponding non-parametric p-value
-Advantage of non-parametric: More robust than parametric i.e they are valid in broad range of situations
+Non-parametric: More robust than parametric i.e they are valid in broad range of situations
 
 
 
