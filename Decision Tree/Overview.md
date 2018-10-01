@@ -11,7 +11,8 @@ Nonlinear model - Predictor variables have nonlinear relationship among them (Th
 ## Algorithms
 ID3 - Information Gain
 
-
+## Binning
+Bining of Continuous variables is performed to avoid binary splitting
 
 
 # Links
