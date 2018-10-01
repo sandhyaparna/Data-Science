@@ -15,10 +15,7 @@ CART - Gini Index (Binnary splitting of Continuous var) <br/>
 CHAID - (Multiway splitting of Continuous var) <br/>
 
 ## Splitting Criteria
-Gini Index <br/>
-Chi-square <br/>
-
-#### Information Gain
+#### Information Gain:
 Info Gain is the difference between entropy of 'Root node' and 'Decision node'. Entropy for each node is the degree 
 of homogenity i.e. if a node  is completely homogeneous, its entropy is 0; if a node or var equally divided between say for example 
 A,B or C then it is 1. Split happens when Info gain is high. <br/>
@@ -30,6 +27,22 @@ Split is based on the variable with least entropy <br/>
          E(T,X) = Σ P(c)E(c) <br/>
 INFORMATION GAIN (Decrease in Entropy) - The information gain is based on the decrease in entropy after a dataset is split on an attribute.Constructing a decision tree is all about finding attribute that returns the highest information gain (i.e., the most homogeneous branches). <br/>
          Gain(T,X) = Entropy(T) - Entropy(T,X) <br/>
+
+#### GAIN RATIO:
+Info gain is biased toward attributes that have a larger number of values over attributes that have a smaller number of values. Penalizing attributes with large number of values is done using gain ratio.  <br/>
+         GainRatio(T,X) = Gain(T,X) / SpliInformation(T,X)  <br/>
+         Split(T,X) = Σ - p(i)*log(p(i))<br/>  <br/>
+
+#### GINI INDEX:
+Variable split is based on the one with low Gini Index. Performs only binary splits  <br/>
+
+#### Chi-Square:
+Finds out the statistical significance between the differences between sub-nodes and parent node. We measure it by sum of squares of standardized differences between observed and expected frequencies of target variable. Higher the value of Chi-Square higher the statistical significance of differences between sub-node and Parent node.  <br/>
+         Chi-square = ((Actual – Expected)^2 / Expected)^1/2  <br/>
+
+#### Reduction in Variance:
+Used for continuous target variable. Variance formula is used for best split
+
          
 ## Binning
 Binning of Continuous variables is performed to avoid binary splitting <br/>
