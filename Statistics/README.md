@@ -20,7 +20,13 @@ Non-parametric: More robust than parametric i.e they are valid in broad range of
 
 
 # GLM
-GLM are non-linear models where variables are nonlinear but are still linear in terms of the unknown parameters
+GLM are non-linear models where variables are nonlinear, but are still linear in terms of the unknown parameters
+For example, the Cobb-Douglas production function that relates output (Y) to labor (L) and capital (K) can be written as
+            Y = αLβKγ
+Taking logarithms yields
+           ln(Y) = δ + βln(L) + γln(K)      where δ = ln(α) 
+This function is nonlinear in the variables Y, L, and K, but it is linear in the parameters δ, β and γ. 
+Models of this kind can be estimated using the leastsquares technique. 
 
 
 
