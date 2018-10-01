@@ -1,5 +1,6 @@
 # Parametric and Non-parametric methods:
-https://help.xlstat.com/customer/en/portal/articles/2062457-what-statistical-test-should-i-use-?b_id=9283
+https://help.xlstat.com/customer/en/portal/articles/2062457-what-statistical-test-should-i-use-?b_id=9283 
+https://www.mayo.edu/research/documents/parametric-and-nonparametric-demystifying-the-terms/doc-20408960 
 
 The field of statistics exists because it is usually impossible to collect data from all individuals of interest (population). 
 Our only solution is to collect data from a subset (sample) of the individuals of interest, but our real desire is to know the “truth” 
