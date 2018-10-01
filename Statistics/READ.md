@@ -1,4 +1,4 @@
-# Parametric and non-parametric methods:
+# Parametric and Non-parametric methods:
 The field of statistics exists because it is usually impossible to collect data from all individuals of interest (population). 
 Our only solution is to collect data from a subset (sample) of the individuals of interest, but our real desire is to know the “truth” 
 about the population. Quantities such as means, standard deviations and proportions are allimportant values and are called “parameters” 
