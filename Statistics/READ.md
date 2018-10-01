@@ -6,7 +6,13 @@ when we are talking about a population. Since we usually cannot get data from th
 of the parameters for that population. We can, however, calculate estimates of these quantities for our sample. When they are calculated 
 from sample data, these quantities are called “statistics.” 
 
-Parametric statistical procedures rely on the shape of distribution of the underlying population
+Parametric statistical procedures rely on the shape of distribution of the underlying population. For eg - some parametric tests assume 
+that the data should be normally distributed, other tests might assume that the data should be binomial/poission distribution
 Non-parametric procedure doesn't rely on those assumptions.
+
+Advantages of Parametric: Have more statistical power than non-parametric. It is more able to lead tp a rejection of H0 i.e p-value 
+is lower compared to that of a corresponding non-parametric p-value
+Advantage of non-parametric: More robust than parametric i.e they are valid in broad range of situations
+
 
 
