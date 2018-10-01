@@ -1,4 +1,3 @@
-</pre>
 ## References
 http://www.saedsayad.com/decision_tree.htm
 https://www.datasciencecentral.com/profiles/blogs/15-great-articles-about-decision-trees <br/>
@@ -27,7 +26,7 @@ Split is based on the variable with least entropy <br/>
      Entropy using freq table of 2 attributes   <br/>
          E(T,X) = Σ P(c)E(c) <br/>
 INFORMATION GAIN (Decrease in Entropy) - The information gain is based on the decrease in entropy after a dataset is split on an attribute.Constructing a decision tree is all about finding attribute that returns the highest information gain (i.e., the most homogeneous branches). <br/>
-         Gain(T,X) = Entropy(T) - Entropy(T,X) <br/>
+&nbsp; Gain(T,X) = Entropy(T) - Entropy(T,X) <br/>
 
 #### Gain Ratio:
 Info gain is biased toward attributes that have a larger number of values over attributes that have a smaller number of values. Penalizing attributes with large number of values is done using gain ratio.  <br/>
@@ -81,4 +80,3 @@ Post-pruning that allows the tree to perfectly classify the training set, and th
 
 
 
-</pre>
