@@ -21,15 +21,15 @@ Chi-square <br/>
 #### Information Gain
 Info Gain is the difference between entropy of 'Root node' and 'Decision node'. Entropy for each node is the degree 
 of homogenity i.e. if a node  is completely homogeneous, its entropy is 0; if a node or var equally divided between say for example 
-A,B or C then it is 1. Split happens when Info gain is high.
-ENTROPY -  If the sample is completely homogeneous the entropy is zero and if the sample is equally divided it has entropy of one.
-Split is based on the variable with least entropy
-     Entropy using freq table of 1 attribute - i refers to the number of outcomes
-         E(S) = Σ - p(i)*log(p(i))
-     Entropy using freq table of 2 attributes  
-         E(T,X) = Σ P(c)E(c)
-INFORMATION GAIN (Decrease in Entropy) - The information gain is based on the decrease in entropy after a dataset is split on an attribute.Constructing a decision tree is all about finding attribute that returns the highest information gain (i.e., the most homogeneous branches).
-         Gain(T,X) = Entropy(T) - Entropy(T,X)
+A,B or C then it is 1. Split happens when Info gain is high. <br/>
+ENTROPY -  If the sample is completely homogeneous the entropy is zero and if the sample is equally divided it has entropy of one. <br/>
+Split is based on the variable with least entropy <br/>
+     Entropy using freq table of 1 attribute - i refers to the number of outcomes <br/>
+         E(S) = Σ - p(i)*log(p(i)) <br/>
+     Entropy using freq table of 2 attributes   <br/>
+         E(T,X) = Σ P(c)E(c) <br/>
+INFORMATION GAIN (Decrease in Entropy) - The information gain is based on the decrease in entropy after a dataset is split on an attribute.Constructing a decision tree is all about finding attribute that returns the highest information gain (i.e., the most homogeneous branches). <br/>
+         Gain(T,X) = Entropy(T) - Entropy(T,X) <br/>
          
 ## Binning
 Binning of Continuous variables is performed to avoid binary splitting <br/>
