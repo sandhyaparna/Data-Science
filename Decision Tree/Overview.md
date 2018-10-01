@@ -27,7 +27,7 @@ Split is based on the variable with least entropy <br/>
 INFORMATION GAIN (Decrease in Entropy) - The information gain is based on the decrease in entropy after a dataset is split on an attribute.Constructing a decision tree is all about finding attribute that returns the highest information gain (i.e., the most homogeneous branches). <br/>
 &nbsp; Gain(T,X) = Entropy(T) - Entropy(T,X)
 #### Gain Ratio:
-Info gain is biased toward attributes that have a larger number of values over attributes that have a smaller number of values. Penalizing attributes with large number of values is done using gain ratio.  <br/>
+Info gain is biased toward attributes that have a larger number of values(more Unique values) over attributes that have a smaller number of values. Penalizing attributes with large number of values is done using gain ratio.  <br/>
 &nbsp; GainRatio(T,X) = Gain(T,X) / SpliInformation(T,X)  <br/>
 &nbsp; Split(T,X) = Σ - p(i)*log(p(i))
 #### Gini Index:
@@ -43,15 +43,22 @@ Helps reducing the noise or non-linearity. Allows easy identification of outlier
 Binning of Continuous variables is performed to avoid binary splitting <br/>
 #### Unsupervised
 http://www.saedsayad.com/unsupervised_binning.htm <br/>
-Entropy  <br/>
-
+Entropy  
 #### Supervised
 http://www.saedsayad.com/supervised_binning.htm <br/>
 size <br/>
 Freq <br/>
 Rank <br/>
 Quantiles <br/>
-User-defined <br/>
+User-defined
+
+## Overfitting
+Overfitting happens when the learning algorithm continues to develop hypotheses that reduce training set error at the cost of an
+increased test set error <br/>
+#### Pre-pruning
+Stops growing the tree earlier, before it perfectly classifies the training set <br/>
+
+
 
 
 
