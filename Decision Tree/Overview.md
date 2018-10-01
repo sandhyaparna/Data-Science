@@ -3,7 +3,6 @@ http://www.saedsayad.com/decision_tree.htm
 https://www.datasciencecentral.com/profiles/blogs/15-great-articles-about-decision-trees <br/>
 https://www.analyticsvidhya.com/blog/2016/04/complete-tutorial-tree-based-modeling-scratch-in-python/ <br/>
 
-
 ## Assumptions
 Predictor variables are not independent <br/>
 Nonlinear model - Predictor variables have nonlinear relationship among them (There is no equation to express relationship between independent and dependant variables <br/>
@@ -12,7 +11,7 @@ Nonlinear model - Predictor variables have nonlinear relationship among them (Th
 ID3 - Information Gain (Binnary splitting of Continuous var) <br/>
 C4.5 - Gain ratio (Binnary splitting of Continuous var) <br/>
 CART - Gini Index (Binnary splitting of Continuous var) <br/>
-CHAID - (Multiway splitting of Continuous var) <br/>
+CHAID - Chi-Square (Multiway splitting of Continuous var) <br/>
 
 ## Splitting Criteria
 #### Information Gain:
@@ -38,10 +37,16 @@ Finds out the statistical significance between the differences between sub-nodes
 &nbsp; Chi-square = ((Actual – Expected)^2 / Expected)^1/2  <br/>
 #### Reduction in Variance:
 Used for continuous target variable. Variance formula is used for best split
-
-         
+  
 ## Binning
+Helps reducing the noise or non-linearity. Allows easy identification of outliers, invalid and missing values of numerical variables <br/>
 Binning of Continuous variables is performed to avoid binary splitting <br/>
+#### Unsupervised
+http://www.saedsayad.com/unsupervised_binning.htm
+#### Supervised
+http://www.saedsayad.com/supervised_binning.htm
+
+
 
 ## DisAdvantages
 Small variations in data might result in a completely different tree being generated - High Variance. Can be avoided using Bagging or 
