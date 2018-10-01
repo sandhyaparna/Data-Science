@@ -28,12 +28,12 @@ Split is based on the variable with least entropy <br/>
 INFORMATION GAIN (Decrease in Entropy) - The information gain is based on the decrease in entropy after a dataset is split on an attribute.Constructing a decision tree is all about finding attribute that returns the highest information gain (i.e., the most homogeneous branches). <br/>
          Gain(T,X) = Entropy(T) - Entropy(T,X) <br/>
 
-#### GAIN RATIO:
+#### Gain Ratio:
 Info gain is biased toward attributes that have a larger number of values over attributes that have a smaller number of values. Penalizing attributes with large number of values is done using gain ratio.  <br/>
          GainRatio(T,X) = Gain(T,X) / SpliInformation(T,X)  <br/>
          Split(T,X) = Σ - p(i)*log(p(i))<br/>  <br/>
 
-#### GINI INDEX:
+#### Gini Index:
 Variable split is based on the one with low Gini Index. Performs only binary splits  <br/>
 
 #### Chi-Square:
