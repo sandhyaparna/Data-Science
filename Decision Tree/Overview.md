@@ -12,11 +12,14 @@ Nonlinear model - Predictor variables have nonlinear relationship among them (Th
 ID3 - Information Gain (Binnary splitting of Continuous var)
 C4.5 - Gain ratio (Binnary splitting of Continuous var)
 CART - Gini Index (Binnary splitting of Continuous var)
-CHAID - (Binnary splitting of Continuous var)
+CHAID - (Multiway splitting of Continuous var)
 
 ## Binning
-Bining of Continuous variables is performed to avoid binary splitting <br/>
+Binning of Continuous variables is performed to avoid binary splitting <br/>
 
+## DisAdvantages
+Small variations in data might result in a completely different tree being generated - High Variance. Can be avoided using Bagging or 
+Boosting <br/>
 
 
 # Links
