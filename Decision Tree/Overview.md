@@ -6,7 +6,7 @@ https://www.analyticsvidhya.com/blog/2016/04/complete-tutorial-tree-based-modeli
 
 ## Assumptions
 Predictor variables are not independent
-
+Nonlinear model - Predictor variables have nonlinear relationship among them
 
 
 
