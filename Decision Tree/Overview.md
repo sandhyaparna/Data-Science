@@ -42,9 +42,16 @@ Used for continuous target variable. Variance formula is used for best split
 Helps reducing the noise or non-linearity. Allows easy identification of outliers, invalid and missing values of numerical variables <br/>
 Binning of Continuous variables is performed to avoid binary splitting <br/>
 #### Unsupervised
-http://www.saedsayad.com/unsupervised_binning.htm
+http://www.saedsayad.com/unsupervised_binning.htm <br/>
+Entropy  <br/>
+
 #### Supervised
-http://www.saedsayad.com/supervised_binning.htm
+http://www.saedsayad.com/supervised_binning.htm <br/>
+size <br/>
+Freq <br/>
+Rank <br/>
+Quantiles <br/>
+User-defined <br/>
 
 
 
