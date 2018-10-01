@@ -19,4 +19,8 @@ is lower compared to that of a corresponding non-parametric p-value
 Non-parametric: More robust than parametric i.e they are valid in broad range of situations
 
 
-# x
+# GLM
+GLM are non-linear models where variables are nonlinear but are still linear in terms of the unknown parameters
+
+
+
