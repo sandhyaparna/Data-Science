@@ -8,7 +8,8 @@ https://www.analyticsvidhya.com/blog/2016/04/complete-tutorial-tree-based-modeli
 Predictor variables are not independent <br/>
 Nonlinear model - Predictor variables have nonlinear relationship among them (There is no equation to express relationship between independent and dependant variables <br/>
 
-
+## Algorithms
+ID3 - Information Gain
 
 
 
