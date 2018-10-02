@@ -1,7 +1,9 @@
 ## References
-http://www.saedsayad.com/decision_tree.htm
+http://www.saedsayad.com/decision_tree.htm <br/>
 https://www.datasciencecentral.com/profiles/blogs/15-great-articles-about-decision-trees <br/>
 https://www.analyticsvidhya.com/blog/2016/04/complete-tutorial-tree-based-modeling-scratch-in-python/ <br/>
+
+Decision tree uses divide & conquer approach, Tree-like graph/Flowchart. The topmost decision node in a tree which corresponds to the best predictor called root node. For nominal attributes, the number of children is usually equal to the number of possible values for the attribute. Hence, it is tested only once. For Numerical attributes, we usually test if the attribute value is greater or less than a determined constant. The attribute may get tested several times for different constants.
 
 ## Assumptions
 Predictor variables are not independent <br/>
@@ -14,6 +16,7 @@ CART - Gini Index (Binnary splitting of Continuous var) <br/>
 CHAID - Chi-Square (Multiway splitting of Continuous var) <br/>
 
 ## Splitting Criteria
+Splitting is based on the attribute that produces the 'purest' subsets of data w.r.t the label attribute. A partition is pure if all the tuples in it belong to the same class
 #### Information Gain:
 Info Gain is the difference between entropy of 'Root node' and 'Decision node'. Entropy for each node is the degree 
 of homogenity i.e. if a node  is completely homogeneous, its entropy is 0; if a node or var equally divided between say for example 
@@ -46,6 +49,7 @@ http://www.saedsayad.com/unsupervised_binning.htm <br/>
 Entropy  
 #### Supervised
 http://www.saedsayad.com/supervised_binning.htm <br/>
+Do not use target class info during Binning <br/>
 size <br/>
 Freq <br/>
 Rank <br/>
@@ -57,7 +61,8 @@ Overfitting happens when the learning algorithm continues to develop hypotheses 
 increased test set error <br/>
 #### Pre-pruning
 Stops growing the tree earlier, before it perfectly classifies the training set <br/>
-
+#### Post-pruning
+http://www.saedsayad.com/decision_tree_overfitting.htm
 
 
 
