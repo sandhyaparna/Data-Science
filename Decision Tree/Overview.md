@@ -64,13 +64,14 @@ Overfitting happens when the learning algorithm continues to develop hypotheses 
 increased test set error <br/>
 #### Pre-pruning
 Stops growing the tree earlier, before it perfectly classifies the training set. Tree stops growing when it meets any of these pre-pruning criteria <br/>
-##### Maxdepth
+MAX DEPTH: Depth of a tree
+MIN SPLIT: Minimum number of records that must exist in a node for a split to happen or be attempted
+MIN LEAFSIZE / MIN BUCKET: Minimum number of records that can be present in a Terminal node
 
 #### Post-pruning
 http://www.saedsayad.com/decision_tree_overfitting.htm
-
-
-
+Allows the tree to perfectly classify the training set, and then post prune the tree
+COMPLEXITY PARAMETER: If the cost of adding another variable to the decision tree from the current node is above the value of cp, then tree building does not continue
 
 ## Disadvantages
 Variance is high and if not pruned leads to overfitting/complex tree
