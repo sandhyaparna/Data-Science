@@ -63,7 +63,9 @@ User-defined
 Overfitting happens when the learning algorithm continues to develop hypotheses that reduce training set error at the cost of an
 increased test set error <br/>
 #### Pre-pruning
-Stops growing the tree earlier, before it perfectly classifies the training set <br/>
+Stops growing the tree earlier, before it perfectly classifies the training set. Tree stops growing when it meets any of these pre-pruning criteria <br/>
+##### Maxdepth
+
 #### Post-pruning
 http://www.saedsayad.com/decision_tree_overfitting.htm
 
