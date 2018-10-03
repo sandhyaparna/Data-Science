@@ -7,7 +7,10 @@ Decision tree uses divide & conquer approach, Tree-like graph/Flowchart. The top
 
 ## Assumptions
 Predictor variables are not independent <br/>
-Nonlinear model - Predictor variables have nonlinear relationship among them (There is no equation to express relationship between independent and dependant variables <br/>
+Nonlinear model - Predictor variables have nonlinear relationship among them (There is no equation to express relationship between independent and dependant variables i.e model is constructed based on the observed data <br/>
+
+
+
 
 ## Algorithms
 ID3 - Information Gain (Binnary splitting of Continuous var) <br/>
@@ -68,9 +71,19 @@ http://www.saedsayad.com/decision_tree_overfitting.htm
 
 
 ## Disadvantages
+Variance is high and if not pruned leads to overfitting/complex tree
 Small variations in data might result in a completely different tree being generated - High Variance. Can be avoided using Bagging or 
 Boosting <br/>
+It is locally optimized (node by node decisions for splitting) using a greedy algorithm where we cannot guarantee a return to the globally optimal decision tree <br/>
+It is an incredibly biased model if a single class takes unless a dataset is balanced before putting it in a tree <br/>
 
+## Advantages
+They are incredibly simple to understand due to their visual representation
+They require very little data
+They can handle qualitative and quantitative data
+It can be validated using statistical sets, 
+It can handle large amounts of data 
+It is quite computationally inexpensive
 
 # Links
 https://www.analyticsvidhya.com/blog/2016/04/complete-tutorial-tree-based-modeling-scratch-in-python/
