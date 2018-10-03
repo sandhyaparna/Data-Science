@@ -3,6 +3,7 @@ http://www.saedsayad.com/decision_tree.htm <br/>
 https://www.datasciencecentral.com/profiles/blogs/15-great-articles-about-decision-trees <br/>
 https://www.analyticsvidhya.com/blog/2016/04/complete-tutorial-tree-based-modeling-scratch-in-python/ <br/>
 
+scikit learn - http://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html#sklearn.tree.DecisionTreeClassifier  <br/>
 Decision tree uses divide & conquer approach, Tree-like graph/Flowchart. The topmost decision node in a tree which corresponds to the best predictor called root node. For nominal attributes, the number of children is usually equal to the number of possible values for the attribute. Hence, it is tested only once. For Numerical attributes, we usually test if the attribute value is greater or less than a determined constant. The attribute may get tested several times for different constants.
 
 ## Assumptions
@@ -64,35 +65,43 @@ Overfitting happens when the learning algorithm continues to develop hypotheses 
 increased test set error <br/>
 #### Pre-pruning
 Stops growing the tree earlier, before it perfectly classifies the training set. Tree stops growing when it meets any of these pre-pruning criteria <br/>
-MAX DEPTH: Depth of a tree
-MIN SPLIT: Minimum number of records that must exist in a node for a split to happen or be attempted
-MIN LEAFSIZE / MIN BUCKET: Minimum number of records that can be present in a Terminal node
+
+MAX DEPTH: Depth of a tree <br/>
+MIN SPLIT: Minimum number of records that must exist in a node for a split to happen or be attempted <br/>
+MIN LEAFSIZE / MIN BUCKET: Minimum number of records that can be present in a Terminal node <br/>
 
 #### Post-pruning
-http://www.saedsayad.com/decision_tree_overfitting.htm
-Allows the tree to perfectly classify the training set, and then post prune the tree
-COMPLEXITY PARAMETER: If the cost of adding another variable to the decision tree from the current node is above the value of cp, then tree building does not continue
+http://www.saedsayad.com/decision_tree_overfitting.htm <br/>
+https://pdfs.semanticscholar.org/025b/8c109c38dc115024e97eb0ede5ea873fffdb.pdf  <br/>
+Allows the tree to perfectly classify the training set, and then post prune the tree <br/>
+
+COMPLEXITY PARAMETER: 
+Used to control the size of the decision tree and to select the optimal tree size  <br/>
+Calculates error complexity for the entire tree before splitting and after splitting. If the difference between errors before splitting and after splitting decreases by atleast cp value mentioned, splitting is useful <br/>
+Any split which does not improve the fit by cp will likely be pruned off <br/>
+If the cost of adding another variable to the decision tree from the current node is above the value of cp, then tree building does not continue <br/>
+cp is similar to min_impurity_decrease in python <br/>
 
 ## Disadvantages
-Variance is high and if not pruned leads to overfitting/complex tree
+Variance is high and if not pruned leads to overfitting/complex tree <br/>
 Small variations in data might result in a completely different tree being generated - High Variance. Can be avoided using Bagging or 
 Boosting <br/>
 It is locally optimized (node by node decisions for splitting) using a greedy algorithm where we cannot guarantee a return to the globally optimal decision tree <br/>
 It is an incredibly biased model if a single class takes unless a dataset is balanced before putting it in a tree <br/>
 
 ## Advantages
-They are incredibly simple to understand due to their visual representation
-They require very little data
-They can handle qualitative and quantitative data
-It can be validated using statistical sets, 
-It can handle large amounts of data 
-It is quite computationally inexpensive
-Performs feature selection 
-Nonlinear relationships between parameters do not affect tree performance
+They are incredibly simple to understand due to their visual representation <br/>
+They require very little data <br/>
+They can handle qualitative and quantitative data <br/>
+It can be validated using statistical sets,  <br/>
+It can handle large amounts of data  <br/>
+It is quite computationally inexpensive <br/>
+Performs feature selection  <br/>
+Nonlinear relationships between parameters do not affect tree performance <br/>
 
 # Links
-https://www.analyticsvidhya.com/blog/2016/04/complete-tutorial-tree-based-modeling-scratch-in-python/
-Pruning - http://www.saedsayad.com/decision_tree_overfitting.htm
+https://www.analyticsvidhya.com/blog/2016/04/complete-tutorial-tree-based-modeling-scratch-in-python/ <br/>
+Pruning - http://www.saedsayad.com/decision_tree_overfitting.htm <br/>
 
 # General view on DT, how it works, parameter tunuing
 # RapidMiner
