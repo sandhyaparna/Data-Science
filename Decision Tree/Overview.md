@@ -84,6 +84,8 @@ They can handle qualitative and quantitative data
 It can be validated using statistical sets, 
 It can handle large amounts of data 
 It is quite computationally inexpensive
+Performs feature selection 
+Nonlinear relationships between parameters do not affect tree performance
 
 # Links
 https://www.analyticsvidhya.com/blog/2016/04/complete-tutorial-tree-based-modeling-scratch-in-python/
