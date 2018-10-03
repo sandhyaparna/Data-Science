@@ -67,6 +67,7 @@ User-defined
 Overfitting happens when the learning algorithm continues to develop hypotheses that reduce training set error at the cost of an
 increased test set error <br/>
 #### Pre-pruning
+Allows the tree to perfectly classify the training set, and then post prune the tree <br/> 
 Stops growing the tree earlier, before it perfectly classifies the training set. Tree stops growing when it meets any of these pre-pruning criteria <br/>
 
 MAX DEPTH: Depth of a tree <br/>
@@ -117,7 +118,6 @@ Splitting happens based on the variable that creates best homogeneous sets
 
 # Stopping Criteria used in splitting - Pruning and Pre-pruning
 Pre-pruning that stop growing the tree earlier, before it perfectly classifies the training set.
-Post-pruning that allows the tree to perfectly classify the training set, and then post prune the tree. 
 
 
 
