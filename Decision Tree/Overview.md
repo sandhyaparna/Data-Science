@@ -86,40 +86,18 @@ Any split which does not improve the fit by cp will likely be pruned off <br/>
 If the cost of adding another variable to the decision tree from the current node is above the value of cp, then tree building does not continue <br/>
 cp is similar to min_impurity_decrease in python <br/>
 
-## Disadvantages
-Variance is high and if not pruned leads to overfitting/complex tree <br/>
-Small variations in data might result in a completely different tree being generated - High Variance. Can be avoided using Bagging or 
-Boosting <br/>
-It is locally optimized (node by node decisions for splitting) using a greedy algorithm where we cannot guarantee a return to the globally optimal decision tree <br/>
-It is an incredibly biased model if a single class takes unless a dataset is balanced before putting it in a tree <br/>
-
 ## Advantages
-They are incredibly simple to understand due to their visual representation <br/>
-They require very little data <br/>
-They can handle qualitative and quantitative data <br/>
-It can be validated using statistical sets,  <br/>
-It can handle large amounts of data  <br/>
-It is quite computationally inexpensive <br/>
+Incredibly simple to understand & interpret due to their visual representation <br/>
+They require very little data preperation, handles misisng and outliers, both qualitative and quantitative variables <br/>
+Handles multi-classification problems <br/>
 Performs feature selection  <br/>
+Model can be validated using statistical sets <br/>
 Nonlinear relationships between parameters do not affect tree performance <br/>
 
-# Links
-https://www.analyticsvidhya.com/blog/2016/04/complete-tutorial-tree-based-modeling-scratch-in-python/ <br/>
-Pruning - http://www.saedsayad.com/decision_tree_overfitting.htm <br/>
-
-# General view on DT, how it works, parameter tunuing
-# RapidMiner
-# Codes in python and R, work on two diff types of datasets - Balanced and UnBalanced, see what all parameters can be changed and how it impacts different datasets
-
-Difference between pruning and pre-pruning?
-
-Splitting happens based on the variable that creates best homogeneous sets
-
-
-# Stopping Criteria used in splitting - Pruning and Pre-pruning
-Pre-pruning that stop growing the tree earlier, before it perfectly classifies the training set.
-
-
-
+## Disadvantages
+Variance is high and if not pruned leads to overfitting/complex tree <br/>
+Trees are unstable since small variations in data might result in a completely different tree being generated - Can be avoided using ensemble models like Bagging or Boosting <br/>
+It is locally optimized (decisions are made at each node) using a greedy algorithm where we cannot guarantee a return to the globally optimal decision tree - Can be mitigated by training multiple trees in an ensemble learner  <br/>
+Create biased trees if some classes dominate. It is therefore recommended to balance the dataset prior to using in a tree <br/>
 
 
