@@ -67,7 +67,7 @@ http://www.saedsayad.com/decision_tree_overfitting.htm
 
 
 
-## DisAdvantages
+## Disadvantages
 Small variations in data might result in a completely different tree being generated - High Variance. Can be avoided using Bagging or 
 Boosting <br/>
 
