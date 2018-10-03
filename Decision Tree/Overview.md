@@ -4,14 +4,12 @@ https://www.datasciencecentral.com/profiles/blogs/15-great-articles-about-decisi
 https://www.analyticsvidhya.com/blog/2016/04/complete-tutorial-tree-based-modeling-scratch-in-python/ <br/>
 
 scikit learn - http://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html#sklearn.tree.DecisionTreeClassifier  <br/>
+
 Decision tree uses divide & conquer approach, Tree-like graph/Flowchart. The topmost decision node in a tree which corresponds to the best predictor called root node. For nominal attributes, the number of children is usually equal to the number of possible values for the attribute. Hence, it is tested only once. For Numerical attributes, we usually test if the attribute value is greater or less than a determined constant. The attribute may get tested several times for different constants.
 
 ## Assumptions
 Predictor variables are not independent <br/>
 Nonlinear model - Predictor variables have nonlinear relationship among them (There is no equation to express relationship between independent and dependant variables i.e model is constructed based on the observed data <br/>
-
-
-
 
 ## Algorithms
 ID3 - Information Gain (Binnary splitting of Continuous var) <br/>
@@ -21,6 +19,11 @@ CHAID - Chi-Square (Multiway splitting of Continuous var) <br/>
 
 ## Splitting Criteria
 Splitting is based on the attribute that produces the 'purest' subsets of data w.r.t the label attribute. A partition is pure if all the tuples in it belong to the same class
+#### How Decision Tree predicts a Numeric Target?
+In case of regression tree, the value obtained by terminal nodes in the training data is the mean response of observation falling in that region. Thus, if an unseen data observation falls in that region, we’ll make its prediction with mean value
+#### How Decision Tree predicts a Categorical Target?
+In case of classification tree, the value (class) obtained by terminal node in the training data is the mode of observations falling 
+in that region. Thus, if an unseen data observation falls in that region, we’ll make its prediction with mode value.
 #### Information Gain:
 Info Gain is the difference between entropy of 'Root node' and 'Decision node'. Entropy for each node is the degree 
 of homogenity i.e. if a node  is completely homogeneous, its entropy is 0; if a node or var equally divided between say for example 
@@ -111,13 +114,6 @@ Difference between pruning and pre-pruning?
 
 Splitting happens based on the variable that creates best homogeneous sets
 
-# How Decision Tree predicts a Numeric Target?
-In case of regression tree, the value obtained by terminal nodes in the training data is the mean response of observation falling in that
-region. Thus, if an unseen data observation falls in that region, we’ll make its prediction with mean value
-
-# How Decision Tree predicts a Categorical Target?
-In case of classification tree, the value (class) obtained by terminal node in the training data is the mode of observations falling 
-in that region. Thus, if an unseen data observation falls in that region, we’ll make its prediction with mode value.
 
 # Stopping Criteria used in splitting - Pruning and Pre-pruning
 Pre-pruning that stop growing the tree earlier, before it perfectly classifies the training set.
