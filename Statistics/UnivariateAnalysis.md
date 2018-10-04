@@ -12,7 +12,7 @@ Maximum <br/>
 Mean <br/>
 Median <br/>
 1st Quantile - 25th percentile <br/>
-3rd Quantile - 75th percentile <br/> <br/>
+3rd Quantile - 75th percentile <br/>
 IQR - Diff between 1st & 3rd quantiles <br/>
 lower fence/whisker = 1st quartile − 1.5*IQR <br/>
 upper fence/whisker = 3st quartile + 1.5*IQR <br/>
@@ -20,6 +20,9 @@ Range = Max - Min <br/>
 Variance - Spread of the data <br/>
 Standard Deviation - How far the data is deviated(dispersed) from the mean <br/>
 
+#### Operations of Categorical data
+Frequency
+Percentage
 
 
 
