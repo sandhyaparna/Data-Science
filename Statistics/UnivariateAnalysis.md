@@ -22,6 +22,8 @@ Variance - Spread of the data <br/>
 Standard Deviation - How far the data is deviated(dispersed) from the mean <br/>
 
 ###### Graphical Representations
+Box plot
+Histogram
 
 
 #### Categorical data
