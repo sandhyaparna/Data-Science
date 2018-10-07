@@ -5,6 +5,7 @@ Categorical   <br/>
 #### Operations on Quantitaive data
 Robust statistics are unaffected by outliers(max or min) <br/>
 A histogram is left skewed if it has the left tail larger than the right, and right skewed if the right tail is larger than its left <br/>
+
 Empirical rule = The empirical rule (also know as three std.dev rule) states that for a normal distribution 68% of the data is within one standard deviation of the mean value, 95% is within two standard deviation, and 99.7% is within three standard deviation <br/>
 
 Minimum <br/>
@@ -21,8 +22,11 @@ Variance - Spread of the data <br/>
 Standard Deviation - How far the data is deviated(dispersed) from the mean <br/>
 
 #### Operations of Categorical data
-Frequency
-Percentage
+Frequency  <br/>
+Percentage  <br/>
+
+#### Graphical Representations
+
 
 
 
