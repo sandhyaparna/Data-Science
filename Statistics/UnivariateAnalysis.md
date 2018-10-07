@@ -30,6 +30,8 @@ Standard Deviation - How far the data is deviated(dispersed) from the mean <br/>
 Frequency  <br/>
 Percentage  <br/>
 
+###### Graphical Representations
+
 
 
 
