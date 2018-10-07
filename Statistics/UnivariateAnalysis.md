@@ -31,7 +31,8 @@ Frequency  <br/>
 Percentage  <br/>
 
 ###### Graphical Representations
-
+Bar chart <br/>
+Pie chart <br/>
 
 
 
