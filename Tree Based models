@@ -24,7 +24,9 @@ Random Forest is a black box model you will lose interpretability after using it
 In RandomForest, if n tress contributing to the RandomForest all have an accuracy of 70%, min accuracy of overall RandomForest 
 can be from less than 70% to 100%
 
-GBM can use gradient decent method for minimize the loss function
+GBM can use gradient decent method for minimize the loss function. 
+
+Time to train GBM model increases with increase in no of trees, whereas learning rate doesnt effect time to train 
 
 Bagging is suitable for high variance low bias models
 
