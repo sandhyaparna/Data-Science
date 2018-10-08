@@ -2,7 +2,16 @@
 Result of many weaklearners is combined to create a strong learner
 
 Both options are true. In Bagging, each individual trees are independent of each other because they consider different subset of features 
-and samples.
+and samples
 
 In boosting tree individual weak learners are not independent of each other because each tree correct the results of previous tree. 
-Bagging and boosting both can be consider as improving the base learners results.
+Bagging and boosting both can be consider as improving the base learners results
+
+Random Forest and Gradient Boosting ensemble methods are designed for classification as well as regression task
+
+Random forest is based on bagging concept, that consider faction of sample and faction of feature for building the individual trees
+
+
+
+
+
