@@ -18,6 +18,8 @@ Bagging doesnt have 'learning rate' parameter
 
 Model that gives largest AUC is preferred
 
+Since Random Forest aggregate the result of different weak learners, If It is possible we would want more number of trees in model building.
+Random Forest is a black box model you will lose interpretability after using it.
 
 
 
