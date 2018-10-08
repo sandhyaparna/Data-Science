@@ -21,6 +21,11 @@ Model that gives largest AUC is preferred
 Since Random Forest aggregate the result of different weak learners, If It is possible we would want more number of trees in model building.
 Random Forest is a black box model you will lose interpretability after using it.
 
+In RandomForest, if n tress contributing to the RandomForest all have an accuracy of 70%, min accuracy of overall RandomForest 
+can be from less than 70% to 100%
 
+GBM can use gradient decent method for minimize the loss function
+
+Bagging is suitable for high variance low bias models
 
 
