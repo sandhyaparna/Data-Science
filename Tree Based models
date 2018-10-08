@@ -1,4 +1,10 @@
-# Bagging consists of sampling rows and variables randomly - so each individual tree is independent of the other. 
+A weak learner is defined to be a classifier that is only slightly correlated with the true classification (it can label examples better
+than random guessing). In contrast, a strong learner is a classifier that is arbitrarily well-correlated with the true classification
+
+Boosting algorithm always considers weak learners in order to prevent overfitting, since the complexity of the overall learner
+increases at each step. Starting with weak learners implies the final classifier will be less likely to overfit
+
+Bagging consists of sampling rows and variables randomly - so each individual tree is independent of the other. 
 Result of many weaklearners is combined to create a strong learner
 
 Both options are true. In Bagging, each individual trees are independent of each other because they consider different subset of features 
@@ -29,5 +35,9 @@ GBM can use gradient decent method for minimize the loss function.
 Time to train GBM model increases with increase in no of trees, whereas learning rate doesnt effect time to train 
 
 Bagging is suitable for high variance low bias models
+
+Learning rate should be low but it should not be very low otherwise algorithm will take so long to finish the training because you need 
+to increase the number trees
+
 
 
