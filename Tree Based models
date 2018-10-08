@@ -4,6 +4,8 @@ than random guessing). In contrast, a strong learner is a classifier that is arb
 Boosting algorithm always considers weak learners in order to prevent overfitting, since the complexity of the overall learner
 increases at each step. Starting with weak learners implies the final classifier will be less likely to overfit
 
+Each weak learner has a high variance, low bias
+
 Bagging consists of sampling rows and variables randomly - so each individual tree is independent of the other. 
 Result of many weaklearners is combined to create a strong learner
 
