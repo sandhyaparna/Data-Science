@@ -11,6 +11,13 @@ Random Forest and Gradient Boosting ensemble methods are designed for classifica
 
 Random forest is based on bagging concept, that consider faction of sample and faction of feature for building the individual trees
 
+Increase the depth from the certain value of depth may overfit the data and for 2 depth values validation accuracies are same we always 
+prefer the small depth in final model building
+
+Bagging doesnt have 'learning rate' parameter 
+
+Model that gives largest AUC is preferred
+
 
 
 
