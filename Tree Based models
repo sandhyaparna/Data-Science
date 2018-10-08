@@ -1,0 +1,2 @@
+# Bagging consists of sampling rows and variables randomly - so each individual tree is independent of the other. 
+Result of many weaklearners is combined to create a strong learner
