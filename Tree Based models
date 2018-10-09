@@ -41,5 +41,6 @@ Bagging is suitable for high variance low bias models
 Learning rate should be low but it should not be very low otherwise algorithm will take so long to finish the training because you need 
 to increase the number trees
 
+How to select best hyperparameters in tree based models?
 
 
