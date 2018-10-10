@@ -19,7 +19,8 @@ Nonlinear model - Predictor variables have nonlinear relationship among them (Th
 ## Algorithms
 #### ID3 (Iternative Dichotomizer)
 Greedy search using Information Gain (Binnary splitting of Continuous var) <br/>
-It creates good splits at top but dont consider what happens on the later on splits
+It creates good splits at top but dont consider what happens later on the splits <br/>
+Doesn't handle numeric attributes and missing values <br/>
 
 
 #### C4.5 
@@ -29,7 +30,7 @@ Gain ratio (Binnary splitting of Continuous var) <br/>
 
 
 #### CART 
-Gini Index (Binnary splitting of Continuous var) <br/>
+Twoing criteria (or) Gini Index (Binnary splitting of Continuous var) <br/>
 
 #### CHAID 
 Chi-Square (Multiway splitting of Continuous var) <br/>
