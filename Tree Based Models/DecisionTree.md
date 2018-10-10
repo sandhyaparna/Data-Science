@@ -18,16 +18,18 @@ Nonlinear model - Predictor variables have nonlinear relationship among them (Th
 
 ## Algorithms
 #### ID3 (Iternative Dichotomizer)
-Greedy search using Information Gain (Binnary splitting of Continuous var) <br/>
+Greedy search using Entropy or Information Gain <br/>
 It creates good splits at top but dont consider what happens later on the splits <br/>
 Doesn't handle numeric attributes and missing values <br/>
 
 
 #### C4.5 
 Gain ratio (Binnary splitting of Continuous var) <br/>
+Handles numeric attributes and missing values automatically using surrogate splits
+
 
 #### C5.0 
-
+Uses less memory and builds smaller rulesets than C4.5 while being more accurate
 
 #### CART 
 Twoing criteria (or) Gini Index (Binnary splitting of Continuous var) <br/>
@@ -37,9 +39,12 @@ Regression trees uses - Sum of squared errors <br/>
 Goodness of fit measure: Sum of squared errors
 Handles numeric attributes and missing values automatically using surrogate splits
 
-
 #### CHAID 
 Chi-Square (Multiway splitting of Continuous var) <br/>
+
+
+## 
+Resursive partitioning - Splitting of population into sub-populations and each sub-population may in turn be split an indefinite number of times until the splitting process terminates after a particular stopping criterion is reached
 
 ## Splitting Criteria
 Splitting is based on the attribute that produces the 'purest' subsets of data w.r.t the label attribute. A partition is pure if all the tuples in it belong to the same class
@@ -57,8 +62,9 @@ INFORMATION GAIN (Decrease in Entropy) - The information gain is based on the de
 &nbsp; Gain(T,X) = Entropy(T) - Entropy(T,X)
 #### Gain Ratio:
 Info gain is biased toward attributes that have a larger number of values(more Unique values) over attributes that have a smaller number of values. Penalizing attributes with large number of values is done using gain ratio.  <br/>
+Gain ratio is ratio of Information gain to the intrinsic information <br/>
 &nbsp; GainRatio(T,X) = Gain(T,X) / SpliInformation(T,X)  <br/>
-&nbsp; Split(T,X) = Σ - p(i)*log(p(i))  <br/>
+&nbsp; SplitInfo(T,X) = Σ - p(i)*log(p(i))  <br/>
 #### Gini Index:
 Variable split is based on the one with low Gini Index <br/
 Performs only binary splits <br/
