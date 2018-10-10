@@ -19,6 +19,8 @@ Nonlinear model - Predictor variables have nonlinear relationship among them (Th
 ## Algorithms
 #### ID3 (Iternative Dichotomizer)
 Greedy search using Information Gain (Binnary splitting of Continuous var) <br/>
+It creates good splits at top but dont consider what happens on the later on splits
+
 
 #### C4.5 
 Gain ratio (Binnary splitting of Continuous var) <br/>
