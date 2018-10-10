@@ -123,7 +123,7 @@ Model can be validated using statistical sets <br/>
 Nonlinear relationships between parameters do not affect tree performance <br/>
 
 ## Disadvantages
-Variance is high and if not pruned leads to overfitting/complex tree <br/>
+Variance is high (incase of long depth trees) and if not pruned leads to overfitting/complex tree <br/>
 Trees are unstable since small variations in data might result in a completely different tree being generated - Can be avoided using ensemble models like Bagging or Boosting <br/>
 It is locally optimized (decisions are made at each node) using a greedy algorithm where we cannot guarantee a return to the globally optimal decision tree - Can be mitigated by training multiple trees in an ensemble learner  <br/>
 Create biased trees if some classes dominate. It is therefore recommended to balance the dataset prior to using in a tree <br/>
