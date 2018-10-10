@@ -17,10 +17,20 @@ Predictor variables are not independent <br/>
 Nonlinear model - Predictor variables have nonlinear relationship among them (There is no equation to express relationship between independent and dependant variables i.e model is constructed based on the observed data <br/>
 
 ## Algorithms
-ID3 - Information Gain (Binnary splitting of Continuous var) <br/>
-C4.5 - Gain ratio (Binnary splitting of Continuous var) <br/>
-CART - Gini Index (Binnary splitting of Continuous var) <br/>
-CHAID - Chi-Square (Multiway splitting of Continuous var) <br/>
+#### ID3 (Iternative Dichotomizer)
+Greedy search using Information Gain (Binnary splitting of Continuous var) <br/>
+
+#### C4.5 
+Gain ratio (Binnary splitting of Continuous var) <br/>
+
+#### C5.0 
+
+
+#### CART 
+Gini Index (Binnary splitting of Continuous var) <br/>
+
+#### CHAID 
+Chi-Square (Multiway splitting of Continuous var) <br/>
 
 ## Splitting Criteria
 Splitting is based on the attribute that produces the 'purest' subsets of data w.r.t the label attribute. A partition is pure if all the tuples in it belong to the same class
