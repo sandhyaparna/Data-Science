@@ -32,6 +32,13 @@ Gain ratio (Binnary splitting of Continuous var) <br/>
 #### CART 
 Twoing criteria (or) Gini Index (Binnary splitting of Continuous var) <br/>
 
+Twoing rules strikes a balance between purity and creating roughly equal-sized nodes <br/>
+Goodness of fit measure: misclassification rates
+Regression trees uses - Sum of squared errors <br/>
+Goodness of fit measure: Sum of squared errors
+
+
+
 #### CHAID 
 Chi-Square (Multiway splitting of Continuous var) <br/>
 
@@ -52,9 +59,11 @@ INFORMATION GAIN (Decrease in Entropy) - The information gain is based on the de
 #### Gain Ratio:
 Info gain is biased toward attributes that have a larger number of values(more Unique values) over attributes that have a smaller number of values. Penalizing attributes with large number of values is done using gain ratio.  <br/>
 &nbsp; GainRatio(T,X) = Gain(T,X) / SpliInformation(T,X)  <br/>
-&nbsp; Split(T,X) = Σ - p(i)*log(p(i))
+&nbsp; Split(T,X) = Σ - p(i)*log(p(i))  <br/>
 #### Gini Index:
-Variable split is based on the one with low Gini Index. Performs only binary splits
+Variable split is based on the one with low Gini Index <br/
+Performs only binary splits <br/
+Gini produces small but pure nodes <br/>
 #### Chi-Square:
 Finds out the statistical significance between the differences between sub-nodes and parent node. We measure it by sum of squares of standardized differences between observed and expected frequencies of target variable. Higher the value of Chi-Square higher the statistical significance of differences between sub-node and Parent node.  <br/>
 &nbsp; Chi-square = ((Actual – Expected)^2 / Expected)^1/2
