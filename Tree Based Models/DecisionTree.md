@@ -31,12 +31,11 @@ Gain ratio (Binnary splitting of Continuous var) <br/>
 
 #### CART 
 Twoing criteria (or) Gini Index (Binnary splitting of Continuous var) <br/>
-
-Twoing rules strikes a balance between purity and creating roughly equal-sized nodes <br/>
+Twoing rules strikes a balance between purity and creating roughly equal-sized nodes [Not available in rpart package] <br/>
 Goodness of fit measure: misclassification rates
 Regression trees uses - Sum of squared errors <br/>
 Goodness of fit measure: Sum of squared errors
-
+Handles numeric attributes and missing values automatically using surrogate splits
 
 
 #### CHAID 
@@ -88,6 +87,7 @@ User-defined
 ## Overfitting
 Overfitting happens when the learning algorithm continues to develop hypotheses that reduce training set error at the cost of an
 increased test set error <br/>
+#### Cross-validation
 #### Pre-pruning
 Allows the tree to perfectly classify the training set, and then post prune the tree <br/> 
 Stops growing the tree earlier, before it perfectly classifies the training set. Tree stops growing when it meets any of these pre-pruning criteria <br/>
