@@ -10,7 +10,7 @@ DecisionTreeClassifier
 .fit
 .predict_proba
 .roc_auc_score
-
+.model_selection.cross_val_score
 
 
 
