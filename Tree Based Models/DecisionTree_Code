@@ -6,12 +6,13 @@ Decision tree - visulaization?
 Decision tree - rules
 
 # Different functions
+Label encoder - To convert chars vars
 DecisionTreeClassifier
 .fit
 .predict_proba
 .roc_auc_score
 .model_selection.cross_val_score
-
+GridSearchCV
 
 
 
