@@ -1,5 +1,8 @@
 How should the input datasets for Train and Test be?
-How to run cross validation within Decision trees?
+How to run cross validation within Decision trees? Mention Sampling type for cross-validation?
+How to apply model to performance metrics of the decision tree from cv? AUC/Accuracy with 95% CI limits
+
+
 
 
 
