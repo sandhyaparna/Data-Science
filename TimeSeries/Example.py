@@ -28,7 +28,7 @@ Df = Df.set_index('DateTime_Var')
 ## Data can be aggregared to different levels - likely Dates can be converted to weekly date, monthly date etc
 # https://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.resample.html
 # Numeric Var is aggregated to level of date mentioned in replace function
-Df['Numeric_Var'].replace('MS').sum
+Df['Numeric_Var'].replace('MS').sum()
 resample('M', convention='end') - # Month end date
 resample('M')
 B       business day frequency
@@ -58,6 +58,11 @@ S       secondly frequency
 L       milliseonds
 U       microseconds
 N       nanoseconds
+
+## Quick peak data from a particular year to latest year 
+# Df has date time has index variable
+Df['2017':]
+
 
 
 
