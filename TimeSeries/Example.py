@@ -22,6 +22,8 @@ from tqdm import tqdm_notebook
 import warnings                                  # `do not disturbe` mode
 
 
+# Convert data frame to TS - Date column has to be converted to index 
+Df = Df.set_index('DateTime_Var')
 
 
 
