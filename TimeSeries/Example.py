@@ -34,7 +34,7 @@ resample('M')
 B       business day frequency
 C       custom business day frequency (experimental)
 D       calendar day frequency
-W       weekly frequency
+W       weekly frequency - week end date
 M       month end frequency
 SM      semi-month end frequency (15th and end of month)
 BM      business month end frequency
