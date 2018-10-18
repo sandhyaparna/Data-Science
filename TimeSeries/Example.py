@@ -25,14 +25,12 @@ import warnings                                  # `do not disturbe` mode
 # Convert data frame to TS - Date column has to be converted to index 
 Df = Df.set_index('DateTime_Var')
 
-# Data can be aggregared to different levels - likely Dates can be converted to weekly date, monthly date etc
+## Data can be aggregared to different levels - likely Dates can be converted to weekly date, monthly date etc
 # https://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.resample.html
 # Numeric Var is aggregated to level of date mentioned in replace function
 Df['Numeric_Var'].replace('MS').sum
-
 resample('M', convention='end') - # Month end date
 resample('M')
-
 B       business day frequency
 C       custom business day frequency (experimental)
 D       calendar day frequency
