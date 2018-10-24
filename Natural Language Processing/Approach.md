@@ -11,19 +11,17 @@ http://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.ht
 Tokenization – Process of converting a text into tokens
 Tokens – Words or entities present in the text
 Text object – A sentence or a phrase or a word or an article
-
-##### Steps
+###### Steps
 • Noise Removal - Stopwords, Punctuations, URLs or links, social media entities(mentions, hashtags) and industry specific words etc
 • Word/Lexicon Normalization - Tokenization, Lemmatization, Stemming
 • Word/Object Standardization - Regular Expression, Lookup Tables
-
-##### Noise Removal
+###### Noise Removal
 Any piece of text which is not relevant to the context of the data and the end-output can be specified as the noise.
 * Removing Stop Words: Stop words already present in NLTK package, can add new words to the existing stop words
-* Removal of spaces, punctuation, Hashwords
-
-• 
-
+* Removal of spaces, punctuation, Hashwords etc
+###### Lexicon Normalization
+• Stemming: Stemming is a rudimentary rule-based process of stripping the suffixes (“ing”, “ly”, “es”, “s” etc) from a word
+• Lemmatization: Lemmatization, on the other hand, is an organized & step by step procedure of obtaining the root form of the word, it makes use of vocabulary (dictionary importance of words) and morphological analysis (word structure and grammar relations)
 
 
 
