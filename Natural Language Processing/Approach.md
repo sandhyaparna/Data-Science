@@ -19,9 +19,12 @@ Text object – A sentence or a phrase or a word or an article
 Any piece of text which is not relevant to the context of the data and the end-output can be specified as the noise.
 * Removing Stop Words: Stop words already present in NLTK package, can add new words to the existing stop words
 * Removal of spaces, punctuation, Hashwords etc
-###### Lexicon Normalization
-• Stemming: Stemming is a rudimentary rule-based process of stripping the suffixes (“ing”, “ly”, “es”, “s” etc) from a word
-• Lemmatization: Lemmatization, on the other hand, is an organized & step by step procedure of obtaining the root form of the word, it makes use of vocabulary (dictionary importance of words) and morphological analysis (word structure and grammar relations)
+###### Lexicon Normalization - Stemming
+Stemming is a rudimentary rule-based process of stripping the suffixes (“ing”, “ly”, “es”, “s” etc) from a word <br/>
+* 
+
+
+• Lemmatization: Lemmatization, on the other hand, is an organized & step by step procedure of obtaining the root form of the word, it makes use of vocabulary (dictionary importance of words) and morphological analysis (word structure and grammar relations) <br/>
 
 
 
