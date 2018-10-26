@@ -33,7 +33,7 @@ But how is this different than Python stemming? While stemming can create words 
 
 
 ### Feature Extraction
-
+######
 
 
 Example NLP Pipeline
