@@ -5,7 +5,9 @@ https://www.analyticsvidhya.com/blog/2017/01/ultimate-guide-to-understand-implem
 https://www.kdnuggets.com/2018/03/text-data-preprocessing-walkthrough-python.html <br/>
 https://www.nltk.org/book/ch06.html <br/>
 http://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html <br/>
-
+ <br/>
+https://www.analyticsvidhya.com/blog/2017/06/word-embeddings-count-word2veec/ <br/>
+https://www.analyticsvidhya.com/blog/2018/04/a-comprehensive-guide-to-understand-and-implement-text-classification-in-python/ <br/>
 
 ### Pre-processing
 Tokenization – Process of converting a text into tokens
