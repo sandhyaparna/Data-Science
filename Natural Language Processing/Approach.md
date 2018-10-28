@@ -33,7 +33,17 @@ But how is this different than Python stemming? While stemming can create words 
 
 
 ### Feature Extraction
-######
+###### Count Vectorization
+Count Vector is a matrix notation of the dataset in which every row represents a document from the corpus, every column represents a term from the corpus, and every cell represents the frequency count of a particular term in a particular document
+###### TF-IDF
+TF-IDF score represents the relative importance of a term in the document and the entire corpus. TF-IDF score is composed by two terms: the first computes the normalized Term Frequency (TF), the second term is the Inverse Document Frequency (IDF), computed as the logarithm of the number of the documents in the corpus divided by the number of documents where the specific term appears <br/>
+  TF(t) = (Number of times term t appears in a document) / (Total number of terms in the document) <br/>
+  IDF(t) = log_e(Total number of documents / Number of documents with term t in it) <br/>
+TF-IDF Vectors can be generated at different levels of input tokens (words, characters, n-grams) <br/>
+* Word Level TF-IDF : Matrix representing tf-idf scores of every term in different documents
+* N-gram Level TF-IDF : N-grams are the combination of N terms together. This Matrix representing tf-idf scores of N-grams
+* Character Level TF-IDF : Matrix representing tf-idf scores of character level n-grams in the corpus
+
 
 
 Example NLP Pipeline
