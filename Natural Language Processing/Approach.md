@@ -50,12 +50,22 @@ TF-IDF Vectors can be generated at different levels of input tokens (words, char
 Similar words tend to occur together and will have similar context <br/>
 Co-occurrence – For a given corpus, the co-occurrence of a pair of words say w1 and w2 is the number of times they have appeared together in a Context Window <br/>
 Context Window – Context window is specified by a number and the direction. So what does a context window of 2 (around) means? Let us see an example below <br/>
+###### Topic Modeling
+https://www.analyticsvidhya.com/blog/2016/08/beginners-guide-to-topic-modeling-in-python/
+Latent Dirichlet Allocation is the most popular topic modeling technique. Given a dataset of documents, LDA backtracks and tries to figure out what topics would create those documents in the first place. <br/>
+LDA is a matrix factorization technique. In vector space, any corpus (collection of documents) can be represented as a document-term (term = words in the documents) matrix. LDA converts this Document-Term Matrix into two lower dimensional matrices – M1 and M2. <br/>
+M1 is a document-topics matrix and M2 is a topic–terms matrix with dimensions (N,K) and (K,M) respectively, where N is the number of documents, K is the number of topics and M is the vocabulary size. <br/>
+* Alpha and Beta Hyperparameters – alpha represents document-topic density and Beta represents topic-word density. Higher the value of alpha, documents are composed of more topics and lower the value of alpha, documents contain fewer topics. On the other hand, higher the beta, topics are composed of a large number of words in the corpus, and with the lower value of beta, they are composed of few words. <br/>
+* Number of Topics – Number of topics to be extracted from the corpus. Researchers have developed approaches to obtain an optimal number of topics by using Kullback Leibler Divergence Score.
+* Number of Topic Terms – Number of terms composed in a single topic. It is generally decided according to the requirement. If the problem statement talks about extracting themes or concepts, it is recommended to choose a higher number, if problem statement talks about extracting features or terms, a low number is recommended.
+* Number of Iterations / passes – Maximum number of iterations allowed to LDA algorithm for convergence.
 ###### Named Entity Recognition
 ###### Continuous Bag-of-Words
 ###### Skip-Gram Model
 ###### Word Embeddings
 ###### Part of Speech Tagging
-###### Topic Modeling
+
+
 ###### 
 ###### 
 ###### 
