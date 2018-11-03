@@ -5,7 +5,6 @@ https://www.analyticsvidhya.com/blog/2017/01/ultimate-guide-to-understand-implem
 https://www.kdnuggets.com/2018/03/text-data-preprocessing-walkthrough-python.html <br/>
 https://www.nltk.org/book/ch06.html <br/>
 http://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html <br/>
- <br/>
 https://www.analyticsvidhya.com/blog/2017/06/word-embeddings-count-word2veec/ <br/>
 https://www.analyticsvidhya.com/blog/2018/04/a-comprehensive-guide-to-understand-and-implement-text-classification-in-python/ <br/>
 https://towardsdatascience.com/understanding-feature-engineering-part-4-deep-learning-methods-for-text-data-96c44370bbfa <br/>
@@ -73,6 +72,8 @@ A typical NER model consists of three blocks:<br/>
 * Entity disambiguation: Sometimes it is possible that entities are misclassified, hence creating a validation layer on top of the results is useful. Use of knowledge graphs can be exploited for this purposes. The popular knowledge graphs are – Google Knowledge Graph, IBM Watson and Wikipedia. <br/>
 ###### Word embedding Models
 Word2Vec, GloVe
+https://www.analyticsvidhya.com/blog/2017/06/word-embeddings-count-word2veec/ <br/>
+https://towardsdatascience.com/understanding-feature-engineering-part-4-deep-learning-methods-for-text-data-96c44370bbfa <br/>
 
 
 ###### Continuous Bag-of-Words
