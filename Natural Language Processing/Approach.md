@@ -64,7 +64,7 @@ M1 is a document-topics matrix and M2 is a topic–terms matrix with dimensions 
 ###### Skip-Gram Model
 ###### Word Embeddings
 ###### Part of Speech Tagging
-###### 
+###### Document Clustering with Similarity Features
 ###### 
 ###### 
 ###### 
