@@ -63,9 +63,15 @@ M1 is a document-topics matrix and M2 is a topic–terms matrix with dimensions 
 ###### Document Clustering with Similarity Features 
 Built on top of Count Vectorized Matrix or TF-IDF matrix
 Hierarchical clustering
+###### Named Entity Recognition
+Entities are defined as the most important chunks of a sentence – noun phrases, verb phrases or both. Entity Detection algorithms are generally ensemble models of rule based parsing, dictionary lookups, pos tagging and dependency parsing. The applicability of entity detection can be seen in the automated chat bots, content analyzers and consumer insights.<br/>
+A typical NER model consists of three blocks:<br/>
+* Noun phrase identification: This step deals with extracting all the noun phrases from a text using dependency parsing and part of speech tagging.<br/>
+* Phrase classification: This is the classification step in which all the extracted noun phrases are classified into respective categories (locations, names etc). Google Maps API provides a good path to disambiguate locations, Then, the open databases from dbpedia, wikipedia can be used to identify person names or company names. Apart from this, one can curate the lookup tables and dictionaries by combining information from different sources.<br/>
+* Entity disambiguation: Sometimes it is possible that entities are misclassified, hence creating a validation layer on top of the results is useful. Use of knowledge graphs can be exploited for this purposes. The popular knowledge graphs are – Google Knowledge Graph, IBM Watson and Wikipedia. <br/>
 
 ###### 
-###### Named Entity Recognition
+
 
 ###### Continuous Bag-of-Words
 ###### Skip-Gram Model
