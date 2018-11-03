@@ -71,8 +71,8 @@ A typical NER model consists of three blocks:<br/>
 * Noun phrase identification: This step deals with extracting all the noun phrases from a text using dependency parsing and part of speech tagging.<br/>
 * Phrase classification: This is the classification step in which all the extracted noun phrases are classified into respective categories (locations, names etc). Google Maps API provides a good path to disambiguate locations, Then, the open databases from dbpedia, wikipedia can be used to identify person names or company names. Apart from this, one can curate the lookup tables and dictionaries by combining information from different sources.<br/>
 * Entity disambiguation: Sometimes it is possible that entities are misclassified, hence creating a validation layer on top of the results is useful. Use of knowledge graphs can be exploited for this purposes. The popular knowledge graphs are – Google Knowledge Graph, IBM Watson and Wikipedia. <br/>
-
-###### 
+###### Word embedding Models
+Word2Vec, GloVe
 
 
 ###### Continuous Bag-of-Words
