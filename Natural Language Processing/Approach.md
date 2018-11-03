@@ -8,6 +8,8 @@ http://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.ht
  <br/>
 https://www.analyticsvidhya.com/blog/2017/06/word-embeddings-count-word2veec/ <br/>
 https://www.analyticsvidhya.com/blog/2018/04/a-comprehensive-guide-to-understand-and-implement-text-classification-in-python/ <br/>
+https://towardsdatascience.com/understanding-feature-engineering-part-4-deep-learning-methods-for-text-data-96c44370bbfa <br/>
+https://towardsdatascience.com/understanding-feature-engineering-part-3-traditional-methods-for-text-data-f6f7d70acd41 <br/>
 
 ### Pre-processing
 Tokenization – Process of converting a text into tokens
