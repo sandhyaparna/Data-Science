@@ -52,6 +52,7 @@ Co-occurrence – For a given corpus, the co-occurrence of a pair of words say w
 Context Window – Context window is specified by a number and the direction. So what does a context window of 2 (around) means? Let us see an example below <br/>
 ###### Topic Modeling
 https://www.analyticsvidhya.com/blog/2016/08/beginners-guide-to-topic-modeling-in-python/
+Topic models are extremely useful in summarizing large corpus of text documents to extract and depict key concepts. They are also useful in extracting features from text data that capture latent patterns in the data. <br/>
 Latent Dirichlet Allocation is the most popular topic modeling technique. Given a dataset of documents, LDA backtracks and tries to figure out what topics would create those documents in the first place. <br/>
 LDA is a matrix factorization technique. In vector space, any corpus (collection of documents) can be represented as a document-term (term = words in the documents) matrix. LDA converts this Document-Term Matrix into two lower dimensional matrices – M1 and M2. <br/>
 M1 is a document-topics matrix and M2 is a topic–terms matrix with dimensions (N,K) and (K,M) respectively, where N is the number of documents, K is the number of topics and M is the vocabulary size. <br/>
@@ -61,10 +62,11 @@ M1 is a document-topics matrix and M2 is a topic–terms matrix with dimensions 
 * Number of Iterations / passes – Maximum number of iterations allowed to LDA algorithm for convergence.
 ###### Document Clustering with Similarity Features 
 Built on top of Count Vectorized Matrix or TF-IDF matrix
-
+Hierarchical clustering
 
 ###### 
 ###### Named Entity Recognition
+
 ###### Continuous Bag-of-Words
 ###### Skip-Gram Model
 ###### Word Embeddings
