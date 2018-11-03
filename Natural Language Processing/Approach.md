@@ -75,14 +75,9 @@ Word2Vec, GloVe <br/>
 https://www.analyticsvidhya.com/blog/2017/06/word-embeddings-count-word2veec/ <br/>
 https://towardsdatascience.com/understanding-feature-engineering-part-4-deep-learning-methods-for-text-data-96c44370bbfa <br/>
 https://www.datascience.com/resources/notebooks/word-embeddings-in-python <br/>
-
-
 ###### Continuous Bag-of-Words
 ###### Skip-Gram Model
-###### Word Embeddings
-###### Part of Speech Tagging
-
-###### 
+###### FastText
 
 
 
