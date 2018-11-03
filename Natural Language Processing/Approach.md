@@ -50,6 +50,10 @@ TF-IDF Vectors can be generated at different levels of input tokens (words, char
 Similar words tend to occur together and will have similar context <br/>
 Co-occurrence – For a given corpus, the co-occurrence of a pair of words say w1 and w2 is the number of times they have appeared together in a Context Window <br/>
 Context Window – Context window is specified by a number and the direction. So what does a context window of 2 (around) means? Let us see an example below <br/>
+###### Document Similarity 
+Built on top of Count Vectorized Matrix or TF-IDF matrix
+
+
 ###### Topic Modeling
 https://www.analyticsvidhya.com/blog/2016/08/beginners-guide-to-topic-modeling-in-python/
 Latent Dirichlet Allocation is the most popular topic modeling technique. Given a dataset of documents, LDA backtracks and tries to figure out what topics would create those documents in the first place. <br/>
@@ -65,7 +69,7 @@ M1 is a document-topics matrix and M2 is a topic–terms matrix with dimensions 
 ###### Word Embeddings
 ###### Part of Speech Tagging
 ###### Document Clustering with Similarity Features
-###### 
+
 ###### 
 ###### 
 
