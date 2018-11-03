@@ -50,10 +50,6 @@ TF-IDF Vectors can be generated at different levels of input tokens (words, char
 Similar words tend to occur together and will have similar context <br/>
 Co-occurrence – For a given corpus, the co-occurrence of a pair of words say w1 and w2 is the number of times they have appeared together in a Context Window <br/>
 Context Window – Context window is specified by a number and the direction. So what does a context window of 2 (around) means? Let us see an example below <br/>
-###### Document Similarity 
-Built on top of Count Vectorized Matrix or TF-IDF matrix
-
-
 ###### Topic Modeling
 https://www.analyticsvidhya.com/blog/2016/08/beginners-guide-to-topic-modeling-in-python/
 Latent Dirichlet Allocation is the most popular topic modeling technique. Given a dataset of documents, LDA backtracks and tries to figure out what topics would create those documents in the first place. <br/>
@@ -63,14 +59,17 @@ M1 is a document-topics matrix and M2 is a topic–terms matrix with dimensions 
 * Number of Topics – Number of topics to be extracted from the corpus. Researchers have developed approaches to obtain an optimal number of topics by using Kullback Leibler Divergence Score.
 * Number of Topic Terms – Number of terms composed in a single topic. It is generally decided according to the requirement. If the problem statement talks about extracting themes or concepts, it is recommended to choose a higher number, if problem statement talks about extracting features or terms, a low number is recommended.
 * Number of Iterations / passes – Maximum number of iterations allowed to LDA algorithm for convergence.
+###### Document Clustering with Similarity Features 
+Built on top of Count Vectorized Matrix or TF-IDF matrix
+
+
+###### 
 ###### Named Entity Recognition
 ###### Continuous Bag-of-Words
 ###### Skip-Gram Model
 ###### Word Embeddings
 ###### Part of Speech Tagging
-###### Document Clustering with Similarity Features
 
-###### 
 ###### 
 
 
