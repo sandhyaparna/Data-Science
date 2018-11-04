@@ -30,13 +30,13 @@ Categorical   <br/>
 #### Categorical data
 
 ###### Operations
-* Frequency  <br/>
+* Frequency/Cumulative Frequency  <br/>
 * Percentage  <br/>
 
 ###### Graphical Representations
 * Bar chart <br/>
 * Pie chart <br/>
-
+* Cross Table <br/>
 
 
 
