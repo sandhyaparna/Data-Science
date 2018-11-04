@@ -11,7 +11,7 @@ Categorical   <br/>
 * Minimum <br/>
 * Maximum <br/>
 * Mean <br/>
- * Mean of ORDINAL data doesn’t make sense because mean assumes equal intervals but in ordinal data we don’t know if the difference between 1 & 2 is same as the distance between 2 & 3
+  * Mean of ORDINAL data doesn’t make sense because mean assumes equal intervals but in ordinal data we don’t know if the difference between 1 & 2 is same as the distance between 2 & 3
 * Median <br/>
 * 1st Quantile - 25th percentile <br/>
 * 3rd Quantile - 75th percentile <br/>
