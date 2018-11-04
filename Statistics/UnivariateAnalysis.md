@@ -18,8 +18,8 @@ IQR - Diff between 1st & 3rd quantiles <br/>
 lower fence/whisker = 1st quartile − 1.5*IQR <br/>
 upper fence/whisker = 3st quartile + 1.5*IQR <br/>
 Range = Max - Min <br/>
-Variance - Spread of the data <br/>
-Standard Deviation - How far the data is deviated(dispersed) from the mean <br/>
+Variance - Spread of the data from their average value - The average of the squared differences from the mean <br/>
+Standard Deviation - How far the data is deviated(dispersed) from the mean (Exact distances from mean) - square root of the variance is the standard deviation <br/>
 
 ###### Graphical Representations
 Box plot
