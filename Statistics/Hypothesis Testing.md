@@ -106,15 +106,28 @@ Measures the strength & direction of LINEAR relationship between 2 variables
 * Observations in each sample have the same variance
 
 ### Spearman's Rank-Order Correlation
-It is the nonparametric version of the Pearson correlation
-Measures strength & direction of MONOTONIC realtionship between 2 ranked variables
-A monotonic (need not be linear) relationship is a relationship that does one of the following: (1) as the value of one variable increases, so does the value of the other variable; or (2) as the value of one variable increases, the other variable value decreases
+It is the nonparametric version of the Pearson correlation <br/>
+Measures strength & direction of MONOTONIC realtionship between 2 ranked variables <br/>
+A monotonic (need not be linear) relationship is a relationship that does one of the following: (1) as the value of one variable increases, so does the value of the other variable; or (2) as the value of one variable increases, the other variable value decreases <br/>
+Spearman’s rho: usually have larger values than Kendall’s Tau.  Calculations based on deviations.  Much more sensitive to error and discrepancies in data
 ##### Assumptions
 * Observations in each sample are independent and identically distributed (iid)
 * Observations in each sample can be ranked(oridinal), interval or ratio
 
+### Kendall’s Tau Rank-Order Correlation
+Measures strength & direction of MONOTONIC realtionship between 2 ranked variables <br/>
+Kendall’s Tau: usually smaller values than Spearman’s rho correlation. Calculations based on concordant and discordant pairs. Insensitive to error. P values are more accurate with smaller sample sizes <br/>
+Concordant pairs: If both members of one observation are larger than their respective members of the other observations <br/>
+Discordant pairs: If he two numbers in one observation differ in opposite directions br/>
+##### Assumptions
+* Observations in each sample are independent and identically distributed (iid)
+* Observations in each sample can be ranked(oridinal), interval or ratio
 
-
+### Chi-Squared Test
+Tests whether two categorical variables are related or independent
+##### Assumptions
+* Observations used in the calculation of the contingency table are independent
+* 25 or more examples in each cell of the contingency table
 
 
 
