@@ -1,11 +1,6 @@
 ### Graphical Representations
 
 ##### 2 Quantitative Variables
-
-##### Quantitative & Categorical Variables
-* Box plot comparision between the groups of Categorical variables
-
-##### 2 Quantitative Variables
 * Scatter plot - Correlation
 
 Covariance - Variance between 2 variables. Indicates the extent to which two random variables change in tandem. Lies between -∞ and +∞.
@@ -17,4 +12,9 @@ Corr(X,Y) = Cov(X,Y)/XstdDev.YstdDev
 ##### 2 Categorical Variables
 * Cross Table - Freq or %
 * Stacked bar plot - Freq or %
+
+##### Quantitative & Categorical Variables
+* Box plot comparision between the groups of Categorical variables
+
+
 
