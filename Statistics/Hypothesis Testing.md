@@ -42,10 +42,17 @@ The alternative hypothesis assumes that some difference exists between the true 
 ##### Assumptions
 * The dependent variable must be continuous (interval/ratio).
 * The observations are independent of one another.
-* The dependent variable should be approximately normally distributed.
-* The dependent variable should not contain any outliers.
+* The dependent variable should be approximately normally distributed - Histogram
+* The dependent variable should not contain any outliers - BoxPlot
 
-
+### T-Test on two independent samples
+One independent, categorical variable that has two levels/groups & One continuous dependent variable. <br/>
+The independent t-test, also called the two sample t-test, independent-samples t-test or student's t-test, is an inferential statistical test that determines whether there is a statistically significant difference between the means in two unrelated groups. <br/>
+##### Assumptions
+* The dependent is approximately normally distributed within each group
+* Homogeneity of variances - The variances of the two groups you are measuring are equal in the population - Levene’s test for homogeneity
+* Independence of observations - No relationship between observations in each group or between the groups themselves
+* No outliers - BoxPlot
 
 Chi sq goodness of fit - if a sample proportion is consistent with hypothesized distribution
 chi sq test - if 2 categorical vars are idependent or not?
