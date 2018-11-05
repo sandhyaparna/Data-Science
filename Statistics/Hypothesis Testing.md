@@ -37,7 +37,7 @@ Population parameter is not equal to a certain value <br/>
 A test of a statistical hypothesis, where the region of rejection is on both sides of the sampling distribution, is called a two-tailed test. For example, suppose the null hypothesis states that the mean is equal to 10. The alternative hypothesis would be that the mean is less than 10 or greater than 10. The region of rejection would consist of a range of numbers located on both sides of sampling distribution; that is, the region of rejection would consist partly of numbers that were less than 10 and partly of numbers that were greater than 10. <br/>
 
 ### Ho: Means are identical 
-* One Sample T-Test: 1 Quantitative variable
+* One Sample T-Test: 1 Quantitative variable is dependent and Categorical vars are independent
 * T-Test on two independent samples: 1 Categorical var with 2 categories, 1 Quantitative variable
 * T-test on two paired samples: 1 Categorical var with 2 categories i.e Before and After, 1 Quantitative variable
 * One-way ANOVA: 1 Categorical var with 2+ categories, 1 Quantitative variable
@@ -52,7 +52,7 @@ A test of a statistical hypothesis, where the region of rejection is on both sid
 ### Ho: Proportions (Categorical Var)
 Exact Fisher test is performed if Total N is <=90  (or) expected freq less than 5 <br/>
 Chi-sq test is performed only when atleast 80% of the cells have an expected frequency of 5 or greater <br/>
-* chi-square: Tests if a proportion is equal to a theoritical proportion
+* chi-square goodness of fit: Tests if a proportion is equal to a theoritical proportion
 * chi-square: 1 Categorical var with 2+ categories
 * Multinomial Goodness-Of-Fit test: 
 * Chi-square on contingency table: 2 Categorical var with 2 or more categories (If variables are independent or not)
