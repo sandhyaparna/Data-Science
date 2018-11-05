@@ -46,8 +46,8 @@ A test of a statistical hypothesis, where the region of rejection is on both sid
 * MANOVA: 2 or more Categorical vars with 2 or more categories, 2 or more Quantitative variables
 
 ### Ho: Equal Variance
-* Comparision between 2 variances: Fisher's test
-* Comparision between 2+ variances: Levene's test
+* Fisher's test: Comparision between 2 variances
+* Levene's test: Comparision between 2+ variances 
 
 ### Ho: Proportions (Categorical Var)
 Exact Fisher test is performed if Total N is <=90  (or) expected freq less than 5 <br/>
