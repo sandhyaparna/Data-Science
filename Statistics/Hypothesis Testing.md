@@ -59,8 +59,13 @@ Chi-sq test is performed only when atleast 80% of the cells have an expected fre
 * Chi-square on contingency table: 2 Categorical var with 2 or more categories (If variables are independent or not)
 
 ### Ho: Correlation
+Checks if 2 samples are related (linear relationship)
 * Pearson Correlation Test - Parametric
 * Spearman's correlation Test - NonParametric
+Assumptions
+* Observations in each sample are independent and identically distributed (iid)
+* Observations in each sample are normally distributed
+* Observations in each sample have the same variance
 
 ### Ho: Normality
 * Shapiro-Wilk: Data sample has Gaussian distribution or not
