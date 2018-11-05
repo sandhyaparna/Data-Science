@@ -62,10 +62,13 @@ Chi-sq test is performed only when atleast 80% of the cells have an expected fre
 Checks if 2 samples are related (linear relationship)
 * Pearson Correlation Test - Parametric
 * Spearman's correlation Test - NonParametric
-Assumptions
+#### Assumptions of Pearson Correlation Test
 * Observations in each sample are independent and identically distributed (iid)
 * Observations in each sample are normally distributed
 * Observations in each sample have the same variance
+#### Assumptions of Spearman's correlation Test
+* Observations in each sample are independent and identically distributed (iid)
+* Observations in each sample can be ranked
 
 ### Ho: Normality
 * Shapiro-Wilk: Data sample has Gaussian distribution or not
@@ -93,6 +96,23 @@ The independent t-test, also called the two sample t-test, independent-samples t
   * Adjustment to degrees of freedom using the Welch-Satterthwaite method, Welch t Test statistic
 * Independence of observations - No relationship between observations in each group or between the groups themselves
 * No outliers - BoxPlot
+
+
+### Pearson Correlation 
+Measures the strength & direction of LINEAR relationship between 2 variables
+##### Assumptions
+* Observations in each sample are independent and identically distributed (iid)
+* Observations in each sample are normally distributed
+* Observations in each sample have the same variance
+
+### Spearman's Rank-Order Correlation
+It is the nonparametric version of the Pearson correlation
+Measures strength & direction of MONOTONIC realtionship between 2 ranked variables
+A monotonic (need not be linear) relationship is a relationship that does one of the following: (1) as the value of one variable increases, so does the value of the other variable; or (2) as the value of one variable increases, the other variable value decreases
+##### Assumptions
+* Observations in each sample are independent and identically distributed (iid)
+* Observations in each sample can be ranked(oridinal), interval or ratio
+
 
 
 
