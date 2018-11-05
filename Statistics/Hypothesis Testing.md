@@ -30,7 +30,7 @@ A test of a statistical hypothesis, where the region of rejection is on only one
 * Left-tailed test: Population parameter is less than a certain value
 * Right-tailed test: Population parameter is greater than a certain value
 
-##### 
+##### Two-Tailed Tests
 Population parameter is not equal to a certain value <br/>
 A test of a statistical hypothesis, where the region of rejection is on both sides of the sampling distribution, is called a two-tailed test. For example, suppose the null hypothesis states that the mean is equal to 10. The alternative hypothesis would be that the mean is less than 10 or greater than 10. The region of rejection would consist of a range of numbers located on both sides of sampling distribution; that is, the region of rejection would consist partly of numbers that were less than 10 and partly of numbers that were greater than 10. <br/>
 
