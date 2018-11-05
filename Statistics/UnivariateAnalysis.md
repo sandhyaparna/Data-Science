@@ -34,7 +34,8 @@ Categorical   <br/>
 * Percentage  <br/>
 
 ###### Graphical Representations
-* Bar chart <br/>
+* Bar chart (Pareto Chart - Bar graph ordered from highest to lowest freq)<br/>
+* Line Plot - Freq over a number line
 * Pie chart <br/>
 
 
