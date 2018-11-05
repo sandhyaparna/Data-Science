@@ -50,7 +50,9 @@ One independent, categorical variable that has two levels/groups & One continuou
 The independent t-test, also called the two sample t-test, independent-samples t-test or student's t-test, is an inferential statistical test that determines whether there is a statistically significant difference between the means in two unrelated groups. <br/>
 ##### Assumptions
 * The dependent is approximately normally distributed within each group
+  * Mann-Whitney U Test doesn't require Normality assumption
 * Homogeneity of variances - The variances of the two groups you are measuring are equal in the population - Levene’s test for homogeneity
+  * Adjustment to degrees of freedom using the Welch-Satterthwaite method
 * Independence of observations - No relationship between observations in each group or between the groups themselves
 * No outliers - BoxPlot
 
