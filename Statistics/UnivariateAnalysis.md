@@ -36,7 +36,7 @@ Categorical   <br/>
 ###### Graphical Representations
 * Bar chart <br/>
 * Pie chart <br/>
-* Cross Table <br/>
+
 
 
 
