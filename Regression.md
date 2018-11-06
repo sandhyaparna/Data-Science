@@ -26,15 +26,27 @@ Common mini-batch sizes range between 50 and 256. <br/>
 ### Evaluation Metrics
 ##### RMSE - Root Mean Squared Error
 It is the sample standard deviation of the differences between predicted values and observed values (called residuals).  <br/>
-RMSE = ( {Σ(Y – Ypred)^2} / n )^0.5 <br/>
+RMSE = ( {Σ(Y – Ypred)²} / n )^0.5 <br/>
 RMSE is higher or equal to MAE and is the default metric in most models because loss function defined in terms of RMSE is smoothly differentiable and makes it easier to perform mathematical operations. <br/>
 Minimizing the squared error over a set of numbers results in finding its mean.
 ##### MAE - Mean Absolute error
 MAE = (Σ|Y – Ypred|) / n  <br/>
 Minimizing the absolute error results in finding its median. <br/> 
+##### R Squared (R²) / Coeffiecient of Determination
+It is the proportion of variance in the response variable that is explained by the independant variables. It represents how close the data values are to the fitted regression line.
+Ranges from 0 to 1 and are commonly stated as percentages from 0% to 100%.
+R² = 1 - (Explained Variation by model / Total Variation)
+Explained variation by model = Σ(Y – Ypred)²
+Total Variation = Σ(Y – Yavg)²
+##### Adjusted R Squared (R²)
+R² assumes that every single variable explains the variation in the dependent variable. R² either stay the same or increase with addition of more variables wven if they dont have any relationship with the output variables. <br/> 
+The adjusted R² tells you the percentage of variation explained by only the independent variables that actually affect the dependent variable. It penalizes you for adding variables which dont improve your existing model. <br/> 
+R-square and Adjusted R squared would be exactly same for single input variable. <br/> 
+Adjusted R² = 1 - { (1-R²)(n-1)/(n-k-1) }
 
 
-Sum of Squared Errors (SSE) = =  {Σ(Y – Ypred)^2} / 2
+
+Sum of Squared Errors (SSE) = =  {Σ(Y – Ypred)²} / 2
 
 
 
