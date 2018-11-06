@@ -53,16 +53,33 @@ It is preferable for large datasets. <br/>
 It simply splits the training dataset into small batches and performs an update on the parameters for each of these batches. <br/> 
 Common mini-batch sizes range between 50 and 256. <br/>
 
+### Dimensionality Reduction
+##### Forward Selection
+Starts with most significant predictor in the model and adds variable for each step.
+##### Backward Elimination
+Starts with all predictors in the model and removes the least significant variable for each step.
+##### Stepwise Selection
+It does two things. It adds and removes predictors as needed for each step.
+
 ### Regularization
-Regularization is used to prevent the model from overfitting the training sample. It constrains/regularizes or shrinks the coefficient estimates towards zero. In other words, this technique discourages learning a more complex or flexible model, so as to avoid the risk of overfitting. In regularization, we normally keep the same number of features, but reduce the magnitude of the coefficients.
+Regularization basically adds the penalty as model complexity increases. Regularization is used to prevent the model from overfitting the training sample. It constrains/regularizes or shrinks the coefficient estimates towards zero. In other words, this technique discourages learning a more complex or flexible model, so as to avoid the risk of overfitting. In regularization, we normally keep the same number of features, but reduce the magnitude of the coefficients.
 #####  Ridge Regression - L2 Regularization
 Ridge Regression is a technique used when the data suffers from multicollinearity ( independent variables are highly correlated). It solves the multicollinearity problem through shrinkage parameter λ (lambda), shrinks the value of coefficients but doesn’t reaches zero. <br/>
-Magnitude of coefficients decreases as λ increases. λ basically controls penality term in the cost function of ridge reg <br/>
+Ridge regression adds “squared magnitude” of coefficient as penalty term to the loss function. <br/>
+Minimization objective = Least Squares Obj + α * (sum of square of coefficients)
+Magnitude of coefficients decreases as λ increases. λ basically controls penality term in the cost function of ridge reg. <br/>
 R² for a range of λ and choose the one that gives higher R². <br/>
 * Assumptions of this regression is same as least squared regression except normality is not to be assumed. <br/>
-
-
-
+#####  Lasso Regression - L1 Regularization
+Coefficients are reducing to 0 even for smaller changes in λ. Lasso selects the only some feature while reduces the coefficients of others to zero. This property is known as feature selection and which is absent in case of ridge. <br/>
+Least Absolute Shrinkage and Selection Operator (Lasso) adds “absolute value of magnitude” of coefficient as penalty term to the loss function. <br/>
+Minimization objective = Least Squares Obj + α * (sum of absolute value of coefficients)
+If group of predictors are highly correlated, lasso picks only one of them and shrinks the others to zero. <br/>
+* Assumptions of this regression is same as least squared regression except normality is not to be assumed. <br/>
+##### Elastic Net Regression
+It generally works well when we have a big dataset. <br/>
+Elastic net is basically a combination of both L1 and L2 regularization. <br/>
+Elastic regression working: Let’ say, we have a bunch of correlated independent variables in a dataset, then elastic net will simply form a group consisting of these correlated variables. Now if any one of the variable of this group is a strong predictor (meaning having a strong relationship with dependent variable), then we will include the entire group in the model building, because omitting other variables (like what we did in lasso) might result in losing some information in terms of interpretation ability, leading to a poor model performance. <br/>
 
 ### Evaluation Metrics
 ##### RMSE - Root Mean Squared Error
