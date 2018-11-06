@@ -23,6 +23,16 @@ It is preferable for large datasets. <br/>
 It simply splits the training dataset into small batches and performs an update on the parameters for each of these batches. <br/> 
 Common mini-batch sizes range between 50 and 256. <br/>
 
+### Evaluation Metrics
+##### RMSE - Root Mean Squared Error
+It is the sample standard deviation of the differences between predicted values and observed values (called residuals).  <br/>
+RMSE = ( {Σ(Y – Ypred)^2} / n )^0.5 <br/>
+RMSE is higher or equal to MAE and is the default metric in most models because loss function defined in terms of RMSE is smoothly differentiable and makes it easier to perform mathematical operations. <br/>
+Minimizing the squared error over a set of numbers results in finding its mean.
+##### MAE - Mean Absolute error
+MAE = (Σ|Y – Ypred|) / n  <br/>
+Minimizing the absolute error results in finding its median. <br/> 
+
 
 Sum of Squared Errors (SSE) = =  {Σ(Y – Ypred)^2} / 2
 
