@@ -3,20 +3,21 @@ Regression is a method of modelling a target value based on independent predicto
 ### Assumptions
 ##### Linearity
 There should be a linear and additive relationship between dependent (response) variable and independent (predictor) variable(s). A linear relationship suggests that a change in response Y due to one unit change in X¹ is constant, regardless of the value of X¹. An additive relationship suggests that the effect of X¹ on Y is independent of other variables.
-* Residual(Diff in actual & pred) vs Fitted values(Pred) - Linearity assumption is satisfied if residuals are spread out randomly around the 0 line
-
+* Residual(Diff in actual & pred) vs Fitted values(Pred): Linearity assumption is satisfied if residuals are spread out randomly around the 0 line
 ##### Autocorrelation
-There should be no correlation between the residual terms. Absence of this phenomenon is known as Autocorrelation.
+There should be no correlation between the residual terms. Absence of correlation is known as Autocorrelation.
+If the error terms are correlated, the estimated standard errors tend to underestimate the true standard error. If this happens, it causes confidence intervals and prediction intervals to be narrower. 
 This usually occurs in time series models where the next instant is dependent in the previous instant.
 * Durbin – Watson (DW) statistic: It must lie between 0 and 4. If DW = 2, implies no autocorrelation, 0 < DW < 2 implies positive autocorrelation while 2 < DW < 4 indicates negative autocorrelation.
 * Residual vs time plot and look for the seasonal or correlated pattern in residual values.
-
 ##### Multicollinearity
-* The independent variables should not be correlated. Absence of this phenomenon is known as multicollinearity.
+The independent variables should not be correlated. Absence of this phenomenon is known as multicollinearity.
+Standard errors tend to increase in presence of multicollinearity. With large standard errors, the confidence interval becomes wider leading to less precise estimates of slope parameters.
+* VIF factor: VIF value <= 4 suggests no multicollinearity whereas a value of >= 10 implies serious multicollinearity. 
 
 ##### Heteroskedasticity
-* The error terms must have constant variance. This phenomenon is known as homoskedasticity. The presence of non-constant variance is referred to heteroskedasticity.
-
+The error terms must have constant variance. This phenomenon is known as homoskedasticity. The presence of non-constant variance is referred to heteroskedasticity.
+* Residual(Diff in actual & pred) vs Fitted values(Pred) Plot: 
 ##### Normal Distribution of error terms
 * The error terms must be normally distributed.
 
