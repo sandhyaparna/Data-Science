@@ -33,11 +33,11 @@ Minimizing the squared error over a set of numbers results in finding its mean.
 MAE = (Σ|Y – Ypred|) / n  <br/>
 Minimizing the absolute error results in finding its median. <br/> 
 ##### R Squared (R²) / Coeffiecient of Determination
-It is the proportion of variance in the response variable that is explained by the independant variables. It represents how close the data values are to the fitted regression line.
-Ranges from 0 to 1 and are commonly stated as percentages from 0% to 100%.
-R² = 1 - (Explained Variation by model / Total Variation)
-Explained variation by model = Σ(Y – Ypred)²
-Total Variation = Σ(Y – Yavg)²
+It is the proportion of variance in the response variable that is explained by the independant variables. It represents how close the data values are to the fitted regression line. <br/>
+Ranges from 0 to 1 and are commonly stated as percentages from 0% to 100%. <br/>
+R² = 1 - (Explained Variation by model / Total Variation) <br/>
+Explained variation by model = Σ(Y – Ypred)² <br/>
+Total Variation = Σ(Y – Yavg)² <br/>
 ##### Adjusted R Squared (R²)
 R² assumes that every single variable explains the variation in the dependent variable. R² either stay the same or increase with addition of more variables wven if they dont have any relationship with the output variables. <br/> 
 The adjusted R² tells you the percentage of variation explained by only the independent variables that actually affect the dependent variable. It penalizes you for adding variables which dont improve your existing model. <br/> 
