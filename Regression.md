@@ -1,4 +1,4 @@
-Regression is a method of modelling a target value based on independent predictors. Explains the degree of relationship between 2 or more variables using the bets fit line.
+Regression is a method of modelling a target value based on independent predictors. Explains the degree of relationship between 2 or more variables using the best fit line.
 
 ### Assumptions
 ##### Linearity
@@ -25,6 +25,8 @@ To overcome heteroskedasticity, a possible way is to transform the response vari
 The error terms must be normally distributed. If not, confidence intervals may become too wide or narrow. Once confidence interval becomes unstable, it leads to difficulty in estimating coefficients based on minimization of least squares. <br/>
 * Q-Q plot (Standardized residuals vs Theoritical Quantiles) <br/>
 If the errors are not normally distributed, non–linear transformation of the variables (response or predictors) can bring improvement in the model.
+###### No outliers
+Linear Regression is very sensitive to Outliers. It can terribly affect the regression line and eventually the forecasted values.
 
 ### Ordinary Least Sqaure (OLS) Algorithm
 It is used in python library sklearn.  <br/>
@@ -50,6 +52,17 @@ It is preferable for large datasets. <br/>
 ##### Mini Batch Gradient Descent
 It simply splits the training dataset into small batches and performs an update on the parameters for each of these batches. <br/> 
 Common mini-batch sizes range between 50 and 256. <br/>
+
+### Regularization
+Regularization is used to prevent the model from overfitting the training sample. It constrains/regularizes or shrinks the coefficient estimates towards zero. In other words, this technique discourages learning a more complex or flexible model, so as to avoid the risk of overfitting. In regularization, we normally keep the same number of features, but reduce the magnitude of the coefficients.
+#####  Ridge Regression - L2 Regularization
+Ridge Regression is a technique used when the data suffers from multicollinearity ( independent variables are highly correlated). It solves the multicollinearity problem through shrinkage parameter λ (lambda), shrinks the value of coefficients but doesn’t reaches zero. <br/>
+Magnitude of coefficients decreases as λ increases. λ basically controls penality term in the cost function of ridge reg <br/>
+R² for a range of λ and choose the one that gives higher R². <br/>
+* Assumptions of this regression is same as least squared regression except normality is not to be assumed. <br/>
+
+
+
 
 ### Evaluation Metrics
 ##### RMSE - Root Mean Squared Error
