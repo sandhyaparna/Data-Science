@@ -107,9 +107,3 @@ Adjusted R² = 1 - { (1-R²)(n-1)/(n-k-1) }    <br/>
 n is total sample size and k is no of predictors <br/>
 
 
-
-
-
-
-
-
