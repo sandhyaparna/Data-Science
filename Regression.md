@@ -24,7 +24,7 @@ To overcome heteroskedasticity, a possible way is to transform the response vari
 ##### Normal Distribution of error terms
 The error terms must be normally distributed. If not, confidence intervals may become too wide or narrow. Once confidence interval becomes unstable, it leads to difficulty in estimating coefficients based on minimization of least squares. <br/>
 * Q-Q plot (Standardized residuals vs Theoritical Quantiles) <br/>
-
+If the errors are not normally distributed, non–linear transformation of the variables (response or predictors) can bring improvement in the model.
 
 ### Ordinary Least Sqaure (OLS) Algorithm
 It is used in python library sklearn.  <br/>
