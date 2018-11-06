@@ -80,7 +80,14 @@ https://www.datascience.com/resources/notebooks/word-embeddings-in-python <br/>
 ###### FastText
 
 
-
+### Evaluation 
+##### BLEU (Bilingual Evaluation Understudy)
+It is mostly used to measure the quality of machine translation with respect to the human translation. It uses a modified form of precision metric. <br/>
+Steps to compute BLEU score: <br/>
+1. Convert the sentence into unigrams, bigrams, trigrams, and 4-grams
+2. Compute precision for n-grams of size 1 to 4
+3. Take the exponential of the weighted average of all those precision values 
+4. Multiply it with brevity penalty (will explain later)
 
 
 
