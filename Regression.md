@@ -5,25 +5,27 @@ Regression is a method of modelling a target value based on independent predicto
 There should be a linear and additive relationship between dependent (response) variable and independent (predictor) variable(s). A linear relationship suggests that a change in response Y due to one unit change in X¹ is constant, regardless of the value of X¹. An additive relationship suggests that the effect of X¹ on Y is independent of other variables.
 * Residual(Diff in actual & pred) vs Fitted values(Pred): Linearity assumption is satisfied if residuals are spread out randomly around the 0 line
 To overcome the issue of non-linearity, you can do a non linear transformation of predictors such as log (X), √X or X² transform the dependent variable.
-##### Autocorrelation
+##### No Autocorrelation
 There should be no correlation between the residual terms. Absence of this phenomenon is known as Autocorrelation.
 If the error terms are correlated, the estimated standard errors tend to underestimate the true standard error. If this happens, it causes confidence intervals and prediction intervals to be narrower. 
 This usually occurs in time series models where the next instant is dependent in the previous instant.
 * Durbin – Watson (DW) statistic: It must lie between 0 and 4. If DW = 2, implies no autocorrelation, 0 < DW < 2 implies positive autocorrelation while 2 < DW < 4 indicates negative autocorrelation.
 * Residual vs time plot and look for the seasonal or correlated pattern in residual values.
-##### Multicollinearity
+##### No Multicollinearity
 The independent variables should not be correlated. Absence of this phenomenon is known as multicollinearity.
 Standard errors tend to increase in presence of multicollinearity. With large standard errors, the confidence interval becomes wider leading to less precise estimates of slope parameters.
 * VIF factor: VIF value <= 4 suggests no multicollinearity whereas a value of >= 10 implies serious multicollinearity. 
-##### Heteroskedasticity
+##### Homoskedasticity
 The error terms must have constant variance. This phenomenon is known as homoskedasticity. The presence of non-constant variance is referred to heteroskedasticity.
-Heteroskedasticity i.e non-constant variance often create con-line shape scatter plot of residuals vd fitted. Scattering widens or narrows as the value of fitted increases implies it is consistently accurate when it predicts low values, but highly inconsistent in accuracy when it predicts high values.
+Heteroskedasticity i.e non-constant variance often creates cone-line shape scatter plot of residuals vd fitted. Scattering widens or narrows as the value of fitted increases implies it is consistently accurate when it predicts low values, but highly inconsistent in accuracy when it predicts high values.
 * Residual(Diff in actual & pred) vs Fitted values(Pred) Plot: Should not be cone-shaped/funnel shaped
 * Scale Location Plot ( Square root of Standardized residuals vs Theoritical Quantiles)
 To overcome heteroskedasticity, a possible way is to transform the response variable such as log(Y) or √Y. Also, you can use weighted least square method to tackle heteroskedasticity.
 ##### Normal Distribution of error terms
 The error terms must be normally distributed. If not, confidence intervals may become too wide or narrow. Once confidence interval becomes unstable, it leads to difficulty in estimating coefficients based on minimization of least squares.
 * Q-Q plot (Standardized residuals vs Theoritical Quantiles)
+
+
 ### Ordinary Least Sqaure (OLS) Algorithm
 It is used in python library sklearn. 
 
