@@ -66,14 +66,14 @@ Regularization basically adds the penalty as model complexity increases. Regular
 #####  Ridge Regression - L2 Regularization
 Ridge Regression is a technique used when the data suffers from multicollinearity ( independent variables are highly correlated). It solves the multicollinearity problem through shrinkage parameter λ (lambda), shrinks the value of coefficients but doesn’t reaches zero. <br/>
 Ridge regression adds “squared magnitude” of coefficient as penalty term to the loss function. <br/>
-Minimization objective = Least Squares Obj + α * (sum of square of coefficients)
+Minimization objective = Least Squares Obj + α * (sum of square of coefficients) <br/>
 Magnitude of coefficients decreases as λ increases. λ basically controls penality term in the cost function of ridge reg. <br/>
 R² for a range of λ and choose the one that gives higher R². <br/>
 * Assumptions of this regression is same as least squared regression except normality is not to be assumed. <br/>
 #####  Lasso Regression - L1 Regularization
 Coefficients are reducing to 0 even for smaller changes in λ. Lasso selects the only some feature while reduces the coefficients of others to zero. This property is known as feature selection and which is absent in case of ridge. <br/>
 Least Absolute Shrinkage and Selection Operator (Lasso) adds “absolute value of magnitude” of coefficient as penalty term to the loss function. <br/>
-Minimization objective = Least Squares Obj + α * (sum of absolute value of coefficients)
+Minimization objective = Least Squares Obj + α * (sum of absolute value of coefficients) <br/>
 If group of predictors are highly correlated, lasso picks only one of them and shrinks the others to zero. <br/>
 * Assumptions of this regression is same as least squared regression except normality is not to be assumed. <br/>
 ##### Elastic Net Regression
@@ -82,16 +82,17 @@ Elastic net is basically a combination of both L1 and L2 regularization. <br/>
 Elastic regression working: Let’ say, we have a bunch of correlated independent variables in a dataset, then elastic net will simply form a group consisting of these correlated variables. Now if any one of the variable of this group is a strong predictor (meaning having a strong relationship with dependent variable), then we will include the entire group in the model building, because omitting other variables (like what we did in lasso) might result in losing some information in terms of interpretation ability, leading to a poor model performance. <br/>
 
 ### Evaluation Metrics
+Sum of Squared Errors (SSE) = =  {Σ(Y – Ypred)²} / 2
 ##### RMSE - Root Mean Squared Error
 It is the sample standard deviation of the differences between predicted values and observed values (called residuals).  <br/>
 RMSE = ( {Σ(Y – Ypred)²} / n )^0.5 <br/>
 RMSE is higher or equal to MAE and is the default metric in most models because loss function defined in terms of RMSE is smoothly differentiable and makes it easier to perform mathematical operations. <br/>
-Minimizing the squared error over a set of numbers results in finding its mean.
+Minimizing the squared error over a set of numbers results in finding its mean. <br/>
 ##### MAE - Mean Absolute error
 MAE = (Σ|Y – Ypred|) / n  <br/>
 Minimizing the absolute error results in finding its median. <br/> 
 ##### MSE - Mean Squared error
-MSE = {Σ(Y – Ypred)²} / n 
+MSE = {Σ(Y – Ypred)²} / n  <br/>
 ##### R Squared (R²) / Coeffiecient of Determination
 It is the proportion of variance in the response variable that is explained by the independant variables. It represents how close the data values are to the fitted regression line. <br/>
 Ranges from 0 to 1 and are commonly stated as percentages from 0% to 100%. <br/>
@@ -108,11 +109,7 @@ n is total sample size and k is no of predictors <br/>
 
 
 
-Sum of Squared Errors (SSE) = =  {Σ(Y – Ypred)²} / 2
 
 
-
-
-MSE - Mean Squared error
 
 
