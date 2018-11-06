@@ -2,32 +2,32 @@ Regression is a method of modelling a target value based on independent predicto
 
 ### Assumptions
 ##### Linearity
-There should be a linear and additive relationship between dependent (response) variable and independent (predictor) variable(s). A linear relationship suggests that a change in response Y due to one unit change in X¹ is constant, regardless of the value of X¹. An additive relationship suggests that the effect of X¹ on Y is independent of other variables.
-* Residual(Diff in actual & pred) vs Fitted values(Pred): Linearity assumption is satisfied if residuals are spread out randomly around the 0 line
+There should be a linear and additive relationship between dependent (response) variable and independent (predictor) variable(s). A linear relationship suggests that a change in response Y due to one unit change in X¹ is constant, regardless of the value of X¹. An additive relationship suggests that the effect of X¹ on Y is independent of other variables. <br/>
+* Residual(Diff in actual & pred) vs Fitted values(Pred): Linearity assumption is satisfied if residuals are spread out randomly around the 0 line <br/>
 To overcome the issue of non-linearity, you can do a non linear transformation of predictors such as log (X), √X or X² transform the dependent variable.
 ##### No Autocorrelation
-There should be no correlation between the residual terms. Absence of this phenomenon is known as Autocorrelation.
-If the error terms are correlated, the estimated standard errors tend to underestimate the true standard error. If this happens, it causes confidence intervals and prediction intervals to be narrower. 
-This usually occurs in time series models where the next instant is dependent in the previous instant.
-* Durbin – Watson (DW) statistic: It must lie between 0 and 4. If DW = 2, implies no autocorrelation, 0 < DW < 2 implies positive autocorrelation while 2 < DW < 4 indicates negative autocorrelation.
-* Residual vs time plot and look for the seasonal or correlated pattern in residual values.
+There should be no correlation between the residual terms. Absence of this phenomenon is known as Autocorrelation. <br/>
+If the error terms are correlated, the estimated standard errors tend to underestimate the true standard error. If this happens, it causes confidence intervals and prediction intervals to be narrower.  <br/>
+This usually occurs in time series models where the next instant is dependent in the previous instant. <br/>
+* Durbin – Watson (DW) statistic: It must lie between 0 and 4. If DW = 2, implies no autocorrelation, 0 < DW < 2 implies positive autocorrelation while 2 < DW < 4 indicates negative autocorrelation. <br/>
+* Residual vs time plot and look for the seasonal or correlated pattern in residual values. <br/>
 ##### No Multicollinearity
-The independent variables should not be correlated. Absence of this phenomenon is known as multicollinearity.
-Standard errors tend to increase in presence of multicollinearity. With large standard errors, the confidence interval becomes wider leading to less precise estimates of slope parameters.
-* VIF factor: VIF value <= 4 suggests no multicollinearity whereas a value of >= 10 implies serious multicollinearity. 
+The independent variables should not be correlated. Absence of this phenomenon is known as multicollinearity. <br/>
+Standard errors tend to increase in presence of multicollinearity. With large standard errors, the confidence interval becomes wider leading to less precise estimates of slope parameters. <br/>
+* VIF factor: VIF value <= 4 suggests no multicollinearity whereas a value of >= 10 implies serious multicollinearity.  <br/>
 ##### Homoskedasticity
-The error terms must have constant variance. This phenomenon is known as homoskedasticity. The presence of non-constant variance is referred to heteroskedasticity.
-Heteroskedasticity i.e non-constant variance often creates cone-line shape scatter plot of residuals vd fitted. Scattering widens or narrows as the value of fitted increases implies it is consistently accurate when it predicts low values, but highly inconsistent in accuracy when it predicts high values.
-* Residual(Diff in actual & pred) vs Fitted values(Pred) Plot: Should not be cone-shaped/funnel shaped
-* Scale Location Plot ( Square root of Standardized residuals vs Theoritical Quantiles)
-To overcome heteroskedasticity, a possible way is to transform the response variable such as log(Y) or √Y. Also, you can use weighted least square method to tackle heteroskedasticity.
+The error terms must have constant variance. This phenomenon is known as homoskedasticity. The presence of non-constant variance is referred to heteroskedasticity. <br/>
+Heteroskedasticity i.e non-constant variance often creates cone-line shape scatter plot of residuals vd fitted. Scattering widens or narrows as the value of fitted increases implies it is consistently accurate when it predicts low values, but highly inconsistent in accuracy when it predicts high values. <br/>
+* Residual(Diff in actual & pred) vs Fitted values(Pred) Plot: Should not be cone-shaped/funnel shaped <br/>
+* Scale Location Plot ( Square root of Standardized residuals vs Theoritical Quantiles) <br/>
+To overcome heteroskedasticity, a possible way is to transform the response variable such as log(Y) or √Y. Also, you can use weighted least square method to tackle heteroskedasticity. <br/>
 ##### Normal Distribution of error terms
-The error terms must be normally distributed. If not, confidence intervals may become too wide or narrow. Once confidence interval becomes unstable, it leads to difficulty in estimating coefficients based on minimization of least squares.
-* Q-Q plot (Standardized residuals vs Theoritical Quantiles)
+The error terms must be normally distributed. If not, confidence intervals may become too wide or narrow. Once confidence interval becomes unstable, it leads to difficulty in estimating coefficients based on minimization of least squares. <br/>
+* Q-Q plot (Standardized residuals vs Theoritical Quantiles) <br/>
 
 
 ### Ordinary Least Sqaure (OLS) Algorithm
-It is used in python library sklearn. 
+It is used in python library sklearn.  <br/>
 
 ### Gradient Descent Algorithm
 A gradient measures how much the output of a function changes if you change the inputs a little bit. <br/>
@@ -36,9 +36,8 @@ Gradient descent is an optimization algorithm that finds the optimal weights (a,
 2. Calculate the gradient i.e. change in SSE when the weights (a & b) are changed by a very small value from their original randomly initialized value. This helps us move the values of a & b in the direction in which SSE is minimized.
 3. Adjust the weights with the gradients to reach the optimal values where SSE is minimized
 4. Use the new weights for prediction and to calculate the new SSE
-5. Repeat steps 2 and 3 till further adjustments to weights doesn’t significantly reduce the Error
-
-Learning Rate: Determines how fast or slow we will move towards the optimal weights. In order for Gradient Descent to reach the local minimum, we have to set the learning rate to an appropriate value, which is neither too low nor too high. This is because if the steps it takes are too big, it maybe will not reach the local minimum and if you set the learning rate to a very small value, gradient descent will eventually reach the local minimum but it will maybe take too much time.
+5. Repeat steps 2 and 3 till further adjustments to weights doesn’t significantly reduce the Error <br/>
+Learning Rate: Determines how fast or slow we will move towards the optimal weights. In order for Gradient Descent to reach the local minimum, we have to set the learning rate to an appropriate value, which is neither too low nor too high. This is because if the steps it takes are too big, it maybe will not reach the local minimum and if you set the learning rate to a very small value, gradient descent will eventually reach the local minimum but it will maybe take too much time. <br/>
 ##### Batch Gradient Descent
 It is also called vanilla gradient descent, calculates the error for each example within the training dataset, but only after all training examples have been evaluated, the model gets updated. This whole process is like a cycle and called a training epoch. <br/>
 Parameters are updated only after evaluating all examples within training set are evaluated. Takes big, slow steps. <br/> 
@@ -73,8 +72,8 @@ Total Variation (It is not the complete formulae for variance) = Σ(Y – Yavg)�
 R² assumes that every single variable explains the variation in the dependent variable. R² either stay the same or increase with addition of more variables wven if they dont have any relationship with the output variables. <br/> 
 The adjusted R² tells you the percentage of variation explained by only the independent variables that actually affect the dependent variable. It penalizes you for adding variables which dont improve your existing model. <br/> 
 R-square and Adjusted R squared would be exactly same for single input variable. <br/> 
-Adjusted R² = 1 - { (1-R²)(n-1)/(n-k-1) }   
-n is total sample size and k is no of predictors
+Adjusted R² = 1 - { (1-R²)(n-1)/(n-k-1) }    <br/>
+n is total sample size and k is no of predictors <br/>
 
 
 
