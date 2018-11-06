@@ -1,4 +1,27 @@
-Regression is a method of modelling a target value based on independent predictors.
+Regression is a method of modelling a target value based on independent predictors. Explains the degree of relationship between 2 or more variables using the bets fit line.
+
+### Assumptions
+##### Linearity
+There should be a linear and additive relationship between dependent (response) variable and independent (predictor) variable(s). A linear relationship suggests that a change in response Y due to one unit change in X¹ is constant, regardless of the value of X¹. An additive relationship suggests that the effect of X¹ on Y is independent of other variables.
+* Residual(Diff in actual & pred) vs Fitted values(Pred) - Linearity assumption is satisfied if residuals are spread out randomly around the 0 line
+
+##### Autocorrelation
+There should be no correlation between the residual terms. Absence of this phenomenon is known as Autocorrelation.
+This usually occurs in time series models where the next instant is dependent in the previous instant.
+* Durbin – Watson (DW) statistic: It must lie between 0 and 4. If DW = 2, implies no autocorrelation, 0 < DW < 2 implies positive autocorrelation while 2 < DW < 4 indicates negative autocorrelation.
+* Residual vs time plot and look for the seasonal or correlated pattern in residual values.
+
+##### Multicollinearity
+* The independent variables should not be correlated. Absence of this phenomenon is known as multicollinearity.
+
+##### Heteroskedasticity
+* The error terms must have constant variance. This phenomenon is known as homoskedasticity. The presence of non-constant variance is referred to heteroskedasticity.
+
+##### Normal Distribution of error terms
+* The error terms must be normally distributed.
+
+### Ordinary Least Sqaure (OLS) Algorithm
+It is used in python library sklearn. 
 
 ### Gradient Descent Algorithm
 A gradient measures how much the output of a function changes if you change the inputs a little bit. <br/>
@@ -32,17 +55,21 @@ Minimizing the squared error over a set of numbers results in finding its mean.
 ##### MAE - Mean Absolute error
 MAE = (Σ|Y – Ypred|) / n  <br/>
 Minimizing the absolute error results in finding its median. <br/> 
+##### MSE - Mean Squared error
+MSE = {Σ(Y – Ypred)²} / n 
 ##### R Squared (R²) / Coeffiecient of Determination
 It is the proportion of variance in the response variable that is explained by the independant variables. It represents how close the data values are to the fitted regression line. <br/>
 Ranges from 0 to 1 and are commonly stated as percentages from 0% to 100%. <br/>
 R² = 1 - (Explained Variation by model / Total Variation) <br/>
-Explained variation by model = Σ(Y – Ypred)² <br/>
-Total Variation = Σ(Y – Yavg)² <br/>
+Explained variation by model (It is not the complete formulae for variance) = Σ(Y – Ypred)² <br/> 
+Total Variation (It is not the complete formulae for variance) = Σ(Y – Yavg)² <br/>
 ##### Adjusted R Squared (R²)
 R² assumes that every single variable explains the variation in the dependent variable. R² either stay the same or increase with addition of more variables wven if they dont have any relationship with the output variables. <br/> 
 The adjusted R² tells you the percentage of variation explained by only the independent variables that actually affect the dependent variable. It penalizes you for adding variables which dont improve your existing model. <br/> 
 R-square and Adjusted R squared would be exactly same for single input variable. <br/> 
-Adjusted R² = 1 - { (1-R²)(n-1)/(n-k-1) }
+Adjusted R² = 1 - { (1-R²)(n-1)/(n-k-1) }   
+n is total sample size and k is no of predictors
+
 
 
 
