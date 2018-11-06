@@ -8,6 +8,7 @@ Gradient descent is an optimization algorithm that finds the optimal weights (a,
 3. Adjust the weights with the gradients to reach the optimal values where SSE is minimized
 4. Use the new weights for prediction and to calculate the new SSE
 5. Repeat steps 2 and 3 till further adjustments to weights doesn’t significantly reduce the Error
+
 Learning Rate: Determines how fast or slow we will move towards the optimal weights. In order for Gradient Descent to reach the local minimum, we have to set the learning rate to an appropriate value, which is neither too low nor too high. This is because if the steps it takes are too big, it maybe will not reach the local minimum and if you set the learning rate to a very small value, gradient descent will eventually reach the local minimum but it will maybe take too much time.
 ##### Batch Gradient Descent
 It is also called vanilla gradient descent, calculates the error for each example within the training dataset, but only after all training examples have been evaluated, the model gets updated. This whole process is like a cycle and called a training epoch. <br/>
