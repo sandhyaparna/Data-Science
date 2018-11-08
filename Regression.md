@@ -71,6 +71,7 @@ Ridge regression adds “squared magnitude” of coefficient as penalty term to 
 Minimization objective = Least Squares Obj + α * (sum of square of coefficients) <br/>
 Magnitude of coefficients decreases as λ increases. λ basically controls penality term in the cost function of ridge reg. <br/>
 R² for a range of λ and choose the one that gives higher R². <br/>
+If the penality is very large it means model is less complex, therefore the bias would be high. <br/>
 * Assumptions of this regression is same as least squared regression except normality is not to be assumed. <br/>
 #####  Lasso Regression - L1 Regularization
 Coefficients are reducing to 0 even for smaller changes in λ. Lasso selects the only some feature while reduces the coefficients of others to zero. This property is known as feature selection and which is absent in case of ridge. <br/>
@@ -107,5 +108,41 @@ The adjusted R² tells you the percentage of variation explained by only the ind
 R-square and Adjusted R squared would be exactly same for single input variable. <br/> 
 Adjusted R² = 1 - { (1-R²)(n-1)/(n-k-1) }    <br/>
 n is total sample size and k is no of predictors <br/>
+
+### Bullet Points
+* Least Square Error is used to identify the line of best fit
+* Overfitting is more likeley when we 
+* Sum of residuals is always 0 in linear reg
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
 
 
