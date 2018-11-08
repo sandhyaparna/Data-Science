@@ -59,6 +59,7 @@ Chi-sq test is performed only when atleast 80% of the cells have an expected fre
 * Chi-square on contingency table: 2 Categorical var with 2 or more categories (If variables are independent or not)
 
 ### Ho: Correlation
+Correlation values ranges from -1 to +1 <br/>
 Checks if 2 samples are related (linear relationship)
 * Pearson Correlation Test - Parametric
 * Spearman's correlation Test - NonParametric
