@@ -100,7 +100,7 @@ MSE = {Σ(Y – Ypred)²} / n  <br/>
 It is the proportion of variance in the response variable that is explained by the independant variables. It represents how close the data values are to the fitted regression line. <br/>
 It doesn't determine variable importance. <br/> 
 Ranges from 0 to 1 and are commonly stated as percentages from 0% to 100%. <br/>
-R² = 1 - (Explained Variation by model / Total Variation) <br/>
+R² = 1 - (Explained Variation by model / Total Variation) # Value is between 0 & 1<br/>
 Explained variation by model (It is not the complete formulae for variance) = Σ(Y – Ypred)² <br/> 
 Total Variation (It is not the complete formulae for variance) = Σ(Y – Yavg)² <br/>
 ##### Adjusted R Squared (R²)
@@ -111,14 +111,14 @@ Adjusted R² = 1 - { (1-R²)(n-1)/(n-k-1) }    <br/>
 n is total sample size and k is no of predictors <br/>
 
 ### Bullet Points
-* Least Square Error is used to identify the line of best fit
+* Linear regression will have high bias and low variance
+* Least Square Error is used to identify the line of best fit (minimizes sum of squares prediction errors)
 * Overfitting is more likeley when we 
 * Sum of residuals is always 0 and so is mean in linear reg
 * If a degree k polynomial perfectly fits the data, there are high chance that degree k+ polynomial will overfit the data and degree k- will underfit the data
 * Higher degree polynomials over-fit the data
 * Maximum Likelihood estimate (MLE) may not always exist. If MLE exist, it (they) may not be unique.
-* 
-* 
+* F-test in Linear reg is to test the goodness of the model
 * 
 * 
 * 
