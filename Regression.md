@@ -29,9 +29,11 @@ If the errors are not normally distributed, non–linear transformation of the v
 Linear Regression is very sensitive to Outliers. It can terribly affect the regression line and eventually the forecasted values.
 
 ### Ordinary Least Sqaure (OLS) Algorithm
+OLS minimizes residual sum of squares <br/>
 It is used in python library sklearn.  <br/>
 
 ### Gradient Descent Algorithm
+Main objective is to minimize cost function
 A gradient measures how much the output of a function changes if you change the inputs a little bit. <br/>
 Gradient descent is an optimization algorithm that finds the optimal weights (a,b) (Equation: Y=a+bX) that reduces prediction error i.e difference between actual and predicted values. Steps:
 1. Initialize the weights(a & b) with random values and calculate Error (SSE)
