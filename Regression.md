@@ -113,9 +113,9 @@ n is total sample size and k is no of predictors <br/>
 * Least Square Error is used to identify the line of best fit
 * Overfitting is more likeley when we 
 * Sum of residuals is always 0 in linear reg
-* 
-* 
-* 
+* If a degree k polynomial perfectly fits the data, there are high chance that degree k+ polynomial will overfit the data and degree k- will underfit the data
+* Higher degree polynomials over-fit the data
+* Maximum Likelihood estimate (MLE) may not always exist. If MLE exist, it (they) may not be unique.
 * 
 * 
 * 
