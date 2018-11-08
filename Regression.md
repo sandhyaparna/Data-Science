@@ -119,9 +119,9 @@ n is total sample size and k is no of predictors <br/>
 * Higher degree polynomials over-fit the data
 * Maximum Likelihood estimate (MLE) may not always exist. If MLE exist, it (they) may not be unique.
 * F-test in Linear reg is to test the goodness of the model
-* 
-* 
-* 
+* SSR (Sum of Squares Regresion) = Σ(Ypred – Yavg)². Greater the value better the regression model
+* SSE (Sum of Squares errors) = Σ(Y – Ypred)²
+* SST (Sum of Squares total) = Σ(Y – Yavg)²
 * 
 * 
 * 
