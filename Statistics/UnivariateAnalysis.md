@@ -7,7 +7,7 @@ Categorical   <br/>
 * A histogram is left skewed if it has the left tail larger than the right, and right skewed if the right tail is larger than its left <br/>
 * Empirical rule = The empirical rule (also know as three std.dev rule) states that for a normal distribution 68% of the data is within one standard deviation of the mean value, 95% is within two standard deviation, and 99.7% is within three standard deviation <br/>
 
-##### Normal Distributions
+###### Normal Distributions
 • Symmetry <br/>
 • Unimodality (a single most common value) <br/>
 • A continuous range from −∞ to +∞ (from negative infinity to positive infinity) <br/>
