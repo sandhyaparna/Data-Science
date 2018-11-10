@@ -73,8 +73,8 @@ Checks if 2 samples are related (linear relationship)
 
 ### Ho: Normality
 * Shapiro-Wilk: Data sample has Gaussian distribution or not
-* D’Agostino’s K^2: Data sample has Gaussian distribution or not
-* Anderson-Darling: Data sample has Gaussian distribution or not
+* D’Agostino’s K^2: Data sample has Gaussian distribution or not - It is based on transformations of the sample kurtosis and skewness
+* Anderson-Darling: Data sample has Gaussian distribution or not - Most powerful test for Normality. 
 ##### Assumptions for all the Normality Tests
 Observations in each sample are independent and identically distributed (iid)
 
