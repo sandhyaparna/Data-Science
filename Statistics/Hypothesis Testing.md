@@ -70,7 +70,8 @@ Checks if 2 samples are related (linear relationship)
 * Pearson Correlation Test - Parametric
 * Spearman's correlation Test - NonParametric
 * Goodman and Kruskal’s gamma - measure of association for ordinal variables that is based on the number of concordant and
-discordant pairs between two variables. It is sometimes called a measure of monotonicity because it tells you how often the variables have values in the order expected.
+discordant pairs between two variables. It is sometimes called a measure of monotonicity because it tells you how often the variables have values in the order expected
+* Kendall’s Tau Rank-Order Correlation
 #### Assumptions of Pearson Correlation Test
 * Observations in each sample are independent and identically distributed (iid)
 * Observations in each sample are normally distributed
