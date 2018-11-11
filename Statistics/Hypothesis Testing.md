@@ -52,7 +52,7 @@ Quantitative variable is dependent and Categorical vars are independent
 
 ### Ho: Variance
 * Fisher's test: Comparision between 2 variances
-* Levene's test: Comparision between 2+ variances 
+* Levene's test: Comparision between 2+ variances (Test used for ANOVA assumptions)
 
 ### Ho: Proportions (Categorical Var)
 Exact Fisher test is performed if Total N is <=90  (or) expected freq less than 5 <br/>
@@ -112,13 +112,23 @@ The independent t-test, also called the two sample t-test, independent-samples t
 * No outliers - BoxPlot
 
 ### ANOVA
-Analysis of variance (ANOVA) is a statistical procedure used to compare the mean values on some variable between two or more independent groups. Uses F-statistic.
+Analysis of variance (ANOVA) is a statistical procedure used to compare the mean values on some variable between two or more independent groups. F-statistic = Ratio of the sum of squares between and within groups
 ##### Assumptions
 * The dependent variable must be continuous (interval/ratio).
 * The observations are independent of one another.
 * Each group sample is drawn from a normally distributed population
 * All populations have a common variance
 * Size of eachgroup is >20
+
+### ANCOVA
+##### Assumptions
+* The dependent variable must be continuous (interval/ratio).
+* The observations are independent of one another.
+* Each group sample is drawn from a normally distributed population
+* All populations have a common variance
+* Size of eachgroup is >20
+* 
+
 
 ### Pearson Correlation 
 Measures the strength & direction of LINEAR relationship between 2 variables
