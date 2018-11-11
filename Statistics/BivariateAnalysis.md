@@ -2,6 +2,7 @@
 
 ##### 2 Quantitative Variables
 * Scatter plot - Correlation
+* Line Graph - X-axis is time usually
 
 Covariance - Variance between 2 variables. Indicates the extent to which two random variables change in tandem. Lies between -∞ and +∞.
 Cov(X,Y) = Σ(Xi-Xavg)(Yi-Yavg) / (n-1)
@@ -15,6 +16,10 @@ Corr(X,Y) = Cov(X,Y)/XstdDev.YstdDev
 
 ##### Quantitative & Categorical Variables
 * Box plot comparision between the groups of Categorical variables
+
+
+
+
 
 
 
