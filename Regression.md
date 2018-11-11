@@ -106,7 +106,7 @@ Total Variation (It is not the complete formulae for variance) = Σ(Y – Yavg)�
 ##### Adjusted R Squared (R²)
 R² assumes that every single variable explains the variation in the dependent variable. R² either stay the same or increase with addition of more variables wven if they dont have any relationship with the output variables. <br/> 
 The adjusted R² tells you the percentage of variation explained by only the independent variables that actually affect the dependent variable. It penalizes you for adding variables which dont improve your existing model. <br/> 
-R-squared = 1-(SSE/SST) = SSR/SST
+R-squared = 1-(SSE/SST) = SSR/SST <br/> 
 R-square and Adjusted R squared would be exactly same for single input variable. <br/> 
 Adjusted R² = 1 - { (1-R²)(n-1)/(n-k-1) }    <br/>
 n is total sample size and k is no of predictors <br/>
