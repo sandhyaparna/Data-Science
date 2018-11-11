@@ -46,7 +46,7 @@ Quantitative variable is dependent and Categorical vars are independent
 * T-Test on two independent samples: 1 Categorical var with 2 categories, 1 Quantitative variable
 * T-test on two paired samples: 1 Categorical var with 2 categories i.e Before and After, 1 Quantitative variable
 * One-way ANOVA: 1 Categorical var with 2+ categories, 1 Quantitative variable
-* Factorial ANOVA: 2 or more Categorical vars with 2 or more categories, 1 Quantitative variable
+* Factorial ANOVA (2-way, 3-way etc.): 2 or more Categorical vars & interaction between the 2, with 2 or more categories, 1 Quantitative variable
 * Multiple ANOVAs: 1 Categorical var with 2 or more categories, 2 or more Quantitative variables
 * MANOVA: 2 or more Categorical vars with 2 or more categories, 2 or more Quantitative variables
 
@@ -104,13 +104,21 @@ The alternative hypothesis assumes that some difference exists between the true 
 One independent, categorical variable that has two levels/groups & One continuous dependent variable. <br/>
 The independent t-test, also called the two sample t-test, independent-samples t-test or student's t-test, is an inferential statistical test that determines whether there is a statistically significant difference between the means in two unrelated groups. <br/>
 ##### Assumptions
-* The dependent is approximately normally distributed within each group
+* The dependent var is approximately normally distributed within each group
   * Mann-Whitney U Test doesn't require Normality assumption
 * Homogeneity of variances - The variances of the two groups you are measuring are equal in the population - Levene’s test for homogeneity
   * Adjustment to degrees of freedom using the Welch-Satterthwaite method, Welch t Test statistic
 * Independence of observations - No relationship between observations in each group or between the groups themselves
 * No outliers - BoxPlot
 
+### ANOVA
+Analysis of variance (ANOVA) is a statistical procedure used to compare the mean values on some variable between two or more independent groups. Uses F-statistic.
+##### Assumptions
+* The dependent variable must be continuous (interval/ratio).
+* The observations are independent of one another.
+* Each group sample is drawn from a normally distributed population
+* All populations have a common variance
+* Size of eachgroup is >20
 
 ### Pearson Correlation 
 Measures the strength & direction of LINEAR relationship between 2 variables
