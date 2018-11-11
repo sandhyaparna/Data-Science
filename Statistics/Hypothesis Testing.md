@@ -129,8 +129,8 @@ Tests whether two categorical variables are related or independent
 ##### Assumptions
 * Observations used in the calculation of the contingency table are independent
 * 25 or more examples in each cell of the contingency table
-
-
+Expected freq = (Row Total * Column Total)/Overall Total
+Chi-square = Σ((Xobs-Xexpected)/Xexpected)
 
 Chi sq goodness of fit - if a sample proportion is consistent with hypothesized distribution
 chi sq test - if 2 categorical vars are idependent or not?
