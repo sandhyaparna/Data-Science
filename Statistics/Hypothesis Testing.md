@@ -46,6 +46,7 @@ Quantitative variable is dependent and Categorical vars are independent
 * T-Test on two independent samples: 1 Categorical var with 2 categories, 1 Quantitative variable
 * T-test on two paired samples: 1 Categorical var with 2 categories i.e Before and After, 1 Quantitative variable
 * One-way ANOVA: 1 Categorical var with 2+ categories, 1 Quantitative variable
+* ANCOVA: 1 Categorical var with 2+ categories, 1 Quantitative variable & 1 co-variate Quantitative variable
 * Factorial ANOVA (2-way, 3-way etc.): 2 or more Categorical vars & interaction between the 2, with 2 or more categories, 1 Quantitative variable
 * Multiple ANOVAs: 1 Categorical var with 2 or more categories, 2 or more Quantitative variables
 * MANOVA: 2 or more Categorical vars with 2 or more categories, 2 or more Quantitative variables
@@ -127,8 +128,8 @@ Analysis of variance (ANOVA) is a statistical procedure used to compare the mean
 * Each group sample is drawn from a normally distributed population
 * All populations have a common variance
 * Size of eachgroup is >20
-* 
-
+* The independent variable and the covariate are independent of each other.
+* Relationship between the covariate and the dependent variable should be the same for all groups
 
 ### Pearson Correlation 
 Measures the strength & direction of LINEAR relationship between 2 variables
