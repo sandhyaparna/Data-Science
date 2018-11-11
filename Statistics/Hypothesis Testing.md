@@ -44,7 +44,7 @@ Welch’s t-test is used in case homogenity assumption is not met.
 Quantitative variable is dependent and Categorical vars are independent
 * One Sample T-Test: 1 Quantitative variable
 * T-Test on two independent samples: 1 Categorical var with 2 categories, 1 Quantitative variable
-* T-test on two paired samples: 1 Categorical var with 2 categories i.e Before and After, 1 Quantitative variable
+* T-test on two paired samples: 1 Categorical var with 2 categories i.e Before and After, 1 Quantitative variable (Repeated measurements on the same indivuals)
 * One-way ANOVA: 1 Categorical var with 2+ categories, 1 Quantitative variable
 * ANCOVA: 1 Categorical var with 2+ categories, 1 Quantitative variable & 1 co-variate Quantitative variable
 * Factorial ANOVA (2-way, 3-way etc.): 2 or more Categorical vars & interaction between the 2, with 2 or more categories, 1 Quantitative variable
@@ -70,11 +70,11 @@ Chi-sq test is performed only when atleast 80% of the cells have an expected fre
 ### Ho: Correlation
 Correlation values ranges from -1 to +1 <br/>
 Checks if 2 samples are related (linear relationship)
-* Pearson Correlation Test - Parametric
-* Spearman's correlation Test - NonParametric
+* Pearson Correlation Test - Parametric - Tests whether two samples have a linear relationship
+* Spearman's correlation Test - NonParametric - Tests whether two samples have a monotonic relationship
 * Goodman and Kruskal’s gamma - measure of association for ordinal variables that is based on the number of concordant and
 discordant pairs between two variables. It is sometimes called a measure of monotonicity because it tells you how often the variables have values in the order expected
-* Kendall’s Tau Rank-Order Correlation
+* Kendall’s Tau Rank-Order Correlation - Tests whether two samples have a monotonic relationship
 #### Assumptions of Pearson Correlation Test
 * Observations in each sample are independent and identically distributed (iid)
 * Observations in each sample are normally distributed
