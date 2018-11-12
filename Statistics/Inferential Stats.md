@@ -33,9 +33,10 @@ Skew = 3 * (Mean – Median) / Standard Deviation <br/>
 ##### Kurtosis
 It is the sharpness of the peak of a frequency-distribution curve
 
-![](http://blog.cloudera.com/wp-content/uploads/2015/12/distribution.png)
+##### Distributions
 http://blog.cloudera.com/blog/2015/12/common-probability-distributions-the-data-scientists-crib-sheet/
 https://www.dartmouth.edu/~chance/teaching_aids/books_articles/probability_book/amsbook.mac.pdf
+![](http://blog.cloudera.com/wp-content/uploads/2015/12/distribution.png)
 
 
 ##### Data Transformations
