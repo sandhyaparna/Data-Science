@@ -12,4 +12,4 @@ When the expected mean of the sampling distribution of a statistic is not equal 
 Cook’s Distance plot - Residuals vs Leverage Plot
 
 
-
+![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/04/30195702/Stats1.png)
