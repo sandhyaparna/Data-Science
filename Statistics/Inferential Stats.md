@@ -36,6 +36,7 @@ It is the sharpness of the peak of a frequency-distribution curve
 ##### Distributions
 http://blog.cloudera.com/blog/2015/12/common-probability-distributions-the-data-scientists-crib-sheet/
 https://www.dartmouth.edu/~chance/teaching_aids/books_articles/probability_book/amsbook.mac.pdf
+http://galton.uchicago.edu/~eichler/stat22000/Handouts/l12.pdf
 ![](http://blog.cloudera.com/wp-content/uploads/2015/12/distribution.png)
 
 
