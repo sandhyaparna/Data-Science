@@ -29,6 +29,7 @@ Categorical   <br/>
 
 Mean, Median, Mode are measures of central Tendancy <br/>
 Range, IQR, Variance, Standard Deviation are measures of Variance <br/>
+![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/04/30195702/Stats1.png)
 
 ###### Graphical Representations
 * Box plot
