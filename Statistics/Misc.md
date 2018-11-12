@@ -10,3 +10,6 @@ When the expected mean of the sampling distribution of a statistic is not equal 
 
 ### Outliers
 Cook’s Distance plot - Residuals vs Leverage Plot
+
+
+
