@@ -30,6 +30,14 @@ It is the probability of the observed or the more xtreme value given the null hy
 If one tail is longer than another, the distribution is skewed. Skewness is a measure of symmetry in a distribution. <br/>
 Skew = 3 * (Mean – Median) / Standard Deviation <br/>
 
+##### Kurtosis
+It is the sharpness of the peak of a frequency-distribution curve
+
+![](http://blog.cloudera.com/wp-content/uploads/2015/12/distribution.png)
+http://blog.cloudera.com/blog/2015/12/common-probability-distributions-the-data-scientists-crib-sheet/
+https://www.dartmouth.edu/~chance/teaching_aids/books_articles/probability_book/amsbook.mac.pdf
+
+
 ##### Data Transformations
 * Right skewed data can be made Normal by application of the square-root or log transformations.
 * 
