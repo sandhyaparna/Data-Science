@@ -26,6 +26,10 @@ Categorical   <br/>
 * Range = Max - Min <br/>
 * Variance - Spread of the data from their average value - The average of the squared differences from the mean <br/>
 * Standard Deviation - How far the data is deviated(dispersed) from the mean (Exact distances from mean) - square root of the variance is the standard deviation <br/>
+
+Mean, Median, Mode are measures of central Tendancy <br/>
+Range, IQR, Variance, Standard Deviation are measures of Variance <br/>
+
 ###### Graphical Representations
 * Box plot
 * Histogram
