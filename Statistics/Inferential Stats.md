@@ -24,7 +24,11 @@ Confidence intervals are based on the idea that if a study were repeated an infi
 In a confidence interval, the range of values above and below the sample statistic is called the margin of error <br/>
 
 ##### p-value
-It is the probability of the observed or the more xtreme value given the null hypothesis is true
+It is the probability of the observed or the more xtreme value given the null hypothesis is true <br/>
+
+##### Skewness
+If one tail is longer than another, the distribution is skewed. Skewness is a measure of symmetry in a distribution. <br/>
+Skew = 3 * (Mean – Median) / Standard Deviation <br/>
 
 ##### Data Transformations
 * Right skewed data can be made Normal by application of the square-root or log transformations.
