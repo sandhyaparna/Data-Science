@@ -5,5 +5,5 @@ Simpson’s paradox refers to a phenomena whereby the association between a pair
 
 Check out the example here - https://www.thoughtco.com/what-is-simpsons-paradox-3126365
 
-
-
+### Outliers
+Cook’s Distance plot - Residuals vs Leverage Plot
