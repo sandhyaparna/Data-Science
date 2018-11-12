@@ -15,7 +15,10 @@ Data represented by the binomial distribution must meet four requirements: <br/>
 
 ##### Confidence Intervals
 Confidence interval, which is the interval between two values that represent the upper and lower confidence limits or confidence bounds for a statistic. <br/>
-Confidence intervals are based on the idea that if a study were repeated an infinite number of times, each time drawing a different sample of the same size from the same population, and a confidence interval based on each sample were constructed, x% of the time the confidence interval would contain the true parameter value that the study seeks to estimate, where x is the size of the confidence interval. For instance, if our test statistic is the mean and we are using a 95% confidence interval, over an infinite number of repetitions of drawing a sample and computing its mean, 95% of the time the confidence interval thus constructed would contain the true mean of the population. <br/>
+Confidence intervals are based on the idea that if a study were repeated an infinite number of times, each time drawing a different sample of the same size from the same population, and a confidence interval based on each sample were constructed, x% of the time the confidence interval would contain the true parameter value that the study seeks to estimate, where x is the size of the confidence interval. For instance, if our test statistic is the mean and we are using a 95% confidence interval, over an infinite number of repetitions of drawing a sample and computing its mean, 95% of the time the confidence interval thus constructed would contain the true mean of the population. 
+
+##### Margin of error
+In a confidence interval, the range of values above and below the sample statistic is called the margin of error <br/>
 
 ##### p-value
 It is the probability of the observed or the more xtreme value given the null hypothesis is true
