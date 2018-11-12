@@ -11,5 +11,6 @@ When the expected mean of the sampling distribution of a statistic is not equal 
 ### Outliers
 Cook’s Distance plot - Residuals vs Leverage Plot
 
+### Bessels Correction
+Bessels Correction while calculating a sample standard deviation is used when we are trying to estimate population standard deviation from the sample, it is less biased
 
-![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/04/30195702/Stats1.png)
