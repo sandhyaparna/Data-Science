@@ -48,13 +48,16 @@ http://galton.uchicago.edu/~eichler/stat22000/Handouts/l12.pdf
   * Squares or cubes or higher powers
 * Box-Cox Transformation - Transforms data into normal <br/>
    Lambda value (λ)	Transformed data (Y’) <br/>
-    -3	            Y^-3 = 1/Y3 <br/>
-    -2	            Y^-2 = 1/Y2 <br/>
-    -1	            Y^-1 = 1/Y1 <br/>
-    -0.5	          Y^-0.5 = 1/(√(Y)) <br/>
-    0	              log(Y)** <br/>
-    0.5	            Y0.5 = √(Y) <br/>
-    1	              Y^1 = Y <br/>
-    2	              Y^2 <br/>
-    3	              Y^3   <br/>
+    -3 :	            Y^-3 = 1/Y3 <br/>
+    -2	:             Y^-2 = 1/Y2 <br/>
+    -1	:             Y^-1 = 1/Y1 <br/>
+    -0.5	:           Y^-0.5 = 1/(√(Y)) <br/>
+    0	:              log(Y)** <br/>
+    0.5	:            Y0.5 = √(Y) <br/>
+    1	:              Y^1 = Y <br/>
+    2 :              Y^2 <br/>
+    3 :              Y^3   <br/>
+    
+    
+    
 
