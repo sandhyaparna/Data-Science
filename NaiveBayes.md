@@ -2,5 +2,6 @@ Naive Bayes is a classification technique based on Bayes' theorem with an assump
 
 ### Assumptions
 * Predictors are independent
+
 ![](https://cdn-images-1.medium.com/max/800/1*l0MccMHzSjtpJ_mGaItVfA.jpeg)
 
