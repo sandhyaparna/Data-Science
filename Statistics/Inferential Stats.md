@@ -41,5 +41,20 @@ http://galton.uchicago.edu/~eichler/stat22000/Handouts/l12.pdf
 
 
 ##### Data Transformations
-* Right skewed data can be made Normal by application of the square-root or log transformations.
-* 
+* Right skewed Data
+  * Log Transformation - Used for reducing right skewness. Can't be applied when there are 0 or -ve values
+  * Roots - Square roots can be applied on 0 & +ve values, Cube roots can be applied on 0 & -ve values 
+* Left skewed Data
+  * Squares or cubes or higher powers
+* Box-Cox Transformation - Transforms data into normal
+   Lambda value (λ)	Transformed data (Y’)
+    -3	            Y^-3 = 1/Y3
+    -2	            Y^-2 = 1/Y2
+    -1	            Y^-1 = 1/Y1
+    -0.5	          Y^-0.5 = 1/(√(Y))
+    0	              log(Y)**
+    0.5	            Y0.5 = √(Y)
+    1	              Y^1 = Y
+    2	              Y^2
+    3	              Y^3  
+
