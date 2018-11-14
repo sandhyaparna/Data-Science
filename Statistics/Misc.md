@@ -1,8 +1,11 @@
 ### Outliers
 Outlier is an observation that appears far away and diverges from an overall pattern in a sample
-Univariate Outliers: Distribution of a single variable
-Multivariate Outliers: Distributions in multi-dimensions
-
+* Univariate Outliers: Distribution of a single variable - Box-plot, Histogram
+* Multivariate Outliers: Distributions in multi-dimensions (Eg- For a particular height, certain weight may be an outlier) - Scatter Plot
+##### Detecting Outliers
+* Beyond the range of -1.5 x IQR to 1.5 x IQR
+* Out of range of 5th and 95th percentile
+* 3 or more standard deviation away from mean
 Cook’s Distance plot - Residuals vs Leverage Plot
 
 
