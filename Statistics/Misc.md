@@ -6,9 +6,8 @@ Outlier is an observation that appears far away and diverges from an overall pat
 * Beyond the range of -1.5 x IQR to 1.5 x IQR
 * Out of range of 5th and 95th percentile
 * 3 or more standard deviation away from mean - z score
-* 
-
-Cook’s Distance plot - Residuals vs Leverage Plot
+* Mahalanobis’ distance
+* Cook’s Distance plot - Residuals vs Leverage Plot
 
 
 ### Simpson's paradox
