@@ -7,12 +7,10 @@ Helps in minimizing noise, bias and variance. <br/>
 Output of primary classifiers, called level 0 models, will be used as attributes for another classifier, called meta-model, to approximate the same classification problem. <br/>
 
 ### Bagging
-* N sets are created from Training data by random sampling with replacement
-* 
+* N sets are created from Training data by random sampling with replacement - Any element has the same probability to appear in a new data set.
 
 ### Boosting
-
-
+* N sets are created from Training data by random sampling with replacement - But observations are weighted and therefore some of them will take part in the new sets more often.
 
 
 
