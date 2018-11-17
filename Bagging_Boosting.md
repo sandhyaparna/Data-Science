@@ -16,7 +16,7 @@ Output of primary classifiers, called level 0 models, will be used as attributes
 ### Boosting
 * Boosting is best used when single model gets a very low performance (Model is too simple implies high bias) as it generates a combined model with lower errors as it optimises the advantages and reduces pitfalls of the single model (reduce Bias).
 * N sets are created from Training data by random sampling with replacement - But observations are weighted and therefore some of them will take part in the new sets more often.
-* Every time a new learner is built in a sequential way, takes into account the previous classifiers’ success. After each training step, the weights are redistributed. Misclassified data increases its weights to emphasise the most difficult cases. In this way, subsequent learners will focus on them during their training.
+* Every time a new learner is built in a sequential way (outcome of one model becomes input to the next model), takes into account the previous classifiers’ success. After each training step, the weights are redistributed. Misclassified data increases its weights to emphasise the most difficult cases. In this way, subsequent learners will focus on them during their training.
 * Boosting assigns a second set of weights, this time for the N classifiers, the algorithm allocates weights to each resulting model, a learner with good a classification result on the training data will be assigned a higher weight than a poor one, in order to take a weighted average of their estimates.
 * In AdaBoost, an error less than 50% is required to maintain the model; otherwise, the iteration is repeated until achieving a learner better than a random guess.
 ##### Algorithms
