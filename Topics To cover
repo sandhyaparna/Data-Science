@@ -4,3 +4,7 @@
 * ML Algorithms
 
 
+Cross-validation is performed to evaluate model but final model is built on entire data
+
+
+
