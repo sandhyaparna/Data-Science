@@ -13,7 +13,7 @@ GBM starts with a weak model for making predictions. The target of such a model 
 
 ### Parameter Tuning
 https://www.analyticsvidhya.com/blog/2016/02/complete-guide-parameter-tuning-gradient-boosting-gbm-python/
-
+https://medium.com/all-things-ai/in-depth-parameter-tuning-for-gradient-boosting-3363992e9bae
 ##### Learning rate/Shrinkage 
 * Controls the magnitude of change in estimates after each tree. 
 * Lower values are generally preferred as they make the model robust to the specific characteristics of tree and thus allowing it to generalize well but Lower values would require higher number of trees to model all the relations and will be computationally expensive.
@@ -22,7 +22,8 @@ https://www.analyticsvidhya.com/blog/2016/02/complete-guide-parameter-tuning-gra
 * Use a small shrinkage (slow learn rate) when growing many trees.
 * One typically chooses the shrinkage parameter beforehand and varies the number of iterations (trees) N with respect to the chosen shrinkage. 
 
-
+##### Number of trees
+* GBM is fairly robust at higher number of trees but it can still overfit at a point. Hence, this should be tuned using CV for a particular learning rate
 
 
 
