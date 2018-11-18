@@ -5,7 +5,9 @@ Helps in minimizing noise, bias and variance. <br/>
 * N sets are created from Training data by random sampling with replacement - Each set is trained using same learning algorithm and thus N learners are generated
 * Decreases the variance of your single estimate as they combine several estimates from different models. So the result may be a model with higher stability.
 ##### Hybrid methods - Different Learning algorithms - Stacking
-Output of primary classifiers, called level 0 models, will be used as attributes for another classifier, called meta-model, to approximate the same classification problem. <br/>
+Each learner uses a subset of dat
+Output of primary classifiers, called level 0 models, will be used as attributes for another classifier(Combiner), called meta-model, to approximate the same classification problem. <br/>
+
 
 ### Bagging
 * Bagging is best used when singe-model is over-fitting. Boosting is not used when single-model is over-fitting as boosting itself suffers from over-fitting problem.
@@ -25,7 +27,8 @@ Output of primary classifiers, called level 0 models, will be used as attributes
 * XGBoost
 * H2O
 * LPBoost
-* 
+* AdaBoost
+* LogitBoost
 * CatBoost - https://www.kdnuggets.com/2018/11/mastering-new-generation-gradient-boosting.html
 
 
