@@ -29,6 +29,7 @@ Output of primary classifiers, called level 0 models, will be used as attributes
 * XGBoost - https://www.kdnuggets.com/2017/10/xgboost-top-machine-learning-method-kaggle-explained.html
 https://www.kdnuggets.com/2017/10/understanding-machine-learning-algorithms.html
 https://www.kdnuggets.com/2017/10/xgboost-concise-technical-overview.html
+https://jessesw.com/XG-Boost/
 * H2O
 * LPBoost
 * AdaBoost
