@@ -14,6 +14,7 @@ Output of primary classifiers, called level 0 models, will be used as attributes
 * N sets are created from Training data by random sampling with replacement - Any element has the same probability to appear in a new data set.
 * Training is parallel i.e. each model is built independently.
 * Result is obtained by averaging the responses of the N learners (or majority vote).
+* Works best when classifier is unstable (Decision Trees), where as bagging can hurt stable model by introducing artificial variability 
 
 ### Boosting
 * Boosting is best used when single model gets a very low performance (Model is too simple implies high bias) as it generates a combined model with lower errors as it optimises the advantages and reduces pitfalls of the single model (reduce Bias).
