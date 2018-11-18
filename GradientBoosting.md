@@ -11,10 +11,17 @@ GBM starts with a weak model for making predictions. The target of such a model 
 * Typically uses decision trees
 * Intution behind GBM is to repetitively leverage the patterns in residuals and strengthen a model with weak predictions and make it better
 
-##### Parameter Tuning
+### Parameter Tuning
 https://www.analyticsvidhya.com/blog/2016/02/complete-guide-parameter-tuning-gradient-boosting-gbm-python/
 
-* Learning rate/Shrinkage - Controls the magnitude of change in estimates after each tree. Lower values are generally preferred as they make the model robust to the specific characteristics of tree and thus allowing it to generalize well but Lower values would require higher number of trees to model all the relations and will be computationally expensive.
+##### Learning rate/Shrinkage 
+* Controls the magnitude of change in estimates after each tree. 
+* Lower values are generally preferred as they make the model robust to the specific characteristics of tree and thus allowing it to generalize well but Lower values would require higher number of trees to model all the relations and will be computationally expensive.
+* shrinkage is used for reducing, or shrinking, the impact of each additional fitted base-learner (tree). It reduces the size of incremental steps and thus penalizes the importance of each consecutive iteration. The intuition behind this technique is that it is better to improve a model by taking many small steps than by taking fewer large steps. If one of the boosting iterations turns out to be erroneous, its negative impact can be easily corrected in subsequent steps.
+* High learn rates and especially values close to 1.0 typically result in overfit models with poor performance.  Values much smaller than .01 significantly slow down the learning process and might be reserved for overnight runs.
+* Use a small shrinkage (slow learn rate) when growing many trees.
+* One typically chooses the shrinkage parameter beforehand and varies the number of iterations (trees) N with respect to the chosen shrinkage. 
+
 
 
 
