@@ -25,6 +25,11 @@ https://medium.com/all-things-ai/in-depth-parameter-tuning-for-gradient-boosting
 ##### Number of trees
 * GBM is fairly robust at higher number of trees but it can still overfit at a point. Hence, this should be tuned using CV for a particular learning rate
 
+##### Subsample
+* The fraction of observations to be selected for each tree. Selection is done by random sampling
+* Choosing subsample<1.0 (~0.8) leads to a reduction of variance and an increase in bias.
+
+
 
 
 
