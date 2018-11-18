@@ -26,13 +26,15 @@ Output of primary classifiers, called level 0 models, will be used as attributes
 ##### Algorithms
 * GBM
 * Light GBM
-* XGBoost
+* XGBoost - https://www.kdnuggets.com/2017/10/xgboost-top-machine-learning-method-kaggle-explained.html
+https://www.kdnuggets.com/2017/10/understanding-machine-learning-algorithms.html
+https://www.kdnuggets.com/2017/10/xgboost-concise-technical-overview.html
 * H2O
 * LPBoost
 * AdaBoost
 * LogitBoost
 * CatBoost - https://www.kdnuggets.com/2018/11/mastering-new-generation-gradient-boosting.html
-
+https://www.kdnuggets.com/2018/03/catboost-vs-light-gbm-vs-xgboost.html
 
 
 
