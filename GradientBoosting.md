@@ -11,6 +11,10 @@ GBM starts with a weak model for making predictions. The target of such a model 
 * Typically uses decision trees
 * Intution behind GBM is to repetitively leverage the patterns in residuals and strengthen a model with weak predictions and make it better
 
+##### Parameter Tuning
+https://www.analyticsvidhya.com/blog/2016/02/complete-guide-parameter-tuning-gradient-boosting-gbm-python/
+
+* Learning rate/Shrinkage - Controls the magnitude of change in estimates after each tree. Lower values are generally preferred as they make the model robust to the specific characteristics of tree and thus allowing it to generalize well but Lower values would require higher number of trees to model all the relations and will be computationally expensive.
 
 
 
