@@ -6,7 +6,8 @@ Should have detailed model explanations
 Assumptions
 Advantages & Disadvantages
 Kinds of inputs acceptable - Categorical and Numeric
-Can Tragte data be categorical or should be encoded?
+Can Target data be categorical or should be encoded?
+Top important features
 Parameters - role and usage
 Cross-Validation
 Feature selection
