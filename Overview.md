@@ -2,17 +2,17 @@
 https://www.ritchieng.com/machine-learning-decision-trees/ 
 
 #### ML-Algorithms
-Should have detailed model explanations 
-Assumptions
-Advantages & Disadvantages
-Kinds of inputs acceptable - Categorical and Numeric
-Can Target data be categorical or should be encoded?
-Top important features
-Parameters - role and usage
-Cross-Validation
-Feature selection
-Feature engineering
-Data pre-processing
+Should have detailed model explanations  <br/>
+Assumptions <br/>
+Advantages & Disadvantages <br/>
+Kinds of inputs acceptable - Categorical and Numeric <br/>
+Can Target data be categorical or should be encoded? <br/>
+Top important features <br/>
+Parameters - role and usage <br/>
+Cross-Validation <br/>
+Feature selection <br/>
+Feature engineering <br/>
+Data pre-processing <br/>
 
 
 #### How to interpret deep learning models - 
