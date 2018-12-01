@@ -1,3 +1,5 @@
+https://www.analyticsvidhya.com/blog/2018/06/comprehensive-guide-for-ensemble-models/
+
 ### Multi-Classifiers
 A set of weak learners (Train multiple models) are combined to create a strong learner that obtains better performance than a single one. <br/>
 Helps in minimizing noise, bias and variance. <br/>
@@ -15,7 +17,10 @@ Output of primary classifiers, called level 0 models, will be used as attributes
 * Training is parallel i.e. each model is built independently.
 * Result is obtained by averaging the responses of the N learners (or majority vote).
 * Works best when classifier is unstable (Decision Trees), where as bagging can hurt stable model by introducing artificial variability 
-
+##### Algorithms
+* Random Forests - Parallel processing is not possible
+* Bagging meta-estimator
+* Regularized Greedy Forests
 
 ### Boosting
 * Boosting is best used when single model gets a very low performance (Model is too simple implies high bias) as it generates a combined model with lower errors as it optimises the advantages and reduces pitfalls of the single model (reduce Bias).
