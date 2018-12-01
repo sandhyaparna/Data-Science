@@ -13,7 +13,7 @@ In case of classification tree, the value (class) obtained by terminal node in t
 in that region. Thus, if an unseen data observation falls in that region, we’ll make its prediction with mode value.
 
 ## Assumptions
-Predictor variables are not independent <br/>
+Predictor variables are not independent. Decision Trees works best when the predictor vars are correlated. <br/>
 Nonlinear model - Predictor variables have nonlinear relationship among them (There is no equation to express relationship between independent and dependant variables i.e model is constructed based on the observed data <br/>
 
 ## Algorithms
@@ -108,23 +108,23 @@ https://pdfs.semanticscholar.org/025b/8c109c38dc115024e97eb0ede5ea873fffdb.pdf  
 Allows the tree to perfectly classify the training set, and then post prune the tree <br/>
 
 COMPLEXITY PARAMETER: 
-Used to control the size of the decision tree and to select the optimal tree size  <br/>
-Calculates error complexity for the entire tree before splitting and after splitting. If the difference between errors before splitting and after splitting decreases by atleast cp value mentioned, splitting is useful <br/>
-Any split which does not improve the fit by cp will likely be pruned off <br/>
-If the cost of adding another variable to the decision tree from the current node is above the value of cp, then tree building does not continue <br/>
-cp is similar to min_impurity_decrease in python <br/>
+* Used to control the size of the decision tree and to select the optimal tree size  <br/>
+* Calculates error complexity for the entire tree before splitting and after splitting. If the difference between errors before splitting and after splitting decreases by atleast cp value mentioned, splitting is useful <br/>
+* Any split which does not improve the fit by cp will likely be pruned off <br/>
+* If the cost of adding another variable to the decision tree from the current node is above the value of cp, then tree building does not continue <br/>
+* cp is similar to min_impurity_decrease in python <br/>
 
 ## Advantages
-Incredibly simple to understand & interpret due to their visual representation <br/>
-They require very little data preperation, handles misisng and outliers, both qualitative and quantitative variables <br/>
-Handles multi-classification problems <br/>
-Performs feature selection  <br/>
-Model can be validated using statistical sets <br/>
-Nonlinear relationships between parameters do not affect tree performance <br/>
+* Incredibly simple to understand & interpret due to their visual representation <br/>
+* They require very little data preperation, handles misisng and outliers, both qualitative and quantitative variables <br/>
+* Handles multi-classification problems <br/>
+* Performs feature selection  <br/>
+* Model can be validated using statistical sets <br/>
+* Nonlinear relationships between parameters do not affect tree performance <br/>
 
 ## Disadvantages
-Variance is high (incase of long depth trees) and if not pruned leads to overfitting/complex tree <br/>
-Trees are unstable since small variations in data might result in a completely different tree being generated - Can be avoided using ensemble models like Bagging or Boosting <br/>
-It is locally optimized (decisions are made at each node) using a greedy algorithm where we cannot guarantee a return to the globally optimal decision tree - Can be mitigated by training multiple trees in an ensemble learner  <br/>
-Create biased trees if some classes dominate. It is therefore recommended to balance the dataset prior to using in a tree <br/>
+* * Variance is high (incase of long depth trees) and if not pruned leads to overfitting/complex tree <br/>
+* Trees are unstable since small variations in data might result in a completely different tree being generated - Can be avoided using ensemble models like Bagging or Boosting <br/>
+* It is locally optimized (decisions are made at each node) using a greedy algorithm where we cannot guarantee a return to the globally optimal decision tree - Can be mitigated by training multiple trees in an ensemble learner  <br/>
+* Create biased trees if some classes dominate. It is therefore recommended to balance the dataset prior to using in a tree <br/>
 
