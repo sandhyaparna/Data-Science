@@ -5,10 +5,14 @@
 ### AdaBoost - Adaptive Boosting
 * AdaBoost is a boosting done on Decision stump. Decision stump is a unit depth tree which decides just 1 most significant cut on features
 * At each iteration, adaptive boosting changes the sample distribution by modifying the weights attached to each of the instances. It increases the weights of the wrongly predicted instances and decreases the ones of the correctly predicted instances. The weak learner thus focuses more on the difficult instances. After being trained, the weak learner is added to the strong one according to his performance (so-called alpha weight). The higher it performs, the more it contributes to the strong learner
+* Good generalization- Suited for any kind of classification problem & Not prone to overfitting
+* Sensitive to noisy data and outliers
 
 ### GBM 
 * Doesn’t modify the sample distribution at each iteration for instances. Instead of training on a newly sample distribution, the weak learner trains on the remaining errors (so-called pseudo-residuals) of the strong learner. It is another way to give more importance to the difficult instances. At each iteration, the pseudo-residuals are computed and a weak learner is fitted to these pseudo-residuals. Then, the contribution of the weak learner (so-called multiplier) to the strong one isn’t computed according to his performance on the newly distribution sample but using a gradient descent optimization process. The computed contribution is the one minimizing the overall error of the strong learner
 * We try to optimize a loss function
+* Gradient Boosted trees are harder to fit than random forests
+* Gradient Boosting Algorithms generally have 3 parameters which can be fine-tuned, Shrinkage parameter, depth of the tree, the number of trees. Proper training of each of these parameters is needed for a good fit. If parameters are not tuned correctly it may result in over-fitting.
 * Standard GBM implementation has no regularization like XGBoost
 * A GBM would stop splitting a node when it encounters a negative loss in the split. Thus it is more of a greedy algorithm
 
@@ -33,13 +37,17 @@ https://www.analyticsvidhya.com/blog/2017/06/which-algorithm-takes-the-crown-lig
 * Better accuracy than any other boosting algorithm - It produces much more complex trees by following leaf wise split approach rather than a level-wise approach which is the main factor in achieving higher accuracy. However, it can sometimes lead to overfitting which can be avoided by setting the max_depth parameter
 * Compatibility with Large Datasets - It is capable of performing equally good with large datasets with a significant reduction in training time as compared to XGBOOST
 * Parallel learning is supported
+* It is not advisable to use LightGBM on small datasets. LightGBM is sensitive to overfitting and can easily overfit small data. Their is no threshold on the number of rows but my experience suggests me to use it only for data with 10,000+ rows
 
+### CatBoost - Category Boosting
+* Handles Categorical data such as audio, text, image automatically 
+* Performance - CatBoost provides state of the art results and it is competitive with any leading machine learning algorithm on the performance front
+* Handling Categorical features automatically - We can use CatBoost without any explicit pre-processing to convert categories into numbers. CatBoost converts categorical values into numbers using various statistics on combinations of categorical features and combinations of categorical and numerical features
+https://tech.yandex.com/catboost/doc/dg/concepts/algorithm-main-stages_cat-to-numberic-docpage/
+* Robust - It reduces the need for extensive hyper-parameter tuning and lower the chances of overfitting also which leads to more generalized models. Although, CatBoost has multiple parameters to tune and it contains parameters like the number of trees, learning rate, regularization, tree depth, fold size, bagging temperature and others. You can read about all these parameters here
+* Easy-to-use - You can use CatBoost from the command line, using an user-friendly API for both Python and R
 
+![](https://cdn-images-1.medium.com/max/1000/1*A0b_ahXOrrijazzJengwYw.png)
 
-
-
-
-
-
-
+![](http://blog.cloudera.com/wp-content/uploads/2015/12/distribution.png)
 
