@@ -128,23 +128,3 @@ Trees are unstable since small variations in data might result in a completely d
 It is locally optimized (decisions are made at each node) using a greedy algorithm where we cannot guarantee a return to the globally optimal decision tree - Can be mitigated by training multiple trees in an ensemble learner  <br/>
 Create biased trees if some classes dominate. It is therefore recommended to balance the dataset prior to using in a tree <br/>
 
-
-
-
-
-How should the input datasets for Train and Test be?
-How to run cross validation within Decision trees? Mention Sampling type for cross-validation?
-How to apply model to performance metrics of the decision tree from cv? AUC/Accuracy with 95% CI limits
-How to get the confusion matric of the train performance
-Decision tree - visulaization?
-Decision tree - rules
-
-# Different functions
-Label encoder - To convert chars vars
-DecisionTreeClassifier
-.fit
-.predict_proba - Difference between predict & predict_proba
-.roc_auc_score
-.model_selection.cross_val_score
-GridSearchCV
-
