@@ -1,4 +1,6 @@
 https://www.analyticsvidhya.com/blog/2018/06/comprehensive-guide-for-ensemble-models/
+https://www.analyticsvidhya.com/blog/2017/02/introduction-to-ensembling-along-with-implementation-in-r/
+https://www.analyticsvidhya.com/blog/2017/03/imbalanced-classification-problem/ - Imablanced classification solutions for various bagging & boosing algos
 
 ### Multi-Classifiers
 A set of weak learners (Train multiple models) are combined to create a strong learner that obtains better performance than a single one. <br/>
@@ -10,16 +12,28 @@ Helps in minimizing noise, bias and variance. <br/>
 Each learner uses a subset of dat
 Output of primary classifiers, called level 0 models, will be used as attributes for another classifier(Combiner), called meta-model, to approximate the same classification problem. <br/>
 
+### Advantages of Ensembles
+* Ensembling is a proven method for improving the accuracy of the model and works in most of the cases.
+* It is the key ingredient for winning almost all of the machine learning hackathons.
+* Ensembling makes the model more robust and stable thus ensuring decent performance on the test cases in most scenarios.
+* You can use ensembling to capture linear and simple as well non-linear complex relationships in the data. This can be done by using two different models and forming an ensemble of two.
+
+### Disadvantages of Ensembles
+* Ensembling reduces the model interpretability and makes it very difficult to draw any crucial business insights at the end.
+* It is time-consuming and thus might not be the best idea for real-time applications.
+* The selection of models for creating an ensemble is an art which is really hard to master.
 
 ### Bagging
 * Bagging is best used when singe-model is over-fitting (High Variance). Boosting is not used when single-model is over-fitting as boosting itself suffers from over-fitting problem.
+* Bagging reduced variance of the classifier, doesn't help much with bias.
 * N sets are created from Training data by random sampling with replacement - Any element has the same probability to appear in a new data set.
 * Training is parallel i.e. each model is built independently.
 * Result is obtained by averaging the responses of the N learners (or majority vote).
 * Works best when classifier is unstable (Decision Trees), where as bagging can hurt stable model by introducing artificial variability 
+* In noisy data environments bagging outperforms boosting
 ##### Algorithms
-* Random Forests - Parallel processing is not possible
-* Bagging meta-estimator
+* Random Forests - Parallel processing is not possible - https://www.analyticsvidhya.com/blog/2016/04/complete-tutorial-tree-based-modeling-scratch-in-python/
+* Bagging meta-estimator - https://www.analyticsvidhya.com/blog/2018/02/introductory-guide-regularized-greedy-forests-rgf-python/
 * Regularized Greedy Forests
 
 ### Boosting
