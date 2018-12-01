@@ -20,7 +20,7 @@ https://medium.com/all-things-ai/in-depth-parameter-tuning-for-gradient-boosting
 * shrinkage is used for reducing, or shrinking, the impact of each additional fitted base-learner (tree). It reduces the size of incremental steps and thus penalizes the importance of each consecutive iteration. The intuition behind this technique is that it is better to improve a model by taking many small steps than by taking fewer large steps. If one of the boosting iterations turns out to be erroneous, its negative impact can be easily corrected in subsequent steps.
 * High learn rates and especially values close to 1.0 typically result in overfit models with poor performance.  Values much smaller than .01 significantly slow down the learning process and might be reserved for overnight runs.
 * Use a small shrinkage (slow learn rate) when growing many trees.
-* One typically chooses the shrinkage parameter beforehand and varies the number of iterations (trees) N with respect to the chosen shrinkage. 
+* One typically chooses the shrinkage parameter beforehand and varies the number of iterations (trees) N with respect to the chosen shrinkage. (More number of trees can also cause over-fitting). Vary shrinkage parameter to check for Test AUC, choose shrinkage parameter that gives highest Test AUC and then vary number of trees to avoid over-fitting.
 * Optimized value can be identified using Cyclical learning rate - LR Range test
 
 ##### Number of trees
