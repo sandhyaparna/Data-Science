@@ -16,16 +16,16 @@ Clustering - k-means,Expectation-maximization,DBSCAN
 
 Cross-validation is performed to evaluate model but final model is built on entire data
 
-How should the input datasets for Train and Test be?
-How to run cross validation within Decision trees? Mention Sampling type for cross-validation?
-How to apply model to performance metrics of the decision tree from cv? AUC/Accuracy with 95% CI limits
-How to get the confusion matric of the train performance
-Decision tree - visulaization?
-Decision tree - rules
+* How should the input datasets for Train and Test be?
+* How to run cross validation within Decision trees? Mention Sampling type for cross-validation?
+* How to apply model to performance metrics of the decision tree from cv? AUC/Accuracy with 95% CI limits
+* How to get the confusion matric of the train performance
+* Decision tree - visulaization?
+* Decision tree - rules
 
-# Different functions
-Label encoder - To convert chars vars
-DecisionTreeClassifier
+### Different functions
+* Label encoder - To convert chars vars
+* DecisionTreeClassifier
 .fit
 .predict_proba - Difference between predict & predict_proba
 .roc_auc_score
