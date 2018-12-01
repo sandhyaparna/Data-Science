@@ -47,5 +47,5 @@ https://tech.yandex.com/catboost/doc/dg/concepts/algorithm-main-stages_cat-to-nu
 * Robust - It reduces the need for extensive hyper-parameter tuning and lower the chances of overfitting also which leads to more generalized models. Although, CatBoost has multiple parameters to tune and it contains parameters like the number of trees, learning rate, regularization, tree depth, fold size, bagging temperature and others. You can read about all these parameters here
 * Easy-to-use - You can use CatBoost from the command line, using an user-friendly API for both Python and R
 
-Hyperparameters:
+### Hyperparameters
 ![](https://cdn-images-1.medium.com/max/1000/1*A0b_ahXOrrijazzJengwYw.png)
