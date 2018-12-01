@@ -1,4 +1,9 @@
+* Entire codes in R
 * Bias Variance Tradeoff
+* Feature selection
+* Evaluation metrics
+* Image classification
+* Text Classification
 * Outlier detection - https://www.analyticsvidhya.com/blog/2016/01/guide-data-exploration/
 * Time Series
 * ML Algorithms - http://www.holehouse.org/mlclass/
