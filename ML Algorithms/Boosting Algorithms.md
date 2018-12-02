@@ -1,4 +1,4 @@
-* AdaBoost & GBM algorithms differ on how they CREATE THE WEAK LEARNERS during the iterative process.
+* AdaBoost & GBM algorithms differ on how they CREATE THE WEAK/BASE LEARNERS during the iterative process.
 * XGBoost and GBM differ in modeling details. XGBoost used a more regularized model formalization to control over-fitting, which gives it better performance.
 
 
