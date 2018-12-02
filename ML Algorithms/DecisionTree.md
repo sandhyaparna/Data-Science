@@ -13,8 +13,9 @@ In case of classification tree, the value (class) obtained by terminal node in t
 in that region. Thus, if an unseen data observation falls in that region, we’ll make its prediction with mode value.
 
 ## Assumptions
-Predictor variables are not independent. Decision Trees works best when the predictor vars are correlated. <br/>
-Nonlinear model - Predictor variables have nonlinear relationship among them (There is no equation to express relationship between independent and dependant variables i.e model is constructed based on the observed data <br/>
+* Predictor variables are not independent. Decision Trees works best when the predictor vars are correlated. <br/>
+* Nonlinear model - Predictor variables have nonlinear relationship among them (There is no equation to express relationship between independent and dependant variables i.e model is constructed based on the observed data <br/>
+* No distributional, independence, or constant variance assumptions
 
 ## Algorithms
 #### ID3 (Iternative Dichotomizer)
@@ -22,11 +23,9 @@ Greedy search using Entropy or Information Gain <br/>
 It creates good splits at top but dont consider what happens later on the splits <br/>
 Doesn't handle numeric attributes and missing values <br/>
 
-
 #### C4.5 
 Gain ratio (Binnary splitting of Continuous var) <br/>
 Handles numeric attributes and missing values automatically using surrogate splits
-
 
 #### C5.0 
 Uses less memory and builds smaller rulesets than C4.5 while being more accurate
@@ -117,14 +116,20 @@ COMPLEXITY PARAMETER:
 ## Advantages
 * Incredibly simple to understand & interpret due to their visual representation <br/>
 * They require very little data preperation, handles misisng and outliers, both qualitative and quantitative variables <br/>
-* Handles multi-classification problems <br/>
+* Handles multi-classification problems - when two variables both explain the same thing, a decision tree will greedily choose the best one, whereas many other methods will use them both  <br/>
 * Performs feature selection  <br/>
 * Model can be validated using statistical sets <br/>
 * Nonlinear relationships between parameters do not affect tree performance <br/>
 
 ## Disadvantages
-* * Variance is high (incase of long depth trees) and if not pruned leads to overfitting/complex tree <br/>
+* Variance is high (incase of long depth trees) and if not pruned leads to overfitting/complex tree <br/>
 * Trees are unstable since small variations in data might result in a completely different tree being generated - Can be avoided using ensemble models like Bagging or Boosting <br/>
 * It is locally optimized (decisions are made at each node) using a greedy algorithm where we cannot guarantee a return to the globally optimal decision tree - Can be mitigated by training multiple trees in an ensemble learner  <br/>
 * Create biased trees if some classes dominate. It is therefore recommended to balance the dataset prior to using in a tree <br/>
+* For data including categorical variables with different numbers of levels, information gain in decision trees is biased in favor of attributes with more levels. However, the issue of biased predictor selection is avoided by the Conditional Inference approach, a two-stage approach, or adaptive leave-one-out feature selection.
+
+
+
+
+
 
