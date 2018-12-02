@@ -3,10 +3,18 @@
 
 
 ### AdaBoost - Adaptive Boosting
-* AdaBoost is a boosting done on Decision stump. Decision stump is a unit depth tree which decides just 1 most significant cut on features
+* AdaBoost is a boosting done on Decision stump(by default but other base classifiers can be used too). Decision stump is a unit depth tree which decides just 1 most significant cut on features
 * At each iteration, adaptive boosting changes the sample distribution by modifying the weights attached to each of the instances. It increases the weights of the wrongly predicted instances and decreases the ones of the correctly predicted instances. The weak learner thus focuses more on the difficult instances. After being trained, the weak learner is added to the strong one according to his performance (so-called alpha weight). The higher it performs, the more it contributes to the strong learner
 * Good generalization- Suited for any kind of classification problem & Not prone to overfitting
 * Sensitive to noisy data and outliers
+
+Pros
+AdaBoost is easy to implement. It iteratively corrects the mistakes of the weak classifier and improves accuracy by combining weak learners. You can use many base classifiers with AdaBoost. AdaBoost is not prone to overfitting. This can be found out via experiment results, but there is no concrete reason available.
+
+Cons
+AdaBoost is sensitive to noise data. It is highly affected by outliers because it tries to fit each point perfectly. AdaBoost is slower compared to XGBoost.
+
+
 
 ### GBM 
 * Doesn’t modify the sample distribution at each iteration for instances. Instead of training on a newly sample distribution, the weak learner trains on the remaining errors (so-called pseudo-residuals) of the strong learner. It is another way to give more importance to the difficult instances. At each iteration, the pseudo-residuals are computed and a weak learner is fitted to these pseudo-residuals. Then, the contribution of the weak learner (so-called multiplier) to the strong one isn’t computed according to his performance on the newly distribution sample but using a gradient descent optimization process. The computed contribution is the one minimizing the overall error of the strong learner
