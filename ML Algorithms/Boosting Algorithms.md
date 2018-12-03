@@ -41,10 +41,10 @@ https://www.analyticsvidhya.com/blog/2017/06/which-algorithm-takes-the-crown-lig
 
 ### CatBoost - Category Boosting
 * Handles Categorical data such as audio, text, image automatically 
-* Performance - CatBoost provides state of the art results and it is competitive with any leading machine learning algorithm on the performance front
+* Performance - CatBoost provides state of the art results and it is competitive with any leading machine learning algorithm on the performance front (Prediction time). 
 * Handling Categorical features automatically - We can use CatBoost without any explicit pre-processing to convert categories into numbers. CatBoost converts categorical values into numbers using various statistics on combinations of categorical features and combinations of categorical and numerical features
 https://tech.yandex.com/catboost/doc/dg/concepts/algorithm-main-stages_cat-to-numberic-docpage/
-* Robust - It reduces the need for extensive hyper-parameter tuning and lower the chances of overfitting also which leads to more generalized models. Although, CatBoost has multiple parameters to tune and it contains parameters like the number of trees, learning rate, regularization, tree depth, fold size, bagging temperature and others. You can read about all these parameters here
+* Robust - It reduces the need for extensive hyper-parameter tuning and lower the chances of overfitting also which leads to more generalized models. Although, CatBoost has multiple parameters to tune and it contains parameters like the number of trees, learning rate, regularization, tree depth, fold size, bagging temperature and others. 
 * Easy-to-use - You can use CatBoost from the command line, using an user-friendly API for both Python and R
 
 ### Hyperparameters
