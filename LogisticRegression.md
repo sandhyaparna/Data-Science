@@ -1,3 +1,7 @@
+### Links
+https://www.saedsayad.com/logistic_regression.htm
+
+
 ### Overview
 Logistic regression predicts the probability of occurrence of an event by fitting data to a logit function. Log odds of the outcome is modeled as a linear combination of the predictor variables. Logistic regression is a part of GLM that assumes a linear relationship between link function and independent variables in logit model. Estimates probabilities using underlying logistic function.
 * Probability ranges from 0 to 1 <br/>
@@ -7,6 +11,9 @@ Logistic regression predicts the probability of occurrence of an event by fittin
   * ln(odds) = ln(p/(1-p)) <br/>
 * logit(p) = ln(p/(1-p)) = b0+b1X1+b2X2+b3X3....+bkXk <br/>
     * Log odds range from - ∞ to +∞. Log odds is used to extens the range of the output as input vars may be continuous vars  <br/>
+    * Slopes defines the steepness of the curve
+    * COnstant term move the curve left and right 
+* Any monotonic function tha maps the unit interval to the real number can be considered as link. GLM is used for analyzing linear and non-linear effects of continuous and categorical predictors on discrete or continuous response vars (uses link fucntion)
 * MLE determines the regression coefficient that accurately predicts the probability of the binary dependent variable <br/>
 * Should be used when data is linearly seperable
 
@@ -27,4 +34,7 @@ Logistic regression predicts the probability of occurrence of an event by fittin
 * Cannot solve non-linear problems
 * It is vulnerable to over-fitting
 * Atleast 50 data points per predictor is necessary to achiev stable results
+
+### Evaluation
+* Wald test is used to test the statistical significance of coefficients in the model 
 
