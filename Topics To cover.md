@@ -2,6 +2,7 @@
 * Imbalanced Classification (Modifying existing classification algorithms to make them appropriate for imbalanced data sets) - https://www.analyticsvidhya.com/blog/2017/03/imbalanced-classification-problem/
 * Bias Variance Tradeoff
 * Feature selection
+* Association Rules
 * Evaluation metrics
 * Image classification
 * Text Classification
