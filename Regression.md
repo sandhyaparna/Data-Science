@@ -1,31 +1,31 @@
 Regression is a method of modelling a target value based on independent predictors. Explains the degree of relationship between 2 or more variables using the best fit line.
 
 ### Assumptions
-##### Linearity
+##### 1. Linearity
 There should be a linear and additive relationship between dependent (response) variable and independent (predictor) variable(s). A linear relationship suggests that a change in response Y due to one unit change in X¹ is constant, regardless of the value of X¹. An additive relationship suggests that the effect of X¹ on Y is independent of other variables. <br/>
 * Residual(Diff in actual & pred) vs Fitted values(Pred): Linearity assumption is satisfied if residuals are spread out randomly around the 0 line <br/>
 To overcome the issue of non-linearity, you can do a non linear transformation of predictors such as log (X), √X or X² transform the dependent variable.
-##### No Autocorrelation
+##### 2. No Autocorrelation
 There should be no correlation between the residual terms. Absence of this phenomenon is known as Autocorrelation. <br/>
 If the error terms are correlated, the estimated standard errors tend to underestimate the true standard error. If this happens, it causes confidence intervals and prediction intervals to be narrower.  <br/>
 This usually occurs in time series models where the next instant is dependent in the previous instant. <br/>
 * Durbin – Watson (DW) statistic: It must lie between 0 and 4. If DW = 2, implies no autocorrelation, 0 < DW < 2 implies positive autocorrelation while 2 < DW < 4 indicates negative autocorrelation. <br/>
 * Residual vs time plot and look for the seasonal or correlated pattern in residual values. <br/>
-##### No Multicollinearity
+##### 3. No Multicollinearity
 The independent variables should not be correlated. Absence of this phenomenon is known as multicollinearity. <br/>
 Standard errors tend to increase in presence of multicollinearity. With large standard errors, the confidence interval becomes wider leading to less precise estimates of slope parameters. <br/>
 * VIF factor: VIF value <= 4 suggests no multicollinearity whereas a value of >= 10 implies serious multicollinearity.  <br/>
-##### Homoskedasticity
+##### 4. Homoskedasticity
 The error terms must have constant variance. This phenomenon is known as homoskedasticity. The presence of non-constant variance is referred to heteroskedasticity. <br/>
 Heteroskedasticity i.e non-constant variance often creates cone-line shape scatter plot of residuals vd fitted. Scattering widens or narrows as the value of fitted increases implies it is consistently accurate when it predicts low values, but highly inconsistent in accuracy when it predicts high values. <br/>
 * Residual(Diff in actual & pred) vs Fitted values(Pred) Plot: Should not be cone-shaped/funnel shaped <br/>
 * Scale Location Plot ( Square root of Standardized residuals vs Theoritical Quantiles) <br/>
 To overcome heteroskedasticity, a possible way is to transform the response variable such as log(Y) or √Y. Also, you can use weighted least square method to tackle heteroskedasticity. <br/>
-##### Normal Distribution of error terms
+##### 5. Normal Distribution of error terms
 The error terms must be normally distributed. If not, confidence intervals may become too wide or narrow. Once confidence interval becomes unstable, it leads to difficulty in estimating coefficients based on minimization of least squares. <br/>
 * Q-Q plot (Standardized residuals vs Theoritical Quantiles) <br/>
 If the errors are not normally distributed, non–linear transformation of the variables (response or predictors) can bring improvement in the model.
-##### No outliers
+##### 6. No outliers
 Linear Regression is very sensitive to Outliers. It can terribly affect the regression line and eventually the forecasted values.
 
 ### Ordinary Least Sqaure (OLS) Algorithm
