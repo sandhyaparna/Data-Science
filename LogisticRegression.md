@@ -1,5 +1,5 @@
 ### Overview
-Logistic regression predicts the probability of occurrence of an event by fitting data to a logit function. Log odds of the outcome is modeled as a linear combination of the predictor variables. Logistic regression is a part of GLM that assumes a linear relationship between link function and independent variables in logit model.
+Logistic regression predicts the probability of occurrence of an event by fitting data to a logit function. Log odds of the outcome is modeled as a linear combination of the predictor variables. Logistic regression is a part of GLM that assumes a linear relationship between link function and independent variables in logit model. Estimates probabilities using underlying logistic function.
 * Probability ranges from 0 to 1 <br/>
 * odds = p/(1-p) = probability of event occurrence / probability of not event occurrence  <br/>
   * Odds is defined as the ratio of the chance of the event happening to that of non-happening of the event <br/>
@@ -8,20 +8,23 @@ Logistic regression predicts the probability of occurrence of an event by fittin
 * logit(p) = ln(p/(1-p)) = b0+b1X1+b2X2+b3X3....+bkXk <br/>
     * Log odds range from - ∞ to +∞. Log odds is used to extens the range of the output as input vars may be continuous vars  <br/>
 * MLE determines the regression coefficient that accurately predicts the probability of the binary dependent variable <br/>
+* Should be used when data is linearly seperable
 
-#### Assumptions
+### Assumptions
 * Observations are independent of each other
 * No multicollinearity among independent vars
 * Assumes a linear relationship between link function and independent variables 
 * Dependent Variable is not normally distributed
-* Errors need to be independent but not normally distributed
+* Errors need to be independent but not normally distributed - No Normal distribution of error terms
 * Homoscedasticity is not required
 * Dependent variable in logistic regression is not measured on an interval or ratio scale
 
-#### Advantages
+### Advantages
 * It's fast, highly interpretable, doesn't require input features to be scaled, doesn't require any tuning, easy to regularize, and outputs are well-calibrated predicted probabilities
-* Dependent Variable is not normally distributed
+* Dependent or Independent variables are not normally distributed
 
-
-
+### Disadvantages
+* Cannot solve non-linear problems
+* It is vulnerable to over-fitting
+* Atleast 50 data points per predictor is necessary to achiev stable results
 
