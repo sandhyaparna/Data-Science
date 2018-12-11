@@ -1,4 +1,5 @@
 * Entire codes in R - https://www.analyticsvidhya.com/blog/2016/08/practicing-machine-learning-techniques-in-r-with-mlr-package/
+* ShinyR
 * Imbalanced Classification (Modifying existing classification algorithms to make them appropriate for imbalanced data sets) - https://www.analyticsvidhya.com/blog/2017/03/imbalanced-classification-problem/
 * Bias Variance Tradeoff
 * Feature selection
