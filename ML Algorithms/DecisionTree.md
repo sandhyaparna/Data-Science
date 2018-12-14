@@ -3,7 +3,8 @@ http://www.saedsayad.com/decision_tree.htm <br/>
 https://www.datasciencecentral.com/profiles/blogs/15-great-articles-about-decision-trees <br/>
 https://www.analyticsvidhya.com/blog/2016/04/complete-tutorial-tree-based-modeling-scratch-in-python/ <br/>
 
-scikit learn - http://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html#sklearn.tree.DecisionTreeClassifier  <br/>
+scikit learn - sklearn.tree.DecisionTreeClassifier
+http://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html  <br/>
 
 Decision tree is a non-linear model that uses divide & conquer approach, Tree-like graph/Flowchart. The topmost decision node in a tree which corresponds to the best predictor called root node. For nominal attributes, the number of children is usually equal to the number of possible values for the attribute. Hence, it is tested only once. For Numerical attributes, we usually test if the attribute value is greater or less than a determined constant. The attribute may get tested several times for different constants.
 #### How Decision Tree predicts a Numeric Target?
