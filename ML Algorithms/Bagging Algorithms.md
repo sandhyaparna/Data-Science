@@ -12,8 +12,23 @@ https://www.analyticsvidhya.com/blog/2016/04/complete-tutorial-tree-based-modeli
 * Handles large data set with higher dimensionality.
 * It usually has high accuracy on the training population and hence might over fit the model on the data.
 
+### Regularized Greedy Forests
+https://arxiv.org/pdf/1109.0887.pdf
+https://github.com/RGF-team/rgf/tree/master/python-package
+* These produce less correlated predictions and do well in ensemble with other tree boosting models.
+* RGF performs 2 steps:
+  * Finds the one step structural change to the current forest to obtain the new forest that minimises the loss function (e.g. Least squares or logloss)
+  * Adjusts the leaf weights for the entire forest to minimize the loss function
 
 
+### Bagging
+https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.BaggingClassifier.html#sklearn.ensemble.BaggingClassifier
+
+### Extra Trees
+https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.ExtraTreesClassifier.html#sklearn.ensemble.ExtraTreesClassifier
+
+### Random Trees Embedding
+https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomTreesEmbedding.html#sklearn.ensemble.RandomTreesEmbedding
 
 
 
