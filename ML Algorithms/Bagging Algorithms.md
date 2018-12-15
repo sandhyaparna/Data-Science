@@ -10,3 +10,21 @@ https://www.analyticsvidhya.com/blog/2016/04/complete-tutorial-tree-based-modeli
 * It has methods for balancing errors in data sets where classes are imbalanced.
 * A group of weak models combine to form a powerful model.
 * Handles large data set with higher dimensionality.
+* It usually has high accuracy on the training population and hence might over fit the model on the data.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
