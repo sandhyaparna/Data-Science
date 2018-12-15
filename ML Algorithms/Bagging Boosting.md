@@ -28,8 +28,8 @@ Output of primary classifiers, called level 0 models, will be used as attributes
 * Bagging reduces variance of the classifier, doesn't help much with bias. 
 * N sets are created from Training data by random sampling with replacement - Any element has the same probability to appear in a new data set. 
 * Bagging can have a fraction of the columns as well as rows. Taking row and column fractions less than 1 helps in making robust models, less prone to overfitting.
-* Training is parallel i.e. each model is built independently.
-* Result is obtained by averaging the responses of the N learners (or majority vote).
+* Training is parallel i.e. Multiple classifiers are built independently on each data set.
+* Result is obtained by combining the responses of all the N learners using mean. median or mode/majority vote. Combined values are generally more robust than a single model.
 * Works best when classifier is unstable (Decision Trees), where as bagging can hurt stable model by introducing artificial variability 
 * In noisy data environments bagging outperforms boosting
 ##### Algorithms
