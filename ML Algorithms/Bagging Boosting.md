@@ -35,8 +35,8 @@ Output of primary classifiers, called level 0 models, will be used as attributes
 * In noisy data environments bagging outperforms boosting
 ##### Algorithms
 * Random Forests - Parallel processing is not possible - https://www.analyticsvidhya.com/blog/2016/04/complete-tutorial-tree-based-modeling-scratch-in-python/
-* Bagging meta-estimator - https://www.analyticsvidhya.com/blog/2018/02/introductory-guide-regularized-greedy-forests-rgf-python/
-* Regularized Greedy Forests
+* Bagging meta-estimator
+* Regularized Greedy Forests - https://www.analyticsvidhya.com/blog/2018/02/introductory-guide-regularized-greedy-forests-rgf-python/
 
 ### Boosting
 * Boosting is best used when single model gets a very low performance (Model is too simple implies high bias i.e. each of the weak hypotheses has accuracy just a little bit better than random guessing) as it generates a combined model with lower errors as it optimises the advantages and reduces pitfalls of the single model (reduce Bias).
