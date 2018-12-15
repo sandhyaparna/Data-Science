@@ -21,8 +21,10 @@ https://github.com/RGF-team/rgf/tree/master/python-package
   * Adjusts the leaf weights for the entire forest to minimize the loss function
 
 
-### Bagging
+### Bagging Meta-estimator
 https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.BaggingClassifier.html#sklearn.ensemble.BaggingClassifier
+* Bagging meta-estimator is an ensembling algorithm that can be used for both classification and regression (BaggingRegressor).
+* Bootstrapping with all features
 
 ### Extra Trees
 https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.ExtraTreesClassifier.html#sklearn.ensemble.ExtraTreesClassifier
