@@ -25,8 +25,9 @@ Output of primary classifiers, called level 0 models, will be used as attributes
 
 ### Bagging
 * Bagging is best used when singe-model is over-fitting (High Variance). Boosting is not used when single-model is over-fitting as boosting itself suffers from over-fitting problem.
-* Bagging reduces variance of the classifier, doesn't help much with bias.
-* N sets are created from Training data by random sampling with replacement - Any element has the same probability to appear in a new data set.
+* Bagging reduces variance of the classifier, doesn't help much with bias. 
+* N sets are created from Training data by random sampling with replacement - Any element has the same probability to appear in a new data set. 
+* Bagging can have a fraction of the columns as well as rows. Taking row and column fractions less than 1 helps in making robust models, less prone to overfitting.
 * Training is parallel i.e. each model is built independently.
 * Result is obtained by averaging the responses of the N learners (or majority vote).
 * Works best when classifier is unstable (Decision Trees), where as bagging can hurt stable model by introducing artificial variability 
