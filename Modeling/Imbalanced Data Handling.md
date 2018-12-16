@@ -13,6 +13,15 @@ https://www.kdnuggets.com/2016/08/learning-from-imbalanced-classes.html
 * Adjust the class weight (misclassification costs).
 * Modify an existing algorithm to be more sensitive to rare classes.
 
+### Evaluation Metrics
+* Always test(Test set) on original distribution 
+* ROC-AUC, Precision-Recall, Lift or Gain curves
+* Decision threshold on predict_proba
+* 
+* 
+* 
+* 
+* 
 
 
 
