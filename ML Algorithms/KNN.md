@@ -17,6 +17,10 @@ https://www.analyticsvidhya.com/blog/2018/03/introduction-k-neighbours-algorithm
 * Optimal k is determined by checking graph of Validation/Test error vs k
 * k-NN algorithm can be used for imputing missing value of both categorical and continuous variables.
 * Bias increases as you increase k implies Variance dec (Large k = Simple Model)
+* If there is noise in data, try increasing value of k
+* Decision boundary would become smoother by increasing the value of K
+* The training time for any value of k in kNN algorithm is the same.
+
 
 ### Measures of Similarity
 * Euclidean distance = sqrt((a1-b1)^2 + (a2-b2)^2) where (a1, a2) and (b1, b2) are two points.
