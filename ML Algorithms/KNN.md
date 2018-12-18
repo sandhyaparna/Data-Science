@@ -2,17 +2,25 @@
 http://www.saedsayad.com/k_nearest_neighbors.htm
 
 
-
 ### Overview
+* KNN is non-parametric learning algorithm, which means that it doesn't assume anything about the underlying data. 
+* Lazy learning is a learning method in which generalization of the training data is delayed until a query is made to the system, as opposed to in eager learning, where the system tries to generalize the training data before receiving queries.
 * kNN algorithm uses the entire dataset as the training set, rather than splitting the dataset into a trainingset and testset.
 * When an outcome is required for a new data instance, the KNN algorithm goes through the entire dataset to find the k-nearest instances to the new instance, or the k number of instances most similar to the new record, and then outputs the mean of the outcomes (for a regression problem) or the mode (most frequent class) for a classification problem. The value of k is user-specified.
 * The similarity between instances is calculated using measures such as Euclidean distance and Hamming distance.
+* The kNN task can be broken down into writing 3 primary functions: 
+  * Calculate the distance between any two points (All points)
+  * Find the nearest neighbours based on these pairwise distances
+  * Majority vote on a class labels based on the nearest neighbour list 
 
+### Measures of Similarity
+* Euclidean distance = sqrt((a1-b1)^2 + (a2-b2)^2) where (a1, a2) and (b1, b2) are two points.
+* Manhattan
 
-
-
-
-
+### Disadvantages
+* The KNN algorithm doesn't work well with high dimensional data because with large number of dimensions, it becomes difficult for the algorithm to calculate distance in each dimension.
+* The KNN algorithm has a high prediction cost for large datasets. This is because in large datasets the cost of calculating distance between new point and each existing point becomes higher.
+* Finally, the KNN algorithm doesn't work well with categorical features since it is difficult to find the distance between dimensions with categorical features.
 
 
 
