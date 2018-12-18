@@ -1,5 +1,6 @@
 ### Links
 http://www.saedsayad.com/k_nearest_neighbors.htm
+https://www.analyticsvidhya.com/blog/2018/03/introduction-k-neighbours-algorithm-clustering/
 
 
 ### Overview
@@ -12,6 +13,8 @@ http://www.saedsayad.com/k_nearest_neighbors.htm
   * Calculate the distance between any two points (All points)
   * Find the nearest neighbours based on these pairwise distances
   * Majority vote on a class labels based on the nearest neighbour list 
+* Feature scaling has to be performed before implementing the algorithm 
+* Optimal k is determined by checking graph of Validation error vs k
 
 ### Measures of Similarity
 * Euclidean distance = sqrt((a1-b1)^2 + (a2-b2)^2) where (a1, a2) and (b1, b2) are two points.
