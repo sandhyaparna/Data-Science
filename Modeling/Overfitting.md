@@ -5,7 +5,7 @@ https://www.oreilly.com/ideas/3-ideas-to-add-to-your-data-science-toolkit
 https://ai.googleblog.com/2015/08/the-reusable-holdout-preserving.html
 
 ### Problem
-* Though we use a holdset to verify our model built on training set, we use holdset to revise parameters or algorithm, this frequantly leads to over-fitting on holdout set
+* Adaptive data analysis: Though we use a holdout set to verify our model built on training set, we use holdout set to revise parameters or algorithm, this frequantly leads to over-fitting on holdout set
 
 ### Solution
 * Regularization
