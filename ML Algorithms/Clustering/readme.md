@@ -3,3 +3,9 @@
 * Density-Based Spatial Clustering of Applications with Noise (DBSCAN)
 * Expectation–Maximization (EM) Clustering using Gaussian Mixture Models (GMM)
 * Agglomerative Hierarchical
+* Mini-Batch
+* Affinity Propagation
+* Spectral CLustering
+* Ward
+* Agglomerative Clustering
+* Birch
