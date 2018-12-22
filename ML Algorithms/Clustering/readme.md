@@ -9,3 +9,6 @@
 * Ward
 * Agglomerative Clustering
 * Birch
+
+Centroid Based, Connectivity Based, Density Based, Probabilistic
+
