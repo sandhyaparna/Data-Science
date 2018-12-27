@@ -5,7 +5,7 @@
 * Agglomerative Hierarchical
 * Mini-Batch
 * Affinity Propagation
-* Spectral CLustering
+* Spectral Clustering - Spectral and graph clustering
 * Ward
 * Agglomerative Clustering - Hierarchical clustering
 * Birch
