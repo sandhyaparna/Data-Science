@@ -16,5 +16,8 @@ The decision of the no. of clusters that can best depict different groups can be
   * Maximum distance:||a-b||INFINITY = maxi|ai-bi|
   * Mahalanobis distance: √((a-b)T S-1 (-b))   {where, s : covariance matrix}
  
-
-
+### Difference between K Means and Hierarchical clustering
+* Hierarchical clustering can’t handle big data well but K Means clustering can. This is because the time complexity of K Means is linear i.e. O(n) while that of hierarchical clustering is quadratic i.e. O(n2).
+* In K Means clustering, since we start with random choice of clusters, the results produced by running the algorithm multiple times might differ. While results are reproducible in Hierarchical clustering.
+* K Means is found to work well when the shape of the clusters is hyper spherical (like circle in 2D, sphere in 3D).
+* K Means clustering requires prior knowledge of K i.e. no. of clusters you want to divide your data into. But, you can stop at whatever number of clusters you find appropriate in hierarchical clustering by interpreting the dendrogram
