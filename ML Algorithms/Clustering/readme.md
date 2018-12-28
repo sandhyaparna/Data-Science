@@ -1,3 +1,15 @@
+### Links
+https://www.analyticsvidhya.com/blog/2016/11/an-introduction-to-clustering-and-different-methods-of-clustering/
+
+
+### Overview
+Clustering is the task of dividing the population or data points into a number of groups such that data points in the same groups are more similar to other data points in the same group than those in other groups. In simple words, the aim is to segregate groups with similar traits and assign them into clusters.
+* Connectivity models: start with classifying all data points into separate clusters & then aggregating them as the distance decreases (or) all data points are classified as a single cluster and then partitioned as the distance increases. Lacks scalability for handling big datasets. (Hierarchical)
+* Centroid models: Iterative clustering algorithms in which the notion of similarity is derived by the closeness of a data point to the centroid of the clusters. (K-Means)
+* Distribution models: Based on the notion of how probable is it that all data points in the cluster belong to the same distribution (For example: Normal, Gaussian). These models often suffer from overfitting. (Expectation-maximization algorithm )
+* Density Models: These models search the data space for areas of varied density of data points in the data space. It isolates various different density regions and assign the data points within these regions in the same cluster. Popular examples of density models are DBSCAN and OPTICS.
+
+
 ### Clustering Algos
 * K-Means - Representative based clustering
 * Mean-Shift
