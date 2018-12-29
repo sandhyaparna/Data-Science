@@ -19,5 +19,7 @@ Conditions for a series to be classified as stationary series:
 ![](https://www.analyticsvidhya.com/wp-content/uploads/2015/02/Cov_nonstationary.png)
 
 Ways to Stationarize Non-Stationary models:
-* 
+* Detrending
+* Differencing
+
 
