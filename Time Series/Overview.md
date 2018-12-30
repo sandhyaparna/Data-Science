@@ -18,6 +18,12 @@ Conditions for a series to be classified as stationary series:
 * The covariance of the i th term and the (i + m) th term should not be a function of time. An autocovariance that does not depend on time. Autocovariance is a function that gives the covariance of the process with itself at pairs of time points.
 ![](https://www.analyticsvidhya.com/wp-content/uploads/2015/02/Cov_nonstationary.png)
 
+##### Reasons for Stationarity
+* Trend – varying mean over time. For eg, in this case we saw that on average, the number of passengers was
+growing over time.
+* Seasonality – variations at specific time-frames. eg people might have a tendency to buy cars in a particular
+month because of pay increment or festivals.
+
 Ways to Stationarize Non-Stationary models:
 * Detrending
 * Differencing
