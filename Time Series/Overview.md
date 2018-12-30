@@ -15,7 +15,7 @@ Conditions for a series to be classified as stationary series:
 ![](https://www.analyticsvidhya.com/wp-content/uploads/2015/02/Mean_nonstationary.png)
 * The variance of the series should not a be a function of time.
 ![](https://www.analyticsvidhya.com/wp-content/uploads/2015/02/Var_nonstationary.png)
-* The covariance of the i th term and the (i + m) th term should not be a function of time.
+* The covariance of the i th term and the (i + m) th term should not be a function of time. An autocovariance that does not depend on time. Autocovariance is a function that gives the covariance of the process with itself at pairs of time points.
 ![](https://www.analyticsvidhya.com/wp-content/uploads/2015/02/Cov_nonstationary.png)
 
 Ways to Stationarize Non-Stationary models:
