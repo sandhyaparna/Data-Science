@@ -28,7 +28,9 @@ White noise is stationary - it does not matter when you observe it, it should lo
 Ways to Stationarize Non-Stationary models:
 * Detrending
 * Differencing
-* Transformation
+* Transformation - Used only in case differencing is not working.
+  * Log - Incase of diverging time series
+  
 
 
 
