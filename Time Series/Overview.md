@@ -27,7 +27,7 @@ month because of pay increment or festivals.
 White noise is stationary - it does not matter when you observe it, it should look much the same at any point in time.
 Ways to Stationarize Non-Stationary models:
 * Detrending
-* Differencing
+* Differencing - Try double differencing too
 * Transformation - Used only in case differencing is not working.
   * Log - Incase of diverging time series
   
