@@ -7,7 +7,9 @@ https://otexts.org/fpp2/index.html
 
 ### Overview
 Time series models are very useful models when you have serially correlated data.
-
+* Trend:
+* Seasonal:
+* Cyclic:
 
 ### Stationarity
 Unless your time series is stationary, you cannot build a time series model. <br/>
