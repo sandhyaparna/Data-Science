@@ -8,7 +8,7 @@ https://otexts.org/fpp2/index.html
 ### Overview
 Time series models are very useful models when you have serially correlated data.
 * Trend:
-* Seasonal:
+* Seasonal: A seasonal pattern exists when a series is influenced by seasonal factors (e.g., the quarter of the year, the month, or day of the week). Seasonality is always of a fixed and known period. Hence, seasonal time series are sometimes called periodic time series.
 * Cyclic:
 
 ### Stationarity
