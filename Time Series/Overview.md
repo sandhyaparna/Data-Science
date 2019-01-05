@@ -8,7 +8,7 @@ https://robjhyndman.com/hyndsight/cyclicts/
 
 ### Overview
 The three most widely used are regression models (Method of Least Squares), smoothing models. and general time series models. <br/>
-
+Prediction Interval (PI) is LCL - UCL <br/>
 Time series models are very useful models when you have serially correlated data. 
 * Trend:
 * Seasonal: A seasonal pattern exists when a series is influenced by seasonal factors (e.g., the quarter of the year, the month, or day of the week). Seasonality is always of a fixed and known period. Hence, seasonal time series are sometimes called periodic time series.
