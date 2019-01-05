@@ -7,7 +7,9 @@ https://robjhyndman.com/hyndsight/cyclicts/
 
 
 ### Overview
-Time series models are very useful models when you have serially correlated data.
+The three most widely used are regression models (Method of Least Squares), smoothing models. and general time series models. <br/>
+
+Time series models are very useful models when you have serially correlated data. 
 * Trend:
 * Seasonal: A seasonal pattern exists when a series is influenced by seasonal factors (e.g., the quarter of the year, the month, or day of the week). Seasonality is always of a fixed and known period. Hence, seasonal time series are sometimes called periodic time series.
 * Cyclic: A cyclic pattern exists when data exhibit rises and falls that are not of fixed period. The duration of these fluctuations is usually of at least 2 years. Think of business cycles which usually last several years, but where the length of the current cycle is unknown beforehand.
