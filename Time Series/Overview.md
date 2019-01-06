@@ -2,8 +2,8 @@
 ftp://ftp.cea.fr/pub/unati/people/educhesnay/pystatml/StatisticsMachineLearningPythonDraft.pdf <br/>
 https://pandas.pydata.org/pandas-docs/stable/timeseries.html <br/>
 http://www.statsmodels.org/devel/tsa.html <br/>
-https://otexts.org/fpp2/index.html
-https://robjhyndman.com/hyndsight/cyclicts/
+https://otexts.org/fpp2/index.html <br/>
+https://robjhyndman.com/hyndsight/cyclicts/ <br/>
 
 
 ### Overview
