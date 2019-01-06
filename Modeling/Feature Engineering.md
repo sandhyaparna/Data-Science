@@ -10,7 +10,8 @@ https://www.kdnuggets.com/2018/12/feature-building-techniques-tricks-kaggle.html
 * Bearing Between the two Lat/Lons
 
     
-    
+### Automated Feature Engineering
+* Featuretools module in python - 
     
     
     
