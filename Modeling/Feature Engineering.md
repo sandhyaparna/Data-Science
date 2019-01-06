@@ -11,6 +11,8 @@ https://www.kdnuggets.com/2018/12/feature-building-techniques-tricks-kaggle.html
 
     
 ### Automated Feature Engineering
+https://docs.featuretools.com/automated_feature_engineering/primitives.html
+
 * Featuretools module in python - 
     
     
