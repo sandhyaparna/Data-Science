@@ -21,6 +21,8 @@ Traditional techniques for Model interpretation are
 
 
 ### Techniques
+* Using Interpretable Models - DT, Linear Reg, Logistic reg, Naive Bayes, KNN
+* 
 * Skater, Python framework
 * ELI5
 * SHAP
