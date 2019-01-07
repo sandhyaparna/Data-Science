@@ -22,7 +22,9 @@ Traditional techniques for Model interpretation are
 
 ### Techniques
 * Using Interpretable Models - DT, Linear Reg, Logistic reg, Naive Bayes, KNN
-* 
+* Feature Importance using SHAP, Skater
+* Partial Dependence Plots using SHAP, Skater
+* Global Surrogate Models
 * Skater, Python framework
 * ELI5
 * SHAP
@@ -39,6 +41,7 @@ Frameworks like Skater compute Feature importance based on an information theore
 ### SHAP
 frameworks like SHAP, use a combination of feature contributions and game theory to come up with SHAP values. Then, it computes the global feature importance by taking the average of the SHAP value magnitudes across the dataset. 
 
+### Global Surrogate Models
 
 
 
