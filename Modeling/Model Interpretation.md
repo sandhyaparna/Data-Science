@@ -1,7 +1,7 @@
 ### Links
-https://towardsdatascience.com/human-interpretable-machine-learning-part-1-the-need-and-importance-of-model-interpretation-2ed758f5f476
-https://www.kdnuggets.com/2018/12/explainable-ai-model-interpretation-strategies.html/2
-https://towardsdatascience.com/explainable-artificial-intelligence-part-3-hands-on-machine-learning-model-interpretation-e8ebe5afc608
+https://towardsdatascience.com/human-interpretable-machine-learning-part-1-the-need-and-importance-of-model-interpretation-2ed758f5f476  <br/>
+https://www.kdnuggets.com/2018/12/explainable-ai-model-interpretation-strategies.html/2  <br/>
+https://towardsdatascience.com/explainable-artificial-intelligence-part-3-hands-on-machine-learning-model-interpretation-e8ebe5afc608  <br/>
 
 
 
