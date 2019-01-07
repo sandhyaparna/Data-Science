@@ -56,5 +56,11 @@ Steps involved in building surrogate models:  <br/>
 
 ### LIME
 LIME explanations are based on local surrogate models.  <br/>
+* Choose your instance of interest for which you want to have an explanation of the predictions of your black box model.
+* Perturb your dataset and get the black box predictions for these new points.
+* Weight the new samples by their proximity to the instance of interest.
+* Fit a weighted, interpretable (surrogate) model on the dataset with the variations.
+* Explain prediction by interpreting the local model.
+
 
 
