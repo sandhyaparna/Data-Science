@@ -6,12 +6,13 @@ https://towardsdatascience.com/explainable-artificial-intelligence-part-3-hands-
 
 
 ### Model Interpretation
-When comparing models, besides model performance, a model is said to have a better interpretability than another model if its decisions are easier to understand by a human than the decisions from the other model.
+When comparing models, besides model performance, a model is said to have a better interpretability than another model if its decisions are easier to understand by a human than the decisions from the other model.  <br/>
 * Model performance is not the run-time or execution performance, but how accurate the model can be in making decisions.
 * What drives model predictions? Which features are imp in decision-making policies of the model - ensures FAIRNESS of the model.
 * Why did the model take a certain decision? Validate and justify why certain key features were responsible in driving certain decisions taken by a model during predictions - ensures ACCOUNTABILITY and RELIABILITY of the model.
 * How can we trust model predictions? We should be able to evaluate and validate any data point and how a model takes decisions on it - ensures TRANSPARENCY of the model.
-
+  <br/>
+  <br/>
 * Global Interpretation - Being able to explain the conditional interaction between dependent andindependent variables based on the complete dataset
 * Local Interpretation - Being able to explain the conditional interaction between dependent andindependent variables wrt to a single prediction
 
@@ -29,7 +30,7 @@ Traditional techniques for Model interpretation are
 * ELI5
 * SHAP
 * LIME - Local Interpretable Model-Agnostic Explanations
-
+  <br/>
 Concept behind global interpretations of model-agnostic feature importance
 * We measure a feature’s importance by calculating the increase of the model’s prediction error after perturbing the feature.
 * A feature is “important” if perturbing its values increases the model error, because the model relied on the feature for the prediction.
@@ -42,9 +43,9 @@ Frameworks like Skater compute Feature importance based on an information theore
 frameworks like SHAP, use a combination of feature contributions and game theory to come up with SHAP values. Then, it computes the global feature importance by taking the average of the SHAP value magnitudes across the dataset. 
 
 ### Global Surrogate Models
-It is a way of building intepretable approximations of really complex models, global surrogate models.
-A global surrogate model is an interpretable model that is trained to approximate the predictions of a black box model which can essentially be any model regardless of its complexity or training algorithm.
-Steps involved in building surrogate models:
+It is a way of building intepretable approximations of really complex models, global surrogate models.  <br/>
+A global surrogate model is an interpretable model that is trained to approximate the predictions of a black box model which can essentially be any model regardless of its complexity or training algorithm.  <br/>
+Steps involved in building surrogate models:  <br/>
 * Choose a dataset This could be the same dataset that was used for training the black box model or a new dataset from the same distribution. You could even choose a subset of the data or a grid of points, depending on your application.
 * For the chosen dataset, get the predictions of your base black box model.
 * Choose an interpretable surrogate model (linear model, decision tree, …).
@@ -53,5 +54,7 @@ Steps involved in building surrogate models:
 * Measure how well the surrogate model replicates the prediction of the black box model.
 * Interpret / visualize the surrogate model.
 
+### LIME
+LIME explanations are based on local surrogate models.  <br/>
 
 
