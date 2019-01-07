@@ -39,8 +39,9 @@ Concept behind global interpretations of model-agnostic feature importance
 ### Skater
 Frameworks like Skater compute Feature importance based on an information theoretic criteria, measuring the entropy in the change of predictions, given a perturbation of a given feature. The intuition is that the more a model’s decision criteria depend on a feature, the more we’ll see predictions change as a function of perturbing a feature. 
 
-### SHAP
-frameworks like SHAP, use a combination of feature contributions and game theory to come up with SHAP values. Then, it computes the global feature importance by taking the average of the SHAP value magnitudes across the dataset. 
+### SHAP (SHapley Additive exPlanations) 
+Frameworks like SHAP, use a combination of feature contributions and game theory to come up with SHAP values. Then, it computes the global feature importance by taking the average of the SHAP value magnitudes across the dataset.  <br/>
+
 
 ### Global Surrogate Models
 It is a way of building intepretable approximations of really complex models, global surrogate models.  <br/>
