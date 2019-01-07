@@ -11,6 +11,10 @@ When comparing models, besides model performance, a model is said to have a bett
 * Global Interpretation - Being able to explain the conditional interaction between dependent andindependent variables based on the complete dataset
 * Local Interpretation - Being able to explain the conditional interaction between dependent andindependent variables wrt to a single prediction
 
+Traditional techniques for Model interpretation are 
+* Exploratory analysis and visualization techniques like clustering and dimensionality reduction.
+* Model performance evaluation metrics like precision, recall, accuracy, ROC curve and the AUC (for classification models) and the coefficient of determination (R-square), root mean-square error, mean absolute error (for regression models)
+
 ### Techniques
 * Skater, Python framework
 * ELI5
