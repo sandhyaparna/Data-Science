@@ -8,11 +8,17 @@ When comparing models, besides model performance, a model is said to have a bett
 * Why did the model take a certain decision? Validate and justify why certain key features were responsible in driving certain decisions taken by a model during predictions - ensures ACCOUNTABILITY and RELIABILITY of the model.
 * How can we trust model predictions? We should be able to evaluate and validate any data point and how a model takes decisions on it - ensures TRANSPARENCY of the model.
 
+* Global Interpretation - Being able to explain the conditional interaction between dependent andindependent variables based on the complete dataset
+* Local Interpretation - Being able to explain the conditional interaction between dependent andindependent variables wrt to a single prediction
+
 ### Techniques
 * Skater, Python framework
 * ELI5
 * SHAP
 * LIME - Local Interpretable Model-Agnostic Explanations
+
+
+
 
 
 
