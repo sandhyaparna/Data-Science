@@ -4,4 +4,8 @@
 * Productivity: 
 * Understandability:
 
-
+Feature reduction techniques:
+* Dimensionality reduction: Principal Component Analysis (PCA), Self-organizing maps (SOM), Latent Semantic Indexing
+* Manifold Learning: t-Distributed Stochastic Neighbor Embedding (t-SNE)
+* Variational autoencoders: An automated generative approach using variational autoencoders (VAE)
+* Clustering: Hierarchical Clustering
