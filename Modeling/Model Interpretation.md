@@ -42,9 +42,16 @@ Frameworks like Skater compute Feature importance based on an information theore
 frameworks like SHAP, use a combination of feature contributions and game theory to come up with SHAP values. Then, it computes the global feature importance by taking the average of the SHAP value magnitudes across the dataset. 
 
 ### Global Surrogate Models
-
-
-
+It is a way of building intepretable approximations of really complex models, global surrogate models.
+A global surrogate model is an interpretable model that is trained to approximate the predictions of a black box model which can essentially be any model regardless of its complexity or training algorithm.
+Steps involved in building surrogate models:
+* Choose a dataset This could be the same dataset that was used for training the black box model or a new dataset from the same distribution. You could even choose a subset of the data or a grid of points, depending on your application.
+* For the chosen dataset, get the predictions of your base black box model.
+* Choose an interpretable surrogate model (linear model, decision tree, …).
+* Train the interpretable model on the dataset and its predictions.
+* Congratulations! You now have a surrogate model.
+* Measure how well the surrogate model replicates the prediction of the black box model.
+* Interpret / visualize the surrogate model.
 
 
 
