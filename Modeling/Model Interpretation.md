@@ -48,7 +48,7 @@ Steps involved in building surrogate models:
 * Choose a dataset This could be the same dataset that was used for training the black box model or a new dataset from the same distribution. You could even choose a subset of the data or a grid of points, depending on your application.
 * For the chosen dataset, get the predictions of your base black box model.
 * Choose an interpretable surrogate model (linear model, decision tree, …).
-* Train the interpretable model on the dataset and its predictions.
+* Train the interpretable model on the dataset and its predictions (Predictions from Black box are used as Targets).
 * Congratulations! You now have a surrogate model.
 * Measure how well the surrogate model replicates the prediction of the black box model.
 * Interpret / visualize the surrogate model.
