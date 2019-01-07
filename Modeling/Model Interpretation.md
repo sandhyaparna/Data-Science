@@ -40,7 +40,13 @@ Concept behind global interpretations of model-agnostic feature importance
 Frameworks like Skater compute Feature importance based on an information theoretic criteria, measuring the entropy in the change of predictions, given a perturbation of a given feature. The intuition is that the more a model’s decision criteria depend on a feature, the more we’ll see predictions change as a function of perturbing a feature. 
 
 ### SHAP (SHapley Additive exPlanations) 
+https://www.kdnuggets.com/2018/12/explainable-ai-model-interpretation-strategies.html/2
 Frameworks like SHAP, use a combination of feature contributions and game theory to come up with SHAP values. Then, it computes the global feature importance by taking the average of the SHAP value magnitudes across the dataset.  <br/>
+Assuming that each feature is a ‘player’ in a game where the prediction is the payout. The Shapley value — a method from coalitional game theory — tells us how to fairly distribute the ‘payout’ among the features. The Shapley value, coined by Shapley, is a method for assigning payouts to players depending on their contribution towards the total payout. Players cooperate in a coalition and obtain a certain gain from that cooperation.
+* The ‘game’ is the prediction task for a single instance of the dataset.
+* The ‘gain’ is the actual prediction for this instance minus the average prediction of all instances.
+* The ‘players’ are the feature values of the instance, which collaborate to receive the gain (= predict a certain value).
+The Shapley value is the average marginal contribution of a feature value over all possible coalitions. Coalitions are basically combinations of features which are used to estimate the shapley value of a specific feature. Typically more the features, it starts increasing exponentially hence it may take a lot of time to compute these values for big or wide datasets. 
 
 
 ### Global Surrogate Models
