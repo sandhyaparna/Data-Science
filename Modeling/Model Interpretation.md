@@ -22,10 +22,16 @@ Traditional techniques for Model interpretation are
 * SHAP
 * LIME - Local Interpretable Model-Agnostic Explanations
 
+Concept behind global interpretations of model-agnostic feature importance
+* We measure a feature’s importance by calculating the increase of the model’s prediction error after perturbing the feature.
+* A feature is “important” if perturbing its values increases the model error, because the model relied on the feature for the prediction.
+* A feature is “unimportant” if perturbing its values keeps the model error unchanged, because the model basically ignored the feature for the prediction.
+
 ### Skater
 Frameworks like Skater compute Feature importance based on an information theoretic criteria, measuring the entropy in the change of predictions, given a perturbation of a given feature. The intuition is that the more a model’s decision criteria depend on a feature, the more we’ll see predictions change as a function of perturbing a feature. 
 
-
+### SHAP
+frameworks like SHAP, use a combination of feature contributions and game theory to come up with SHAP values. Then, it computes the global feature importance by taking the average of the SHAP value magnitudes across the dataset. 
 
 
 
