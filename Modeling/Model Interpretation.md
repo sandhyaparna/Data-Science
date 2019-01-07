@@ -27,7 +27,7 @@ Traditional techniques for Model interpretation are
 * Partial Dependence Plots using SHAP, Skater
 * Global Surrogate Models
 * LIME - Local Interpretable Model-Agnostic Explanations
-* SHAP
+* SHAP - Shapley Values and SHapley Additive exPlanations
 
   <br/>
 Concept behind global interpretations of model-agnostic feature importance
