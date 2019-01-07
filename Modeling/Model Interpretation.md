@@ -15,13 +15,15 @@ Traditional techniques for Model interpretation are
 * Exploratory analysis and visualization techniques like clustering and dimensionality reduction.
 * Model performance evaluation metrics like precision, recall, accuracy, ROC curve and the AUC (for classification models) and the coefficient of determination (R-square), root mean-square error, mean absolute error (for regression models)
 
+
 ### Techniques
 * Skater, Python framework
 * ELI5
 * SHAP
 * LIME - Local Interpretable Model-Agnostic Explanations
 
-
+### Skater
+Frameworks like Skater compute Feature importance based on an information theoretic criteria, measuring the entropy in the change of predictions, given a perturbation of a given feature. The intuition is that the more a model’s decision criteria depend on a feature, the more we’ll see predictions change as a function of perturbing a feature. 
 
 
 
