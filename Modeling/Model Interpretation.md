@@ -40,6 +40,10 @@ Concept behind global interpretations of model-agnostic feature importance
 * Skater
 * SHAP
 
+### ELI5
+ELI5 is a Python package which helps to debug machine learning classifiers and explain their predictions in an easy to understand an intuitive way. It is perhaps the easiest of the three machine learning frameworks to get started with since it involves minimal reading of documentation! However it doesn’t support true model-agnostic interpretations and support for models are mostly limited to tree-based and other parametric\linear models.
+
+
 ### Skater
 Frameworks like Skater compute Feature importance based on an information theoretic criteria, measuring the entropy in the change of predictions, given a perturbation of a given feature. The intuition is that the more a model’s decision criteria depend on a feature, the more we’ll see predictions change as a function of perturbing a feature. 
 
