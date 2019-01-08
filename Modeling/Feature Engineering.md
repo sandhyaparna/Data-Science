@@ -26,7 +26,7 @@ https://towardsdatascience.com/understanding-feature-engineering-part-1-continuo
 * Bearing Between the two Lat/Lons
 
     
-### Automated Feature Engineering
+### Automated Feature Engineering - Deep Feature Synthesis
 https://docs.featuretools.com/automated_feature_engineering/primitives.html
 
 * Featuretools module in python - Deep feature synthesis
