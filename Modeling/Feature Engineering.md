@@ -9,10 +9,9 @@ https://towardsdatascience.com/understanding-feature-engineering-part-1-continuo
 * Binning
 * Binarize based on a cut-off
 * Rounding off - High precision may not be required
-* 
-
-
-
+* Interaction between variables
+* Binning
+* Transformation - log, box-cox
 
 ### Binary Variables
 
