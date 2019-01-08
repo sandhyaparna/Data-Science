@@ -13,6 +13,10 @@ https://towardsdatascience.com/understanding-feature-engineering-part-1-continuo
 * Binning
 * Transformation - log, box-cox
 
+### Categorical
+* Encoding
+
+
 ### Binary Variables
 
 
