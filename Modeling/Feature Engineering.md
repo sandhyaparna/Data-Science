@@ -1,5 +1,18 @@
 ### Links
 https://www.kdnuggets.com/2018/12/feature-building-techniques-tricks-kaggle.html
+https://towardsdatascience.com/understanding-feature-engineering-part-1-continuous-numeric-data-da4e47099a7b
+
+
+### Numeric
+* Values as it is
+* Unique Counts/Freq
+* Binning
+* Binarize based on a cut-off
+* Rounding off - High precision may not be required
+* 
+
+
+
 
 ### Binary Variables
 
