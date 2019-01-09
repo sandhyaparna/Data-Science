@@ -36,6 +36,7 @@ But how is this different than Python stemming? While stemming can create words 
 
 
 ### Feature Extraction
+https://towardsdatascience.com/understanding-feature-engineering-part-4-deep-learning-methods-for-text-data-96c44370bbfa
 ###### Count Vectorization
 Count Vector is a matrix notation of the dataset in which every row represents a document from the corpus, every column represents a term from the corpus, and every cell represents the frequency count of a particular term in a particular document
 ###### N-Grams
