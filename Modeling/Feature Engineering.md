@@ -13,16 +13,21 @@ https://medium.com/open-machine-learning-course/open-machine-learning-course-top
 * Interaction between variables
 * Binning
 * Transformation - log, box-cox
+* Scaling by Max-Min
+* Normalization using Standard Deviation
+* Log based feature/Target: use log based features or log based target function
+
 
 ### Categorical
 * Encoding
-
+* 
 
 ### Binary Variables
 
 
 ### Date and Time
 * Day of the week
+* Time based Features like "Evening", "Noon", "Night", "Purchases_last_month", "Purchases_last_week" etc.
 * Is weekend or not
 * cash withdrawals can be linked to a pay day; the purchase of a metro card, to the beginning of the month.
 * In general, when working with time series data, it is a good idea to have a calendar with public holidays, abnormal weather conditions, and other important events.
