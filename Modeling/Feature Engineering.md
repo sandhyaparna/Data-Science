@@ -72,7 +72,25 @@ https://tsfresh.readthedocs.io/en/latest/text/list_of_features.html
 * Number of ATMs around, etc. 
 * Height above sea level, etc. 
 
-
+### Search based data
+* Attribute Features
+  * Whether the product contains a certain attribute (brand, size, color, weight, indoor/outdoor, energy star certified …)
+  * Whether a certain attribute matches with the search term
+* Meta Features
+  * Length of each text field
+  * Whether the product contains attribute fields
+  * Brand (encoded as integers)
+  * Product ID
+* Matching
+  * Whether search term appears in product title / description / attributes
+  * Count and ratio of search term’s appearance in product title / description / attributes
+  * Whether the i-th word of search term appears in product title / description / attributes
+* Text similarities between search term and product title/description/attributes
+  * BOW Cosine Similairty
+  * TF-IDF Cosine Similarity
+  * Jaccard Similarity
+  * Edit Distance
+  * Word2Vec Distance (I didn’t include this because of its poor performance and slow calculation. Yet it seems that I was using it wrong.)
 
     
 ### Automated Feature Engineering - Deep Feature Synthesis
