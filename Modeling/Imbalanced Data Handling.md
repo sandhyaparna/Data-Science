@@ -2,6 +2,7 @@
 https://www.kdnuggets.com/2016/08/learning-from-imbalanced-classes.html
 https://www.kdnuggets.com/2017/06/7-techniques-handle-imbalanced-data.html
 
+Test set should never be undersampled or over-sampled
 
 ### Techniques
 * Do Nothing and use models that can handle imbalance like XGBoost
