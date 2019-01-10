@@ -17,7 +17,10 @@ pairs of datasets S, S0 that differ in a single element, in which case we say S 
 * The limit of the method is determined by the size of the holdout set - the number of times that the holdout set may be used grows roughly as the square of the number of collected data points in the holdout, as our theory shows.
 * Based on Differential privacy - It is a notion of stability requiring that any single sample should not influence the outcome of the analysis significantly.
 
-
+### Advantages of Thresholdout
+* Stability - Modifying a single data point doesn't chnage outcome too much
+* Differential privacy - Notion of privacy-preserving data analysis. Differential privacy is a strong form of stability that allows
+adaptive/sequential composition of different analyses
 
 
 
