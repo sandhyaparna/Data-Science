@@ -94,6 +94,7 @@ RMSE = ( {Σ(Y – Ypred)²} / n )^0.5 <br/>
 RMSE is higher or equal to MAE and is the default metric in most models because loss function defined in terms of RMSE is smoothly differentiable and makes it easier to perform mathematical operations. <br/>
 Minimizing the squared error over a set of numbers results in finding its mean. <br/>
 ##### MAE - Mean Absolute error
+Sum of the absolute difference between predictions and actual values <br/> 
 MAE = (Σ|Y – Ypred|) / n  <br/>
 Minimizing the absolute error results in finding its median. <br/> 
 ##### MSE - Mean Squared error
