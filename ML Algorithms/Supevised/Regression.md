@@ -109,10 +109,24 @@ Total Variation (It is not the complete formulae for variance) = Σ(Y – Yavg)�
 ##### Adjusted R Squared (R²)
 R² assumes that every single variable explains the variation in the dependent variable. R² either stay the same or increase with addition of more variables wven if they dont have any relationship with the output variables. <br/> 
 The adjusted R² tells you the percentage of variation explained by only the independent variables that actually affect the dependent variable. It penalizes you for adding variables which dont improve your existing model. <br/> 
+The best regression model is the one with the largest adjusted R2-value. <br/> 
 R-squared = 1-(SSE/SST) = SSR/SST <br/> 
 R-square and Adjusted R squared would be exactly same for single input variable. <br/> 
 Adjusted R² = 1 - { (1-R²)(n-1)/(n-k-1) }    <br/>
 n is total sample size and k is no of predictors <br/>
+##### Mallow's Cp
+Mallow’s Cp is a technique for model selection in regression. The Cp statistic is defined as a criteria to assess fits when models with different number of parameters are being compared. A small value of Cp means that the model is relatively precise. <br/>
+Mallows’s Cp has been shown to be equivalent to Akaike information criterion in the special case of Gaussian linear regression. <br/>
+Mallows’s Cp addresses the issue of overfitting, in which model selection statistics such as the residual sum of squares always get smaller as more variables are added to a model. <br/>
+##### AIC - Akaike's Info Criterion
+AIC is an estimator of the relative quality of statistical models for a given set of data. <br/>
+AIC estimates the relative information lost by a given model: the less information a model loses, the higher the quality of that model. <br/>
+AIC deals with the trade-off between the goodness of fit of the model and the simplicity of the model. <br/>
+AIC and BIC are both penalized-likelihood criteria. Both are of the form “measure of fit + complexity penalty”. Lowest value implies best model <br/>
+AIC = -2*ln(likelihood) + 2*p 
+##### BIC - Bayesian Info Criterion
+Both BIC and AIC attempt to resolve overfitting problem by introducing a penalty term for the number of parameters in the model; the penalty term is larger in BIC than in AIC. <br/>
+BIC = -2*ln(likelihood) + ln(N)*p
 
 ### Bullet Points
 * Linear regression will have high bias and low variance
