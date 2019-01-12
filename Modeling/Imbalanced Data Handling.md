@@ -9,7 +9,7 @@ Test set should never be undersampled or over-sampled
 * Sampling (CROSS-VALIDATION should always be applied before over sampling to avoid over-fitting)
   * Oversample the minority class - SMOTE
   * Undersample the majority class.
-  * Synthesize new minority classes.
+  * Synthesize new minority classes - ROSE & DMwR packages in R.
   * Build n models that use all the samples of the rare class and n-differing samples of the abundant class. Eg: Given that you want to ensemble 10 models, you would keep e.g. the 1.000 cases of the rare class and randomly sample 10.000 cases of the abundant class. Then you just split the 10.000 cases in 10 chunks and train 10 different models.
   * Above appraoch of ensembling can be fine-tuned by playing with the ratio between the rare and the abundant class. The best ratio  heavily depends on the data and the models that are used. But instead of training all models with the same ratio in the ensemble, it is worth trying to ensemble different ratios.  So if 10 models are trained, it might make sense to have a model that has a ratio of 1:1 (rare:abundant) and another one with 1:3, or even 2:1.
 * Anomaly Detection
