@@ -92,7 +92,40 @@ https://tsfresh.readthedocs.io/en/latest/text/list_of_features.html <br/>
   * Edit Distance
   * Word2Vec Distance (I didn’t include this because of its poor performance and slow calculation. Yet it seems that I was using it wrong.)
 
-    
+### Sales Transactional Data
+* Most recent transaction related details - when did he buy, what did he buy etc
+* Freq
+* Monetary
+* Average Time Difference between transactions
+* Average number of Transactions per month
+* Sales
+* Number of Disinct Items
+* Total number of Transactions
+* Percantage of Discounted transactions - total discounted trans/Total Trans
+* Maximum Discount Amount
+* Total Discount Amount
+* Identify first transaction - first. In SAS
+* Maximum Sales value
+* Minimum Sales Value
+* Difference between Time period end date and Last transaction date
+* Most Recent Transaction's Sales value
+* Average Transactional Value = sales/transactions
+* Average items per transaction= Quantity Sold/Transactions
+* Volume - Quantity Sold
+* Tenure of a Customer (based on their Start Date)
+* Age of the firm
+* Number of Employees
+* Size of the firm (Revenue)
+* Location
+* Frequent mode of purchase - website/Sales person/ phone
+* Participation in Events
+* Distance in miles between prospect location and event location
+
+
+
+
+
+
 ### Automated Feature Engineering - Deep Feature Synthesis
 https://docs.featuretools.com/automated_feature_engineering/primitives.html
 
