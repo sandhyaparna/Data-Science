@@ -12,10 +12,14 @@ Logistic regression predicts the probability of occurrence of an event by fittin
 * logit(p) = ln(p/(1-p)) = b0+b1X1+b2X2+b3X3....+bkXk <br/>
     * Log odds range from - ∞ to +∞. Log odds is used to extens the range of the output as input vars may be continuous vars  <br/>
     * Slopes defines the steepness of the curve
-    * COnstant term move the curve left and right 
+    * Constant term move the curve left and right 
+* Inverse of  ln(p/(1-p)) = b0+b1X1+b2X2+b3X3....+bkXk  is known as Sigmoid function and it gives an S-shaped curve, that has a value of probability ranging from 0<p<1.
 * Any monotonic function tha maps the unit interval to the real number can be considered as link. GLM is used for analyzing linear and non-linear effects of continuous and categorical predictors on discrete or continuous response vars (uses link fucntion)
-* MLE determines the regression coefficient that accurately predicts the probability of the binary dependent variable <br/>
-* Should be used when data is linearly seperable
+* Should be used when data is linearly seperable. This dividing plane is called a linear discriminant, because its linear in terms of its function and it helps the model discriminate between points belonging to different classes
+
+### Maximum Likelihood Estimation
+MLE determines the regression coefficient that accurately predicts the probability of the binary dependent variable <br/>
+
 
 ### Assumptions
 * Observations are independent of each other
