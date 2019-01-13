@@ -1,5 +1,7 @@
 ### Links
 https://www.analyticsvidhya.com/blog/2016/11/an-introduction-to-clustering-and-different-methods-of-clustering/
+https://www.analyticsvidhya.com/blog/2013/11/getting-clustering-right/
+https://www.analyticsvidhya.com/blog/2013/11/getting-clustering-right-part-ii/
 
 
 ### Overview
