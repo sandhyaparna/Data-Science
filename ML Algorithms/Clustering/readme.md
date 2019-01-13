@@ -8,6 +8,8 @@ Clustering is the task of dividing the population or data points into a number o
 * Centroid models: Iterative clustering algorithms in which the notion of similarity is derived by the closeness of a data point to the centroid of the clusters. (K-Means)
 * Distribution models: Based on the notion of how probable is it that all data points in the cluster belong to the same distribution (For example: Normal, Gaussian). These models often suffer from overfitting. (Expectation-maximization algorithm )
 * Density Models: These models search the data space for areas of varied density of data points in the data space. It isolates various different density regions and assign the data points within these regions in the same cluster. Popular examples of density models are DBSCAN and OPTICS.
+* Hierarchical cannot handle large data sets as it is time consuming
+* K-Means is more suitable for large data sets
 
 
 ### Clustering Algos
