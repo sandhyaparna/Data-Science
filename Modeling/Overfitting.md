@@ -1,8 +1,8 @@
 ### Links
-https://www.kdnuggets.com/2015/08/feldman-avoid-overfitting-holdout-adaptive-data-analysis.html
-https://arxiv.org/pdf/1506.02629.pdf
-https://www.oreilly.com/ideas/3-ideas-to-add-to-your-data-science-toolkit
-https://ai.googleblog.com/2015/08/the-reusable-holdout-preserving.html
+https://www.kdnuggets.com/2015/08/feldman-avoid-overfitting-holdout-adaptive-data-analysis.html <br/>
+https://arxiv.org/pdf/1506.02629.pdf <br/>
+https://www.oreilly.com/ideas/3-ideas-to-add-to-your-data-science-toolkit <br/>
+https://ai.googleblog.com/2015/08/the-reusable-holdout-preserving.html <br/> 
 
 ### Problem
 * Adaptive data analysis: Though we use a holdout set to verify our model built on training set, we use holdout set to revise parameters or algorithm, this frequantly leads to over-fitting on holdout set
