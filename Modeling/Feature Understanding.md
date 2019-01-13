@@ -1,4 +1,4 @@
-https://www.kdnuggets.com/2018/11/secret-sauce-top-kaggle-competition.html
+https://www.kdnuggets.com/2018/11/secret-sauce-top-kaggle-competition.html <br/>
 
 * Features wrt Target
 * Identify noisy features - Noisy features lead to overfitting. Features are noisy if trends in train and test dont match. 
