@@ -24,6 +24,10 @@ The analysis plan includes decision rules for rejecting the null hypothesis. In 
 These approaches are equivalent <br/>
 ##### P-value
 The strength of evidence in support of a null hypothesis is measured by the P-value. Suppose the test statistic is equal to S. The P-value is the probability of observing a test statistic as extreme as S, assuming the null hypotheis is true. If the P-value is less than the significance level, we reject the null hypothesis.
+* If p-value>0.05 we don't have strong evidence against Null Hypothesis and hence fail to reject it
+* If p-value<0.05 we have strong evidence against Null Hypothesis and hence reject it
+* If p-value=0.05 is the marginal value indicating it is possible to go either way
+
 ##### Region of acceptance
 The region of acceptance is a range of values. If the test statistic falls within the region of acceptance, the null hypothesis is not rejected. The region of acceptance is defined so that the chance of making a Type I error is equal to the significance level. <br/>
 The set of values outside the region of acceptance is called the region of rejection. If the test statistic falls within the region of rejection, the null hypothesis is rejected. In such cases, we say that the hypothesis has been rejected at the α level of significance. <br/>
