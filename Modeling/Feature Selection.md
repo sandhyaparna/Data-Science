@@ -13,3 +13,14 @@ https://topepo.github.io/caret/feature-selection-using-genetic-algorithms.html <
 * Manifold Learning: t-Distributed Stochastic Neighbor Embedding (t-SNE)
 * Variational autoencoders: An automated generative approach using variational autoencoders (VAE)
 * Clustering: Hierarchical Clustering
+* Forward slection, Backward Selection, Stepwise Selection
+* Regularization - Lasso Regression
+* Remove correlated variables 
+* Measure information gain for the available set of features and select top n features accordingly
+* Use regression and select variables based on p values
+
+
+
+
+
+
