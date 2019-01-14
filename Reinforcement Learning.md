@@ -8,5 +8,5 @@ Monte Carlo learning <br/>
 Dynamic Learning <br/>
 
 
-Learning from interaction is the foundational underlying concept for all theories of learning and intelligence. <br/>
+Learning from interaction is the foundational underlying concept for all theories of learning and intelligence. Reinforcement learning occurs when algorithms learn based on external feedback given either by a thinking entity, or the environment. This approach is analogous to teaching dogs to sit or jump. <br/>
 
