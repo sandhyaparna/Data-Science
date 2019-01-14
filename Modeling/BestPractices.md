@@ -1,3 +1,4 @@
+Data Pre-processing http://www.cs.ccsu.edu/~markov/ccsu_courses/datamining-3.html 
 
 * In Healthcare - built models for data at differnt points - Reason is that a patient have acquired infection earlier and starts showing syptoms much before the actual test indicators
   * At onset
