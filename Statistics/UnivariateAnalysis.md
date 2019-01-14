@@ -13,6 +13,7 @@ Categorical   <br/>
 • A total area under the curve of 1 <br/>
 • A common value for the mean, median, and mode <br/>
 ###### Operations
+Spread of data - Range, IQR, std, variance, skewness, Kurtosis
 * Minimum <br/>
 * Maximum <br/>
 * Mean <br/>
@@ -33,6 +34,7 @@ Range, IQR, Variance, Standard Deviation are measures of Variance <br/>
 
 ###### Graphical Representations
 * Box plot
+Difference between box plot and modified box plot - Box plot has min and Max, Modiified box plot has lower fence(1st Quartile-1.5IQR) and Upper fence (3rd Quartile+1.5IQR) (fences are whiskers), points outside whiskers are outliers
 * Histogram
 * Pareto chart - Bar chart and line chart combined. Bars are ordered in descending freq from left to right. Line chart displays cumulative freq.
 
