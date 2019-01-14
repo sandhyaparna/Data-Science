@@ -19,6 +19,7 @@ Spread of data - Range, IQR, std, variance, skewness, Kurtosis
 * Mean <br/>
   * Mean of ORDINAL data doesn’t make sense because mean assumes equal intervals but in ordinal data we don’t know if the difference between 1 & 2 is same as the distance between 2 & 3
 * Median  - Robust statistic <br/> 
+* Mode  <br/> 
 * 1st Quantile - 25th percentile <br/>
 * 3rd Quantile - 75th percentile <br/>
 * IQR - Diff between 1st & 3rd quantiles <br/>
@@ -27,6 +28,10 @@ Spread of data - Range, IQR, std, variance, skewness, Kurtosis
 * Range = Max - Min <br/>
 * Variance - Spread of the data from their average value - The average of the squared differences from the mean <br/>
 * Standard Deviation - How far the data is deviated(dispersed) from the mean (Exact distances from mean) - square root of the variance is the standard deviation. It is not robust to outliers <br/>
+* NMiss - Number of missing values <br/>
+* Percentiles
+* Skewness
+* Kurtosis
 
 Mean, Median, Mode are measures of central Tendancy <br/>
 Range, IQR, Variance, Standard Deviation are measures of Variance <br/>
@@ -42,6 +47,9 @@ Difference between box plot and modified box plot - Box plot has min and Max, Mo
 ###### Operations
 * Frequency/Cumulative Frequency  <br/>
 * Percentage  <br/>
+* Mode
+* Unique Values
+* NMiss - Number of Missing values <br/>
 ###### Graphical Representations
 * Bar chart (Pareto Chart - Bar graph ordered from highest to lowest freq)<br/>
 * Line Plot - Freq over a number line
