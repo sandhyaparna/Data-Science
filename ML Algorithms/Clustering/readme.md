@@ -1,11 +1,12 @@
 ### Links
-https://www.analyticsvidhya.com/blog/2016/11/an-introduction-to-clustering-and-different-methods-of-clustering/
-https://www.analyticsvidhya.com/blog/2013/11/getting-clustering-right/
-https://www.analyticsvidhya.com/blog/2013/11/getting-clustering-right-part-ii/
+https://www.analyticsvidhya.com/blog/2016/11/an-introduction-to-clustering-and-different-methods-of-clustering/ <br/>
+https://www.analyticsvidhya.com/blog/2013/11/getting-clustering-right/ <br/>
+https://www.analyticsvidhya.com/blog/2013/11/getting-clustering-right-part-ii/ <br/>
 
 
 ### Overview
-Clustering is the task of dividing the population or data points into a number of groups such that data points in the same groups are more similar to other data points in the same group than those in other groups. In simple words, the aim is to segregate groups with similar traits and assign them into clusters.
+Segmenting is the process of putting customers into groups based on similarities, and clustering is the process of finding similarities in customers so that they can be grouped, and therefore segmented. <br/>
+Clustering is the task of dividing the population or data points into a number of groups such that data points in the same groups are more similar to other data points in the same group than those in other groups. In simple words, the aim is to segregate groups with similar traits and assign them into clusters. <br/>
 * Connectivity models: start with classifying all data points into separate clusters & then aggregating them as the distance decreases (or) all data points are classified as a single cluster and then partitioned as the distance increases. Lacks scalability for handling big datasets. (Hierarchical)
 * Centroid models: Iterative clustering algorithms in which the notion of similarity is derived by the closeness of a data point to the centroid of the clusters. (K-Means)
 * Distribution models: Based on the notion of how probable is it that all data points in the cluster belong to the same distribution (For example: Normal, Gaussian). These models often suffer from overfitting. (Expectation-maximization algorithm )
