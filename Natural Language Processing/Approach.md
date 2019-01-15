@@ -44,6 +44,7 @@ https://towardsdatascience.com/understanding-feature-engineering-part-4-deep-lea
 ###### Count Vectorization (Bag of words)
 Count Vector is a matrix notation of the dataset in which every row represents a document from the corpus, every column represents a term from the corpus, and every cell represents the frequency count of a particular term in a particular document
 ###### N-Grams
+An n-gram is a contiguous sequence of n items from a given sample of text or speech.
 ###### TF-IDF
 TF-IDF score represents the relative importance of a term in the document and the entire corpus. TF-IDF score is composed by two terms: the first computes the normalized Term Frequency (TF), the second term is the Inverse Document Frequency (IDF), computed as the logarithm of the number of the documents in the corpus divided by the number of documents where the specific term appears <br/>
   TF(t) = (Number of times term t appears in a document) / (Total number of terms in the document) <br/>
