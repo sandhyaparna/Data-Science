@@ -1,4 +1,4 @@
-#### Links
+### Links
 KDNuggets NLP in Nutshell https://www.kdnuggets.com/2019/01/solve-90-nlp-problems-step-by-step-guide.html <br/>
 Readmission by Andrew https://towardsdatascience.com/introduction-to-clinical-natural-language-processing-predicting-hospital-readmission-with-1736d52bc709 <br/>
 https://www.analyticsvidhya.com/blog/2018/02/the-different-methods-deal-text-data-predictive-python/ <br/>
@@ -15,11 +15,11 @@ https://towardsdatascience.com/understanding-feature-engineering-part-3-traditio
 Tokenization – Process of converting a text into tokens
 Tokens – Words or entities present in the text
 Text object – A sentence or a phrase or a word or an article
-###### Steps
+##### Steps
 * Noise Removal - Stopwords, Punctuations, URLs or links, social media entities(mentions, hashtags) and industry specific words etc <br/>
 * Word/Lexicon Normalization - Tokenization, Lemmatization, Stemming <br/>
 * Word/Object Standardization - Regular Expression, Lookup Tables <br/>
-###### Noise Removal
+##### Noise Removal
 Any piece of text which is not relevant to the context of the data and the end-output can be specified as the noise <br/>
 * Spelling Correction
 * Removing Stop Words: Stop words already present in NLTK package, can add new words to the existing stop words <br/>
