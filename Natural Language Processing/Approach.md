@@ -85,6 +85,10 @@ https://www.datascience.com/resources/notebooks/word-embeddings-in-python <br/>
 ###### FastText
 
 
+### Visualizing Features
+In order to see whether our embeddings/features are capturing information that is relevant to our problem , it is a good idea to visualize them and see if the classes look well separated. Since vocabularies are usually very large and visualizing data in 20,000 dimensions is impossible, techniques like PCA will help project the data down to two dimensions. And is then plotted. 2 features on X & Y-axis and target is colour coded
+
+
 ### Evaluation 
 ##### BLEU (Bilingual Evaluation Understudy)
 It is mostly used to measure the quality of machine translation with respect to the human translation. It uses a modified form of precision metric. <br/>
