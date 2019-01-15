@@ -21,10 +21,12 @@ Text object – A sentence or a phrase or a word or an article
 * Word/Object Standardization - Regular Expression, Lookup Tables <br/>
 ###### Noise Removal
 Any piece of text which is not relevant to the context of the data and the end-output can be specified as the noise <br/>
+* Spelling Correction
 * Removing Stop Words: Stop words already present in NLTK package, can add new words to the existing stop words <br/>
-* Removal of spaces, punctuation, Hashwords etc <br/>
+* Removal of irrelevant characters such as any non-alphanumeric chars, spaces, punctuation, Hashwords, @ twitter mentions, urls etc <br/>
 * Removing text file headers, footers
 * Expand contractions
+* Convert all chars to lowercase or uppercase
 ###### Lexicon Normalization - Stemming
 Stemming is a rudimentary rule-based process of stripping the suffixes (“ing”, “ly”, “es”, “s” etc) from a word <br/>
 * Porter stemming algorithm - https://tartarus.org/martin/PorterStemmer/
