@@ -78,6 +78,7 @@ A typical NER model consists of three blocks:<br/>
 * Entity disambiguation: Sometimes it is possible that entities are misclassified, hence creating a validation layer on top of the results is useful. Use of knowledge graphs can be exploited for this purposes. The popular knowledge graphs are – Google Knowledge Graph, IBM Watson and Wikipedia. <br/>
 ##### Word embedding Models
 Word2Vec, GloVe <br/>
+Google's trained Word2Vec http://mccormickml.com/2016/04/12/googles-pretrained-word2vec-model-in-python/
 https://www.analyticsvidhya.com/blog/2017/06/word-embeddings-count-word2veec/ <br/>
 https://towardsdatascience.com/understanding-feature-engineering-part-4-deep-learning-methods-for-text-data-96c44370bbfa <br/>
 https://www.datascience.com/resources/notebooks/word-embeddings-in-python <br/>
