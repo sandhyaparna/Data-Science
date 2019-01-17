@@ -90,6 +90,11 @@ https://medium.com/scaleabout/a-gentle-introduction-to-doc2vec-db3e8c0cce5e
 
 
 ##### Continuous Bag-of-Words
+https://www.kdnuggets.com/2018/04/implementing-deep-learning-methods-feature-engineering-text-data-cbow.html
+Running CBOW is computationally expensive and works better if trained using a GPU. Guy in the above article used AWS p2.x instance with a Tesla K80 GPU and it took me close to 1.5 hours for just 5 epochs! <br/>
+
+
+
 ##### Skip-Gram Model
 http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/
 
