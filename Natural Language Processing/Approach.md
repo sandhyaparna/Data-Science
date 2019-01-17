@@ -84,6 +84,7 @@ Algorithmically, these models are similar, except that CBOW predicts target word
 Google's trained Word2Vec http://mccormickml.com/2016/04/12/googles-pretrained-word2vec-model-in-python/ <br/>
 After importing google's model  https://github.com/chrisjmccormick/inspect_word2vec/blob/master/inspect_google_word2vec.py <br/>
  https://medium.com/swlh/playing-with-word-vectors-308ab2faa519  https://github.com/mkonicek/nlp <br/>
+FastText's trained word vectors model https://fasttext.cc/docs/en/english-vectors.html
 Detained Neural network representation https://iksinc.online/tag/continuous-bag-of-words-cbow/ <br/>
 https://www.analyticsvidhya.com/blog/2017/06/word-embeddings-count-word2veec/ <br/>
 https://towardsdatascience.com/understanding-feature-engineering-part-4-deep-learning-methods-for-text-data-96c44370bbfa <br/>
