@@ -82,6 +82,7 @@ word2vec representation is created using 2 algorithms: Continuous Bag-of-Words m
 Algorithmically, these models are similar, except that CBOW predicts target words (e.g. 'mat') from source context words ('the cat sits on the') i.e 'predicting the word given its context' , while the skip-gram does the inverse and predicts source context-words from the target words i.e 'predicting the context given a word'. <br/>
 
 Google's trained Word2Vec http://mccormickml.com/2016/04/12/googles-pretrained-word2vec-model-in-python/
+Detained Neural network representation https://iksinc.online/tag/continuous-bag-of-words-cbow/
 https://www.analyticsvidhya.com/blog/2017/06/word-embeddings-count-word2veec/ <br/>
 https://towardsdatascience.com/understanding-feature-engineering-part-4-deep-learning-methods-for-text-data-96c44370bbfa <br/>
 https://www.datascience.com/resources/notebooks/word-embeddings-in-python <br/>
