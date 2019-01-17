@@ -87,7 +87,7 @@ After importing google's model  https://github.com/chrisjmccormick/inspect_word2
 FastText's trained word vectors model https://fasttext.cc/docs/en/english-vectors.html
 Detained Neural network representation https://iksinc.online/tag/continuous-bag-of-words-cbow/ <br/>
 https://www.analyticsvidhya.com/blog/2017/06/word-embeddings-count-word2veec/ <br/>
-https://towardsdatascience.com/understanding-feature-engineering-part-4-deep-learning-methods-for-text-data-96c44370bbfa <br/>
+Detailed demons of CBOW, skip-gram, Feature engineering using word2vec(end of the article) https://towardsdatascience.com/understanding-feature-engineering-part-4-deep-learning-methods-for-text-data-96c44370bbfa <br/>
 https://www.datascience.com/resources/notebooks/word-embeddings-in-python <br/>
 ##### Doc2Vec
 https://medium.com/scaleabout/a-gentle-introduction-to-doc2vec-db3e8c0cce5e
