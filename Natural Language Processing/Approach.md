@@ -91,7 +91,9 @@ https://www.analyticsvidhya.com/blog/2017/06/word-embeddings-count-word2veec/ <b
 https://www.datascience.com/resources/notebooks/word-embeddings-in-python <br/>
 
 ##### Doc2Vec
-https://medium.com/scaleabout/a-gentle-introduction-to-doc2vec-db3e8c0cce5e
+https://medium.com/scaleabout/a-gentle-introduction-to-doc2vec-db3e8c0cce5e <br/>
+https://medium.com/explorations-in-language-and-learning/how-to-obtain-sentence-vectors-2a6d88bd3c8b <br/>
+
 
 
 ##### Continuous Bag-of-Words
