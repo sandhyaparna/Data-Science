@@ -5,9 +5,9 @@ Train-Validation-Test https://towardsdatascience.com/train-validation-and-test-s
 
 
 
-Split data intio Train & Test.
-Use Train data to perform cross-validation. A seperate Test set makes more sense when you use cross-validation or manully change the model hyperparameters based on the results of your model on the validation set.
-
+* Split data intio Train & Test.
+* Use Train data to perform cross-validation. A seperate Test set makes more sense when you use cross-validation or manully change the model hyperparameters based on the results of your model on the validation set.
+* A final deployement model is built based on both Train & Test but we report only Test set performance to finally show how a model is performing
 
 
 
