@@ -1,6 +1,7 @@
 ### Links
 
 
+* Maximum limit for number of missing values = 25-30%
 
 ### Handling
 * Deletion
