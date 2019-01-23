@@ -3,6 +3,10 @@ https://www.saedsayad.com/logistic_regression.htm
 
 
 ### Overview
+#### Interpretation of Categorical and COntinuous vars of a Logistic Reg
+*
+
+#### 
 Logistic regression predicts the probability of occurrence of an event by fitting data to a logit function. Log odds of the outcome is modeled as a linear combination of the predictor variables. Logistic regression is a part of GLM that assumes a linear relationship between link function and independent variables in logit model. Estimates probabilities using underlying logistic function.
 * Probability(For +ve outcome) ranges from 0 to 1 <br/> 
 * odds = p/(1-p) = probability of event occurrence / probability of not event occurrence  <br/>
