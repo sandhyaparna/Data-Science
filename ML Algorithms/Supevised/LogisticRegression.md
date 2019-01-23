@@ -2,11 +2,12 @@
 https://www.saedsayad.com/logistic_regression.htm
 
 
-### Overview
-#### Interpretation of Categorical and COntinuous vars of a Logistic Reg
-*
+### Interpretation of Categorical and Continuous vars of a Logistic Reg
+* For each predictor u get p-value and OddsRatio=exp(Xi). Xi is coeff. Odds ratio gre than 1 implies positive relation
+* Categorical Var: Group(1) has OddsRatio times greater odds of Target happening, holding all other vars constant
+* Continuous Var: A unit inc in the odds of Xj, will inc the odds of Target happening by a factor of OddsRatio of this var, holding all other vars constant
 
-#### 
+### Overview 
 Logistic regression predicts the probability of occurrence of an event by fitting data to a logit function. Log odds of the outcome is modeled as a linear combination of the predictor variables. Logistic regression is a part of GLM that assumes a linear relationship between link function and independent variables in logit model. Estimates probabilities using underlying logistic function.
 * Probability(For +ve outcome) ranges from 0 to 1 <br/> 
 * odds = p/(1-p) = probability of event occurrence / probability of not event occurrence  <br/>
