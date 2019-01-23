@@ -2,7 +2,7 @@
 Train a new model on all available data https://machinelearningmastery.com/train-final-machine-learning-model/ <br/>
 Train-Validation-Test https://towardsdatascience.com/train-validation-and-test-sets-72cb40cba9e7 <br/>
 DONT split Train & Test based on Time https://discuss.analyticsvidhya.com/t/is-it-wise-to-split-training-and-test-dataset-based-on-time-year/2967/4 <br/>
-Split data coming from DIFF distributions https://www.kdnuggets.com/2019/01/when-your-training-testing-data-different-distributions.html <br/>
+Split data coming from DIFFERENT distributions https://www.kdnuggets.com/2019/01/when-your-training-testing-data-different-distributions.html <br/>
 
 
 * Split data intio Train & Test - Stratified splits if the data is imbalanced
