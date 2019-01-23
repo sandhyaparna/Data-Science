@@ -4,7 +4,7 @@ https://www.saedsayad.com/logistic_regression.htm
 
 ### Overview
 Logistic regression predicts the probability of occurrence of an event by fitting data to a logit function. Log odds of the outcome is modeled as a linear combination of the predictor variables. Logistic regression is a part of GLM that assumes a linear relationship between link function and independent variables in logit model. Estimates probabilities using underlying logistic function.
-* Probability ranges from 0 to 1 <br/>
+* Probability(For +ve outcome) ranges from 0 to 1 <br/> 
 * odds = p/(1-p) = probability of event occurrence / probability of not event occurrence  <br/>
   * Odds is defined as the ratio of the chance of the event happening to that of non-happening of the event <br/>
   * Odds range from 0 to ∞ <br/>
