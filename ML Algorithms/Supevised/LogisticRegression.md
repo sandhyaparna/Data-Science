@@ -10,7 +10,7 @@ Logistic regression predicts the probability of occurrence of an event by fittin
   * Odds range from 0 to ∞ <br/>
   * ln(odds) = ln(p/(1-p)) <br/>
 * logit(p) = ln(p/(1-p)) = b0+b1X1+b2X2+b3X3....+bkXk <br/>
-    * Log odds range from - ∞ to +∞. Log odds is used to extens the range of the output as input vars may be continuous vars  <br/>
+    * Log odds range from - ∞ to +∞. Log odds is used to extend the range of the output as input vars may be continuous vars  <br/>
     * Slopes defines the steepness of the curve
     * Constant term move the curve left and right 
 * Inverse of  ln(p/(1-p)) = b0+b1X1+b2X2+b3X3....+bkXk  is known as Sigmoid function and it gives an S-shaped curve, that has a value of probability ranging from 0<p<1.
