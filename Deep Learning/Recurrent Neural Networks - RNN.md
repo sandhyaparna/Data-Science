@@ -15,7 +15,7 @@ A recurrent neural network can be thought of as multiple copies of the same netw
 The repeating module in a standard RNN contains a single layer.
 ![](http://colah.github.io/posts/2015-08-Understanding-LSTMs/img/LSTM3-chain.png)
 The repeating module in an LSTM contains four interacting layers.
-
+*
 
 
 
