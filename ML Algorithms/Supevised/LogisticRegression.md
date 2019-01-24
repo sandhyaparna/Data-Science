@@ -1,6 +1,6 @@
 ### Links
-https://www.saedsayad.com/logistic_regression.htm
-
+https://www.saedsayad.com/logistic_regression.htm <br/>
+https://www.kdnuggets.com/2019/01/logistic-regression-concise-technical-overview.html <br/>
 
 ### Interpretation of Categorical and Continuous vars of a Logistic Reg
 * For each predictor u get p-value and OddsRatio=exp(Xi). Xi is coeff. Odds ratio gre than 1 implies positive relation
