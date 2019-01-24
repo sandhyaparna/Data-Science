@@ -1,9 +1,9 @@
 ### Links
-Course1 https://www.analyticsvidhya.com/blog/2018/10/introduction-neural-networks-deep-learning/
-Course2 
-Course3 
-Course4 
-Course5 
+Course1 https://www.analyticsvidhya.com/blog/2018/10/introduction-neural-networks-deep-learning/ <br/>
+Course2  <br/>
+Course3  <br/>
+Course4  <br/>
+Course5  <br/>
 
 
 ### Computational Time - Activation Function
