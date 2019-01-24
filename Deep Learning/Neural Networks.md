@@ -4,12 +4,13 @@ Course2  <br/>
 Course3  <br/>
 Course4  <br/>
 Course5  <br/>
+Intro to NN https://www.kdnuggets.com/2016/11/quick-introduction-neural-networks.html
 
 ### Computational Time - Activation Function
 * A neuron/node/Unit will take an input, apply some activation function (non-linear) to it, and generate an output.
 * The purpose of the activation function is to introduce non-linearity into the output of a neuron. This is important because most real world data is non linear and we want neurons to learn these non linear representations.
 * Activation function plays an important role in computational time.
-* Some of the activation functions:
+* Every activation function (or non-linearity) takes a single number and performs a certain fixed mathematical operation on it  Some of the activation functions:
   * Logistic Sigmoid - σ(x) = 1 / (1 + exp(−x))
   * Hyperbolic Tangent - tanh(x) = 2σ(2x) − 1
   * Rectified Linear Unit - ReLU - f(x) = max(0, x)
@@ -18,11 +19,10 @@ Course5  <br/>
 Slope, or the gradient of Sigmoid function, at the extreme ends is close to zero. Therefore, the parameters are updated very slowly, resulting in very slow learning. Hence, switching from a sigmoid activation function to ReLU (Rectified Linear Unit) is one of the biggest breakthroughs we have seen in neural networks. ReLU updates the parameters much faster as the slope is 1 when x>0. This is the primary reason for faster computation of the models.
 * Sigmoid takes a real-valued input and squashes it to range between 0 and 1
 * tanh takes a real-valued input and squashes it to the range [-1, 1]
-* ReLU takes a real-valued input and thresholds it at zero (replaces negative values with zero)
+* ReLU takes a real-valued input and thresholds it at zero (replaces negative values with zero implies slope is 0 when x<0)
 
 ##### Why do we need non-linear activation functions?
 Using linear activation is essentially pointless. The composition of two linear functions is itself a linear function, and unless we use some non-linear activations, we are not computing more interesting functions. That’s why most experts stick to using non-linear activation functions.
-
 
 ### Performace
 ![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2018/10/Screenshot-from-2018-10-12-14-29-37-850x438.png) <br/>
@@ -31,6 +31,12 @@ There are basically three scales that drive a typical deep learning process: <br
 1. Data <br/>
 2. Computation Time <br/>
 3. Algorithms <br/>
+
+### Algorithms
+
+#### Back-Propagation Algorithm
+Abbreviated as BackProp. Initially all the edge weights are randomly assigned. For every input in the training dataset, the ANN is activated and its output is observed. This output is compared with the desired output that we already know, and the error is "propagated" back to the previous layer. This error is noted and the weights are "adjusted" accordingly. This process is repeated until the output error is below a predetermined threshold.
+
 
 
 
