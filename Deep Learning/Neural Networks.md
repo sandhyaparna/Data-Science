@@ -39,6 +39,7 @@ Abbreviated as BackProp. Initially all the edge weights are randomly assigned. F
 * Weights are initialized randomly using the following code = {np.random.randn(No of Input Vars, Number of neurons in the first hidden layer, Number of neurons in the second hidden layer, etc) * 0.01} randn generates random floats from a univariate Normal Distribution of mean 0 & Variance 1. Random values are multiplied with 0.01 to initialize small weights. If we initialize large weights, the activation will be large, resulting in zero slope (in case of sigmoid and tanh activation function). Hence, learning will be slow. So we generally initialize small weights randomly.
 
 ### Hyperparameters
+The major difference between parameters and hyperparameters is that parameters are learned by the model during the training time, while hyperparameters can be changed before training the model.
 * Learning rate – ⍺
 * Number of iterations
 * Number of hidden layers
