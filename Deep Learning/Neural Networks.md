@@ -5,13 +5,21 @@ Course3  <br/>
 Course4  <br/>
 Course5  <br/>
 
-
 ### Computational Time - Activation Function
-* A neuron will take an input, apply some activation function to it, and generate an output.
+* A neuron/node/Unit will take an input, apply some activation function (non-linear) to it, and generate an output.
+* The purpose of the activation function is to introduce non-linearity into the output of a neuron. This is important because most real world data is non linear and we want neurons to learn these non linear representations.
 * Activation function plays an important role in computational time.
-![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2018/10/320px-Logistic-curve.svg_-300x200.png) <br/>
-Logistic Sigmoid function - The slope, or the gradient of this function, at the extreme ends is close to zero. Therefore, the parameters are updated very slowly, resulting in very slow learning. Hence, switching from a sigmoid activation function to ReLU (Rectified Linear Unit) is one of the biggest breakthroughs we have seen in neural networks. ReLU updates the parameters much faster as the slope is 1 when x>0. This is the primary reason for faster computation of the models.
-* But Rectified Linear Unit (ReLU) is 
+* Some of the activation functions:
+  * Logistic Sigmoid - σ(x) = 1 / (1 + exp(−x))
+  * Hyperbolic Tangent - tanh(x) = 2σ(2x) − 1
+  * Rectified Linear Unit - ReLU - f(x) = max(0, x)
+  * Softplus
+![](https://ujwlkarn.files.wordpress.com/2016/08/screen-shot-2016-08-08-at-11-53-41-am.png) <br/>
+Slope, or the gradient of Sigmoid function, at the extreme ends is close to zero. Therefore, the parameters are updated very slowly, resulting in very slow learning. Hence, switching from a sigmoid activation function to ReLU (Rectified Linear Unit) is one of the biggest breakthroughs we have seen in neural networks. ReLU updates the parameters much faster as the slope is 1 when x>0. This is the primary reason for faster computation of the models.
+* Sigmoid takes a real-valued input and squashes it to range between 0 and 1
+* tanh takes a real-valued input and squashes it to the range [-1, 1]
+* ReLU takes a real-valued input and thresholds it at zero (replaces negative values with zero)
+
 ##### Why do we need non-linear activation functions?
 Using linear activation is essentially pointless. The composition of two linear functions is itself a linear function, and unless we use some non-linear activations, we are not computing more interesting functions. That’s why most experts stick to using non-linear activation functions.
 
