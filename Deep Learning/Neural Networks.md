@@ -40,6 +40,7 @@ Abbreviated as BackProp. Initially all the edge weights are randomly assigned. F
 * Weights are initialized randomly using the following code = {np.random.randn(No of Input Vars, Number of neurons in the first hidden layer, Number of neurons in the second hidden layer, etc) * 0.01} randn generates random floats from a univariate Normal Distribution of mean 0 & Variance 1. Random values are multiplied with 0.01 to initialize small weights. If we initialize large weights, the activation will be large, resulting in zero slope (in case of sigmoid and tanh activation function). Hence, learning will be slow. So we generally initialize small weights randomly.
 
 ### Hyperparameters
+https://machinelearningmastery.com/grid-search-hyperparameters-deep-learning-models-python-keras/
 * Weights and Bias are parameters
 The major difference between parameters and hyperparameters is that parameters are learned by the model during the training time, while hyperparameters can be changed before training the model.
 * Learning rate – ⍺
@@ -48,16 +49,24 @@ The major difference between parameters and hyperparameters is that parameters a
 * Units in each hidden layer
 * Choice of activation function
 * Dropout - Regularization technique to avoid overfitting
+* Momentum
 #### Hidden layers & Units
 * Many hidden units within a layer with regularization techniques can increase accuracy. Smaller number of units may cause underfitting.
 #### Dropout
 Generally, use a small dropout value of 20%-50% of neurons with 20% providing a good starting point. A probability too low has minimal effect and a value too high results in under-learning by the network.
 * Use a larger network. You are likely to get better performance when dropout is used on a larger network, giving the model more of an opportunity to learn independent representations.
-
-
-
-
-
+#### Learning rate
+* Low learning rate slows down the learning process but converges smoothly. 
+* Larger learning rate speeds up the learning but may not converge.
+* Usually a decaying Learning rate is preferred.
+#### Momentum
+Momentum helps to know the direction of the next step with the knowledge of the previous steps. It helps to prevent oscillations. A typical choice of momentum is between 0.5 to 0.9.
+#### Number of epochs
+* Number of epochs is the number of times the whole training data is shown to the network while training.
+* Increase the number of epochs until the validation accuracy starts decreasing even when training accuracy is increasing(overfitting).
+#### Batch size
+* Mini batch size is the number of sub samples given to the network after which parameter update happens.
+* A good default for batch size might be 32. Also try 32, 64, 128, 256, and so on. 
 
 
 Backpropagation
