@@ -39,14 +39,19 @@ Abbreviated as BackProp. Initially all the edge weights are randomly assigned. F
 * Weights are initialized randomly using the following code = {np.random.randn(No of Input Vars, Number of neurons in the first hidden layer, Number of neurons in the second hidden layer, etc) * 0.01} randn generates random floats from a univariate Normal Distribution of mean 0 & Variance 1. Random values are multiplied with 0.01 to initialize small weights. If we initialize large weights, the activation will be large, resulting in zero slope (in case of sigmoid and tanh activation function). Hence, learning will be slow. So we generally initialize small weights randomly.
 
 ### Hyperparameters
+* Weights and Bias are parameters
 The major difference between parameters and hyperparameters is that parameters are learned by the model during the training time, while hyperparameters can be changed before training the model.
 * Learning rate – ⍺
 * Number of iterations
 * Number of hidden layers
 * Units in each hidden layer
 * Choice of activation function
-
-
+* Dropout - Regularization technique to avoid overfitting
+#### Hidden layers & Units
+* Many hidden units within a layer with regularization techniques can increase accuracy. Smaller number of units may cause underfitting.
+#### Dropout
+Generally, use a small dropout value of 20%-50% of neurons with 20% providing a good starting point. A probability too low has minimal effect and a value too high results in under-learning by the network.
+* Use a larger network. You are likely to get better performance when dropout is used on a larger network, giving the model more of an opportunity to learn independent representations.
 
 
 
