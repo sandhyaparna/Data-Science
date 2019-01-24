@@ -55,7 +55,7 @@ The major difference between parameters and hyperparameters is that parameters a
 #### Dropout
 Generally, use a small dropout value of 20%-50% of neurons with 20% providing a good starting point. A probability too low has minimal effect and a value too high results in under-learning by the network.
 * Use a larger network. You are likely to get better performance when dropout is used on a larger network, giving the model more of an opportunity to learn independent representations.
-#### Learning rate
+#### Learning rate - Try 0.01
 * Low learning rate slows down the learning process but converges smoothly. 
 * Larger learning rate speeds up the learning but may not converge.
 * Usually a decaying Learning rate is preferred.
