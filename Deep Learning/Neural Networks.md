@@ -41,15 +41,16 @@ Abbreviated as BackProp. Initially all the edge weights are randomly assigned. F
 
 ### Hyperparameters
 https://machinelearningmastery.com/grid-search-hyperparameters-deep-learning-models-python-keras/
-* Weights and Bias are parameters
+* Weight matrix and Bias vector are parameters
 The major difference between parameters and hyperparameters is that parameters are learned by the model during the training time, while hyperparameters can be changed before training the model.
-* Learning rate – ⍺
-* Number of iterations
+* Learning rate – ⍺ in Back-Propagation
+* Number of iterations / epochs needed for training our model
 * Number of hidden layers
 * Units in each hidden layer
 * Choice of activation function
 * Dropout - Regularization technique to avoid overfitting
 * Momentum
+![](https://cdn-images-1.medium.com/max/1000/1*0kBzZebGAdmaD1MjlZ9wNA.png)
 #### Hidden layers & Units
 * Many hidden units within a layer with regularization techniques can increase accuracy. Smaller number of units may cause underfitting.
 * Use large hidden layers, same size for all hidden layers 
