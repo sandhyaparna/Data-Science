@@ -9,4 +9,18 @@ In healthcare imprecise predictions such as False-positives can overwhelm physic
 Underfitting <br/>
 When Model is too simple, both training and test errors are large <br/>
 
+### Error Analysis on Validation set 
+* A few examples of correct labels at random
+* A few examples of incorrect labels at random
+* Examples of the most accurate labels of each class (i.e., those with the highest probability that are correct)
+* Examples of the most inaccurate labels in each class (i.e., those with the highest probability that are incorrect)
+* Examples of the most uncertain labels (i.e., those with probability closest to 0.5)
+
+
+
+
+
+
+
+
 
