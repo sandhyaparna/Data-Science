@@ -1,9 +1,9 @@
 ### Links
 Course1 https://www.analyticsvidhya.com/blog/2018/10/introduction-neural-networks-deep-learning/ <br/>
-Course2  <br/>
+Course2 https://www.analyticsvidhya.com/blog/2018/11/neural-networks-hyperparameter-tuning-regularization-deeplearning/ <br/>
 Course3  <br/>
-Course4  <br/>
-Course5  <br/>
+Course4 https://www.analyticsvidhya.com/blog/2018/12/guide-convolutional-neural-network-cnn/ <br/>
+Course5 https://www.analyticsvidhya.com/blog/2019/01/sequence-models-deeplearning/ <br/>
 Intro to NN https://www.kdnuggets.com/2016/11/quick-introduction-neural-networks.html
 
 ### Computational Time - Activation Function
