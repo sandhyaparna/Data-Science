@@ -52,6 +52,9 @@ The major difference between parameters and hyperparameters is that parameters a
 * Momentum
 #### Hidden layers & Units
 * Many hidden units within a layer with regularization techniques can increase accuracy. Smaller number of units may cause underfitting.
+* Use large hidden layers, same size for all hidden layers 
+* Using a first hidden layer which is larger than the input layer tends to work better.
+* When using unsupervised pre-training, the layers should be made much bigger than when doing purely supervised optimization.
 #### Dropout
 Generally, use a small dropout value of 20%-50% of neurons with 20% providing a good starting point. A probability too low has minimal effect and a value too high results in under-learning by the network.
 * Use a larger network. You are likely to get better performance when dropout is used on a larger network, giving the model more of an opportunity to learn independent representations.
