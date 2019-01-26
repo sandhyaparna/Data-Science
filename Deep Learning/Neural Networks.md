@@ -85,9 +85,12 @@ Momentum helps to know the direction of the next step with the knowledge of the 
 #### Batch size
 * Mini batch size is the number of sub samples given to the network after which parameter update happens.
 * A good default for batch size might be 32. Also try 32, 64, 128, 256, and so on. 
+#### Iterations
+Iterations is the number of batches needed to complete one epoch. Iterations=Number of Training examples/Batch size
 
 
-Backpropagation
+ <br/>
+
 
 
 
