@@ -51,7 +51,8 @@ The major difference between parameters and hyperparameters is that parameters a
 * lambda - λ Types of regularization: L1, L2 (aka Weight Decay), Elastic Net, explicit: Dropout, and implicit: Data Augmentation, and Early Stopping.
 * Dropout - Regularization technique to avoid overfitting
 * Momentum
-![](https://cdn-images-1.medium.com/max/1000/1*0kBzZebGAdmaD1MjlZ9wNA.png)
+![](https://cdn-images-1.medium.com/max/1000/1*0kBzZebGAdmaD1MjlZ9wNA.png) <br/>
+![](https://cdn-images-1.medium.com/max/800/0*mxbFsZ0QfeNiIQ2f.jpeg) <br/>
 #### Hidden layers & Units
 * Many hidden units within a layer with regularization techniques can increase accuracy. Smaller number of units may cause underfitting.
 * Use large hidden layers, same size for all hidden layers 
@@ -67,16 +68,16 @@ Generally, use a small dropout value of 20%-50% of neurons with 20% providing a 
 ###### Data augmentation
 Data augmentation can be used to overcome small dataset limitations. It purposely perturbs training examples, changing their appearance slightly, before passing them into the network for training. The end result is that a network consistently sees “new” training data points generated from the original training data, partially alleviating the need for us to gather more training data (though in general, gathering more training data will rarely hurt your algorithm). data augmentation can help dramatically reduce overfitting, all the while ensuring that our model generalizes better to new input samples. Particularly helpful when the image dataset is small — such as the Flower quite small, having only 80 images per class for a total of 1,360 images. A general rule of thumb when applying deep learning to computer vision tasks is to have 1,000–5,000 examples per class, so we are certainly at a huge deficit here which can be overcome using Data Augmentation.
 #### Learning rate - Try 0.01 (Cyclical Learning rates for training Neural Nets)
-https://towardsdatascience.com/estimating-optimal-learning-rate-for-a-deep-neural-network-ce32f2556ce0
+https://towardsdatascience.com/estimating-optimal-learning-rate-for-a-deep-neural-network-ce32f2556ce0 <br/>
 Train a network starting from a low learning rate and increase the learning rate exponentially for every batch. Record the learning rate and training loss for every batch. Then, plot the loss and the learning rate.  <br/>
-![](https://cdn-images-1.medium.com/max/800/1*HVj_4LWemjvOWv-cQO9y9g.png)
+![](https://cdn-images-1.medium.com/max/800/1*HVj_4LWemjvOWv-cQO9y9g.png) <br/>
 Another way to look at these numbers is calculating the rate of change of the loss (a derivative of the loss function with respect to iteration number), then plot the change rate on the y-axis and the learning rate on the x-axis. Graph is smoothed out using simple moving average. <br/>
-![](https://cdn-images-1.medium.com/max/800/1*87mKq_XomYyJE29l91K0dw.png)
+![](https://cdn-images-1.medium.com/max/800/1*87mKq_XomYyJE29l91K0dw.png) <br/>
 * Low learning rate slows down the learning process but converges smoothly. 
 * Larger learning rate speeds up the learning but may not converge.
 * Usually a decaying Learning rate is preferred.
 #### Momentum
-Momentum helps to know the direction of the next step with the knowledge of the previous steps. It helps to prevent oscillations. A typical choice of momentum is between 0.5 to 0.9.
+Momentum helps to know the direction of the next step with the knowledge of the previous steps. It helps to prevent oscillations. A typical choice of momentum is between 0.5 to 0.9. <br/>
 #### Number of epochs
 * Number of epochs is the number of times the whole training data is shown to the network while training.
 * Increase the number of epochs until the validation accuracy starts decreasing even when training accuracy is increasing(overfitting).
