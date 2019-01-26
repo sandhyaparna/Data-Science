@@ -40,14 +40,15 @@ Abbreviated as BackProp. Initially all the edge weights are randomly assigned. F
 * Weights are initialized randomly using the following code = {np.random.randn(No of Input Vars, Number of neurons in the first hidden layer, Number of neurons in the second hidden layer, etc) * 0.01} randn generates random floats from a univariate Normal Distribution of mean 0 & Variance 1. Random values are multiplied with 0.01 to initialize small weights. If we initialize large weights, the activation will be large, resulting in zero slope (in case of sigmoid and tanh activation function). Hence, learning will be slow. So we generally initialize small weights randomly.
 
 ### Hyperparameters
-https://machinelearningmastery.com/grid-search-hyperparameters-deep-learning-models-python-keras/
+https://machinelearningmastery.com/grid-search-hyperparameters-deep-learning-models-python-keras/ <br/>
 * Weight matrix and Bias vector are parameters
 The major difference between parameters and hyperparameters is that parameters are learned by the model during the training time, while hyperparameters can be changed before training the model.
-* Learning rate – ⍺ in Back-Propagation
+* Learning rate – ⍺ in Back-Propagation (Gradient Descent Algo)
 * Number of iterations / epochs needed for training our model
 * Number of hidden layers
 * Units in each hidden layer
 * Choice of activation function
+* lambda - λ Types of regularization: L1, L2 (aka Weight Decay), Elastic Net, explicit: Dropout, and implicit: Data Augmentation, and Early Stopping.
 * Dropout - Regularization technique to avoid overfitting
 * Momentum
 ![](https://cdn-images-1.medium.com/max/1000/1*0kBzZebGAdmaD1MjlZ9wNA.png)
@@ -56,14 +57,20 @@ The major difference between parameters and hyperparameters is that parameters a
 * Use large hidden layers, same size for all hidden layers 
 * Using a first hidden layer which is larger than the input layer tends to work better.
 * When using unsupervised pre-training, the layers should be made much bigger than when doing purely supervised optimization.
-#### Dropout
-Generally, use a small dropout value of 20%-50% of neurons with 20% providing a good starting point. A probability too low has minimal effect and a value too high results in under-learning by the network.
+#### Regularization
+###### L2 or Weight Decay
+The sum of squares in the L2 regularization penalty discourages large weights in the weights matrix, preferring smaller ones. Why might we want to discourage large weight values? In short, by penalizing large weights, we can improve the ability to generalize, and thereby reduce overfitting. the larger a weight value is, the more influence it has on the output prediction. Dimensions with larger weight values can almost singlehandedly control the output prediction of the classifier (provided the weight value is large enough, of course) which will almost certainly lead to overfitting.
+###### Dropout
+Here we insert a layer that randomly disconnects nodes from the previous layer to the next layer, thereby ensuring that no single node is responsible for learning how to represent a given class. <br/>
+Generally, use a small dropout value of 20%-50% of neurons with 20% providing a good starting point. A probability too low has minimal effect and a value too high results in under-learning by the network. <br/>
 * Use a larger network. You are likely to get better performance when dropout is used on a larger network, giving the model more of an opportunity to learn independent representations.
+###### Data augmentation
+Data augmentation can be used to overcome small dataset limitations. It purposely perturbs training examples, changing their appearance slightly, before passing them into the network for training. The end result is that a network consistently sees “new” training data points generated from the original training data, partially alleviating the need for us to gather more training data (though in general, gathering more training data will rarely hurt your algorithm). data augmentation can help dramatically reduce overfitting, all the while ensuring that our model generalizes better to new input samples. Particularly helpful when the image dataset is small — such as the Flower quite small, having only 80 images per class for a total of 1,360 images. A general rule of thumb when applying deep learning to computer vision tasks is to have 1,000–5,000 examples per class, so we are certainly at a huge deficit here which can be overcome using Data Augmentation.
 #### Learning rate - Try 0.01 (Cyclical Learning rates for training Neural Nets)
 https://towardsdatascience.com/estimating-optimal-learning-rate-for-a-deep-neural-network-ce32f2556ce0
-Train a network starting from a low learning rate and increase the learning rate exponentially for every batch. Record the learning rate and training loss for every batch. Then, plot the loss and the learning rate. 
+Train a network starting from a low learning rate and increase the learning rate exponentially for every batch. Record the learning rate and training loss for every batch. Then, plot the loss and the learning rate.  <br/>
 ![](https://cdn-images-1.medium.com/max/800/1*HVj_4LWemjvOWv-cQO9y9g.png)
-Another way to look at these numbers is calculating the rate of change of the loss (a derivative of the loss function with respect to iteration number), then plot the change rate on the y-axis and the learning rate on the x-axis. Graph is smoothed out using simple moving average.
+Another way to look at these numbers is calculating the rate of change of the loss (a derivative of the loss function with respect to iteration number), then plot the change rate on the y-axis and the learning rate on the x-axis. Graph is smoothed out using simple moving average. <br/>
 ![](https://cdn-images-1.medium.com/max/800/1*87mKq_XomYyJE29l91K0dw.png)
 * Low learning rate slows down the learning process but converges smoothly. 
 * Larger learning rate speeds up the learning but may not converge.
