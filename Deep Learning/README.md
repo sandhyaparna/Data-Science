@@ -1,1 +1,1 @@
-fastai COurse https://course.fast.ai/index.html
+fastai Course https://course.fast.ai/index.html
