@@ -71,7 +71,7 @@ Data augmentation can be used to overcome small dataset limitations. It purposel
 #### Learning rate - Try 0.01 (Cyclical Learning rates for training Neural Nets)
 Python keras_lr_finder Package to implement cyclical lr https://github.com/surmenok/keras_lr_finder <br/>
 implement cyclical lr python https://github.com/metachi/fastaiv2keras <br/>
-Learning rate finder Python https://towardsdatascience.com/estimating-optimal-learning-rate-for-a-deep-neural-network-ce32f2556ce0 <br/>
+Learning rate finder Python https://towardsdatascience.com/estimating-optimal-learning-rate-for-a-deep-neural-network-ce32f2556ce0 Check out coments section also <br/>
 Train a network starting from a low learning rate and increase the learning rate exponentially for every batch. Record the learning rate and training loss for every batch. Then, plot the loss and the learning rate.  <br/>
 ![](https://cdn-images-1.medium.com/max/800/1*HVj_4LWemjvOWv-cQO9y9g.png) <br/>
 Another way to look at these numbers is calculating the rate of change of the loss (a derivative of the loss function with respect to iteration number), then plot the change rate on the y-axis and the learning rate on the x-axis. Graph is smoothed out using simple moving average. <br/>
