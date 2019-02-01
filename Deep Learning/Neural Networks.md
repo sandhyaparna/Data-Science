@@ -7,7 +7,8 @@ Course5 https://www.analyticsvidhya.com/blog/2019/01/sequence-models-deeplearnin
 Intro to NN https://www.kdnuggets.com/2016/11/quick-introduction-neural-networks.html
 
 ### Intro
-Neural Networks takes input features, automatically identifies hidden features from input and finally generates the output.
+Neural Networks takes input features, automatically identifies hidden features from input and finally generates the output. It is inspired by the way biological neural networks in the human brain process information.
+Def: A computing system made up of a number of simple, highly interconnected processing elements, which process information by their dynamic state response to external inputs
 
 ### Computational Time - Activation Function
 * A neuron/node/Unit will take an input, apply some activation function (non-linear) to it, and generate an output.
