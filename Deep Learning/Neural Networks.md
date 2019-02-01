@@ -20,11 +20,11 @@ Neural neworks are typically organized in layers. Layers are made up of a number
   * Rectified Linear Unit - Most Popular - ReLU - f(x) = max(0, x)
   * Softplus
   * Softmax - Multi-class predictions
-![](https://ujwlkarn.files.wordpress.com/2016/08/screen-shot-2016-08-08-at-11-53-41-am.png) <br/>
+* ![](https://ujwlkarn.files.wordpress.com/2016/08/screen-shot-2016-08-08-at-11-53-41-am.png) <br/>
 Slope, or the gradient of Sigmoid function, at the extreme ends is close to zero. Therefore, the parameters are updated very slowly, resulting in very slow learning. Hence, switching from a sigmoid activation function to ReLU (Rectified Linear Unit) is one of the biggest breakthroughs we have seen in neural networks. ReLU updates the parameters much faster as the slope is 1 when x>0. This is the primary reason for faster computation of the models.
-* Sigmoid takes a real-valued input and squashes it to range between 0 and 1
-* tanh takes a real-valued input and squashes it to the range [-1, 1]
-* ReLU takes a real-valued input and thresholds it at zero (replaces negative values with zero implies slope is 0 when x<0)
+ * Sigmoid takes a real-valued input and squashes it to range between 0 and 1
+ * tanh takes a real-valued input and squashes it to the range [-1, 1]
+ * ReLU takes a real-valued input and thresholds it at zero (replaces negative values with zero implies slope is 0 when x<0)
 
 ##### Why do we need non-linear activation functions?
 Using linear activation is essentially pointless. The composition of two linear functions is itself a linear function, and unless we use some non-linear activations, we are not computing more interesting functions. That’s why most experts stick to using non-linear activation functions. <br/>
