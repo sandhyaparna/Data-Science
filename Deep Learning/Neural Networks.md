@@ -7,10 +7,10 @@ Course5 https://www.analyticsvidhya.com/blog/2019/01/sequence-models-deeplearnin
 Intro to NN https://www.kdnuggets.com/2016/11/quick-introduction-neural-networks.html
 
 ### Intro
-Neural Networks takes input features, automatically identifies hidden features from input and finally generates the output. It is inspired by the way biological neural networks in the human brain process information.
-Def: A computing system made up of a number of simple, highly interconnected processing elements, which process information by their dynamic state response to external inputs
-
-### Computational Time - Activation Function
+Neural Networks takes input features, automatically identifies hidden features from input and finally generates the output. It is inspired by the way biological neural networks in the human brain process information. <br/>
+Def: A computing system made up of a number of simple, highly interconnected processing elements, which process information by their dynamic state response to external inputs <br/>
+Neural neworks are typically organized in layers. Layers are made up of a number of interconnected 'nodes' which contain an 'activation function'. Patterns are presented to the network via the 'input layer', which communicates to one or more 'hidden layers' where the actual processing is done via a system of weighted 'connections'. The hidden layers then link to an 'output layer' 
+### Computational Time - Activation Function <br/>
 * A neuron/node/Unit will take an input, apply some activation function (non-linear) to it, and generate an output.
 * The purpose of the activation function is to introduce non-linearity into the output of a neuron. This is important because most real world data is non linear and we want neurons to learn these non linear representations.
 * Activation function plays an important role in computational time.
