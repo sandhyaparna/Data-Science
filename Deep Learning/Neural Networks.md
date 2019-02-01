@@ -6,6 +6,9 @@ Course4 https://www.analyticsvidhya.com/blog/2018/12/guide-convolutional-neural-
 Course5 https://www.analyticsvidhya.com/blog/2019/01/sequence-models-deeplearning/ <br/>
 Intro to NN https://www.kdnuggets.com/2016/11/quick-introduction-neural-networks.html
 
+### Intro
+Neural Networks takes input features, automatically identifies hidden features from input and finally generates the output.
+
 ### Computational Time - Activation Function
 * A neuron/node/Unit will take an input, apply some activation function (non-linear) to it, and generate an output.
 * The purpose of the activation function is to introduce non-linearity into the output of a neuron. This is important because most real world data is non linear and we want neurons to learn these non linear representations.
