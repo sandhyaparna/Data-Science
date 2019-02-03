@@ -1,6 +1,6 @@
 Machine learning problem
 * what is being predicted, what data is needed. 
-* What are some key actions to collect, analyze, predict, and react to the data or predictions? Remembering that different input features might require different kinds of actions. what data are ee analyzing, 
+* What are some key actions to collect, analyze, predict, and react to the data or predictions? Remembering that different input features might require different kinds of actions. what data are ee analyzing, what data are we predicting? what data are we reacting to?
 * What is the API for the problem during production/prediction? Who will use the service? How were they doing it today? 
 
 https://topepo.github.io/caret/available-models.html <br/>
