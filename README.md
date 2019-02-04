@@ -9,6 +9,7 @@ Data Pre-processing http://www.cs.ccsu.edu/~markov/ccsu_courses/datamining-3.htm
 
 ![](https://4.bp.blogspot.com/-LYwmoJeMiQ0/W3s7iRNv3BI/AAAAAAAAMtk/Y96yOi4QXpAJRci_1Vz4yRlmGiWNzazZQCLcBGAs/s1600/84b03b9bbcb9c5e680e522c35cee6930.png)
  <br/>
+ 
 Things to take care of: <br/>
 * Avoid TRAINING SERVING SKEW - Data that is used in batch process should be same as the data stream 
 
