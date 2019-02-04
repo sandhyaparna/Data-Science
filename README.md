@@ -5,7 +5,8 @@ Machine learning problem
 
 Things to take care of: <br/>
 * Avoid TRAINING SERVING SKEW - Data that is used in batch process should be same as the data stream - Use same code that was used to process historical data during training and reuse it during predictions.
-
+* Performance metric during Training - Scaling to a lot of data
+* Performance metric during Prediction - Speed of response
 
 
 https://topepo.github.io/caret/available-models.html <br/>
