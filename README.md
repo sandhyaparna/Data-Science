@@ -19,7 +19,6 @@ ML Effort Allocation
 * Integration 
 
 
-
 https://topepo.github.io/caret/available-models.html <br/>
 http://www.galitshmueli.com/student-projects <br/>
 Data Pre-processing http://www.cs.ccsu.edu/~markov/ccsu_courses/datamining-3.html <br/>
