@@ -19,7 +19,7 @@ ML Effort Allocation
 * Integration 
 
 Path to ML:
-* Individual COntributor
+* Individual Contributor
 * Delegation - Adding more people
 * Digitization - Automation
 * Big Data
