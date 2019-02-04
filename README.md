@@ -18,6 +18,12 @@ ML Effort Allocation
 * Optimizing ML Algo - Not as much time as assumed
 * Integration 
 
+Path to ML:
+* Individual COntributor
+* Delegation - Adding more people
+* Digitization - Automation
+* Big Data
+* ML
 
 https://topepo.github.io/caret/available-models.html <br/>
 http://www.galitshmueli.com/student-projects <br/>
