@@ -3,7 +3,7 @@ Data Pre-processing http://www.cs.ccsu.edu/~markov/ccsu_courses/datamining-3.htm
 * The main side-effect of creating a Target variable using data is you introduce bias in the model, for eg-Sepsis def has one of its condition as SBP<90, so using SBP fetaures within feature engineering introduces bias like - if SBP>90 the SEPSIS is present bacause for Sepsis cases if at all SBP<90 that time is taken as their TOP and hence bias is introduced bacause of creating our Target based on conditions
 * Different thresholds can be used for different groups
 * Evaluate Right Predictions vs Wrong predictions by groups within a var. For eg - if a var is region, evaluate the perf of predictions within each region
-
+* The key difference between statistics and machine learning, is how we deal with outliers. In statistics, outliers tend to be removed. But in machine learning, outliers tend to be learned. And if you want to learn outliers, you need to have enough examples of those outliers, which essentially means that you have to work with all of your data. You have to have the distribution of outliers, distributions of rare values throughout your dataset. And in order to do that, you have to work with your complete dataset.
 
 
 * In Healthcare - built models for data at differnt points - Reason is that a patient have acquired infection earlier and starts showing syptoms much before the actual test indicators
