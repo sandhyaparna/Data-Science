@@ -11,6 +11,15 @@ Things to take care of: <br/>
 * Magic of ML comes with quantity and not complexity
 * simplify user input in APIs
 
+ML Effort Allocation
+* Defining KPIs
+* Collecting Data - More time
+* Building infrastructure - More time
+* Optimizing ML Algo - Not as much time as assumed
+* Integration 
+
+
+
 https://topepo.github.io/caret/available-models.html <br/>
 http://www.galitshmueli.com/student-projects <br/>
 Data Pre-processing http://www.cs.ccsu.edu/~markov/ccsu_courses/datamining-3.html <br/>
