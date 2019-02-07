@@ -10,4 +10,8 @@
 * High Bias = Both Training and Test error are high
 * High Variance = Training error is low but Test error is high
 
+### Model Performance
+* High Variance or Overfitting: Train set error = 1%, Validation Set error = 11%
+* High Bias or Underfitting: Trainset error = 15%, Validation Set error = 16%
+
  <br/>
