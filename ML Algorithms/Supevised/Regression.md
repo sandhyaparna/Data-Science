@@ -35,7 +35,8 @@ OLS minimizes residual sum of squares <br/>
 It is used in python library sklearn.  <br/>
 
 ### Gradient Descent Algorithm
-Main objective is to minimize cost function
+Search for global minimum. This can be done by finding the gradient of the loss function, and multiplying that with a hyper parameter, learning rate, and then subtracting that value from the current weights. This process iterates until convergence. <br/>
+Main objective is to minimize cost function. <br/>
 A gradient measures how much the output of a function changes if you change the inputs a little bit. <br/>
 Gradient descent is an optimization algorithm that finds the optimal weights (a,b) (Equation: Y=a+bX) that reduces prediction error i.e difference between actual and predicted values. Steps:
 1. Initialize the weights(a & b) with random values and calculate Error (SSE)
