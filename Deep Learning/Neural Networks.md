@@ -45,6 +45,16 @@ Abbreviated as BackProp. Initially all the edge weights are randomly assigned. F
 randn generates random floats from a univariate Normal Distribution of mean 0 & Variance 1. <br/>
 Random values are multiplied with 0.01 to initialize small weights. If we initialize large weights, the activation will be large, resulting in zero slope (in case of sigmoid and tanh activation function). Hence, learning will be slow. So we generally initialize small weights randomly. <br/>
 
+### To-Do when model has High Bias
+* Bigger Network - More hidden layers or more hidden units
+* Train it longer - doesn't always help but it certainly never hurts
+* More advanced optimization Algos
+
+### High Variance
+* Get more data
+* Use Regularization
+
+
 ### Hyperparameters
 https://machinelearningmastery.com/grid-search-hyperparameters-deep-learning-models-python-keras/ <br/>
 https://www.analyticsvidhya.com/blog/2018/11/neural-networks-hyperparameter-tuning-regularization-deeplearning/ <br/>
