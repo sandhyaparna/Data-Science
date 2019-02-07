@@ -27,11 +27,14 @@ Neural neworks are typically organized in layers. Layers are made up of a number
   * tanh takes a real-valued input and squashes it to the range [-1, 1]
   * ReLU takes a real-valued input and thresholds it at zero (replaces negative values with zero implies slope is 0 when x<0)
   * eLU - Exponential linear unit, range is [0,infinity)
-
-Tanh, sigmoid were great choices because they were differentiable everywhere, monotonic, and smooth. However, problems such as saturation would occur due to either high or low input values to the functions, which would end up in the asymptotic Plateau to the function. Since the curve is almost flat at these points, the derivatives are very close to zero. Therefore, training of the weights would go very slow or even halt since the gradients were all very close to zero, which will result in very small step sizes down the hill during gradient descent. <br/>
-
+  
 ##### Why do we need non-linear activation functions?
 Using linear activation is essentially pointless. The composition of two linear functions is itself a linear function, and unless we use some non-linear activations, we are not computing more interesting functions. That’s why most experts stick to using non-linear activation functions. <br/>
+
+##### Advantages & Disadvantages of diff Activation functions
+* Sigmoid & Tanh were great choices because they were differentiable everywhere, monotonic, and smooth. However, problems such as saturation would occur due to either high or low input values to the functions, which would end up in the asymptotic Plateau to the function. Since the curve is almost flat at these points, the derivatives are very close to zero. Therefore, training of the weights would go very slow or even halt since the gradients were all very close to zero, which will result in very small step sizes down the hill during gradient descent.
+* ReLU activation function is nonlinear, so you can get the complex modeling needed, and it doesn't have the saturation in the non-negative portion of the input space. However, due to the negative portion of the input space translating to a zero activation, ReLU layers could end up dying or no longer activating, which can also cause training to slow or stop.
+* one of the ways to solve this problem is using another activation function called the exponential linear unit or ELU. It is approximately linear and the non-negative portion of the input space, and it's smooth, monotonic and most importantly, non-zero in the negative portion of the input space. The main drawback of ELUs are that they are more computationally expensive than ReLUs due to having the calculated exponential.
 
 ### Performace
 Performance with rest to data
