@@ -50,7 +50,7 @@ Random values are multiplied with 0.01 to initialize small weights. If we initia
 * Train it longer - doesn't always help but it certainly never hurts
 * More advanced optimization Algos
 
-### High Variance
+### To-Do when model has High Variance
 * Get more data
 * Use Regularization
 
