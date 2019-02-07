@@ -86,9 +86,9 @@ It generally works well when we have a big dataset. <br/>
 Elastic net is basically a combination of both L1 and L2 regularization. <br/>
 Elastic regression working: Let’ say, we have a bunch of correlated independent variables in a dataset, then elastic net will simply form a group consisting of these correlated variables. Now if any one of the variable of this group is a strong predictor (meaning having a strong relationship with dependent variable), then we will include the entire group in the model building, because omitting other variables (like what we did in lasso) might result in losing some information in terms of interpretation ability, leading to a poor model performance. <br/>
 
-### Evaluation Metrics
-Sum of Squared Errors (SSE) = =  {Σ(Y – Ypred)²} / 2
-##### RMSE - Root Mean Squared Error
+### Evaluation Metrics 
+Sum of Squared Errors (SSE) = =  {Σ(Y – Ypred)²}
+##### RMSE - Root Mean Squared Error (Loss function)
 It is the sample standard deviation of the differences between predicted values and observed values (called residuals).  <br/>
 RMSE = ( {Σ(Y – Ypred)²} / n )^0.5 <br/>
 RMSE is higher or equal to MAE and is the default metric in most models because loss function defined in terms of RMSE is smoothly differentiable and makes it easier to perform mathematical operations. <br/>
@@ -97,7 +97,7 @@ Minimizing the squared error over a set of numbers results in finding its mean. 
 Sum of the absolute difference between predictions and actual values <br/> 
 MAE = (Σ|Y – Ypred|) / n  <br/>
 Minimizing the absolute error results in finding its median. <br/> 
-##### MSE - Mean Squared error
+##### MSE - Mean Squared error (Loss function)
 MSE = {Σ(Y – Ypred)²} / n  <br/>
 ##### R Squared (R²) / Coeffiecient of Determination
 It is the proportion of variance in the response variable that is explained by the independant variables. It represents how close the data values are to the fitted regression line. <br/>
