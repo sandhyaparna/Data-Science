@@ -30,12 +30,13 @@ Neural neworks are typically organized in layers. Layers are made up of a number
 Using linear activation is essentially pointless. The composition of two linear functions is itself a linear function, and unless we use some non-linear activations, we are not computing more interesting functions. That’s why most experts stick to using non-linear activation functions. <br/>
 
 ### Performace
+Performance with rest to data
+![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2018/10/Screenshot-from-2018-10-12-14-29-37-850x438.png) <br/>
 As the amount of data increases, the performance of traditional learning algorithms, like SVM and logistic regression, does not improve by a whole lot. In fact, it tends to plateau after a certain point. In the case of neural networks, the performance of the model increases with an increase in the data you feed to the model. <br/>
 There are basically three scales that drive a typical deep learning process: <br/>
 1. Data <br/>
 2. Computation Time <br/>
 3. Algorithms <br/>
-![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2018/10/Screenshot-from-2018-10-12-14-29-37-850x438.png) <br/>
 
 ### Optimization
 Using loss functions
