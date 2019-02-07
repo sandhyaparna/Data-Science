@@ -38,13 +38,7 @@ There are basically three scales that drive a typical deep learning process: <br
 2. Computation Time <br/>
 3. Algorithms <br/>
 
-### Optimization
-Using loss functions
-
-
-
 ### Algorithms
-
 #### Back-Propagation Algorithm - When there are more hidden layers
 Abbreviated as BackProp. Initially all the edge weights are randomly assigned. For every input in the training dataset, the ANN is activated and its output is observed. This output is compared with the desired output that we already know, and the error is "propagated" back to the previous layer. This error is noted and the weights are "adjusted" accordingly. Weights are adjusted using Gradient Descent Optimization. This process is repeated until the output error is below a predetermined threshold.
 * Weights are initialized randomly using the following code = {np.random.randn(No of Input Vars, Number of neurons in the first hidden layer, Number of neurons in the second hidden layer, etc) * 0.01} <br/>
@@ -59,7 +53,6 @@ Random values are multiplied with 0.01 to initialize small weights. If we initia
 ### To-Do when model has High Variance
 * Get more data
 * Use Regularization
-
 
 ### Hyperparameters
 https://machinelearningmastery.com/grid-search-hyperparameters-deep-learning-models-python-keras/ <br/>
