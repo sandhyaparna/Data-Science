@@ -13,5 +13,7 @@
 ### Model Performance
 * High Variance or Overfitting: Train set error = 1%, Validation Set error = 11%
 * High Bias or Underfitting: Trainset error = 15%, Validation Set error = 16%
+* High Bias and High Variance: Trainset error = 15%, Validation Set error = 30%
+* Low Bias and Low Variance: Train set error = 0.5%, Validation Set error = 1%
 
  <br/>
