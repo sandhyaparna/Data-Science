@@ -4,6 +4,11 @@ Train-Validation-Test https://towardsdatascience.com/train-validation-and-test-s
 DONT split Train & Test based on Time https://discuss.analyticsvidhya.com/t/is-it-wise-to-split-training-and-test-dataset-based-on-time-year/2967/4 <br/>
 Split data coming from DIFFERENT distributions https://www.kdnuggets.com/2019/01/when-your-training-testing-data-different-distributions.html <br/>
 
+### Avoid Common Errors 
+* Lack of generalization - Create 3 identically distributed Machine Learning data sets such that it is repeatable
+* 
+
+
 
 * Split data intio Train & Test - Stratified splits if the data is imbalanced
 * Use Train data to perform cross-validation. A seperate Test set makes more sense when you use cross-validation or manully change the model hyperparameters based on the results of your model on the validation set. 
