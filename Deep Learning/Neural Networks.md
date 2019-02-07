@@ -37,6 +37,11 @@ There are basically three scales that drive a typical deep learning process: <br
 2. Computation Time <br/>
 3. Algorithms <br/>
 
+### Optimization
+Using loss functions
+
+
+
 ### Algorithms
 
 #### Back-Propagation Algorithm - When there are more hidden layers
