@@ -18,6 +18,7 @@ Neural neworks are typically organized in layers. Layers are made up of a number
   * Logistic Sigmoid - σ(x) = 1 / (1 + exp(−x))
   * Hyperbolic Tangent - tanh(x) = 2σ(2x) − 1
   * Rectified Linear Unit - Most Popular - ReLU - f(x) = max(0, x)
+  * eLU - Exponential Linear Unit
   * Softplus
   * Softmax - Multi-class predictions
 ![](https://ujwlkarn.files.wordpress.com/2016/08/screen-shot-2016-08-08-at-11-53-41-am.png) <br/>
@@ -25,6 +26,9 @@ Neural neworks are typically organized in layers. Layers are made up of a number
   * Sigmoid takes a real-valued input and squashes it to range between 0 and 1 which is equal to the range for Probability
   * tanh takes a real-valued input and squashes it to the range [-1, 1]
   * ReLU takes a real-valued input and thresholds it at zero (replaces negative values with zero implies slope is 0 when x<0)
+  * eLU - Exponential linear unit, range is [0,infinity)
+
+Tanh, sigmoid were great choices because they were differentiable everywhere, monotonic, and smooth. However, problems such as saturation would occur due to either high or low input values to the functions, which would end up in the asymptotic Plateau to the function. Since the curve is almost flat at these points, the derivatives are very close to zero. Therefore, training of the weights would go very slow or even halt since the gradients were all very close to zero, which will result in very small step sizes down the hill during gradient descent. <br/>
 
 ##### Why do we need non-linear activation functions?
 Using linear activation is essentially pointless. The composition of two linear functions is itself a linear function, and unless we use some non-linear activations, we are not computing more interesting functions. That’s why most experts stick to using non-linear activation functions. <br/>
