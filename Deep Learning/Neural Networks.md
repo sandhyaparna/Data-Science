@@ -16,9 +16,9 @@ Neural neworks are typically organized in layers. Layers are made up of a number
 * Activation function plays an important role in computational time.
 * Every activation function (or non-linearity) takes a single number and performs a certain fixed mathematical operation on it  Some of the activation functions:
   * Logistic Sigmoid - σ(x) = 1 / (1 + exp(−x))
-  * Hyperbolic Tangent - tanh(x) = 2σ(2x) − 1
-  * Rectified Linear Unit - Most Popular - ReLU - f(x) = max(0, x)
-  * eLU - Exponential Linear Unit
+  * Hyperbolic Tangent - tanh(x) = 2σ(2x) − 1 = 2/(1+[(e)^-2x])-1
+  * Rectified Linear Unit - Most Popular - ReLU - f(x) = 0 for x<0, x for x>=0
+  * eLU - Exponential Linear Unit - aplha(e^x - 1) for x<0, x for x>=0  
   * Softplus
   * Softmax - Multi-class predictions
 ![](https://ujwlkarn.files.wordpress.com/2016/08/screen-shot-2016-08-08-at-11-53-41-am.png) <br/>
