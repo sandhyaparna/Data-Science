@@ -77,6 +77,7 @@ The major difference between parameters and hyperparameters is that parameters a
 ![](https://cdn-images-1.medium.com/max/1000/1*0kBzZebGAdmaD1MjlZ9wNA.png) <br/>
 ![](https://cdn-images-1.medium.com/max/800/0*mxbFsZ0QfeNiIQ2f.jpeg) <br/>
 #### Hidden layers & Units
+* Number of Neurons per layer determines the number of dimensions of the vector space of a Neural network
 * Many hidden units within a layer with regularization techniques can increase accuracy. Smaller number of units may cause underfitting.
 * Use large hidden layers, same size for all hidden layers 
 * Using a first hidden layer which is larger than the input layer tends to work better.
