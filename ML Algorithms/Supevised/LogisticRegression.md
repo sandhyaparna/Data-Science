@@ -16,6 +16,7 @@ Loss Function is Log loss/Cross Entropy loss - Goal is to minimize this value <b
 Measures the performance of a classification model where the prediction input is a probability value between 0 and 1 <br/>
 Log Loss takes into account the uncertainty of your prediction based on how much it varies from the actual label. It penalizes wrong predictions very strongly <br/>
 Log Loss = (-1/N) * [ Σ{ylog(p) + (1-y)log(1-p)} ] <br/>
+Model parameters are updated with respect to the derivative of the loss function
 
 Logistic regression predicts the probability of occurrence of an event by fitting data to a logit function. Log odds of the outcome is modeled as a linear combination of the predictor variables. Logistic regression is a part of GLM that assumes a linear relationship between link function and independent variables in logit model. Estimates probabilities using underlying logistic function.
 * Probability(For +ve outcome) ranges from 0 to 1 <br/> 
