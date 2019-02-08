@@ -13,6 +13,7 @@
 * We try to optimize a loss function
 * Gradient Boosted trees are harder to fit than random forests
 * Gradient Boosting Algorithms generally have 3 parameters which can be fine-tuned, Shrinkage parameter, depth of the tree, the number of trees. Proper training of each of these parameters is needed for a good fit. If parameters are not tuned correctly it may result in over-fitting.
+* As more trees are added, predictions usually improve. But maximum number of trees should be limited by using validation set for early stopping, because more number of trees might overfit the training data
 * Standard GBM implementation has no regularization like XGBoost
 * A GBM would stop splitting a node when it encounters a negative loss in the split. Thus it is more of a greedy algorithm
 
