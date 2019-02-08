@@ -10,8 +10,14 @@ https://www.kdnuggets.com/2019/01/logistic-regression-concise-technical-overview
 ### Overview 
 Logistic regression is used to create a decision boundary to maximize the log likelihood of the classification probabilities.  <br/> 
 In the case of a linear decision boundary, logistic regression wants to have each point and the associated class as far from the hydroplane as possible and provides a probability which can be interpreted as prediction confidence. <br/> 
- Tries to minimize cross-entropy <br/> 
+Tries to minimize cross-entropy <br/> 
  
+Loss Function is Log loss/Cross Entropy loss - Goal is to minimize this value <br/> 
+Measures the performance of a classification model where the prediction input is a probability value between 0 and 1 <br/>
+Log Loss takes into account the uncertainty of your prediction based on how much it varies from the actual label. It penalizes wrong predictions very strongly
+Log Loss = (-1/N) * [ Σ{ ylog(p) + (1-y)log(1 - p) } ]
+
+
 Logistic regression predicts the probability of occurrence of an event by fitting data to a logit function. Log odds of the outcome is modeled as a linear combination of the predictor variables. Logistic regression is a part of GLM that assumes a linear relationship between link function and independent variables in logit model. Estimates probabilities using underlying logistic function.
 * Probability(For +ve outcome) ranges from 0 to 1 <br/> 
 * odds = p/(1-p) = probability of event occurrence / probability of not event occurrence  <br/>
