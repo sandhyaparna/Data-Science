@@ -91,7 +91,10 @@ Elastic net is basically a combination of both L1 and L2 regularization. <br/>
 Elastic regression working: Let’ say, we have a bunch of correlated independent variables in a dataset, then elastic net will simply form a group consisting of these correlated variables. Now if any one of the variable of this group is a strong predictor (meaning having a strong relationship with dependent variable), then we will include the entire group in the model building, because omitting other variables (like what we did in lasso) might result in losing some information in terms of interpretation ability, leading to a poor model performance. <br/>
 
 ### Evaluation Metrics 
-Sum of Squared Errors (SSE) = =  {Σ(Y – Ypred)²}
+Square of errors i.e actual - prediction is done to treat both +ve values & -ve values similarly. <br/>
+RMSE is more meaningful as square root of squared values are in the same measurement units as Actual values <br/>
+
+Sum of Squared Errors (SSE) = =  {Σ(Y – Ypred)²} <br/>
 ##### RMSE - Root Mean Squared Error (Loss function) - Lower RMSE indicates better model
 It is the sample standard deviation of the differences between predicted values and observed values (called residuals).  <br/>
 RMSE = ( {Σ(Y – Ypred)²} / n )^0.5 <br/>
