@@ -19,6 +19,8 @@ in that region. Thus, if an unseen data observation falls in that region, we’l
 * No distributional, independence, or constant variance assumptions
 
 ## Algorithms
+ID3 & C4.5 were developed in 1980s
+
 #### ID3 (Iternative Dichotomizer)
 Greedy search using Entropy or Information Gain <br/>
 It creates good splits at top but dont consider what happens later on the splits <br/>
