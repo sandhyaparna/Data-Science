@@ -35,6 +35,7 @@ OLS minimizes residual sum of squares <br/>
 It is used in python library sklearn.  <br/>
 
 ### Gradient Descent Algorithm
+https://www.coursera.org/learn/launching-machine-learning/lecture/EuGsr/gradient-descent
 Search for global minimum. This can be done by finding the gradient of the loss function, and multiplying that with a hyper parameter, learning rate (helps determine the step size), and then subtracting that value from the current weights. This process iterates until convergence. <br/>
 Main objective is to minimize cost function. <br/>
 A gradient measures how much the output of a function changes if you change the inputs a little bit. <br/>
@@ -55,7 +56,9 @@ Parameters are updated for each example within the training set, one by one. It 
 The frequent updates (computationally expensive) allow us to have a pretty detailed rate of improvement. <br/>
 It is preferable for large datasets. <br/>
 ##### Mini Batch Gradient Descent
-It simply splits the training dataset into small batches and performs an update on the parameters for each of these batches. <br/> 
+Training time is proportional to the number of data points, frequency with we check the loss <br/>
+So, try decreasing the number of data points using mini batch gradient descent <br/>
+It simply splits the training dataset into small batches (sampling) and performs an update on the parameters for each of these batches. <br/> 
 Common mini-batch sizes range between 50 and 256. <br/>
 
 ### Dimensionality Reduction
