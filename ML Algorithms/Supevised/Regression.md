@@ -89,7 +89,7 @@ Elastic regression working: Let’ say, we have a bunch of correlated independen
 
 ### Evaluation Metrics 
 Sum of Squared Errors (SSE) = =  {Σ(Y – Ypred)²}
-##### RMSE - Root Mean Squared Error (Loss function)
+##### RMSE - Root Mean Squared Error (Loss function) - Lower RMSE indicates better model
 It is the sample standard deviation of the differences between predicted values and observed values (called residuals).  <br/>
 RMSE = ( {Σ(Y – Ypred)²} / n )^0.5 <br/>
 RMSE is higher or equal to MAE and is the default metric in most models because loss function defined in terms of RMSE is smoothly differentiable and makes it easier to perform mathematical operations. <br/>
