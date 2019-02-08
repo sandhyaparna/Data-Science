@@ -8,6 +8,9 @@ https://www.kdnuggets.com/2019/01/logistic-regression-concise-technical-overview
 * Continuous Var: A unit inc in the odds of Xj, will inc the odds of Target happening by a factor of OddsRatio of this var, holding all other vars constant
 
 ### Overview 
+Logistic regression is used to create a decision boundary to maximize the log likelihood of the classification probabilities.  <br/> 
+ In the case of a linear decision boundary, logistic regression wants to have each point and the associated class as far from the hydroplane as possible and provides a probability which can be interpreted as prediction confidence. <br/> 
+ 
 Logistic regression predicts the probability of occurrence of an event by fitting data to a logit function. Log odds of the outcome is modeled as a linear combination of the predictor variables. Logistic regression is a part of GLM that assumes a linear relationship between link function and independent variables in logit model. Estimates probabilities using underlying logistic function.
 * Probability(For +ve outcome) ranges from 0 to 1 <br/> 
 * odds = p/(1-p) = probability of event occurrence / probability of not event occurrence  <br/>
