@@ -8,7 +8,7 @@ https://www.analyticsvidhya.com/blog/2016/04/complete-tutorial-tree-based-modeli
 * It also performs dimensional reduction methods, treats missing values, outlier values. 
 * It has an effective method for estimating missing data and maintains accuracy when a large proportion of the data are missing.
 * It has methods for balancing errors in data sets where classes are imbalanced.
-* A group of weak models combine to form a powerful model.
+* A group of weak models combine to form a powerful model. Predictions are made on the test sample based on aggregating the results from each individual trees
 * Handles large data set with higher dimensionality.
 * It usually has high accuracy on the training population and hence might over fit the model on the data.
 
