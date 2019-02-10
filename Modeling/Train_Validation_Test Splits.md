@@ -7,6 +7,7 @@ Split data coming from DIFFERENT distributions https://www.kdnuggets.com/2019/01
 ### Avoid Common Errors 
 * Lack of generalization - Create 3 identically distributed Machine Learning data sets such that it is repeatable
 * Repeatable Datasets - use farm_fingerprint function on dates etc
+https://cloud.google.com/bigquery/docs/reference/standard-sql/hash_functions <br/>
 https://github.com/sandhyaparna/training-data-analyst/blob/master/courses/machine_learning/deepdive/02_generalization/repeatable_splitting.ipynb <br/>
 https://googlecoursera.qwiklabs.com/focuses/25429?locale=en <br/>
 * Clean & Pre-proces data before splitting
