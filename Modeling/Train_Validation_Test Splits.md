@@ -9,7 +9,7 @@ Split data coming from DIFFERENT distributions https://www.kdnuggets.com/2019/01
 * Repeatable Datasets - use farm_fingerprint function on dates etc
 https://github.com/sandhyaparna/training-data-analyst/blob/master/courses/machine_learning/deepdive/02_generalization/repeatable_splitting.ipynb <br/>
 https://googlecoursera.qwiklabs.com/focuses/25429?locale=en <br/>
-* 
+* Clean & Pre-proces data before splitting
 
 ### Splitting
 * Split data intio Train & Test - Stratified splits if the data is imbalanced
