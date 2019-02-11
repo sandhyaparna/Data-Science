@@ -3,6 +3,12 @@ https://www.kdnuggets.com/2018/12/feature-building-techniques-tricks-kaggle.html
 https://towardsdatascience.com/understanding-feature-engineering-part-1-continuous-numeric-data-da4e47099a7b <br/>
 https://medium.com/open-machine-learning-course/open-machine-learning-course-topic-6-feature-engineering-and-feature-selection-8b94f870706a <br/>
 
+### What makes a good feature?
+* Be related to the objective - Have a reasonable hypothesis on why a feature is related to the problem we are solving
+* Be know at prediction-time
+* Be numeric with meaningful magnitude
+* Have enough examples
+* Bring human insight to problem 
 
 ### Numeric
 * Values as it is
