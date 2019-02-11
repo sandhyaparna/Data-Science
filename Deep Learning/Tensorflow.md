@@ -15,10 +15,13 @@ tf.metrics - a way to compute the root mean square error and data as it comes in
 #### Estimator API
 * Quick model -  Many standard pre-made estimator models
 * Checkpoints to pause and resume your training
-* Out-of-memory datasets - Estimators are designed with a data set API that handles out of memory data sets. You can not train a large network without seeing how its doing. Estimators automatically surface key metrics during training that you can visualize in Tensor board. 
-* Train/eval/monitor - 
+* Out-of-memory datasets - Estimators are designed with a data set API that handles out of memory data sets.  
+* Train/eval/monitor - You can not train a large network without seeing how its doing. Estimators automatically surface key metrics during training that you can visualize in Tensor board.
+* Distributed Training - Estimators come with the necessary cluster execution code already built in. 
 * Hyper-parameter tuning of ML-engine
 * Production:serving predictions from a trained model
+
+
 
 
 
