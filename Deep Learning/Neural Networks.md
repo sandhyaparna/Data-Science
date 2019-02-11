@@ -48,9 +48,11 @@ There are basically three scales that drive a typical deep learning process: <br
 ### Algorithms
 #### Back-Propagation Algorithm - When there are more hidden layers
 Abbreviated as BackProp. Initially all the edge weights are randomly assigned. For every input in the training dataset, the ANN is activated and its output is observed. This output is compared with the desired output that we already know, and the error is "propagated" back to the previous layer. This error is noted and the weights are "adjusted" accordingly. Weights are adjusted using Gradient Descent Optimization. This process is repeated until the output error is below a predetermined threshold.
+* Stochastic gradient descent is an iterative learning algorithm that uses a training dataset to update a model.
 * Weights are initialized randomly using the following code = {np.random.randn(No of Input Vars, Number of neurons in the first hidden layer, Number of neurons in the second hidden layer, etc) * 0.01} <br/>
 randn generates random floats from a univariate Normal Distribution of mean 0 & Variance 1. <br/>
 Random values are multiplied with 0.01 to initialize small weights. If we initialize large weights, the activation will be large, resulting in zero slope (in case of sigmoid and tanh activation function). Hence, learning will be slow. So we generally initialize small weights randomly. <br/>
+* An observation is also called an instance, an input vector or a feature vector 
 
 ### To-Do when model has High Bias
 * Bigger Network - More hidden layers or more hidden units
@@ -105,9 +107,11 @@ Another way to look at these numbers is calculating the rate of change of the lo
 #### Momentum
 Momentum helps to know the direction of the next step with the knowledge of the previous steps. It helps to prevent oscillations. A typical choice of momentum is between 0.5 to 0.9. <br/>
 #### Number of epochs
+* The number of epochs is a hyperparameter of gradient descent that controls the number of complete passes through the training dataset.
 * Number of epochs is the number of times the whole training data is shown to the network while training.
 * Increase the number of epochs until the validation accuracy starts decreasing even when training accuracy is increasing(overfitting).
 #### Batch size
+* The batch size is a hyperparameter of gradient descent that controls the number of training samples to work through before the model’s internal parameters are updated.
 * Mini batch size is the number of sub samples given to the network after which parameter update happens.
 * A good default for batch size might be 32. Also try 32, 64, 128, 256, and so on. 
 #### Iterations
