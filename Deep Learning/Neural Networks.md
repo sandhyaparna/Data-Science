@@ -111,6 +111,7 @@ Momentum helps to know the direction of the next step with the knowledge of the 
 * Number of epochs is the number of times the whole training data is shown to the network while training.
 * One epoch means that each sample in the training dataset has had an opportunity to update the internal model parameters
 * Increase the number of epochs until the validation accuracy starts decreasing even when training accuracy is increasing(overfitting).
+* Learning Curve - Error or skill of the model on Y-axis vs Number of epochs along the x-axis
 #### Batch size
 * The batch size is a hyperparameter of gradient descent that controls the number of training samples to work through before the model’s internal parameters are updated.
   * Batch Gradient Descent. Batch Size = Size of Training Set
@@ -118,6 +119,12 @@ Momentum helps to know the direction of the next step with the knowledge of the 
   * Mini-Batch Gradient Descent. 1 < Batch Size < Size of Training Set
 * Mini batch size is the number of sub samples given to the network after which parameter update happens.
 * A good default for batch size might be 32. Also try 32, 64, 128, 256, and so on. 
+#### Example for diff between Epochs and Batches
+* Assume you have a dataset with 200 samples (rows of data) and you choose a batch size of 5 and 1,000 epochs.
+* This means that the dataset will be divided into 40 batches, each with five samples. The model weights will be updated after each batch of five samples.
+* This also means that one epoch will involve 40 batches or 40 updates to the model.
+* With 1,000 epochs, the model will be exposed to or pass through the whole dataset 1,000 times. That is a total of 40,000 batches during the entire training process.
+
 
 #### Iterations
 Iterations is the number of batches needed to complete one epoch. Iterations=Number of Training examples/Batch size
