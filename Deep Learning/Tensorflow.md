@@ -12,6 +12,7 @@ tf.losses - a way to compute cross entropy with Logits.  <br/>
 tf.metrics - a way to compute the root mean square error and data as it comes in. <br/>
 * tf.estimator - knows how to do distributed training, it knows how to evaluate, how to create a checkpoint, how to Save a model, how to set it up for serving. It comes with everything done in a sensible way, that fits most machine learning models in production. <br/>
  
+#### Estimator API
 
 
 
