@@ -13,6 +13,14 @@ tf.metrics - a way to compute the root mean square error and data as it comes in
 * tf.estimator - knows how to do distributed training, it knows how to evaluate, how to create a checkpoint, how to Save a model, how to set it up for serving. It comes with everything done in a sensible way, that fits most machine learning models in production. <br/>
  
 #### Estimator API
+* Quick model -  Many standard pre-made estimator models
+* Checkpoints to pause and resume your training
+* Out-of-memory datasets - Estimators are designed with a data set API that handles out of memory data sets. You can not train a large network without seeing how its doing. Estimators automatically surface key metrics during training that you can visualize in Tensor board. 
+* Train/eval/monitor - 
+* Hyper-parameter tuning of ML-engine
+* Production:serving predictions from a trained model
+
+
 
 
 
