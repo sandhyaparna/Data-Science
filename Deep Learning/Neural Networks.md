@@ -109,11 +109,16 @@ Momentum helps to know the direction of the next step with the knowledge of the 
 #### Number of epochs
 * The number of epochs is a hyperparameter of gradient descent that controls the number of complete passes through the training dataset.
 * Number of epochs is the number of times the whole training data is shown to the network while training.
+* One epoch means that each sample in the training dataset has had an opportunity to update the internal model parameters
 * Increase the number of epochs until the validation accuracy starts decreasing even when training accuracy is increasing(overfitting).
 #### Batch size
 * The batch size is a hyperparameter of gradient descent that controls the number of training samples to work through before the model’s internal parameters are updated.
+  * Batch Gradient Descent. Batch Size = Size of Training Set
+  * Stochastic Gradient Descent. Batch Size = 1
+  * Mini-Batch Gradient Descent. 1 < Batch Size < Size of Training Set
 * Mini batch size is the number of sub samples given to the network after which parameter update happens.
 * A good default for batch size might be 32. Also try 32, 64, 128, 256, and so on. 
+
 #### Iterations
 Iterations is the number of batches needed to complete one epoch. Iterations=Number of Training examples/Batch size
 
