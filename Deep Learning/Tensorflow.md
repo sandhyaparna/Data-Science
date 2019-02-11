@@ -1,8 +1,8 @@
 TensorFlow is an open source, high performance, library for numerical computation.  <br/>
 Tensordlow is a lazy evaluation model - write a DAG and then you run the DAG in the context of a session to get results
 But in tf.eager the evaluation is immediate and it's not lazy but it is typically not used in production programs and used only for development. <br/>
-  <br/>
-  <br/>
+TensorBoard is used to visulaize tensorfloe graphs <br/>
+A variable is a tensor whose value is initialized and then the value gets changed as a program runs. <br/>
   
 Tensorflow APIs
 * Core Tensorflow Python API - Numeric processing code, add, subtract, divide, matrix multiply etc. creating variables, creating tensors, getting the shape, all the dimensions of a tensor, all that core basic numeric processing stuff.  <br/>
