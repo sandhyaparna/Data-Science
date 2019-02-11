@@ -4,7 +4,7 @@ But in tf.eager the evaluation is immediate and it's not lazy but it is typicall
 TensorBoard is used to visulaize tensorfloe graphs <br/>
 A variable is a tensor whose value is initialized and then the value gets changed as a program runs. <br/>
   
-Tensorflow APIs
+#### Tensorflow APIs
 * Core Tensorflow Python API - Numeric processing code, add, subtract, divide, matrix multiply etc. creating variables, creating tensors, getting the shape, all the dimensions of a tensor, all that core basic numeric processing stuff.  <br/>
 * Components useful when building custon NN models <br/>
 tf.layers - a way to create a new layer of hidden neurons, with a ReLU activation function. <br/>
