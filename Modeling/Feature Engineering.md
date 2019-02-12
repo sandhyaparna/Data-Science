@@ -128,10 +128,6 @@ https://tsfresh.readthedocs.io/en/latest/text/list_of_features.html <br/>
 * Distance in miles between prospect location and event location
 
 
-
-
-
-
 ### Automated Feature Engineering - Deep Feature Synthesis
 https://docs.featuretools.com/automated_feature_engineering/primitives.html
 
