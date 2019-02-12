@@ -11,6 +11,7 @@ https://medium.com/open-machine-learning-course/open-machine-learning-course-top
 * Bring human insight to problem 
 
 ### Numeric
+When data is missing in the Numeric column - For that column create a new extra column to identify if the data is missing or not. If data is missing then 1 otherwise 0
 * Values as it is
 * Unique Counts/Freq
 * Binning
@@ -25,8 +26,8 @@ https://medium.com/open-machine-learning-course/open-machine-learning-course-top
 
 
 ### Categorical
-* Encoding
-* 
+* Encoding - One-hot encoding
+* When data is missing in the category column - A 5 category var usually gets 5 binary columns of one-hot encoding. But if there are missing values then 6 binary variables needs to be created
 
 ### Binary Variables
 
