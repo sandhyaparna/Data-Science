@@ -6,7 +6,7 @@ https://medium.com/open-machine-learning-course/open-machine-learning-course-top
 ### What makes a good feature?
 * Be related to the objective - Have a reasonable hypothesis on why a feature is related to the problem we are solving
 * Be know at prediction-time - If data is delayed by n hrs, we have train the data as of n hrs ago. eg-collection date time vs Created date time. Real-time modeling should be based on only Created DateTime and not collection date time as data need to eb available at prediction-time and data is available only at CreatedDateTime and not CollectionDateTime
-* Be numeric with meaningful magnitude - Neural networks are weighing and adding machines
+* Be numeric with meaningful magnitude - Neural networks are weighing and adding machines. Ordinal is not numeric either. Auto-encoding or embedding is used to convert character vars to meaningful numerics
 * Have enough examples
 * Bring human insight to problem 
 
