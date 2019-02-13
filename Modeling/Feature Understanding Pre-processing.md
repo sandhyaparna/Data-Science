@@ -9,11 +9,13 @@ https://www.kdnuggets.com/2018/11/secret-sauce-top-kaggle-competition.html <br/>
 
 ### Data-Preprocessing
 * Remove examples that you dont want to train on
-* COmpute vocabularies for cat columns
+* Compute vocabularies for cat columns
 * Compute aggregate stats for numeric cols
 * Compute time-windowed stats like last hr, last month etc
-* 
 
+### Understand raw-input data
+* Exploratory analysis - visualize values of data, distribution of values, freq & infreq values, outliers, missing values. ANalyse stats - min,max,avg,std.
+* Aggregate data in BigQuery & visualize in DataLab
 
 
 
