@@ -1,5 +1,6 @@
 Data Pre-processing http://www.cs.ccsu.edu/~markov/ccsu_courses/datamining-3.html 
 
+* Generalization is very imp - Can be done using regularization.
 * The main side-effect of creating a Target variable using data is you introduce bias in the model, for eg-Sepsis def has one of its condition as SBP<90, so using SBP fetaures within feature engineering introduces bias like - if SBP>90 the SEPSIS is present bacause for Sepsis cases if at all SBP<90 that time is taken as their TOP and hence bias is introduced bacause of creating our Target based on conditions
 * Different thresholds can be used for different groups
 * Evaluate Right Predictions vs Wrong predictions by groups within a var. For eg - if a var is region, evaluate the perf of predictions within each region
