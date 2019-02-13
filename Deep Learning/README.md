@@ -1,3 +1,5 @@
+https://medium.com/jatana/report-on-text-classification-using-cnn-rnn-han-f0e887214d5f
+
 fastai Course https://course.fast.ai/index.html
 Deep Learning Repos https://github.com/mbadry1/Trending-Deep-Learning
 Deep Learning Repos https://github.com/mbadry1/Top-Deep-Learning
