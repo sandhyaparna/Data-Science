@@ -70,7 +70,7 @@ Starts with all predictors in the model and removes the least significant variab
 It does two things. It adds and removes predictors as needed for each step.
 
 ### Regularization
-For a model, training losss should be decreased but not at the expense of Complexity, as it overfitting. <br/>
+For a model, training losss should be decreased but not at the expense of Complexity, as it overfitting. Regularization refers to any technique that helps generalize a model. A generalized model performs well not just on training data but also on never seen test data.<br/>
 * Early stopping
 * Parameter Norm Penalities
   * L1
