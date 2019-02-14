@@ -70,6 +70,8 @@ Starts with all predictors in the model and removes the least significant variab
 It does two things. It adds and removes predictors as needed for each step.
 
 ### Regularization
+For a model, training losss should be decreased but not at the expense of Complexity, as it overfitting. <br/>
+
 Regularization basically adds the penalty as model complexity increases. Regularization is used to prevent the model from overfitting the training sample. It constrains/regularizes or shrinks the coefficient estimates towards zero. In other words, this technique discourages learning a more complex or flexible model, so as to avoid the risk of overfitting. In regularization, we normally keep the same number of features, but reduce the magnitude of the coefficients. Regularization should be applied after standardizing features. L1 & L2 picks up vars that has greater values. So standardization helps.
 #####  Ridge Regression - L2 Regularization
 Ridge Regression is a technique used when the data suffers from multicollinearity ( independent variables are highly correlated). It solves the multicollinearity problem through shrinkage parameter λ (lambda), shrinks the value of coefficients but doesn’t reaches zero. <br/>
