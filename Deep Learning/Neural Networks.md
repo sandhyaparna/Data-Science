@@ -84,7 +84,7 @@ The major difference between parameters and hyperparameters is that parameters a
 * Use large hidden layers, same size for all hidden layers 
 * Using a first hidden layer which is larger than the input layer tends to work better.
 * When using unsupervised pre-training, the layers should be made much bigger than when doing purely supervised optimization.
-#### Regularization
+#### Regularization - Check Regression for more on this
 ###### L2 or Weight Decay
 The sum of squares in the L2 regularization penalty discourages large weights in the weights matrix, preferring smaller ones. Why might we want to discourage large weight values? In short, by penalizing large weights, we can improve the ability to generalize, and thereby reduce overfitting. the larger a weight value is, the more influence it has on the output prediction. Dimensions with larger weight values can almost singlehandedly control the output prediction of the classifier (provided the weight value is large enough, of course) which will almost certainly lead to overfitting.
 ###### Dropout
@@ -97,6 +97,7 @@ Data augmentation can be used to overcome small dataset limitations. It purposel
 Python keras_lr_finder Package to implement cyclical lr https://github.com/surmenok/keras_lr_finder <br/>
 implement cyclical lr python https://github.com/metachi/fastaiv2keras <br/>
 Learning rate finder Python https://towardsdatascience.com/estimating-optimal-learning-rate-for-a-deep-neural-network-ce32f2556ce0 Check out coments section also <br/>
+Learning rate controls the size of the step in weight space <br/>
 Train a network starting from a low learning rate and increase the learning rate exponentially for every batch. Record the learning rate and training loss for every batch. Then, plot the loss and the learning rate.  <br/>
 ![](https://cdn-images-1.medium.com/max/800/1*HVj_4LWemjvOWv-cQO9y9g.png) <br/>
 Another way to look at these numbers is calculating the rate of change of the loss (a derivative of the loss function with respect to iteration number), then plot the change rate on the y-axis and the learning rate on the x-axis. Graph is smoothed out using simple moving average. <br/>
@@ -113,12 +114,15 @@ Momentum helps to know the direction of the next step with the knowledge of the 
 * Increase the number of epochs until the validation accuracy starts decreasing even when training accuracy is increasing(overfitting).
 * Learning Curve - Error or skill of the model on Y-axis vs Number of epochs along the x-axis
 #### Batch size
-* The batch size is a hyperparameter of gradient descent that controls the number of training samples to work through before the model’s internal parameters are updated.
+* The batch size is a hyperparameter of gradient descent that controls the number of training samples to work through before the model’s internal parameters are updated. Number of samples that gradient is calculated on.
   * Batch Gradient Descent. Batch Size = Size of Training Set
   * Stochastic Gradient Descent. Batch Size = 1
   * Mini-Batch Gradient Descent. 1 < Batch Size < Size of Training Set
 * Mini batch size is the number of sub samples given to the network after which parameter update happens.
 * A good default for batch size might be 32. Also try 32, 64, 128, 256, and so on. 
+* Google cloud Recomendation: 40-100 tends to be a good tange for batch size. Can go up to as high as 500 <br/>
+* If too small, training will bounce around <br/>
+* If too large, training will take a very long time <br/>
 #### Example for diff between Epochs and Batches
 * Assume you have a dataset with 200 samples (rows of data) and you choose a batch size of 5 and 1,000 epochs.
 * This means that the dataset will be divided into 40 batches, each with five samples. The model weights will be updated after each batch of five samples.
