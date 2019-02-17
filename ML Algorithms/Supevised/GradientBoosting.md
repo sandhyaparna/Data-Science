@@ -11,7 +11,7 @@ GBM starts with a weak model for making predictions. The target of such a model 
 * Typically uses decision trees <br/>
 * Intution behind GBM is to repetitively leverage the patterns in residuals and strengthen a model with weak predictions and make it better <br/>
 
-### Parameter Tuning
+### Hyper-Parameter Tuning
 https://www.analyticsvidhya.com/blog/2016/02/complete-guide-parameter-tuning-gradient-boosting-gbm-python/
 https://medium.com/all-things-ai/in-depth-parameter-tuning-for-gradient-boosting-3363992e9bae
 ##### Learning rate/Shrinkage 
