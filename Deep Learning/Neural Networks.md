@@ -68,7 +68,18 @@ Abbreviated as BackProp. Initially all the edge weights are randomly assigned. F
 randn generates random floats from a univariate Normal Distribution of mean 0 & Variance 1. <br/>
 Random values are multiplied with 0.01 to initialize small weights. If we initialize large weights, the activation will be large, resulting in zero slope (in case of sigmoid and tanh activation function). Hence, learning will be slow. So we generally initialize small weights randomly. <br/>
 * An observation is also called an instance, an input vector or a feature vector 
-
+ <br/>
+Common failure modes for Gradient Descent:
+* Problem1: Gradients can Vanish
+  * Insight: When suing sigmoid or tanh activation functions throughout your hidden layers. As you begin to saturate you end up in the asymptotic regions of the function which begin to plateau, the slope is getting closer and closer to approximately zero. When you go backwards through the network during back prop, your gradient can become smaller and smaller because you're compounding all these small gradients until the gradient completely vanishes. When this happens your weights are no longer updating and therefore training grinds to a halt.
+  * Solution: use non saturating non-linear activation functions such as ReLUs, ELUs, etc
+* Problem2: Gradients can explode - weights gets bigger & bigger
+  * Insight: Happens for sequence models with long sequence lengths, learning rate can be a factor here because in our weight updates, remember we multiplied the gradient with the learning rate and then subtract that from the current weight. So, even if the grading isn't that big with a learning rate greater than one it can now become too big and cause problems for us and our network. 
+  * Solution: Batch normalization
+* Problem3: Layers can die
+  * Insight: Use Tensorboard to monitor summaries during and after training of our Neural network model. Monitor fraction of zero weights in Tensorboard.
+  * Solution: Lower your learning rates
+  
 ### To-Do when model has High Bias
 * Bigger Network - More hidden layers or more hidden units
 * Train it longer - doesn't always help but it certainly never hurts
@@ -103,8 +114,10 @@ The major difference between parameters and hyperparameters is that parameters a
 ###### L2 or Weight Decay
 The sum of squares in the L2 regularization penalty discourages large weights in the weights matrix, preferring smaller ones. Why might we want to discourage large weight values? In short, by penalizing large weights, we can improve the ability to generalize, and thereby reduce overfitting. the larger a weight value is, the more influence it has on the output prediction. Dimensions with larger weight values can almost singlehandedly control the output prediction of the classifier (provided the weight value is large enough, of course) which will almost certainly lead to overfitting.
 ###### Dropout
-Here we insert a layer that randomly disconnects nodes from the previous layer to the next layer, thereby ensuring that no single node is responsible for learning how to represent a given class. <br/>
-Generally, use a small dropout value of 20%-50% of neurons with 20% providing a good starting point. A probability too low has minimal effect and a value too high results in under-learning by the network. <br/>
+Dropout is the probability of dropping a neuron temporarily from the network rather than keeping it turned on. Dropout works by randomly dropping out unit activations in a network for a single gradient step. Dropout simiulates ensemble learning. <br/>
+* Here we insert a layer that randomly disconnects nodes from the previous layer to the next layer, thereby ensuring that no single node is responsible for learning how to represent a given class. <br/>
+* Generally, use a small dropout value of 20%-50% of neurons with 20% providing a good starting point. A probability too low has minimal effect and a value too high results in under-learning by the network. <br/>
+* The more you dropout, the stronger the regularization. 0=No dropout, 0.2 is typical, 1= drop everything out, learns nothing
 * Use a larger network. You are likely to get better performance when dropout is used on a larger network, giving the model more of an opportunity to learn independent representations.
 ###### Data augmentation
 Data augmentation can be used to overcome small dataset limitations. It purposely perturbs training examples, changing their appearance slightly, before passing them into the network for training. The end result is that a network consistently sees “new” training data points generated from the original training data, partially alleviating the need for us to gather more training data (though in general, gathering more training data will rarely hurt your algorithm). data augmentation can help dramatically reduce overfitting, all the while ensuring that our model generalizes better to new input samples. Particularly helpful when the image dataset is small — such as the Flower quite small, having only 80 images per class for a total of 1,360 images. A general rule of thumb when applying deep learning to computer vision tasks is to have 1,000–5,000 examples per class, so we are certainly at a huge deficit here which can be overcome using Data Augmentation.
