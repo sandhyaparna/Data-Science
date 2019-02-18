@@ -9,6 +9,7 @@ https://ai.googleblog.com/2015/08/the-reusable-holdout-preserving.html <br/>
 
 ### Solution
 * Regularization
+* Early Stopping
 * Differential Privacy - On an intuitive level, differential privacy hides the data of any single individual. We are thus interested in
 pairs of datasets S, S0 that differ in a single element, in which case we say S and S0 are adjacent.
 
