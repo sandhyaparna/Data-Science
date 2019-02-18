@@ -9,8 +9,8 @@ Embeddings are feature columns that function like NN layers. Take a sparse vecto
  </br>
 Tensorflow can do math operations on sparse tensors without having to convert them into dense form i.e on-hot encoding. Foe eg: if different videos on Youtube are given ID from 1 to n. For each observation a sparse vector is created i.e if a person watched 1,5,7,10 IDs videos, that observation is represented as (1,5,7,10). To create embeddings, we take original input and represent it as a sparse tensor. Next, pass it through an embedding layer.  </br>
  </br>
-Number of embedding dimenisons is higher implies more accuracy but greater the chance of overfitting, slow training.
-A good start for Number of embedding dimensions = (Possible Values)^(1/4)
+Number of embedding dimenisons is higher implies more accuracy but greater the chance of overfitting, slow training. </br>
+A good start for Number of embedding dimensions = (Possible Values)^(1/4) </br>
  </br>
 Embeddings are used to:
 * Manage sparse data
