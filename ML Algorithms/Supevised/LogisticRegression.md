@@ -19,7 +19,9 @@ Log Loss = (-1/N) * [ Σ{ylog(p) + (1-y)log(1-p)} ] <br/>
 Model parameters are updated with respect to the derivative of the loss function. Derivative or slope of Loss function provides direction and stepsize in our serach
 * If Loss function derivative is +ve then move towards -ve(left) and if the value is big then take a big stepsize
 * If Loss function derivative is -ve then move towards +ve(left) and if the value is small then take a small stepsize
-
+It is important to add regularization to logistic regression because:
+* Helps stop weights being driven to +/- infinity
+* Helps logits stay away from asymptotes which can halt training
 Logistic regression predicts the probability of occurrence of an event by fitting data to a logit function. Log odds of the outcome is modeled as a linear combination of the predictor variables. Logistic regression is a part of GLM that assumes a linear relationship between link function and independent variables in logit model. Estimates probabilities using underlying logistic function.
 * Probability(For +ve outcome) ranges from 0 to 1 <br/> 
 * odds = p/(1-p) = probability of event occurrence / probability of not event occurrence  <br/>
