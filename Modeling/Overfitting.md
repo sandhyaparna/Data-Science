@@ -13,7 +13,7 @@ https://ai.googleblog.com/2015/08/the-reusable-holdout-preserving.html <br/>
 * Differential Privacy - On an intuitive level, differential privacy hides the data of any single individual. We are thus interested in
 pairs of datasets S, S0 that differ in a single element, in which case we say S and S0 are adjacent.
 
-### How Threshold works?
+### How Thresholdout works?
 In a nutshell, the reusable holdout mechanism is simply this: access the holdout set only through a suitable differentially private algorithm. It is important to note, however, that the user does not need to understand differential privacy to use our method. The user interface of the reusable holdout is the same as that of the widely used classical method.
 
 ### Thresholdout - Reusable holdout sets
