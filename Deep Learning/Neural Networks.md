@@ -72,15 +72,15 @@ Random values are multiplied with 0.01 to initialize small weights. If we initia
 * An observation is also called an instance, an input vector or a feature vector 
  <br/>
 Common failure modes for Gradient Descent: <br/>
-* Problem1 Gradients can Vanish
-  * Insight: When suing sigmoid or tanh activation functions throughout your hidden layers. As you begin to saturate you end up in the asymptotic regions of the function which begin to plateau, the slope is getting closer and closer to approximately zero. When you go backwards through the network during back prop, your gradient can become smaller and smaller because you're compounding all these small gradients until the gradient completely vanishes. When this happens your weights are no longer updating and therefore training grinds to a halt.
-  * Solution: use non saturating non-linear activation functions such as ReLUs, ELUs, etc
-* Problem2: Gradients can explode - weights gets bigger & bigger
-  * Insight: Happens for sequence models with long sequence lengths, learning rate can be a factor here because in our weight updates, remember we multiplied the gradient with the learning rate and then subtract that from the current weight. So, even if the grading isn't that big with a learning rate greater than one it can now become too big and cause problems for us and our network. 
-  * Solution: Batch normalization
-* Problem3: Layers can die
-  * Insight: Use Tensorboard to monitor summaries during and after training of our Neural network model. Monitor fraction of zero weights in Tensorboard.
-  * Solution: Lower your learning rates
+* Problem1: Gradients can Vanish <br/>
+  * Insight: When suing sigmoid or tanh activation functions throughout your hidden layers. As you begin to saturate you end up in the asymptotic regions of the function which begin to plateau, the slope is getting closer and closer to approximately zero. When you go backwards through the network during back prop, your gradient can become smaller and smaller because you're compounding all these small gradients until the gradient completely vanishes. When this happens your weights are no longer updating and therefore training grinds to a halt. <br/>
+  * Solution: use non saturating non-linear activation functions such as ReLUs, ELUs, etc <br/>
+* Problem2: Gradients can explode - weights gets bigger & bigger <br/>
+  * Insight: Happens for sequence models with long sequence lengths, learning rate can be a factor here because in our weight updates, remember we multiplied the gradient with the learning rate and then subtract that from the current weight. So, even if the grading isn't that big with a learning rate greater than one it can now become too big and cause problems for us and our network.  <br/>
+  * Solution: Batch normalization <br/>
+* Problem3: Layers can die <br/>
+  * Insight: Use Tensorboard to monitor summaries during and after training of our Neural network model. Monitor fraction of zero weights in Tensorboard. <br/>
+  * Solution: Lower your learning rates <br/>
   
 ### To-Do when model has High Bias
 * Bigger Network - More hidden layers or more hidden units
