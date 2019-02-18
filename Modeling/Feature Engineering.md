@@ -15,8 +15,7 @@ Feature crosses memorize data but goal of ML is generalization. Feature crosses 
 * Brings power of non-linearity to linear models as feature crosses eg-x1x2 or x1^2 are non-linear
 * Crossing is only possible with categorical or discretized columns.
 * If var1 has 3 categeories, Var2 has 5 categories, the number of features crosses=15 categories. But if we mention less number of hash buckets, it can help us control sparsity & collisions where a group of a few feature crosses fall into 1 hash bucket. To increase sparsity u can choose 2N hash buckets, to dec u can choose sq root N
-* Embedding - Instead of just one-hot encoding of feature crosses i.e 15 combination as in above example. Pass them through a dense layer that creates embedding. Embeddings are weighted some of the feature crosses, the weights that go into the embedding layer are learned from the data. 
-
+* Embedding - Instead of just one-hot encoding of feature crosses i.e 15 combination as in above example. Pass them through a dense layer that creates embedding. Embeddings are real valued numbers because they are weighted some of the feature crosses and the weights that go into the embedding layer are learned from the data. 
 
 ### Numeric
 When data is missing in the Numeric column - For that column create a new extra column to identify if the data is missing or not. If data is missing then 1 otherwise 0
