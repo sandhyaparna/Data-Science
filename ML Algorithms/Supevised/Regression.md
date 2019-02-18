@@ -98,6 +98,10 @@ Least Absolute Shrinkage and Selection Operator (Lasso) adds “absolute value o
 Minimization objective = Least Squares Obj + α * (sum of absolute value of coefficients) <br/>
 If group of predictors are highly correlated, lasso picks only one of them and shrinks the others to zero. <br/>
 * Assumptions of this regression is same as least squared regression except normality is not to be assumed. <br/>
+Zeroing out coeffs can help with performance, especially with large models and sparse inputs
+* With fewer coefficients to store and load, there is a reduction in storage and memory needed with a much smaller model size, which is especially important for embedded models. 
+* Also, with fewer features, there are a lot fewer mult ads which not only leads to increased training speed, but more importantly increase prediction speed.
+
 ##### Elastic Net Regression
 It generally works well when we have a big dataset. <br/>
 Elastic net is basically a combination of both L1 and L2 regularization. <br/>
