@@ -24,13 +24,12 @@ Neural Networks can be arbitarily complex. To increase hidden dimensions, I can 
   * Rectified Linear Unit - Most Popular - ReLU - f(x) = 0 for x<0, x for x>=0
   * eLU - Exponential Linear Unit - aplha(e^x - 1) for x<0, x for x>=0  
   * Softplus = ln(1+e^x) - ReLU has been modified so that the training doesnt stop when x is 0
-  * Softmax - Multi-class predictions
   * Leaky ReLU - 0.01(x) for x<0, x for x>=0
   * Parametric ReLU - Alpha(x) for x<0, x for x>=0
   * ReLU6 - 3 segments - min(max(0,x),6) - 0 for x<0, x for x>=0&x<6, 6 for x>6 
+  * Softmax - Multi-class predictions which are mutually exclusive. Add additional constrainst that total of outputs=1, which allows outputs to be interpreted as probability. 
 ![](https://cdn-images-1.medium.com/max/1600/1*RD0lIYqB5L2LrI2VTIZqGw.png) <br/>
 ![](https://cdn-images-1.medium.com/max/1600/1*ypsvQH7kvtI2BhzR2eT_Sw.png) <br/>
-
 * Slope, or the gradient of Sigmoid function, at the extreme ends is close to zero. Therefore, the parameters are updated very slowly, resulting in very slow learning. Hence, switching from a sigmoid activation function to ReLU (Rectified Linear Unit) is one of the biggest breakthroughs we have seen in neural networks. ReLU updates the parameters much faster as the slope is 1 when x>0. This is the primary reason for faster computation of the models.
 * Sigmoid takes a real-valued input and squashes it to range between 0 and 1 which is equal to the range for Probability
 * tanh takes a real-valued input and squashes it to the range [-1, 1]
