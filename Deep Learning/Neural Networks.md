@@ -9,17 +9,19 @@ Intro to NN https://www.kdnuggets.com/2016/11/quick-introduction-neural-networks
 ### Intro
 Neural Networks takes input features, automatically identifies hidden features from input and finally generates the output. It is inspired by the way biological neural networks in the human brain process information. <br/>
 Def: A computing system made up of a number of simple, highly interconnected processing elements, which process information by their dynamic state response to external inputs <br/>
-Neural neworks are typically organized in layers. Layers are made up of a number of interconnected 'nodes' which contain an 'activation function'. Patterns are presented to the network via the 'input layer', which communicates to one or more 'hidden layers' where the actual processing is done via a system of weighted 'connections'. The hidden layers then link to an 'output layer' 
+Neural neworks are typically organized in layers. Layers are made up of a number of interconnected 'nodes' which contain an 'activation function'. Patterns are presented to the network via the 'input layer', which communicates to one or more 'hidden layers' where the actual processing is done via a system of weighted 'connections'. The hidden layers then link to an 'output layer'  <br/>
+Feature crosses help linear models work in nonlinear problems but unfortunately it cannot solve all the real world problems. Neural Networks are an altrenative to feature crossong by combining features. Layers are used to combine features, another layer to combine our combinations and so on. <br/>
+
 ### Computational Time - Activation Function <br/>
 * A neuron/node/Unit will take an input, apply some activation function (non-linear) to it, and generate an output.
 * The purpose of the activation function is to introduce non-linearity into the output of a neuron. This is important because most real world data is non linear and we want neurons to learn these non linear representations.
 * Activation function plays an important role in computational time.
 * Every activation function (or non-linearity) takes a single number and performs a certain fixed mathematical operation on it  Some of the activation functions:
   * Logistic Sigmoid - σ(x) = 1 / (1 + exp(−x))
-  * Hyperbolic Tangent - tanh(x) = 2σ(2x) − 1 = 2/(1+[(e)^-2x])-1
+  * Hyperbolic Tangent - tanh(x) = 2σ(2x) − 1 = 2/(1+[(e)^-2x])-1  
   * Rectified Linear Unit - Most Popular - ReLU - f(x) = 0 for x<0, x for x>=0
   * eLU - Exponential Linear Unit - aplha(e^x - 1) for x<0, x for x>=0  
-  * Softplus
+  * Softplus = ln(1+e^x) - ReLU has been modified so that the training doesnt stop when x is 0
   * Softmax - Multi-class predictions
 ![](https://ujwlkarn.files.wordpress.com/2016/08/screen-shot-2016-08-08-at-11-53-41-am.png) <br/>
 * Slope, or the gradient of Sigmoid function, at the extreme ends is close to zero. Therefore, the parameters are updated very slowly, resulting in very slow learning. Hence, switching from a sigmoid activation function to ReLU (Rectified Linear Unit) is one of the biggest breakthroughs we have seen in neural networks. ReLU updates the parameters much faster as the slope is 1 when x>0. This is the primary reason for faster computation of the models.
@@ -29,7 +31,7 @@ Neural neworks are typically organized in layers. Layers are made up of a number
   * eLU - Exponential linear unit, range is [0,infinity)
   
 ##### Why do we need non-linear activation functions?
-Using linear activation is essentially pointless. The composition of two linear functions is itself a linear function, and unless we use some non-linear activations, we are not computing more interesting functions. That’s why most experts stick to using non-linear activation functions. <br/>
+Using linear activation is essentially pointless. The composition of two linear functions is itself a linear function, and unless we use some non-linear activations, we are not computing more interesting functions. That’s why most experts stick to using non-linear activation functions. Adding non-linear activation functions to neural networks stops layers from collapsing back into just a linear model. <br/>
 
 ##### Advantages & Disadvantages of diff Activation functions
 * Sigmoid & Tanh were great choices because they were differentiable everywhere, monotonic, and smooth. However, problems such as saturation would occur due to either high or low input values to the functions, which would end up in the asymptotic Plateau to the function. Since the curve is almost flat at these points, the derivatives are very close to zero. Therefore, training of the weights would go very slow or even halt since the gradients were all very close to zero, which will result in very small step sizes down the hill during gradient descent.
