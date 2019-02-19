@@ -77,10 +77,10 @@ Abbreviated as BackProp. Initially all the edge weights are randomly assigned. F
 * Weights are initialized randomly using the following code = {np.random.randn(No of Input Vars, Number of neurons in the first hidden layer, Number of neurons in the second hidden layer, etc) * 0.01} <br/>
 randn generates random floats from a univariate Normal Distribution of mean 0 & Variance 1. <br/>
 Random values are multiplied with 0.01 to initialize small weights. If we initialize large weights, the activation will be large, resulting in zero slope (in case of sigmoid and tanh activation function). Hence, learning will be slow. So we generally initialize small weights randomly. <br/>
-* An observation is also called an instance, an input vector or a feature vector 
- <br/>
+* An observation is also called an instance, an input vector or a feature vector  <br/>
+
 Common failure modes for Gradient Descent: <br/>
-* Problem1: Gradients can Vanish <br/>
+* Problem1 Gradients can Vanish <br/>
   * Insight: When suing sigmoid or tanh activation functions throughout your hidden layers. As you begin to saturate you end up in the asymptotic regions of the function which begin to plateau, the slope is getting closer and closer to approximately zero. When you go backwards through the network during back prop, your gradient can become smaller and smaller because you're compounding all these small gradients until the gradient completely vanishes. When this happens your weights are no longer updating and therefore training grinds to a halt. <br/>
   * Solution: use non saturating non-linear activation functions such as ReLUs, ELUs, etc <br/>
 * Problem2: Gradients can explode - weights gets bigger & bigger <br/>
