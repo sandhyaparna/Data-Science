@@ -70,7 +70,7 @@ There are basically three scales that drive a typical deep learning process: <br
 
 ### Algorithms
 #### Back-Propagation Algorithm - When there are more hidden layers
-Minimize loss of entire training set. <br/>
+Minimize loss of entire training set. Loss is a function of network of weights. Find the weights that gives us the least loss<br/>
 
 Abbreviated as BackProp. Initially all the edge weights are randomly assigned. For every input in the training dataset, the ANN is activated and its output is observed. This output is compared with the desired output that we already know, and the error is "propagated" back to the previous layer. This error is noted and the weights are "adjusted" accordingly. Weights are adjusted using Gradient Descent Optimization. This process is repeated until the output error is below a predetermined threshold (Loss Optimization). <br/>
 * Stochastic gradient descent is an iterative learning algorithm that uses a training dataset to update a model.
