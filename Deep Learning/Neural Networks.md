@@ -8,18 +8,20 @@ Intro to NN https://www.kdnuggets.com/2016/11/quick-introduction-neural-networks
 
 ### Intro
 Neural Networks takes input features, automatically identifies hidden features from input and finally generates the output. It is inspired by the way biological neural networks in the human brain process information. <br/>
+
 Def: A computing system made up of a number of simple, highly interconnected processing elements, which process information by their dynamic state response to external inputs <br/>
 Neural neworks are typically organized in layers. Layers are made up of a number of interconnected 'nodes' which contain an 'activation function'. Patterns are presented to the network via the 'input layer', which communicates to one or more 'hidden layers' where the actual processing is done via a system of weighted 'connections'. The hidden layers then link to an 'output layer'  <br/>
+
 Feature crosses help linear models work in nonlinear problems but unfortunately it cannot solve all the real world problems. Neural Networks are an altrenative to feature crossong by combining features. Layers are used to combine features, another layer to combine our combinations and so on. <br/>
- <br/>
-Neural Networks can be arbitarily complex. To increase hidden dimensions, I can add NEURONS. To increase function composition, I can add LAYERS - mapping from original feature space to some new convoluted feature space. If I have multiple labels for example, I can add OUTPUTS.
+
+Neural Networks can be arbitarily complex. To increase hidden dimensions, I can add NEURONS. To increase function composition, I can add LAYERS - mapping from original feature space to some new convoluted feature space. If I have multiple labels for example, I can add OUTPUTS. <br/>
 
 ### Computational Time - Activation Function <br/>
-* A neuron/node/Unit will take an input, apply some activation function (non-linear) to it, and generate an output.
+* A neuron/node/Unit/perceptron will take an input(weighted sum of inputs), apply some activation function (non-linear) to it, and generate an output.
 * The purpose of the activation function is to introduce non-linearity into the output of a neuron. This is important because most real world data is non linear and we want neurons to learn these non linear representations.
 * Activation function plays an important role in computational time.
 * Every activation function (or non-linearity) takes a single number and performs a certain fixed mathematical operation on it  Some of the activation functions:
-  * Logistic Sigmoid - σ(x) = 1 / (1 + exp(−x))
+  * Logistic Sigmoid - σ(x) = 1 / (1 + exp(−x)) - Probability distribution
   * Hyperbolic Tangent - tanh(x) = 2σ(2x) − 1 = 2/(1+[(e)^-2x])-1  
   * Rectified Linear Unit - Most Popular - ReLU - f(x) = 0 for x<0, x for x>=0
   * eLU - Exponential Linear Unit - aplha(e^x - 1) for x<0, x for x>=0  
