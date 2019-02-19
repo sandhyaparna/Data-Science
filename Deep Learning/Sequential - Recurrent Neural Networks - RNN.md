@@ -23,10 +23,10 @@ ht = f(ht-1,xt) = function of previous state & current input i.e passed through 
 * LSTMs are explicitly designed to avoid the long-term dependency problem. Remembering information for long periods of time is practically their default behavior, not something they struggle to learn!
 * LSTM networks reply on a gated cell to track info throughout many time steps
 <br/>
-![](http://colah.github.io/posts/2015-08-Understanding-LSTMs/img/LSTM3-SimpleRNN.png)
+ ![](http://colah.github.io/posts/2015-08-Understanding-LSTMs/img/LSTM3-SimpleRNN.png) <br/>
 The repeating module in a standard RNN contains a single layer like above
 <br/>
-![](http://colah.github.io/posts/2015-08-Understanding-LSTMs/img/LSTM3-chain.png)
+ ![](http://colah.github.io/posts/2015-08-Understanding-LSTMs/img/LSTM3-chain.png) <br/>
 The repeating module in the above LSTM contains four interacting layers.
 * 
 
