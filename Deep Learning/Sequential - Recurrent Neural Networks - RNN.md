@@ -1,5 +1,15 @@
 ### Links
-http://colah.github.io/posts/2015-08-Understanding-LSTMs/
+http://colah.github.io/posts/2015-08-Understanding-LSTMs/ <br/>
+https://www.youtube.com/watch?list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI&v=_h66BW-xNgk <br/> 
+
+
+### Problems
+* Sequential modeling - Predict next word in a sentence. To do sequence modeling, we need to:
+  * Handle variable-length sequences (Not fixed lenegth as in Feed forrward NN)
+  * Track long-term dependencies
+  * Maintain information about order
+  * Share parameters across the sequence
+
 
 ### Overview
 A recurrent neural network can be thought of as multiple copies of the same network, each passing a message to a successor. 
