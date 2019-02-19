@@ -12,9 +12,12 @@ Neural Networks takes input features, automatically identifies hidden features f
 Def: A computing system made up of a number of simple, highly interconnected processing elements, which process information by their dynamic state response to external inputs <br/>
 Neural neworks are typically organized in layers. Layers are made up of a number of interconnected 'nodes' which contain an 'activation function'. Patterns are presented to the network via the 'input layer', which communicates to one or more 'hidden layers' where the actual processing is done via a system of weighted 'connections'. The hidden layers then link to an 'output layer'  <br/>
 
+Output = Non-linearity/Activation function on (Weighted vector of input + Bias) <br/>
+
 Feature crosses help linear models work in nonlinear problems but unfortunately it cannot solve all the real world problems. Neural Networks are an altrenative to feature crossong by combining features. Layers are used to combine features, another layer to combine our combinations and so on. <br/>
 
 Neural Networks can be arbitarily complex. To increase hidden dimensions, I can add NEURONS. To increase function composition, I can add LAYERS - mapping from original feature space to some new convoluted feature space. If I have multiple labels for example, I can add OUTPUTS. <br/>
+
 
 ### Computational Time - Activation Function <br/>
 * A neuron/node/Unit/perceptron will take an input(weighted sum of inputs), apply some activation function (non-linear) to it, and generate an output.
