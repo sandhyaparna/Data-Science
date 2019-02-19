@@ -21,12 +21,19 @@ ht = f(ht-1,xt) = function of previous state & current input i.e passed through 
 ### LSTM Networks - kind of RNN
 * Long Short Term Memory networks – usually just called “LSTMs” – are a special kind of RNN, capable of learning long-term dependencies.
 * LSTMs are explicitly designed to avoid the long-term dependency problem. Remembering information for long periods of time is practically their default behavior, not something they struggle to learn!
-* LSTM networks reply on a gated cell to track info throughout many time steps <br/> <br/>
+* LSTM networks reply on a gated cell to track info throughout many time steps 
+* Working:
+  * LSTMs forget irrelevant parts of the previous state
+  * Takes both prior info and curent input, proocess and selectively update cell state
+  * Use output gatet output certain parts of the cell state <br/> <br/>
 ![](http://colah.github.io/posts/2015-08-Understanding-LSTMs/img/LSTM3-SimpleRNN.png) <br/>
 The repeating module in a standard RNN contains a single layer like above <br/> <br/> <br/>
 ![](http://colah.github.io/posts/2015-08-Understanding-LSTMs/img/LSTM3-chain.png) <br/>
-The repeating module in the above LSTM contains four interacting layers <br/> <br/> <br/>
-* 
+The repeating module in the above LSTM contains four interacting layers
+* They maintain internal cell state ct
+* They use structures called gates to add or remove info to/from cell state
+
+
 
 
 
