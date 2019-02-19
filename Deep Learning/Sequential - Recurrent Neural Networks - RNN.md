@@ -12,7 +12,7 @@ https://www.youtube.com/watch?list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI&v=_h66BW-x
 
 
 ### Overview
-A recurrent neural network can be thought of as multiple copies of the same network, each passing a message to a successor. 
+A recurrent neural network can be thought of as multiple copies of the same network, each passing a message to a successor. <br/> Backpropagation throgh time = Backpropagating errors at each individual time stamp and across time stamps <br/>
 ![](http://colah.github.io/posts/2015-08-Understanding-LSTMs/img/RNN-unrolled.png) <br/>
 ht = f(ht-1,xt) = function of previous state & current input i.e passed through activation function <br/>
 * RNNs can learn to use the past information, but in some cases the gap between the relevant information and the place that it’s needed is small, whereas in othercases it is very large.
