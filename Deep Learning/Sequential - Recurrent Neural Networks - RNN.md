@@ -28,7 +28,7 @@ ht = f(ht-1,xt) = function of previous state & current input i.e passed through 
   * Use output gatet output certain parts of the cell state <br/> <br/>
 ![](http://colah.github.io/posts/2015-08-Understanding-LSTMs/img/LSTM3-SimpleRNN.png) <br/>
 The repeating module in a standard RNN contains a single layer like above <br/> <br/> <br/>
-![](http://colah.github.io/posts/2015-08-Understanding-LSTMs/img/LSTM3-chain.png) <br/>
+![](http://colah.github.io/posts/2015-08-Understanding-LSTMs/img/LSTM3-chain.png)
 The repeating module in the above LSTM contains four interacting layers
 * They maintain internal cell state ct
 * They use structures called gates to add or remove info to/from cell state
