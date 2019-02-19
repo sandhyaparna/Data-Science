@@ -3,13 +3,15 @@ http://colah.github.io/posts/2015-08-Understanding-LSTMs/ <br/>
 https://www.youtube.com/watch?list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI&v=_h66BW-xNgk <br/> 
 
 
-### Problems
+### Applications
 * Sequential modeling - Predict next word in a sentence. To do sequence modeling, we need to:
   * Handle variable-length sequences (Not fixed lenegth as in Feed forrward NN)
   * Track long-term dependencies
   * Maintain information about order
   * Share parameters across the sequence
-
+* Music generation - Train on old music to generate brand new music
+* Sentiment classification
+* Machine translation - Attention mechanisms
 
 ### Overview
 A recurrent neural network can be thought of as multiple copies of the same network, each passing a message to a successor. <br/> Backpropagation throgh time = Backpropagating errors at each individual time stamp and across time stamps <br/>
@@ -27,7 +29,7 @@ The repeating module in a standard RNN contains a single layer like above <br/> 
 ![](http://colah.github.io/posts/2015-08-Understanding-LSTMs/img/LSTM3-chain.png)
 The repeating module in the above LSTM contains four interacting layers
 * They maintain internal cell state ct
-* They use structures called gates to control flow of info (add or remove info to/from cell state)
+* They use structures called gates to control flow of info (add or remove info to/from cell state) - Model long-term dependencies
   * LSTMs FORGET irrelevant parts of the previous state
   * Takes both prior info and curent input, proocess and selectively UPDATE cell state
   * Use OUTPUT gatet output certain parts of the cell state 
