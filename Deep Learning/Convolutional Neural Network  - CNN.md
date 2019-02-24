@@ -32,10 +32,10 @@ Principle:  <br/>
 <br/>
 This patchy operation is CONVOLUTION <br/>
 * Apply a set of weights - a filter - to extract local features i.e each patch is multiplied with a filter (elementwise multiplication and the add the values in the obtained matrix to get a single number - Fill feature map using the obtained numbers
-* Use multiple filters to extract different features i.e each patch multiplied with a filter is done for many filters
+* Use multiple filters to extract different features i.e different weight filters are used to create distinct feature maps
 * Spatially share parameters of each filter
 
-
+Changing weights of filters, helps in detecting and extracting 
 
 
 
