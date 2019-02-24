@@ -17,6 +17,7 @@ Latent variable - latent variables, as opposed to observable variables, are vari
 Can we learn true explanatory factors i.e latent variables from only observed data?
 
 ### Autoencoders
+![](https://blog.keras.io/img/ae/autoencoder_schema.jpg) <br/>
 * Encoder - Takes image as input (x), pass it through CNN, to create Low-dimensional latent variable, z
 * Low-dimensional latent space, z is created to remove noise and find most meaningful features
 * Back-propagation cannot be learnt as it is an unsupervised model. So, we try to recontruct the original data. 
@@ -27,12 +28,11 @@ Can we learn true explanatory factors i.e latent variables from only observed da
 * Bottleneck hidden layer forces network to learn a compressed latent representation
 * Recontruction loss forces the latent representation to capture as much info about the data as possible
 * Here latent space is a deterministic function i,e if same input is fed multiple time u get the same output everytime
-![](https://blog.keras.io/img/ae/autoencoder_schema.jpg) <br/>
 
 ### Variational Autoencoders
-![]()
+![](https://cdn-images-1.medium.com/max/1600/1*D4hg5tL1LOGI2QJdG9zQ3w.jpeg)
 * Extension of autoencoders with a probabilistic spin
 * Replacing intermediate latent space that was deterministic with a probabilistic or stochastic distribution
-
+* mu and sigma are calculated
 
 
