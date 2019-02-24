@@ -29,6 +29,7 @@ Principle:  <br/>
 -- Filter a size of 4 by 4 <br/>
 -- Apply this same filter to 4 by 4 patches in input <br/>
 -- Shift by 2 pixels for next patch <br/>
+<br/>
 This patchy operation is CONVOLUTION <br/>
 * Apply a set of weights - a filter - to extract local features
 * Use multiple filters to extract different features Eg: Edges, 
