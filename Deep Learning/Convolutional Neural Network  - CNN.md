@@ -5,6 +5,8 @@ https://www.youtube.com/watch?v=H-HVZJ7kGI0&list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG
 * Semantic Segmentation
 * Object Detection
 * Image Captioning
+* Self driving cars
+* Identifying facial phenotypes of genetic disorders
 
 ### Overview
 Image classification - Spatial recognition
