@@ -33,6 +33,9 @@ Can we learn true explanatory factors i.e latent variables from only observed da
 ![](https://cdn-images-1.medium.com/max/1600/1*D4hg5tL1LOGI2QJdG9zQ3w.jpeg)
 * Extension of autoencoders with a probabilistic spin
 * Replacing intermediate latent space that was deterministic with a probabilistic or stochastic distribution
-* mu and sigma are calculated
+* Mean and std dev are computed deterministically, takes this as input to cpmpute stochastic z
+
+
+
 
 
