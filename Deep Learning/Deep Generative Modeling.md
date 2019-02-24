@@ -26,9 +26,13 @@ Can we learn true explanatory factors i.e latent variables from only observed da
 * Smaller latent space will force a large training bottleneck and hence will result in noiser data, blurry images
 * Bottleneck hidden layer forces network to learn a compressed latent representation
 * Recontruction loss forces the latent representation to capture as much info about the data as possible
+* Here latent space is a deterministic function i,e if same input is fed multiple time u get the same output everytime
+![](https://blog.keras.io/img/ae/autoencoder_schema.jpg)
 
 ### Variational Autoencoders
-
+![]()
+* Extension of autoencoders with a probabilistic spin
+* Replacing intermediate latent space that was deterministic with a probabilistic or stochastic distribution
 
 
 
