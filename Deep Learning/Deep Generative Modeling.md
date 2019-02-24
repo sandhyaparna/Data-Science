@@ -1,5 +1,7 @@
 ### Links
 
+### Applications
+* 
 
 ### Overview - Unsupervized
 * Generating new data - Systems that dont just look to extract patterns in data but goes a step beyond to use those patterns to learn the underlying distribution in the data and use it to generate brand new data
@@ -46,7 +48,7 @@ Can we learn true explanatory factors i.e latent variables from only observed da
 * Here 2 neural networks - Generator & Discriminator compete with each other, you force the discriminator to learn how to distinguish between real & fake and better the discriminator, it forces generator to produec more realistic fake examples
 * Generator turns noise into an imitation of the data to try to trick discriminator
 * Discriminator tries to identify real data from fake created by generator
-
+* Benefits of GANs
 
 
 
