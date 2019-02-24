@@ -26,7 +26,7 @@ In NN, when Image is inputed as a vector of pixel values, there is no spatial in
 * Pixels that are spatially close to each other are more related to each other - Sliding window is created, to create sliding patches and take into account spatial info <br/>
 
 Principle:  <br/>
-- Filter a size of 4*4 <br/>
+-- Filter a size of 4*4 <br/>
 - Apply this same filter to 4 by 4 patches in input <br/>
 - Shift by 2 pixels for next patch <br/>
 This patchy operation is CONVOLUTION <br/>
