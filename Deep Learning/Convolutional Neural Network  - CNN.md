@@ -25,9 +25,13 @@ In NN, when Image is inputed as a vector of pixel values, there is no spatial in
 * Input: 2D image as an array of pixel values, patches of input should be connected to hidden layer i.e each neuron in the hidden layer sees only a particular region that is inputed
 * Pixels that are spatially close to each other are more related to each other - Sliding window is created, to create sliding patches and take into account spatial info <br/>
 
-Principle: 
+Principle:  <br/>
+- Filter a size of 4*4 <br/>
+- Apply this same filter to 4 by 4 patches in input <br/>
+- Shift by 2 pixels for next patch <br/>
+This patchy operation is CONVOLUTION <br/>
 * Apply a set of weights - a filter - to extract local features
-* Use multiple filters to extract different features
+* Use multiple filters to extract different features Eg: Edges, 
 * Spatially share parameters of each filter
 
 
