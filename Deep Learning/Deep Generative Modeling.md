@@ -38,6 +38,18 @@ Can we learn true explanatory factors i.e latent variables from only observed da
 * But we cannot backpropagate gradients through sampling layers. It can be solved using reparametrizing the sampling layer so that training can be end-to-end
 * Computing z in following way helps in backpropagation. z = Mean + (Std dev * error)
 ![](https://i.stack.imgur.com/TzX3I.png)
+* Different dimensions of z encodes different interpretable latent features
+
+### Generative Adversarial Networks (GANs)
+![](https://i.stack.imgur.com/UnKny.png)
+* Sample generation
+* Here 2 neural networks - Generator & Discriminator compete with each other, you force the discriminator to learn how to distinguish between real & fake and better the discriminator, it forces generator to produec more realistic fake examples
+* Generator turns noise into an imitation of the data to try to trick discriminator
+* Discriminator tries to identify real data from fake created by generator
+
+
+
+
 
 
 
