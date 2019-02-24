@@ -37,6 +37,20 @@ This patchy operation is CONVOLUTION <br/>
 By changing weights of filters we can detect and extract different filters
 
 ### CNNs for classification
+Goal is to learn features directly from image data, i.e learning weights of those filters and using these learnt feature maps for image classification
+Steps: 
+* Convolution - Apply filters with learned weights to generate feature maps
+* Non-linearity - Often ReLU
+* Pooling - Downsampling operation on each feature map <br/>
+Operation: 
+* Each neuron take inputs from patch, compute weighted sum, apply bias
+* Within a single convolutional layer, we can have many different filters that are learnt and hence output layer of a convolutional layer will have volume. d is number of filters, h & w are spatial dimensions
+* Reduce dimensionality using pooling
+* CONV and POOL layers output high-level features of input
+* Fully connected layer uses these features for classifying input image
+* Express output as probability of image belonging to a particular class
+
+![](https://cdn-images-1.medium.com/max/1255/1*XbuW8WuRrAY5pC4t-9DZAQ.jpeg)
 
 
 
