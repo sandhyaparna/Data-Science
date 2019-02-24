@@ -33,7 +33,13 @@ Can we learn true explanatory factors i.e latent variables from only observed da
 ![](https://cdn-images-1.medium.com/max/1600/1*D4hg5tL1LOGI2QJdG9zQ3w.jpeg)
 * Extension of autoencoders with a probabilistic spin
 * Replacing intermediate latent space that was deterministic with a probabilistic or stochastic distribution
-* Mean and std dev are computed deterministically, takes this as input to cpmpute stochastic z
+* Mean and std dev are computed deterministically, takes this as input to compute stochastic sample of z. Sample from the mean and std dev to compute latent sample. Hence, if same input is fed multiple times u get different output everytime
+* Loss function = Reconstruction loss + Regularization term
+* But we cannot backpropagate gradients through sampling layers. It can be solved using reparametrizing the sampling layer so that training can be end-to-end
+* Computing z in following way helps in backpropagation. z = Mean + (Std dev * error)
+![](https://i.stack.imgur.com/TzX3I.png)
+
+
 
 
 
