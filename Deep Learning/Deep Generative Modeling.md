@@ -27,6 +27,7 @@ Can we learn true explanatory factors i.e latent variables from only observed da
 * Bottleneck hidden layer forces network to learn a compressed latent representation
 * Recontruction loss forces the latent representation to capture as much info about the data as possible
 
+### Variational Autoencoders
 
 
 
