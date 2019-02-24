@@ -31,8 +31,8 @@ Principle:  <br/>
 -- Shift by 2 pixels for next patch <br/>
 <br/>
 This patchy operation is CONVOLUTION <br/>
-* Apply a set of weights - a filter - to extract local features
-* Use multiple filters to extract different features Eg: Edges, 
+* Apply a set of weights - a filter - to extract local features i.e each patch is multiplied with a filter (elementwise multiplication and the add the values in the obtained matrix to get a single number
+* Use multiple filters to extract different features i.e each patch multiplied with a filter is done for many filters
 * Spatially share parameters of each filter
 
 
