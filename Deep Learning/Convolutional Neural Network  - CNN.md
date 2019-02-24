@@ -1,9 +1,13 @@
 ### Links
 https://www.youtube.com/watch?v=H-HVZJ7kGI0&list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI&index=4&t=201s <br/>
 
+### Applications
+* Semantic Segmentation
+* Object Detection
+* Image Captioning
 
-
-Image classification
+### Overview
+Image classification - Spatial recognition
 
 * Images have a lot of variation: 
   * Viewpoint variation
@@ -51,11 +55,11 @@ Operation:
 * Express output as probability of image belonging to a particular class
 
 ![](https://cdn-images-1.medium.com/max/1255/1*XbuW8WuRrAY5pC4t-9DZAQ.jpeg)
+Feature learning part is the essence of CNN
 
 
 
 
-Spatial recognition
 
 
 
