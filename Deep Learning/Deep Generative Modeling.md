@@ -28,7 +28,7 @@ Can we learn true explanatory factors i.e latent variables from only observed da
 * Recontruction loss forces the latent representation to capture as much info about the data as possible
 * Here latent space is a deterministic function i,e if same input is fed multiple time u get the same output everytime
 ![](https://blog.keras.io/img/ae/autoencoder_schema.jpg)
-
+<br/>
 ### Variational Autoencoders
 ![]()
 * Extension of autoencoders with a probabilistic spin
