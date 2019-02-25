@@ -175,7 +175,7 @@ Iterations is the number of batches needed to complete one epoch. Iterations=Num
   
   
   
-### Limitations
+### Limitations - Use Bayesian Deep Learning
 * Very data hungry
 * Computationally intensive to train and deploy
 * Easily fooled by adversarial examples
