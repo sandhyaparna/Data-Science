@@ -172,7 +172,14 @@ Momentum helps to know the direction of the next step with the knowledge of the 
 
 #### Iterations
 Iterations is the number of batches needed to complete one epoch. Iterations=Number of Training examples/Batch size
-
+  
+  
+  
+### Limitations
+* Very data hungry
+* Computationally intensive to train and deploy
+* Easily fooled by adversarial examples
+* blackbox models
 
  <br/>
 
