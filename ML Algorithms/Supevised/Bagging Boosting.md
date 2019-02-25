@@ -6,7 +6,7 @@ https://www.analyticsvidhya.com/blog/2017/03/imbalanced-classification-problem/ 
 ### Multi-Classifiers
 A set of weak learners (Train multiple models) are combined to create a strong learner that obtains better performance than a single one. <br/>
 Helps in minimizing noise, bias and variance. <br/>
-* A weak learner is defined to be a classifier that is only slightly correlated with the true classification (it can label examples better than random guessing). Each weak learner has a high variance, low bias
+* A weak learner is defined to be a classifier that is only slightly correlated with the true classification (it can label examples better than random guessing).
 * In contrast, a strong learner is a classifier that is arbitrarily well-correlated with the true classification
 
 ##### Ensemble methods - Same Learning algorithm - Bagging & Boosting
