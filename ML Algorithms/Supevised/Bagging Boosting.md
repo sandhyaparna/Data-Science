@@ -6,6 +6,9 @@ https://www.analyticsvidhya.com/blog/2017/03/imbalanced-classification-problem/ 
 ### Multi-Classifiers
 A set of weak learners (Train multiple models) are combined to create a strong learner that obtains better performance than a single one. <br/>
 Helps in minimizing noise, bias and variance. <br/>
+* A weak learner is defined to be a classifier that is only slightly correlated with the true classification (it can label examples better than random guessing). Each weak learner has a high variance, low bias
+* In contrast, a strong learner is a classifier that is arbitrarily well-correlated with the true classification
+
 ##### Ensemble methods - Same Learning algorithm - Bagging & Boosting
 * N sets are created from Training data by random sampling with replacement - Each set is trained using same learning algorithm and thus N learners are generated
 * Decreases the variance of your single estimate as they combine several estimates from different models. So the result may be a model with higher stability.
@@ -25,14 +28,18 @@ Output of primary classifiers, called level 0 models, will be used as attributes
 * The selection of models for creating an ensemble is an art which is really hard to master.
 
 ### Bagging
-* Bagging is best used when singe-model is over-fitting (High Variance). Boosting is not used when single-model is over-fitting as boosting itself suffers from over-fitting problem.
+* Bagging is best used when singe-model is over-fitting (High Variance). Boosting is not used when single-model is over-fitting as boosting itself suffers from over-fitting problem. Bagging is suitable for high variance low bias models
 * Bagging reduces variance of the classifier, doesn't help much with bias. 
 * N sets are created from Training data by random sampling with replacement - Any element has the same probability to appear in a new data set. 
+* In Bagging, each individual trees are independent of each other because they consider different subset of features and samples
 * Bagging can have a fraction of the columns as well as rows. Taking row and column fractions less than 1 helps in making robust models, less prone to overfitting.
 * Training is parallel i.e. Multiple classifiers are built independently on each data set.
 * Result is obtained by combining the responses of all the N learners using mean. median or mode/majority vote. Combined values are generally more robust than a single model.
 * Works best when classifier is unstable (Decision Trees), where as bagging can hurt stable model by introducing artificial variability 
 * In noisy data environments bagging outperforms boosting
+* Bagging doesnt have 'learning rate' parameter 
+* In RandomForest, if n tress contributing to the RandomForest all have an accuracy of 70%, min accuracy of overall RandomForest 
+can be from less than 70% to 100%
 ##### Algorithms
 * Random Forests - Parallel processing is not possible - https://www.analyticsvidhya.com/blog/2016/04/complete-tutorial-tree-based-modeling-scratch-in-python/
 * Bagging meta-estimator
@@ -40,10 +47,15 @@ Output of primary classifiers, called level 0 models, will be used as attributes
 
 ### Boosting
 * Boosting is best used when single model gets a very low performance (Model is too simple implies high bias i.e. each of the weak hypotheses has accuracy just a little bit better than random guessing) as it generates a combined model with lower errors as it optimises the advantages and reduces pitfalls of the single model (reduce Bias).
+* Boosting algorithm always considers weak learners in order to prevent overfitting, since the complexity of the overall learner
+increases at each step. Starting with weak learners implies the final classifier will be less likely to overfit
 * N sets are created from Training data by random sampling with replacement - But observations are weighted and therefore some of them will take part in the new sets more often.
 * Every time a new learner is built in a sequential way (outcome of one model becomes input to the next model), takes into account the previous classifiers’ success. After each training step, the weights are redistributed. Misclassified data increases its weights to emphasise the most difficult cases. In this way, subsequent learners will focus on them during their training.
 * Boosting assigns a second set of weights, this time for the N classifiers, the algorithm allocates weights to each resulting model, a learner with good a classification result on the training data will be assigned a higher weight than a poor one, in order to take a weighted average of their estimates.
+* In boosting tree individual weak learners are not independent of each other because each tree correct the results of previous tree. 
 * In AdaBoost, an error less than 50% is required to maintain the model; otherwise, the iteration is repeated until achieving a learner better than a random guess.
+* Time to train GBM model increases with increase in no of trees, whereas learning rate doesnt effect time to train 
+
 ##### Algorithms
 * GBM
 * Light GBM
