@@ -80,6 +80,7 @@ A typical NER model consists of three blocks:<br/>
 ##### Word2Vec
 Word2Vec, GloVe <br/> 
 * Converts words to a meaningful numeric value <br/>
+* Based on the assumption that the meaning of a word can be inferred by the company it keeps
 * word2vec representation is created using 2 algorithms: Continuous Bag-of-Words model (CBOW) and the Skip-Gram model. <br/>
 Algorithmically, these models are similar, except that CBOW predicts target words (e.g. 'mat') from source context words ('the cat sits on the') i.e 'predicting the word given its context' , while the skip-gram does the inverse and predicts source context-words from the target words i.e 'predicting the context given a word'. <br/>
 
