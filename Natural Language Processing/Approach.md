@@ -84,6 +84,9 @@ Word2Vec, GloVe <br/>
 * word2vec representation is created using 2 algorithms: Continuous Bag-of-Words model (CBOW) and the Skip-Gram model. <br/>
 Algorithmically, these models are similar, except that CBOW predicts target words (e.g. 'mat') from source context words ('the cat sits on the') i.e 'predicting the word given its context' , while the skip-gram does the inverse and predicts source context-words from the target words i.e 'predicting the context given a word'. <br/>
 
+Training of Word2vec on Wiki Corpus https://medium.com/@maxminicherrycc/word2vec-how-to-train-and-update-it-4eed4260cf75 <br/>
+Train and Update Word2vec https://medium.com/@maxminicherrycc/word2vec-how-to-train-and-update-it-4eed4260cf75 <br/>
+Word2vec to Song2vec https://medium.com/@weiqi_tong/from-word2vec-to-song2vec-an-embedding-experimentation-9215279c9d7a <br/>
 Detailed demons of CBOW, skip-gram, Feature engineering using word2vec(end of the article) https://towardsdatascience.com/understanding-feature-engineering-part-4-deep-learning-methods-for-text-data-96c44370bbfa <br/>
 Google's trained Word2Vec http://mccormickml.com/2016/04/12/googles-pretrained-word2vec-model-in-python/ <br/>
 After importing google's model  https://github.com/chrisjmccormick/inspect_word2vec/blob/master/inspect_google_word2vec.py <br/>
