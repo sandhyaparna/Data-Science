@@ -90,8 +90,9 @@ Word2vec to Song2vec https://medium.com/@weiqi_tong/from-word2vec-to-song2vec-an
 Detailed demons of CBOW, skip-gram, Feature engineering using word2vec(end of the article) https://towardsdatascience.com/understanding-feature-engineering-part-4-deep-learning-methods-for-text-data-96c44370bbfa <br/>
 Google's trained Word2Vec http://mccormickml.com/2016/04/12/googles-pretrained-word2vec-model-in-python/ <br/>
 After importing google's model  https://github.com/chrisjmccormick/inspect_word2vec/blob/master/inspect_google_word2vec.py <br/>
- https://medium.com/swlh/playing-with-word-vectors-308ab2faa519  https://github.com/mkonicek/nlp <br/>
-FastText's trained word vectors model https://fasttext.cc/docs/en/english-vectors.html
+ https://medium.com/swlh/playing-with-word-vectors-308ab2faa519   <br/>
+ https://github.com/mkonicek/nlp <br/>
+FastText's trained word vectors model https://fasttext.cc/docs/en/english-vectors.html <br/>
 Detained Neural network representation https://iksinc.online/tag/continuous-bag-of-words-cbow/ <br/>
 https://www.analyticsvidhya.com/blog/2017/06/word-embeddings-count-word2veec/ <br/>
 https://www.datascience.com/resources/notebooks/word-embeddings-in-python <br/>
