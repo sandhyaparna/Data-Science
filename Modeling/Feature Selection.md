@@ -9,7 +9,12 @@ https://topepo.github.io/caret/feature-selection-using-genetic-algorithms.html <
 * Understandability:
 
 ### Feature reduction techniques:
-* Dimensionality reduction: Principal Component Analysis (PCA), Self-organizing maps (SOM), Latent Semantic Indexing
+* Dimensionality reduction: 
+  * Principal Component Analysis (PCA)
+  * Multiple Correspondence Analysis (MCA) - Categorical variables
+  * CorEx - Recent technique for automatic structure extraction from categorical data - https://github.com/gregversteeg/CorEx
+  * Self-organizing maps (SOM)
+  * Latent Semantic Indexing
 * Manifold Learning: t-Distributed Stochastic Neighbor Embedding (t-SNE)
 * Variational autoencoders: An automated generative approach using variational autoencoders (VAE)
 * Clustering: Hierarchical Clustering
