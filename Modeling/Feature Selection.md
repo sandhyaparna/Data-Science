@@ -1,6 +1,8 @@
 ### Links
 Genetic Algorithm https://www.analyticsvidhya.com/blog/2017/07/introduction-to-genetic-algorithm/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29 <br/>
 https://topepo.github.io/caret/feature-selection-using-genetic-algorithms.html <br/>
+Dimension reduction techniques https://www.analyticsvidhya.com/blog/2018/08/dimensionality-reduction-techniques-python/
+
 
 ### Reasons to include fewer predictors over many
 * Redundancy/Irrelevance: Remove non-redundant predictor variables
