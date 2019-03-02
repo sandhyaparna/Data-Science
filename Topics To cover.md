@@ -4,6 +4,7 @@
 * Feature selection
 * Association Rules
 * Image classification
+* Graph Networks
 * Text Classification
 * Outlier detection - https://www.analyticsvidhya.com/blog/2016/01/guide-data-exploration/
 * LIME - https://www.analyticsvidhya.com/blog/2017/06/building-trust-in-machine-learning-models/
