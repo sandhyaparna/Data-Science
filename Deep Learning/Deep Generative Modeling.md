@@ -1,4 +1,5 @@
 ### Links
+MIT Course https://www.youtube.com/watch?v=yFBFl1cLYx8&t=0s&index=5&list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI
 
 ### Applications
 * 
