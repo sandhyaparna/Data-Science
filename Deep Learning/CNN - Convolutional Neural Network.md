@@ -1,4 +1,5 @@
 ### Links
+https://www.coursera.org/learn/introduction-tensorflow/lecture/JSKji/what-are-convolutions-and-pooling
 https://www.youtube.com/watch?v=H-HVZJ7kGI0&list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI&index=4&t=201s <br/>
 https://www.youtube.com/watch?v=YRhxdVk_sIs
 
