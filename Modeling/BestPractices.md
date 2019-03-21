@@ -16,7 +16,8 @@ Data Pre-processing http://www.cs.ccsu.edu/~markov/ccsu_courses/datamining-3.htm
     * A patient usually starts as an ED and then gets admitted as InPatient. So, Patient Visits should be based on different type of visit and not within same cohort of InPatients
    * For Sepsis on Arrival - Would temps, labs etc will be taken ??? - What are the filters that should be used forthe model
      * If we assume that patients should have so and so reading taken, blood culture drawn etc conditions, how useful will our model actually be??
-   * 
+   * Duscharge time may be before the last collection data time of a Patient or much beyound the last collection date time of a patient - if there is no vital signs, labs taken for a patient - can we assume that the patient is still in hospital??
+   
    
 * Can we use Stacking algorithm - 1 model for different subset of variables and combine all the diff models
   * 1 model for time related vars
