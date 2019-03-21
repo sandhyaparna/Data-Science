@@ -27,3 +27,15 @@ Data Pre-processing http://www.cs.ccsu.edu/~markov/ccsu_courses/datamining-3.htm
 * Reusuable Holdouts to prevent Over-fitting
 
 
+#### Personalization:
+* What locations/beds are there ina hospital.
+* How are coma patients' vital/lab details taken. How do you monitor a coma patient
+* In what units is Temp/Vitals signs taken?
+* What details do Vigi gets froma client? - If we dont get a particular vital sign values, we cannot include that in our model
+
+
+
+
+
+
+
