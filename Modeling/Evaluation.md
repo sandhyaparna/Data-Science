@@ -21,8 +21,8 @@ When Model is too simple, both training and test errors are large <br/>
 * Prediction from Model - Cohort(Total) of patients that are scored as either 0(Predicted False) or 1(Predicted One) should be considered
 * Confusion matrices can be created at different model score cutoffs
 * True outcome from client should be considered as Actual True outcome
-
 * If we get only Predicted by Model and Actual outcome, then we can calculate TP, FP, FN but not True Negatives
+* For Validation analysis based on TOP - Min time of first time a threshold value is reached is considered for analysis
 
 
 
