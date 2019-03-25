@@ -1,5 +1,5 @@
 ### Links
-Deteecting Influential obs https://cran.r-project.org/web/packages/olsrr/vignettes/influence_measures.html <br/>
+Detecting Influential obs https://cran.r-project.org/web/packages/olsrr/vignettes/influence_measures.html <br/>
 
 ### Overview
 Outlier: An outlier is a data point that diverges from an overall pattern in a sample. An outlier has a large residual (the distance between the predicted value () and the observed value (y)). Outliers lower the significance of the fit of a statistical model because they do not coincide with the model's prediction.  <br/>
