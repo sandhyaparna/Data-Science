@@ -25,6 +25,13 @@ Influential Obs: An influential point is any point that has a large effect on th
 * Hadi Plot
 * Potential Residual Plot
 
+### Outlier Treatment
+* Delete obs
+* Transforming and binning values
+* Imputing
+* Treat seperately
+
+
 ### PyOD Library
 
 
