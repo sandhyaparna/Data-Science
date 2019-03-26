@@ -3,10 +3,12 @@
 
 #### Creating Hpothesis/Assumptions are testing them
 * Healthcare
-  * Is PatientID a unique identifier of a visit or within a single visit do Patients get multiple Patient IDs - How do you combine them?
+  * Is PatientID a unique identifier of a visit or within a single visit do Patients get multiple Patient IDs - How do you combine them? - Create a Arrival date for the combinedPatientIDs 
   * Is PatientID a unique indentifier among different clients? UniqueID is created by concatenating ClientID and PatientID
-  * If there is gap in vitals/labs of patients for more than certain amount of time - Why do you data is missing?
+  * If there is gap in vitals/labs of patients for more than certain amount of time - Why do you think data is missing?
   * Time difference between Collection date Time and Creation date time
+  * How is discharge date time actually created? What do you know about the time of making the discharge decision for a patient? Can we assume Last collection date time is time at which the decision making of discharge is done
+  
 
 
 
