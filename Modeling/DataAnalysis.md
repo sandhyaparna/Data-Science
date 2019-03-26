@@ -10,6 +10,14 @@
   * How is discharge date time actually created? What do you know about the time of making the discharge decision for a patient? Can we assume Last collection date time is time at which the decision making of discharge is done
   
 
+#### Exploration
+* Variable Identification
+  * Type of Variable: Target, Unique Idnetifier, Predictor Vars
+  * Data Type: Numeric, Character - How can you encode?
+* Univariate, Bivariate analysis
+* Missing value treatment
+* Outlier treatmnet
+* Variable transformation, creation, feature engineering
 
 
 
