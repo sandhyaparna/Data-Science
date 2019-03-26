@@ -13,10 +13,12 @@ Corr(X,Y) = Cov(X,Y)/XstdDev.YstdDev
 ##### 2 Categorical Variables
 * Cross Table - Freq or %
 * Stacked bar plot - Freq or %
+* Chi-square test
 
 ##### Quantitative & Categorical Variables
 * Box plot comparision between the groups of Categorical variables
-
+* T-test
+* Anova
 
 
 
