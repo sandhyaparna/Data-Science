@@ -9,6 +9,7 @@ A Recommendation system is a sub-class of information filtering that seeks to pr
 Eg: Amazon-Next to buy, Travel websites-Next Destination, Netflix-Movies, News
 
 Matrix foundation 
+AB Test: Consider analysing other factors/confounding vars that might impact the results
 
 
 
