@@ -31,6 +31,18 @@ How do you measure the outcome - wch outcome is imp?
     * Context: Time, Device, country, Language
     * Difference in local tastes: Not available!= Not popular 
 
-
+* Latent Models for recommendation:
+  * Shallow
+    * Latent factor models -- Matrix Factorization
+    * Latent Dirichlet Allocation (LDA)
+  * Deep
+    * Variational Autoencoder
+    * Feedforward Neural Networks
+    * Sequential Neural Networks (RNN)
+    * Convolutional Neural Networks
+    
+    
+    
+    
 
 
