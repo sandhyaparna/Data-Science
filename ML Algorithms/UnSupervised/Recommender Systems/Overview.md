@@ -5,7 +5,7 @@ Algorithms used in Recommender Systems - Bayesian,Decision Tree,Matrix factoriza
 
 Collaborative filtering: The process of filtering used by most of the recommender systems to find patterns or information by collaborating viewpoints, various data sources and multiple agents. <br/>
 
-A Recommendation system is a sub-class of information filtering that seeks to predict the rating or preference a user would give to an item
+A Recommendation system is a sub-class of information filtering that seeks to predict the rating or preference a user would give to an item. Job of a recommendation algorithm is not to be very predictive of past held-out interactions but is to be predictive of future interactions as users change over time and items chnage over time.
 Eg: Amazon-Next to buy, Travel websites-Next Destination, Netflix-Movies, News
 * What is recommended
 * How is it recommended
