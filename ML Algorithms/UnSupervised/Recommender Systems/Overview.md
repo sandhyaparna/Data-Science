@@ -25,8 +25,11 @@ How do you measure the outcome - wch outcome is imp?
   * Minimize the time it takes to find them
   * Ordering the titles in each row (Diff categories/genres) is personalized
   * Selection and placement of each row types is personalized
-  * Personalized images on same movies
-  
+  * Personalized images on same movie
+  * Model using
+    * User's taste
+    * Context: Time, Device, country, Language
+    * Difference in local tastes: Not available!= Not popular 
 
 
 
