@@ -7,6 +7,10 @@ Collaborative filtering: The process of filtering used by most of the recommende
 
 A Recommendation system is a sub-class of information filtering that seeks to predict the rating or preference a user would give to an item
 Eg: Amazon-Next to buy, Travel websites-Next Destination, Netflix-Movies, News
+* What is recommended
+* How it is recommended
+* When it is recommended
+* Where it is recommended
 
 Matrix foundation 
 * AB Test: Consider analysing other factors/confounding vars that might impact the results </br>
@@ -16,4 +20,14 @@ How do you measure the outcome - wch outcome is imp?
   * Long-term rewards
   * Production bias, recommendation bias
   
+* Personalization: 
+  * Maximize member's enjoyment of the selected show
+  * Minimize the time it takes to find them
+  * Ordering the titles in each row (Diff categories/genres) is personalized
+  * Selection and placement of each row types is personalized
+  * Personalized images on same movies
+  
+
+
+
 
