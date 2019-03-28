@@ -11,8 +11,8 @@ When comparing models, besides model performance, a model is said to have a bett
 * How can we trust model predictions? We should be able to evaluate and validate any data point and how a model takes decisions on it - ensures TRANSPARENCY of the model.
   <br/>
   <br/>
-* Global Interpretation - Being able to explain the conditional interaction between dependent andindependent variables based on the complete dataset
-* Local Interpretation - Being able to explain the conditional interaction between dependent andindependent variables wrt to a single prediction
+* Global Interpretation - Being able to explain the conditional interaction between dependent and independent variables based on the complete dataset
+* Local Interpretation - Being able to explain the conditional interaction between dependent and independent variables wrt to a single prediction
 
 Traditional techniques for Model interpretation are 
 * Exploratory analysis and visualization techniques like clustering and dimensionality reduction.
