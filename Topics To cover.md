@@ -3,7 +3,7 @@
 * Imbalanced Classification (Modifying existing classification algorithms to make them appropriate for imbalanced data sets) - https://www.analyticsvidhya.com/blog/2017/03/imbalanced-classification-problem/
 * Feature selection
 * Association Rules
-* Image classification
+* Image classification/Computer Vision
 * Graph Networks
 * Text Classification
 * Outlier detection - https://www.analyticsvidhya.com/blog/2016/01/guide-data-exploration/
