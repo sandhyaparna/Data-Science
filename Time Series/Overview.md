@@ -29,14 +29,20 @@ Augmented Dickey-Fuller test (ADF) is used to test for stationarity: https://med
 * Trend – varying mean over time. If number of passengers is growing over time.
 * Seasonality – variations at specific time-frames. eg people might have a tendency to buy cars in a particular
 month because of pay increment or festivals.
+* Periodicity
+* AUtocorrelation 
 
 White noise is stationary - It does not matter when you observe it, it should look much the same at any point in time.
 Ways to Stationarize Non-Stationary models:
 #### Detrending
-It is important because amount of trend determines the effect on correlation. https://www.kdnuggets.com/2015/02/avoiding-common-mistake-time-series.html <br/>
-* Differencing - Try double differencing too
+It is important because amount of trend determines the effect on correlation: https://www.kdnuggets.com/2015/02/avoiding-common-mistake-time-series.html <br/>
+* Differencing - Try double differencing too (First differences don't work when there are lagged effects)
+  * y'(t) = y(t) - y(t-1)
+* Link relatives - Divide each point by the point that came before it
+  * y'(t) = y(t) / y(t-1)
 * Transformation - Used only in case differencing is not working.
-  * Log - Incase of diverging time series
+ * Log - Incase of diverging time series
+  
   
 
 Cross validation for time series - https://www.r-bloggers.com/cross-validation-for-time-series/  evaluation on a rolling forecasting origin - onestep or multistep forecast (Training data - A points, Test data - k points) For cross validation every time one observation from the test data is added to training data to determine the immediate next value) - Average of all the test points is used to finally determine the model accuracy
