@@ -32,7 +32,8 @@ month because of pay increment or festivals.
 
 White noise is stationary - It does not matter when you observe it, it should look much the same at any point in time.
 Ways to Stationarize Non-Stationary models:
-#### Detrending - It is important because amount of trend determines the effect on correlation.  https://www.kdnuggets.com/2015/02/avoiding-common-mistake-time-series.html <br/>
+#### Detrending
+It is important because amount of trend determines the effect on correlation. https://www.kdnuggets.com/2015/02/avoiding-common-mistake-time-series.html <br/>
 * Differencing - Try double differencing too
 * Transformation - Used only in case differencing is not working.
   * Log - Incase of diverging time series
