@@ -33,7 +33,7 @@ Null Hypo of ADF and KPSS are opposite. Check the article
 * Seasonality – variations at specific time-frames. eg people might have a tendency to buy cars in a particular
 month because of pay increment or festivals.
 * Periodicity
-* AUtocorrelation 
+* Autocorrelation 
 
 White noise is stationary - It does not matter when you observe it, it should look much the same at any point in time.
 Ways to Stationarize Non-Stationary models:
