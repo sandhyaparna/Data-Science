@@ -18,6 +18,8 @@ Time series models are very useful models when you have serially correlated data
 Unless your time series is stationary, you cannot build a time series model. <br/>
 Conditions for a series to be classified as stationary series:
 Augmented Dickey-Fuller test (ADF) is used to test for stationarity: https://medium.com/@kangeugine/time-series-check-stationarity-1bee9085da05 <br/>
+KPSS Test: https://medium.com/analytics-vidhya/a-gentle-introduction-to-handling-a-non-stationary-time-series-in-python-8be1c1d4b402 <br/>
+Null Hypo of ADF and KPSS are opposite. Check the article
 * The mean of the series should not be a function of time rather should be a constant. 
 ![](https://www.analyticsvidhya.com/wp-content/uploads/2015/02/Mean_nonstationary.png)
 * The variance of the series should not a be a function of time.
@@ -38,10 +40,16 @@ Ways to Stationarize Non-Stationary models:
 It is important because amount of trend determines the effect on correlation: https://www.kdnuggets.com/2015/02/avoiding-common-mistake-time-series.html <br/>
 * Differencing - Try double differencing too (First differences don't work when there are lagged effects)
   * y'(t) = y(t) - y(t-1)
+  * Seasonal Differencing - Difference between an observation and a previous observation from the same season y(t)‘= yt — y(t-n)
 * Link relatives - Divide each point by the point that came before it
   * y'(t) = y(t) / y(t-1)
 * Transformation - Used only in case differencing is not working.
  * Log - Incase of diverging time series
+ * Square root
+ * Power transform
+ 
+#### Remove Seasonality
+
   
   
 
