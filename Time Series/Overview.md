@@ -5,6 +5,7 @@ http://www.statsmodels.org/devel/tsa.html <br/>
 https://otexts.org/fpp2/index.html <br/>
 https://robjhyndman.com/hyndsight/cyclicts/ <br/>
 http://www.statsoft.com/Textbook/Time-Series-Analysis <br/>
+Astsa Package in R - Time Series data sets
 
 ### Overview
 The three most widely used are regression models (Method of Least Squares), smoothing models. and general time series models. <br/>
