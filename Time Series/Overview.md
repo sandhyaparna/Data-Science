@@ -17,6 +17,7 @@ Time series models are very useful models when you have serially correlated data
 ### Stationarity
 Unless your time series is stationary, you cannot build a time series model. <br/>
 Conditions for a series to be classified as stationary series:
+Augmented Dickey-Fuller test (ADF) is used to test for stationarity: https://medium.com/@kangeugine/time-series-check-stationarity-1bee9085da05 <br/>
 * The mean of the series should not be a function of time rather should be a constant. 
 ![](https://www.analyticsvidhya.com/wp-content/uploads/2015/02/Mean_nonstationary.png)
 * The variance of the series should not a be a function of time.
