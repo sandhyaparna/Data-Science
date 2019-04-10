@@ -33,7 +33,8 @@ Null Hypo of ADF and KPSS are opposite. Check the article
 * Seasonality – variations at specific time-frames. eg people might have a tendency to buy cars in a particular
 month because of pay increment or festivals.
 * Periodicity
-* Autocorrelation - Estimate autocorrelation coeffs at different lags at plot them. For different lags - coefficients for x0 & x1, x0 & x2, x0 & x3, x0 & x4, x0 & x5, etc. At different lags calculate autocorrelation and plot them, all those values should be near 0. If either 1 or 2 autocorrelation coeffs are not near 0, those can be considered as noise. Using ACF graph identify q in Moving average(q),  is the lag at which the acf coeff is not near 0
+* Autocorrelation - Estimate autocorrelation coeffs at different lags at plot them. For different lags - coefficients for x0 & x1, x0 & x2, x0 & x3, x0 & x4, x0 & x5, etc. At different lags calculate autocorrelation and plot them, all those values should be near 0. If either 1 or 2 autocorrelation coeffs are not near 0, those can be considered as noise. Using ACF graph identify q in Moving average(q),  is the lag at which the acf coeff is not near 0.
+PACF plot is used to determine MA terms, ACF plot is used to determine AR terms <br/>
 
 White noise is stationary - It does not matter when you observe it, it should look much the same at any point in time.
 Ways to Stationarize Non-Stationary models:
@@ -62,8 +63,9 @@ It is important because amount of trend determines the effect on correlation: ht
   * p: The number of lag observations included in the model, also called the lag order.
   * d: The number of times that the raw observations are differenced, also called the degree of differencing.
   * q: The size of the moving average window, also called the order of moving average.  
-* Rolling forecast ARIMA https://machinelearningmastery.com/arima-for-time-series-forecasting-with-python/
-
+* Rolling forecast ARIMA https://machinelearningmastery.com/arima-for-time-series-forecasting-with-python/<br/>
+* PACF - https://newonlinecourses.science.psu.edu/stat510/node/62/ <br/>
+  If the PACF "cuts off" at lag k--then this suggests that you should try fitting an AR model of order k
 
 ### Model Evaluation
 * Line plot of the residual errors - Look if there are trends, etc
