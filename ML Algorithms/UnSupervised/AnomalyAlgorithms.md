@@ -13,10 +13,13 @@ For each possible organism we have a corresponding time series. A particular dis
 * Vector Moving Average
 * Hotelling T2 Test
 
-
+* EARS algo, Farrington flexible are applied on weekly data
 * CUSUM - Detect a shift in the mean of a process. CUSUM maintains a cumulative sum of deviations from a reference value r.
 * Modified CUSUM - Model non-stationary time series variables
 * Multivariate CUSUM
+
+
+
 
 
 
