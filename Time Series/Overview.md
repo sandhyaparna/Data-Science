@@ -20,6 +20,7 @@ Unless your time series is stationary, you cannot build a time series model. <br
 Conditions for a series to be classified as stationary series:
 Augmented Dickey-Fuller test (ADF) is used to test for stationarity: https://medium.com/@kangeugine/time-series-check-stationarity-1bee9085da05 <br/>
 KPSS Test: https://medium.com/analytics-vidhya/a-gentle-introduction-to-handling-a-non-stationary-time-series-in-python-8be1c1d4b402 <br/>
+Unit root test is a test for stationarity <br/>
 Null Hypo of ADF and KPSS are opposite. Check the article
 * The mean of the series should not be a function of time rather should be a constant. 
 ![](https://www.analyticsvidhya.com/wp-content/uploads/2015/02/Mean_nonstationary.png)
