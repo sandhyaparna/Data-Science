@@ -33,7 +33,7 @@ Null Hypo of ADF and KPSS are opposite. Check the article
 * Seasonality – variations at specific time-frames. eg people might have a tendency to buy cars in a particular
 month because of pay increment or festivals.
 * Periodicity
-* Autocorrelation 
+* Autocorrelation - Estimate autocorrelation coeffs at different lags at plot them. For different lags - coefficients for x0 & x1, x0 & x2, x0 & x3, x0 & x4, x0 & x5, etc. At different lags calculate autocorrelation and plot them, all those values should be near 0. If either 1 or 2 autocorrelation coeffs are not near 0, those can be considered as noise. Using ACF graph identify q in Moving average(q),  is the lag at which the acf coeff is not near 0
 
 White noise is stationary - It does not matter when you observe it, it should look much the same at any point in time.
 Ways to Stationarize Non-Stationary models:
@@ -51,7 +51,17 @@ It is important because amount of trend determines the effect on correlation: ht
  
 #### Remove Seasonality
 
-  
+
+
+### Models
+#### ARIMA - Auto regressive Integrated Moving Average
+* AR: Autoregression. A model that uses the dependent relationship between an observation and some number of lagged observations.
+* I: Integrated. The use of differencing of raw observations (e.g. subtracting an observation from an observation at the previous time step) in order to make the time series stationary.
+* MA: Moving Average. A model that uses the dependency between an observation and a residual error from a moving average model applied to lagged observations.
+* ARIMA model parameters:
+  * p: The number of lag observations included in the model, also called the lag order.
+  * d: The number of times that the raw observations are differenced, also called the degree of differencing.
+  * q: The size of the moving average window, also called the order of moving average.  
   
 
 Cross validation for time series - https://www.r-bloggers.com/cross-validation-for-time-series/  evaluation on a rolling forecasting origin - onestep or multistep forecast (Training data - A points, Test data - k points) For cross validation every time one observation from the test data is added to training data to determine the immediate next value) - Average of all the test points is used to finally determine the model accuracy
