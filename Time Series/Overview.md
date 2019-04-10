@@ -66,11 +66,15 @@ It is important because amount of trend determines the effect on correlation: ht
 * Rolling forecast ARIMA https://machinelearningmastery.com/arima-for-time-series-forecasting-with-python/<br/>
 * PACF - https://newonlinecourses.science.psu.edu/stat510/node/62/ <br/>
   If the PACF "cuts off" at lag k--then this suggests that you should try fitting an AR model of order k
-
+* ACF - If the ACF "cuts off" at lag k--this indicates that exactly k MA terms should be used
 ### Model Evaluation
 * Line plot of the residual errors - Look if there are trends, etc
 * Density plot of the residual errors - Non-zero mean implies there is bias in the prediction
-
+* MSE
+* MAE
+* MAPE
+* ME
+* MPE
 
 
 
