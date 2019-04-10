@@ -36,6 +36,11 @@ Stemming is a rudimentary rule-based process of stripping the suffixes (â€œingâ€
 ##### Lexicon Normalization - Lemmatizing
 Lemmatization, on the other hand, is an organized & step by step procedure of obtaining the root form of the word, it makes use of vocabulary (dictionary importance of words) and morphological analysis (word structure and grammar relations) <br/>
 But how is this different than Python stemming? While stemming can create words that do not actually exist, Python lemmatization will only ever result in words that do
+##### Text Normalization
+* Dictionary mappings
+* Statistical Machine Translation (SMT)
+* Spelling correction
+
 ##### Part-Of-Speech Tagging and POS Tagger
 
 
