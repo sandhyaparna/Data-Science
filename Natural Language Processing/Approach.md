@@ -43,6 +43,7 @@ But how is this different than Python stemming? While stemming can create words 
 
 ##### Part-Of-Speech Tagging and POS Tagger
 
+![](#####)
 
 ### Feature Extraction
 https://towardsdatascience.com/understanding-feature-engineering-part-3-traditional-methods-for-text-data-f6f7d70acd41 <br/>
