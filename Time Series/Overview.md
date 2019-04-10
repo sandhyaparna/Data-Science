@@ -62,7 +62,16 @@ It is important because amount of trend determines the effect on correlation: ht
   * p: The number of lag observations included in the model, also called the lag order.
   * d: The number of times that the raw observations are differenced, also called the degree of differencing.
   * q: The size of the moving average window, also called the order of moving average.  
-  
+* Rolling forecast ARIMA https://machinelearningmastery.com/arima-for-time-series-forecasting-with-python/
+
+
+### Model Evaluation
+* Line plot of the residual errors - Look if there are trends, etc
+* Density plot of the residual errors - Non-zero mean implies there is bias in the prediction
+
+
+
+
 
 Cross validation for time series - https://www.r-bloggers.com/cross-validation-for-time-series/  evaluation on a rolling forecasting origin - onestep or multistep forecast (Training data - A points, Test data - k points) For cross validation every time one observation from the test data is added to training data to determine the immediate next value) - Average of all the test points is used to finally determine the model accuracy
 
