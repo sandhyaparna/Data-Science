@@ -17,6 +17,7 @@ Tokenization – Process of converting a text into tokens
 Tokens – Words or entities present in the text
 Text object – A sentence or a phrase or a word or an article
 ##### Steps
+* Convert all text into lower case
 * Noise Removal - Stopwords, Punctuations, URLs or links, social media entities(mentions, hashtags) and industry specific words etc <br/>
 * Word/Lexicon Normalization - Tokenization, Lemmatization, Stemming <br/>
 * Word/Object Standardization - Regular Expression, Lookup Tables <br/>
