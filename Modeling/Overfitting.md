@@ -14,6 +14,8 @@ https://ai.googleblog.com/2015/08/the-reusable-holdout-preserving.html <br/>
 pairs of datasets S, S0 that differ in a single element, in which case we say S and S0 are adjacent.
 
 ### How Thresholdout works?
+Implementation in Python https://github.com/bmcmenamin/thresholdOut-explorations/blob/master/Threshold%20out%20demos%20--%20tuning%20parameters%20for%20linear%20regression.ipynb <br/>
+https://andyljones.tumblr.com/post/127547085623/holdout-reuse <br/>
 In a nutshell, the reusable holdout mechanism is simply this: access the holdout set only through a suitable differentially private algorithm. It is important to note, however, that the user does not need to understand differential privacy to use our method. The user interface of the reusable holdout is the same as that of the widely used classical method.
 
 ### Thresholdout - Reusable holdout sets
