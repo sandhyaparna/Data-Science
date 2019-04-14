@@ -8,6 +8,8 @@ http://www.statsoft.com/Textbook/Time-Series-Analysis <br/>
 Astsa Package in R - Time Series data sets
 Diff models for Time Series https://www.datascience.com/blog/time-series-forecasting-machine-learning-differences
 https://otexts.com/fpp2/
+Time Series Archives https://lnkd.in/e6Krqwe
+
 
 ### Overview
 The three most widely used are regression models (Method of Least Squares), smoothing models. and general time series models. <br/>
