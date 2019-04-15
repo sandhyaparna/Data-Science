@@ -11,6 +11,8 @@ https://www.analyticsvidhya.com/blog/2018/04/a-comprehensive-guide-to-understand
 https://towardsdatascience.com/understanding-feature-engineering-part-4-deep-learning-methods-for-text-data-96c44370bbfa <br/>
 https://towardsdatascience.com/understanding-feature-engineering-part-3-traditional-methods-for-text-data-f6f7d70acd41 <br/>
 GloVe https://nlp.stanford.edu/projects/glove/
+NLP Repo https://lnkd.in/fyyvZYt
+
 
 ### Pre-processing
 Tokenization – Process of converting a text into tokens
