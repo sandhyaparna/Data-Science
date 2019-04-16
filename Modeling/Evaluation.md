@@ -22,6 +22,10 @@ Evaluation Metrics https://www.machinelearningplus.com/machine-learning/evaluati
 * If we get only Predicted by Model and Actual outcome, then we can calculate TP, FP, FN but not True Negatives
 * For Validation analysis based on TOP - Min time of first time a threshold value is reached is considered for analysis
 
+### Cost Function
+* Cost is incurred for each predicted by model as cost is incurred for intervention
+* Cost is the fine incurred for False Negatives
+
 
 
 
