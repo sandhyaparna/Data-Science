@@ -28,7 +28,7 @@ The features of the minority class are treated as noise and are often ignored. T
 * Always test(Test set) on original distribution 
 * ROC-AUC, Precision-Recall, Lift or Gain curves, F1 score, MCC(Corr coeff between observed & predicted binary classifications.
 * Decision threshold on predict_proba
-* 
+* Accuracy is not a valid measure of model performance in case of imbalanced data as if True outcomes is just 5% of the whole population, even if all predicted as False, the accuracy will still be 100-5=95%
 * 
 * 
 * 
