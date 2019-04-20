@@ -12,7 +12,7 @@ https://medium.freecodecamp.org/the-penalty-of-missing-values-in-data-science-91
 ### Imputation
 * Median - Continuous data
 * Mode - Categorical data
-
+* Soft Probabilities - Replace NaNs randomly in a ratio which is “proportional” to the population without NaNs (the proportion is calculated using probabilities but with a touch of randomness)
 
 
 
