@@ -9,7 +9,9 @@ https://medium.freecodecamp.org/the-penalty-of-missing-values-in-data-science-91
 * Similar case Imputation - Group wise imputation 
 * KNN imputation / using predictive model
 
-
+### Imputation
+* Median - Continuous data
+* Mode - Categorical data
 
 
 
