@@ -7,7 +7,7 @@
 Covariance - Variance between 2 variables. Indicates the extent to which two random variables change in tandem. Lies between -∞ and +∞.
 Cov(X,Y) = Σ(Xi-Xavg)(Yi-Yavg) / (n-1)
 
-Correlation - Correlation refers to the scaled/Normalized form of covariance. Measure used to represent how strongly two random variables are related. Lies between -1 and +1. Not influenced by change of scale and dimensionless
+Correlation - Correlation refers to the scaled/Normalized form of covariance. Measure used to represent how strongly two random variables are related. Indicates the extent to which two variables move together. Lies between -1 and +1. Not influenced by change of scale and dimensionless
 Corr(X,Y) = Cov(X,Y)/XstdDev.YstdDev
 
 ##### 2 Categorical Variables
