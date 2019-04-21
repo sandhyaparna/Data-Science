@@ -88,6 +88,7 @@ A typical NER model consists of three blocks:<br/>
 * Entity disambiguation: Sometimes it is possible that entities are misclassified, hence creating a validation layer on top of the results is useful. Use of knowledge graphs can be exploited for this purposes. The popular knowledge graphs are – Google Knowledge Graph, IBM Watson and Wikipedia. <br/>
 ##### Word2Vec
 Word2Vec, GloVe <br/> 
+* Unsupervised learning algorithm and it works by predicting its context words by applying a two-layer neural network. 
 * Converts words to a meaningful numeric value <br/>
 * Based on the assumption that the meaning of a word can be inferred by the company it keeps
 * word2vec representation is created using 2 algorithms: Continuous Bag-of-Words model (CBOW) and the Skip-Gram model. <br/>
