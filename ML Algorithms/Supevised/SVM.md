@@ -1,5 +1,5 @@
 ### Links
-https://www.analyticsvidhya.com/blog/2017/09/understaing-support-vector-machine-example-code/
+https://www.analyticsvidhya.com/blog/2017/09/understaing-support-vector-machine-example-code/ </br>
 How Hyperplane is created https://www.coursera.org/learn/launching-machine-learning/lecture/atDbV/short-history-of-ml-kernel-methods
 
 ### Overview
