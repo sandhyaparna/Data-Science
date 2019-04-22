@@ -16,7 +16,13 @@ pairs of datasets S, S0 that differ in a single element, in which case we say S 
 ### Regularization
 Complex models are bad. It is the process of adding a tuning parameter to a model to induce smoothness in order to prevent overfitting. One of the ways to keep our model simple is by applying regularization and adjust the rate until we achieve an acceptable performance. 
 * It discourages learning a more complex model
-* A new term is added to the loss function(SSE in Regression) = SSE + 
+* A new term is added to the loss function(SSE in Regression) 
+* Ridge = SSE + α(Sum of square of coefficients) - Square of coeffs implies power=2 hence L2
+* Lasso = SSE + α(Absolute value of coefficients) - Absolute value implies power=1 hence L1
+  * α = 0: Same as Simple linear regression
+  * α = ∞: Coeffs will be 0
+  * 0 < α < ∞: how much we want to penalize the flexibility of our model.
+
 
 ##### Ways
 * Early stopping
