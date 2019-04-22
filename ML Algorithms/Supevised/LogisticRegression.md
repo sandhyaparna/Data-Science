@@ -12,7 +12,7 @@ Logistic regression is used to create a decision boundary to maximize the log li
 In the case of a linear decision boundary, logistic regression wants to have each point and the associated class as far from the hydroplane as possible and provides a probability which can be interpreted as prediction confidence. <br/> 
 Tries to minimize cross-entropy. <br/> 
  
-Loss Function is Log loss/Cross Entropy loss - Goal is to minimize this value. <br/> 
+Loss Function is Log loss(Binary label) or Cross Entropy loss(Multi-class label) - Goal is to minimize this value. <br/> 
 Measures the performance of a classification model where the prediction input is a probability value between 0 and 1. <br/>
 Log Loss takes into account the uncertainty of your prediction based on how much it varies from the actual label. It penalizes wrong predictions very strongly. <br/>
 Log Loss = (-1/N) * [ Σ{ylog(p) + (1-y)log(1-p)} ] <br/>
