@@ -5,11 +5,12 @@ https://www.analyticsvidhya.com/blog/2017/03/imbalanced-classification-problem/ 
 
 
 * Sum of Squared errors (SSE) is used in regression for updating trees 
-* log-loss is the metric used by boosting models to update trees. https://medium.com/datadriveninvestor/understanding-the-log-loss-function-of-xgboost-8842e99d975d </br>
+* log-loss is the metric used by boosting models to update trees. Loss increases as the predicted probability diverges from the actual label. https://medium.com/datadriveninvestor/understanding-the-log-loss-function-of-xgboost-8842e99d975d </br>
   * Log loss, short for logarithmic loss is a loss function for classification that quantifies the price paid for the inaccuracy of predictions in classification problems.
   * Log Loss takes into account the uncertainty of your prediction based on how much it varies from the actual label. This gives us a more nuanced view into the performance of our model.
   * Log Loss = (-1/N) * [ Σ{ylog(p) + (1-y)log(1-p)} ] 
 * Cross-entropy is the more generic form of logarithmic loss when it comes to machine learning algorithms. While log loss is used for binary classification algorithms, cross-entropy serves the same purpose for multiclass classification problems.
+  * Cross Entropy loss = -Σ{ylog(p).  If there are 3 classes - A, B, C. Loss if it is a A = 1*(Prob of A happening). Loss if it is B =  1*(Prob of B happening) 
 
 ### Multi-Classifiers
 A set of weak learners (Train multiple models) are combined to create a strong learner that obtains better performance than a single one. <br/>
