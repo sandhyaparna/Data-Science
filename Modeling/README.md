@@ -1,5 +1,6 @@
 ### Data-preprocessing
 * Univariate analysis - Data cleaning
+* Data Transformation - Right skewed/Left skewed
 * Outlier treatment
 * Missing value treatment
 * Feature engineering - Numeric/Categorical/DateTime Vars
