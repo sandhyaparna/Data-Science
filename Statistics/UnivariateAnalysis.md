@@ -54,7 +54,7 @@ Difference between box plot and modified box plot - Box plot has min and Max, Mo
 * Bar chart (Pareto Chart - Bar graph ordered from highest to lowest freq)<br/>
 * Line Plot - Freq over a number line
 * Pie chart <br/>
-
+* Frequency distribution
 
 
 
