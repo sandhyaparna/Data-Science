@@ -1,7 +1,11 @@
 ### Links
-https://www.analyticsvidhya.com/blog/2018/06/comprehensive-guide-for-ensemble-models/
-https://www.analyticsvidhya.com/blog/2017/02/introduction-to-ensembling-along-with-implementation-in-r/
-https://www.analyticsvidhya.com/blog/2017/03/imbalanced-classification-problem/ - Imablanced classification solutions for various bagging & boosing algos
+https://www.analyticsvidhya.com/blog/2018/06/comprehensive-guide-for-ensemble-models/ </br>
+https://www.analyticsvidhya.com/blog/2017/02/introduction-to-ensembling-along-with-implementation-in-r/ </br>
+https://www.analyticsvidhya.com/blog/2017/03/imbalanced-classification-problem/ - Imablanced classification solutions for various bagging & boosing algos </br>
+
+* log-loss is the metric used by boosting models to update trees. https://medium.com/datadriveninvestor/understanding-the-log-loss-function-of-xgboost-8842e99d975d </br>
+  * Log loss, short for logarithmic loss is a loss function for classification that quantifies the price paid for the inaccuracy of predictions in classification problems.
+* Cross-entropy is the more generic form of logarithmic loss when it comes to machine learning algorithms. While log loss is used for binary classification algorithms, cross-entropy serves the same purpose for multiclass classification problems.
 
 ### Multi-Classifiers
 A set of weak learners (Train multiple models) are combined to create a strong learner that obtains better performance than a single one. <br/>
