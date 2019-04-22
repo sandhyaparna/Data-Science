@@ -41,7 +41,7 @@ Range, IQR, Variance, Standard Deviation are measures of Variance <br/>
 * Box plot
 Difference between box plot and modified box plot - Box plot has min and Max, Modiified box plot has lower fence(1st Quartile-1.5IQR) and Upper fence (3rd Quartile+1.5IQR) (fences are whiskers), points outside whiskers are outliers
 * Histogram
-* Pareto chart - Bar chart and line chart combined. Bars are ordered in descending freq from left to right. Line chart displays cumulative freq.
+
 
 #### Categorical data
 ###### Operations
@@ -51,7 +51,8 @@ Difference between box plot and modified box plot - Box plot has min and Max, Mo
 * Unique Values
 * NMiss - Number of Missing values <br/>
 ###### Graphical Representations
-* Bar chart (Pareto Chart - Bar graph ordered from highest to lowest freq)<br/>
+* Bar chart (Pareto Chart - Bar graph ordered from highest to lowest freq) <br/>
+* Pareto chart - Bar chart and line chart combined. Bars are ordered in descending freq from left to right. Line chart displays cumulative freq.
 * Line Plot - Freq over a number line
 * Pie chart <br/>
 * Frequency distribution
