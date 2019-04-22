@@ -26,11 +26,12 @@ Influential Obs: An influential point is any point that has a large effect on th
 * Potential Residual Plot
 
 ### Outlier Treatment
+* Understand why it is happening then use business knowledge
 * Delete obs
 * Transforming and binning values
 * Imputing
 * Treat seperately
-
+* Use algorithms robust to outliers - like Decision trees
 
 ### PyOD Library
 
