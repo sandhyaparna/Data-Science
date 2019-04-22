@@ -18,7 +18,7 @@ Dimension reduction techniques https://www.analyticsvidhya.com/blog/2018/08/dime
 * Use Algorithms that have built in feature reduction techniques
 * Factor analyis - Variables are grouped by their correlations i.e. all variables in a particular group will have a high correlation among themselves.
 * Dimensionality reduction: 
-  * Principal Component Analysis (PCA)
+  * Principal Component Analysis (PCA) - Linear combination of the original variables
   * Multiple Correspondence Analysis (MCA) - Categorical variables
   * CorEx - Recent technique for automatic structure extraction from categorical data - https://github.com/gregversteeg/CorEx
   * Self-organizing maps (SOM)
