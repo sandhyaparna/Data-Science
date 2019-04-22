@@ -116,7 +116,7 @@ Elastic regression working: Let’ say, we have a bunch of correlated independen
 Square of errors i.e actual - prediction is done to treat both +ve values & -ve values similarly. <br/>
 RMSE is more meaningful as square root of squared values are in the same measurement units as Actual values <br/>
 
-Sum of Squared Errors (SSE) = =  {Σ(Y – Ypred)²} <br/>
+##### Sum of Squared Errors (SSE) = =  {Σ(Y – Ypred)²} <br/>
 ##### RMSE - Root Mean Squared Error (Loss function) - Lower RMSE indicates better model
 It is the sample standard deviation of the differences between predicted values and observed values (called residuals).  <br/>
 RMSE = ( {Σ(Y – Ypred)²} / n )^0.5 <br/>
