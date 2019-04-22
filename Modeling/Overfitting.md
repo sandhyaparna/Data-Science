@@ -19,6 +19,7 @@ Complex models are bad. It is the process of adding a tuning parameter to a mode
 * A new term is added to the loss function(SSE in Regression) 
 * Ridge = SSE + α(Sum of square of coefficients) - Square of coeffs implies power=2 hence L2
 * Lasso = SSE + α(Absolute value of coefficients) - Absolute value implies power=1 hence L1
+* Elastic Net = SSE + α2(Sum of square of coefficients) + α1(Absolute value of coefficients)
   * α = 0: Same as Simple linear regression
   * α = ∞: Coeffs will be 0
   * 0 < α < ∞: how much we want to penalize the flexibility of our model.
