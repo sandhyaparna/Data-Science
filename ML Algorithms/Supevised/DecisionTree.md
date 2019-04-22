@@ -68,8 +68,8 @@ Gain ratio is ratio of Information gain to the intrinsic information <br/>
 &nbsp; GainRatio(T,X) = Gain(T,X) / SpliInformation(T,X)  <br/>
 &nbsp; SplitInfo(T,X) = Σ - p(i)*log(p(i))  <br/>
 #### Gini Index:
-Variable split is based on the one with low Gini Index <br/
-Performs only binary splits <br/
+Variable split is based on the one with low Gini Index <br/>
+Performs only binary splits <br/>
 Gini produces small but pure nodes <br/>
 #### Chi-Square:
 Finds out the statistical significance between the differences between sub-nodes and parent node. We measure it by sum of squares of standardized differences between observed and expected frequencies of target variable. Higher the value of Chi-Square higher the statistical significance of differences between sub-node and Parent node.  <br/>
