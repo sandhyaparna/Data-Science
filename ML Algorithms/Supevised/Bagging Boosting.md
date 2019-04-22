@@ -4,7 +4,7 @@ https://www.analyticsvidhya.com/blog/2017/02/introduction-to-ensembling-along-wi
 https://www.analyticsvidhya.com/blog/2017/03/imbalanced-classification-problem/ - Imablanced classification solutions for various bagging & boosing algos </br>
 
 
-* Sum of Squared errors (SSE) is usedd in regression for updating trees 
+* Sum of Squared errors (SSE) is used in regression for updating trees 
 * log-loss is the metric used by boosting models to update trees. https://medium.com/datadriveninvestor/understanding-the-log-loss-function-of-xgboost-8842e99d975d </br>
   * Log loss, short for logarithmic loss is a loss function for classification that quantifies the price paid for the inaccuracy of predictions in classification problems.
   * Log Loss takes into account the uncertainty of your prediction based on how much it varies from the actual label. This gives us a more nuanced view into the performance of our model.
