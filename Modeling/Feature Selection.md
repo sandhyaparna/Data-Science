@@ -10,12 +10,15 @@ Dimension reduction techniques https://www.analyticsvidhya.com/blog/2018/08/dime
 * Productivity: Imporoves Accuracy (Less Noise), Reduces Training time
 * Understandability:
 
-### Feature reduction techniques: Numeric & Categorical
+### Feature reduction techniques: Numeric & Categorical - Domain dependent
 * Missing value ratio
 * Low Variance filter
 * Remove highly correlated variables
+* Regularization - Lasso
 * Forward slection, Backward Selection, Stepwise Selection
 * Chi-sq for Categorical data - SelectKBest based on chi-sq score in python 
+* LDA - Linear Discriminant Analysis 
+  * LDA approach is very similar to a Principal Component Analysis, but in addition to finding the component axes that maximize the variance of our data (PCA), we are additionally interested in the axes that maximize the separation between multiple classes (LDA).
 * Use Algorithms that have built in feature reduction techniques
 * Factor analyis - Variables are grouped by their correlations i.e. all variables in a particular group will have a high correlation among themselves.
 * Dimensionality reduction: 
@@ -27,7 +30,6 @@ Dimension reduction techniques https://www.analyticsvidhya.com/blog/2018/08/dime
 * Manifold Learning: t-Distributed Stochastic Neighbor Embedding (t-SNE)
 * Variational autoencoders: An automated generative approach using variational autoencoders (VAE)
 * Clustering: Hierarchical Clustering
-* Regularization - Lasso Regression
 * Measure information gain for the available set of features and select top n features accordingly
 * Use regression and select variables based on p values
 
