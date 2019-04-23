@@ -35,6 +35,13 @@ When data is missing in the Numeric column - For that column create a new extra 
 ### Categorical
 * Encoding - One-hot encoding
 * When data is missing in the category column - A 5 category var usually gets 5 binary columns of one-hot encoding. But if there are missing values then 6 binary variables needs to be created
+* High Cardinal categorical features - 
+  * When dealing with a binary target: 
+    * (number of positive labels/ number of negative labels) within each category of Categorical Var. 
+    * (number of positive labels/ Freq of a category of a categorical var) within each category of Categorical Var.If training set consists of 100 customers in ZIP code 10009, 5 of which churned (so Pi=5 and Ni=95) then the transformed value is 0.05. 
+    
+  * Way Catboost deals with categories - https://catboost.ai/docs/concepts/algorithm-main-stages_cat-to-numberic.html
+  * Embeddings  
 
 ### Binary Variables
 
