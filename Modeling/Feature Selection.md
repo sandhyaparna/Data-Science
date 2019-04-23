@@ -7,14 +7,15 @@ Dimension reduction techniques https://www.analyticsvidhya.com/blog/2018/08/dime
 ### Reasons to include fewer predictors over many
 * Redundancy/Irrelevance: Remove non-redundant predictor variables
 * Over-fitting: he data models with large number of predictors (also referred to as complex models) often suffer from the problem of overfitting, in which case the data model performs great on training data, but performs poorly on test data.
-* Productivity: 
+* Productivity: Imporoves Accuracy (Less Noise), Reduces Training time
 * Understandability:
 
-### Feature reduction techniques:
+### Feature reduction techniques: Numeric & Categorical
 * Missing value ratio
 * Low Variance filter
 * Remove highly correlated variables
 * Forward slection, Backward Selection, Stepwise Selection
+* Chi-sq for Categorical data - SelectKBest based on chi-sq score in python 
 * Use Algorithms that have built in feature reduction techniques
 * Factor analyis - Variables are grouped by their correlations i.e. all variables in a particular group will have a high correlation among themselves.
 * Dimensionality reduction: 
