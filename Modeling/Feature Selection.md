@@ -1,8 +1,8 @@
 ### Links
 Genetic Algorithm https://www.analyticsvidhya.com/blog/2017/07/introduction-to-genetic-algorithm/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29 <br/>
 https://topepo.github.io/caret/feature-selection-using-genetic-algorithms.html <br/>
-Dimension reduction techniques https://www.analyticsvidhya.com/blog/2018/08/dimensionality-reduction-techniques-python/
-
+Dimension reduction techniques https://www.analyticsvidhya.com/blog/2018/08/dimensionality-reduction-techniques-python/ <br/>
+Filter, Wrapper Methods https://www.analyticsvidhya.com/blog/2016/12/introduction-to-feature-selection-methods-with-an-example-or-how-to-select-the-right-variables/ <br/>
 
 ### Reasons to include fewer predictors over many
 * Redundancy/Irrelevance: Remove non-redundant predictor variables
