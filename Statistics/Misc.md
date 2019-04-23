@@ -1,3 +1,6 @@
+### Statistical Power/Sensitivity
+Likelihood that a study will detect an effect when the effect is present
+
 ### Outliers
 Outlier is an observation that appears far away and diverges from an overall pattern in a sample
 * Univariate Outliers: Distribution of a single variable - Box-plot, Histogram
