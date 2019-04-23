@@ -13,7 +13,7 @@ Influential Obs: An influential point is any point that has a large effect on th
 
 ### Identify - More in the link
 * Box plot / Histograms
-* Inter Quartile Range - Beyond the range of -1.5 x IQR to 1.5 x IQR
+* Inter Quartile Range - Beyond the range of -1.5 x IQR to 1.5 x IQR. IQR is the middle 50% of values when ordered from lowest to highest. IQR = Q3 - Q1
 * Out of range of 5th and 95th percentile
 * Student Residuals / Z-score - 3 or more standard deviation away from mean
 * Mahalanobis’ distance
