@@ -3,9 +3,11 @@
 * For identifying anomalies with 1 or 2 variables, data visualization is a good starting point
 * PCA + Mahalanobis distance https://www.statisticshowto.datasciencecentral.com/mahalanobis-distance/ <br/>
   * Mahalanobis distance (MD) is the distance between two points in multivariate space. (It can calculate dist even for correlated vars).
-  The Mahalanobis distance measures distance relative to the centroid — a base or central point which can be thought of as an overall mean for multivariate data. The centroid is a point in multivariate space where all means from all variables intersect. The larger the MD, the further away from the centroid the data point is.
-  d (Mahalanobis) = [(xB – xA)T * C -1 * (xB – xA)]0.5
-  A major issue with the MD is that the inverse of the correlation matrix is needed for the calculations. This can’t be calculated if the variables are highly correlated
+  * The Mahalanobis distance measures distance relative to the centroid — a base or central point which can be thought of as an overall mean for multivariate data. The centroid is a point in multivariate space where all means from all variables intersect. The larger the MD, the further away from the centroid the data point is.
+  * d (Mahalanobis) = [(xB – xA)T * C -1 * (xB – xA)]0.5
+  * A major issue with the MD is that the inverse of the correlation matrix is needed for the calculations. This can’t be calculated if the variables are highly correlated - Hence, PCA helps as it produces uncorrelated variables
+  * PCA is a linear mapping of the data into a lower dimensional space such that variance is maximized/increased by bringing the data into low dimensional space
+  
 
 
  <br/>
