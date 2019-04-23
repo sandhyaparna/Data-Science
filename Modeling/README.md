@@ -19,7 +19,7 @@
 * Overfitting - Cross Validation, Regularization
 * Model Interpretation - LIME, shap
 
-### Evaluation & Comparision
+### Evaluation & Comparision - Regression, classification, Unsupervised
 * Precision-Recall Curves, AUC Curves - To determine the cut-off for an effective model
 
 
