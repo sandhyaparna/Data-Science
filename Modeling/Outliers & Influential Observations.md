@@ -31,7 +31,7 @@ Influential Obs: An influential point is any point that has a large effect on th
 
 ### Outlier Treatment
 * Understand why it is happening then use business knowledge
-* Delete obs
+* Delete obs - if they are errors
 * Transforming and binning values
 * Imputing
 * Treat seperately
