@@ -43,7 +43,7 @@ Implementation in Python https://github.com/bmcmenamin/thresholdOut-explorations
 https://andyljones.tumblr.com/post/127547085623/holdout-reuse <br/>
 Based on 2 key Ideas:
 * First, the validation should not reveal any information about the holdout dataset if the analyst does not overfit to the training set.
-* Second, an addition of a small amount of noise to any validation result can prevent the analyst from overfitting to the holdout set.
+* Second, an addition of a small amount of noise to any validation result can prevent the analyst from overfitting to the holdout set. <br/>
 In a nutshell, the reusable holdout mechanism is simply this: access the holdout set only through a suitable differentially private algorithm. It is important to note, however, that the user does not need to understand differential privacy to use our method. The user interface of the reusable holdout is the same as that of the widely used classical method.
 
 ##### Thresholdout - Reusable holdout sets
