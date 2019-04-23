@@ -17,9 +17,12 @@ Corr(X,Y) = Cov(X,Y)/XstdDev.YstdDev  </br>
 * Chi-square test
 * Correlation - Cramer's V is measure of Association between 2 Categorical Vars. Norminal variation of Pea
 
-##### Chi-square test - Measure Strength of association between 2 Cat vars
+##### Chi-square test - Significance test of association between 2 Cat vars
+chi square formula chisquare = Σ( (Obs-Expected)^2 / Expected )
+* p < 0.05 - Variables have association
+* But as sample size goes up, p-value gets smaller but Cramer's V stays same. So, Cramer's V is chosen
 
-##### Cramer's V - Measure of Association between 2 Categorical Vars. Norminal variation of Pearson’s Chi-Square Test
+##### Cramer's V - Measures Strength of Association between 2 Categorical Vars. 
 * Output ranges from [0,1], where 0 means no association and 1 is full association. (Unlike correlation, there are no negative values, as there’s no such thing as a negative association. Either there is, or there isn’t)
 * Like correlation, Cramer’s V is symmetrical — it is insensitive to swapping x and y. 
   * curse of symmetry - Extracting output of 1 var using another variable is lost in symmetrical measurement
