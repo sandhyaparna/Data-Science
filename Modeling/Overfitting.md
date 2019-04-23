@@ -4,14 +4,13 @@ https://arxiv.org/pdf/1506.02629.pdf <br/>
 https://www.oreilly.com/ideas/3-ideas-to-add-to-your-data-science-toolkit <br/>
 https://ai.googleblog.com/2015/08/the-reusable-holdout-preserving.html <br/> 
 
-* Adaptive data analysis: Though we use a holdout set to verify our model built on training set, we use holdout set to revise parameters or algorithm, this frequantly leads to over-fitting on holdout set
-
 ### Solutions
 * Regularization
 * Cross-Validation
 * Early Stopping - Stopping point should be where Loss on Training set decreases but Validation set increases
-* Differential Privacy - On an intuitive level, differential privacy hides the data of any single individual. We are thus interested in
-pairs of datasets S, S0 that differ in a single element, in which case we say S and S0 are adjacent.
+* Thresholdout
+  * Differential Privacy - On an intuitive level, differential privacy hides the data of any single individual. We are thus interested in pairs of datasets S, S0 that differ in a single element, in which case we say S and S0 are adjacent.
+  * Adaptive data analysis: Though we use a holdout set to verify our model built on training set, we use holdout set to revise parameters or algorithm, this frequantly leads to over-fitting on holdout set. Adaptive data analysis is to use a seperate holdout dataset to validate any finding obtained via adaptive analysis.
 
 ### Regularization
 Complex models are bad. It is the process of adding a tuning parameter to a model to induce smoothness in order to prevent overfitting. One of the ways to keep our model simple is by applying regularization and adjust the rate until we achieve an acceptable performance. 
@@ -42,6 +41,10 @@ Complex models are bad. It is the process of adding a tuning parameter to a mode
 ##### How Thresholdout works?
 Implementation in Python https://github.com/bmcmenamin/thresholdOut-explorations/blob/master/Threshold%20out%20demos%20--%20tuning%20parameters%20for%20linear%20regression.ipynb <br/>
 https://andyljones.tumblr.com/post/127547085623/holdout-reuse <br/>
+Based on 2 key Ideas:
+* First, the validation should not reveal any information about the holdout dataset if the analyst does not overfit to the training set.
+* Second, an addition of a small amount of noise to any validation result can prevent the analyst from overfitting to the holdout set.
+<br/>
 In a nutshell, the reusable holdout mechanism is simply this: access the holdout set only through a suitable differentially private algorithm. It is important to note, however, that the user does not need to understand differential privacy to use our method. The user interface of the reusable holdout is the same as that of the widely used classical method.
 
 ##### Thresholdout - Reusable holdout sets
