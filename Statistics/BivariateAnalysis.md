@@ -34,9 +34,13 @@ Theil’s U, also referred to as the Uncertainty Coefficient, is based on the CO
 * Box plot comparision between the groups of Categorical variables
 * T-test
 * Anova
+* Correlation Ratio - eta
 
-
-
+##### Correlation Ratio
+https://towardsdatascience.com/the-search-for-categorical-correlation-a1cf7f1888c9 </br>
+* It is defined as the weighted variance of the mean of each category divided by the variance of all samples
+* Given a continuous number, how well can you know to which category it belongs to?
+* Output ranges from [0,1]
 
 
 
