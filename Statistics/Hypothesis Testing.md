@@ -1,3 +1,6 @@
+### Statistical Power/Sensitivity
+Likelihood that a study will detect an effect when the effect is present
+
 ### Differnt Tests
 https://help.xlstat.com/customer/en/portal/articles/2062457-what-statistical-test-should-i-use-?b_id=9283
 Statistics in a nutshell - Table 5-27,Summary of tests covered in this chapter 
