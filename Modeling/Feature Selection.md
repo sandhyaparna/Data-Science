@@ -19,6 +19,7 @@ Dimension reduction techniques https://www.analyticsvidhya.com/blog/2018/08/dime
 * Chi-sq for Categorical data - SelectKBest based on chi-sq score in python 
 * LDA - Linear Discriminant Analysis 
   * LDA approach is very similar to a Principal Component Analysis, but in addition to finding the component axes that maximize the variance of our data (PCA), we are additionally interested in the axes that maximize the separation between multiple classes (LDA).
+  * PCA is unsupervised, LCA is supervised
 * Use Algorithms that have built in feature reduction techniques
 * Factor analyis - Variables are grouped by their correlations i.e. all variables in a particular group will have a high correlation among themselves.
 * Dimensionality reduction: 
