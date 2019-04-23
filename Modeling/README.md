@@ -14,8 +14,11 @@
 * Feature selection
 * Split data into - Train, Validation & Test
 
+### Model Building
+* Overfitting - Cross Validation, Regularization
 
-
+### Evaluation & Comparision
+* Precision-Recall Curves, AUC Curves - To determine the cut-off for an effective model
 
 
 
