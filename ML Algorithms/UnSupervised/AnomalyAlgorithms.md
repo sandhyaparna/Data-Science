@@ -1,9 +1,17 @@
-luminol - https://github.com/linkedin/luminol
+### Detection
+* Lower & Upper limit
+* For identifying anomalies with 1 or 2 variables, data visualization is a good starting point
+* PCA + Mahalanobis distance https://www.statisticshowto.datasciencecentral.com/mahalanobis-distance/ <br/>
+  * Mahalanobis distance (MD) is the distance between two points in multivariate space. (It can calculate dist even for correlated vars).
+  The Mahalanobis distance measures distance relative to the centroid — a base or central point which can be thought of as an overall mean for multivariate data. The centroid is a point in multivariate space where all means from all variables intersect. The larger the MD, the further away from the centroid the data point is.
+  d (Mahalanobis) = [(xB – xA)T * C -1 * (xB – xA)]0.5
+  A major issue with the MD is that the inverse of the correlation matrix is needed for the calculations. This can’t be calculated if the variables are highly correlated
 
-Moving Avergae Based - https://www.datascience.com/blog/python-anomaly-detection
 
-https://github.com/rob-med/awesome-TS-anomaly-detection
- 
+ <br/>
+luminol - https://github.com/linkedin/luminol <br/>
+Moving Avergae Based - https://www.datascience.com/blog/python-anomaly-detection <br/>
+https://github.com/rob-med/awesome-TS-anomaly-detection <br/>
 Surveillance Algos - https://www.ml.cmu.edu/research/dap-papers/das_kdd2.pdf <br/>
 https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/1472-6947-10-74 <br/>
 
