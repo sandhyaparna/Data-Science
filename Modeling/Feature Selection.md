@@ -22,7 +22,7 @@ Filter, Wrapper Methods https://www.analyticsvidhya.com/blog/2016/12/introductio
   * PCA is unsupervised, LCA is supervised
   * Principal component analysis involves extracting linear composites of observed variables.
 * Factor analyis - Variables are grouped by their correlations i.e. all variables in a particular group will have a high correlation among themselves.
-  * Factor analysis is based on a formal model predicting observed variables from theoretical latent factors.
+  * Factor analysis is based on a formal model predicting observed variables from theoretical latent factors. https://www.theanalysisfactor.com/the-fundamental-difference-between-principal-component-analysis-and-factor-analysis/
 * Use Algorithms that have built in feature reduction techniques
 * Dimensionality reduction: 
   * Principal Component Analysis (PCA) - Linear combination of the original variables
