@@ -78,6 +78,9 @@ LIME explanations are based on local surrogate models. LIME focuses on fitting l
 * Weight the new samples by their proximity to the instance of interest.
 * Fit a weighted, interpretable (surrogate) model on the dataset with the variations.
 * Explain prediction by interpreting the local model.
+###### Implementation
+* Train data on a random forest
+* Get categorical features
 
 
 
