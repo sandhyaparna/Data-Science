@@ -19,6 +19,14 @@ Helps in minimizing noise, bias and variance. <br/>
 * A weak learner is defined to be a classifier that is only slightly correlated with the true classification (it can label examples better than random guessing).
 * In contrast, a strong learner is a classifier that is arbitrarily well-correlated with the true classification
 
+##### Techniques
+* Majority Voting
+* Weighted Voting
+* Simple Averaging 
+* Weighted Averaging
+* Stacking
+
+
 ##### Ensemble methods - Same Learning algorithm - Bagging & Boosting
 * N sets are created from Training data by random sampling with replacement - Each set is trained using same learning algorithm and thus N learners are generated
 * Decreases the variance of your single estimate as they combine several estimates from different models. So the result may be a model with higher stability.
