@@ -15,7 +15,9 @@ The objective of K-Means clustering is to minimize total intra-cluster variance,
 * Repeat steps 3 and 4 until the same points are assigned to each cluster in consecutive rounds (or) until the centroids no longer move
 
 ##### Choosing K
-Elbow Method - Sum of Squared errors (vs) Number of clusters
+Elbow Method - Sum of Squared errors (vs) Number of clusters 
+Percentage of Variance Explained by model = 1- Sum of squared errors  (vs) Number of clusters 
+* Sum of Squared errors is calculated based on each observation and its group's mean
 
 ### Difference between K Means and Hierarchical clustering
 * Hierarchical clustering can’t handle big data well but K Means clustering can. This is because the time complexity of K Means is linear i.e. O(n) while that of hierarchical clustering is quadratic i.e. O(n2).
