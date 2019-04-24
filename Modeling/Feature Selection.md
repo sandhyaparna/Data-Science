@@ -7,7 +7,7 @@ Filter, Wrapper Methods https://www.analyticsvidhya.com/blog/2016/12/introductio
 ### Reasons to include fewer predictors over many
 * Redundancy/Irrelevance: Remove non-redundant predictor variables
 * Over-fitting: he data models with large number of predictors (also referred to as complex models) often suffer from the problem of overfitting, in which case the data model performs great on training data, but performs poorly on test data.
-* Productivity: Imporoves Accuracy (Less Noise), Reduces Training time
+* Productivity: Improves Accuracy (Less Noise), Reduces Training time
 * Understandability:
 
 ### Feature reduction techniques: Numeric & Categorical - Domain dependent
