@@ -70,6 +70,7 @@ Steps involved in building surrogate models:  <br/>
 
 ### LIME
 LIME explanations are based on local surrogate models. LIME focuses on fitting local surrogate models to explain why single predictions were made instead of trying to fit a global surrogate model.  <br/>
+* It checks how the model behaves in the vicinity of the instance being predicted
 * Choose your instance of interest for which you want to have an explanation of the predictions of your black box model.
 * Perturb your dataset and get the black box predictions for these new points.
 * Weight the new samples by their proximity to the instance of interest.
