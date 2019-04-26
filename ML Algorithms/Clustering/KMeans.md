@@ -22,7 +22,8 @@ The objective of K-Means clustering is to minimize total intra-cluster variance,
 * Silhouette Method - Measures similarity of an object to its own cluster - called cohesion -- when compared to other cluasters-- called separation.
   * Range is [-1,1]. close to 1 indicates a close relationship with objects in its own cluster, while value close to -1 indicates opposite https://www.kdnuggets.com/2017/02/17-data-science-interview-questions-answers-part-2.html
   * A clustered set of data in a model producing mostly high silhouette values is likely an acceptable and appropriate model.
-
+![](https://scikit-learn.org/stable/_images/sphx_glr_plot_kmeans_silhouette_analysis_003.png)
+![](https://scikit-learn.org/stable/_images/sphx_glr_plot_kmeans_silhouette_analysis_004.png)
 
 
 ### Difference between K Means and Hierarchical clustering
