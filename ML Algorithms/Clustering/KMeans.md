@@ -18,6 +18,7 @@ The objective of K-Means clustering is to minimize total intra-cluster variance,
 * Elbow Method - Sum of Squared errors (vs) Number of clusters - k is chosen where Sum of squared erors sharply decreases
   (OR) Percentage of Variance Explained by model = 1- Sum of squared errors  (vs) Number of clusters - k is chosen where Percentage of variance sharply increases
    * Sum of Squared errors is calculated based on each observation and its group's mean
+![](https://qph.fs.quoracdn.net/main-qimg-678795190794dd4c071366c06bf32115.webp)
 * Silhouette Method - Measures similarity of an object to its own cluster - called cohesion -- when compared to other cluasters-- called separation.
   * Range is [-1,1]. close to 1 indicates a close relationship with objects in its own cluster, while value close to -1 indicates opposite https://www.kdnuggets.com/2017/02/17-data-science-interview-questions-answers-part-2.html
   * A clustered set of data in a model producing mostly high silhouette values is likely an acceptable and appropriate model.
