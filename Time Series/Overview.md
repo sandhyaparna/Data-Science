@@ -9,6 +9,7 @@ Astsa Package in R - Time Series data sets
 Diff models for Time Series https://www.datascience.com/blog/time-series-forecasting-machine-learning-differences
 https://otexts.com/fpp2/
 Time Series Archives https://lnkd.in/e6Krqwe
+Data prep for Time series https://nam01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmedium.com%2F%40idigdata%2Fmachine-learning-data-prep-tips-for-time-series-models-caf6053995d5%3Fsource%3Demail-6fcf0d199081-1556353627343-digest.reader------0-59------------------c120d80c_6ad9_4244_ad95_b02e2c33b977-1%26sectionName%3Dtop&data=02%7C01%7Csandhya.pashikanti%40uconn.edu%7Cce99a2b3dec947b0fa1a08d6caf39544%7C17f1a87e2a254eaab9df9d439034b080%7C0%7C0%7C636919544870337975&sdata=EXMn1gwDe%2B5H0NVH%2F8U8cvxIVV8oP9p3RqD1hHO6Bzw%3D&reserved=0
 
 
 ### Overview
