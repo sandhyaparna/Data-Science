@@ -5,7 +5,7 @@ Dimension reduction techniques https://www.analyticsvidhya.com/blog/2018/08/dime
 Filter, Wrapper Methods https://www.analyticsvidhya.com/blog/2016/12/introduction-to-feature-selection-methods-with-an-example-or-how-to-select-the-right-variables/ <br/>
 
 ### Reasons to include fewer predictors over many
-* Redundancy/Irrelevance: Remove non-redundant predictor variables
+* Redundancy/Irrelevance: Remove non-redundant predictor variables. Pareto principle suggests that 80% of what happens can be explained using 20%
 * Over-fitting: The data models with large number of predictors (also referred to as complex models) often suffer from the problem of overfitting, in which case the data model performs great on training data, but performs poorly on test data.
 * Productivity: Improves Accuracy (Less Noise), Reduces Training time
 * Understandability: Fewer predictors are way easier to understand and explain
