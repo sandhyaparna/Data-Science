@@ -23,6 +23,12 @@ Complex models are bad. It is the process of adding a tuning parameter to a mode
   * α = ∞: Coeffs will be 0
   * 0 < α < ∞: how much we want to penalize the flexibility of our model.
 
+### Cross-validation
+Cross-validation, it’s a model validation techniques for assessing how the results of a statistical analysis (model) will generalize to an independent data set. It is mainly used in settings where the goal is prediction, and one wants to estimate how accurately a predictive model will perform in practice.
+* Validation help us evaluate the quality of the model
+* Validation help us select the model which will perform best on unseen data
+* Validation help us to avoid overfitting and underfitting.
+
 
 ##### Ways
 * Early stopping
