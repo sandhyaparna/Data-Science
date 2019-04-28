@@ -6,7 +6,7 @@ https://ai.googleblog.com/2015/08/the-reusable-holdout-preserving.html <br/>
 
 ### Solutions
 * Regularization
-* Cross-Validation
+* Stratified k-fold Cross-Validation
 * Early Stopping - Stopping point should be where Loss on Training set decreases but Validation set increases
 * Thresholdout
   * Differential Privacy - On an intuitive level, differential privacy hides the data of any single individual. We are thus interested in pairs of datasets S, S0 that differ in a single element, in which case we say S and S0 are adjacent.
@@ -23,7 +23,7 @@ Complex models are bad. It is the process of adding a tuning parameter to a mode
   * α = ∞: Coeffs will be 0
   * 0 < α < ∞: how much we want to penalize the flexibility of our model.
 
-### Cross-validation
+### Stratified k-fold Cross-validation
 Cross-validation, it’s a model validation techniques for assessing how the results of a statistical analysis (model) will generalize to an independent data set. It is mainly used in settings where the goal is prediction, and one wants to estimate how accurately a predictive model will perform in practice.
 * Validation help us evaluate the quality of the model
 * Validation help us select the model which will perform best on unseen data
@@ -31,6 +31,8 @@ Cross-validation, it’s a model validation techniques for assessing how the res
 
 * By reducing the training data, we risk losing important patterns/ trends in data set, which in turn increases error induced by bias. So, what we require is a method that provides ample data for training the model and also leaves ample data for validation. K Fold cross validation does exactly that.
 * Every data point gets to be in a validation set exactly once, and gets to be in a training set k-1times. This significantly reduces underfitting as we are using most of the data for fitting, and also significantly reduces overfitting as most of the data is also being used in validation set.
+* Leave 1 out is used when there is too little data and fast enough model to retrain.  
+
 
 ##### Ways
 * Early stopping
