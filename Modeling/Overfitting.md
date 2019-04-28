@@ -5,7 +5,7 @@ https://www.oreilly.com/ideas/3-ideas-to-add-to-your-data-science-toolkit <br/>
 https://ai.googleblog.com/2015/08/the-reusable-holdout-preserving.html <br/> 
 
 ### Solutions
-* Regularization
+* Regularization  (adding a penalty for complexity)
 * Stratified k-fold Cross-Validation
 * Early Stopping - Stopping point should be where Loss on Training set decreases but Validation set increases
 * Thresholdout
