@@ -29,6 +29,8 @@ Cross-validation, it’s a model validation techniques for assessing how the res
 * Validation help us select the model which will perform best on unseen data
 * Validation help us to avoid overfitting and underfitting.
 
+* By reducing the training data, we risk losing important patterns/ trends in data set, which in turn increases error induced by bias. So, what we require is a method that provides ample data for training the model and also leaves ample data for validation. K Fold cross validation does exactly that.
+* Every data point gets to be in a validation set exactly once, and gets to be in a training set k-1times. This significantly reduces underfitting as we are using most of the data for fitting, and also significantly reduces overfitting as most of the data is also being used in validation set.
 
 ##### Ways
 * Early stopping
