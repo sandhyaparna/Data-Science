@@ -32,7 +32,9 @@ The features of the minority class are treated as noise and are often ignored. T
 * In the below case 5 nearest neighbours close to x1 are identified and sysnthetic samples are generated on each of the lines between x1,x2; x1,x3; x1,x4; x1,x5; x1,x6
 ![](https://cdn-images-1.medium.com/max/800/1*6UFpLFl59O9e3e38ffTXJQ.png)
 
-
+### ADASYN 
+* Its a improved version of Smote. What it does is same as SMOTE just with a minor improvement.
+* After creating those sample it adds a random small values to the points thus making it more realistic. In other words instead of all the sample being linearly correlated to the parent they have a little more variance in them i.e they are bit scattered.
 
 ### Evaluation Metrics
 * Always test(Test set) on original distribution 
