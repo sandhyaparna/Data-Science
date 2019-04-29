@@ -14,7 +14,7 @@ The features of the minority class are treated as noise and are often ignored. T
 ### Techniques
 * Do Nothing and use models that can handle imbalance like XGBoost
 * Sampling (CROSS-VALIDATION should always be applied before over sampling to avoid over-fitting)
-  * Oversample the minority class - SMOTE, ADASYN
+  * Oversample the minority class - SMOTE, ADASYN https://medium.com/coinmonks/smote-and-adasyn-handling-imbalanced-data-set-34f5223e167
   * Undersample the majority class.
   * Synthesize new minority classes - ROSE & DMwR packages in R.
   * Build n models that use all the samples of the rare class and n-differing samples of the abundant class. Eg: Given that you want to ensemble 10 models, you would keep e.g. the 1.000 cases of the rare class and randomly sample 10.000 cases of the abundant class. Then you just split the 10.000 cases in 10 chunks and train 10 different models.
@@ -24,6 +24,14 @@ The features of the minority class are treated as noise and are often ignored. T
 * Adjust the class weight (misclassification costs).
 * Modify an existing algorithm to be more sensitive to rare classes.
 * Cluster the abundant class - Instead of relying on random samples to cover the variety of the training samples, he suggests clustering the abundant class in r groups, with r being the number of cases in r. For each group, only the medoid (centre of cluster) is kept. The model is then trained with the rare class and the medoids only.
+
+
+### SMOTE
+* Synthetic data generation to increase the number of samples in the minority class.
+* First it finds the n-nearest neighbors in the minority class for each of the samples in the class . Then it draws a line between the the neighbors an generates random points on the lines.
+![](https://cdn-images-1.medium.com/max/800/1*6UFpLFl59O9e3e38ffTXJQ.png)
+
+
 
 ### Evaluation Metrics
 * Always test(Test set) on original distribution 
