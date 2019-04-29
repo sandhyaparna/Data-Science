@@ -14,7 +14,7 @@ The features of the minority class are treated as noise and are often ignored. T
 ### Techniques
 * Do Nothing and use models that can handle imbalance like XGBoost
 * Sampling (CROSS-VALIDATION should always be applied before over sampling to avoid over-fitting)
-  * Oversample the minority class - SMOTE
+  * Oversample the minority class - SMOTE, ADASYN
   * Undersample the majority class.
   * Synthesize new minority classes - ROSE & DMwR packages in R.
   * Build n models that use all the samples of the rare class and n-differing samples of the abundant class. Eg: Given that you want to ensemble 10 models, you would keep e.g. the 1.000 cases of the rare class and randomly sample 10.000 cases of the abundant class. Then you just split the 10.000 cases in 10 chunks and train 10 different models.
