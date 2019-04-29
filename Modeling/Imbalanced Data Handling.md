@@ -29,6 +29,7 @@ The features of the minority class are treated as noise and are often ignored. T
 ### SMOTE
 * Synthetic data generation to increase the number of samples in the minority class.
 * First it finds the n-nearest neighbors in the minority class for each of the samples in the class . Then it draws a line between the the neighbors an generates random points on the lines.
+* In the below case 5 nearest neighbours close to x1 are identified and sysnthetic samples are generated on each of the lines between x1,x2; x1,x3; x1,x4; x1,x5; x1,x6
 ![](https://cdn-images-1.medium.com/max/800/1*6UFpLFl59O9e3e38ffTXJQ.png)
 
 
