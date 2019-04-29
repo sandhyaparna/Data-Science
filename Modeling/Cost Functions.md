@@ -18,6 +18,8 @@ https://towardsdatascience.com/understanding-binary-cross-entropy-log-loss-a-vis
 * Same is the same case for Target=1
 * If 'prob of the actual target happening' is high then logloss i.e -log value is less whereas if 'prob of the actual target happening' is less then logloss is more
 
+Probability of it being close to the actual target
+
 ![](http://wiki.fast.ai/images/4/43/Log_loss_graph.png)
 
 ##### Cross-Entropy
