@@ -137,6 +137,11 @@ http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/
 ### Visualizing Features
 In order to see whether our embeddings/features are capturing information that is relevant to our problem , it is a good idea to visualize them and see if the classes look well separated. Since vocabularies are usually very large and visualizing data in 20,000 dimensions is impossible, techniques like PCA will help project the data down to two dimensions. And is then plotted. 2 features on X & Y-axis and target is colour coded
 
+##### T-SNE T-Distributed Stochastic Neighborhood Embedding
+https://medium.com/@sourajit16.02.93/tsne-t-distributed-stochastic-neighborhood-embedding-state-of-the-art-c2b4b875b7da
+* Dimensionality reduction method used for the visualization of very high dimensional data
+*  
+
 
 ### Evaluation 
 ##### BLEU (Bilingual Evaluation Understudy)
