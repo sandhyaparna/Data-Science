@@ -140,8 +140,10 @@ In order to see whether our embeddings/features are capturing information that i
 ##### T-SNE T-Distributed Stochastic Neighborhood Embedding
 https://medium.com/@sourajit16.02.93/tsne-t-distributed-stochastic-neighborhood-embedding-state-of-the-art-c2b4b875b7da
 * Dimensionality reduction method used for the visualization of very high dimensional data
-*  
-
+* PCA (performs linear mapping) tries to maximize variance towards Principal components, tries to maintain GLOBAL structure of the data
+* TSNE, unlike PCA, preserves the local structures (also) of the data points while converting from higher to lower dimensions.
+* It is a probablistic (non-linear) technique
+![](https://cdn-images-1.medium.com/max/2400/1*Pb9EpsHGF3umWEWPswU4rQ.png)
 
 ### Evaluation 
 ##### BLEU (Bilingual Evaluation Understudy)
