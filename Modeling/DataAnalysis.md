@@ -15,6 +15,7 @@
   * Type of Variable: Target, Unique Idnetifier, Predictor Vars
   * Data Type: Numeric, Character - How can you encode?
 * Univariate, Bivariate analysis
+* Duplicate values - For eg: Visit ID may be unique to a hospital, but when we use diff hospitals there might be duplicates in Visit ID. So, create a new Unique Identifier - Concatenation of Client/Hospital ID and Visit ID.
 * Missing value treatment
 * Outlier treatmnet
 * Variable transformation, creation, feature engineering
