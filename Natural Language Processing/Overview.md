@@ -143,6 +143,7 @@ https://medium.com/@sourajit16.02.93/tsne-t-distributed-stochastic-neighborhood-
 * PCA (performs linear mapping) tries to maximize variance towards Principal components, tries to maintain GLOBAL structure of the data
 * TSNE, unlike PCA, preserves the local structures (also) of the data points while converting from higher to lower dimensions.
 * It is a probablistic (non-linear) technique
+https://www.datacamp.com/community/tutorials/introduction-t-sne </br>
 ![](https://cdn-images-1.medium.com/max/2400/1*Pb9EpsHGF3umWEWPswU4rQ.png)
 
 ### Evaluation 
