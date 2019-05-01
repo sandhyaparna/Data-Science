@@ -7,7 +7,7 @@
 * Identify & resolves Discrepancies in data
 
 ### Data-preprocessing
-* Univariate analysis - Data cleaning
+* Univariate analysis - Data cleaning. Look for bad data (Numeric value in categorical var), Duplicates (Visit ID might not be unique when we combine data from diff clients)
 * Outlier treatment
 * Missing value treatment
 * Data Transformation - Right skewed/Left skewed
