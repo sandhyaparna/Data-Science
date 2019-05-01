@@ -1,3 +1,7 @@
+KMeans, Low pass filter https://www.datascience.com/blog/python-anomaly-detection <br/>
+PCA + Mahalanobis distance, NN https://towardsdatascience.com/how-to-use-machine-learning-for-anomaly-detection-and-condition-monitoring-6742f82900d7 <br/>
+ABove artcile Part2 https://towardsdatascience.com/machine-learning-for-anomaly-detection-and-condition-monitoring-d4614e7de770 <br/>
+
 ### Detection
 * Lower & Upper limit
 * For identifying anomalies with 1 or 2 variables, data visualization is a good starting point
