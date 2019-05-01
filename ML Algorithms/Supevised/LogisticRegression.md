@@ -7,6 +7,14 @@ https://www.kdnuggets.com/2019/01/logistic-regression-concise-technical-overview
 * Categorical Var: Group(1) has OddsRatio times greater odds of Target happening, holding all other vars constant
 * Continuous Var: A unit inc in the odds of Xj, will inc the odds of Target happening by a factor of OddsRatio of this var, holding all other vars constant
 
+### Effect on coefs, p-value, confidence Interval when there are correlated vars in the model
+https://newonlinecourses.science.psu.edu/stat501/node/346/  <br/>
+* When predictor variables are correlated, the estimated regression coefficient of any one variable depends on which other predictor variables are included in the model.
+* When predictor variables are correlated, the precision of the estimated regression coefficients decreases as more predictor variables are added to the model.
+* When predictor variables are correlated, the marginal contribution of any one predictor variable in reducing the error sum of squares varies depending on which other variables are already in the model.
+* When predictor variables are correlated, hypothesis tests for βk = 0 may yield different conclusions depending on which predictor variables are in the model.
+* High multicollinearity among predictor variables does not prevent good, precise predictions of the response within the scope of the model. 
+
 ### Overview 
 Logistic regression is used to create a decision boundary to maximize the log likelihood of the classification probabilities.  <br/> 
 In the case of a linear decision boundary, logistic regression wants to have each point and the associated class as far from the hydroplane as possible and provides a probability which can be interpreted as prediction confidence. <br/> 
