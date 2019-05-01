@@ -6,6 +6,7 @@ Filter, Wrapper Methods https://www.analyticsvidhya.com/blog/2016/12/introductio
 
 ### Reasons to include fewer predictors over many
 * Redundancy/Irrelevance: Remove non-redundant predictor variables. Pareto principle suggests that 80% of what happens can be explained using 20%
+* Garbage In = Garbage Out - So, we are trying to avoid it
 * Over-fitting: The data models with large number of predictors (also referred to as complex models) often suffer from the problem of overfitting, in which case the data model performs great on training data, but performs poorly on test data.
 * Productivity: Improves Accuracy (Less Noise), Reduces Training time
 * Understandability: Fewer predictors are way easier to understand and explain
