@@ -69,6 +69,7 @@ Steps involved in building surrogate models:  <br/>
 * Interpret / visualize the surrogate model.
 
 ### LIME
+https://medium.com/@ageitgey/natural-language-processing-is-fun-part-3-explaining-model-predictions-486d8616813c </br>
 * LIME creates explanations for blackbox predictions by training an interpretable model locally around a prediction you want to explain.
 * It focuses to explain why single predictions were made instead of trying to fit a global surrogate model. 
 * LimeTabularExplainer: explains predictions on tabular, or matrix, data
@@ -87,6 +88,7 @@ Steps involved in building surrogate models:  <br/>
   * For image : It represents presence/absence of super pixels ( contiguous patch of similar pixels ). 
   * For tabular data : It is a weighted combination of columns.
 
+https://www.analyticsvidhya.com/blog/2017/06/building-trust-in-machine-learning-models/ </br>
 
 
 
