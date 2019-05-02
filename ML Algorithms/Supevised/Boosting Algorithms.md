@@ -41,6 +41,7 @@ https://www.analyticsvidhya.com/blog/2017/06/which-algorithm-takes-the-crown-lig
 * It is not advisable to use LightGBM on small datasets. LightGBM is sensitive to overfitting and can easily overfit small data. Their is no threshold on the number of rows but my experience suggests me to use it only for data with 10,000+ rows
 
 ### CatBoost - Category Boosting
+https://www.analyticsvidhya.com/blog/2017/08/catboost-automated-categorical-data/
 * Handles Categorical data such as audio, text, image automatically 
 * Performance - CatBoost provides state of the art results and it is competitive with any leading machine learning algorithm on the performance front (Prediction time). 
 * Handling Categorical features automatically - We can use CatBoost without any explicit pre-processing to convert categories into numbers. CatBoost converts categorical values into numbers using various statistics on combinations of categorical features and combinations of categorical and numerical features
