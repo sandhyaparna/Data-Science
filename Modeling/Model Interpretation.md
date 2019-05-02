@@ -76,7 +76,7 @@ Steps involved in building surrogate models:  <br/>
 * LimeTextExplainer: explains text classifiers
 * Steps: In order learn behavior of the model
   * Make initial predictions of the instance of interest with the blackbox model
-  * It perturbs the instance it will explain 
+  * LIME perturbs the instance it will explain to create sample variations around it and weighs them by the proximity to the instance being explained
   * Get the predictions for these perturbed instances using the blackbox model
   * The perturbed instances becomes the new training set and a linear classifier is trained on them to understand the predictions
   * LIME uses Ridge regression by default but can be changed
