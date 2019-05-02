@@ -74,26 +74,20 @@ Steps involved in building surrogate models:  <br/>
 * LimeTabularExplainer: explains predictions on tabular, or matrix, data
 * LimeImageExplainer: explains predictions on image data
 * LimeTextExplainer: explains text classifiers
+
 * Steps: In order learn behavior of the model
   * Make initial predictions of the instance of interest with the blackbox model
   * LIME perturbs the instance it will explain to create sample variations around it and weighs them by the proximity to the instance being explained
   * Get the predictions for these perturbed instances using the blackbox model
-  * The perturbed instances becomes the new training set and a linear classifier is trained on them to understand the predictions
+  * The perturbed instances (samples close to the instance are given more weightage) becomes the new training set and a linear classifier is trained on them to understand the predictions
   * LIME uses Ridge regression by default but can be changed
 
+* Output
+  * For text : It represents presence/absence of words.
+  * For image : It represents presence/absence of super pixels ( contiguous patch of similar pixels ). 
+  * For tabular data : It is a weighted combination of columns.
 
-By weighting the 
 
-* Local Interpretability - The output of LIME is a list of explanations, reflecting the contribution of each feature to the prediction of a data sample. It is specific to an instance and not the global data. It produces locally faithful explanations
-* It checks how the model behaves in the vicinity of the instance being predicted
-* Choose your instance of interest for which you want to have an explanation of the predictions of your black box model.
-* Perturb your dataset and get the black box predictions for these new points.
-* Weight the new samples by their proximity to the instance of interest.
-* Fit a weighted, interpretable (surrogate) model on the dataset with the variations.
-* Explain prediction by interpreting the local model.
-###### Implementation
-* Train data on a random forest
-* Get categorical features
 
 
 
