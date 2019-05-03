@@ -8,11 +8,12 @@ K-Means clustering intends to partition n objects into k clusters in which each 
 The objective of K-Means clustering is to minimize total intra-cluster variance, or, the squared error function.
 
 ##### Algorithm
-* Clusters the data into k groups where k  is predefined.
-* Select k points at random as cluster centers.
-* Assign objects to their closest cluster center according to the Euclidean distance function.
+* Choose the number of clusters initially where k  is predefined. 
+* Randomly assign all the data points to any of the k pre-defined clusters
+* Centroid of each cluster is calculated based on the points within each cluster.
+* Now Re-assign each point to the closest cluster centroid.
 * When all objects have been assigned, recalculate the cluster centers (or) centroid
-* Repeat steps 3 and 4 until the same points are assigned to each cluster in consecutive rounds (or) until the centroids no longer move
+* Repeat steps until the same points are assigned to each cluster in consecutive rounds (or) until the centroids no longer move
 
 ##### Choosing K
 * Elbow Method - Sum of Squared errors (vs) Number of clusters - k is chosen where Sum of squared erors sharply decreases
