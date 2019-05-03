@@ -1,6 +1,6 @@
 ### Links
-http://www.saedsayad.com/k_nearest_neighbors.htm
-https://www.analyticsvidhya.com/blog/2018/03/introduction-k-neighbours-algorithm-clustering/
+http://www.saedsayad.com/k_nearest_neighbors.htm </br>
+https://www.analyticsvidhya.com/blog/2018/03/introduction-k-neighbours-algorithm-clustering/ </br>
 
 
 ### Overview
