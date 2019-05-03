@@ -17,6 +17,7 @@ How Hyperplane is created https://www.coursera.org/learn/launching-machine-learn
   
 ### Adavantages
 * It works really well with clear margin of separation
+* It ignores outliers
 * It is effective in high dimensional spaces.
 * It is effective in cases where number of dimensions is greater than the number of samples.
 * It uses a subset of training points in the decision function (called support vectors), so it is also memory efficient.
