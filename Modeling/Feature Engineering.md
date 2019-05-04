@@ -41,7 +41,8 @@ When data is missing in the Numeric column - For that column create a new extra 
     Ni = number of negative labels within each category of Categorical Var <br/>
     * (Pi / Ni)
     * Supervised Ratio: (Pi / Freq of a category of a categorical var).If training set consists of 100 customers in ZIP code 10009, 5 of which churned (so Pi=5 and Ni=95) then the transformed value is 0.05. 
-    * Weight of evidence - WOE equation = ln( (Pi/Total Positive Labels)/(Ni/Total Negative Labels) )
+    * Weight of evidence - WOE equation = ln( (Pi/Total Positive Labels)/(Ni/Total Negative Labels) ) = ln(Event%/NonEvent%)
+    * Information Value (IV) = Σ (Event% - NonEvent%) * WOE   
   * Way Catboost deals with categories - https://catboost.ai/docs/concepts/algorithm-main-stages_cat-to-numberic.html
   * Embeddings  
 
