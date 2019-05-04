@@ -18,6 +18,12 @@ Filter, Wrapper Methods https://www.analyticsvidhya.com/blog/2016/12/introductio
 * Regularization - Lasso
 * Forward slection, Backward Selection, Stepwise Selection
 * Chi-sq for Categorical data - SelectKBest based on chi-sq score in python 
+* PCA (Principal COmponent Analysis) - Linear combination of the variables
+  * PCA extracts low dimensional set of features from a high dimensional data set such that variance is maximized/increased by bringing the data into low dimensional space. Loses a little accuracy
+* Principal component analysis (PCA) is a statistical procedure that uses an orthogonal transformation to convert a set of observations of possibly correlated variables (entities each of which takes on various numerical values) into a set of values of linearly uncorrelated variables called principal components. Because our principal components are orthogonal to one another, they are statistically independent of one another.
+  * Principal components are new variables that are constructed as linear combinations or mixtures of the initial variables. These combinations are done in such a way that the new variables (i.e., principal components) are uncorrelated and most of the information within the initial variables is squeezed or compressed into the first components.
+  * First principal component is a linear combination of original predictor variables which captures the maximum variance in the data set. It determines the direction of highest variability in the data. 
+  Second principal component (Z²) is also a linear combination of original predictors which captures the remaining variance in the data set and is uncorrelated with Z¹.
 * LDA - Linear Discriminant Analysis 
   * LDA approach is very similar to a Principal Component Analysis, but in addition to finding the component axes that maximize the variance of our data (PCA), we are additionally interested in the axes that maximize the separation between multiple classes (LDA).
   * PCA is unsupervised, LCA is supervised
@@ -26,7 +32,6 @@ Filter, Wrapper Methods https://www.analyticsvidhya.com/blog/2016/12/introductio
   * Factor analysis is based on a formal model predicting observed variables from theoretical latent factors. https://www.theanalysisfactor.com/the-fundamental-difference-between-principal-component-analysis-and-factor-analysis/
 * Use Algorithms that have built in feature reduction techniques
 * Dimensionality reduction: 
-  * Principal Component Analysis (PCA) - Linear combination of the original variables
   * Multiple Correspondence Analysis (MCA) - Categorical variables
   * CorEx - Recent technique for automatic structure extraction from categorical data - https://github.com/gregversteeg/CorEx
   * Self-organizing maps (SOM)
