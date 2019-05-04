@@ -19,7 +19,7 @@ Filter, Wrapper Methods https://www.analyticsvidhya.com/blog/2016/12/introductio
 * Forward slection, Backward Selection, Stepwise Selection
 * Chi-sq for Categorical data - SelectKBest based on chi-sq score in python 
 * PCA (Principal COmponent Analysis) - Linear combination of the variables
-  * PCA extracts low dimensional set of features from a high dimensional data set such that variance is maximized/increased by bringing the data into low dimensional space. Loses a little accuracy
+  * PCA extracts low dimensional set of features from a high dimensional data set such that variance is maximized/increased by bringing the data into low dimensional space. Loses a little accuracy. Normalization of data is performed before performing PCA.
 * Principal component analysis (PCA) is a statistical procedure that uses an orthogonal transformation to convert a set of observations of possibly correlated variables (entities each of which takes on various numerical values) into a set of values of linearly uncorrelated variables called principal components. Because our principal components are orthogonal to one another, they are statistically independent of one another.
   * Principal components are new variables that are constructed as linear combinations or mixtures of the initial variables. These combinations are done in such a way that the new variables (i.e., principal components) are uncorrelated and most of the information within the initial variables is squeezed or compressed into the first components.
   * First principal component is a linear combination of original predictor variables which captures the maximum variance in the data set. It determines the direction of highest variability in the data. 
