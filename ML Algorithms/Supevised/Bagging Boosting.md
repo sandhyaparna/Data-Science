@@ -59,7 +59,7 @@ Output of primary classifiers, called level 0 models, will be used as attributes
 * In RandomForest, if n tress contributing to the RandomForest all have an accuracy of 70%, min accuracy of overall RandomForest 
 can be from less than 70% to 100%
 ##### Algorithms
-* Random Forests - Parallel processing is not possible - https://www.analyticsvidhya.com/blog/2016/04/complete-tutorial-tree-based-modeling-scratch-in-python/
+* Random Forests - https://www.analyticsvidhya.com/blog/2016/04/complete-tutorial-tree-based-modeling-scratch-in-python/
 * Bagging meta-estimator
 * Regularized Greedy Forests - https://www.analyticsvidhya.com/blog/2018/02/introductory-guide-regularized-greedy-forests-rgf-python/
 
