@@ -6,7 +6,7 @@ https://www.kdnuggets.com/2019/01/logistic-regression-concise-technical-overview
 Odds Ratio = p/(1-p)
 * For each predictor u get p-value and OddsRatio=exp(Xi). Xi is coeff. Odds ratio gre than 1 implies positive relation
 * Categorical Var: Group(1) has OddsRatio times greater odds of Target happening, holding all other vars constant
-* Continuous Var: A unit inc in the odds of Xj, will inc the odds of Target happening by a factor of OddsRatio of this var, holding all other vars constant
+* Continuous Var: A unit inc of a predictor inc the dependent var by log odds. It will inc the odds of Target happening by a factor of OddsRatio of this var, holding all other vars constant
 
 ### Effect on coefs, p-value, confidence Interval when there are correlated vars in the model
 https://newonlinecourses.science.psu.edu/stat501/node/346/  <br/>
