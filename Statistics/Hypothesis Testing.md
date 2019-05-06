@@ -119,6 +119,9 @@ The independent t-test, also called the two sample t-test, independent-samples t
 * Independence of observations - No relationship between observations in each group or between the groups themselves
 * No outliers - BoxPlot
 
+### Paired t-test
+* It is used to test the difference between 2 dependant samples - one befoe and one after
+
 ### ANOVA
 Analysis of variance (ANOVA) is a statistical procedure used to compare the mean values on some variable between two or more independent groups. F-statistic = Ratio of the sum of squares between and within groups
 ##### Assumptions
