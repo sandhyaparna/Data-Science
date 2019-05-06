@@ -88,6 +88,10 @@ https://medium.com/@ageitgey/natural-language-processing-is-fun-part-3-explainin
   * For image : It represents presence/absence of super pixels ( contiguous patch of similar pixels ). 
   * For tabular data : It is a weighted combination of columns.
 
+* Support & Contradict Predictions
+  * If a prediction is 1 or 0, Support predictions gives the list of variables that favour either 1 or 0
+  * Contradict predictions are the ones that support opposite of the prediction
+
 https://www.analyticsvidhya.com/blog/2017/06/building-trust-in-machine-learning-models/ </br>
 
 
