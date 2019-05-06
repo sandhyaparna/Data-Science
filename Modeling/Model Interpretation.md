@@ -89,8 +89,8 @@ https://medium.com/@ageitgey/natural-language-processing-is-fun-part-3-explainin
   * For tabular data : It is a weighted combination of columns.
 
 * Support & Contradict Predictions
-  * If a prediction is 1 or 0, Support predictions gives the list of variables that favour either 1 or 0
-  * Contradict predictions are the ones that support opposite of the prediction
+  * If a prediction is 1 or 0, Support predictions gives the list of variables that favour either 1 or 0. Favors predicted outcome
+  * Contradict predictions are the ones that support opposite of the prediction. Don't favor the predicted outcome
 
 https://www.analyticsvidhya.com/blog/2017/06/building-trust-in-machine-learning-models/ </br>
 
