@@ -35,7 +35,7 @@ Linear Regression is very sensitive to Outliers. It can terribly affect the regr
 ### Ordinary Least Sqaure (OLS) Algorithm
 OLS minimizes residual sum of squares <br/>
 It is used in python library sklearn.  <br/>
-* m = Σ(Xi-Xavg)(Yi-Yavg) / Σ(Xi-Xavg)²
+* m (Slope for single independant var) = Σ(Xi-Xavg)(Yi-Yavg) / Σ(Xi-Xavg)²
 
 ### Gradient Descent Algorithm
 https://www.coursera.org/learn/launching-machine-learning/lecture/EuGsr/gradient-descent
