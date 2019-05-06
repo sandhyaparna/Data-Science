@@ -33,9 +33,12 @@ If the errors are not normally distributed, non–linear transformation of the v
 Linear Regression is very sensitive to Outliers. It can terribly affect the regression line and eventually the forecasted values.
 
 ### Ordinary Least Sqaure (OLS) Algorithm
-OLS minimizes residual sum of squares <br/>
-It is used in python library sklearn.  <br/>
+* OLS is used to find estimators that minimizes residual sum of squares <br/>
+* It is used in python library sklearn.  <br/>
 * m (Slope for single independant var) = Σ(Xi-Xavg)(Yi-Yavg) / Σ(Xi-Xavg)²
+
+### Maximum Likelihood Estimation (MLE)
+* MLE is used to find estimators that minimizes the likelihood function
 
 ### Gradient Descent Algorithm
 https://www.coursera.org/learn/launching-machine-learning/lecture/EuGsr/gradient-descent
