@@ -18,6 +18,7 @@ This usually occurs in time series models where the next instant is dependent in
 The independent variables should not be correlated. Absence of this phenomenon is known as multicollinearity. <br/>
 Standard errors tend to increase in presence of multicollinearity. With large standard errors, the confidence interval becomes wider leading to less precise estimates of slope parameters. <br/>
 * VIF factor: VIF value <= 4 suggests no multicollinearity whereas a value of >= 10 implies serious multicollinearity.  <br/>
+* VIF: Each of the predcitor variables are regressed up on other predictor variables. If that R² is high then this variables has collinearity with others.
 ##### 4. Homoskedasticity
 The error terms must have constant variance. This phenomenon is known as homoskedasticity. The presence of non-constant variance is referred to heteroskedasticity. <br/>
 Heteroskedasticity i.e non-constant variance often creates cone-line shape scatter plot of residuals vd fitted. Scattering widens or narrows as the value of fitted increases implies it is consistently accurate when it predicts low values, but highly inconsistent in accuracy when it predicts high values. <br/>
