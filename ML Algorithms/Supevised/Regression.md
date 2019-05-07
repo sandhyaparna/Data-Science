@@ -174,28 +174,3 @@ BIC = -2*ln(likelihood) + ln(N)*p
 * SSR (Sum of Squares Regression) = Σ(Ypred – Yavg)². Greater the value better the regression model
 * SSE (Sum of Squares errors) = Σ(Y – Ypred)² # Residual error
 * SST (Sum of Squares total) = Σ(Y – Yavg)² # Explains variation within the dependent variable
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-
-
