@@ -137,10 +137,15 @@ http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/
 ##### ELMo - Embeddings from Language Models
 https://www.analyticsvidhya.com/blog/2019/03/learn-to-use-elmo-to-extract-features-from-text/ </br>
 ![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2019/03/output_YyJc8E.gif)
-* ELMo 
-
-
-
+* ELMo word vectors are computed on top of a two-layer bidirectional language model (biLM). This biML model has two layers stacked together. Each layer has 2 passes — forward pass and backward pass:
+  * The architecture above uses a character-level convolutional neural network (CNN) to represent words of a text string into raw word vectors
+  * These raw word vectors act as inputs to the first layer of biLM
+  * The forward pass contains information about a certain word and the context (other words) before that word
+  * The backward pass contains information about the word and the context after it
+  * This pair of information, from the forward and backward pass, forms the intermediate word vectors
+  * These intermediate word vectors are fed into the next layer of biLM
+  * The final representation (ELMo) is the weighted sum of the raw word vectors and the 2 intermediate word vectors </br>
+As the input to the biLM is computed from characters rather than words, it captures the inner structure of the word. For example, the biLM will be able to figure out that terms like beauty and beautiful are related at some level without even looking at the context they often appear in.
 
 
 
