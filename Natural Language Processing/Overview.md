@@ -146,8 +146,10 @@ https://www.analyticsvidhya.com/blog/2019/03/learn-to-use-elmo-to-extract-featur
   * These intermediate word vectors are fed into the next layer of biLM
   * The final representation (ELMo) is the weighted sum of the raw word vectors and the 2 intermediate word vectors </br>
 As the input to the biLM is computed from characters rather than words, it captures the inner structure of the word. For example, the biLM will be able to figure out that terms like beauty and beautiful are related at some level without even looking at the context they often appear in.
-
-
+* Traditional word embeddings such as word2vec and GLoVe, the ELMo vector assigned to a token or word is actually a function of the entire sentence containing that word. Therefore, the same word can have different word vectors under different contexts.
+  * Word 'read' can be used as verb in present as well as past tense. Traditional word embeddings come up with same vector for the word 'read' in both the sentences. ELMo word vectors successfully address this issue.
+* ELMo word representations take the entire input sentence into equation for calculating the word embeddings. Hence, the term “read” would have different ELMo vectors under different context.
+  
 
 
 
