@@ -49,7 +49,9 @@ Logistic regression predicts the probability of occurrence of an event by fittin
 https://www.analyticsvidhya.com/blog/2018/07/introductory-guide-maximum-likelihood-estimation-case-study-r/ </br>
 * MLE is used to find the coefficients (estimators) that accurately predicts the probability of the binary dependent variable, that minimizes the likelihood function
 * MLE can be defined as a method for estimating population parameters (such as the mean and variance for Normal, rate (lambda) for Poisson, etc.) from sample data such that the probability (likelihood) of obtaining the observed data is maximized.
-
+* To find MLE, we need to differentiate the log-likelihood function and set it to 0
+  * First  differential of log-likelihood function is set to 0 - Score equation
+  * Confidence in the MLE is quantified by the pointedness of the log-likelihood. 2nd differential is called Observed Information
 
 ### Assumptions
 * Observations are independent of each other
