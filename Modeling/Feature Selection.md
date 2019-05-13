@@ -12,11 +12,13 @@ Filter, Wrapper Methods https://www.analyticsvidhya.com/blog/2016/12/introductio
 * Understandability/Interpretability: Fewer predictors are way easier to understand and explain
 
 ### Feature reduction techniques: Numeric & Categorical - Domain dependent
+https://towardsdatascience.com/a-feature-selection-tool-for-machine-learning-in-python-b64dd23710f0 </br>
 * Missing value ratio
 * Low Variance filter
 * Remove highly correlated variables
 * Regularization - Lasso
 * Forward slection, Backward Selection, Stepwise Selection
+* Features with 0 importance in a tree based model
 * Chi-sq for Categorical data - SelectKBest based on chi-sq score in python 
 * PCA (Principal COmponent Analysis) - Linear combination of the variables
   * PCA extracts low dimensional set of features from a high dimensional data set such that variance is maximized/increased by bringing the data into low dimensional space. Loses a little accuracy. Normalization of data is performed before performing PCA.
