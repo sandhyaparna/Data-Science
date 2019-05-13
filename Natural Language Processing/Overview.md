@@ -134,6 +134,19 @@ http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/
 
 ##### FastText
 
+##### ELMo - Embeddings from Language Models
+https://www.analyticsvidhya.com/blog/2019/03/learn-to-use-elmo-to-extract-features-from-text/ </br>
+![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2019/03/output_YyJc8E.gif)
+* ELMo 
+
+
+
+
+
+
+
+
+
 
 ### Visualizing Features
 In order to see whether our embeddings/features are capturing information that is relevant to our problem , it is a good idea to visualize them and see if the classes look well separated. Since vocabularies are usually very large and visualizing data in 20,000 dimensions is impossible, techniques like PCA will help project the data down to two dimensions. And is then plotted. 2 features on X & Y-axis and target is colour coded
