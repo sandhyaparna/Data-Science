@@ -46,7 +46,9 @@ Logistic regression predicts the probability of occurrence of an event by fittin
 * Should be used when data is linearly seperable. This dividing plane is called a linear discriminant, because its linear in terms of its function and it helps the model discriminate between points belonging to different classes
 
 ### Maximum Likelihood Estimation
-MLE determines the regression coefficient that accurately predicts the probability of the binary dependent variable <br/>
+https://www.analyticsvidhya.com/blog/2018/07/introductory-guide-maximum-likelihood-estimation-case-study-r/ </br>
+* MLE is used to find the coefficients (estimators) that accurately predicts the probability of the binary dependent variable, that minimizes the likelihood function
+* MLE can be defined as a method for estimating population parameters (such as the mean and variance for Normal, rate (lambda) for Poisson, etc.) from sample data such that the probability (likelihood) of obtaining the observed data is maximized.
 
 
 ### Assumptions
