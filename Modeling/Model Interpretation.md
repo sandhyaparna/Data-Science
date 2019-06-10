@@ -55,7 +55,6 @@ Assuming that each feature is a ‘player’ in a game where the prediction is t
 * The ‘players’ are the feature values of the instance, which collaborate to receive the gain (= predict a certain value).
 The Shapley value is the average marginal contribution of a feature value over all possible coalitions. Coalitions are basically combinations of features which are used to estimate the shapley value of a specific feature. Typically more the features, it starts increasing exponentially hence it may take a lot of time to compute these values for big or wide datasets. 
 
-
 ### Global Surrogate Models
 It is a way of building intepretable approximations of really complex models, global surrogate models.  <br/>
 A global surrogate model is an interpretable model that is trained to approximate the predictions of a black box model which can essentially be any model regardless of its complexity or training algorithm.  <br/>
@@ -68,12 +67,10 @@ A global surrogate model is an interpretable model that is trained to approximat
   * Measure how well the surrogate model replicates the prediction of the black box model.
   * Interpret / visualize the surrogate model.
 * Models that can be used
-  * Classification: Logistic Reg, Decision Trees, RuleFit, Naive Bayes, kNN
-  * Regression: Linear Reg, Decision Trees, RuleFit, KNN
+  * Classification: Logistic Reg, Decision Trees, RuleFit, Naive Bayes
+  * Regression: Linear Reg, Decision Trees, RuleFit
 * Surrogate model approximates the underlying black box behavior quite well, but not perfectly. If the fit were perfect, we could throw away blackbox model and use the Surrogate model instead.
-* Disadvantages
-  * Conclusions are drawn about the model and not the data, since the model never sees true outcomes
-  * 
+* Disadvantage: Conclusions are drawn about the model and not the data, since the model never sees true outcomes
 
 ### LIME
 https://medium.com/@ageitgey/natural-language-processing-is-fun-part-3-explaining-model-predictions-486d8616813c </br>
