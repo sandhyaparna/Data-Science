@@ -81,6 +81,7 @@ A global surrogate model is an interpretable model that is trained to approximat
     * Bettonvil’s sequential bifurcation method
     * Sobol’s global sensitivity analysis (GSA)
     * VaschyBuckingham theorem
+    * Nondimensional variables
   * Simulataneous use of multiple surrogates
   * Sequential sampling & Optimization
   * Conservative estimators
