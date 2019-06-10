@@ -67,7 +67,9 @@ A global surrogate model is an interpretable model that is trained to approximat
   * Congratulations! You now have a surrogate model.
   * Measure how well the surrogate model replicates the prediction of the black box model.
   * Interpret / visualize the surrogate model.
-
+* Disadvantages
+  * Conclusions are drawn about the model and not the data, since the model never sees true outcomes
+  * 
 
 ### LIME
 https://medium.com/@ageitgey/natural-language-processing-is-fun-part-3-explaining-model-predictions-486d8616813c </br>
