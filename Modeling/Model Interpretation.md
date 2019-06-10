@@ -79,11 +79,12 @@ A global surrogate model is an interpretable model that is trained to approximat
     * ANOVA
     * IFFD (Iterated Fractional factorial design - Economical for large number of variables. Uses clustered sampling techniques
     * Bettonvil’s sequential bifurcation method
-    *  Sobol’s global sensitivity analysis (GSA) 
+    * Sobol’s global sensitivity analysis (GSA)
+    * VaschyBuckingham theorem
   * Simulataneous use of multiple surrogates
   * Sequential sampling & Optimization
   * Conservative estimators
-  
+ 
 
 
 ### LIME
