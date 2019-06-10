@@ -70,7 +70,21 @@ A global surrogate model is an interpretable model that is trained to approximat
   * Classification: Logistic Reg, Decision Trees, RuleFit, Naive Bayes
   * Regression: Linear Reg, Decision Trees, RuleFit
 * Surrogate model approximates the underlying black box behavior quite well, but not perfectly. If the fit were perfect, we could throw away blackbox model and use the Surrogate model instead.
-* Disadvantage: Conclusions are drawn about the model and not the data, since the model never sees true outcomes
+* Disadvantage
+  * Conclusions are drawn about the model and not the data, since the model never sees true outcomes
+  * Desired accuracy of a surrogate requires more simulations than we can afford
+* Techniques:
+  * Screening & variable reduction - Use all the variables of the data and not the ones used by only Blackbox model 
+    * OAT (One-at-a-time) - Does not estimate interaction effects between variables
+    * ANOVA
+    * IFFD (Iterated Fractional factorial design - Economical for large number of variables. Uses clustered sampling techniques
+    * Bettonvil’s sequential bifurcation method
+    *  Sobol’s global sensitivity analysis (GSA) 
+  * Simulataneous use of multiple surrogates
+  * Sequential sampling & Optimization
+  * Conservative estimators
+  
+
 
 ### LIME
 https://medium.com/@ageitgey/natural-language-processing-is-fun-part-3-explaining-model-predictions-486d8616813c </br>
