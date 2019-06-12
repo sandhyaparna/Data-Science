@@ -1,4 +1,8 @@
-### Information Extraction (IE)###
+### Companies ###
+* Linguamatics
+* Regenstrief Institute's nDepth
+
+### Information Extraction (IE) ###
 * Mono and multilingual  
 * NER
 * Text classification
