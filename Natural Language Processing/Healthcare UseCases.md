@@ -1,6 +1,9 @@
 ### Companies ###
 * Linguamatics
 * Regenstrief Institute's nDepth
+* cTakes - Requires UMLS license
+https://medium.com/@felix_chan/install-apache-ctakes-924c40967ce2
+https://cwiki.apache.org/confluence/display/CTAKES/cTAKES+3.2+User+Install+Guide
 
 ### Information Extraction (IE) ###
 * Mono and multilingual  
