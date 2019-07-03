@@ -87,7 +87,6 @@ A global surrogate model is an interpretable model that is trained to approximat
   * Conservative estimators
  
 
-
 ### LIME
 https://medium.com/@ageitgey/natural-language-processing-is-fun-part-3-explaining-model-predictions-486d8616813c </br>
 * LIME creates explanations for blackbox predictions by training an interpretable model locally around a prediction you want to explain.
