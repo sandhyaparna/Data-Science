@@ -7,7 +7,7 @@ POS Tagging https://medium.com/analytics-vidhya/pos-tagging-using-conditional-ra
   * Hidden Markov Model & MaxEnt Markov Model are also sequence modelling algorithms
   * Hiddem Markov Model considers the future observations around the entities for learning a pattern, but it assumes that the features are independent of each other
   * MaxEnt Markov Model assumes that features are dependent on each other, but does not consider future observations for learning the pattern
-* Similar to POS (Part of Speech) tagging
+* One of its application is POS (Part of Speech) tagging
 * Annotations are required for building CRF modules
 
 
