@@ -20,18 +20,36 @@ https://cwiki.apache.org/confluence/display/CTAKES/cTAKES+3.2+User+Install+Guide
 https://www.youtube.com/watch?v=4aOnafv-NQs </br>
 
 
-### Information Extraction (IE) ###
+### Use Cases 
+* Extract & associate numerical attributes and values from unstructured EMR data
+  * Extract Attributes and values using Valx, CliNER or Stanford NER
+  * Associates values to their respective attributes </br>
+https://arxiv.org/ftp/arxiv/papers/1602/1602.00269.pdf </br>
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5543347/ </br>
+https://pdfs.semanticscholar.org/d3c9/8c90847eb1739819c024eb39a8095fe1ee32.pdf </br>
+
+* Diagnosis code extraction
+  * Hierarchy of ICD codes (Sequential trees LSTM)
+  * Diagnosis descriptions (Adversarial learning)
+  * Rank ICD codes (ADMM Isotonic constraints)
+  * Many-to-many mapping between diagnosis descriptions & ICD codes </br>
+https://www.aclweb.org/anthology/P18-1098 </br>
+https://pdfs.semanticscholar.org/65f0/a9a1f626bd6c3108a8f9eb6c70cad89ce41e.pdf </br>
+https://arxiv.org/pdf/1711.04075.pdf </br>
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5524149/ </br>
+
+##### Information Extraction (IE)
 * Mono and multilingual  
 * NER
 * Text classification
 * Acronym normalization
 * Form filling
 
-### Information Management ###
+##### Information Management
 * eHealth data visualization
 * Medical reports management
 
-### Information retrieval (IR) ###
+##### Information retrieval (IR)
 * Mono- and multilingual IR
 * Session-based IR
 
