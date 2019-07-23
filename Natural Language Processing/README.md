@@ -12,3 +12,19 @@
 * Spark NLP
 * spaCy
 * AllenNLP
+
+##### Less Accurate 
+* spaCy
+* Stanford CoreNLP
+* nltk
+* OpenNLP
+
+
+
+
+
+
+
+
+
+
