@@ -4,5 +4,11 @@
 * BERT
 * XLNet
 
-
+### Libraries
 * Spark NLP
+* TensorFlow
+* Keras
+* PyTorch
+* Spark NLP
+* spaCy
+* AllenNLP
