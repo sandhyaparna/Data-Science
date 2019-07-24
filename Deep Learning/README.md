@@ -5,6 +5,8 @@ MIT Deep Learning Course Labs https://github.com/aamini/introtodeeplearning_labs
 
 Deep UnSupervised Learning Courses https://www.youtube.com/channel/UCf4SX8kAZM_oGcZjMREsU9w </br>
 
+Andrew Ng NN & DL https://www.youtube.com/watch?v=CS4cs9xVecg&list=PLkDaE6sCZn6Ec-XTbcX1uRg2_u4xOEky0
+
 Full Stack Deep Learning Course https://fullstackdeeplearning.com/march2019 </br>
 fastai Course https://course.fast.ai/index.html </br>
 Deep Learning Repos https://github.com/mbadry1/Trending-Deep-Learning </br>
