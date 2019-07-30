@@ -15,7 +15,7 @@ Neural neworks are typically organized in layers. Layers are made up of a number
 Output = Non-linearity/Activation function on (Weighted vector of input + Bias) <br/>
 Loss function/Error = Based on Prediction & Actual values - for all the observations
 
-Feature crosses help linear models work in nonlinear problems but unfortunately it cannot solve all the real world problems. Neural Networks are an altrenative to feature crossong by combining features. Layers are used to combine features, another layer to combine our combinations and so on. <br/>
+Feature crosses help linear models work in nonlinear problems but unfortunately it cannot solve all the real world problems. Neural Networks are an alternative to feature crossing by combining features. Layers are used to combine features, another layer to combine our combinations and so on. <br/>
 
 Neural Networks can be arbitarily complex. To increase hidden dimensions, I can add NEURONS. To increase function composition, I can add LAYERS - mapping from original feature space to some new convoluted feature space. If I have multiple labels for example, I can add OUTPUTS. <br/>
 
