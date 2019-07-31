@@ -8,8 +8,9 @@ Demo http://text-machine.cs.uml.edu/cliner/demo/cgi-bin/cliner_demo.cgi/ </br>
 * Valx https://github.com/Tony-Hao/Valx </br>
 Demo http://columbiaelixr.appspot.com/valx </br>
 * Stanford NER https://nlp.stanford.edu/software/CRF-NER.html </br>
-Demo http://nlp.stanford.edu:8080/ner/process
-* PyUMLS
+Demo http://nlp.stanford.edu:8080/ner/process </br>
+Demo http://corenlp.run/ </br>
+* PyUMLS </br>
 
 ### Companies ###
 * Linguamatics
