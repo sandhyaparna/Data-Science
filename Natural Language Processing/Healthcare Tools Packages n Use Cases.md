@@ -54,6 +54,17 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5524149/ </br>
 * Session-based IR
 
 
+### Sample Data
+* Her vital signs the following day, she had heart rate of 66, blood pressure 120/63, respiratory rate 14, 100% on 5 liters nasal cannula O2 saturation
+* Dr. Nutritious </br>
+  Medical Nutrition Therapy for Hyperlipidemia </br>
+  Referral from: Julie Tester, RD, LD, CNSD </br>
+  Phone contact: (555) 555-1212 </br>
+  Height: 144 cm   Current Weight: 45 kg   Date of current weight: 02-29-2001   Admit Weight:  53 kg   BMI: 18 kg/m2 </br>
+  Diet: General </br>
+  Daily Calorie needs (kcals): 1500 calories, assessed as HB + 20% for activity. </br>
+  Daily Protein needs: 40 grams,  assessed as 1.0 g/kg. </br>
+  Pt has been on a 3-day calorie count and has had an average intake of 1100 calories.  She was instructed to drink 2-3 cans of liquid supplement to help promote weight gain.  She agrees with the plan and has my number for further assessment. May want a Resting Metabolic Rate as well. She takes an aspirin a day for knee pain. </br>
 
 
 
