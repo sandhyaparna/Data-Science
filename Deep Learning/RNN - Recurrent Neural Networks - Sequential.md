@@ -1,7 +1,10 @@
 ### Links
-http://colah.github.io/posts/2015-08-Understanding-LSTMs/ <br/>
-https://www.youtube.com/watch?list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI&v=_h66BW-xNgk <br/>
+Sequence Models by Andrew Ng https://www.coursera.org/learn/nlp-sequence-models/lecture/0h7gT/why-sequence-models <br/>
+MIT https://www.youtube.com/watch?list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI&v=_h66BW-xNgk <br/>
+
 LSTM http://blog.echen.me/ <br/> 
+LSTM http://colah.github.io/posts/2015-08-Understanding-LSTMs/ <br/>
+ 
 
 ### Applications
 * Sequential modeling - Predict next word in a sentence. To do sequence modeling, we need to:
