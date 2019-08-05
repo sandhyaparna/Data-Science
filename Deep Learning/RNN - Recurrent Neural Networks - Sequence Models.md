@@ -1,5 +1,6 @@
 ### Links
 Sequence Models by Andrew Ng https://www.coursera.org/learn/nlp-sequence-models/lecture/0h7gT/why-sequence-models <br/>
+Analytics Vidhya Notes https://www.analyticsvidhya.com/blog/2019/01/sequence-models-deeplearning/ <br/>
 MIT https://www.youtube.com/watch?list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI&v=_h66BW-xNgk <br/>
 
 LSTM http://blog.echen.me/ <br/> 
