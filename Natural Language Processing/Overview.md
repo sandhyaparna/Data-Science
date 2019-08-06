@@ -51,11 +51,11 @@ But how is this different than Python stemming? While stemming can create words 
 ### Feature Extraction
 https://towardsdatascience.com/understanding-feature-engineering-part-3-traditional-methods-for-text-data-f6f7d70acd41 <br/>
 https://towardsdatascience.com/understanding-feature-engineering-part-4-deep-learning-methods-for-text-data-96c44370bbfa <br/>
-##### Count Vectorization (Bag of words)
+#### Count Vectorization (Bag of words)
 Count Vector is a matrix notation of the dataset in which every row represents a document from the corpus, every column represents a term from the corpus, and every cell represents the frequency count of a particular term in a particular document
-##### N-Grams
+#### N-Grams
 An n-gram is a contiguous sequence of n items from a given sample of text or speech.
-##### TF-IDF
+#### TF-IDF
 TF-IDF score represents the relative importance of a term in the document and the entire corpus. TF-IDF score is composed by two terms: the first computes the normalized Term Frequency (TF), the second term is the Inverse Document Frequency (IDF), computed as the logarithm of the number of the documents in the corpus divided by the number of documents where the specific term appears <br/>
   TF(t) = (Number of times term t appears in a document) / (Total number of terms in the document) <br/>
   IDF(t) = log_e(Total number of documents / Number of documents with term t in it) <br/>
@@ -63,11 +63,11 @@ TF-IDF Vectors can be generated at different levels of input tokens (words, char
 * Word Level TF-IDF : Matrix representing tf-idf scores of every term in different documents
 * N-gram Level TF-IDF : N-grams are the combination of N terms together. This Matrix representing tf-idf scores of N-grams
 * Character Level TF-IDF : Matrix representing tf-idf scores of character level n-grams in the corpus
-##### Co-Occurence Matrix
+#### Co-Occurence Matrix
 Similar words tend to occur together and will have similar context <br/>
 Co-occurrence – For a given corpus, the co-occurrence of a pair of words say w1 and w2 is the number of times they have appeared together in a Context Window <br/>
 Context Window – Context window is specified by a number and the direction. So what does a context window of 2 (around) means? Let us see an example below <br/>
-##### Topic Modeling - LDA
+#### Topic Modeling - LDA
 https://www.analyticsvidhya.com/blog/2016/08/beginners-guide-to-topic-modeling-in-python/
 Topic models are extremely useful in summarizing large corpus of text documents to extract and depict key concepts. They are also useful in extracting features from text data that capture latent patterns in the data. <br/>
 Latent Dirichlet Allocation is the most popular topic modeling technique. Given a dataset of documents, LDA backtracks and tries to figure out what topics would create those documents in the first place. <br/>
@@ -77,16 +77,16 @@ M1 is a document-topics matrix and M2 is a topic–terms matrix with dimensions 
 * Number of Topics – Number of topics to be extracted from the corpus. Researchers have developed approaches to obtain an optimal number of topics by using Kullback Leibler Divergence Score.
 * Number of Topic Terms – Number of terms composed in a single topic. It is generally decided according to the requirement. If the problem statement talks about extracting themes or concepts, it is recommended to choose a higher number, if problem statement talks about extracting features or terms, a low number is recommended.
 * Number of Iterations / passes – Maximum number of iterations allowed to LDA algorithm for convergence.
-##### Document Clustering with Similarity Features 
+#### Document Clustering with Similarity Features 
 Built on top of Count Vectorized Matrix or TF-IDF matrix
 Hierarchical clustering
-##### Named Entity Recognition
+#### Named Entity Recognition
 Entities are defined as the most important chunks of a sentence – noun phrases, verb phrases or both. Entity Detection algorithms are generally ensemble models of rule based parsing, dictionary lookups, pos tagging and dependency parsing. The applicability of entity detection can be seen in the automated chat bots, content analyzers and consumer insights.<br/>
 A typical NER model consists of three blocks:<br/>
 * Noun phrase identification: This step deals with extracting all the noun phrases from a text using dependency parsing and part of speech tagging.<br/>
 * Phrase classification: This is the classification step in which all the extracted noun phrases are classified into respective categories (locations, names etc). Google Maps API provides a good path to disambiguate locations, Then, the open databases from dbpedia, wikipedia can be used to identify person names or company names. Apart from this, one can curate the lookup tables and dictionaries by combining information from different sources.<br/>
 * Entity disambiguation: Sometimes it is possible that entities are misclassified, hence creating a validation layer on top of the results is useful. Use of knowledge graphs can be exploited for this purposes. The popular knowledge graphs are – Google Knowledge Graph, IBM Watson and Wikipedia. <br/>
-##### Word2Vec
+#### Word2Vec
 https://code.google.com/archive/p/word2vec/ <br/>
 Word2Vec, GloVe <br/> 
 * Unsupervised learning algorithm and it works by predicting its context words by applying a two-layer neural network. 
@@ -108,7 +108,7 @@ Detained Neural network representation https://iksinc.online/tag/continuous-bag-
 https://www.analyticsvidhya.com/blog/2017/06/word-embeddings-count-word2veec/ <br/>
 https://www.datascience.com/resources/notebooks/word-embeddings-in-python <br/>
 
-###### Sentence Vectors
+#### Sentence Vectors
 https://medium.com/explorations-in-language-and-learning/how-to-obtain-sentence-vectors-2a6d88bd3c8b
 * Paragraph Vectors - a sentence vector can be learned simply by assigning an index to each sentence, and then treating the index like any other word.
 * Skip-thoughts
@@ -117,24 +117,24 @@ https://medium.com/explorations-in-language-and-learning/how-to-obtain-sentence-
 
 
 
-##### Doc2Vec
+#### Doc2Vec
 https://medium.com/scaleabout/a-gentle-introduction-to-doc2vec-db3e8c0cce5e <br/>
 https://medium.com/explorations-in-language-and-learning/how-to-obtain-sentence-vectors-2a6d88bd3c8b <br/>
 
 
 
-##### Continuous Bag-of-Words
+#### Continuous Bag-of-Words
 https://www.kdnuggets.com/2018/04/implementing-deep-learning-methods-feature-engineering-text-data-cbow.html
 Running CBOW is computationally expensive and works better if trained using a GPU. Guy in the above article used AWS p2.x instance with a Tesla K80 GPU and it took me close to 1.5 hours for just 5 epochs! <br/>
 
 
 
-##### Skip-Gram Model
+#### Skip-Gram Model
 http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/
 
-##### FastText
+#### FastText
 
-##### ELMo - Embeddings from Language Models
+#### ELMo - Embeddings from Language Models
 https://www.analyticsvidhya.com/blog/2019/03/learn-to-use-elmo-to-extract-features-from-text/ </br>
 ![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2019/03/output_YyJc8E.gif)
 * ELMo word vectors are computed on top of a two-layer bidirectional language model (biLM). This biML model has two layers stacked together. Each layer has 2 passes — forward pass and backward pass:
