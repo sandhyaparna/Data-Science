@@ -4,6 +4,7 @@ https://www.analyticsvidhya.com/blog/2018/11/reinforcement-learning-introduction
 https://www.analyticsvidhya.com/blog/2017/01/introduction-to-reinforcement-learning-implementation/ <br/>
 https://www.analyticsvidhya.com/blog/2018/09/reinforcement-learning-model-based-planning-dynamic-programming/ <br/>
 https://www.analyticsvidhya.com/blog/2018/09/reinforcement-multi-armed-bandit-scratch-python/ <br/>
+https://www.analyticsvidhya.com/blog/2016/12/getting-ready-for-ai-based-gaming-agents-overview-of-open-source-reinforcement-learning-platforms/ <br/>
 
 Monte Carlo learning <br/>
 Dynamic Learning <br/>
