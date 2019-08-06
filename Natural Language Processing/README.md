@@ -3,6 +3,7 @@
 * GloVe
 * BERT
 * XLNet
+* ConZNet - Deep reinforcement algorithm
 
 ### Libraries
 * Spark NLP
