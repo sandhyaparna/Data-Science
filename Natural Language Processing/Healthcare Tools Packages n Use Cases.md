@@ -12,6 +12,22 @@ Demo http://nlp.stanford.edu:8080/ner/process </br>
 Demo http://corenlp.run/ </br>
 * PyUMLS </br>
 
+### Relation Extractor
+https://arxiv.org/abs/1901.08746 </br>
+http://nlpprogress.com/english/relationship_extraction.html </br>
+https://sflscientific.com/data-science-blog/2015/12/11/natural-language-processing-information-extraction </br>
+https://towardsdatascience.com/conditional-random-field-tutorial-in-pytorch-ca0d04499463 </br>
+http://sameersingh.org/courses/statnlp/wi17/slides/lecture-0223-relation-extraction.pdf </br>
+http://deepdive.stanford.edu/relation_extraction </br>
+https://courses.cs.washington.edu/courses/cse517/13wi/slides/cse517wi13-RelationExtraction.pdf </br>
+https://github.com/UKPLab/emnlp2017-relation-extraction </br>
+https://www.nltk.org/book/ch07.html </br>
+http://www.nltk.org/howto/relextract.html </br>
+ </br>
+ </br>
+ </br>
+
+
 ### Companies ###
 * Linguamatics
 * Regenstrief Institute's nDepth
