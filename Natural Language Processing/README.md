@@ -1,9 +1,13 @@
-* PyTorch Transformers https://github.com/huggingface/pytorch-transformers
+### Blogs/Articles
+* http://ruder.io/
+
+### Algos
 * Word2Vec
 * GloVe
 * BERT
 * XLNet
 * ConZNet - Deep reinforcement algorithm
+* PyTorch Transformers https://github.com/huggingface/pytorch-transformers
 
 ### Libraries
 * Spark NLP
