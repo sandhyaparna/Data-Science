@@ -8,7 +8,10 @@ http://ruder.io/transfer-learning/index.html </br>
 * The conditional probability distributions of the source and target tasks are different, e.g. source and target documents are unbalanced with regard to their classes.
 
 ### Methods
-* 
+When there is large amounts of new data all the prameters in layers can be re-trained whereas if less data is available only the last layer can be initialized to random weigts
+* Pre-Training: Initial data set used to create a model
+* Fine-Tuning: Using new data on the pre-trained model
+
 
 
 
