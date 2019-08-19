@@ -12,6 +12,7 @@ Demo http://columbiaelixr.appspot.com/valx </br>
 Demo http://nlp.stanford.edu:8080/ner/process </br>
 Demo http://corenlp.run/ </br>
 * PyUMLS </br>
+* Clinspell: Clinical Spell Correction https://github.com/clips/clinspell
 
 ### Relation Extractor
 https://arxiv.org/abs/1901.08746 </br>
