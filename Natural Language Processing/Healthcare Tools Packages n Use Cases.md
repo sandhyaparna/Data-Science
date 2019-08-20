@@ -87,6 +87,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5524149/ </br>
   Pt has been on a 3-day calorie count and has had an average intake of 1100 calories.  She was instructed to drink 2-3 cans of liquid supplement to help promote weight gain.  She agrees with the plan and has my number for further assessment. May want a Resting Metabolic Rate as well. She takes an aspirin a day for knee pain. </br>
 * https://github.com/sandhyaparna/Python-DataScience-CookBook/blob/master/Natural%20Language%20Processing/Data/dates.txt
 * https://github.com/sandhyaparna/Python-DataScience-CookBook/blob/master/Natural%20Language%20Processing/Data/example%20data%20diabetes_Type%201.csv
+* - Her vital signs: heart rate of 66, blood pressure 120/63, respiratory rate 14, 100% on 5 liters nasal cannula O2 saturation#  - HbA1c less than or equal to 11.0%#
 
 
 
