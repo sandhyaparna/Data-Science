@@ -17,6 +17,7 @@
 * Spark NLP
 * spaCy
 * AllenNLP
+* FastText - FB's NLP lib
 
 ##### Less Accurate 
 * spaCy
