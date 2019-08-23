@@ -24,6 +24,7 @@
 * Stanford CoreNLP
 * nltk
 * OpenNLP
+" AllenAI scispacy
 
 
 
