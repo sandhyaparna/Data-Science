@@ -18,13 +18,14 @@
 * spaCy
 * AllenNLP
 * FastText - FB's NLP lib
+* AllenAI scispacy
 
 ##### Less Accurate 
 * spaCy
 * Stanford CoreNLP
 * nltk
 * OpenNLP
-" AllenAI scispacy
+
 
 
 
