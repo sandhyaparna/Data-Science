@@ -18,6 +18,7 @@
 * spaCy
 * AllenNLP
 * FastText - FB's NLP lib
+  * MOE model- misspelling oblivious embeddings
 * AllenAI scispacy
 
 ##### Less Accurate 
