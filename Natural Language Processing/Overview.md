@@ -177,7 +177,9 @@ Steps to compute BLEU score: <br/>
 2. Compute precision for n-grams of size 1 to 4
 3. Take the exponential of the weighted average of all those precision values 
 4. Multiply it with brevity penalty (will explain later)
-
+##### Banana Test
+https://towardsdatascience.com/introducing-the-banana-test-for-near-perfect-text-classification-models-ee333abfa31a
+* 
 
 
 Example NLP Pipeline
