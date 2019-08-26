@@ -5,6 +5,7 @@
 * Word2Vec
 * GloVe
 * BERT
+* Robustly optimized Bert pretraining approach
 * XLNet
 * ConZNet - Deep reinforcement algorithm
 * PyTorch Transformers https://github.com/huggingface/pytorch-transformers
