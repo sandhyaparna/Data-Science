@@ -109,6 +109,11 @@ Detained Neural network representation https://iksinc.online/tag/continuous-bag-
 https://www.analyticsvidhya.com/blog/2017/06/word-embeddings-count-word2veec/ <br/>
 https://www.datascience.com/resources/notebooks/word-embeddings-in-python <br/>
 
+#### GloVe
+https://towardsdatascience.com/comparing-word-embeddings-c2efd2455fe3 <br/>
+* GloVe brings up more infrequent similar words that the other models, which becomes quite overwhelming in the tail.
+
+
 #### Sentence Vectors
 https://medium.com/explorations-in-language-and-learning/how-to-obtain-sentence-vectors-2a6d88bd3c8b
 * Paragraph Vectors - a sentence vector can be learned simply by assigning an index to each sentence, and then treating the index like any other word.
