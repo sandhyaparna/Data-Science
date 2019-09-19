@@ -24,6 +24,9 @@ Complex models are bad. It is the process of adding a tuning parameter to a mode
   * 0 < α < ∞: how much we want to penalize the flexibility of our model.
 
 ### Stratified k-fold Cross-validation
+In cross-validation, the confusion matrix is from 10 diff models applied on 10 non-overlapping TEST data. It is used to evaluate model but the model that we get from cross-validation is the model built on entire training data </br>
+
+
 Cross-validation, it’s a model validation techniques for assessing how the results of a statistical analysis (model) will generalize to an independent data set. It is mainly used in settings where the goal is prediction, and one wants to estimate how accurately a predictive model will perform in practice.
 * Validation help us evaluate the quality of the model
 * Validation help us select the model which will perform best on unseen data
