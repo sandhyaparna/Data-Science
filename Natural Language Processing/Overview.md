@@ -92,6 +92,7 @@ A typical NER model consists of three blocks:<br/>
 
 #### Word2Vec
 https://code.google.com/archive/p/word2vec/ <br/>
+Use Negative sampling to train word2vec efficiently http://mccormickml.com/2017/01/11/word2vec-tutorial-part-2-negative-sampling/ <br/>
 Word2Vec, GloVe <br/> 
 * Unsupervised learning algorithm and it works by predicting its context words by applying a two-layer neural network. 
 * Converts words to a meaningful numeric value <br/>
