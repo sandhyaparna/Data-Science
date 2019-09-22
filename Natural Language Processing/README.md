@@ -2,7 +2,7 @@
 * http://ruder.io/
 
 ### Algos
-* Word2Vec
+* Word2Vec - Distributed representations
 * GloVe
 * BERT
 * Robustly optimized Bert pretraining approach
