@@ -78,15 +78,18 @@ M1 is a document-topics matrix and M2 is a topic–terms matrix with dimensions 
 * Number of Topics – Number of topics to be extracted from the corpus. Researchers have developed approaches to obtain an optimal number of topics by using Kullback Leibler Divergence Score.
 * Number of Topic Terms – Number of terms composed in a single topic. It is generally decided according to the requirement. If the problem statement talks about extracting themes or concepts, it is recommended to choose a higher number, if problem statement talks about extracting features or terms, a low number is recommended.
 * Number of Iterations / passes – Maximum number of iterations allowed to LDA algorithm for convergence.
+
 #### Document Clustering with Similarity Features 
 Built on top of Count Vectorized Matrix or TF-IDF matrix
 Hierarchical clustering
+
 #### Named Entity Recognition
 Entities are defined as the most important chunks of a sentence – noun phrases, verb phrases or both. Entity Detection algorithms are generally ensemble models of rule based parsing, dictionary lookups, pos tagging and dependency parsing. The applicability of entity detection can be seen in the automated chat bots, content analyzers and consumer insights.<br/>
 A typical NER model consists of three blocks:<br/>
 * Noun phrase identification: This step deals with extracting all the noun phrases from a text using dependency parsing and part of speech tagging.<br/>
 * Phrase classification: This is the classification step in which all the extracted noun phrases are classified into respective categories (locations, names etc). Google Maps API provides a good path to disambiguate locations, Then, the open databases from dbpedia, wikipedia can be used to identify person names or company names. Apart from this, one can curate the lookup tables and dictionaries by combining information from different sources.<br/>
 * Entity disambiguation: Sometimes it is possible that entities are misclassified, hence creating a validation layer on top of the results is useful. Use of knowledge graphs can be exploited for this purposes. The popular knowledge graphs are – Google Knowledge Graph, IBM Watson and Wikipedia. <br/>
+
 #### Word2Vec
 https://code.google.com/archive/p/word2vec/ <br/>
 Word2Vec, GloVe <br/> 
@@ -94,6 +97,7 @@ Word2Vec, GloVe <br/>
 * Converts words to a meaningful numeric value <br/>
 * Based on the assumption that the meaning of a word can be inferred by the company it keeps
 * word2vec representation is created using 2 algorithms: Continuous Bag-of-Words model (CBOW) and the Skip-Gram model. <br/>
+* word embedding dimension is determined by computing (in an unsupervised manner) the accuracy of the prediction
 Algorithmically, these models are similar, except that CBOW predicts target words (e.g. 'mat') from source context words ('the cat sits on the') i.e 'predicting the word given its context' , while the skip-gram does the inverse and predicts source context-words from the target words i.e 'predicting the context given a word'. <br/>
 
 Training of Word2vec on Wiki Corpus https://medium.com/@maxminicherrycc/word2vec-how-to-train-and-update-it-4eed4260cf75 <br/>
