@@ -1,4 +1,7 @@
 ### Tools n Packages
+* Valx https://github.com/Tony-Hao/Valx </br>
+Demo http://columbiaelixr.appspot.com/valx </br>
+* Disease Extraction - https://ii-public1.nlm.nih.gov/metamaplite/rest https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5884681/
 * SciSpacy https://github.com/allenai/scispacy </br>
   * https://colab.research.google.com/drive/1sSk6PDqosn7ozSZUZj4LW5HoRypmNKug#scrollTo=q85ziDCOLU-t
 * UMLS
@@ -8,8 +11,6 @@
 * CliNER https://github.com/text-machine-lab/CliNER </br>
 Demo http://text-machine.cs.uml.edu/cliner/demo/cgi-bin/cliner_demo.cgi/ </br>
 * medaCy - Similar to Spacy https://github.com/NLPatVCU/medaCy </br>
-* Valx https://github.com/Tony-Hao/Valx </br>
-Demo http://columbiaelixr.appspot.com/valx </br>
 * Stanford NER https://nlp.stanford.edu/software/CRF-NER.html </br>
 Demo http://nlp.stanford.edu:8080/ner/process </br>
 Demo http://corenlp.run/ </br>
