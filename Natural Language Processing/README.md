@@ -1,7 +1,7 @@
 ### Blogs/Articles
 * http://ruder.io/
 
-### Algos
+### Language Models
 * Word2Vec - Distributed representations
 * GloVe
 * ELMo
@@ -10,7 +10,7 @@
 * XLNet
 * ALBERT - A Lite BERT
 
-
+## Algos
 * ConZNet - Deep reinforcement algorithm
 * PyTorch Transformers https://github.com/huggingface/pytorch-transformers
 
