@@ -94,12 +94,12 @@ A typical NER model consists of three blocks:<br/>
 https://code.google.com/archive/p/word2vec/ <br/>
 Use Negative sampling to train word2vec efficiently http://mccormickml.com/2017/01/11/word2vec-tutorial-part-2-negative-sampling/ <br/>
 Word2Vec, GloVe <br/> 
-* Unsupervised learning algorithm and it works by predicting its context words by applying a two-layer neural network. 
+* Unsupervised learning algorithm and it works by predicting its context words by applying a two-layer neural network. Word2vec/Gove gives only one numeric representation for a word regardless of the diff meanings that they may have.
 * Converts words to a meaningful numeric value <br/>
 * Based on the assumption that the meaning of a word can be inferred by the company it keeps
 * word2vec representation is created using 2 algorithms: Continuous Bag-of-Words model (CBOW) and the Skip-Gram model. <br/>
-* word embedding dimension is determined by computing (in an unsupervised manner) the accuracy of the prediction
 Algorithmically, these models are similar, except that CBOW predicts target words (e.g. 'mat') from source context words ('the cat sits on the') i.e 'predicting the word given its context' , while the skip-gram does the inverse and predicts source context-words from the target words i.e 'predicting the context given a word'. <br/>
+* word embedding dimension is determined by computing (in an unsupervised manner) the accuracy of the prediction
 
 Training of Word2vec on Wiki Corpus https://medium.com/@maxminicherrycc/word2vec-how-to-train-and-update-it-4eed4260cf75 <br/>
 Train and Update Word2vec https://medium.com/@maxminicherrycc/word2vec-how-to-train-and-update-it-4eed4260cf75 <br/>
@@ -148,6 +148,7 @@ http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/
 #### ELMo - Embeddings from Language Models
 https://www.analyticsvidhya.com/blog/2019/03/learn-to-use-elmo-to-extract-features-from-text/ </br>
 ![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2019/03/output_YyJc8E.gif)
+* ELMo and BERT can generate diff word embeddings for a word that captures the context of a word - tha is its position in a sentence
 * ELMo word vectors are computed on top of a two-layer bidirectional language model (biLM). This biML model has two layers stacked together. Each layer has 2 passes — forward pass and backward pass:
   * The architecture above uses a character-level convolutional neural network (CNN) to represent words of a text string into raw word vectors
   * These raw word vectors act as inputs to the first layer of biLM
