@@ -90,6 +90,12 @@ A typical NER model consists of three blocks:<br/>
 * Phrase classification: This is the classification step in which all the extracted noun phrases are classified into respective categories (locations, names etc). Google Maps API provides a good path to disambiguate locations, Then, the open databases from dbpedia, wikipedia can be used to identify person names or company names. Apart from this, one can curate the lookup tables and dictionaries by combining information from different sources.<br/>
 * Entity disambiguation: Sometimes it is possible that entities are misclassified, hence creating a validation layer on top of the results is useful. Use of knowledge graphs can be exploited for this purposes. The popular knowledge graphs are – Google Knowledge Graph, IBM Watson and Wikipedia. <br/>
 
+#### Diff between word2vec, Glove, ELMo, BERT
+* WOrd2vec and Glove are context independent. One word has only 1 vector. We cam just use vectors from the words to apply it to our new data
+* ELMo & BERT are context dependent. So, instead of just the vectors for the words we need the Training model as well
+![](https://qph.fs.quoracdn.net/main-qimg-b46d83b2eee2d5875f469b22a494db6e)
+
+
 #### Word2Vec
 https://code.google.com/archive/p/word2vec/ <br/>
 Use Negative sampling to train word2vec efficiently http://mccormickml.com/2017/01/11/word2vec-tutorial-part-2-negative-sampling/ <br/>
