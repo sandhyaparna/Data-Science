@@ -4,9 +4,13 @@
 ### Algos
 * Word2Vec - Distributed representations
 * GloVe
+* ELMo
 * BERT
-* Robustly optimized Bert pretraining approach
+* RoBERTa - Robustly optimized Bert pretraining approach
 * XLNet
+* ALBERT - A Lite BERT
+
+
 * ConZNet - Deep reinforcement algorithm
 * PyTorch Transformers https://github.com/huggingface/pytorch-transformers
 
