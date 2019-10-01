@@ -149,6 +149,7 @@ http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/
 https://www.analyticsvidhya.com/blog/2019/03/learn-to-use-elmo-to-extract-features-from-text/ </br>
 ![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2019/03/output_YyJc8E.gif)
 * ELMo and BERT can generate diff word embeddings for a word that captures the context of a word - tha is its position in a sentence
+* ELMo uses LSTMs
 * ELMo word vectors are computed on top of a two-layer bidirectional language model (biLM). This biML model has two layers stacked together. Each layer has 2 passes — forward pass and backward pass:
   * The architecture above uses a character-level convolutional neural network (CNN) to represent words of a text string into raw word vectors
   * These raw word vectors act as inputs to the first layer of biLM
@@ -162,7 +163,8 @@ As the input to the biLM is computed from characters rather than words, it captu
   * Word 'read' can be used as verb in present as well as past tense. Traditional word embeddings come up with same vector for the word 'read' in both the sentences. ELMo word vectors successfully address this issue.
 * ELMo word representations take the entire input sentence into equation for calculating the word embeddings. Hence, the term “read” would have different ELMo vectors under different context.
   
-
+#### BERT 
+* BERT uses Transformer - an attention based model with positional encodings to represent word positions
 
 
 
