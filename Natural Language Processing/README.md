@@ -10,7 +10,7 @@
 * XLNet
 * ALBERT - A Lite BERT
 
-## Algos
+### Algos
 * ConZNet - Deep reinforcement algorithm
 * PyTorch Transformers https://github.com/huggingface/pytorch-transformers
 
