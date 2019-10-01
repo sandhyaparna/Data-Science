@@ -91,9 +91,11 @@ A typical NER model consists of three blocks:<br/>
 * Entity disambiguation: Sometimes it is possible that entities are misclassified, hence creating a validation layer on top of the results is useful. Use of knowledge graphs can be exploited for this purposes. The popular knowledge graphs are – Google Knowledge Graph, IBM Watson and Wikipedia. <br/>
 
 #### Diff between word2vec, Glove, ELMo, BERT
-* WOrd2vec and Glove are context independent. One word has only 1 vector. We cam just use vectors from the words to apply it to our new data
-* ELMo & BERT are context dependent. So, instead of just the vectors for the words we need the Training model as well
 ![](https://qph.fs.quoracdn.net/main-qimg-b46d83b2eee2d5875f469b22a494db6e)
+* Word2vec and Glove are context independent. One word has only 1 vector. We cam just use vectors from the words to apply it to our new data
+* ELMo & BERT are context dependent. So, instead of just the vectors for the words we need the Training model as well
+
+
 
 
 #### Word2Vec
@@ -156,6 +158,7 @@ https://www.analyticsvidhya.com/blog/2019/03/learn-to-use-elmo-to-extract-featur
 ![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2019/03/output_YyJc8E.gif)
 * ELMo and BERT can generate diff word embeddings for a word that captures the context of a word - tha is its position in a sentence
 * ELMo uses LSTMs
+* ELMo is a charcater based model using character convolutions and can handle out of vocab words 
 * ELMo word vectors are computed on top of a two-layer bidirectional language model (biLM). This biML model has two layers stacked together. Each layer has 2 passes — forward pass and backward pass:
   * The architecture above uses a character-level convolutional neural network (CNN) to represent words of a text string into raw word vectors
   * These raw word vectors act as inputs to the first layer of biLM
@@ -171,7 +174,7 @@ As the input to the biLM is computed from characters rather than words, it captu
   
 #### BERT 
 * BERT uses Transformer - an attention based model with positional encodings to represent word positions
-
+* BERT represents inputs as subwords and learns embeddings from subwords
 
 
 
