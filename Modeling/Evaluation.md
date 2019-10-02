@@ -2,6 +2,10 @@
 Evaluation Metrics https://www.machinelearningplus.com/machine-learning/evaluation-metrics-classification-models-r/ <br/>
 Cost Function https://towardsdatascience.com/model-performance-cost-functions-for-classification-models-a7b1b00ba60 <br/>
 
+### Confidence(1) for model output
+* Decision tree: (probability/Confidence is number of 1s in that path) / (Total population in that path)
+* Ensemble Models: Probabilities can be calculated by the proportion of decision trees which vote for each class
+
 ### Healthcare
 * In healthcare imprecise predictions such as False-positives can overwhelm physicians, nurses, and other providers with false alarms. whereas False-negative predictions can miss significant numbers of clinically important events, leading to poor clinical outcomes.
 * Micro-F1 score metric is used when a prediction has more than a single outcome
