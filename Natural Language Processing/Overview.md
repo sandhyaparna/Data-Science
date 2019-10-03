@@ -174,7 +174,12 @@ As the input to the biLM is computed from characters rather than words, it captu
   
 #### BERT 
 * BERT uses Transformer - an attention based model with positional encodings to represent word positions
+* BERT is the first unsupervised, deeply bidirectional system for pre-training NLP
+* 
 * BERT represents inputs as subwords and learns embeddings from subwords
+
+#### XLNet
+* 
 
 
 
