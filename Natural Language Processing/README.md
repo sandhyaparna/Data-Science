@@ -1,9 +1,10 @@
 ### Blogs/Articles
 * http://ruder.io/
 
-### Language Models
+### NLP Frameworks
 * Word2Vec - Distributed representations
 * GloVe
+* ULMFit
 * ELMo
 * BERT
 * RoBERTa - Robustly optimized Bert pretraining approach
