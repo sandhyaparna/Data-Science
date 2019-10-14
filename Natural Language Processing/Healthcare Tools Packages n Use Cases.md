@@ -6,6 +6,8 @@ Demo http://columbiaelixr.appspot.com/valx </br>
   * https://colab.research.google.com/drive/1sSk6PDqosn7ozSZUZj4LW5HoRypmNKug#scrollTo=q85ziDCOLU-t
 * UMLS 
   * UMLS Terminology Services https://uts.nlm.nih.gov/metathesaurus.html;jsessionid=9E3CEB9102EB724EA13204C883CAB7F6#C0005823;0;2;CUI;2019AA;EXACT_MATCH;CUI;*;
+  * UMLS csv files https://github.com/maastroclinic/umls-csv-concept-integration
+  * 
 * ClarityNLP (Clarity.NamedEntityRecognition) https://buildmedia.readthedocs.org/media/pdf/claritynlp/latest/claritynlp.pdf </br>
 * Apache cTAKES https://clinfowiki.org/wiki/index.php/CTAKES </br>
 * I-MAGIC tool for SNOMED CT to ICD-10 Map https://imagic.nlm.nih.gov/imagic2/code/map?v=5&js=true&pabout=&pinstructions=&init-params=&pat=My+Patient+%28modified%29&pat.init=My+Patient+%28modified%29&q.f=&q.dob=&p=2a0333c3zd3542e10&p.2a0333c3zd3542e10.e=Respiratory+distress+secondary+to+transient+tachypnea+of+the+newborn&p.2a0333c3zd3542e10.o=Respiratory+distress+secondary+to+transient+tachypnea+of+the+newborn&pdone=Get+ICD+Codes&qadd= </br>
