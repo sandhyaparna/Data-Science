@@ -51,6 +51,8 @@ When data is missing in the Numeric column - For that column create a new extra 
 
 ### Date and Time
 * Day of the week
+* Month of Booking
+* Year of Booking
 * Time based Features like "Evening", "Noon", "Night", "Purchases_last_month", "Purchases_last_week" etc.
 * Is weekend or not
 * Was the date the end of a quarter?, Was the day a holiday?, Were the Olympics/Rare events taking place on said date?
