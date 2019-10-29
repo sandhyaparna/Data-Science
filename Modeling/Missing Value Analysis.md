@@ -18,7 +18,6 @@ https://medium.freecodecamp.org/the-penalty-of-missing-values-in-data-science-91
    * Chnace of over-fitting a model using this data is less compared to hard imputing with mean, median or mode
    * Calculate Probability & Expected value -https://www.freecodecamp.org/news/the-penalty-of-missing-values-in-data-science-91b756f95a32/
    
-  
 ### Techniques
 * Mean is not used
 
