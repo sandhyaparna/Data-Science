@@ -33,6 +33,8 @@
 * nltk
 * OpenNLP
 
+#### LinkedIn
+https://www.linkedin.com/posts/stevenouri_natural-language-processing-nlp-with-python-ugcPost-6594922762333229056-tHXk
 
 
 
