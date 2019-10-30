@@ -26,6 +26,14 @@ The algorithm consists of three stages.
   * Analysis: Analyze each of the m completed data sets.
   * Pooling: Integrate the m analysis results into a final result
 * DataWig learns Machine Learning models to impute missing values in tables.
+* Feature Hashing - The logic by which a hash is calculated depends on the hash function itself, but all hash functions share the same common characteristics:
+  * If we feed the same input to a hash function, it will always give the same output.
+  * The choice of hash function determines the range of possible outputs, i.e. the range is always fixed (e.g. numbers from 0 to 1024).
+  * Hash functions are one-way: given a hash, we can’t perform a reverse lookup to determine what the input was.
+  * Hash functions may output the same value for different inputs (collision).
+
+
+
 
 ### Techniques
 * Mean is not used
