@@ -16,7 +16,7 @@
   * Data Type: Numeric, Character - How can you encode?
 * Univariate, Bivariate analysis
 * Look for bad data - for eg in Gender variable if there is something like 63.9 - we can assume it is bad data and set to missing. Or sometimes missing data might be represented by a different number like 99 all together
-* Duplicate values - For eg: Visit ID may be unique to a hospital, but when we use diff hospitals there might be duplicates in Visit ID. So, create a new Unique Identifier - Concatenation of Client/Hospital ID and Visit ID.
+* Duplicate values - For eg: Visit ID may be unique to a hospital, but when we use diff hospitals there might be duplicates in Visit ID. So, create a new Unique Identifier - Concatenation of Client/Hospital ID and Visit ID. Duplicate rows may actually be present.
 * Missing value treatment
 * Outlier treatmnet
 * Variable transformation, creation, feature engineering
