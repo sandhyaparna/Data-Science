@@ -45,7 +45,9 @@ When data is missing in the Numeric column - For that column create a new extra 
     * Information Value (IV) = Σ (Event% - NonEvent%) * WOE   
   * Way Catboost deals with categories - https://catboost.ai/docs/concepts/algorithm-main-stages_cat-to-numberic.html
   * Embeddings  
-
+* Cyclical Features - day, week, month, year
+  * CosSin encoding
+  
 ### Binary Variables
 
 
