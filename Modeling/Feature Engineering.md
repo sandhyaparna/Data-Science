@@ -73,7 +73,8 @@ result: 0.517
 ### Time Series
 Generates automatic feature engineering for time series data - https://github.com/blue-yonder/tsfresh <br/>
 https://tsfresh.readthedocs.io/en/latest/text/list_of_features.html <br/>
-
+* lag features - 1,2,3,5,12 months - https://github.com/anhquan0412/Predict_Future_Sales/blob/master/generate_lag_features.ipynb
+* Holiday Boolean features 
 
 ### Web data
 * operating system
