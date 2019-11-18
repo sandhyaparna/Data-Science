@@ -38,7 +38,8 @@ Range, IQR, Variance, Standard Deviation are measures of Variance <br/>
 ![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/04/30195702/Stats1.png)
 
 ###### Graphical Representations
-* Box plot
+* Box plot <br/>
+https://www.kdnuggets.com/2019/11/understanding-boxplots.html <br/>
 Difference between box plot and modified box plot - Box plot has min and Max, Modiified box plot has lower fence(1st Quartile-1.5IQR) and Upper fence (3rd Quartile+1.5IQR) (fences are whiskers), points outside whiskers are outliers
 * Histogram
 
