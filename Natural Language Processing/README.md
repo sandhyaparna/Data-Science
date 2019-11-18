@@ -1,6 +1,16 @@
 ### Blogs/Articles
 * http://ruder.io/
 
+### Applications
+* Spam Detection
+* POS Tagging
+* Sentiment Analyzer
+* Machine Translation
+* Latent Semantic Analysis (LSA)
+* Article Spinning
+* Machine Conversations
+* Paraphrasing and summarization
+
 ### NLP Frameworks
 * Word2Vec - Distributed representations
 * GloVe
