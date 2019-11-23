@@ -2,6 +2,12 @@
 http://ruder.io/transfer-learning/index.html </br>
 
 ### Scenarios
+* Transductive learning
+  * Domain learning - learning under domain shift
+  * Diff languages - cross lingual learning
+* Inductive Transfer
+  * Multi-task learning
+  * Continual learning
 * The feature spaces of the source and target domain are different, e.g. the documents are written in two different languages.
 * The marginal probability distributions of source and target domain are different, e.g. the documents discuss different topics. 
 * The label spaces between the two tasks are different, e.g. documents need to be assigned different labels in the target task.
