@@ -1,6 +1,8 @@
 Data Pre-processing http://www.cs.ccsu.edu/~markov/ccsu_courses/datamining-3.html 
 
 * Generalization is very imp - Can be done using regularization
+* Choose dev and test sets to reflect data you expect to get in the future
+and want to do well on. Test set should not simply be 30% of the available data, try creating data that approximates what you expect to get in the future
 * The main side-effect of creating a Target variable using data is you introduce bias in the model, for eg-Sepsis def has one of its condition as SBP<90, so using SBP fetaures within feature engineering introduces bias like - if SBP>90 the SEPSIS is present bacause for Sepsis cases if at all SBP<90 that time is taken as their TOP and hence bias is introduced bacause of creating our Target based on conditions
 * Different thresholds can be used for different groups
 * Our model should be compared with other model performances - SIRS, MEWS, SOFA, Q-SOFA for Sepsis
@@ -29,7 +31,7 @@ Data Pre-processing http://www.cs.ccsu.edu/~markov/ccsu_courses/datamining-3.htm
 
 
 #### Personalization:
-* What locations/beds are there ina hospital.
+* What locations/beds are there in a hospital.
 * How are coma patients' vital/lab details taken. How do you monitor a coma patient
 * In what units is Temp/Vitals signs taken?
 * What details do Vigi gets froma client? - If we dont get a particular vital sign values, we cannot include that in our model
