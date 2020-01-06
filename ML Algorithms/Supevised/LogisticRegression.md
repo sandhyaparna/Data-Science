@@ -2,6 +2,9 @@
 https://www.saedsayad.com/logistic_regression.htm <br/>
 https://www.kdnuggets.com/2019/01/logistic-regression-concise-technical-overview.html <br/>
 
+In logistic regression, linear combination of inputs are mapped to log odds  <br/>
+logit(p) = ln(p/(1-p)) = b0+b1X1+b2X2+b3X3....+bkXk <br/>
+
 ### Interpretation of Categorical and Continuous vars of a Logistic Reg
 Odds Ratio = p/(1-p)
 * For each predictor u get p-value and OddsRatio=exp(Xi). Xi is coeff. Odds ratio gre than 1 implies positive relation
