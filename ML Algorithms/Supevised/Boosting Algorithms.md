@@ -28,6 +28,9 @@ http://zhanpengfang.github.io/418home.html
 * Built-in Cross-Validation - XGBoost allows user to run a cross-validation at each iteration of the boosting process and thus it is easy to get the exact optimum number of boosting iterations in a single run. This is unlike GBM where we have to run a grid-search and only a limited values can be tested
 * But give lots and lots of data even XGBoost takes long time to train
 
+### Diff between XGBoost, LightGBM, catboot using example and code
+https://towardsdatascience.com/catboost-vs-light-gbm-vs-xgboost-5f93620723db
+
 ### LightGBM
 https://www.analyticsvidhya.com/blog/2017/06/which-algorithm-takes-the-crown-light-gbm-vs-xgboost/
 * Light GBM uses Gradient based one side sampling
