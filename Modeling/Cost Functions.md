@@ -6,7 +6,7 @@
 ### Classification
 * Logloss - For Binary
 * Cross Entropy - For Multi-class
-* Both Logloss & Cross ENtropy are essentially the same
+* Both Logloss & Cross Entropy are essentially the same
 
 ##### Logloss
 https://towardsdatascience.com/understanding-binary-cross-entropy-log-loss-a-visual-explanation-a3ac6025181a </br>
