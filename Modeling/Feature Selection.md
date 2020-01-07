@@ -14,7 +14,7 @@ Filter, Wrapper Methods https://www.analyticsvidhya.com/blog/2016/12/introductio
 ### Feature reduction techniques: Numeric & Categorical - Domain dependent
 https://towardsdatascience.com/a-feature-selection-tool-for-machine-learning-in-python-b64dd23710f0 </br>
 * Missing value ratio
-* Low Variance filter
+* Low Variance filter - Variance Threshold
 * Remove highly correlated variables
 * Regularization - Lasso
 * Forward slection, Backward Selection, Stepwise Selection
