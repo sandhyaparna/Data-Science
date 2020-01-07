@@ -16,4 +16,7 @@
 * High Bias and High Variance: Trainset error = 15%, Validation Set error = 30%
 * Low Bias and Low Variance: Train set error = 0.5%, Validation Set error = 1%
 
+### ML algos
+* The k-nearest neighbours algorithm has low bias and high variance, but the trade-off can be changed by increasing the value of k which increases the number of neighbours that contribute to the prediction and in turn increases the bias of the model.
+* The support vector machine algorithm has low bias and high variance, but the trade-off can be changed by increasing the C parameter that influences the number of violations of the margin allowed in the training data which increases the bias but decreases the variance.
  <br/>
