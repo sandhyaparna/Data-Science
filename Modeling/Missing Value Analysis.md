@@ -37,7 +37,7 @@ The algorithm consists of three stages.
 
 ### Techniques
 * Mean is not used
-* Do Nothing or create a new category for missing in Categorical data
+* Do Nothing or create a new category for missing in Categorical data - Is_missing_or_not column and then impute the original var with the missing values
 * 
 
 
