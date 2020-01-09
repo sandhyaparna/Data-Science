@@ -6,7 +6,7 @@ https://machinelearningmastery.com/tactics-to-combat-imbalanced-classes-in-your-
 https://www.analyticsvidhya.com/blog/2017/03/imbalanced-classification-problem/ <br/>
 
 TEST nor VALIDATION set should never be undersampled or over-sampled. Only Training data should be over-sampled/under-sampled <br/>
-Perform oversampling during cross-validation, i.e. for each fold, oversampling is performed before training, and this process is repeated for each fold. 
+Perform oversampling during cross-validation, i.e. for each fold, oversampling is performed before training, and this process is repeated for each fold.- https://www.researchgate.net/publication/328315720_Cross-Validation_for_Imbalanced_Datasets_Avoiding_Overoptimistic_and_Overfitting_Approaches <br/>
 
 ### Disadvantages of Imbalanced data set:
 A few classifier algorithms have bias towards classes that have more number of instances.They tend to only predict the majority class data.
