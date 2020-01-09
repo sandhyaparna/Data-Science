@@ -1,3 +1,5 @@
+https://github.com/hse-aml/competitive-data-science
+
 # ML Algos
 * Linear - Logistic Regression, SVM
   * Good for Sparse High Dimensional data
@@ -19,7 +21,7 @@ items           = pd.read_csv(os.path.join(DATA_FOLDER, 'items.csv'))
 item_categories = pd.read_csv(os.path.join(DATA_FOLDER, 'item_categories.csv'))
 shops           = pd.read_csv(os.path.join(DATA_FOLDER, 'shops.csv'))
 
-
+### 
 
 
 
