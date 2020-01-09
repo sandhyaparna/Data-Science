@@ -21,6 +21,27 @@ https://googlecoursera.qwiklabs.com/focuses/25429?locale=en <br/>
 * Size of validation set within cross-validation is dependent on the overall data and model that you are training. Some models need substantial data to train upon, so in this case you would optimize for the larger training sets. Models with very few hyperparameters will be easy to validate and tune, so you can probably reduce the size of your validation set, but if your model has many hyperparameters, you would want to have a large validation set as well(although you should also consider cross validation). Also, if you happen to have a model with no hyperparameters or ones that cannot be easily tuned, you probably don’t need a validation set too!
 * A final deployement model is built based on both Train & Test but we report only Test set performance to finally show how a model is performing
 
-
+### Schemes
+* Holdout scheme:
+  * Split TRAIN data into two parts: partA and partB.
+  * Fit the model on partA, predict for partB.
+  * Use predictions for partB for estimating model quality. Find such hyper-parameters, that quality on partB is maximized.
+  * If we have enough data, and we're likely to get similar scores and optimal model's parameters for different splits, we can go with Holdout
+  
+* K-Fold scheme:
+  * Split train data into K folds.
+  * Iterate though each fold: retrain the model on all folds except current fold, predict for the current fold.
+  * Use the predictions to calculate quality on each fold. Find such hyper-parameters, that quality on each fold is maximized. You can also estimate mean and variance of the loss. This is very helpful in order to understand significance of improvement.
+  * If on the contrary, scores and optimal parameters differ for different splits, we can choose KFold approach. 
+  
+* LOO (Leave-One-Out) scheme:
+  * Iterate over samples: retrain the model on all samples except current sample, predict for the current sample. You will need to retrain the model N times (if N is the number of samples in the dataset).
+  * In the end you will get LOO predictions for every sample in the trainset and can calculate loss.
+  * if we too little data, we can apply leave-one-out.
+  
+### Stratified Sampling
+* Small data
+* Imbalanced data
+* MultiClass classification
 
 
