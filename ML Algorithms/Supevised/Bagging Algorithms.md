@@ -12,6 +12,11 @@ https://www.analyticsvidhya.com/blog/2016/04/complete-tutorial-tree-based-modeli
 * A group of weak models combine to form a powerful model. Predictions are made on the test sample (test sample is passed through each individual tree) based on aggregating the results from each individual tree
 * Handles large data set with higher dimensionality.
 * It usually has high accuracy on the training population and hence might over fit the model on the data.
+##### Random Forest is a poor choice when
+* Random forests don't train well on smaller datasets
+* There is a problem of interpretability with random forest.
+* Time taken to train random forests may sometimes be too huge as you train multiple decision trees
+* In the case of a regression problem, the range of values response variable can take is determined by the values already available in the training dataset.
 
 ### Regularized Greedy Forests
 https://arxiv.org/pdf/1109.0887.pdf
