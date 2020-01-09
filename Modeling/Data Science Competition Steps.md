@@ -6,11 +6,13 @@ https://github.com/hse-aml/competitive-data-science
 * EDA
   * Domain knowledge, Understanding how data was generated, check if data agrees with our domain knowledge
   * Anonymized data - Guess meaning of columns, types of column. Explore feature relations - relations between pairs or find feature groups
-  * Visualization - Histograms, plots(index vs values) - plt.plot(x,'.'), stats. Scatter plots - pd.scatter_matrix(df), Correlation plots - df.corr(). Groups - plt.matshow(..); df.mean().plot(style='.'); df.mean().sort_values().plot(style='.')
+  * Visualization - Histograms, plots(index vs values) - plt.plot(x,'.'), stats. Scatter plots - pd.scatter_matrix(df), Correlation (sorted) plots - df.corr(). Groups - plt.matshow(..); df.mean().plot(style='.'); df.mean().sort_values().plot(style='.')
     * If there is a peak at mean value - it can imply that organizers imputed missing value with mean
     * color coded can be based on 
   * Cleaning - Constant features, Duplicated features - cat features can also be identical but their levels have diff names , Duplicated rows 
     * Duplicated cat feat - for f in cat_features: Df[f] = raintest[f].factorize()
+    * Duplicate rows - 
+  * Check if dataset is shuffled - 
 * Validation
 * Data-Leakages
 
