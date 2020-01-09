@@ -1,4 +1,5 @@
 ### Problem Statement
+* Understanding Problem, Problem formalization
 * Scope of the model - Model predicts 6hrs before onset of a disease, Before making the decision of discharge at a hospital
 * What is time period that is looked at while creating observations for Target & Non-Target population
 
