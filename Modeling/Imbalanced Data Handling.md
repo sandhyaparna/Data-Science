@@ -5,7 +5,7 @@ https://www.kdnuggets.com/2017/06/7-techniques-handle-imbalanced-data.html <br/>
 https://machinelearningmastery.com/tactics-to-combat-imbalanced-classes-in-your-machine-learning-dataset/ <br/>
 https://www.analyticsvidhya.com/blog/2017/03/imbalanced-classification-problem/ <br/>
 
-Test set should never be undersampled or over-sampled <br/>
+TEST nor VALIDATION set should never be undersampled or over-sampled. Only Training data should be over-sampled/under-sampled <br/>
 
 ### Disadvantages of Imbalanced data set:
 A few classifier algorithms have bias towards classes that have more number of instances.They tend to only predict the majority class data.
