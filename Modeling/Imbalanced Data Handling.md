@@ -6,6 +6,7 @@ https://machinelearningmastery.com/tactics-to-combat-imbalanced-classes-in-your-
 https://www.analyticsvidhya.com/blog/2017/03/imbalanced-classification-problem/ <br/>
 
 TEST nor VALIDATION set should never be undersampled or over-sampled. Only Training data should be over-sampled/under-sampled <br/>
+Perform oversampling during cross-validation, i.e. for each fold, oversampling is performed before training, and this process is repeated for each fold. 
 
 ### Disadvantages of Imbalanced data set:
 A few classifier algorithms have bias towards classes that have more number of instances.They tend to only predict the majority class data.
@@ -13,7 +14,7 @@ The features of the minority class are treated as noise and are often ignored. T
 
 ### Techniques
 * Do Nothing and use models that can handle imbalance like XGBoost
-* Sampling (CROSS-VALIDATION should always be applied before over sampling to avoid over-fitting)
+* Sampling - Perform oversampling during cross-validation, i.e. for each fold, oversampling is performed before training, and this process is repeated for each fold. (OR) Perform oversampling only on Train data and not on Validation & Test
   * Oversample the minority class - SMOTE, ADASYN https://medium.com/coinmonks/smote-and-adasyn-handling-imbalanced-data-set-34f5223e167
   * Undersample the majority class.
   * Synthesize new minority classes - ROSE & DMwR packages in R.
