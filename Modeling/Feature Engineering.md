@@ -24,10 +24,13 @@ When data is missing in the Numeric column - For that column create a new extra 
 * Binning
 * Binarize based on a cut-off
 * Rounding off - High precision may not be required
+* Fraction part of a numeric value
 * Interaction between variables
 * Binning
-* Transformation - log, box-cox
-* Scaling by Max-Min
+* Transformation - log, box-cox, rank
+* Scaling - Imp for non-tree based models - Linear, KNN
+  * To [0,1] - MinMaxScaler - Diff scaling methods produce different results
+  * StandardScaler - Mean 0, stdv 1
 * Normalization using Standard Deviation
 * Log based feature/Target: use log based features or log based target function
 
@@ -52,6 +55,8 @@ When data is missing in the Numeric column - For that column create a new extra 
 
 
 ### Date and Time
+* Time passed since a particular event
+* Diff between dates
 * Day of the week
 * Month of Booking
 * Year of Booking
