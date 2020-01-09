@@ -55,7 +55,8 @@ When data is missing in the Numeric column - For that column create a new extra 
 
 
 ### Date and Time
-* Time passed since a particular event
+* Time passed since a particular event -  Time passed after last holiday
+* Time/Days left until next holidays
 * Diff between dates
 * Day of the week
 * Month of Booking
