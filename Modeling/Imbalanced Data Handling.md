@@ -15,7 +15,8 @@ The features of the minority class are treated as noise and are often ignored. T
 ### Techniques
 * Do Nothing and use models that can handle imbalance like XGBoost
 * Sampling - Perform oversampling during cross-validation, i.e. for each fold, oversampling is performed before training, and this process is repeated for each fold. (OR) Perform oversampling only on Train data and not on Validation & Test
-  * Oversample the minority class - SMOTE, ADASYN https://medium.com/coinmonks/smote-and-adasyn-handling-imbalanced-data-set-34f5223e167
+  * Oversample the minority class - SMOTE, ADASYN https://medium.com/coinmonks/smote-and-adasyn-handling-imbalanced-data-set-34f5223e167   https://www.researchgate.net/publication/328315720_Cross-Validation_for_Imbalanced_Datasets_Avoiding_Overoptimistic_and_Overfitting_Approaches
+    * SMOTE, ADASYN, Borderline-SMOTE, Safe-Level-SMOTE, SMOTE+TL, SMOTE+ENN, ADOMS, CBO, AHC, MWMOTE, SPIDER
   * Undersample the majority class.
   * Synthesize new minority classes - ROSE & DMwR packages in R.
   * Build n models that use all the samples of the rare class and n-differing samples of the abundant class. Eg: Given that you want to ensemble 10 models, you would keep e.g. the 1.000 cases of the rare class and randomly sample 10.000 cases of the abundant class. Then you just split the 10.000 cases in 10 chunks and train 10 different models.
