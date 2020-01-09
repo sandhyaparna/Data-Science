@@ -15,11 +15,11 @@ import matplotlib.pyplot as plt
 %matplotlib inline 
 from grader import Grader
 
-DATA_FOLDER = '../readonly/final_project_data/'
-transactions    = pd.read_csv(os.path.join(DATA_FOLDER, 'sales_train.csv.gz'))
-items           = pd.read_csv(os.path.join(DATA_FOLDER, 'items.csv'))
-item_categories = pd.read_csv(os.path.join(DATA_FOLDER, 'item_categories.csv'))
-shops           = pd.read_csv(os.path.join(DATA_FOLDER, 'shops.csv'))
+DATA_FOLDER = '../readonly/final_project_data/' </br>
+transactions    = pd.read_csv(os.path.join(DATA_FOLDER, 'sales_train.csv.gz')) </br>
+items           = pd.read_csv(os.path.join(DATA_FOLDER, 'items.csv')) </br>
+item_categories = pd.read_csv(os.path.join(DATA_FOLDER, 'item_categories.csv')) </br>
+shops           = pd.read_csv(os.path.join(DATA_FOLDER, 'shops.csv')) </br>
 
 ### 
 
