@@ -28,29 +28,8 @@ https://github.com/hse-aml/competitive-data-science
 * Data Pre-processing
 * Outliers
 
-### Data Loading
-import pandas as pd
-import numpy as np
-import os
-import matplotlib.pyplot as plt
-%matplotlib inline 
-from grader import Grader
 
-DATA_FOLDER = '../readonly/final_project_data/' </br>
-transactions    = pd.read_csv(os.path.join(DATA_FOLDER, 'sales_train.csv.gz')) </br>
-items           = pd.read_csv(os.path.join(DATA_FOLDER, 'items.csv')) </br>
-item_categories = pd.read_csv(os.path.join(DATA_FOLDER, 'item_categories.csv')) </br>
-shops           = pd.read_csv(os.path.join(DATA_FOLDER, 'shops.csv')) </br>
-
-### Pre-processing
-* Tree Based models dont depend on scaling
-* Non-Tree-Based - Numeric - hugely depend on scaling
-  * Raising to power<1 - sqrt
-  * log transformation
-  * Scaling - MinMiaxScaler, StandardScaler
-  * Rank Transformation - Handles outliers - sets spaces between sorted values to be equal
-* When data has outliers - In non-tree models use - rank, llog, sqrt, winsorization
-
+###
 
 ### Feature Generation - Prior Knowledge & EDA
 
