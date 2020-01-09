@@ -6,9 +6,10 @@ https://medium.freecodecamp.org/the-penalty-of-missing-values-in-data-science-91
 * Remove Rows - Deletion
 * Generalized Imputation - Mean/Median/Mode of non-missing values
 * Similar case Imputation - Group wise imputation 
-* KNN imputation / using predictive model
+* Reconstruction - KNN imputation / using predictive model 
 
 ### Imputation
+* XGBoost can handle missing values
 * Median - Continuous data
 * Mode - Categorical data
 * Mode, Median in combination with groupby
@@ -38,9 +39,9 @@ The algorithm consists of three stages.
 ### Techniques
 * Mean is not used
 * Do Nothing or create a new category for missing in Categorical data - Is_missing_or_not column and then impute the original var with the missing values
-* 
-
-
-
+* Median, Mode are usually used in linear models
+* Missing values should be imputed befor Feature engineering
+* Missing values needs to be ignored in the imputation process(calculating median etc)
+* For categories which present in the test data but do not present in the train data - frequency encoding works well
 
 
