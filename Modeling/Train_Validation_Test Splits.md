@@ -50,4 +50,11 @@ https://googlecoursera.qwiklabs.com/focuses/25429?locale=en <br/>
 * Imbalanced data
 * MultiClass classification
 
+### Cause of diff scores and Optimal parameters
+* Too little data
+* Too diverse & inconsistent data
+* we encounter situations which are more like the following case. Consider that now train consists not only of women, but mostly of women, and test, vice versa. Consists not only of men, but mostly of men. - The main strategy to deal with these kind of situations is simple. Again, remember to mimic the train test split. If the test consists mostly of Men, force the validation to have the same distribution. In that case, you ensure that your validation will be fair.
+
+
+
 
