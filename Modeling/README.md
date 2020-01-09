@@ -41,7 +41,7 @@ https://github.com/hse-aml/competitive-data-science
     * Duplicated cat feat - for f in cat_features: Df[f] = raintest[f].factorize()
     * Duplicate rows - 
   * Check if dataset is shuffled - 
-* Validation
+* Validation - Holdout, KFold, Leave One out - Stratified
 * Data-Leakages
 
 #### Pre-processing
