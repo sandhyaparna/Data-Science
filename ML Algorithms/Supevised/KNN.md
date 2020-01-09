@@ -21,6 +21,17 @@ https://www.analyticsvidhya.com/blog/2018/03/introduction-k-neighbours-algorithm
 * Decision boundary would become smoother by increasing the value of K
 * The training time for any value of k in kNN algorithm is the same.
 
+##### Breaking it Down – Pseudo Code of KNN
+We can implement a KNN model by following the below steps:
+* Load the data
+* Initialise the value of k
+* For getting the predicted class, iterate from 1 to total number of training data points
+  * Calculate the distance between test data and each row of training data. Here we will use Euclidean distance as our distance metric since it’s the most popular method. The other metrics that can be used are Chebyshev, cosine, etc.
+  * Sort the calculated distances in ascending order based on distance values
+  * Get top k rows from the sorted array
+  * Get the most frequent class of these rows
+  * Return the predicted class
+
 
 ### Measures of Similarity
 * Euclidean distance = sqrt((a1-b1)^2 + (a2-b2)^2) where (a1, a2) and (b1, b2) are two points.
