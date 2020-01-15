@@ -10,7 +10,7 @@
 
 ##### Logloss
 https://towardsdatascience.com/understanding-binary-cross-entropy-log-loss-a-visual-explanation-a3ac6025181a </br>
--1/N * Σ log(prob of the actual target happening)
+-1/N * Σ log(prob of the actual target happening). ln is used and not log
 * prob of the actual target happening implies 
   * If Target=0 for a observation then what is the probability of 0 happening. 
   * If Target=1 for a observation then what is the probability of 1 happening.
