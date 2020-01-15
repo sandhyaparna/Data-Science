@@ -1,6 +1,7 @@
 ### Links
 Evaluation Metrics https://www.machinelearningplus.com/machine-learning/evaluation-metrics-classification-models-r/ <br/>
 Cost Function https://towardsdatascience.com/model-performance-cost-functions-for-classification-models-a7b1b00ba60 <br/>
+ROC-AUC https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5 <br/>
 Loss functions 
 
 ### Confidence(1) for model output
