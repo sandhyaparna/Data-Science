@@ -68,6 +68,8 @@ Gain ratio is ratio of Information gain to the intrinsic information <br/>
 &nbsp; GainRatio(T,X) = Gain(T,X) / SpliInformation(T,X)  <br/>
 &nbsp; SplitInfo(T,X) = Σ - p(i)*log(p(i))  <br/>
 #### Gini Index:
+* Measure of how often a randomly chosen element from the set would be incorrectly labelled if it was randomly labelled based on the distribution of labels in the subset.
+* 0 elements belong to single class; 0.5 means equal distribution of classes; 1 means elements are randomly distributed
 Variable split is based on the one with low Gini Index <br/>
 Performs only binary splits <br/>
 Gini produces small but pure nodes <br/>
