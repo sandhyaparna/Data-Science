@@ -10,6 +10,7 @@
 * Article Spinning
 * Machine Conversations
 * Paraphrasing and summarization
+* Skim Reading
 
 ### NLP Frameworks
 * Word2Vec - Distributed representations
