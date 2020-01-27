@@ -1,1 +1,4 @@
+* Precision
+* Recall
+* F-measure
 
