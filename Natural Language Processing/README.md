@@ -5,7 +5,7 @@
 * Spam Detection
 * POS Tagging
 * Sentiment Analyzer
-* Machine Translation
+* Machine Translation - Text Generation
 * Latent Semantic Analysis (LSA)
 * Article Spinning
 * Machine Conversations
