@@ -26,7 +26,7 @@ The features of the minority class are treated as noise and are often ignored. T
 * Adjust the class weight (misclassification costs).
 * Modify an existing algorithm to be more sensitive to rare classes.
 * Cluster the abundant class - Instead of relying on random samples to cover the variety of the training samples, he suggests clustering the abundant class in r groups, with r being the number of cases in r. For each group, only the medoid (centre of cluster) is kept. The model is then trained with the rare class and the medoids only.
-
+* Class weights in model.fit
 
 ### SMOTE
 * Synthetic data generation to increase the number of samples in the minority class.
