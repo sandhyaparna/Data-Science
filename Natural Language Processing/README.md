@@ -22,6 +22,12 @@
 * XLNet
 * ALBERT - A Lite BERT
 
+### Annotation tools
+* Prodigy
+* Doccano
+
+
+
 ### Algos
 * ConZNet - Deep reinforcement algorithm
 * PyTorch Transformers https://github.com/huggingface/pytorch-transformers
