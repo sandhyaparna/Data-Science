@@ -5,7 +5,7 @@
 * Spam Detection
 * POS Tagging
 * Sentiment Analyzer
-* Machine Translation (Text or speech of 1 language into another) - Text Generation
+* Machine Translation (Text or speech of 1 language into another) - Seq2Seq learning - Text Generation
 * Latent Semantic Analysis (LSA)
 * Article Spinning
 * Machine Conversations (Text-to-Speech & Speech-to-Text conversion)
