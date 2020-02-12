@@ -50,6 +50,7 @@ But how is this different than Python stemming? While stemming can create words 
 ![](https://cdn-images-1.medium.com/max/1600/1*VRgrWGLBJJDXsQE72QyI3g.png)
 
 ### Feature Extraction
+DL models work with numeric vectors. Vectorizing text is the process of transforming text into numeric tensors.  <br/>
 https://towardsdatascience.com/understanding-feature-engineering-part-3-traditional-methods-for-text-data-f6f7d70acd41 <br/>
 https://towardsdatascience.com/understanding-feature-engineering-part-4-deep-learning-methods-for-text-data-96c44370bbfa <br/>
 #### Count Vectorization (Bag of words)
