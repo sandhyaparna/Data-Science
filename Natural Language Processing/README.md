@@ -24,7 +24,12 @@
 ### Advances in NLP - https://ruder.io/a-review-of-the-recent-history-of-nlp/
 * Neural Language Models - Language modelling is the task of predicting the next word in a text given the previous words. Egs - Intelligent keyboards, email response suggestion, spelling autocorrection, etc. Approaches are n-grams. Started with feed forward NN and currently uses RNNs, LSTM. 
 * Multi-task Learning - Method for sharing parameters between models that are trained on multiple tasks. In neural networks, this can be done easily by tying the weights of different layers.
-* Word embeddings - word2vec. Training on a very large corpus enables them to approximate certain relations between words such as gender, verb tense, and country-capital relations. 
+* Word embeddings - word2vec. Training on a very large corpus enables them to approximate certain relations between words such as gender, verb tense, and country-capital relations. </br>
+  * Later Studies showed that there is nothing inherently special about word2vec: Word embeddings can also be learned via matrix factorization and with proper tuning, classic matrix factorization approaches like SVD and LSA achieve similar results.
+* Neural Networks for NLP - 
+  * Recurrent NN (LSTM are more resilient to the vanishing and exploding gradient problem an deal with both left and right context)
+  * CNN (For text it only operates in 2 dimensions, with filters only needing to be moved along the temporal dimension. CNNs are more parallelizable than RNNs, as the state at every timestep only depends on the local context ,via the convolution operation, rather than all past states as in the RNN) 
+  * Recursive NN
 * Sequence to sequence models - Generate an output sequence by predicting one word at a time
 * Attention
 * Memory based networks
