@@ -21,7 +21,7 @@
 * Syntax – This science deal with the structure of the sentences.
 * Semantics – This science deals with the literal meaning of the words, phrases as well as sentences.
 
-### NLP Frameworks
+### Word Embedding Approaches
 * Word2Vec - Distributed representations
 * GloVe
 * ULMFit
