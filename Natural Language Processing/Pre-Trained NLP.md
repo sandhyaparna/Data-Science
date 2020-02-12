@@ -2,6 +2,7 @@
 
 Glove Pre-Trained https://nlp.stanford.edu/projects/glove/ <br/>
 
+https://www.microsoft.com/en-us/research/blog/turing-nlg-a-17-billion-parameter-language-model-by-microsoft/ <br/>
 Language Models: BERT, GPT-2, Megatron-LM
 
 Turing NLG: Natural Language Generation - Transformer based Generative Language Model - 17 billion parameters
