@@ -1,6 +1,5 @@
 8 Pre-trained models: https://www.analyticsvidhya.com/blog/2019/03/pretrained-models-get-started-nlp/?utm_source=linkedin.com&utm_medium=social <br/>
-* Replacement for pre-trained word embeddings can be similar to DL packages incorporate an embedding layer that learns task specific embeddings
-* 
+* Replacement for pre-trained word embeddings can be similar to DL packages incorporate an embedding layer that learns task specific embeddings. However, vectors trained on a large corpus beat the embedding layer by a considerable margin in terms of both precision and recall.
 
 
 Glove Pre-Trained https://nlp.stanford.edu/projects/glove/ <br/>
