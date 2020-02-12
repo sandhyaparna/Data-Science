@@ -12,7 +12,14 @@
 * Paraphrasing and summarization
 * Skim Reading
 * Topic Discovery (LDA) & Modeling 
+* Chatbots
 
+### Natural Language Understanding
+* Phonology – This science helps to deal with patterns present in the sound and speeches related to the sound as a physical entity.
+* Pragmatics – This science studies the different uses of language.
+* Morphology – This science deals with the structure of the words and the systematic relations between them.
+* Syntax – This science deal with the structure of the sentences.
+* Semantics – This science deals with the literal meaning of the words, phrases as well as sentences.
 
 ### NLP Frameworks
 * Word2Vec - Distributed representations
