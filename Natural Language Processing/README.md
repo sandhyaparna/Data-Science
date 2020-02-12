@@ -5,12 +5,14 @@
 * Spam Detection
 * POS Tagging
 * Sentiment Analyzer
-* Machine Translation - Text Generation
+* Machine Translation (Text or speech of 1 language into another) - Text Generation
 * Latent Semantic Analysis (LSA)
 * Article Spinning
-* Machine Conversations
+* Machine Conversations (Text-to-Speech & Speech-to-Text conversion)
 * Paraphrasing and summarization
 * Skim Reading
+* Topic Discovery (LDA) & Modeling 
+
 
 ### NLP Frameworks
 * Word2Vec - Distributed representations
