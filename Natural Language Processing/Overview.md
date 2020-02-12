@@ -126,7 +126,7 @@ https://www.datascience.com/resources/notebooks/word-embeddings-in-python <br/>
 #### GloVe
 https://towardsdatascience.com/comparing-word-embeddings-c2efd2455fe3 <br/>
 * GloVe brings up more infrequent similar words that the other models, which becomes quite overwhelming in the tail.
-
+* GloVe (glove.42B.300d): 300-dimensional vectors trained on the 42B token Common Crawl corpus
 
 #### Sentence Vectors
 https://medium.com/explorations-in-language-and-learning/how-to-obtain-sentence-vectors-2a6d88bd3c8b
@@ -153,6 +153,7 @@ Running CBOW is computationally expensive and works better if trained using a GP
 http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/
 
 #### FastText
+fastText WIKI (wiki-news-300d-1M): 300-dimensional vectors trained on the 16B token Wikipedia 2017 dump
 
 #### ELMo - Embeddings from Language Models
 https://www.analyticsvidhya.com/blog/2019/03/learn-to-use-elmo-to-extract-features-from-text/ </br>
