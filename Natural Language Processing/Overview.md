@@ -100,6 +100,7 @@ A typical NER model consists of three blocks:<br/>
 
 
 #### Word2Vec
+Word embeddings are learnt by starting with random word vectors and then they get updated in the same way the weights of neural network do to better learn the mapping between input x and output label y
 https://code.google.com/archive/p/word2vec/ <br/>
 Use Negative sampling to train word2vec efficiently http://mccormickml.com/2017/01/11/word2vec-tutorial-part-2-negative-sampling/ <br/>
 Word2Vec, GloVe <br/> 
