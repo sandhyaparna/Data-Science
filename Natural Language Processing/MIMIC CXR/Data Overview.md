@@ -10,7 +10,8 @@
 * Open link at the bottom for credential user login; login and then return back to this page to be able to download files
 ### MetaData - https://mimic-cxr.mit.edu/about/access/
 ### Labels (NegBio & chexpert) - MIMIC-CXR-JPG https://physionet.org/content/mimic-cxr-jpg/2.0.0/
-### Code to generate MIMIC-CXR-JPG from MIMIC-CXR https://zenodo.org/record/3539363#.XpfMxchKiUk
+### Code to generate MIMIC-CXR-JPG from MIMIC-CXR https://github.com/MIT-LCP/mimic-cxr 
+https://zenodo.org/record/3539363#.XpfMxchKiUk
 
 
 
