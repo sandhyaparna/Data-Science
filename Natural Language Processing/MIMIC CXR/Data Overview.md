@@ -22,7 +22,7 @@ cxr-study-list.csv.gz(download)	2.2 MB	2019-09-18 </br>
 mimic-cxr-reports.zip(download)	135.4 MB	2019-09-19 </br>
 
 ### Labels (NegBio & chexpert) - MIMIC-CXR-JPG https://physionet.org/content/mimic-cxr-jpg/2.0.0/
-
+### Code to generate MIMIC-CXR-JPG from MIMIC-CXR https://zenodo.org/record/3539363#.XpfMxchKiUk
 
 
 
