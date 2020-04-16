@@ -11,6 +11,8 @@
 ### MetaData - https://mimic-cxr.mit.edu/about/access/
 ### Labels (NegBio & chexpert) - MIMIC-CXR-JPG https://physionet.org/content/mimic-cxr-jpg/2.0.0/
 ### Code to generate MIMIC-CXR-JPG from MIMIC-CXR https://github.com/MIT-LCP/mimic-cxr 
+* Go to https://github.com/MIT-LCP/mimic-cxr/tree/master/txt/chexpert to get steps to run chexpert tool
+* Go to https://github.com/MIT-LCP/mimic-cxr/tree/master/txt/negbio to get steps to run Negbio tool
 https://zenodo.org/record/3539363#.XpfMxchKiUk
 
 
