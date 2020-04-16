@@ -5,6 +5,10 @@
 * mimic-cxr-reports.tar.gz - Text Reports
 * cxr-record-list.csv.gz; cxr-study-list.csv.gz - Image related data
 
+### 
+https://mimic-cxr.mit.edu/
+* MetaData - https://mimic-cxr.mit.edu/about/access/
+
 ### Download files available at the end of https://physionet.org/content/mimic-cxr/2.0.0/'
 * Open link at the bottom for credential user login; login and then return back to this page to be able to download files
 Files </br>
