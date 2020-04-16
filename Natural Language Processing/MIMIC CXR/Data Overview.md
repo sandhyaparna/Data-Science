@@ -6,7 +6,7 @@
 * cxr-record-list.csv.gz; cxr-study-list.csv.gz - Image related data
 
 
-### Download files available at the end of https://physionet.org/content/mimic-cxr/2.0.0/'
+### Download files available at the end of https://physionet.org/content/mimic-cxr/2.0.0/
 * Open link at the bottom for credential user login; login and then return back to this page to be able to download files
 ### MetaData - https://mimic-cxr.mit.edu/about/access/
 ### Labels (NegBio & chexpert) - MIMIC-CXR-JPG https://physionet.org/content/mimic-cxr-jpg/2.0.0/
