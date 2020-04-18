@@ -7,7 +7,8 @@
   * Histopathology - Scanned microscopic images of tissue called whole slide images - to determine the extent to which a cancer has spread and then use to plan treatment, predict the course of the disease, and the chance of recovery
 
 ### Medical Imaging
-
+* Data of Chest X rays - https://arxiv.org/abs/1705.02315
+* 
  
 
 
