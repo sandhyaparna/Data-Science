@@ -23,8 +23,8 @@ Probability of it being close to the actual target
 ![](http://wiki.fast.ai/images/4/43/Log_loss_graph.png)
 
 ##### Log loss of Class Imbalance data - https://www.coursera.org/learn/ai-for-medical-diagnosis/lecture/qSNmX/impact-of-class-imbalance-on-loss-calculation
-*  L(x,y) = (-logloss of probability of Y=1 if y=1) + (-logloss of probability of Y=0 if y=0)
-* l(X,Y) = ( (Num Negative/No Total) * (-logloss of probability of Y=1 if y=1) ) + ( (Num Positive/No Total) * (-logloss of probability of Y=0 if y=0) )
+*  Log loss = (-logloss of probability of Y=1 if y=1) + (-logloss of probability of Y=0 if y=0)
+* Modified Log loss = ( (Num Negative/No Total) * (-logloss of probability of Y=1 if y=1) ) + ( (Num Positive/No Total) * (-logloss of probability of Y=0 if y=0) )
 
 
 
