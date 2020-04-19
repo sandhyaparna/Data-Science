@@ -22,6 +22,9 @@ Probability of it being close to the actual target
 
 ![](http://wiki.fast.ai/images/4/43/Log_loss_graph.png)
 
+##### Log loss of Class Imbalance data
+* number
+
 ##### Cross-Entropy
 Cross-entropy is the more generic form of logarithmic loss when it comes to machine learning algorithms. While log loss is used for binary classification algorithms, cross-entropy serves the same purpose for multiclass classification problems.
 * Cross Entropy loss = -1/N * Σ{ylog(p)}. https://stackoverflow.com/questions/41990250/what-is-cross-entropy
