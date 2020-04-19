@@ -9,7 +9,7 @@
 
 ### Medical Imaging
 * Data of Chest X rays - https://arxiv.org/abs/1705.02315
-* 
+* Challenges for training medical images - Class Imbalance; Multitask Challenge; Dataset size
  
  
  ### Modeling
