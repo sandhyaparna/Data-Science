@@ -10,6 +10,8 @@
 ### Medical Imaging
 * Data of Chest X rays - https://arxiv.org/abs/1705.02315
 * Challenges for training medical images - Class Imbalance; Multitask Challenge; Dataset size
+* For multitask challange - Training of the multitask algorithm requires modification of loss function from binary tasks to multitask setting
+
 
  
  
