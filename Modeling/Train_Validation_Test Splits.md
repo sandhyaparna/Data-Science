@@ -17,7 +17,7 @@ https://googlecoursera.qwiklabs.com/focuses/25429?locale=en <br/>
 
 ### Splitting
 * Split data into Train & Test - Stratified splits if the data is imbalanced
-* Train data is used for development + selection of models. Test set is used to report results.
+* Train data is used for development + selection of models. Test set is used to report results. Train data is split into train & Validation, train is used for development, validatiion is used for tuning & selection of models.
 * Use Train data to perform cross-validation. A seperate Test set makes more sense when you use cross-validation or manully change the model hyperparameters based on the results of your model on the validation set. 
 * Size of validation set within cross-validation is dependent on the overall data and model that you are training. Some models need substantial data to train upon, so in this case you would optimize for the larger training sets. Models with very few hyperparameters will be easy to validate and tune, so you can probably reduce the size of your validation set, but if your model has many hyperparameters, you would want to have a large validation set as well(although you should also consider cross validation). Also, if you happen to have a model with no hyperparameters or ones that cannot be easily tuned, you probably don’t need a validation set too!
 * A final deployement model is built based on both Train & Test but we report only Test set performance to finally show how a model is performing
