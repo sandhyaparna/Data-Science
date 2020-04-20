@@ -1,14 +1,14 @@
 
-### Regression
+## Regression
 * SSE - Sum of squared errors
 * If a prediction is far from mean, that prediction is penalized more compared to a prediction near to the mean
 
-### Classification
+## Classification
 * Logloss - For Binary
 * Cross Entropy - For Multi-class
 * Both Logloss & Cross Entropy are essentially the same
 
-##### Logloss
+### Logloss
 https://towardsdatascience.com/understanding-binary-cross-entropy-log-loss-a-visual-explanation-a3ac6025181a </br>
 -1/N * Σ log(prob of the actual target happening). ln is used and not log
 * prob of the actual target happening implies 
@@ -22,7 +22,7 @@ Probability of it being close to the actual target
 
 ![](http://wiki.fast.ai/images/4/43/Log_loss_graph.png)
 
-##### Log loss of Class Imbalance data - https://www.coursera.org/learn/ai-for-medical-diagnosis/lecture/qSNmX/impact-of-class-imbalance-on-loss-calculation
+### Log loss of Class Imbalance data - https://www.coursera.org/learn/ai-for-medical-diagnosis/lecture/qSNmX/impact-of-class-imbalance-on-loss-calculation
 *  Log loss = (-logloss of probability of Y=1 if y=1) + (-logloss of probability of Y=0 if y=0)
 * Modified Log loss = ( (Num Negative/No Total) * (-logloss of probability of Y=1 if y=1) ) + ( (Num Positive/No Total) * (-logloss of probability of Y=0 if y=0) )
 
