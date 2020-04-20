@@ -12,7 +12,7 @@ Perform oversampling during cross-validation, i.e. for each fold, oversampling i
 A few classifier algorithms have bias towards classes that have more number of instances.They tend to only predict the majority class data.
 The features of the minority class are treated as noise and are often ignored. Thus, there is a high probability of misclassification of the minority class as compared to the majority class.
 
-### Techniques
+## Techniques
 * Do Nothing and use models that can handle imbalance like XGBoost
 * Sampling - Perform oversampling during cross-validation, i.e. for each fold, oversampling is performed before training, and this process is repeated for each fold. (OR) Perform oversampling only on Train data and not on Validation & Test
   * Oversample the minority class - SMOTE, ADASYN https://medium.com/coinmonks/smote-and-adasyn-handling-imbalanced-data-set-34f5223e167   https://www.researchgate.net/publication/328315720_Cross-Validation_for_Imbalanced_Datasets_Avoiding_Overoptimistic_and_Overfitting_Approaches
@@ -23,7 +23,7 @@ The features of the minority class are treated as noise and are often ignored. T
   * Above appraoch of ensembling can be fine-tuned by playing with the ratio between the rare and the abundant class. The best ratio  heavily depends on the data and the models that are used. But instead of training all models with the same ratio in the ensemble, it is worth trying to ensemble different ratios.  So if 10 models are trained, it might make sense to have a model that has a ratio of 1:1 (rare:abundant) and another one with 1:3, or even 2:1.
 * Anomaly Detection
 * Adjust the decision threshold.
-* Adjust the class weight (misclassification costs).
+* Adjust the class weight (misclassification costs) - Weighted logloss & 
 * Modify an existing algorithm to be more sensitive to rare classes.
 * Cluster the abundant class - Instead of relying on random samples to cover the variety of the training samples, he suggests clustering the abundant class in r groups, with r being the number of cases in r. For each group, only the medoid (centre of cluster) is kept. The model is then trained with the rare class and the medoids only.
 * Class weights in model.fit
