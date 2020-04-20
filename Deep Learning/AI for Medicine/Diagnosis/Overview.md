@@ -19,7 +19,10 @@
  
  ### Modeling
  * Loss function measures the error between our output probability and the desired label
- *
+ * Densenet - https://arxiv.org/pdf/1608.06993.pdf
+ 
+ 
+ 
 
 
 
