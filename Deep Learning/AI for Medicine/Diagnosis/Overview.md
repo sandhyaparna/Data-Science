@@ -10,7 +10,9 @@
 ### Medical Imaging
 * Data of Chest X rays - https://arxiv.org/abs/1705.02315
 * Challenges for training medical images - Class Imbalance; Multitask Challenge; Dataset size
-* For multitask challange - Training of the multitask algorithm requires modification of loss function from binary tasks to multitask setting
+* For multitask challange - Training of the multitask algorithm requires modification of loss function from binary tasks to multitask setting. Sum of individual losses. For weighted, fraction of Wp & Wn are different for different binary losses. https://www.coursera.org/learn/ai-for-medical-diagnosis/lecture/VNkO2/multi-task-loss-dataset-size-and-cnn-architectures
+* 
+
 
 
  
