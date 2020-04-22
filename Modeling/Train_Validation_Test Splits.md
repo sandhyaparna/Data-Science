@@ -14,6 +14,10 @@ https://github.com/sandhyaparna/training-data-analyst/blob/master/courses/machin
 https://github.com/sandhyaparna/training-data-analyst/blob/master/courses/machine_learning/deepdive/02_generalization/create_datasets.ipynb  <br/>
 https://googlecoursera.qwiklabs.com/focuses/25429?locale=en <br/>
 * Clean & Pre-proces data before splitting
+* Healthcare Data splitting challenges
+  * Patient Overlap - When patient comes twice and have 2 xrays and wears a necklace both the times, but we feed one of the xray into Train and other into Test, there is a high possibility of memorization of unique aspects like necklace in this case and makes the prediction similar to label in Train set
+  * Set sampling
+  * Ground Truth
 
 ### Splitting
 * Split data into Train & Test - Stratified splits if the data is imbalanced
