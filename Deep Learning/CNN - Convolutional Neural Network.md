@@ -63,6 +63,7 @@ Operation:
 ![](https://cdn-images-1.medium.com/max/1255/1*XbuW8WuRrAY5pC4t-9DZAQ.jpeg)
 Feature learning part is the essence of CNN
 
+* CNN Architectures - Inception-v3, ResNet-34, DenseNet, ResNeXt, EfficientNet
 
 ### Image Generator API in Tensorflow
 
