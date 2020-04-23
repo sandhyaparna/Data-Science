@@ -1,5 +1,6 @@
 ### Course Info
 * Link - https://www.coursera.org/learn/ai-for-medical-diagnosis/home/week/1
+* Data in Images folder - Download tar.gz files seperately https://nihcc.app.box.com/v/ChestXray-NIHCC/folder/37178474737
 * PreRequisites - CNN, loss functions, Probability, Python
 * Use Cases
   * Skin images to identify if a suspecious mole is cancerous or not
@@ -26,7 +27,7 @@
  
 ### Healthcare Data splitting challenges
   * Patient Overlap - When patient comes twice and have 2 xrays and wears a necklace both the times, but we feed one of the xray into Train and other into Test, there is a high possibility of memorization of unique aspects like necklace in this case and makes the prediction similar to label in Train set. Make sure that a patients xrays are all in either Train set or Test set but not distributed across both Train & Test. SPLIT BY PATIENT.
-  * Set sampling - Stratified sampling to get label=1 even when it is rarely occuring. AI for Medical Diagnosis video suggests to take 50% observations of label=1, 50% observations of label=0 for both Test and Validation set (Validation set should reflect the same sampling distribution seen in Test set) and all the remaining observations as Training set. This ensures that the model will have sufficient numbers to get a good estimate of the performance of the model on both non-disease and on disease samples. https://www.coursera.org/learn/ai-for-medical-diagnosis/lecture/iiAK1/sampling
+  * Set sampling - Stratified sampling to get label=1 even when it is rarely occuring. AI for Medical Diagnosis video suggests to take 50% observations of label=1, 50% observations of label=0 for both Test and Validation set (Validation set should reflect the same sampling distribution seen in Test set) and all the remaining observations as Training set. This ensures that the model will have sufficient numbers to get a good estimate of the performance of the model on both non-disease and on disease samples. Oder of sampling is Test, Validation & Train https://www.coursera.org/learn/ai-for-medical-diagnosis/lecture/iiAK1/sampling
   * Ground Truth - Consensus voting i.e Humans are asked to determine the outcome and majority voting is used. Use additional medical testing.
  
 
