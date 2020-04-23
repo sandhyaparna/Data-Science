@@ -24,7 +24,10 @@
    * Early layers of the network usually captures low-level image features that are broably generalizable, while the later layers capture details that are more high-level or more specific to a task. So when fine-tuning the network instead of fine-tuning all features we've transferred, we can freeze the features learned by the shallow layers and just fine-tune the deeper layers. In practice, two of the most common design choices are one, to fine-tune all of the layers, and two, only fine-tune the later or the last layer and not fine-tune the earlier layers. This approach of pre-training and fine-tuning, is also called transfer learning and is an effective way to tackle the small dataset size challenge.
    
  
- 
+### Healthcare Data splitting challenges
+  * Patient Overlap - When patient comes twice and have 2 xrays and wears a necklace both the times, but we feed one of the xray into Train and other into Test, there is a high possibility of memorization of unique aspects like necklace in this case and makes the prediction similar to label in Train set. Make sure that a patients xrays are all in either Train set or Test set but not distributed across both Train & Test. SPLIT BY PATIENT.
+  * Set sampling - Stratified sampling to get label=1 even when it is rarely occuring. AI for Medical Diagnosis video suggests to take 50% observations of label=1, 50% observations of label=0 for both Test and Validation set (Validation set should reflect the same sampling distribution seen in Test set) and all the remaining observations as Training set. This ensures that the model will have sufficient numbers to get a good estimate of the performance of the model on both non-disease and on disease samples. https://www.coursera.org/learn/ai-for-medical-diagnosis/lecture/iiAK1/sampling
+  * Ground Truth - Consensus voting i.e Humans are asked to determine the outcome and majority voting is used. Use additional medical testing.
  
 
 
