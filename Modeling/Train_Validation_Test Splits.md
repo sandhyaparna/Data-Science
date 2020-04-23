@@ -16,7 +16,7 @@ https://googlecoursera.qwiklabs.com/focuses/25429?locale=en <br/>
 * Clean & Pre-proces data before splitting
 * Healthcare Data splitting challenges
   * Patient Overlap - When patient comes twice and have 2 xrays and wears a necklace both the times, but we feed one of the xray into Train and other into Test, there is a high possibility of memorization of unique aspects like necklace in this case and makes the prediction similar to label in Train set. Make sure that a patients xrays are all in either Train set or Test set but not distributed across both Train & Test. SPLIT BY PATIENT.
-  * Set sampling - Stratified sampling to get label=1 even when it is rarely occuring
+  * Set sampling - Stratified sampling to get label=1 even when it is rarely occuring. AI for Medical Diagnosis video suggests to take 50 observations of label=1, 50 observation of label=0 for both Test and Validation set and all the remaining observation as Training set.
   * Ground Truth
 
 ### Splitting
