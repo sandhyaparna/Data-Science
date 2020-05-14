@@ -98,6 +98,13 @@ A typical NER model consists of three blocks:<br/>
 
 
 
+### Word Embeddings
+* Word2Vec
+* GloVe
+* FastText
+* ElMo
+* BERT
+
 
 #### Word2Vec
 Word embeddings are learnt by starting with random word vectors and then they get updated in the same way the weights of neural network do to better learn the mapping between input x and output label y
@@ -126,6 +133,7 @@ https://www.datascience.com/resources/notebooks/word-embeddings-in-python <br/>
 
 #### GloVe
 https://towardsdatascience.com/comparing-word-embeddings-c2efd2455fe3 <br/>
+* Both CBOW and Skip-Grams are “predictive” models, in that they only take local contexts into account. Word2Vec does not take advantage of global context. GloVe embeddings by contrast leverage the same intuition behind the co-occuring matrix used distributional embeddings, but uses neural methods to decompose the co-occurrence matrix into more expressive and dense word vectors. While GloVe vectors are faster to train, neither GloVe or Word2Vec has been shown to provide definitively better results rather they should both be evaluated for a given dataset
 * GloVe brings up more infrequent similar words that the other models, which becomes quite overwhelming in the tail.
 * GloVe (glove.42B.300d): 300-dimensional vectors trained on the 42B token Common Crawl corpus
 
@@ -136,30 +144,25 @@ https://medium.com/explorations-in-language-and-learning/how-to-obtain-sentence-
 * FactSent
 * Sequential Denoising Autoencoders (SDAE)
 
-
-
 #### Doc2Vec
 https://medium.com/scaleabout/a-gentle-introduction-to-doc2vec-db3e8c0cce5e <br/>
 https://medium.com/explorations-in-language-and-learning/how-to-obtain-sentence-vectors-2a6d88bd3c8b <br/>
-
-
 
 #### Continuous Bag-of-Words
 https://www.kdnuggets.com/2018/04/implementing-deep-learning-methods-feature-engineering-text-data-cbow.html
 Running CBOW is computationally expensive and works better if trained using a GPU. Guy in the above article used AWS p2.x instance with a Tesla K80 GPU and it took me close to 1.5 hours for just 5 epochs! <br/>
 
-
-
 #### Skip-Gram Model
 http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/
 
-#### FastText
+#### FastText 
 fastText WIKI (wiki-news-300d-1M): 300-dimensional vectors trained on the 16B token Wikipedia 2017 dump
+* FastText, builds on Word2Vec by learning vector representations for each word and the n-grams found within each word. The values of the representations are then averaged into one vector at each training step. While this adds a lot of additional computation to training it enables word embeddings to encode sub-word information. FastText vectors have been shown to be more accurate than Word2Vec vectors by a number of different measures
 
 #### ELMo - Embeddings from Language Models
 https://www.analyticsvidhya.com/blog/2019/03/learn-to-use-elmo-to-extract-features-from-text/ </br>
 ![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2019/03/output_YyJc8E.gif)
-* ELMo and BERT can generate diff word embeddings for a word that captures the context of a word - tha is its position in a sentence
+* ELMo and BERT can generate diff word embeddings for a word that captures the context of a word - that is its position in a sentence
 * ELMo uses LSTMs
 * ELMo is a charcater based model using character convolutions and can handle out of vocab words, but learnt representations are at word level
 * ELMo word vectors are computed on top of a two-layer bidirectional language model (biLM). This biML model has two layers stacked together. Each layer has 2 passes — forward pass and backward pass:
