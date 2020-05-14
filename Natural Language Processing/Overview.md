@@ -99,9 +99,9 @@ A typical NER model consists of three blocks:<br/>
 
 
 ### Word Embeddings
-* Word2Vec
+* Word2Vec - uses CBOW or Skip-gram. To make Word2vec algorithm computationally more efficient, tricks like Hierarchical Softmax and Skip-Gram Negative Sampling are used
 * GloVe
-* FastText
+* FastText - Extension of Word2Vec proposed by Facebook
 * ElMo
 * BERT
 
@@ -151,9 +151,11 @@ https://medium.com/explorations-in-language-and-learning/how-to-obtain-sentence-
 #### Continuous Bag-of-Words
 https://www.kdnuggets.com/2018/04/implementing-deep-learning-methods-feature-engineering-text-data-cbow.html
 Running CBOW is computationally expensive and works better if trained using a GPU. Guy in the above article used AWS p2.x instance with a Tesla K80 GPU and it took me close to 1.5 hours for just 5 epochs! <br/>
+* CBOW is faster and has better representations for more frequent words.
 
 #### Skip-Gram Model
 http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/
+* Skip Gram works well with small amount of data and is found to represent rare words well.
 
 #### FastText 
 fastText WIKI (wiki-news-300d-1M): 300-dimensional vectors trained on the 16B token Wikipedia 2017 dump
