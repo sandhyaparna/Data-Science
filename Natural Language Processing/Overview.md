@@ -117,6 +117,8 @@ Word2Vec, GloVe <br/>
 * word2vec representation is created using 2 algorithms: Continuous Bag-of-Words model (CBOW) and the Skip-Gram model. <br/>
 Algorithmically, these models are similar, except that CBOW predicts target words (e.g. 'mat') from source context words ('the cat sits on the') i.e 'predicting the word given its context' , while the skip-gram does the inverse and predicts source context-words from the target words i.e 'predicting the context given a word'. <br/>
 * word embedding dimension is determined by computing (in an unsupervised manner) the accuracy of the prediction
+* Word2vec can be used in recommendations. If a person has listened to song A, try searching for songs that other persons listened to before of after listening to song A and recommend the songs that are close to A to the person.
+
 
 Training of Word2vec on Wiki Corpus https://medium.com/@maxminicherrycc/word2vec-how-to-train-and-update-it-4eed4260cf75 <br/>
 Train and Update Word2vec https://medium.com/@maxminicherrycc/word2vec-how-to-train-and-update-it-4eed4260cf75 <br/>
