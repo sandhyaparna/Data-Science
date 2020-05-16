@@ -118,7 +118,16 @@ Word2Vec, GloVe <br/>
 Algorithmically, these models are similar, except that CBOW predicts target words (e.g. 'mat') from source context words ('the cat sits on the') i.e 'predicting the word given its context' , while the skip-gram does the inverse and predicts source context-words from the target words i.e 'predicting the context given a word'. <br/>
 * word embedding dimension is determined by computing (in an unsupervised manner) the accuracy of the prediction
 * Word2vec can be used in recommendations. If a person has listened to song A, try searching for songs that other persons listened to before of after listening to song A and recommend the songs that are close to A to the person. A user’s listening queue as a sentence, with each word in that sentence being a song that the user has listened to. So then, training the Word2vec model on those sentences essentially means that for each song the user has listened to in the past, we’re using the songs they have listened to before and after to teach our model that those songs somehow belong to the same context. 
-* Negative Sampling: it suggests that instead of backpropagating all the 0s in the correct output vector (for a vocab size of 10mill there are 10mill minus 1 zeros) we just backpropagate a few of them (say 14)
+* Problems With CBoW/Skip-gram
+  * Firstly, for each training sample, only the weights corresponding to the target word might get a significant update. While training a neural network model, in each back-propagation pass we try to update all the weights in the hidden layer. The weight corresponding to non-target words would receive a marginal or no change at all, i.e. in each pass we only make very sparse updates.
+  * Secondly, for every training sample, the calculation of the final probabilities using the softmax is quite an expensive operation as it involves a summation of scores over all the words in our vocabulary for normalizing.
+  * So for each training sample, we are performing an expensive operation to calculate the probability for words whose weight might not even be updated or be updated so marginally that it is not worth the extra overhead.
+  * To overcome these two problems, instead of brute forcing our way to create our training samples, we try to reduce the number of weights updated for each training sample. 
+* Negative Sampling: it suggests that instead of backpropagating all the 0s in the correct output vector (for a vocab size of 10mill there are 10mill minus 1 zeros) we just backpropagate a few of them (say 14). 
+  * Negative sampling allows us to only modify a small percentage of the weights, rather than all of them for each training sample. We do this by slightly modifying our problem. Instead of trying to predict the probability of being a nearby word for all the words in the vocabulary, we try to predict the probability that our training sample words are neighbors or not. Referring to our previous example of (orange, juice), we don’t try to predict the probability for juice to be a nearby word i.e P(juice|orange), we try to predict if (orange, juice) are nearby words or not by calculating P(1|<orange, juice>).
+  * So instead of having one giant softmax — classifying among 10,000 classes, we have now turned it into 10,000 binary classification problem.
+  * We further simplify the problem by randomly selecting a small number of “negative” words k(a hyper-parameter, let’s say 5) to update the weights for. (In this context, a “negative” word is one for which we want the network to output a 0).
+  * For our training sample (orange, juice), we will take five words, say apple, dinner, dog, chair, house and use them as negative samples. For this particular iteration we will only calculate the probabilities for juice, apple, dinner, dog, chair, house. Hence, the loss will only be propagated back for them and therefore only the weights corresponding to them will be updated.
 * Hierarchical Softmax: Calculating the softmax for a vocab of 10mill is very time and computation intensive. Hierarchical Softmax suggests a faster way of computing it using Huffman trees
 
 Applications
@@ -138,6 +147,7 @@ FastText's trained word vectors model https://fasttext.cc/docs/en/english-vector
 Detained Neural network representation https://iksinc.online/tag/continuous-bag-of-words-cbow/ <br/>
 https://www.analyticsvidhya.com/blog/2017/06/word-embeddings-count-word2veec/ <br/>
 https://www.datascience.com/resources/notebooks/word-embeddings-in-python <br/>
+
 
 #### GloVe - Global Vectors for Word Representation
 https://towardsdatascience.com/comparing-word-embeddings-c2efd2455fe3 <br/>
