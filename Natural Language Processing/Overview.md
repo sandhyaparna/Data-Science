@@ -102,7 +102,7 @@ A typical NER model consists of three blocks:<br/>
 * Word2Vec - uses CBOW or Skip-gram. To make Word2vec algorithm computationally more efficient, tricks like Hierarchical Softmax and Skip-Gram Negative Sampling are used
 * GloVe
 * FastText - Extension of Word2Vec proposed by Facebook. 
-* ElMo - 
+* ELMo - 
 * BERT - Uses Attention Transformers
 
 
@@ -141,20 +141,12 @@ https://www.datascience.com/resources/notebooks/word-embeddings-in-python <br/>
 
 #### GloVe - Global Vectors for Word Representation
 https://towardsdatascience.com/comparing-word-embeddings-c2efd2455fe3 <br/>
-* Both CBOW and Skip-Grams are “predictive” models, in that they only take local contexts into account. Word2Vec does not take advantage of global context. GloVe embeddings by contrast leverage the same intuition behind the co-occuring matrix used distributional embeddings, but uses neural methods to decompose the co-occurrence matrix into more expressive and dense word vectors. While GloVe vectors are faster to train, neither GloVe or Word2Vec has been shown to provide definitively better results rather they should both be evaluated for a given dataset
+https://towardsdatascience.com/representing-text-in-natural-language-processing-1eead30e57d8 </br>
+* Both CBOW and Skip-Grams are “predictive” models, in that they only take local contexts into account. Word2Vec does not take advantage of global context (Word co-occurence). GloVe embeddings by contrast leverage the same intuition behind the co-occuring matrix used distributional embeddings, but uses neural methods to decompose the co-occurrence matrix into more expressive and dense word vectors. While GloVe vectors are faster to train, neither GloVe or Word2Vec has been shown to provide definitively better results rather they should both be evaluated for a given dataset
+* GloVe captures both global statistics and local statistics of a corpus, in order to come up with word vectors.
+* GloVe optimizes the embeddings directly so that the dot product of two word vectors equals the log of the number of times the two words will occur near each other (within a 2-words window, for example). This forces the embeddings vectors to encode the frequency distribution of which words occur near them.
 * GloVe brings up more infrequent similar words that the other models, which becomes quite overwhelming in the tail.
 * GloVe (glove.42B.300d): 300-dimensional vectors trained on the 42B token Common Crawl corpus
-
-#### Sentence Vectors
-https://medium.com/explorations-in-language-and-learning/how-to-obtain-sentence-vectors-2a6d88bd3c8b
-* Paragraph Vectors - a sentence vector can be learned simply by assigning an index to each sentence, and then treating the index like any other word.
-* Skip-thoughts
-* FactSent
-* Sequential Denoising Autoencoders (SDAE)
-
-#### Doc2Vec
-https://medium.com/scaleabout/a-gentle-introduction-to-doc2vec-db3e8c0cce5e <br/>
-https://medium.com/explorations-in-language-and-learning/how-to-obtain-sentence-vectors-2a6d88bd3c8b <br/>
 
 #### Continuous Bag-of-Words
 https://www.kdnuggets.com/2018/04/implementing-deep-learning-methods-feature-engineering-text-data-cbow.html
@@ -169,6 +161,18 @@ http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/
 fastText WIKI (wiki-news-300d-1M): 300-dimensional vectors trained on the 16B token Wikipedia 2017 dump
 * FastText, builds on Word2Vec by learning vector representations for each word and the n-grams found within each word. The values of the representations are then averaged into one vector at each training step. While this adds a lot of additional computation to training it enables word embeddings to encode sub-word information. FastText vectors have been shown to be more accurate than Word2Vec vectors by a number of different measures
 * For instance, the tri-grams for the word apple is app, ppl, and ple (ignoring the starting and ending of boundaries of words). The word embedding vector for apple will be the sum of all these n-grams. After training the Neural Network, we will have word embeddings for all the n-grams given the training dataset. Rare words can now be properly represented since it is highly likely that some of their n-grams also appears in other words. 
+
+
+#### Sentence Vectors
+https://medium.com/explorations-in-language-and-learning/how-to-obtain-sentence-vectors-2a6d88bd3c8b
+* Paragraph Vectors - a sentence vector can be learned simply by assigning an index to each sentence, and then treating the index like any other word.
+* Skip-thoughts
+* FactSent
+* Sequential Denoising Autoencoders (SDAE)
+
+#### Doc2Vec
+https://medium.com/scaleabout/a-gentle-introduction-to-doc2vec-db3e8c0cce5e <br/>
+https://medium.com/explorations-in-language-and-learning/how-to-obtain-sentence-vectors-2a6d88bd3c8b <br/>
 
 #### ELMo - Embeddings from Language Models
 https://www.analyticsvidhya.com/blog/2019/03/learn-to-use-elmo-to-extract-features-from-text/ </br>
