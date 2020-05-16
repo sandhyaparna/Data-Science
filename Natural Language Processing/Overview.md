@@ -150,10 +150,11 @@ https://www.datascience.com/resources/notebooks/word-embeddings-in-python <br/>
 
 
 #### GloVe - Global Vectors for Word Representation
+https://medium.com/@SAPCAI/glove-and-fasttext-two-popular-word-vector-models-in-nlp-c9dc051a3b0  <br/>
 https://towardsdatascience.com/comparing-word-embeddings-c2efd2455fe3 <br/>
 https://towardsdatascience.com/representing-text-in-natural-language-processing-1eead30e57d8 </br>
 * Both CBOW and Skip-Grams are “predictive” models, in that they only take local contexts into account. Word2Vec does not take advantage of global context (Word co-occurence). GloVe embeddings by contrast leverage the same intuition behind the co-occuring matrix used distributional embeddings, but uses neural methods to decompose the co-occurrence matrix into more expressive and dense word vectors. While GloVe vectors are faster to train, neither GloVe or Word2Vec has been shown to provide definitively better results rather they should both be evaluated for a given dataset
-* GloVe captures both global statistics and local statistics of a corpus, in order to come up with word vectors.
+* GloVe captures both global statistics (Global matrix factorizations when applied to term frequency matrices are called Lastent Semantic Analysis) and local statistics (CBOW & Skip-gram)of a corpus, in order to come up with word vectors.
 * GloVe optimizes the embeddings directly so that the dot product of two word vectors equals the log of the number of times the two words will occur near each other (within a 2-words window, for example). This forces the embeddings vectors to encode the frequency distribution of which words occur near them.
 * GloVe brings up more infrequent similar words that the other models, which becomes quite overwhelming in the tail.
 * GloVe (glove.42B.300d): 300-dimensional vectors trained on the 42B token Common Crawl corpus
