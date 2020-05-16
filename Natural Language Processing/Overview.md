@@ -102,8 +102,8 @@ A typical NER model consists of three blocks:<br/>
 * Word2Vec - uses CBOW or Skip-gram. To make Word2vec algorithm computationally more efficient, tricks like Hierarchical Softmax and Skip-Gram Negative Sampling are used
 * GloVe
 * FastText - Extension of Word2Vec proposed by Facebook. 
-* ElMo
-* BERT
+* ElMo - 
+* BERT - Uses Attention Transformers
 
 
 #### Word2Vec
@@ -118,7 +118,13 @@ Word2Vec, GloVe <br/>
 Algorithmically, these models are similar, except that CBOW predicts target words (e.g. 'mat') from source context words ('the cat sits on the') i.e 'predicting the word given its context' , while the skip-gram does the inverse and predicts source context-words from the target words i.e 'predicting the context given a word'. <br/>
 * word embedding dimension is determined by computing (in an unsupervised manner) the accuracy of the prediction
 * Word2vec can be used in recommendations. If a person has listened to song A, try searching for songs that other persons listened to before of after listening to song A and recommend the songs that are close to A to the person. A user’s listening queue as a sentence, with each word in that sentence being a song that the user has listened to. So then, training the Word2vec model on those sentences essentially means that for each song the user has listened to in the past, we’re using the songs they have listened to before and after to teach our model that those songs somehow belong to the same context. 
+* Negative Sampling: it suggests that instead of backpropagating all the 0s in the correct output vector (for a vocab size of 10mill there are 10mill minus 1 zeros) we just backpropagate a few of them (say 14)
+* Hierarchical Softmax: Calculating the softmax for a vocab of 10mill is very time and computation intensive. Hierarchical Softmax suggests a faster way of computing it using Huffman trees
 
+Applications
+* Music recommendations - https://towardsdatascience.com/using-word2vec-for-music-recommendations-bb9649ac2484
+* Find Similar Quora Questions - https://towardsdatascience.com/finding-similar-quora-questions-with-word2vec-and-xgboost-1a19ad272c0d
+* 
 
 Training of Word2vec on Wiki Corpus https://medium.com/@maxminicherrycc/word2vec-how-to-train-and-update-it-4eed4260cf75 <br/>
 Train and Update Word2vec https://medium.com/@maxminicherrycc/word2vec-how-to-train-and-update-it-4eed4260cf75 <br/>
@@ -133,7 +139,7 @@ Detained Neural network representation https://iksinc.online/tag/continuous-bag-
 https://www.analyticsvidhya.com/blog/2017/06/word-embeddings-count-word2veec/ <br/>
 https://www.datascience.com/resources/notebooks/word-embeddings-in-python <br/>
 
-#### GloVe
+#### GloVe - Global Vectors for Word Representation
 https://towardsdatascience.com/comparing-word-embeddings-c2efd2455fe3 <br/>
 * Both CBOW and Skip-Grams are “predictive” models, in that they only take local contexts into account. Word2Vec does not take advantage of global context. GloVe embeddings by contrast leverage the same intuition behind the co-occuring matrix used distributional embeddings, but uses neural methods to decompose the co-occurrence matrix into more expressive and dense word vectors. While GloVe vectors are faster to train, neither GloVe or Word2Vec has been shown to provide definitively better results rather they should both be evaluated for a given dataset
 * GloVe brings up more infrequent similar words that the other models, which becomes quite overwhelming in the tail.
