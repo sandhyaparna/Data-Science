@@ -99,7 +99,7 @@ A typical NER model consists of three blocks:<br/>
 
 
 ### Word Embeddings
-* Word2Vec - uses CBOW or Skip-gram. To make Word2vec algorithm computationally more efficient, tricks like Hierarchical Softmax and Skip-Gram Negative Sampling are used
+* Word2Vec - uses CBOW or Skip-gram. To make CBOW or skip-gram algorithm computationally more efficient, tricks like negative sampling, softmax or Hierarchical Softmax loss functions are used
 * GloVe
 * FastText - Extension of Word2Vec proposed by Facebook. 
 * ELMo - 
@@ -170,7 +170,7 @@ http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model/
 
 #### FastText 
 fastText WIKI (wiki-news-300d-1M): 300-dimensional vectors trained on the 16B token Wikipedia 2017 dump
-* Similar to Word2vec, fastText also uses either CBOW or Skip-gram
+* Similar to Word2vec, fastText also supports training CBOW or Skip-gram models using Negative sampling, softmax or Hierarchical softmax loss functions
 * FastText, builds on Word2Vec by learning vector representations for each word and the n-grams found within each word. The values of the representations are then averaged into one vector at each training step. While this adds a lot of additional computation to training it enables word embeddings to encode sub-word information. FastText vectors have been shown to be more accurate than Word2Vec vectors by a number of different measures
 * For instance, the tri-grams for the word apple is app, ppl, and ple (ignoring the starting and ending of boundaries of words). The word embedding vector for apple will be the sum of all these n-grams. After training the Neural Network, we will have word embeddings for all the n-grams given the training dataset. Rare words can now be properly represented since it is highly likely that some of their n-grams also appears in other words. 
 * Word2vec and GloVe both fail to provide any vector representation for words that are not in the model dictionary. This is a huge advantage of this method.
