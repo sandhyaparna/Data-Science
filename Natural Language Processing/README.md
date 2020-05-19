@@ -50,9 +50,9 @@
 ### Word Embedding Approaches
 * Word2Vec - Distributed representations
 * GloVe
-* ULMFit
+* ULMFit (FastAI)
 * ELMo
-* BERT
+* BERT (PyTorch Transformers)
 * RoBERTa - Robustly optimized Bert pretraining approach
 * XLNet
 * ALBERT - A Lite BERT
