@@ -44,8 +44,7 @@
   * The main bottleneck of sequence-to-sequence learning is that it requires to compress the entire content of the source sequence into a fixed-size vector. Attention alleviates this by allowing the decoder to look back at the source sequence hidden states, which are then provided as a weighted average as additional input to the decoder. Attention is widely applicable and potentially useful for any task that requires making decisions based on certain parts of the input. It has been applied to consituency parsing , reading comprehension (Hermann et al., 2015), and one-shot learning, among many others. The input does not even need to be a sequence, but can consist of other representations as in the case of image captioning. A useful side-effect of attention is that it provides a rare---if only superficial---glimpse into the inner workings of the model by inspecting which parts of the input are relevant for a particular output based on the attention weights. Attention is also not restricted to just looking at the input sequence; self-attention can be used to look at the surrounding words in a sentence or document to obtain more contextually sensitive word representations. Multiple layers of self-attention are at the core of the Transformer architecture.
 * Memory based networks
 * Pretrained language models
-
-
+* Transfer Learning: The use of models trained on a particular domain of learning tasks and repurposing the learned weights to solve another similar learning task is called transfer learning. Fine-tuning is the process of updating weights of a pre-trained model
 
 ### Word Embedding Approaches
 * Word2Vec - Distributed representations
@@ -59,6 +58,9 @@
 * RoBERTa - Robustly optimized Bert pretraining approach
 * XLNet
 * ALBERT - A Lite BERT
+* REALM - Retrieval-Augmented Language Model Pre-Training 
+
+
 
 ### Annotation tools
 * Prodigy
