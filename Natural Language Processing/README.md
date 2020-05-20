@@ -35,7 +35,7 @@
   * A sequence-to-sequence model is a model that takes a sequence of items (words, letters, features of an images…etc) and outputs another sequence of items. In neural machine translation, a sequence is a series of words, processed one after another. The output is, likewise, a series of words. 
   * Model is composed of an encoder and decoder. The encoder processes each item in the input sequence, it compiles the information it captures into a vector (called the context i.e an array of numbers). After processing the entire input sequence, the encoder sends the context over to the decoder, which begins producing the output sequence item by item. Size of the context vector is the number of hidden units in the encoder. Encoder takes 2 inputs at each step: one word from the input sentence i.e represented as vector (Word is trandformed into a vector using word embedding algos) and a hidden state. We get an updated hidden state in the output from first step. In the 2nd step of encoding 2nd word and hidden step output from first step are sent as input. And only the last hidden state from Encoding stage is sent to every step of Decoding stage. Every step of decoding stage takes 2 inputs: Last hidden state from encoding stage and hidden state obtained from the previous step of decoding 
   * Applications include Machine Transalation, generating a caption based on an image , text based on a table, text summarization, and a description based on source code changes.   Generate an output sequence by predicting one word at a time. For continuency parsing and Named Entity recognition. Transformer 
-* Attention Mechanism - Transformer, BERT, GPT-2 </br>
+* Attention Mechanism - Transformer networks - BERT, GPT-2 </br>
   * Instead of passing the last hidden state of the encoding stage, the encoder passes all the hidden states to the decoder
   * Second, an attention decoder does an extra step before producing its output. In order to focus on the parts of the input that are relevant to this decoding time step, the decoder does the following:
     * Look at the set of encoder hidden states it received – each encoder hidden states is most associated with a certain word in the input sentence
@@ -52,7 +52,7 @@
 * GloVe
 * ULMFit (FastAI) - Transfer Learning Technique
 * ELMo
-* BERT (PyTorch Transformers)
+* BERT (PyTorch Transformers, HuggingFace Transformers) 
 * RoBERTa - Robustly optimized Bert pretraining approach
 * XLNet
 * ALBERT - A Lite BERT
