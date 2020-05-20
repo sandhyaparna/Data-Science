@@ -193,6 +193,7 @@ https://www.analyticsvidhya.com/blog/2019/03/learn-to-use-elmo-to-extract-featur
 * ELMo and BERT can generate diff word embeddings for a word that captures the context of a word - that is its position in a sentence
 * ELMo uses LSTMs
 * ELMo is a charcater based model using character convolutions and can handle out of vocab words, but learnt representations are at word level
+* Model is trained to predict the next word given a sequence words
 * ELMo word vectors are computed on top of a two-layer bidirectional language model (biLM). This biML model has two layers stacked together. Each layer has 2 passes — forward pass and backward pass:
   * The architecture above uses a character-level convolutional neural network (CNN) to represent words of a text string into raw word vectors
   * These raw word vectors act as inputs to the first layer of biLM
