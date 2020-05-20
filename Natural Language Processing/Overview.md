@@ -212,6 +212,9 @@ As the input to the biLM is computed from characters rather than words, it captu
 * 
 * BERT represents inputs as subwords and learns embeddings from subwords
 
+#### GPT
+
+
 #### XLNet
 * 
 
