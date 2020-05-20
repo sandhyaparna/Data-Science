@@ -218,13 +218,14 @@ As the input to the biLM is computed from characters rather than words, it captu
 #### ULMfit
 *  Universal Language Model Fine-tuning (ULMFiT), an effective transfer learning method that can be applied to any task in NLP, and introduce techniques that are key for fine-tuning a language model.
 * Small dataset is sufficient in Transfer learning training by using ULMFit
-* ULMFiT involves 3 major stages: #### LM pre-training, LM fine-tuning and Classifier fine-tuning. The method is universal in the sense that it meets these practical criteria:
+* ULMFiT involves 3 major stages: LM pre-training, LM fine-tuning and Classifier fine-tuning. The method is universal in the sense that it meets these practical criteria:
   * It works across tasks varying in document size, number, and label type.
   * It uses a single architecture and training process.
   * It requires no custom feature engineering or pre-processing.
   * It does not require additional in-domain documents or labels.
-
-
+* LM pre-training: The LM is trained on a general-domain corpus to capture general features of the language in different layers. We pre-train LM on a large general-domain corpus and fine-tune it on the target task using novel techniques. So, authors have used Wikitext-103 a dataset of 28k preprocessed articles consisting of 103Million words. In general, the dataset should be so huge that the LM learns all the properties of the langauge. This is the most expensive in terms of compute resources and time too. Hence we do this just once.
+* LM fine-tuning: In almost all the cases the target task dataset will have a different distribution w.r.t. the general domain corpus. In this stage, we fine-tune the model on the target task dataset to learn its distributions by using discriminative fine-tuning and slanted triangular learning rates. (Python: language_model_learner and fit base on the optimal learning rate)
+* Classifier fine-tuning: 
 
 ### Visualizing Features
 In order to see whether our embeddings/features are capturing information that is relevant to our problem , it is a good idea to visualize them and see if the classes look well separated. Since vocabularies are usually very large and visualizing data in 20,000 dimensions is impossible, techniques like PCA will help project the data down to two dimensions. And is then plotted. 2 features on X & Y-axis and target is colour coded
