@@ -217,6 +217,7 @@ As the input to the biLM is computed from characters rather than words, it captu
 
 #### ULMfit
 *  Universal Language Model Fine-tuning (ULMFiT), an effective transfer learning method that can be applied to any task in NLP, and introduce techniques that are key for fine-tuning a language model.
+* Small dataset is effective in Transfer learning training by using ULMFit
 
 
 
