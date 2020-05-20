@@ -50,15 +50,15 @@
 ### Word Embedding Approaches
 * Word2Vec - Distributed representations
 * GloVe
+* FastText
+
+### Pre-trained language models:
+* ULMFit (FastAI) - Transfer Learning Technique
 * ELMo
 * BERT (PyTorch Transformers, HuggingFace Transformers) 
 * RoBERTa - Robustly optimized Bert pretraining approach
 * XLNet
 * ALBERT - A Lite BERT
-
-### Transfer Learning
-* ULMFit (FastAI) - Transfer Learning Technique
-
 
 ### Annotation tools
 * Prodigy
