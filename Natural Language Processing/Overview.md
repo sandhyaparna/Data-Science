@@ -224,7 +224,11 @@ As the input to the biLM is computed from characters rather than words, it captu
   * It requires no custom feature engineering or pre-processing.
   * It does not require additional in-domain documents or labels.
 * LM pre-training: The LM is trained on a general-domain corpus to capture general features of the language in different layers. We pre-train LM on a large general-domain corpus and fine-tune it on the target task using novel techniques. So, authors have used Wikitext-103 a dataset of 28k preprocessed articles consisting of 103Million words. In general, the dataset should be so huge that the LM learns all the properties of the langauge. This is the most expensive in terms of compute resources and time too. Hence we do this just once.
-* LM fine-tuning: In almost all the cases the target task dataset will have a different distribution w.r.t. the general domain corpus. In this stage, we fine-tune the model on the target task dataset to learn its distributions by using discriminative fine-tuning and slanted triangular learning rates. (Python: language_model_learner and fit base on the optimal learning rate)
+* LM fine-tuning: In almost all the cases the target task dataset will have a different distribution w.r.t. the general domain corpus. In this stage, we fine-tune the model on the target task dataset to learn its distributions by using discriminative fine-tuning and slanted triangular learning rates. STLR has been used to achieve state-of-the-art results in CV (Python: language_model_learner and fit base on the optimal learning rate)
+  * As different layers grasp different information, author suggest to fine-tune each layer to a different extent.
+  * In Stochastic Gradient Descent we update θ at each time step t.
+  * In discriminative fine-tuning, we use θ1, θ2,… θL instead of singel θ value for respective L layers.
+  * In STLR, authors suggest to increase the learning rate linearly and decay it in the following manner.
 * Classifier fine-tuning: 
 
 ### Visualizing Features
