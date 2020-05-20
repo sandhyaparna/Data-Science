@@ -102,7 +102,11 @@ A typical NER model consists of three blocks:<br/>
 * Word2Vec - uses CBOW or Skip-gram. To make CBOW or skip-gram algorithm computationally more efficient, tricks like negative sampling, softmax or Hierarchical Softmax loss functions are used
 * GloVe
 * FastText - Extension of Word2Vec proposed by Facebook. 
+
+### Pre-Trained Language Models
+* ULMFit
 * ELMo - 
+* Transformer
 * BERT - Uses Attention Transformers
 
 
