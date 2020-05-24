@@ -55,8 +55,14 @@
 * ULMFit (FastAI) - Transfer Learning Technique
 * ELMo
 * BERT (PyTorch Transformers, HuggingFace Transformers) 
-* RoBERTa - Robustly optimized Bert pretraining approach
+* Transformer-XL
+* Stanford NLP
+* OpenAI's GPT-2
 * XLNet
+* PyTorch - Transformers
+* Baidu's Enhanced Representation through knowledge Intergration
+* RoBERTa - Robustly optimized Bert pretraining approach
+* FacebookAI's XLM/mBERT
 * ALBERT - A Lite BERT
 * REALM - Retrieval-Augmented Language Model Pre-Training 
 
