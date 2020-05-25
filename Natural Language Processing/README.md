@@ -54,6 +54,7 @@
 ### Pre-trained language models:
 * ULMFit (FastAI) - Transfer Learning Technique
 * ELMo
+* Transformer (Based on Self-attention mechanism)
 * BERT (PyTorch Transformers, HuggingFace Transformers) 
 * Transformer-XL
 * Stanford NLP
