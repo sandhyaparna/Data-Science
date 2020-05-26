@@ -46,7 +46,7 @@
 * Self-Attention (Transformer):
   * https://jalammar.github.io/illustrated-transformer/
   * Disadvantages of Attention: Due to the fundamental constraint of sequential computation in Attention mechanism, it is not possible to parallelize the network, which makes it hard to train on long sequences. This, in turn, puts a constraint on the batch size that can be used while training. This has been alleviated by the transformer. Attention based model would inadvertently give a higher weight-age to the elements in the sequence closer to a position. Though this might make sense in the sense of understanding the grammatical formation of various parts of the sentence, it is hard to find relations between words far apart in the sentence.
-  * Transformer Architecture - it follows the encoder-decoder design, meanwhile replacing the LSTMs with Self Attention layer and the sequential nature being identified using the Positional Encodings. 
+  * Transformer Architecture - Parallelization technique. It follows the encoder-decoder design, meanwhile replacing the LSTMs with Self Attention layer and the sequential nature being identified using the Positional Encodings.  
   * Self-attention, sometimes called intra-attention, is an attention mechanism relating different positions of a single sequence in order to compute a representation of the sequence.
 
 * Memory based networks
@@ -61,7 +61,7 @@
 ### Pre-trained language models:
 * ULMFit (FastAI) - Transfer Learning Technique
 * ELMo
-* Transformer (Based on Self-attention mechanism)
+* Transformer (Based on Self-attention mechanism) - Tensor2Tensor package & PyTorch
 * BERT (PyTorch Transformers, HuggingFace Transformers) 
 * Transformer-XL
 * Stanford NLP
