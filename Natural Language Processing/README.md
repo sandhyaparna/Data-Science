@@ -52,7 +52,15 @@
     * Each encoder within Encoding component contains a self-attention layer (layer that helps the encoder look at other words in the input sentence as it encodes a specific word) and Feed Forward Neural Network. Input to the encoder flows through a self-attention layer and output from self-attention layer are fed to a feed-forward neural network. Output from feed-forward neural network is sent as input to the next encoder
     * Each decoder within Decoding component contains a self-attention layer; Encoder-Decoder Attention layer (helps the decoder focus on relevant parts of the input sentence) and Feed Forward Neural Network.
     * Only the first encoder recieves input as list of vectors. (Each word is converted into a vector using an embedding algorithm)
-    * 
+    * Self-Attention layer:
+      * First Step: Each input vector(a word is converted to vector using embedding algos)  is multiplyed with 3 matrices that are trained during the training process to create 3 vectors i.e. Query vector(q1 for first word, q2 for second word etc), a Key vector(k1 for first word, k2 for second word etc), and a Value vector(v1 for first word, v2 for second word etc). Input vectors of dimension 512, when multiplied with matrices of lower dimension results in lower dimensional vector 
+      * Second Step: To calculate self-attention for first word - We need to score each word of the input sentence against this word.The score determines how much focus to place on other parts of the input sentence as we encode a word at a certain position. For eg: if we’re processing the self-attention for the word in position #1, the first score would be the dot product of q1 and k1. The second score would be the dot product of q1 and k2.
+      * Thirst & Fourth Steps: divide the scores by 8 (the square root of the dimension of the key vectors used in the paper – 64. sq roor of 64=8). This leads to having more stable gradients. There could be other possible values here, but this is the default), then pass the result through a softmax operation. Softmax normalizes the scores so they’re all positive and add up to 1. This softmax score determines how much each word will be expressed at this position. Clearly the word at this position will have the highest softmax score, but sometimes it’s useful to attend to another word that is relevant to the current word.
+      * Fifth Step: Multiply each value vector (v1, v2, v3 etc) by the softmax score. The intuition here is to keep intact the values of the word(s) we want to focus on, and drown-out irrelevant words (by multiplying them by tiny numbers like 0.001, for example).
+      * Sixth Step: sum up the weighted value vectors.This produces the output of the self-attention layer at this position (for the first word).
+The resulting vector is one we can send along to the feed-forward neural network. In the actual implementation, however, this calculation is done in matrix form for faster processing.
+
+
     
     
     
