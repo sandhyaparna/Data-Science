@@ -60,14 +60,12 @@
       * Sixth Step: sum up the weighted value vectors.This produces the output of the self-attention layer at this position (for the first word).
     * In case of multi headed attention, we will have mutiple sets of Query,Key,Value weight matrices implies 8 or x sets with each set containing 3 matrices. So each input vector is multiplied with each set of 3 matrices. so after sixth step we get 8 diff weighted value vectors which are concatenated and multiplied with weight matrix W0 to produce a single matrix i.e. output of the layer
 ![](https://jalammar.github.io/images/t/transformer_multi-headed_self-attention-recap.png)
-
 ![](https://jalammar.github.io/images/t/transformer_resideual_layer_norm_3.png)
-    * 
-
+    * The output from Encoding component is used by each decoder of the Decoding component. The self-attention layer is only allowed to attend to earlier positions in the output sequence. This is done by masking future positions (setting them to -inf) before the softmax step in the self-attention calculation. The “Encoder-Decoder Attention” layer works just like multiheaded self-attention, except it creates its Queries matrix from the layer below it, and takes the Keys and Values matrix from the output of the encoder stack.
+    * The decoder stack outputs a vector of floats. Final Linear layer & Softmax layer turns vector of floats to word. The Linear layer is a simple fully connected neural network that projects the vector produced by the stack of decoders, into a much, much larger vector called a logits vector. The softmax layer then turns those scores into probabilities (all positive, all add up to 1.0). The cell with the highest probability is chosen, and the word associated with it is produced as the output for this time step.
     
     
     
-  * Self-attention, sometimes called intra-attention, is an attention mechanism relating different positions of a single sequence in order to compute a representation of the sequence.
 
 * Memory based networks
 * Pretrained language models
