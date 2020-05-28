@@ -58,7 +58,7 @@
       * Thirst & Fourth Steps: divide the scores by 8 (the square root of the dimension of the key vectors used in the paper – 64. sq roor of 64=8). This leads to having more stable gradients. There could be other possible values here, but this is the default), then pass the result through a softmax operation. Softmax normalizes the scores so they’re all positive and add up to 1. This softmax score determines how much each word will be expressed at this position. Clearly the word at this position will have the highest softmax score, but sometimes it’s useful to attend to another word that is relevant to the current word.
       * Fifth Step: Multiply each value vector (v1, v2, v3 etc) by the softmax score. The intuition here is to keep intact the values of the word(s) we want to focus on, and drown-out irrelevant words (by multiplying them by tiny numbers like 0.001, for example).
       * Sixth Step: sum up the weighted value vectors.This produces the output of the self-attention layer at this position (for the first word).
-    * 
+    * In case of multi headed attention, we will have mutiple sets of Query,Key,Value weight matrices implies 8 or x sets with each set containing 3 matrices. So each input vector is multiplied with each set of 3 matrices. so after sixth step we get 8 diff weighted value vectors which are concatenated and multiplied with weight matrix W0 to produce a single matrix i.e. output of the layer
 
 
     
