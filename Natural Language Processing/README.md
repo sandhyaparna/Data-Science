@@ -61,6 +61,8 @@
     * In case of multi headed attention, we will have mutiple sets of Query,Key,Value weight matrices implies 8 or x sets with each set containing 3 matrices. So each input vector is multiplied with each set of 3 matrices. so after sixth step we get 8 diff weighted value vectors which are concatenated and multiplied with weight matrix W0 to produce a single matrix i.e. output of the layer
 ![](https://jalammar.github.io/images/t/transformer_multi-headed_self-attention-recap.png)
 
+![](https://jalammar.github.io/images/t/transformer_resideual_layer_norm_3.png)
+    * 
 
     
     
