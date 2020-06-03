@@ -106,7 +106,7 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5524149/ </br>
 Links: https://www.nlm.nih.gov/research/umls/quickstart.html
 * SNOMED CT (Systematized Nomenclature of Medicine -- Clinical Terms): It is part of UMLS Metathesaurus. The great majority of the differences between the concept structures of SNOMED CT and the UMLS Metathesaurus are due to a few differences in their concept models. In several cases, SNOMED CT's description logic defines as distinct concepts what the Metathesaurus sees as different perspectives on a single concept.
 Link: https://www.nlm.nih.gov/research/umls/Snomed/snomed_represented.html#:~:text=In%20SNOMED%20CT%20the%20RelationshipType,116680003')%20to%20enhance%20readability.
-* I-MAGIC (Interactive Map-Assisted Generation of ICD Codes) Algorithm utilizes the SNOMED CT to ICD-10-CM Map in a real-time, interactive manner to generate ICD-10-CM codes but is semi-automated where user input is required
+* I-MAGIC (Interactive Map-Assisted Generation of ICD Codes) Algorithm utilizes the SNOMED CT to ICD-10-CM Map in a real-time, interactive manner to generate ICD-10-CM codes but is semi-automated as user input is required
 
 
 
