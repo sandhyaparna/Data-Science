@@ -108,7 +108,8 @@ Links: https://www.nlm.nih.gov/research/umls/quickstart.html
 Link: https://www.nlm.nih.gov/research/umls/Snomed/snomed_represented.html#:~:text=In%20SNOMED%20CT%20the%20RelationshipType,116680003')%20to%20enhance%20readability.
 * I-MAGIC (Interactive Map-Assisted Generation of ICD Codes) Algorithm utilizes the SNOMED CT to ICD-10-CM Map in a real-time, interactive manner to generate ICD-10-CM codes but is semi-automated as user input is required
 Link: https://www.nlm.nih.gov/research/umls/mapping_projects/snomedct_to_icd10cm.html
-
+* IBM Watson https://github.com/IBM/nlc-icd10-classifier </br>
+https://www.youtube.com/watch?v=N0eKEZxdwsQ </br>
 
 
 
