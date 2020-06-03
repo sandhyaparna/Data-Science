@@ -100,13 +100,13 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5524149/ </br>
 * - Her vital signs: heart rate of 66, blood pressure 120/63, respiratory rate 14, 100% on 5 liters nasal cannula O2 saturation#  - HbA1c less than or equal to 11.0%#
 
 ### POCS for ICD 10 extraction
-* MIMIC database (Download from https://physionet.org/content/mimiciii/1.4/) can be used for Unsupervised Extraction of Diagnosis Codes (ICD10 codes) from Electronic medical Records
+* MIMIC database (Download from https://physionet.org/content/mimiciii/1.4/) can be used for Automated Unsupervised Extraction of Diagnosis Codes (ICD10 codes) from Electronic medical Records
 * Overview: ICD9 is used for diagnosis coding of MIMIC data. ICD 9 has around 14k diagnosis codes where as ICD 10 has 69k diagnosis codes.
 * UMLS (Unified Medical Language System): UMLS is a large domain expert driven aggregation of over 160 biomedical terminologies and standards. It functions as a comprehensive knowledge base and facilitates interoperability between information systems that deal with biomedical terms. It has has three main components: Metathesaurus, Semantic Network, and SPECIALIST lexicon. The Metathesaurus has terms and codes, henceforth called concepts, from different terminologies. Biomedical terms from different vocabularies that are deemed synonymous by domain experts are mapped to the same Concept Unique Identifier (CUI) in the Metathesaurus. The semantic network acts as a typing system that is organized as a hierarchy with 133 semantic types such as disease or syndrome, pharmacologic substance, or diagnostic procedure. It also captures 54 important relationships (or relation types) between biomedical entities in the form of a relationship hierarchy with relationships such as treats, causes, and indicates. The Metathesaurus currently has about 2.8 million concepts with more than 12 million relations connecting these concepts. The SPECIALIST lexicon is useful for lexical processing and variant generation of different biomedical terms.
 Links: https://www.nlm.nih.gov/research/umls/quickstart.html
 * SNOMED CT (Systematized Nomenclature of Medicine -- Clinical Terms): It is part of UMLS Metathesaurus. The great majority of the differences between the concept structures of SNOMED CT and the UMLS Metathesaurus are due to a few differences in their concept models. In several cases, SNOMED CT's description logic defines as distinct concepts what the Metathesaurus sees as different perspectives on a single concept.
 Link: https://www.nlm.nih.gov/research/umls/Snomed/snomed_represented.html#:~:text=In%20SNOMED%20CT%20the%20RelationshipType,116680003')%20to%20enhance%20readability.
-* I-MAGIC (Interactive Map-Assisted Generation of ICD Codes) Algorithm utilizes the SNOMED CT to ICD-10-CM Map in a real-time, interactive manner to generate ICD-10-CM codes but 
+* I-MAGIC (Interactive Map-Assisted Generation of ICD Codes) Algorithm utilizes the SNOMED CT to ICD-10-CM Map in a real-time, interactive manner to generate ICD-10-CM codes but is semi-automated where user input is required
 
 
 
