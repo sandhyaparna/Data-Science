@@ -19,7 +19,7 @@ Demo http://nlp.stanford.edu:8080/ner/process </br>
 Demo http://corenlp.run/ </br>
 * PyUMLS </br>
 * Clinspell: Clinical Spell Correction https://github.com/clips/clinspell </br>
-
+* Unsupervised Extraction of Diagnosis Codes from EMRs Using Knowledge-Based and Extractive Text Summarization Techniques https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5524149/
 
 ### Relation Extractor
 https://arxiv.org/abs/1901.08746 </br>
@@ -55,11 +55,12 @@ https://arxiv.org/ftp/arxiv/papers/1602/1602.00269.pdf </br>
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5543347/ </br>
 https://pdfs.semanticscholar.org/d3c9/8c90847eb1739819c024eb39a8095fe1ee32.pdf </br>
 
-* Diagnosis code extraction
+* Diagnosis code extraction 
   * Hierarchy of ICD codes (Sequential trees LSTM)
   * Diagnosis descriptions (Adversarial learning)
   * Rank ICD codes (ADMM Isotonic constraints)
   * Many-to-many mapping between diagnosis descriptions & ICD codes </br>
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5524149/ </br>
 https://www.aclweb.org/anthology/P18-1098 </br>
 https://pdfs.semanticscholar.org/65f0/a9a1f626bd6c3108a8f9eb6c70cad89ce41e.pdf </br>
 https://arxiv.org/pdf/1711.04075.pdf </br>
