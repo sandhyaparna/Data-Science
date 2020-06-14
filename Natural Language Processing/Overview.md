@@ -211,11 +211,12 @@ As the input to the biLM is computed from characters rather than words, it captu
   * Word 'read' can be used as verb in present as well as past tense. Traditional word embeddings come up with same vector for the word 'read' in both the sentences. ELMo word vectors successfully address this issue.
 * ELMo word representations take the entire input sentence into equation for calculating the word embeddings. Hence, the term “read” would have different ELMo vectors under different context.
   
-#### BERT 
+#### BERT (Bidirectional Encoder Representations from Transformers)
 * BERT uses Transformer - an attention based model with positional encodings to represent word positions
-* BERT is the first unsupervised, deeply bidirectional system for pre-training NLP
-* 
+* BERT is the first unsupervised, deeply bidirectional system for pre-training NLP. It is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of NLP tasks.
 * BERT represents inputs as subwords and learns embeddings from subwords
+* 
+
 
 #### GPT
 
