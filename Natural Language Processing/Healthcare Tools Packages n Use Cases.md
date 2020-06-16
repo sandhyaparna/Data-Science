@@ -14,6 +14,7 @@ Demo http://columbiaelixr.appspot.com/valx </br>
 https://imagic.nlm.nih.gov/imagic/code/map?v=5&js=true&pabout=&pinstructions=&p=e2551282zd558769e10&p.e2551282zd558769e10.s=709044004&pat=My+Patient+%28modified%29&pat.init=My+Patient+%28modified%29&q.f=&q.dob=&plist=Back+to+Problem+List
 * CliNER https://github.com/text-machine-lab/CliNER </br>
 Demo http://text-machine.cs.uml.edu/cliner/demo/cgi-bin/cliner_demo.cgi/ </br>
+* Med7 https://github.com/kormilitzin/med7 </br>
 * medaCy - Similar to Spacy https://github.com/NLPatVCU/medaCy </br>
 * Stanford NER https://nlp.stanford.edu/software/CRF-NER.html </br>
 Demo http://nlp.stanford.edu:8080/ner/process </br>
@@ -66,6 +67,10 @@ https://www.aclweb.org/anthology/P18-1098 </br>
 https://pdfs.semanticscholar.org/65f0/a9a1f626bd6c3108a8f9eb6c70cad89ce41e.pdf </br>
 https://arxiv.org/pdf/1711.04075.pdf </br>
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5524149/ </br>
+
+* Extraction medications, dosage, frequency, route
+  * Med7 https://github.com/kormilitzin/med7
+  * Medacy https://github.com/NLPatVCU/medaCy
 
 ##### Information Extraction (IE)
 * Mono and multilingual  
