@@ -10,10 +10,11 @@
 
 ### Logloss
 https://towardsdatascience.com/understanding-binary-cross-entropy-log-loss-a-visual-explanation-a3ac6025181a </br>
--1/N * Σ log(prob of the actual target happening). ln is used and not log
+-1/N * Σ ln(prob of the actual target happening). ln is used and not log
 * prob of the actual target happening implies 
   * If Target=0 for a observation then what is the probability of 0 happening. 
   * If Target=1 for a observation then what is the probability of 1 happening.
+* loss_reg_1 = -1 * np.sum(y_true * np.log(y_pred_1))   +    -1 * np.sum((1 - y_true) * np.log(1 - y_pred_1))
 * Which equals to the probability of correctness - for an observation where 0 should happen, if prob of 0 happening is high then logloss i.e -log value is less whereas if prob of 0 happening is less then logloss is more
 * Same is the same case for Target=1
 * If 'prob of the actual target happening' is high then logloss i.e -log value is less whereas if 'prob of the actual target happening' is less then logloss is more
@@ -23,8 +24,8 @@ Probability of it being close to the actual target
 ![](http://wiki.fast.ai/images/4/43/Log_loss_graph.png)
 
 ### Log loss of Class Imbalance data - https://www.coursera.org/learn/ai-for-medical-diagnosis/lecture/qSNmX/impact-of-class-imbalance-on-loss-calculation
-*  Log loss = (-logloss of probability of Y=1 if y=1) + (-logloss of probability of Y=0 if y=0)
-* Modified Log loss = ( (Num Negative/No Total) * (-logloss of probability of Y=1 if y=1) ) + ( (Num Positive/No Total) * (-logloss of probability of Y=0 if y=0) )
+*  Log loss = Σ(-logloss of probability of Y=1 if y=1) + Σ(-logloss of probability of Y=0 if y=0)
+* Modified Log loss = ( (Num Negative/No Total) * Σ(-logloss of probability of Y=1 if y=1) ) + ( (Num Positive/No Total) * Σ(-logloss of probability of Y=0 if y=0) )
 
 
 
