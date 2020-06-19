@@ -21,6 +21,7 @@
  
  ### Modeling
  * Loss function measures the error between our output probability and the desired label
+   * Weighted loss function is to be used. Modified Log loss = ( (Num Negative/No Total) * Σ(-logloss of probability of Y=1 if y=1) ) + ( (Num Positive/No Total) * Σ(-logloss of probability of Y=0 if y=0) )
  * Densenet - https://arxiv.org/pdf/1608.06993.pdf. 
    * Early layers of the network usually captures low-level image features that are broably generalizable, while the later layers capture details that are more high-level or more specific to a task. So when fine-tuning the network instead of fine-tuning all features we've transferred, we can freeze the features learned by the shallow layers and just fine-tune the deeper layers. In practice, two of the most common design choices are one, to fine-tune all of the layers, and two, only fine-tune the later or the last layer and not fine-tune the earlier layers. This approach of pre-training and fine-tuning, is also called transfer learning and is an effective way to tackle the small dataset size challenge.
    
