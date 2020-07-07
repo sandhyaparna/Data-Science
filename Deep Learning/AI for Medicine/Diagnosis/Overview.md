@@ -1,6 +1,7 @@
 ### Course Info
 * Link - https://www.coursera.org/learn/ai-for-medical-diagnosis/home/week/1
 * Data in Images folder - Download tar.gz files seperately https://nihcc.app.box.com/v/ChestXray-NIHCC/folder/37178474737
+* MRI Data - https://decathlon-10.grand-challenge.org/
 * PreRequisites - CNN, loss functions, Probability, Python
 * Use Cases
   * Skin images to identify if a suspecious mole is cancerous or not
