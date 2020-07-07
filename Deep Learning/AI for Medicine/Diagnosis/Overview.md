@@ -33,6 +33,11 @@
   * Ground Truth - Consensus voting i.e Humans are asked to determine the outcome and majority voting is used. Use additional medical testing.
  
 
+### MRI Data. Challenges with 3-D data
+* 3-D Image. Contains multiple layers of 2-D images
+* UNet architecture is used to train Segmentation model
+* 
+
 
 
 
