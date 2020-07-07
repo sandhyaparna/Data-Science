@@ -36,6 +36,7 @@
 ### MRI Data. Challenges with 3-D data
 * A single MRI scan is made of multiple 3-D volumes. Contains multiple layers of 2-D images
 * UNet architecture is used to train Segmentation model
+* Alignment of Image channels - https://www.coursera.org/learn/ai-for-medical-diagnosis/lecture/q5kXG/mri-data-and-image-registration
 * 
 
 
