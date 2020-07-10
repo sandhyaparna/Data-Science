@@ -214,6 +214,8 @@ As the input to the biLM is computed from characters rather than words, it captu
 #### BERT (Bidirectional Encoder Representations from Transformers)
 * BERT uses Transformer - an attention based model with positional encodings to represent word positions
 * BERT is the first unsupervised, deeply bidirectional system for pre-training NLP. It is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of NLP tasks.
+* BERT produces 768 dimensional vector for each word based on their context. A single word with multiple meanings will have different vectors.
+* LEARNING PROCESS: Let's see how BERT learns these contextualized word representations. Words from a passage of text are input into a BERT model. Then one of the tokens in the passage is masked with a special MASK token. The model is trained to predict what the mask was. An extra layer is added where the output is the probabilities of the missing word being every single word in the vocabulary. Here we can see that the true missing word debate gets a probability output of the model of 0.7. In the process of learning to correctly predict the masked word, the model learns word representations here in blue.
 * BERT represents inputs as subwords and learns embeddings from subwords
 * 
 
