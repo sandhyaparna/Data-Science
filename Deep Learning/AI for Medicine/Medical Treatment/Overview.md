@@ -8,6 +8,8 @@ Automatic label extraction for Medical Imaging (Unsupervised):
   * Therefore we can catch mention of lung disease by not only searching for synonyms of lung disease in SNOMED CT, but also its subtypes and their synonyms. Here subtypes would include pneumonia and other concepts which have a Is- A relationship with lung disease. The advantage of this approach, which we can call a rules-based approach of finding mentions of observations, is that we don't need any data for supervised learning. The disadvantage of this approach is that there is a lot of manual work to refine these rules based on what is working and what is not working.
 * Step Two: 
   * Regex Rules: No edema, No xxx or edema, without xxx edema, no evidence of edema
+  * Dependency Parse Rules
+  * Negation classification - Supervised approach. 
   * NegBio
 
 
