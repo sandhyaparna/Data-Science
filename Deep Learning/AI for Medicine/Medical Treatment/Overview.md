@@ -14,7 +14,8 @@ Automatic label extraction for Medical Imaging (Unsupervised):
 
 </br>
 
-BioC: http://bioc.sourceforge.net/
+* BioC: http://bioc.sourceforge.net/
+* NegBio: https://github.com/ncbi-nlp/NegBio ; https://negbio.readthedocs.io/en/latest/index.html
 
 
 
