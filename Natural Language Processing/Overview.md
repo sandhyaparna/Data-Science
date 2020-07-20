@@ -195,7 +195,7 @@ https://medium.com/explorations-in-language-and-learning/how-to-obtain-sentence-
 https://www.analyticsvidhya.com/blog/2019/03/learn-to-use-elmo-to-extract-features-from-text/ </br>
 ![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2019/03/output_YyJc8E.gif)
 * ELMo and BERT can generate diff word embeddings for a word that captures the context of a word - that is its position in a sentence
-* ELMo uses LSTMs
+* ELMo uses LSTMs (BERT takes entire sequences as input, while LSTM models process words one by one)
 * ELMo is a charcater based model using character convolutions and can handle out of vocab words, but learnt representations are at word level
 * Model is trained to predict the next word given a sequence words
 * ELMo word vectors are computed on top of a two-layer bidirectional language model (biLM). This biML model has two layers stacked together. Each layer has 2 passes — forward pass and backward pass:
