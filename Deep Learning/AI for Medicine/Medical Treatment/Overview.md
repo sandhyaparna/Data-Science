@@ -12,6 +12,9 @@ Automatic label extraction for Medical Imaging (Unsupervised):
   * Negation classification - Supervised approach. 
   * NegBio
 
+</br>
+
+BioC: http://bioc.sourceforge.net/
 
 
 
