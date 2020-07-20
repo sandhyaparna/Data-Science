@@ -1,4 +1,4 @@
-Automatic label extraction for Medical Imaging (Unsupervised):
+### Automatic label extraction for Medical Imaging (Unsupervised):
 * Two steps: In step one, we will find whether an observation is mentioned. In step two, we will classify whether the observation is present or absent. 
 * Uses SNOMED CT - contains Synonyms, Is-a relationships
 * Step One: In the eg note "Heart size is normal and lungs are clear. No edema or Pneumonia. No effusion". This note has the mention of pneumonia. However, what this won't be able to catch are other words which may have the same meaning in this context as pneumonia. For example, infection can be synonymous with pneumonia. So instead of searching for pneumonia, we may list out the words which are synonyms of pneumonia, and search the report for any of those words, that way, catch infection being mentioned.  
@@ -11,12 +11,11 @@ Automatic label extraction for Medical Imaging (Unsupervised):
   * Dependency Parse Rules
   * Negation classification - Supervised approach. 
   * NegBio
-
-</br>
-
+##### Links
 * BioC: http://bioc.sourceforge.net/
 * NegBio: https://github.com/ncbi-nlp/NegBio ; https://negbio.readthedocs.io/en/latest/index.html
 
+### Evaluate Automatic Labeling
 
 
 
