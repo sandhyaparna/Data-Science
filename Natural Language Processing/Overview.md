@@ -218,6 +218,9 @@ https://towardsdatascience.com/how-bert-leverage-attention-mechanism-and-transfo
 * Both ELMo and BERT use bidirectional language model to learn the text representations. However, ELMo use shallow concatenation layer while BERT use deep neural network.
 * BERT use bidirectional transformer (both left-to-right and right-to-left direction) rather than dictional transformer (left-to-right direction). 
 * BERT use three embeddings to compute the input representations. They are token embeddings, segment embeddings and position embeddings. “CLS” is the reserved token to represent the start of sequence while “SEP” separate segment (or sentence). 
+* BERT uses masked language model in the first training task and predicting next sentence in the second task. 
+  * Randomly mask 15% of the tokens: of the 15% tokens 80% of time, it will be replaced by [MASK] token; 10% of time, it will be replaced by other actual token; 10% of time, it will be keep as original.
+  * In the second task BERT has to determine if Given two sentences (A and B), is B likely to be the sentence that follows A, or not?
 * BERT is the first unsupervised, deeply bidirectional system for pre-training NLP. It is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of NLP tasks.
 * BERT produces 768 dimensional vector for each word based on their context. A single word with multiple meanings will have different vectors.
 * https://www.coursera.org/learn/ai-for-medical-treatment/lecture/CotPU/handling-words-with-multiple-meanings </br> LEARNING PROCESS: Let's see how BERT learns these contextualized word representations. Words from a passage of text are input into a BERT model. Then one of the tokens in the passage is masked with a special MASK token. The model is trained to predict what the mask was. An extra layer is added where the output is the probabilities of the missing word being every single word in the vocabulary. Here we can see that the true missing word debate gets a probability output of the model of 0.7. In the process of learning to correctly predict the masked word, the model learns word representations here in blue. BioBERT uses passages from medical papers to learn these word representations. The advantage of this is that the words that BioBERT is thus able to learn, are words used in the context of medicine.
@@ -228,7 +231,9 @@ https://towardsdatascience.com/how-bert-leverage-attention-mechanism-and-transfo
 * 
 
 
-#### GPT
+#### OpenAI GPT
+* Transformer based approach but only trains a forward language model
+* BERT is a transformer based model that looks both forward and backwards
 
 
 #### XLNet
