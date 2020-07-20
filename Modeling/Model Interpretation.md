@@ -50,6 +50,7 @@ Frameworks like Skater compute Feature importance based on an information theore
 https://www.kdnuggets.com/2018/12/explainable-ai-model-interpretation-strategies.html/2 </br>
 https://www.coursera.org/learn/ai-for-medical-treatment/lecture/C4tTK/shapley-values </br>
 https://www.coursera.org/learn/ai-for-medical-treatment/lecture/sPtIT/combining-importances </br>
+https://www.coursera.org/learn/ai-for-medical-treatment/lecture/ClIGF/shapley-values-for-all-patients </br>
 
 Frameworks like SHAP, use a combination of feature contributions and game theory to come up with SHAP values. Then, it computes the global feature importance by taking the average of the SHAP value magnitudes across the dataset.  <br/>
 Assuming that each feature is a ‘player’ in a game where the prediction is the payout. The Shapley value — a method from coalitional game theory — tells us how to fairly distribute the ‘payout’ among the features. The Shapley value, coined by Shapley, is a method for assigning payouts to players depending on their contribution towards the total payout. Players cooperate in a coalition and obtain a certain gain from that cooperation.
