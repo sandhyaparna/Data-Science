@@ -17,6 +17,10 @@
 
 ### Evaluate Automatic Labeling
 * Using ground growth from experts annotating the Text report or looking at an image for presence or absence of a disease. The advantage of using the ground truth from the report is that it would be more straightforward to improve the system based on looking at the errors made on the report. The advantage of using a ground truth from the image is that it is a more direct evaluation of the quality of the label for the task.
+* Global Precision of Multiple disease categories: Calculate Precision for each disease category and then average
+* Global Precision can also be calculated by considering all disease categories as 1 one category and calculate Precision
+
+
 
 
 
