@@ -2,6 +2,8 @@
 * http://ruder.io/
 
 ### Applications
+https://towardsdatascience.com/a-list-of-beginner-friendly-nlp-projects-using-pre-trained-models-dc4768b4bec0 </br>
+* Question Answering
 * Spam Detection
 * POS Tagging
 * Sentiment Analyzer
@@ -12,7 +14,13 @@
 * Paraphrasing and summarization
 * Skim Reading
 * Topic Discovery (LDA) & Modeling 
-* Chatbots
+* Chatbots - DialoGPT model
+* Autocorrect & Autocomplete - RoBERTa model
+* Predictive Text Generator - AI Dungeon 2 was built using OpenAI’s GPT-2
+* Language identifier - fastText model
+* Media Monitor - Flair’s SequenceTagger
+
+
 
 ### Natural Language Understanding
 * Phonology – This science helps to deal with patterns present in the sound and speeches related to the sound as a physical entity. 
