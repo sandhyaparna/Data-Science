@@ -3,6 +3,7 @@
 
 ### Applications
 https://towardsdatascience.com/a-list-of-beginner-friendly-nlp-projects-using-pre-trained-models-dc4768b4bec0 </br>
+https://github.com/NirantK/awesome-project-ideas  </br>
 * Question Answering
 * Spam Detection
 * POS Tagging
