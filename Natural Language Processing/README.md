@@ -73,13 +73,12 @@ https://github.com/NirantK/awesome-project-ideas  </br>
 ![](https://jalammar.github.io/images/t/transformer_resideual_layer_norm_3.png)
     * The output from Encoding component is used by each decoder of the Decoding component. The self-attention layer is only allowed to attend to earlier positions in the output sequence. This is done by masking future positions (setting them to -inf) before the softmax step in the self-attention calculation. The “Encoder-Decoder Attention” layer works just like multiheaded self-attention, except it creates its Queries matrix from the layer below it, and takes the Keys and Values matrix from the output of the encoder stack.
     * The decoder stack outputs a vector of floats. Final Linear layer & Softmax layer turns vector of floats to word. The Linear layer is a simple fully connected neural network that projects the vector produced by the stack of decoders, into a much, much larger vector called a logits vector. The softmax layer then turns those scores into probabilities (all positive, all add up to 1.0). The cell with the highest probability is chosen, and the word associated with it is produced as the output for this time step.
-    
-    
-    
-
 * Memory based networks
 * Pretrained language models
 * Transfer Learning: The use of models trained on a particular domain of learning tasks and repurposing the learned weights to solve another similar learning task is called transfer learning. Fine-tuning is the process of updating weights of a pre-trained model
+  * Train the entire architecture: Error is back-propagated through the entire architecture and the pre-trained weights of the model are updated based on the new dataset.
+  * Train some layers while freezing others: we can do keep the weights of initial layers of the model frozen while we retrain only the higher layers.
+  * Freeze the entire architecture: Freeze all the layers of the model and attach a few neural network layers of our own and train this new model. Note that the weights of only the attached layers will be updated during model training.
 
 ### Word Embedding Approaches
 * Word2Vec - Distributed representations
