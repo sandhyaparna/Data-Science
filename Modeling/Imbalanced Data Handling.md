@@ -38,18 +38,9 @@ The features of the minority class are treated as noise and are often ignored. T
 * Its a improved version of Smote. What it does is same as SMOTE just with a minor improvement.
 * After creating those sample it adds a random small values to the points thus making it more realistic. In other words instead of all the sample being linearly correlated to the parent they have a little more variance in them i.e they are bit scattered.
 
-### Tomek Links
+### Tomek Links - https://www.analyticsvidhya.com/blog/2020/07/10-techniques-to-deal-with-class-imbalance-in-machine-learning/
 Tomek links are pairs of very close instances but of opposite classes. Removing the instances of the majority class of each pair increases the space between the two classes, facilitating the classification process.
 Tomek’s link exists if the two samples are the nearest neighbors of each other
-
-In the code below, we’ll use ratio='majority' to resample the majority class.
-# import library
-from imblearn.under_sampling import TomekLinks
-tl = RandomOverSampler(sampling_strategy='majority')
-# fit predictor and target variable
-x_tl, y_tl = ros.fit_resample(x, y)
-print('Original dataset shape', Counter(y))
-print('Resample dataset shape', Counter(y_ros))
 
 
 ### Evaluation Metrics
