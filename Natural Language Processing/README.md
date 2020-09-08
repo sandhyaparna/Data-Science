@@ -103,6 +103,9 @@ https://machinelearningknowledge.ai/applications-of-natural-language-processing-
 * FacebookAI's XLM/mBERT
 * ALBERT - A Lite BERT
 * REALM - Retrieval-Augmented Language Model Pre-Training 
+* CamamBERT
+* GPT-2XL
+
 
 
 
