@@ -13,7 +13,7 @@ https://machinelearningknowledge.ai/applications-of-natural-language-processing-
 * Machine Translation (Text or speech of 1 language into another) - Seq2Seq learning - Text Generation
 * Latent Semantic Analysis (LSA)
 * Article Spinning
-* Machine Conversations (Text-to-Speech & Speech-to-Text conversion)
+* Machine Conversations (Text-to-Speech & Speech-to-Text conversion) https://github.com/google-research/text-to-text-transfer-transformer
 * Paraphrasing and summarization - Automatic Summarisation of Scientific Papers https://github.com/EdCo95/scientific-paper-summarisation
 * Skim Reading
 * Topic Discovery (LDA) & Modeling 
