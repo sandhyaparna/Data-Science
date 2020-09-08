@@ -20,7 +20,7 @@ https://github.com/NirantK/awesome-project-ideas  </br>
 * Predictive Text Generator - AI Dungeon 2 was built using OpenAI’s GPT-2
 * Language identifier - fastText model
 * Media Monitor - Flair’s SequenceTagger
-
+* Email Author Identification
 
 
 ### Natural Language Understanding
