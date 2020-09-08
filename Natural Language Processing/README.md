@@ -4,6 +4,8 @@
 ### Applications
 https://towardsdatascience.com/a-list-of-beginner-friendly-nlp-projects-using-pre-trained-models-dc4768b4bec0 </br>
 https://github.com/NirantK/awesome-project-ideas  </br>
+https://machinelearningknowledge.ai/nlp-datasets-beginners-should-use-for-nlp-projects/  </br>
+https://machinelearningknowledge.ai/applications-of-natural-language-processing-beginners-should-know/   </br>
 * Question Answering
 * Spam Detection
 * POS Tagging
