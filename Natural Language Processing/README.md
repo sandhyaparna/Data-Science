@@ -12,15 +12,16 @@ https://github.com/NirantK/awesome-project-ideas  </br>
 * Latent Semantic Analysis (LSA)
 * Article Spinning
 * Machine Conversations (Text-to-Speech & Speech-to-Text conversion)
-* Paraphrasing and summarization
+* Paraphrasing and summarization - Automatic Summarisation of Scientific Papers https://github.com/EdCo95/scientific-paper-summarisation
 * Skim Reading
 * Topic Discovery (LDA) & Modeling 
 * Chatbots - DialoGPT model
 * Autocorrect & Autocomplete - RoBERTa model
-* Predictive Text Generator - AI Dungeon 2 was built using OpenAI’s GPT-2
+* Predictive Text Generator - AI Dungeon 2 was built using OpenAI’s GPT-2. Paper title generator - https://github.com/csinva/gpt2-paper-title-generator. Shakespeare text generation https://github.com/jaintanmay121/Shakespeare-Text-Generation
 * Language identifier - fastText model
 * Media Monitor - Flair’s SequenceTagger
-* Email Author Identification
+* Email Author Identification 
+* Common topics discussed between documents https://github.com/machine-learning-projects/document-similarity
 
 
 ### Natural Language Understanding
