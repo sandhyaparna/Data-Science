@@ -187,9 +187,21 @@ https://medium.com/explorations-in-language-and-learning/how-to-obtain-sentence-
 * FactSent
 * Sequential Denoising Autoencoders (SDAE)
 
+#### Sentence Embedding
+Sentence embedding techniques represent entire sentences and their semantic information as vectors. This helps the machine in understanding the context, intention, and other nuances in the entire text. <br/>
+https://www.analyticsvidhya.com/blog/2020/08/top-4-sentence-embedding-techniques-using-python/
+* Doc2Vec
+* SentenceBERT
+* InferSent
+* Universal Sentence Encoder
+
 #### Doc2Vec
 https://medium.com/scaleabout/a-gentle-introduction-to-doc2vec-db3e8c0cce5e <br/>
 https://medium.com/explorations-in-language-and-learning/how-to-obtain-sentence-vectors-2a6d88bd3c8b <br/>
+Doc2Vec is an unsupervised algorithm and adds on to the Word2Vec model by introducing another ‘paragraph vector’. Also, there are 2 ways to add the paragraph vector to the model. 
+* PVDM(Distributed Memory version of Paragraph Vector): We assign a paragraph vector sentence while sharing word vectors among all sentences. Then we either average or concatenate the (paragraph vector and words vector) to get the final sentence representation. If you notice, it is an extension of the Continuous Bag-of-Word type of Word2Vec where we predict the next word given a set of words. It is just that in PVDM, we predict the next sentence given a set of sentences.
+* PVDOBW( Distributed Bag of Words version of Paragraph Vector): Just lime PVDM, PVDOBW is another extension, this time of the Skip-gram type. Here, we just sample random words from the sentence and make the model predict which sentence it came from(a classification task).
+
 
 #### ELMo - Embeddings from Language Models
 https://www.analyticsvidhya.com/blog/2019/03/learn-to-use-elmo-to-extract-features-from-text/ </br>
