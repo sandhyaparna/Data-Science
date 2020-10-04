@@ -190,7 +190,10 @@ https://medium.com/explorations-in-language-and-learning/how-to-obtain-sentence-
 #### Sentence Embedding
 Sentence embedding techniques represent entire sentences and their semantic information as vectors. This helps the machine in understanding the context, intention, and other nuances in the entire text. <br/>
 https://www.analyticsvidhya.com/blog/2020/08/top-4-sentence-embedding-techniques-using-python/
-* Doc2Vec
+* Doc2Vec 
+  * Tagged sentence corpus is built. Each sentence is now represented as a TaggedDocument containing a list of the words in it and a tag associated with it.
+  * Doc2Vec model is trained on the tagged data
+  * New test sentence gives similarity scoring 
 * SentenceBERT
 * InferSent
 * Universal Sentence Encoder
