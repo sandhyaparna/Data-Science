@@ -6,7 +6,7 @@ https://towardsdatascience.com/a-list-of-beginner-friendly-nlp-projects-using-pr
 https://github.com/NirantK/awesome-project-ideas  </br>
 https://machinelearningknowledge.ai/nlp-datasets-beginners-should-use-for-nlp-projects/  </br>
 https://machinelearningknowledge.ai/applications-of-natural-language-processing-beginners-should-know/   </br>
-* Question Answering
+* Question Answering - for covid19 related questions
 * Spam Detection
 * POS Tagging
 * Sentiment Analyzer
