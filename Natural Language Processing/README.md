@@ -106,8 +106,9 @@ https://machinelearningknowledge.ai/applications-of-natural-language-processing-
 * REALM - Retrieval-Augmented Language Model Pre-Training 
 * CamamBERT
 * GPT-2XL
-
-
+* GPT 3
+* MT5
+* M2M-100
 
 
 ### Annotation tools
