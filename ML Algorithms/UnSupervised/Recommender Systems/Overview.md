@@ -5,6 +5,7 @@ https://healthedge.udemy.com/course/recommender-systems/learn/lecture/11700392#o
 * Personalized Score - Depends on user
 * The matrix must be sparse in order to actually have items to recommend If data is not sparse it implies that eveeryy user has rated every other product and there chance to recommend
 * User-User Collaborative filtering: We want to recommend User1 some products - Identify users that have the same products that User1 bought but also who bought xtra products than User1. Look at the similarity of ratings between User1 and other users identified. ANd then recommend using weighted ratings i.e if User1 & User3 are more similar, User2 will have more weighting 
+![](https://miro.medium.com/max/963/1*aSq9viZGEYiWwL9uJ3Recw.png)
 
 ### Evaluation Metrics
 https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832 </br>
