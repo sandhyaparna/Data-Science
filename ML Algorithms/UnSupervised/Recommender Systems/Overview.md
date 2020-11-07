@@ -1,3 +1,40 @@
+https://healthedge.udemy.com/course/recommender-systems/learn/lecture/11700392#overview
+
+### Collaborative Filtering
+* Looks for people who bought similar products
+* Personalized Score - Depends on user
+* The matrix must be sparse in order to actually have items to recommend If data is not sparse it implies that eveeryy user has rated every other product and there chance to recommend
+* User-User Collaborative filtering: We want to recommend User1 some products - Identify users that have the same products that User1 bought but also who bought xtra products than User1. Look at the similarity of ratings between User1 and other users identified. ANd then recommend using weighted ratings i.e if User1 & User3 are more similar, User2 will have more weighting 
+
+### Evaluation Metrics
+https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832 </br>
+* Rank-Aware Top-N metrics
+  * MRR - Mean Reciprocal Rank - It tries to measure “Where is the first relevant item?”. It is closely linked to the binary relevance family of metrics. It puts focus on the first relevant element of the list The algorithm goes as follows: 
+    * Generate list of recommendations
+    * Find rank ku of its first relevant recommendation for each user: if the first recomended product is correct then 1, if the first recommended product is wrong and second recommended product is correct then 2, if the first&Second recommended products ae wrong but third recommended product is correct then 3 and so on
+    * Compute reciprocal rank i.e 1/ku
+    * Then average reciprocal rank for the users evaluated
+  * MAP - Mean AVerage Precision
+    * For each relevant item - compute precision of list through that item
+    * Average sub-list precision
+    ![](https://miro.medium.com/max/963/1*0xdZ-NWJLlf3m4oyjh0K5g.png)
+  * NDCG - Normalized Discounted Cumulative Gain
+* Prediction Accuracy Metrics:
+  * MAE : Absolute (Prediction - Rating)
+  * MSE : Squares the error - Gives more penalization if difference between prediction-Rating is more
+  * RMSE : Square root of MSE. And it is in similar scale to MSE 
+* Decision Support - They help the user to select “good” items, and to avoid “bad” items. but they are not targeted to the Top-N recommendations
+  * F1 score - Precision & Recall
+
+  
+
+
+
+
+
+
+
+
 ### Links
 https://www.ima.umn.edu/2018-2019/DSS8.10.18-5.27.19/27827
 
