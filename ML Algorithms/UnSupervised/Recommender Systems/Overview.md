@@ -1,4 +1,6 @@
 https://healthedge.udemy.com/course/recommender-systems/learn/lecture/11700392#overview
+https://medium.com/datadriveninvestor/how-to-built-a-recommender-system-rs-616c988d64b2
+
 
 ### Collaborative Filtering
 * Looks for people who bought similar products
@@ -7,6 +9,10 @@ https://healthedge.udemy.com/course/recommender-systems/learn/lecture/11700392#o
 * User-User Collaborative filtering: We want to recommend User1 some products - Identify users that have the same products that User1 bought but also who bought xtra products than User1. Look at the similarity of ratings between User1 and other users identified. ANd then recommend using weighted ratings i.e if User1 & User3 are more similar, User2 will have more weighting 
 ![](https://miro.medium.com/max/963/1*aSq9viZGEYiWwL9uJ3Recw.png)
 ![](https://miro.medium.com/max/1375/1*YGlwilDLSG10HWf3u28ErQ.png)
+
+### Content based filtering
+* Based on attributes of User: Gender, Age, Location etc
+* Based on Attributes of Items: Genre of Movie, Year of Release, Lead Actor, Director, Box Office Collection, Budget
 
 ### User-User Similarity
 ![](https://miro.medium.com/max/1375/1*_J9jSJf83J3ohpkWHDRLdQ.png)
