@@ -14,11 +14,15 @@ https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832 </br>
     * Find rank ku of its first relevant recommendation for each user: if the first recomended product is correct then 1, if the first recommended product is wrong and second recommended product is correct then 2, if the first&Second recommended products ae wrong but third recommended product is correct then 3 and so on
     * Compute reciprocal rank i.e 1/ku
     * Then average reciprocal rank for the users evaluated
+    ![](https://miro.medium.com/max/884/1*dR24Drmb9J5BLZp8ffjOGA.png)
   * MAP - Mean AVerage Precision
     * For each relevant item - compute precision of list through that item
     * Average sub-list precision
     ![](https://miro.medium.com/max/963/1*0xdZ-NWJLlf3m4oyjh0K5g.png)
   * NDCG - Normalized Discounted Cumulative Gain
+    * It is able to use the fact that some documents are “more” relevant than others. Highly relevant items should come before medium relevant items, which should come before non-relevant items.
+    *
+    ![](https://miro.medium.com/max/963/1*W6cQB2kozFxedqVu9lpSVw.png)
 * Prediction Accuracy Metrics:
   * MAE : Absolute (Prediction - Rating)
   * MSE : Squares the error - Gives more penalization if difference between prediction-Rating is more
