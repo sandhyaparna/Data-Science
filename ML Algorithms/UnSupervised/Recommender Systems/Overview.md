@@ -8,6 +8,11 @@ https://healthedge.udemy.com/course/recommender-systems/learn/lecture/11700392#o
 ![](https://miro.medium.com/max/963/1*aSq9viZGEYiWwL9uJ3Recw.png)
 ![](https://miro.medium.com/max/1375/1*YGlwilDLSG10HWf3u28ErQ.png)
 
+### User-User Similarity
+![](https://miro.medium.com/max/1375/1*_J9jSJf83J3ohpkWHDRLdQ.png)
+
+### Item-Item Similarity
+![](https://miro.medium.com/max/963/1*cnz5qr3Y5xtTQgLxuc6_Wg.png)
 
 ### Evaluation Metrics
 https://medium.com/swlh/rank-aware-recsys-evaluation-metrics-5191bba16832 </br>
