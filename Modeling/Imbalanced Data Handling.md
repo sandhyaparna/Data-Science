@@ -14,6 +14,7 @@ The features of the minority class are treated as noise and are often ignored. T
 
 ## Techniques
 * Do Nothing and use models that can handle imbalance like XGBoost
+* In NLP, translate sentence from English to different language and then back to English. This way same sentence will be written using different words. Input text  – “warning for using windows disk space”. Data Augmented text – “Warning about using Windows storage space”
 * Sampling - Perform oversampling during cross-validation, i.e. for each fold, oversampling is performed before training, and this process is repeated for each fold. (OR) Perform oversampling only on Train data and not on Validation & Test
   * Oversample the minority class - SMOTE, ADASYN https://medium.com/coinmonks/smote-and-adasyn-handling-imbalanced-data-set-34f5223e167   https://www.researchgate.net/publication/328315720_Cross-Validation_for_Imbalanced_Datasets_Avoiding_Overoptimistic_and_Overfitting_Approaches
     * SMOTE, ADASYN, Borderline-SMOTE, Safe-Level-SMOTE, SMOTE+TL, SMOTE+ENN, ADOMS, CBO, AHC, MWMOTE, SPIDER
