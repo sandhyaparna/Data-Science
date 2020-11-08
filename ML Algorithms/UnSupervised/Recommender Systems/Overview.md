@@ -14,7 +14,9 @@ https://medium.com/datadriveninvestor/how-to-built-a-recommender-system-rs-616c9
 * Based on attributes of User: Gender, Age, Location etc
 * Based on Attributes of Items: Genre of Movie, Year of Release, Lead Actor, Director, Box Office Collection, Budget
 
-### User-User Similarity
+### User-User Similarity. 
+* User-Item matrix is used to identify similarity between users using Cosine Similarity
+* After finding similar users, Pick items liked by similar users and Recommend those items to the user
 ![](https://miro.medium.com/max/1375/1*_J9jSJf83J3ohpkWHDRLdQ.png)
 
 ### Item-Item Similarity
