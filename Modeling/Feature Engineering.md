@@ -1,4 +1,5 @@
 ### Links
+Techniques by kind of Data https://github.com/dipanjanS/practical-machine-learning-with-python/tree/master/notebooks/Ch04_Feature_Engineering_and_Selection <br/>
 https://www.kdnuggets.com/2018/12/feature-building-techniques-tricks-kaggle.html <br/>
 https://towardsdatascience.com/understanding-feature-engineering-part-1-continuous-numeric-data-da4e47099a7b <br/>
 https://medium.com/open-machine-learning-course/open-machine-learning-course-topic-6-feature-engineering-and-feature-selection-8b94f870706a <br/>
