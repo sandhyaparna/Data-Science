@@ -283,6 +283,14 @@ https://www.analyticsvidhya.com/blog/2017/01/t-sne-implementation-r-python/ </br
 https://www.datacamp.com/community/tutorials/introduction-t-sne </br>
 ![](https://cdn-images-1.medium.com/max/2400/1*Pb9EpsHGF3umWEWPswU4rQ.png)
 
+### Self-Training in NLP
+* Model is built on a labelled data set which is small
+* From unnlabelled corpus, identify sentences which are similar to the ones in the labelled data se using SentAugment approach. Top k sentences that are close to the text in lablled data
+* Use Model to predict the sentences identified above
+* Now add the sentences labelled with the model to the initial set of Labelled data set and build a model
+* This model gives better performance
+
+
 ### Evaluation 
 ##### BLEU (Bilingual Evaluation Understudy)
 It is mostly used to measure the quality of machine translation with respect to the human translation. It uses a modified form of precision metric. <br/>
