@@ -196,7 +196,7 @@ https://www.analyticsvidhya.com/blog/2020/08/top-4-sentence-embedding-techniques
   * New test sentence gives similarity scoring 
 * SentenceBERT
 * uSIF -  https://github.com/kawine/usif
-* InferSent
+* InferSent - https://github.com/facebookresearch/InferSent
 * Universal Sentence Encoder
 
 #### Doc2Vec
