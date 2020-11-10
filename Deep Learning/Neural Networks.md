@@ -25,9 +25,9 @@ Neural Networks can be arbitarily complex. To increase hidden dimensions, I can 
 * The purpose of the activation function is to introduce non-linearity into the output of a neuron. This is important because most real world data is non linear and we want neurons to learn these non linear representations.
 * Activation function plays an important role in computational time.
 * Every activation function (or non-linearity) takes a single number and performs a certain fixed mathematical operation on it  Some of the activation functions:
-  * Logistic Sigmoid - σ(x) = 1 / (1 + exp(−x)) - Probability distribution
-  * Hyperbolic Tangent - tanh(x) = 2σ(2x) − 1 = 2/(1+[(e)^-2x])-1  
-  * Rectified Linear Unit - Most Popular - ReLU - f(x) = 0 for x<0, x for x>=0
+  * Logistic Sigmoid - σ(x) = 1 / (1 + exp(−x)) - Probability distribution - it is especially used for models where we have to predict the probability as an output.
+  * Hyperbolic Tangent - tanh(x) = 2σ(2x) − 1 = 2/(1+[(e)^-2x])-1  - The tanh function is mainly used classification between two classes.The advantage is that the negative inputs will be mapped strongly negative and the zero inputs will be mapped near zero in the tanh graph.
+  * Rectified Linear Unit - Most Popular - ReLU - f(x) = 0 for x<0, x for x>=0 
   * eLU - Exponential Linear Unit - aplha(e^x - 1) for x<0, x for x>=0  
   * Softplus = ln(1+e^x) - ReLU has been modified so that the training doesnt stop when x is 0
   * Leaky ReLU - 0.01(x) for x<0, x for x>=0
@@ -42,10 +42,10 @@ Neural Networks can be arbitarily complex. To increase hidden dimensions, I can 
 * Slope, or the gradient of Sigmoid function, at the extreme ends is close to zero. Therefore, the parameters are updated very slowly, resulting in very slow learning. Hence, switching from a sigmoid activation function to ReLU (Rectified Linear Unit) is one of the biggest breakthroughs we have seen in neural networks. ReLU updates the parameters much faster as the slope is 1 when x>0. This is the primary reason for faster computation of the models.
 * Sigmoid takes a real-valued input and squashes it to range between 0 and 1 which is equal to the range for Probability
 * tanh takes a real-valued input and squashes it to the range [-1, 1]
-* ReLU takes a real-valued input and thresholds it at zero (replaces negative values with zero implies slope is 0 when x<0)
+* ReLU takes a real-valued input and thresholds it at zero (replaces negative values with zero implies slope is 0 when x<0). That means any negative input given to the ReLU activation function turns the value into zero immediately in the graph, which in turns affects the resulting graph by not mapping the negative values appropriately.
 * eLU - Exponential linear unit, range is [0,infinity)]  
 * Softmax - A smooth approximation of the ReLUs function is the analytic function of the natural log of one, plus the exponential X. Derivative of Softplus function is a logistic function. The pros of using the Softplus function are, it's continuous and differentiable at zero, unlike the ReLu function. However, due to the natural log and exponential, there's added computation compared to ReLUs, and ReLUs still have as good of results in practice. Therefore, Softplus is usually discouraged to be using deep learning. 
-* Leaky ReLU - Have piecewise linear function in +ve domain. In -ve domain they have non-zero slope specifically, 0.01
+* Leaky ReLU - Have piecewise linear function in +ve domain. In -ve domain they have non-zero slope specifically, 0.01. 
 * PReLU - Alpha is a learned parameter from training along with other neural network parameters
 * Randomized Leaky ReLUs - Instead of Alpha being trained, it is sampled from a uniform distribution randomly. This can have an effect similar to drop out since you technically have a different network for each value of Alpha. And therefore, it is making something similar to an ensemble. At test time, all the values of Alpha are averaged together to a deterministic value to use for predictions. 
 * ReLU6 - Capped at 6 
