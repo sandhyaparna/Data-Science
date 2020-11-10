@@ -195,6 +195,7 @@ https://www.analyticsvidhya.com/blog/2020/08/top-4-sentence-embedding-techniques
   * Doc2Vec model is trained on the tagged data
   * New test sentence gives similarity scoring 
 * SentenceBERT
+* uSIF -  https://github.com/kawine/usif
 * InferSent
 * Universal Sentence Encoder
 
@@ -284,6 +285,7 @@ https://www.datacamp.com/community/tutorials/introduction-t-sne </br>
 ![](https://cdn-images-1.medium.com/max/2400/1*Pb9EpsHGF3umWEWPswU4rQ.png)
 
 ### Self-Training in NLP
+https://github.com/facebookresearch/SentAugment
 * Model is built on a labelled data set which is small
 * From unnlabelled corpus, identify sentences which are similar to the ones in the labelled data se using SentAugment approach. Top k sentences that are close to the text in lablled data
 * Use Model to predict the sentences identified above
