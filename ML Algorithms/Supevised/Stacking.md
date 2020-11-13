@@ -1,3 +1,5 @@
+Complete overview and code in python https://machinelearningmastery.com/stacking-ensemble-machine-learning-with-python/
+
 Stacking, that often considers heterogeneous weak learners, learns them in parallel and combines them by training a meta-model to output a prediction based on the different weak models predictions
 </br>
 The architecture of a stacking model involves two or more base models, often referred to as level-0 models, and a meta-model that combines the predictions of the base models, referred to as a level-1 model:
