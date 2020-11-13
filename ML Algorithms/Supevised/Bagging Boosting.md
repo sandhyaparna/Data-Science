@@ -13,8 +13,7 @@ https://www.analyticsvidhya.com/blog/2017/03/imbalanced-classification-problem/ 
   * Cross Entropy loss = -Σ{ylog(p)}.  https://stackoverflow.com/questions/41990250/what-is-cross-entropy
   If there are 3 classes - A, B, C. Loss if it is a A = 1*(Prob of A happening). Loss if it is B =  1*(Prob of B happening) 
 
-<br/>
-Difference between Bagging, Boosting and Stacking:
+##### Difference between Bagging, Boosting and Stacking:
 * Bagging, that often considers homogeneous weak learners, learns them independently from each other in parallel and combines them following some kind of deterministic averaging process
 * Boosting, that often considers homogeneous weak learners, learns them sequentially in a very adaptative way (a base model depends on the previous ones) and combines them following a deterministic strategy
 * Stacking, that often considers HETEROGENEOUS weak learners (diff ML algorithms), learns them in parallel and combines them by training a meta-model to output a prediction based on the different weak models predictions
