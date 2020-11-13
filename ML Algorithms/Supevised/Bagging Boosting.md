@@ -33,6 +33,11 @@ Helps in minimizing noise, bias and variance. <br/>
 ##### Hybrid methods - Different Learning algorithms - Stacking
 Each learner uses a subset of dat
 Output of primary classifiers, called level 0 models, will be used as attributes for another classifier(Combiner), called meta-model, to approximate the same classification problem. <br/>
+Difference between Bagging, Boosting and Stacking. 
+* bagging, that often considers homogeneous weak learners, learns them independently from each other in parallel and combines them following some kind of deterministic averaging process
+* boosting, that often considers homogeneous weak learners, learns them sequentially in a very adaptative way (a base model depends on the previous ones) and combines them following a deterministic strategy
+* stacking, that often considers HETEROGENEOUS weak learners (diff ML algorithms), learns them in parallel and combines them by training a meta-model to output a prediction based on the different weak models predictions
+
 
 ### Advantages of Ensembles
 * Ensembling is a proven method for improving the accuracy of the model and works in most of the cases.
