@@ -12,6 +12,11 @@ https://www.analyticsvidhya.com/blog/2017/03/imbalanced-classification-problem/ 
 * Cross-entropy is the more generic form of logarithmic loss when it comes to machine learning algorithms. While log loss is used for binary classification algorithms, cross-entropy serves the same purpose for multiclass classification problems.
   * Cross Entropy loss = -Σ{ylog(p)}.  https://stackoverflow.com/questions/41990250/what-is-cross-entropy
   If there are 3 classes - A, B, C. Loss if it is a A = 1*(Prob of A happening). Loss if it is B =  1*(Prob of B happening) 
+<br/>
+Difference between Bagging, Boosting and Stacking:
+* bagging, that often considers homogeneous weak learners, learns them independently from each other in parallel and combines them following some kind of deterministic averaging process
+* boosting, that often considers homogeneous weak learners, learns them sequentially in a very adaptative way (a base model depends on the previous ones) and combines them following a deterministic strategy
+* stacking, that often considers HETEROGENEOUS weak learners (diff ML algorithms), learns them in parallel and combines them by training a meta-model to output a prediction based on the different weak models predictions
 
 ### Multi-Classifiers
 A set of weak learners (Train multiple models) are combined to create a strong learner that obtains better performance than a single one. <br/>
@@ -26,17 +31,12 @@ Helps in minimizing noise, bias and variance. <br/>
 * Weighted Averaging
 * Stacking
 
-
 ##### Ensemble methods - Same Learning algorithm - Bagging & Boosting
 * N sets are created from Training data by random sampling with replacement - Each set is trained using same learning algorithm and thus N learners are generated
 * Decreases the variance of your single estimate as they combine several estimates from different models. So the result may be a model with higher stability.
 ##### Hybrid methods - Different Learning algorithms - Stacking
 Each learner uses a subset of dat
 Output of primary classifiers, called level 0 models, will be used as attributes for another classifier(Combiner), called meta-model, to approximate the same classification problem. <br/>
-Difference between Bagging, Boosting and Stacking. 
-* bagging, that often considers homogeneous weak learners, learns them independently from each other in parallel and combines them following some kind of deterministic averaging process
-* boosting, that often considers homogeneous weak learners, learns them sequentially in a very adaptative way (a base model depends on the previous ones) and combines them following a deterministic strategy
-* stacking, that often considers HETEROGENEOUS weak learners (diff ML algorithms), learns them in parallel and combines them by training a meta-model to output a prediction based on the different weak models predictions
 
 
 ### Advantages of Ensembles
