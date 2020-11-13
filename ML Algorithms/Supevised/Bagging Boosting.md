@@ -12,6 +12,7 @@ https://www.analyticsvidhya.com/blog/2017/03/imbalanced-classification-problem/ 
 * Cross-entropy is the more generic form of logarithmic loss when it comes to machine learning algorithms. While log loss is used for binary classification algorithms, cross-entropy serves the same purpose for multiclass classification problems.
   * Cross Entropy loss = -Σ{ylog(p)}.  https://stackoverflow.com/questions/41990250/what-is-cross-entropy
   If there are 3 classes - A, B, C. Loss if it is a A = 1*(Prob of A happening). Loss if it is B =  1*(Prob of B happening) 
+
 <br/>
 Difference between Bagging, Boosting and Stacking:
 * Bagging, that often considers homogeneous weak learners, learns them independently from each other in parallel and combines them following some kind of deterministic averaging process
