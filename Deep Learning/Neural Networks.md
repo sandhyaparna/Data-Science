@@ -90,7 +90,19 @@ Common failure modes for Gradient Descent: <br/>
 * Problem3: Layers can die <br/>
   * Insight: Use Tensorboard to monitor summaries during and after training of our Neural network model. Monitor fraction of zero weights in Tensorboard. <br/>
   * Solution: Lower your learning rates <br/>
-  
+ 
+### Optimization Algorithms
+#### Rprop
+Rprop combines the idea of only using the sign of the gradient with the idea of adapting the step size individually for each weight. So, instead of looking at the magnitude of the gradient, we’ll look at the step size that’s defined for that particular weight. And that step size adapts individually over time, so that we accelerate learning in the direction that we need. To adjust the step size for some weight, the following algorithm is used:
+* First, we look at the signs of the last two gradients for the weight.
+* If they have the same sign, that means, we’re going in the right direction, and should accelerate it by a small fraction, meaning we should increase the step size multiplicatively(e.g by a factor of 1.2). If they’re different, that means we did too large of a step and jumped over a local minima, thus we should decrease the step size multiplicatively(e.g. by a factor of 0.5).
+* Then, we limit the step size between some two values. These values really depend on your application and dataset, good values that can be for default are 50 and a millionth, which is a good start.
+* Now we can apply the weight update.
+ 
+#### RMSProp 
+Rprop doesn’t really work when we have very large datasets and need to perform mini-batch weights updates. The reason it doesn’t work is that it violates the central idea behind stochastic gradient descent, which is when we have small enough learning rate, it averages the gradients over successive mini-batches. Consider the weight, that gets the gradient 0.1 on nine mini-batches, and the gradient of -0.9 on tenths mini-batch. What we’d like is to those gradients to roughly cancel each other out, so that the stay approximately the same. But it’s not what happens with rprop. With rprop, we increment the weight 9 times and decrement only once, so the weight grows much larger.
+The central idea of RMSprop is keep the moving average of the squared gradients for each weight. And then we divide the gradient by square root the mean square. Which is why it’s called RMSprop(root mean square)
+
 ### To-Do when model has High Bias
 * Bigger Network - More hidden layers or more hidden units
 * Train it longer - doesn't always help but it certainly never hurts
