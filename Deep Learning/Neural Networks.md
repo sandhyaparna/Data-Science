@@ -99,6 +99,8 @@ Common failure modes for Gradient Descent: <br/>
 ### To-Do when model has High Variance
 * Get more data
 * Use Regularization
+* Data Augmentation
+* Early stopping
 
 ### Hyperparameters
 https://machinelearningmastery.com/grid-search-hyperparameters-deep-learning-models-python-keras/ <br/>
