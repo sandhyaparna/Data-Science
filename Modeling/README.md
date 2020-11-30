@@ -43,7 +43,7 @@ https://github.com/hse-aml/competitive-data-science
   * Check if dataset is shuffled - 
 * Model Buliding
   * Validation - Holdout, KFold, Leave One out - Stratified
-* Model optimization - Hyper parameter tuning
+  * Model optimization - Hyper parameter tuning
 * Data-Leakages
 
 #### Pre-processing
