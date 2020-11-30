@@ -1,4 +1,4 @@
-Machine learning problem
+Machine learning problem: Goal of ML is to discover patterns and relationships in data
 * what is being predicted, what data is needed. 
 * What are some key actions to collect, analyze, predict, and react to the data or predictions? Remembering that different input features might require different kinds of actions. what data are ee analyzing, what data are we predicting? what data are we reacting to?
 * What is the API for the problem during production/prediction? Who will use the service? How were they doing it today? 
