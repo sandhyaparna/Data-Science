@@ -13,12 +13,14 @@ Categorical   <br/>
 • A total area under the curve of 1 <br/>
 • A common value for the mean, median, and mode <br/>
 ###### Operations
-
-Spread of data - Range, IQR, std dev, variance, skewness, Kurtosis, mean absolute dev, median absolute dev, percentiles
+Measures of central Tendancy or location: Mean, truncated/trimmed mean, weighted mean, Median, weighted median, Mode <br/>
+Spread of data or Measure of variability - Range, IQR, std dev, variance, skewness, Kurtosis, mean absolute dev, median absolute dev, percentiles
 * Minimum <br/>
 * Maximum <br/>
 * Mean <br/>
   * Mean of ORDINAL data doesn’t make sense because mean assumes equal intervals but in ordinal data we don’t know if the difference between 1 & 2 is same as the distance between 2 & 3
+* Weighted Mean: Weighted mean is a variant of mean that can be used in situations where the sample data does not represent different groups in a dataset. By assigning a larger weight to groups that are under-represented, the computed weighted mean will more accurately represent all groups in our dataset. Extreme values can easily influence both the mean and weighted mean since neither one is a robust metric! For eg: giving more weightage to battery life over design when choosing an iphone
+* Trimmed Mean: The trimmed mean is used in calculating the final score in many sports where a panel of judges will each give a score. Then the lowest and the highest scores are dropped and the mean of the remaining scores are computed as a part of the final score. One such example is in the international diving score system.
 * Median  - Robust statistic <br/> 
 * Mode  <br/> 
 * 1st Quantile - 25th percentile <br/>
@@ -34,8 +36,6 @@ Spread of data - Range, IQR, std dev, variance, skewness, Kurtosis, mean absolut
 * Skewness
 * Kurtosis
 
-Mean, Median, Mode are measures of central Tendancy <br/>
-Range, IQR, Variance, Standard Deviation are measures of Variance <br/>
 ![](https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/04/30195702/Stats1.png)
 
 ###### Graphical Representations
