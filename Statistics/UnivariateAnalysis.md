@@ -13,7 +13,8 @@ Categorical   <br/>
 • A total area under the curve of 1 <br/>
 • A common value for the mean, median, and mode <br/>
 ###### Operations
-Spread of data - Range, IQR, std, variance, skewness, Kurtosis
+
+Spread of data - Range, IQR, std dev, variance, skewness, Kurtosis, mean absolute dev, median absolute dev, percentiles
 * Minimum <br/>
 * Maximum <br/>
 * Mean <br/>
