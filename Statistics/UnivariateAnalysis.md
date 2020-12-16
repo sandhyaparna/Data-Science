@@ -19,7 +19,7 @@ Spread of data or Measure of variability - Range, IQR, std dev, variance, skewne
 * Maximum <br/>
 * Mean <br/>
   * Mean of ORDINAL data doesn’t make sense because mean assumes equal intervals but in ordinal data we don’t know if the difference between 1 & 2 is same as the distance between 2 & 3
-* Weighted Mean: Weighted mean is a variant of mean that can be used in situations where the sample data does not represent different groups in a dataset. By assigning a larger weight to groups that are under-represented, the computed weighted mean will more accurately represent all groups in our dataset. Extreme values can easily influence both the mean and weighted mean since neither one is a robust metric! For eg: giving more weightage to battery life over design when choosing an iphone
+* Weighted Mean: Weighted mean is a variant of mean that can be used in situations where the sample data does not represent different groups in a dataset. By assigning a larger weight to groups that are under-represented, the computed weighted mean will more accurately represent all groups in our dataset. Extreme values can easily influence both the mean and weighted mean since neither one is a robust metric! For eg: giving more weightage to battery life over design when choosing a phone
 * Trimmed Mean: The trimmed mean is used in calculating the final score in many sports where a panel of judges will each give a score. Then the lowest and the highest scores are dropped and the mean of the remaining scores are computed as a part of the final score. One such example is in the international diving score system.
 * Median  - Robust statistic <br/> 
 * Mode  <br/> 
