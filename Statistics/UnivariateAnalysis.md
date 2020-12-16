@@ -31,6 +31,8 @@ Spread of data or Measure of variability - Range, IQR, std dev, variance, skewne
 * Range = Max - Min <br/>
 * Variance - Spread of the data from their average value - The average of the squared differences from the mean <br/>
 * Standard Deviation - How far the data is deviated(dispersed) from the mean (Exact distances from mean) - square root of the variance is the standard deviation. It is not robust to outliers <br/>
+* Mean Absolute Deviation: Average of the sum of all absolute deviation from the mean
+* Median Absolute Deviation (MAD): Like the arithmetic mean, none of the estimates of variability (variance, standard deviation, mean absolute deviation) is robust to outliers. Instead, we can use the median absolute deviation from the median to check how our data is spread out in the presence of outliers. The median absolute deviation is a robust estimator, just like the median.
 * NMiss - Number of missing values <br/>
 * Percentiles
 * Skewness
