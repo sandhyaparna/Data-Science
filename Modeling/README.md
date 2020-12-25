@@ -14,7 +14,8 @@ https://github.com/hse-aml/competitive-data-science
 * Univariate analysis - Data cleaning. Look for bad data (Numeric value in categorical var), Duplicates (Visit ID might not be unique when we combine data from diff clients); Duplicates(In online data, a user might have submitted entries multiple times); Typos in Categorical data (observe Freq table)
 * Outlier treatment (Temp_F might have values less than 35 - one assumption can be that the temp value is actually Celsius and convert it into Fahrenheit)
 * Missing value treatment
-* Data Transformation - Right skewed/Left skewed
+* Duplicate records, 
+* Data Transformation - Right skewed/Left skewed, scaling, normalization, handling date vars
 * Feature engineering - Numeric/Categorical/DateTime Vars - Transactional data/Temporal data
 * Feature selection
 * Split data into - Train, Validation & Test
