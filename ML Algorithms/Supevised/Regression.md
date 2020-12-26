@@ -33,6 +33,8 @@ If the errors are not normally distributed, non–linear transformation of the v
 ##### 6. No outliers
 Linear Regression is very sensitive to Outliers. It can terribly affect the regression line and eventually the forecasted values.
 
+### OLS, MLE, Gradient descent are ways of getting parameters for a mode
+
 ### Ordinary Least Sqaure (OLS) Algorithm
 * OLS is used to find estimators that minimizes residual sum of squares <br/>
 * It is used in python library sklearn.  <br/>
@@ -40,6 +42,9 @@ Linear Regression is very sensitive to Outliers. It can terribly affect the regr
 
 ### Maximum Likelihood Estimation (MLE)
 * MLE is used to find estimators that minimizes the likelihood function
+* Maximum likelihood estimation is a method that determines values for the parameters of a model. The parameter values are found such that they maximise the likelihood that the process described by the model produced the data that were actually observed. The parameter values that we find are called the maximum likelihood estimates (MLE).
+* When is least squares minimisation the same as maximum likelihood estimation?
+Least squares minimisation is another common method for estimating parameter values for a model in machine learning. It turns out that when the model is assumed to be Gaussian as in the examples above, the MLE estimates are equivalent to the least squares method. 
 
 ### Gradient Descent Algorithm
 https://www.coursera.org/learn/launching-machine-learning/lecture/EuGsr/gradient-descent
