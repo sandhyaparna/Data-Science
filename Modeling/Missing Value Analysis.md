@@ -6,7 +6,8 @@ https://medium.freecodecamp.org/the-penalty-of-missing-values-in-data-science-91
 * Remove Rows - Deletion
 * Generalized Imputation - Mean/Median/Mode of non-missing values
 * Similar case Imputation - Group wise imputation 
-* Reconstruction - KNN imputation / using predictive model 
+* Reconstruction - KNN imputation / using predictive model / MICE
+
 
 ### Imputation
 * XGBoost can handle missing values
