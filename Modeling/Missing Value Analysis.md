@@ -23,10 +23,6 @@ https://medium.freecodecamp.org/the-penalty-of-missing-values-in-data-science-91
    * Calculate Probability & Expected value -https://www.freecodecamp.org/news/the-penalty-of-missing-values-in-data-science-91b756f95a32/
 * MICE (Multivariate Imputation by Chained Equation). It works on the assumption that missing data are Missing at Random (MAR) </br>
 https://medium.com/swlh/mice-algorithm-to-impute-missing-values-in-a-dataset-c55d555b6fbe </br>
-The algorithm consists of three stages.
-  * Imputation: Impute the missing entries of the incomplete data sets m times (m=3 in the figure). Note that imputed values are drawn from a distribution. Simulating random draws doesn’t include uncertainty in model parameters. Better approach is to use Markov Chain Monte Carlo (MCMC) simulation. This step results in m complete data sets.
-  * Analysis: Analyze each of the m completed data sets.
-  * Pooling: Integrate the m analysis results into a final result
 * DataWig learns Machine Learning models to impute missing values in tables.
 * Feature Hashing - The logic by which a hash is calculated depends on the hash function itself, but all hash functions share the same common characteristics:
   * If we feed the same input to a hash function, it will always give the same output.
