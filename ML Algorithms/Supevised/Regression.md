@@ -83,11 +83,11 @@ Common mini-batch sizes range between 50 and 256. <br/>
 
 ### Dimensionality Reduction
 ##### Forward Selection
-Starts with most significant predictor in the model and adds variable for each step.
+Starts with most significant predictor in the model and adds variable for each step. Forward selection starts with no predictors and adds one by one, and stops the process when the next addition is not statistically significant.
 ##### Backward Elimination
-Starts with all predictors in the model and removes the least significant variable for each step.
+Starts with all predictors in the model and removes the least significant variable for each step. Backward select starts with all the predictors and starts removing them one by one, and stops when all the remaining variables are statistically significant.
 ##### Stepwise Selection
-It does two things. It adds and removes predictors as needed for each step.
+It does two things. It adds and removes predictors as needed for each step. Step-wise selection process we add one at each step and also remove when some thing does not stay significant.
 
 ### Regularization
 For a model, training losss should be decreased but not at the expense of Complexity, as it overfitting. Regularization refers to any technique that helps generalize a model. A generalized model performs well not just on training data but also on never seen test data.<br/>
