@@ -73,10 +73,12 @@ It is preferable for small datasets. <br/>
 Parameters are updated for each example within the training set, one by one. It takes small, quick steps. <br/>
 The frequent updates (computationally expensive) allow us to have a pretty detailed rate of improvement. <br/>
 It is preferable for large datasets. <br/>
+SGD randomly picks one data point from the whole data set at each iteration to reduce the computations enormously.
 ##### Mini Batch Gradient Descent
 Training time is proportional to the number of data points, frequency with we check the loss <br/>
 So, try decreasing the number of data points using mini batch gradient descent <br/>
 It simply splits the training dataset into small batches (sampling) and performs an update on the parameters for each of these batches. <br/> 
+It is also common to sample a small number of data points instead of just one point at each step and that is called “mini-batch” gradient descent.
 Common mini-batch sizes range between 50 and 256. <br/>
 
 ### Dimensionality Reduction
