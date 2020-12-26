@@ -21,7 +21,8 @@ https://medium.freecodecamp.org/the-penalty-of-missing-values-in-data-science-91
    * Successful conservation of mean
    * Chnace of over-fitting a model using this data is less compared to hard imputing with mean, median or mode
    * Calculate Probability & Expected value -https://www.freecodecamp.org/news/the-penalty-of-missing-values-in-data-science-91b756f95a32/
-* MICE (Multivariate Imputation by Chained Equation)
+* MICE (Multivariate Imputation by Chained Equation). It works on the assumption that missing data are Missing at Random (MAR) </br>
+https://medium.com/swlh/mice-algorithm-to-impute-missing-values-in-a-dataset-c55d555b6fbe </br>
 The algorithm consists of three stages.
   * Imputation: Impute the missing entries of the incomplete data sets m times (m=3 in the figure). Note that imputed values are drawn from a distribution. Simulating random draws doesn’t include uncertainty in model parameters. Better approach is to use Markov Chain Monte Carlo (MCMC) simulation. This step results in m complete data sets.
   * Analysis: Analyze each of the m completed data sets.
