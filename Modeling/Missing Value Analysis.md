@@ -23,8 +23,13 @@ https://medium.freecodecamp.org/the-penalty-of-missing-values-in-data-science-91
    * Calculate Probability & Expected value -https://www.freecodecamp.org/news/the-penalty-of-missing-values-in-data-science-91b756f95a32/
 * KNN Imputation: https://www.youtube.com/watch?v=AHBHMQyD75U </br>
 Missing values in independent variables are taken into account by using weightage. For eg: if the row we are using for comparing to calculate distance have missing values in 2 independent vars, weightage = Num of non-missing vars/Total no of vars 
+  * Disadvantages : time consuming on large datasets; on high dimensional data, accuracy can be severely degraded
 * MICE (Multivariate Imputation by Chained Equation). It works on the assumption that missing data are Missing at Random (MAR) </br>
 https://medium.com/swlh/mice-algorithm-to-impute-missing-values-in-a-dataset-c55d555b6fbe </br>
+  * Disadvantages : No theoretical justifications as other imputation methods; Data complexities
+* MissForest: imputation algorithm that operates on the Random Forest algorithm </br>
+https://towardsdatascience.com/missforest-the-best-missing-data-imputation-algorithm-4d01182aed3 </br>
+  * 
 * DataWig learns Machine Learning models to impute missing values in tables.
 * Feature Hashing - The logic by which a hash is calculated depends on the hash function itself, but all hash functions share the same common characteristics:
   * If we feed the same input to a hash function, it will always give the same output.
