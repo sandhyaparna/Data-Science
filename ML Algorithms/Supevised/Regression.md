@@ -82,6 +82,7 @@ It is also common to sample a small number of data points instead of just one po
 Common mini-batch sizes range between 50 and 256. <br/>
 
 ### Dimensionality Reduction
+https://quantifyinghealth.com/stepwise-selection/
 ##### Forward Selection
 Starts with most significant predictor in the model and adds variable for each step. Forward selection starts with no predictors and adds one by one, and stops the process when the next addition is not statistically significant.
 ##### Backward Elimination
