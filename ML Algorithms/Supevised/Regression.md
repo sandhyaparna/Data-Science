@@ -36,9 +36,11 @@ Linear Regression is very sensitive to Outliers. It can terribly affect the regr
 ### OLS, MLE, Gradient descent are ways of getting parameters for a mode
 
 ### Ordinary Least Sqaure (OLS) Algorithm
+https://towardsdatascience.com/linear-regression-simplified-ordinary-least-square-vs-gradient-descent-48145de2cf76
 * OLS is used to find estimators that minimizes residual sum of squares <br/>
 * It is used in python library sklearn.  <br/>
 * m (Slope for single independant var) = Σ(Xi-Xavg)(Yi-Yavg) / Σ(Xi-Xavg)²
+* constant in y =mx+c is Yavg - (m * Xavg)
 
 ### Maximum Likelihood Estimation (MLE)
 * MLE is used to find estimators that minimizes the likelihood function
