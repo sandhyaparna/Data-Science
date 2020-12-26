@@ -42,7 +42,7 @@ https://towardsdatascience.com/linear-regression-simplified-ordinary-least-squar
 * m (Slope for single independant var) = Σ(Xi-Xavg)(Yi-Yavg) / Σ(Xi-Xavg)²
 * constant in y =mx+c is Yavg - (m * Xavg)
 
-### Maximum Likelihood Estimation (MLE)
+### Maximum Likelihood Estimation (MLE) is used to fit  Logistic regression as it involves probabilities
 * MLE is used to find estimators that minimizes the likelihood function
 * Maximum likelihood estimation is a method that determines values for the parameters of a model. The parameter values are found such that they maximise the likelihood that the process described by the model produced the data that were actually observed. The parameter values that we find are called the maximum likelihood estimates (MLE).
 * When is least squares minimisation the same as maximum likelihood estimation?
