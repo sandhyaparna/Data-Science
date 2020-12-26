@@ -29,7 +29,6 @@ https://medium.com/swlh/mice-algorithm-to-impute-missing-values-in-a-dataset-c55
   * Disadvantages : No theoretical justifications as other imputation methods; Data complexities
 * MissForest: imputation algorithm that operates on the Random Forest algorithm </br>
 https://towardsdatascience.com/missforest-the-best-missing-data-imputation-algorithm-4d01182aed3 </br>
-  * 
 * DataWig learns Machine Learning models to impute missing values in tables.
 * Feature Hashing - The logic by which a hash is calculated depends on the hash function itself, but all hash functions share the same common characteristics:
   * If we feed the same input to a hash function, it will always give the same output.
