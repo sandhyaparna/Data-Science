@@ -108,7 +108,8 @@ L1 and L2 regularization methods represent model complexity as the magnitude of 
 #####  Ridge Regression - L2 Regularization
 Ridge Regression is a technique used when the data suffers from multicollinearity ( independent variables are highly correlated). It solves the multicollinearity problem through shrinkage parameter λ (lambda), shrinks the value of coefficients but doesn’t reaches zero. <br/>
 Ridge regression adds “squared magnitude” of coefficient as penalty term to the loss function. <br/>
-Minimization objective = Least Squares Obj + α * (sum of square of coefficients) <br/>
+Minimization objective = Least Squares Obj + λ * (sum of square of coefficients) <br/>
+The reason for doing that is to “punish” the loss function for high values of the coefficients β <br/> 
 Magnitude of coefficients decreases as λ increases. λ basically controls penality term in the cost function of ridge reg. <br/>
 R² for a range of λ and choose the one that gives higher R². <br/>
 If the penality is very large it means model is less complex, therefore the bias would be high. <br/>
