@@ -58,7 +58,7 @@ https://www.analyticsvidhya.com/blog/2018/07/introductory-guide-maximum-likeliho
 * MLE can be defined as a method for estimating population parameters (such as the mean and variance for Normal, rate (lambda) for Poisson, etc.) from sample data such that the probability (likelihood) of obtaining the observed data is maximized.
 * The goal of maximum likelihood is to fit an optimal statistical (normal, exponential, poisson) distribution to some data
   * Eg: if we need classify height as either male or female. we fit a statistical distribution to Female data and another statistical distribution to Male data. when we a get a new value of height, we find the probability of new point belonging to either of the distributions and assign to the gender than has higher probability. 
-  * Parameters are mean and variance of the statistical distributions that we are fitting. 
+  * Parameters are mean and variance of the statistical distributions that we are fitting. we can say we are looking for a curve that maximizes the probability of our data given a set of curve parameters.
 * To find MLE, we need to differentiate the log-likelihood function and set it to 0
   * First  differential of log-likelihood function is set to 0 - Score equation
   * Confidence in the MLE is quantified by the pointedness of the log-likelihood. 2nd differential is called Observed Information
