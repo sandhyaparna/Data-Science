@@ -17,7 +17,7 @@ Odds Ratio = p/(1-p)
   * Female variable is created from gender var. In female var 1=female, 0=male; if coeff of this var is 0.593 i.e log(p/(1-p)) or log of odds ratio is 0.593; odd ratio = e^0.593 i.e 1.809 implies odds for female are 80.9% higher than the odds for males
   * For a continuous var, if coeff of the var i.e log of odds ratio is 0.1563, implies odds ratio is e^0.1563 = 1.169 implies if there is 1 unit inc in the continuous var, we see 16.9% inc in the odds of being Target=1
   * Logistic regression with multiple predictor variables: This fitted model says that, holding math and reading at a fixed value, the odds of getting into an honors class for females (female = 1)over the odds of getting into an honors class for males (female = 0) is exp(.979948) = 2.66.  In terms of percent change, we can say that the odds for females are 166% higher than the odds for males.  The coefficient for math says that, holding female and reading at a fixed value, we will see 13% increase in the odds of getting into an honors class for a one-unit increase in math score since exp(.1229589) = 1.13. </br>
-         hon |      Coef. 
+         hon |      Coef
         math |   .1229589  
       female |    .979948  
         read |   .0590632  
