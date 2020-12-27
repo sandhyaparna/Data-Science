@@ -11,8 +11,6 @@ logit(p) = ln(p/(1-p)) = b0+b1X1+b2X2+b3X3....+bkXk <br/>
 ### Interpretation of Categorical and Continuous vars of a Logistic Reg
 Odds Ratio = p/(1-p)
 * For each predictor u get p-value and OddsRatio=exp(Xi). Xi is coeff. Odds ratio gre than 1 implies positive relation
-* Categorical Var: Group(1) has OddsRatio times greater odds of Target happening, holding all other vars constant https://www.theanalysisfactor.com/odds-ratio-categorical-predictor/
-* Continuous Var: A unit inc of a predictor inc the dependent var by log odds. It will inc the odds of Target happening by a factor of OddsRatio of this var, holding all other vars constant
 * https://stats.idre.ucla.edu/other/mult-pkg/faq/general/faq-how-do-i-interpret-odds-ratios-in-logistic-regression/
   * Female variable is created from gender var. In female var 1=female, 0=male; if coeff of this var is 0.593 i.e log(p/(1-p)) or log of odds ratio is 0.593; odd ratio = e^0.593 i.e 1.809 implies odds for female are 80.9% higher than the odds for males
   * For a continuous var, if coeff of the var i.e log of odds ratio is 0.1563, implies odds ratio is e^0.1563 = 1.169 implies if there is 1 unit inc in the continuous var, we see 16.9% inc in the odds of being Target=1
@@ -22,7 +20,9 @@ Odds Ratio = p/(1-p)
       female |    .979948   </br>
         read |   .0590632   </br>
    intercept |  -11.77025 </br>
-   
+ * Categorical Var: Group(1) has OddsRatio times greater odds of Target happening, holding all other vars constant https://www.theanalysisfactor.com/odds-ratio-categorical-predictor/
+* Continuous Var: A unit inc of a predictor inc the dependent var by log odds. It will inc the odds of Target happening by a factor of OddsRatio of this var, holding all other vars constant
+
 ### Effect on coefs, p-value, confidence Interval when there are correlated vars in the model
 https://newonlinecourses.science.psu.edu/stat501/node/346/  <br/>
 * When predictor variables are correlated, the estimated regression coefficient of any one variable depends on which other predictor variables are included in the model.
