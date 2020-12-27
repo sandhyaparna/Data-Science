@@ -154,12 +154,14 @@ Explained variation by model (It is not the complete formulae for variance) = Σ
 Total Variation (It is not the complete formulae for variance) = Σ(Y – Yavg)² <br/>
 ##### Adjusted R Squared (R²)
 R² assumes that every single variable explains the variation in the dependent variable. R² either stay the same or increase with addition of more variables wven if they dont have any relationship with the output variables. <br/> 
-The adjusted R² tells you the percentage of variation explained by only the independent variables that actually affect the dependent variable. It penalizes you for adding variables which dont improve your existing model. <br/> 
+The adjusted R² tells you the percentage of variation explained by only the independent variables that actually affect the dependent variable. It penalizes you for adding variables which dont improve your existing model. If the R2 increases by a significant value, then the adjusted r-squared would increase. If there is no significant change in R2, then the adjusted r2 would decrease.<br/> 
 The best regression model is the one with the largest adjusted R2-value. <br/> 
 R-squared = 1-(SSE/SST) = SSR/SST <br/> 
 R-square and Adjusted R squared would be exactly same for single input variable. <br/> 
 Adjusted R² = 1 - { (1-R²)(n-1)/(n-k-1) }    <br/>
 n is total sample size and k is no of predictors <br/>
+
+
 ##### Mallow's Cp
 Mallow’s Cp is a technique for model selection in regression. The Cp statistic is defined as a criteria to assess fits when models with different number of parameters are being compared. A small value of Cp means that the model is relatively precise. <br/>
 Mallows’s Cp has been shown to be equivalent to Akaike information criterion in the special case of Gaussian linear regression. <br/>
@@ -186,3 +188,8 @@ BIC = -2*ln(likelihood) + ln(N)*p
 * SSR (Sum of Squares Regression) = Σ(Ypred – Yavg)². Greater the value better the regression model
 * SSE (Sum of Squares errors) = Σ(Y – Ypred)² # Residual error
 * SST (Sum of Squares total) = Σ(Y – Yavg)² # Explains variation within the dependent variable
+
+
+
+
+
