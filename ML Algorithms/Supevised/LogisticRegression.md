@@ -2,6 +2,7 @@
 https://www.saedsayad.com/logistic_regression.htm <br/>
 https://www.kdnuggets.com/2019/01/logistic-regression-concise-technical-overview.html <br/>
 
+https://towardsdatascience.com/logistic-regression-explained-9ee73cede081 </br>
 In logistic regression, linear combination of inputs are mapped to log odds. It predicts the probability of occurrence of an event by fitting data to a logic function.  <br/>
 logit(p) = ln(p/(1-p)) = b0+b1X1+b2X2+b3X3....+bkXk <br/>
 * probability is expressed as sigmoid function i.e 1/(1+e^-x)
@@ -51,9 +52,13 @@ Logistic regression predicts the probability of occurrence of an event by fittin
 * Should be used when data is linearly seperable. This dividing plane is called a linear discriminant, because its linear in terms of its function and it helps the model discriminate between points belonging to different classes
 
 ### Maximum Likelihood Estimation
+https://towardsdatascience.com/probability-learning-iii-maximum-likelihood-e78d5ebea80c </br>
 https://www.analyticsvidhya.com/blog/2018/07/introductory-guide-maximum-likelihood-estimation-case-study-r/ </br>
 * MLE is used to find the coefficients (estimators) that accurately predicts the probability of the binary dependent variable, that minimizes the likelihood function
 * MLE can be defined as a method for estimating population parameters (such as the mean and variance for Normal, rate (lambda) for Poisson, etc.) from sample data such that the probability (likelihood) of obtaining the observed data is maximized.
+* The goal of maximum likelihood is to fit an optimal statistical (normal, exponential, poisson) distribution to some data
+  * Eg: if we need classify height as either male or female. we fit a statistical distribution to Female data and another statistical distribution to Male data. when we a get a new value of height, we find the probability of new point belonging to either of the distributions and assign to the gender than has higher probability. 
+  * Parameters are mean and variance of the statistical distributions that we are fitting. 
 * To find MLE, we need to differentiate the log-likelihood function and set it to 0
   * First  differential of log-likelihood function is set to 0 - Score equation
   * Confidence in the MLE is quantified by the pointedness of the log-likelihood. 2nd differential is called Observed Information
