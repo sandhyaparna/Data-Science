@@ -32,8 +32,8 @@ Measures the performance of a classification model where the prediction input is
 Log Loss takes into account the uncertainty of your prediction based on how much it varies from the actual label. It penalizes wrong predictions very strongly. <br/>
 Log Loss = (-1/N) * [ Σ{ylog(p) + (1-y)log(1-p)} ] <br/>
 Model parameters are updated with respect to the derivative of the loss function. Derivative or slope of Loss function provides direction and stepsize in our serach.
-* If Loss function derivative is +ve then move towards left implies decrease weights and if the value is big then take a big stepsize
-* If Loss function derivative is -ve then move towards right implies increase weights and if the value is small then take a small stepsize
+* If Loss function derivative is +ve then move towards left  implies decrease weights and if the slope value is big then take a big stepsize as slope is big (more change in y for change in x) when it is farther from destination(global min)
+* If Loss function derivative is -ve then move towards right implies increase weights and if the value is small then take a small stepsize because slope is small nearer to the global min
 It is important to add regularization to logistic regression because:
 * Helps stop weights being driven to +/- infinity
 * Helps logits stay away from asymptotes which can halt training
