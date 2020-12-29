@@ -3,7 +3,7 @@ https://www.saedsayad.com/logistic_regression.htm <br/>
 https://www.kdnuggets.com/2019/01/logistic-regression-concise-technical-overview.html <br/>
 
 https://towardsdatascience.com/logistic-regression-explained-9ee73cede081 </br>
-In logistic regression, linear combination of inputs are mapped to log odds. It predicts the probability of occurrence of an event by fitting data to a logic function.  <br/>
+In logistic regression, linear combination of inputs are mapped to log odds. It predicts the probability of occurrence of an event by fitting data to a logit function.  <br/>
 logit(p) = ln(p/(1-p)) = b0+b1X1+b2X2+b3X3....+bkXk <br/>
 * probability is expressed as sigmoid function i.e 1/(1+e^-x)
 * So, log( p/(1-p) ) can be expressed as linear combination of inputs
