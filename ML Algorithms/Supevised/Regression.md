@@ -57,12 +57,12 @@ Gradient descent is an optimization algorithm that finds the optimal weights (a,
 1. Initialize the weights(a & b) with random values and calculate Error (SSE)
 2. Calculate the gradient i.e. change in SSE when the weights (a & b) are changed by a very small value from their original randomly initialized value. This helps us move the values of a & b in the direction in which SSE is minimized. <br/>
 Slope from the graph of (Loss vs Weight) suggests the direction and stepsize. If slope is +ve, decrease weights, if Magnitude of slope is more decrese step size by a greater value <br/>
+stepsize = slope * learning rate
+The “learning rate” mentioned above is a flexible parameter which heavily influences the convergence of the algorithm. Larger learning rates make the algorithm take huge steps down the slope and it might jump across the minimum point thereby missing it. So, it is always good to stick to low learning rate such as 0.01. It can also be mathematically shown that gradient descent algorithm takes larger steps down the slope if the starting point is high above and takes baby steps as it reaches closer to the destination to be careful not to miss it and also be quick enough. <br/>
+Learning Rate: Determines how fast or slow we will move towards the optimal weights. In order for Gradient Descent to reach the local minimum, we have to set the learning rate to an appropriate value, which is neither too low nor too high. This is because if the steps it takes are too big, it maybe will not reach the local minimum and if you set the learning rate to a very small value, gradient descent will eventually reach the local minimum but it will maybe take too much time. <br/>
 3. Adjust the weights with the gradients to reach the optimal values where SSE is minimized
 4. Use the new weights for prediction and to calculate the new SSE
 5. Repeat steps 2 and 3 till further adjustments to weights doesn’t significantly reduce the Error <br/>
-
-Learning Rate: Determines how fast or slow we will move towards the optimal weights. In order for Gradient Descent to reach the local minimum, we have to set the learning rate to an appropriate value, which is neither too low nor too high. This is because if the steps it takes are too big, it maybe will not reach the local minimum and if you set the learning rate to a very small value, gradient descent will eventually reach the local minimum but it will maybe take too much time. <br/>
-
 
 ##### Batch Gradient Descent
 It is also called vanilla gradient descent, calculates the error for each example within the training dataset, but only after all training examples have been evaluated, the model gets updated. This whole process is like a cycle and called a training epoch. <br/>
