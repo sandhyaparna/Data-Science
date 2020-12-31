@@ -63,6 +63,11 @@ High-dimensional data are usually very sparse which provides us a possibility of
     * Construct a graph with weighted (measure of conflict between features) edges. Conflict is measure of the fraction of exclusive features which have overlapping non zero values.
     * Sort the features by count of non zero instances in descending order.
     * Loop over the ordered list of features and assign the feature to an existing bundle (if conflict < threshold) or create a new bundle (if conflict > threshold).
+  * Part 2 of EFB : Algorithm for merging features
+    * Calculate the offset to be added to every feature in feature bundle.
+    * Iterate over every data instance and feature.
+    * Initialise the new bucket as zero for instances where all features are zero.
+    * Calculate the new bucket for every non zero instance of a feature by adding respective offset to original bucket of that feature.
 * Parameter Tuning. Few important parameters and their usage is listed below : https://www.avanwyk.com/an-overview-of-lightgbm/
   * max_depth : It sets a limit on the depth of tree. The default value is 20. It is effective in controlling over fitting.
   * categorical_feature : It specifies the categorical feature used for training model. 
