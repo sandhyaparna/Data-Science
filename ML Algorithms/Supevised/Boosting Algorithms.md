@@ -83,8 +83,10 @@ High-dimensional data are usually very sparse which provides us a possibility of
   * scale_pos_weight: the weight can be calculated based on the number of negative and positive examples: sample_pos_weight = number of negative samples / number of positive samples.
 
 ### CatBoost - Category Boosting
+https://www.kdnuggets.com/2019/06/clearing-air-around-boosting.html </br>
 https://www.analyticsvidhya.com/blog/2017/08/catboost-automated-categorical-data/ </br>
 https://towardsdatascience.com/categorical-features-parameters-in-catboost-4ebd1326bee5 </br>
+* Ordered Boosting, Oblivious trees and handling of Categorical vars
 * Handles Categorical data such as audio, text, image automatically 
 * Performance - CatBoost provides state of the art results and it is competitive with any leading machine learning algorithm on the performance front (Prediction time). 
 * Handling Categorical features automatically - We can use CatBoost without any explicit pre-processing to convert categories into numbers. CatBoost converts categorical values into numbers using various statistics on combinations of categorical features and combinations of categorical and numerical features
