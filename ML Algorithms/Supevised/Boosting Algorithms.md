@@ -83,13 +83,19 @@ High-dimensional data are usually very sparse which provides us a possibility of
   * scale_pos_weight: the weight can be calculated based on the number of negative and positive examples: sample_pos_weight = number of negative samples / number of positive samples.
 
 ### CatBoost - Category Boosting
-https://www.analyticsvidhya.com/blog/2017/08/catboost-automated-categorical-data/
+https://www.analyticsvidhya.com/blog/2017/08/catboost-automated-categorical-data/ </br>
+https://towardsdatascience.com/categorical-features-parameters-in-catboost-4ebd1326bee5 </br>
 * Handles Categorical data such as audio, text, image automatically 
 * Performance - CatBoost provides state of the art results and it is competitive with any leading machine learning algorithm on the performance front (Prediction time). 
 * Handling Categorical features automatically - We can use CatBoost without any explicit pre-processing to convert categories into numbers. CatBoost converts categorical values into numbers using various statistics on combinations of categorical features and combinations of categorical and numerical features
 https://tech.yandex.com/catboost/doc/dg/concepts/algorithm-main-stages_cat-to-numberic-docpage/
 * Robust - It reduces the need for extensive hyper-parameter tuning and lower the chances of overfitting also which leads to more generalized models. Although, CatBoost has multiple parameters to tune and it contains parameters like the number of trees, learning rate, regularization, tree depth, fold size, bagging temperature and others. 
 * Easy-to-use - You can use CatBoost from the command line, using an user-friendly API for both Python and R
+* In GBM, trees are built iteratively using the same dataset and this process leads to a bit of target leakage which affects the generalization capabilities of the model. To combat this issue we usa a new variant of Gradient Boosting, called Ordered Boosting. It starts out with creating s+1 permutations of the dataset. This permutation is the artificial time that the algorithm takes into account. Let’s call it \sigma_0\; to\; \sigma_s. The permutations \sigma_1\; to\; \sigma_s is used for constructing the tree splits and \sigma_0 is used to choose the leaf values b_j. In the absence of multiple permutations, the training samples with short “history” will have high variance and hence having multiple permutations ease out that defect.
+* Both simple_ctr and combinations_ctr are complex parameters that provide regulation of the categorical features encodings types. While simple_ctr is responsible for processing the categorical features initially present in the dataset, combinations_ctr affects the encoding of the new features, that CatBoost creates by combining the existing features. 
+* CatBoost too uses a different kind of Decision Tree, called Oblivious Trees. In such trees the same splitting criterion is used across an entire level of the tree. Such trees are balanced and less prone to overfitting. (it is level-wise algo)
+* In oblivious trees each leaf index can be encoded as a binary vector with length equal to the depth of the tree. This fact is widely used in CatBoost model evaluator: it first binarizes all float features and all one-hot encoded features, and then uses these binary features to calculate model predictions. This helps in predicting at very fast speed.
+
 
 ### Hyperparameters
 ![](https://cdn-images-1.medium.com/max/1000/1*A0b_ahXOrrijazzJengwYw.png)
