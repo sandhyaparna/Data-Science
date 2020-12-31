@@ -16,6 +16,7 @@
 * As more trees are added, predictions usually improve. But maximum number of trees should be limited by using validation set for early stopping, because more number of trees might overfit the training data
 * Standard GBM implementation has no regularization like XGBoost
 * A GBM would stop splitting a node when it encounters a negative loss in the split. Thus it is more of a greedy algorithm
+* Models are updated using gradient descent hence called as GBM
 
 ### XGBoost - Xtreme Gradient Boostimg
 Training Loss + Regularization
