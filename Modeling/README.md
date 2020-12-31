@@ -1,6 +1,3 @@
-https://github.com/hse-aml/competitive-data-science
-
-
 ### Problem Statement
 * Understanding Problem, Problem formalization
 * Scope of the model - Model predicts 6hrs before onset of a disease, Before making the decision of discharge at a hospital
