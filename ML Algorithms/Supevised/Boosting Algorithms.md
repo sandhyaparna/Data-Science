@@ -30,7 +30,8 @@ http://zhanpengfang.github.io/418home.html
 * But give lots and lots of data even XGBoost takes long time to train
 
 ### Diff between XGBoost, LightGBM, catboot using example and code
-https://towardsdatascience.com/catboost-vs-light-gbm-vs-xgboost-5f93620723db
+https://towardsdatascience.com/catboost-vs-light-gbm-vs-xgboost-5f93620723db </br>
+https://bangdasun.github.io/2019/03/21/38-practical-comparison-xgboost-lightgbm/  </br>
 * LightGBM decides on splits leaf-wise, i.e., it splits the leaf node that maximizes the information gain, even when this leads to unbalanced trees. In contrast, XGBoost and CatBoost expand all nodes depth-wise and first split all nodes at a given depth before adding more levels. The two approaches expand nodes in a different order and will produce different results except for complete trees. </br>
 * Structural Differences in LightGBM & XGBoost: LightGBM uses a novel technique of Gradient-based One-Side Sampling (GOSS) to filter out the data instances for finding a split value while XGBoost uses pre-sorted algorithm & Histogram-based algorithm for computing the best split. Here instances are observations/samples. https://towardsdatascience.com/lightgbm-vs-xgboost-which-algorithm-win-the-race-1ff7dd4917d
 * Histogram-based Tree Splitting: In simple terms, Histogram-based algorithm splits all the data points for a feature into discrete bins and uses these bins to find the split value of the histogram. While it is efficient than the pre-sorted algorithm in training speed which enumerates all possible split points on the pre-sorted feature values, it is still behind GOSS in terms of speed. </br>
