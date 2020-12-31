@@ -15,7 +15,7 @@ def log_loss_cond(actual, predict_prob): </br>
     # use natural logarithm </br>
     return -log(predict_prob)  </br>
   else: </br>
-    return -log(1 - predict_prob) </br>
+    return -log(1 - predict_prob) </br> (but log(o) is -inf, so we take e^-15)
  </br>
 -1/N * Σ ln(prob of the actual target happening). ln is used and not log
 * prob of the actual target happening implies 
