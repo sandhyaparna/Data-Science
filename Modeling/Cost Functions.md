@@ -10,6 +10,13 @@
 
 ### Logloss
 https://towardsdatascience.com/understanding-binary-cross-entropy-log-loss-a-visual-explanation-a3ac6025181a </br>
+def log_loss_cond(actual, predict_prob): </br>
+  if actual == 1:   </br>
+    # use natural logarithm </br>
+    return -log(predict_prob)  </br>
+  else: </br>
+    return -log(1 - predict_prob) </br>
+ </br>
 -1/N * Σ ln(prob of the actual target happening). ln is used and not log
 * prob of the actual target happening implies 
   * If Target=0 for a observation then what is the probability of 0 happening. 
