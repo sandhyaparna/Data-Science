@@ -19,7 +19,7 @@
 
 ### XGBoost - Xtreme Gradient Boostimg
 Training Loss + Regularization
-* XGBoost uses pre-sorted algorithm & Histogram-based algorithm for computing the best split.
+* XGBoost uses pre-sorted algorithm & Histogram-based algorithm for computing the best split. Both LightGBM and xgboost utilise histogram based split finding
 * Regularization - Helps to reduce overfitting. XGBoost is also known as ‘regularized boosting‘ technique
 * Parallel Processing - XGBoost implements parallel processing and is blazingly faster as compared to GBM. Xgboost doesn't run multiple trees in parallel as GBM is sequential/Additive process and each tree can be built only after the previous one i.e you need predictions after each tree to update gradients. Rather it does the parallelization WITHIN a single tree (during its construction) by using openMP to create branches independently
 http://zhanpengfang.github.io/418home.html
@@ -33,14 +33,15 @@ http://zhanpengfang.github.io/418home.html
 https://towardsdatascience.com/catboost-vs-light-gbm-vs-xgboost-5f93620723db
 * LightGBM decides on splits leaf-wise, i.e., it splits the leaf node that maximizes the information gain, even when this leads to unbalanced trees. In contrast, XGBoost and CatBoost expand all nodes depth-wise and first split all nodes at a given depth before adding more levels. The two approaches expand nodes in a different order and will produce different results except for complete trees. </br>
 * Structural Differences in LightGBM & XGBoost: LightGBM uses a novel technique of Gradient-based One-Side Sampling (GOSS) to filter out the data instances for finding a split value while XGBoost uses pre-sorted algorithm & Histogram-based algorithm for computing the best split. Here instances are observations/samples. https://towardsdatascience.com/lightgbm-vs-xgboost-which-algorithm-win-the-race-1ff7dd4917d
-* Histogram-based Tree Splitting
+* Histogram-based Tree Splitting: In simple terms, Histogram-based algorithm splits all the data points for a feature into discrete bins and uses these bins to find the split value of the histogram. While it is efficient than the pre-sorted algorithm in training speed which enumerates all possible split points on the pre-sorted feature values, it is still behind GOSS in terms of speed. </br>
 The amount of time it takes to build a tree is proportional to the number of splits that have to be evaluated. And when you have continuous or categorical features with high cardinality, this time increases drastically. But most of the splits that can be made for a feature only offer miniscule changes in performance. And this concept is why a histogram based method is applied to tree building. The core idea is to group features into set of bins and perform splits based on these bins. This reduces the time complexity from O(#data) to O(#bins).
-* In simple terms, Histogram-based algorithm splits all the data points for a feature into discrete bins and uses these bins to find the split value of the histogram. While it is efficient than the pre-sorted algorithm in training speed which enumerates all possible split points on the pre-sorted feature values, it is still behind GOSS in terms of speed.
+
 * 
 
 ### LightGBM
-https://www.analyticsvidhya.com/blog/2017/06/which-algorithm-takes-the-crown-light-gbm-vs-xgboost/
-* Light GBM uses Gradient based one side sampling (GOSS) and Exclusive Feature Bundling (EFB) for computing the best split.
+https://towardsdatascience.com/what-makes-lightgbm-lightning-fast-a27cf0d9785e </br>
+https://www.analyticsvidhya.com/blog/2017/06/which-algorithm-takes-the-crown-light-gbm-vs-xgboost/ </br>
+* LightGBM aims to reduce complexity of histogram building by Gradient based one side sampling (GOSS) and Exclusive Feature Bundling (EFB) for finding the optimum split points
 * Light GBM is a fast, distributed, high-performance gradient boosting framework based on decision tree algorithm, used for ranking, classification and many other machine learning tasks
 * Since it is based on decision tree algorithms, it splits the tree leaf wise with the best fit whereas other boosting algorithms split the tree depth wise or level wise rather than leaf-wise. So when growing on the same leaf in Light GBM, the leaf-wise algorithm can reduce more loss than the level-wise algorithm and hence results in much better accuracy which can rarely be achieved by any of the existing boosting algorithms. Also, it is surprisingly very fast, hence the word ‘Light’
 * Leaf wise splits lead to increase in complexity and may lead to overfitting and it can be overcome by specifying another parameter max-depth which specifies the depth to which splitting will occur
@@ -55,7 +56,14 @@ Therefore, when down sampling the data instances, in order to retain the accurac
 They prove that such a treatment can lead to a more accurate gain estimation than uniformly random sampling, with the same target sampling rate, especially when the value of information gain has a large range
 * Exclusive Feature Bundling Technique for LightGBM:
 High-dimensional data are usually very sparse which provides us a possibility of designing a nearly lossless approach to reduce the number of features. Specifically, in a sparse feature space, many features are mutually exclusive, i.e., they never take nonzero values simultaneously. The exclusive features can be safely bundled into a single feature (called an Exclusive Feature Bundle).  Hence, the complexity of histogram building changes from O(#data × #feature) to O(#data × #bundle), while #bundle<<#feature . Hence, the speed for training framework is improved without hurting accuracy.
-* Parameter Tuning. Few important parameters and their usage is listed below :
+* What is EFB(Exclusive Feature Bundling)?
+  * Remember histogram building takes O(#data * #feature). If we are able to down sample the #feature we will speed up tree learning. LightGBM achieves this by bundling features together. We generally work with high dimensionality data. Such data have many features which are mutually exclusive i.e they never take zero values simultaneously.     * LightGBM safely identifies such features and bundles them into a single feature to reduce the complexity to O(#data * #bundle) where #bundle << #feature.
+  * Part 1 of EFB : Identifying features that could be bundled together
+  * Intuitive explanation for creating feature bundles
+    * Construct a graph with weighted (measure of conflict between features) edges. Conflict is measure of the fraction of exclusive features which have overlapping non zero values.
+    * Sort the features by count of non zero instances in descending order.
+    * Loop over the ordered list of features and assign the feature to an existing bundle (if conflict < threshold) or create a new bundle (if conflict > threshold).
+* Parameter Tuning. Few important parameters and their usage is listed below : https://www.avanwyk.com/an-overview-of-lightgbm/
   * max_depth : It sets a limit on the depth of tree. The default value is 20. It is effective in controlling over fitting.
   * categorical_feature : It specifies the categorical feature used for training model. 
   * bagging_fraction : It specifies the fraction of data to be considered for each iteration.
@@ -65,6 +73,7 @@ High-dimensional data are usually very sparse which provides us a possibility of
   * min_data_in_bin : It specifies minimum amount of data in one bin.
   * task : It specifies the task we wish to perform which is either train or prediction. The default entry is train. Another possible value for this parameter is prediction.
   * feature_fraction : It specifies the fraction of features to be considered in each iteration. The default value is one.
+  * scale_pos_weight: the weight can be calculated based on the number of negative and positive examples: sample_pos_weight = number of negative samples / number of positive samples.
 
 ### CatBoost - Category Boosting
 https://www.analyticsvidhya.com/blog/2017/08/catboost-automated-categorical-data/
