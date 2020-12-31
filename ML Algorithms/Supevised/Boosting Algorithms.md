@@ -42,6 +42,7 @@ The amount of time it takes to build a tree is proportional to the number of spl
 
 ### LightGBM
 https://towardsdatascience.com/what-makes-lightgbm-lightning-fast-a27cf0d9785e </br>
+https://stats.stackexchange.com/questions/319710/lightgbm-understanding-why-it-is-fast  </br>
 https://www.analyticsvidhya.com/blog/2017/06/which-algorithm-takes-the-crown-light-gbm-vs-xgboost/ </br>
 * LightGBM aims to reduce complexity of histogram building by Gradient based one side sampling (GOSS) and Exclusive Feature Bundling (EFB) for finding the optimum split points
 * LightGBM aims to reduce complexity of histogram building ( O(data * feature) ) by down sampling data and feature using GOSS and EFB. This will bring down the complexity to (O(data2 * bundles)) where data2 < data and bundles << feature.
