@@ -1,4 +1,3 @@
-https://github.com/hse-aml/competitive-data-science
 * Data Pre-processing
   * Numeric - Transformation
   * categorical - Encoding, create interaction vars by concatenating vars 
