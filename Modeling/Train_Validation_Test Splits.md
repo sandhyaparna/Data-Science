@@ -8,6 +8,7 @@ TEST nor VALIDATION set should never be undersampled or over-sampled. Only Train
 
 ### Avoid Common Errors 
 * Lack of generalization - Create 3 identically distributed Machine Learning data sets such that it is repeatable
+* Use stratify and random state options
 * Repeatable Datasets - use farm_fingerprint function on dates etc
 https://cloud.google.com/bigquery/docs/reference/standard-sql/hash_functions <br/>
 https://github.com/sandhyaparna/training-data-analyst/blob/master/courses/machine_learning/deepdive/02_generalization/repeatable_splitting.ipynb <br/>
