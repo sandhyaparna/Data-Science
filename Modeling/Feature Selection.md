@@ -28,7 +28,7 @@ https://towardsdatascience.com/a-feature-selection-tool-for-machine-learning-in-
     * steps — how many features are dropped every time RFE reduces features
 * Features with 0 importance in a tree based model
 * Chi-sq for Categorical data - SelectKBest based on chi-sq score in python 
-* F-test capture linear relationship well (Correlation)
+* F-test capture linear relationship well (similar to ANOVA but this dont require normality assumption)
   * Scikit learn provides the Selecting K best features using F-Test.
   * sklearn.feature_selection.f_regression
   * sklearn.feature_selection.f_classif
