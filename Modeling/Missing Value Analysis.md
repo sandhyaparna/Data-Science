@@ -60,7 +60,6 @@ https://towardsdatascience.com/missforest-the-best-missing-data-imputation-algor
 * Do Nothing or create a new category for missing in Categorical data - Is_missing_or_not column and then impute the original var with the missing values
 * Median, Mode are usually used in linear models
 * Missing values should be imputed befor Feature engineering
-* Missing values needs to be ignored in the imputation process(calculating median etc)
 * For categories which present in the test data but do not present in the train data - frequency encoding works well
 
 
