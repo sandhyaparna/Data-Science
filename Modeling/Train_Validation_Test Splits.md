@@ -14,7 +14,7 @@ https://cloud.google.com/bigquery/docs/reference/standard-sql/hash_functions <br
 https://github.com/sandhyaparna/training-data-analyst/blob/master/courses/machine_learning/deepdive/02_generalization/repeatable_splitting.ipynb <br/>
 https://github.com/sandhyaparna/training-data-analyst/blob/master/courses/machine_learning/deepdive/02_generalization/create_datasets.ipynb  <br/>
 https://googlecoursera.qwiklabs.com/focuses/25429?locale=en <br/>
-* Clean & Pre-proces data before splitting
+* Use Train dtaa for EDA but apply Cleaning & Pre-processing on both train & test data 
 * Healthcare Data splitting challenges
   * Patient Overlap - When patient comes twice and have 2 xrays and wears a necklace both the times, but we feed one of the xray into Train and other into Test, there is a high possibility of memorization of unique aspects like necklace in this case and makes the prediction similar to label in Train set. Make sure that a patients xrays are all in either Train set or Test set but not distributed across both Train & Test. SPLIT BY PATIENT.
   * Set sampling - Stratified sampling to get label=1 even when it is rarely occuring. AI for Medical Diagnosis video suggests to take 50% observations of label=1, 50% observations of label=0 for both Test and Validation set (Validation set should reflect the same sampling distribution seen in Test set) and all the remaining observations as Training set. This ensures that the model will have sufficient numbers to get a good estimate of the performance of the model on both non-disease and on disease samples. https://www.coursera.org/learn/ai-for-medical-diagnosis/lecture/iiAK1/sampling
