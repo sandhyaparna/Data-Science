@@ -25,7 +25,7 @@ https://towardsdatascience.com/a-feature-selection-tool-for-machine-learning-in-
   * Scikit learn provides the Selecting K best features using F-Test.
   * sklearn.feature_selection.f_regression
   * sklearn.feature_selection.f_classif
-* Mutual info: Mutual Information between two variables measures the dependence of one variable to another. If X and Y are two variables, and
+* Mutual info: Mutual Information between two variables measures the dependence of one variable on another. If X and Y are two variables, and
   * If X and Y are independent, then no information about Y can be obtained by knowing X or vice versa. Hence their mutual information is 0.
   * If X is a deterministic function of Y, then we can determine X from Y and Y from X with mutual information 1.
   * When we have Y = f(X,Z,M,N), 0 < mutual information < 1
