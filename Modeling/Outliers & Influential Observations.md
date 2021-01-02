@@ -19,6 +19,9 @@ Influential Obs: An influential point is any point that has a large effect on th
 * Mahalanobis’ distance
 * Cook’s Distance plot - Residuals vs Leverage Plot
 * Cook’s D Bar Plot
+  * delete observations one at a time.
+  * refit the regression model on remaining (n−1) observations
+  * examine how much all of the fitted values change when the ith observation is deleted.
 * Cook’s D Chart
 * DFBETAs Panel
 * DFFITs Plot
