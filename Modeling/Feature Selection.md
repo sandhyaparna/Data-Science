@@ -18,7 +18,13 @@ https://towardsdatascience.com/a-feature-selection-tool-for-machine-learning-in-
 * Low Variance filter - Variance Threshold
 * Remove highly correlated variables
 * Regularization - Lasso
-* Forward slection, Backward Selection, Stepwise Selection (Recursive Feature Elimination)
+* Forward slection, Backward Selection, Stepwise Selection 
+* Recursive Feature Elimination https://machinelearningmastery.com/rfe-feature-selection-in-python/
+  * RFE works by searching for a subset of features by starting with all features in the training dataset and successfully removing features until the desired number remains.
+  * There are 3 main parameters to sklearn’s RFE method.
+    * estimator — a machine learning model with a .fit method
+    * n_features_to_select — the number of features that will be kept
+    * steps — how many features are dropped every time RFE reduces features
 * Features with 0 importance in a tree based model
 * Chi-sq for Categorical data - SelectKBest based on chi-sq score in python 
 * F-test capture linear relationship well (Correlation)
