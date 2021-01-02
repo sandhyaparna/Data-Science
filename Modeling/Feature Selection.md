@@ -18,9 +18,13 @@ https://towardsdatascience.com/a-feature-selection-tool-for-machine-learning-in-
 * Low Variance filter - Variance Threshold
 * Remove highly correlated variables
 * Regularization - Lasso
-* Forward slection, Backward Selection, Stepwise Selection
+* Forward slection, Backward Selection, Stepwise Selection (Recursive Feature Elimination)
 * Features with 0 importance in a tree based model
 * Chi-sq for Categorical data - SelectKBest based on chi-sq score in python 
+* F-test capture linear relationship well (Correlation)
+  * Scikit learn provides the Selecting K best features using F-Test.
+  * sklearn.feature_selection.f_regression
+  * sklearn.feature_selection.f_classif
 * Mutual info: Mutual Information between two variables measures the dependence of one variable to another. If X and Y are two variables, and
   * If X and Y are independent, then no information about Y can be obtained by knowing X or vice versa. Hence their mutual information is 0.
   * If X is a deterministic function of Y, then we can determine X from Y and Y from X with mutual information 1.
@@ -28,6 +32,9 @@ https://towardsdatascience.com/a-feature-selection-tool-for-machine-learning-in-
   * We can select our features from feature space by ranking their mutual information with the target variable.
   * Advantage of using mutual information over F-Test is, it does well with the non-linear relationship between feature and target variable.
   * Sklearn offers feature selection with Mutual Information for regression and classification tasks.
+  * sklearn.feature_selection.mututal_info_regression 
+  * sklearn.feature_selection.mututal_info_classif
+  * I(X ; Y) = H(X) – H(X | Y). Where I(X ; Y) is the mutual information for X and Y, H(X) is the entropy for X and H(X | Y) is the conditional entropy for X given Y. The result has the units of bits. Mutual information is a measure of dependence or “mutual dependence” between two random variables. As such, the measure is symmetrical, meaning that I(X ; Y) = I(Y ; X).
 * PCA (Principal COmponent Analysis) - Linear combination of the variables
   * PCA extracts low dimensional set of features from a high dimensional data set such that variance is maximized/increased by bringing the data into low dimensional space. Loses a little accuracy. Normalization of data is performed before performing PCA.
 * Principal component analysis (PCA) is a statistical procedure that uses an orthogonal transformation to convert a set of observations of possibly correlated variables (entities each of which takes on various numerical values) into a set of values of linearly uncorrelated variables called principal components. Because our principal components are orthogonal to one another, they are statistically independent of one another.
