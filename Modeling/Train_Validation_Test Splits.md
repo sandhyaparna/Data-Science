@@ -3,7 +3,7 @@ Train a new model on all available data https://machinelearningmastery.com/train
 Train-Validation-Test https://towardsdatascience.com/train-validation-and-test-sets-72cb40cba9e7 <br/>
 DONT split Train & Test based on Time https://discuss.analyticsvidhya.com/t/is-it-wise-to-split-training-and-test-dataset-based-on-time-year/2967/4 <br/>
 Split data coming from DIFFERENT distributions https://www.kdnuggets.com/2019/01/when-your-training-testing-data-different-distributions.html <br/>
-TEST nor VALIDATION set should never be undersampled or over-sampled. Only Training data should be over-sampled/under-sampled <br/>
+TEST nor VALIDATION set should never be undersampled or over-sampled. Only Training data should be over-sampled/under-sampled https://kiwidamien.github.io/how-to-do-cross-validation-when-upsampling-data.html <br/>
 
 
 ### Avoid Common Errors 
