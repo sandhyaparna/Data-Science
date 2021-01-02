@@ -5,10 +5,11 @@ Dimension reduction techniques https://www.analyticsvidhya.com/blog/2018/08/dime
 Filter, Wrapper Methods https://www.analyticsvidhya.com/blog/2016/12/introduction-to-feature-selection-methods-with-an-example-or-how-to-select-the-right-variables/ <br/>
 
 ### Reasons to include fewer predictors over many
-* Redundancy/Irrelevance: Remove non-redundant predictor variables. Pareto principle suggests that 80% of what happens can be explained using 20%
+* Redundancy/Irrelevance: Remove non-redundant predictor variables. Pareto principle suggests that 80% of what happens can be explained using 20%. Irrelevant or partially relevant features can negatively impact model performance.
 * Garbage In = Garbage Out - So, we are trying to avoid it
 * Over-fitting: The data models with large number of predictors (also referred to as complex models) often suffer from the problem of overfitting, in which case the data model performs great on training data, but performs poorly on test data.
-* Productivity: Improves Accuracy (Less Noise), Reduces Training time
+* Improves Accuracy/Performance (Less Noise)
+* Reduces Training time
 * Understandability/Interpretability: Fewer predictors are way easier to understand and explain
 
 ### Feature reduction techniques: Numeric & Categorical - Domain dependent
@@ -20,6 +21,13 @@ https://towardsdatascience.com/a-feature-selection-tool-for-machine-learning-in-
 * Forward slection, Backward Selection, Stepwise Selection
 * Features with 0 importance in a tree based model
 * Chi-sq for Categorical data - SelectKBest based on chi-sq score in python 
+* Mutual info: Mutual Information between two variables measures the dependence of one variable to another. If X and Y are two variables, and
+  * If X and Y are independent, then no information about Y can be obtained by knowing X or vice versa. Hence their mutual information is 0.
+  * If X is a deterministic function of Y, then we can determine X from Y and Y from X with mutual information 1.
+  * When we have Y = f(X,Z,M,N), 0 < mutual information < 1
+  * We can select our features from feature space by ranking their mutual information with the target variable.
+  * Advantage of using mutual information over F-Test is, it does well with the non-linear relationship between feature and target variable.
+  * Sklearn offers feature selection with Mutual Information for regression and classification tasks.
 * PCA (Principal COmponent Analysis) - Linear combination of the variables
   * PCA extracts low dimensional set of features from a high dimensional data set such that variance is maximized/increased by bringing the data into low dimensional space. Loses a little accuracy. Normalization of data is performed before performing PCA.
 * Principal component analysis (PCA) is a statistical procedure that uses an orthogonal transformation to convert a set of observations of possibly correlated variables (entities each of which takes on various numerical values) into a set of values of linearly uncorrelated variables called principal components. Because our principal components are orthogonal to one another, they are statistically independent of one another.
