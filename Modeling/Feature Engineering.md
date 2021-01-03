@@ -66,7 +66,8 @@ When data is missing in the Numeric column - For that column create a new extra 
   * Yeo-Johnson or Box-Cox
   * Box-Cox can only be used on non-negative data
 
-### Categorical
+### Categorical 
+https://towardsdatascience.com/all-about-categorical-variable-encoding-305f3361fd02 <br/>
 * Encoding - One-hot encoding
 * When data is missing in the category column - A 5 category var usually gets 5 binary columns of one-hot encoding. But if there are missing values then 6 binary variables needs to be created
 * High Cardinal categorical features - 
