@@ -52,6 +52,8 @@ https://www.coursera.org/learn/ai-for-medical-treatment/lecture/C4tTK/shapley-va
 https://www.coursera.org/learn/ai-for-medical-treatment/lecture/sPtIT/combining-importances </br>
 https://www.coursera.org/learn/ai-for-medical-treatment/lecture/ClIGF/shapley-values-for-all-patients </br>
 
+The Shapley value is the average marginal contribution of a feature value over all possible coalitions. Coalitions are basically combinations of features which are used to estimate the shapley value of a specific feature. 
+
 Frameworks like SHAP, use a combination of feature contributions and game theory to come up with SHAP values. Then, it computes the global feature importance by taking the average of the SHAP value magnitudes across the dataset.  <br/>
 Assuming that each feature is a ‘player’ in a game where the prediction is the payout. The Shapley value — a method from coalitional game theory — tells us how to fairly distribute the ‘payout’ among the features. The Shapley value, coined by Shapley, is a method for assigning payouts to players depending on their contribution towards the total payout. Players cooperate in a coalition and obtain a certain gain from that cooperation.
 * The ‘game’ is the prediction task for a single instance of the dataset.
