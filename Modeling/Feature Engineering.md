@@ -39,6 +39,32 @@ When data is missing in the Numeric column - For that column create a new extra 
 * Normalization using Standard Deviation
 * Log based feature/Target: use log based features or log based target function
 
+* Log Transformer
+  * Helps with skewness
+  * No predetermined range for scaled data
+  * Useful only on non-zero, non-negative data
+* Min-Max Scaler
+  * Rescales to predetermined range [0–1]
+  * Doesn’t change distribution’s center (doesn’t correct skewness)
+  * Sensitive to outliers
+* Max Abs Scaler
+  * Rescales to predetermined range [-1–1]
+  * Doesn’t change distribution’s center
+  * Sensitive to outliers
+* Standard Scaler
+  * Shifts distribution’s mean to 0 & unit variance
+  * No predetermined range
+  * Best to use on data that is approximately normally distributed
+* Robust Scaler
+  * 0 mean & unit variance
+  * Use of quartile ranges makes this less sensitive to (a few) outliers
+  * No predetermined range
+* Power Transformer
+  * Helps correct skewness
+  * 0 mean & unit variance
+  * No predetermined range
+  * Yeo-Johnson or Box-Cox
+  * Box-Cox can only be used on non-negative data
 
 ### Categorical
 * Encoding - One-hot encoding
