@@ -56,6 +56,8 @@ https://www.coursera.org/learn/ai-for-medical-treatment/lecture/ClIGF/shapley-va
 https://towardsdatascience.com/shap-explained-the-way-i-wish-someone-explained-it-to-me-ab81cc69ef30 </br>
 https://towardsdatascience.com/explain-your-model-with-the-shap-values-bc36aac4de3d </br>
 
+SHAP values are used for both local & global interpretability
+
 SHAP value explanation of a single prediction:
 ![](https://i.imgur.com/JVD2U7k.png)
 We predicted 0.7, whereas the base_value is 0.4979. Feature values causing increased predictions are in pink, and their visual size shows the magnitude of the feature's effect. Feature values decreasing the prediction are in blue. The biggest impact comes from Goal Scored being 2. Though the ball possession value has a meaningful effect decreasing the prediction.
