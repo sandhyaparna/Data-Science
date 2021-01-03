@@ -159,7 +159,8 @@ Another way to look at these numbers is calculating the rate of change of the lo
 ![](https://cdn-images-1.medium.com/max/800/1*87mKq_XomYyJE29l91K0dw.png) <br/>
 * Low learning rate slows down the learning process but converges smoothly. 
 * Larger learning rate speeds up the learning but may not converge.
-* Usually a decaying Learning rate is preferred.
+* Usually a decaying Learning rate is preferred. (If we slowly reduce the learning rate over time, we might speed up the learning process. This process is called learning rate decay. Initially, when the learning rate is not very small, training will be faster. If we slowly reduce the learning rate, there is a higher chance of coming close to the global minima. Learning rate decay can be given as: α = [1 / (1 + decay_rate * epoch_number)] * α0
+
 #### Momentum
 Momentum helps to know the direction of the next step with the knowledge of the previous steps. It helps to prevent oscillations. A typical choice of momentum is between 0.5 to 0.9. <br/>
 #### Number of epochs
