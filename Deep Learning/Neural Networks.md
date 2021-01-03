@@ -13,7 +13,7 @@ Def: A computing system made up of a number of simple, highly interconnected pro
 Neural neworks are typically organized in layers. Layers are made up of a number of interconnected 'nodes' which contain an 'activation function'. Patterns are presented to the network via the 'input layer', which communicates to one or more 'hidden layers' where the actual processing is done via a system of weighted 'connections'. The hidden layers then link to an 'output layer'  <br/>
 
 Output = Non-linearity/Activation function on (Weighted vector of input + Bias) <br/>
-Loss function/Error = Based on Prediction & Actual values - for all the observations
+Loss function/Error = Based on Prediction & Actual values - for all the observations. Loss function for regression is MSE (exponential graph similar to SSE - when errors are large, more penalization implies more contribution to loss function and to minimize loss function we need to reduce those big errors) los loss or cross-entropy is used for classification.
 
 Feature crosses help linear models work in nonlinear problems but unfortunately it cannot solve all the real world problems. Neural Networks are an alternative to feature crossing by combining features. Layers are used to combine features, another layer to combine our combinations and so on. <br/>
 
