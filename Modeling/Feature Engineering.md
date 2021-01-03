@@ -29,9 +29,13 @@ When data is missing in the Numeric column - For that column create a new extra 
 * Interaction between variables
 * Binning
 * Transformation - log, box-cox, rank
+  * Log transformation works on only +ve values
+  * Box-Cox works on only +ve values (can be used on 0 & -ve values using a constant value)
+  * Yeo-Johnson Power Transformations (extension of Box cox transformation that allows for 0 and -ve values) code: PowerTransform and setting the “method” argument to “yeo-johnson” 
 * Scaling - Imp for non-tree based models - Linear, KNN
   * To [0,1] - MinMaxScaler - Diff scaling methods produce different results
   * StandardScaler - Mean 0, stdv 1
+  * Robust Scalar: Based on Q1 & Q3
 * Normalization using Standard Deviation
 * Log based feature/Target: use log based features or log based target function
 
