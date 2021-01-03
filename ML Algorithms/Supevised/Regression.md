@@ -49,7 +49,8 @@ https://towardsdatascience.com/linear-regression-simplified-ordinary-least-squar
 Least squares minimisation is another common method for estimating parameter values for a model in machine learning. It turns out that when the model is assumed to be Gaussian as in the examples above, the MLE estimates are equivalent to the least squares method. 
 
 ### Gradient Descent Algorithm
-https://www.coursera.org/learn/launching-machine-learning/lecture/EuGsr/gradient-descent
+https://www.analyticsvidhya.com/blog/2018/10/introduction-neural-networks-deep-learning/ <br/>
+https://www.coursera.org/learn/launching-machine-learning/lecture/EuGsr/gradient-descent <br/>
 Search for global minimum. This can be done by finding the gradient of the loss function, and multiplying that with a hyper parameter, learning rate (helps determine the step size), and then subtracting that value from the current weights. This process iterates until convergence. <br/>
 Main objective is to minimize cost function. <br/>
 A gradient measures how much the output of a function changes if you change the inputs a little bit. <br/>
