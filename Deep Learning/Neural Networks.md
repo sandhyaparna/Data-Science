@@ -122,6 +122,7 @@ https://www.analyticsvidhya.com/blog/2018/11/neural-networks-hyperparameter-tuni
 The major difference between parameters and hyperparameters is that parameters are learned by the model during the training time, while hyperparameters can be changed before training the model.
 * Learning rate – ⍺ in Back-Propagation (Gradient Descent Algo)
 * Number of iterations / epochs needed for training our model
+* Batch size
 * Number of hidden layers
 * Units in each hidden layer
 * Choice of activation function
