@@ -2,7 +2,7 @@
 ## Regression
 * SSE - Sum of squared errors
 * If a prediction is far from mean, that prediction is penalized more compared to a prediction near to the mean
-![](https://miro.medium.com/max/704/1*1alssyRLNBz7CsPWUUAY_g.jpeg)
+![](https://miro.medium.com/max/704/1*32P7CzvHv_M2QIG_GjKEJw.jpeg)
 
 ## Classification
 * Logloss - For Binary
