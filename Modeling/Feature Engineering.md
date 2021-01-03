@@ -68,7 +68,7 @@ When data is missing in the Numeric column - For that column create a new extra 
 
 ### Categorical 
 https://towardsdatascience.com/all-about-categorical-variable-encoding-305f3361fd02 <br/>
-![https://miro.medium.com/max/2100/0*NBVi7M3sGyiUSyd5.png]
+![](https://miro.medium.com/max/2100/0*NBVi7M3sGyiUSyd5.png)
 * Encoding - One-hot encoding
 * When data is missing in the category column - A 5 category var usually gets 5 binary columns of one-hot encoding. But if there are missing values then 6 binary variables needs to be created
 * High Cardinal categorical features - 
