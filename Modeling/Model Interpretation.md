@@ -52,6 +52,14 @@ https://www.coursera.org/learn/ai-for-medical-treatment/lecture/C4tTK/shapley-va
 https://www.coursera.org/learn/ai-for-medical-treatment/lecture/sPtIT/combining-importances </br>
 https://www.coursera.org/learn/ai-for-medical-treatment/lecture/ClIGF/shapley-values-for-all-patients </br>
 
+
+https://towardsdatascience.com/shap-explained-the-way-i-wish-someone-explained-it-to-me-ab81cc69ef30 </br>
+https://towardsdatascience.com/explain-your-model-with-the-shap-values-bc36aac4de3d </br>
+
+SHAP value explanation of a single prediction:
+![](https://i.imgur.com/JVD2U7k.png)
+We predicted 0.7, whereas the base_value is 0.4979. Feature values causing increased predictions are in pink, and their visual size shows the magnitude of the feature's effect. Feature values decreasing the prediction are in blue. The biggest impact comes from Goal Scored being 2. Though the ball possession value has a meaningful effect decreasing the prediction.
+
 The Shapley value is the average marginal contribution of a feature value over all possible coalitions. Coalitions are basically combinations of features which are used to estimate the shapley value of a specific feature. 
 
 Frameworks like SHAP, use a combination of feature contributions and game theory to come up with SHAP values. Then, it computes the global feature importance by taking the average of the SHAP value magnitudes across the dataset.  <br/>
@@ -60,6 +68,7 @@ Assuming that each feature is a ‘player’ in a game where the prediction is t
 * The ‘gain’ is the actual prediction for this instance minus the average prediction of all instances.
 * The ‘players’ are the feature values of the instance, which collaborate to receive the gain (= predict a certain value).
 The Shapley value is the average marginal contribution of a feature value over all possible coalitions. Coalitions are basically combinations of features which are used to estimate the shapley value of a specific feature. Typically more the features, it starts increasing exponentially hence it may take a lot of time to compute these values for big or wide datasets. 
+
 
 ### Global Surrogate Models
 It is a way of building intepretable approximations of really complex models, global surrogate models.  <br/>
