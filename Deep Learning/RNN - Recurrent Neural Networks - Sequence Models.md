@@ -13,9 +13,11 @@ LSTM http://colah.github.io/posts/2015-08-Understanding-LSTMs/ <br/>
   * Track long-term dependencies
   * Maintain information about order
   * Share parameters across the sequence
+* Speech Recognition
 * Music generation - Train on old music to generate brand new music
 * Sentiment classification
 * Machine translation - Attention mechanisms
+* NER
 </br>
 Most of the tasks in NLP such as text classification, language modeling, machine translation, etc. are sequence modeling tasks. The traditional machine learning models and neural networks cannot capture the sequential information present in the text. Therefore, people started using recurrent neural networks (RNN and LSTM) because these architectures can model sequential information present in the text.
 
