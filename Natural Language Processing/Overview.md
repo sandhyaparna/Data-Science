@@ -111,6 +111,7 @@ A typical NER model consists of three blocks:<br/>
 
 
 #### Word2Vec
+https://towardsdatascience.com/nlp-101-word2vec-skip-gram-and-cbow-93512ee24314 <br/>
 Word embeddings are learnt by starting with random word vectors and then they get updated in the same way the weights of neural network do to better learn the mapping between input x and output label y
 https://code.google.com/archive/p/word2vec/ <br/>
 Use Negative sampling to train word2vec efficiently http://mccormickml.com/2017/01/11/word2vec-tutorial-part-2-negative-sampling/ <br/>
@@ -127,12 +128,13 @@ Algorithmically, these models are similar, except that CBOW predicts target word
   * Secondly, for every training sample, the calculation of the final probabilities using the softmax is quite an expensive operation as it involves a summation of scores over all the words in our vocabulary for normalizing.
   * So for each training sample, we are performing an expensive operation to calculate the probability for words whose weight might not even be updated or be updated so marginally that it is not worth the extra overhead.
   * To overcome these two problems, instead of brute forcing our way to create our training samples, we try to reduce the number of weights updated for each training sample. Do Subsampling frequent words to decrease the number of training examples.
-* Negative Sampling: it suggests that instead of backpropagating all the 0s in the correct output vector (for a vocab size of 10mill there are 10mill minus 1 zeros) we just backpropagate a few of them (say 14). 
+* Negative Sampling: it suggests that instead of backpropagating all the 0s in the correct output vector (for a vocab size of 10mill there are 10mill minus 1 zeros) we just backpropagate a few of them (say 14).  https://towardsdatascience.com/nlp-101-negative-sampling-and-glove-936c88f3bc68
   * Negative sampling allows us to only modify a small percentage of the weights, rather than all of them for each training sample. We do this by slightly modifying our problem. Instead of trying to predict the probability of being a nearby word for all the words in the vocabulary, we try to predict the probability that our training sample words are neighbors or not. Referring to our previous example of (orange, juice), we don’t try to predict the probability for juice to be a nearby word i.e P(juice|orange), we try to predict if (orange, juice) are nearby words or not by calculating P(1|<orange, juice>).
   * So instead of having one giant softmax — classifying among 10,000 classes, we have now turned it into 10,000 binary classification problem.
   * We further simplify the problem by randomly selecting a small number of “negative” words k(a hyper-parameter, let’s say 5) to update the weights for. (In this context, a “negative” word is one for which we want the network to output a 0).
   * For our training sample (orange, juice), we will take five words, say apple, dinner, dog, chair, house and use them as negative samples. For this particular iteration we will only calculate the probabilities for juice, apple, dinner, dog, chair, house. Hence, the loss will only be propagated back for them and therefore only the weights corresponding to them will be updated.
 * Hierarchical Softmax: Calculating the softmax for a vocab of 10mill is very time and computation intensive. Hierarchical Softmax suggests a faster way of computing it using Huffman trees
+
 
 Applications
 * Music recommendations - https://towardsdatascience.com/using-word2vec-for-music-recommendations-bb9649ac2484
