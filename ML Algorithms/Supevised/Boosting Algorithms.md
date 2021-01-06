@@ -102,7 +102,7 @@ https://tech.yandex.com/catboost/doc/dg/concepts/algorithm-main-stages_cat-to-nu
 * CatBoost also differs from the rest of the flock in another key aspect – the kind of trees that is built in its ensemble. CatBoost, by default, builds Symmetric Trees or Oblivious Trees. These are trees the same features are responsible in splitting learning instances into the left and the right partitions for each level of the tree. This has a two-fold effect in the algorithm –
   * Regularization: Since we are restricting the tree building process to have only one feature split per level, we are essentially reducing the complexity of the algorithm and thereby regularization.
   * Computational Performance: One of the most time consuming part of any tree-based algorithm is the search for the optimal split at each nodes. But because we are restricting the features split per level to one, we only have to search for a single feature split instead of k splits, where k is the number of nodes in the level. Even during inference these trees make it lightning fast. It was shown to be 8X faster than XGBoost in inference.
-
+* How catboost handles missing values: For Numeric fetures uses min as default imputing. For Categorical columns, missing values are treated as a seperate group
 
 ### Hyperparameters
 ![](https://cdn-images-1.medium.com/max/1000/1*A0b_ahXOrrijazzJengwYw.png)
