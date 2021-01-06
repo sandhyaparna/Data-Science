@@ -1,4 +1,4 @@
-* cheXpert Labeler
+* cheXpert Labeler: https://github.com/alistairewj/chexpert-labeler/blob/master/labeled_reports.csv
 * MIMIC-CXR is a publicly available database of chest x-rays with free-text radiology reports. 
 * Images - 377k images of 65K patients
 * Chest radiography is used to identify acute and chronic cardiopulmonary conditions, verify that devices such as pacemakers, central lines, chest tubes, and gastric tubes are correctly positioned, and to assist in related medical workups. 
