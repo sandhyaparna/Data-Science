@@ -37,8 +37,7 @@ https://bangdasun.github.io/2019/03/21/38-practical-comparison-xgboost-lightgbm/
 * Structural Differences in LightGBM & XGBoost: LightGBM uses a novel technique of Gradient-based One-Side Sampling (GOSS) to filter out the data instances for finding a split value while XGBoost uses pre-sorted algorithm & Histogram-based algorithm for computing the best split. Here instances are observations/samples. https://towardsdatascience.com/lightgbm-vs-xgboost-which-algorithm-win-the-race-1ff7dd4917d
 * Histogram-based Tree Splitting: In simple terms, Histogram-based algorithm splits all the data points for a feature into discrete bins and uses these bins to find the split value of the histogram. While it is efficient than the pre-sorted algorithm in training speed which enumerates all possible split points on the pre-sorted feature values, it is still behind GOSS in terms of speed. </br>
 The amount of time it takes to build a tree is proportional to the number of splits that have to be evaluated. And when you have continuous or categorical features with high cardinality, this time increases drastically. But most of the splits that can be made for a feature only offer miniscule changes in performance. And this concept is why a histogram based method is applied to tree building. The core idea is to group features into set of bins and perform splits based on these bins. This reduces the time complexity from O(#data) to O(#bins).
-
-* 
+* Both XGBoost and LigtGBM handles missing values similarly: Model ignores missing values during a split and then allocate them to whichever side it reduces the loss
 
 ### LightGBM
 https://towardsdatascience.com/what-makes-lightgbm-lightning-fast-a27cf0d9785e </br>
@@ -102,7 +101,7 @@ https://tech.yandex.com/catboost/doc/dg/concepts/algorithm-main-stages_cat-to-nu
 * CatBoost also differs from the rest of the flock in another key aspect – the kind of trees that is built in its ensemble. CatBoost, by default, builds Symmetric Trees or Oblivious Trees. These are trees the same features are responsible in splitting learning instances into the left and the right partitions for each level of the tree. This has a two-fold effect in the algorithm –
   * Regularization: Since we are restricting the tree building process to have only one feature split per level, we are essentially reducing the complexity of the algorithm and thereby regularization.
   * Computational Performance: One of the most time consuming part of any tree-based algorithm is the search for the optimal split at each nodes. But because we are restricting the features split per level to one, we only have to search for a single feature split instead of k splits, where k is the number of nodes in the level. Even during inference these trees make it lightning fast. It was shown to be 8X faster than XGBoost in inference.
-* How catboost handles missing values: For Numeric fetures uses min as default imputing. For Categorical columns, missing values are treated as a seperate group
+* How catboost handles missing values: For Numeric fetures uses min as default imputing. For Categorical columns, missing values are treated as a seperate group https://catboost.ai/docs/concepts/algorithm-missing-values-processing.html
 
 ### Hyperparameters
 ![](https://cdn-images-1.medium.com/max/1000/1*A0b_ahXOrrijazzJengwYw.png)
