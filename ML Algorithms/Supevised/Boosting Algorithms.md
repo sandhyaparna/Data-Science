@@ -84,6 +84,7 @@ High-dimensional data are usually very sparse which provides us a possibility of
   * scale_pos_weight: the weight can be calculated based on the number of negative and positive examples: sample_pos_weight = number of negative samples / number of positive samples.
 
 ### CatBoost - Category Boosting
+![](https://www.riskified.com/wp-content/uploads/2019/11/inner-image-trees-1-1024x386.png)
 https://www.kdnuggets.com/2019/06/clearing-air-around-boosting.html </br>
 https://www.analyticsvidhya.com/blog/2017/08/catboost-automated-categorical-data/ </br>
 https://towardsdatascience.com/categorical-features-parameters-in-catboost-4ebd1326bee5 </br>
