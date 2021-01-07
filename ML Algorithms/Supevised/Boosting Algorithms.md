@@ -110,7 +110,7 @@ Catboost uses oblivious decision trees. Before learning, the possible values of 
 ![](https://cdn-images-1.medium.com/max/1000/1*A0b_ahXOrrijazzJengwYw.png)
 
 ### Diff between xgb, light and cat
-* Splits
+Splits
   * Catboost uses oblivious decision trees. Before learning, the possible values of each feature are divided into buckets delimited by threshold values, creating feature-split pairs. Example for such pairs are: (age, <5), (age, 5-10), (age, >10) and so on. In each level of an oblivious tree, the feature-split pair that brings to the lowest loss (according to a penalty function) is selected and is used for all the level’s nodes.
   * lightGBM uses gradient-based one-side sampling (GOSS) that selects the split using all the instances with large gradients (i.e., large error) and a random sample of instances with small gradients. In order to keep the same data distribution when computing the information gain, GOSS introduces a constant multiplier for the data instances with small gradients. Thus, GOSS achieves a good balance between increasing speed by reducing the number of data instances and keeping the accuracy for learned decision trees.
   * XGboost offers several methods for selecting the best split. For example, a histogram-based algorithm that buckets continuous features into discrete bins and uses these bins to find the split value in each node. This method is faster than the exact greedy algorithm, which linearly enumerates all the possible splits for continuous features, but it is slower compared to GOSS that is used by LightGBM.
