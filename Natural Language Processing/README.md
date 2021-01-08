@@ -89,6 +89,8 @@ https://machinelearningknowledge.ai/applications-of-natural-language-processing-
 * GloVe
 * FastText
 
+* Byte Pair Encoding is used to out of vocab words
+
 ### Pre-trained language models:
 * ULMFit (FastAI) - Transfer Learning Technique
 * ELMo
@@ -116,6 +118,9 @@ https://machinelearningknowledge.ai/applications-of-natural-language-processing-
 * Doccano
 
 
+#### LinkedIn
+https://www.linkedin.com/posts/stevenouri_natural-language-processing-nlp-with-python-ugcPost-6594922762333229056-tHXk
+
 
 ### Algos
 * ConZNet - Deep reinforcement algorithm
@@ -138,9 +143,6 @@ https://machinelearningknowledge.ai/applications-of-natural-language-processing-
 * Stanford CoreNLP
 * nltk
 * OpenNLP
-
-#### LinkedIn
-https://www.linkedin.com/posts/stevenouri_natural-language-processing-nlp-with-python-ugcPost-6594922762333229056-tHXk
 
 
 
