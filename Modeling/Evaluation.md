@@ -35,8 +35,9 @@ Loss functions
 
 ### Probability re-caliberation when doing under sampling
 * https://towardsdatascience.com/probability-calibration-for-imbalanced-dataset-64af3730eaab
-* Let ps be the probability of the prediction being a positive class after random undersampling
+* Let ps be the probability of the prediction being a positive class after random undersampling (thershold should be varied and 0.5 is not ideal while calculated ps)
 * p be the probability of the prediction given features 
+* prob/(prob+(1-prob)/beta)
 ![](https://miro.medium.com/max/248/1*w-VK4WWmFxE5Gb25BhEY3g.png)
 * where beta is observations where Target=1 / observations where Target=0
 
