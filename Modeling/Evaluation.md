@@ -38,7 +38,7 @@ Loss functions
 * Let ps be the probability of the prediction being a positive class after random undersampling
 * p be the probability of the prediction given features 
 ![](https://miro.medium.com/max/248/1*w-VK4WWmFxE5Gb25BhEY3g.png)
-* p = ps / ps + ((1-ps)/b)
+* where beta is observations where Target=1 / observations where Target=0
 
 
 
