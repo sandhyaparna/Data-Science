@@ -33,8 +33,12 @@ Loss functions
 * Cost is incurred for each predicted by model as cost is incurred for intervention
 * Cost is the fine incurred for False Negatives
 
-
-
+### Probability re-caliberation when doing under sampling
+* https://towardsdatascience.com/probability-calibration-for-imbalanced-dataset-64af3730eaab
+* Let ps be the probability of the prediction being a positive class after random undersampling
+* p be the probability of the prediction given features 
+![](https://miro.medium.com/max/248/1*w-VK4WWmFxE5Gb25BhEY3g.png)
+* p = ps / ps + ((1-ps)/b)
 
 
 
