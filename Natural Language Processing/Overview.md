@@ -162,6 +162,7 @@ https://towardsdatascience.com/representing-text-in-natural-language-processing-
 * GloVe captures both global statistics (Global matrix factorizations when applied to term frequency matrices are called Lastent Semantic Analysis) and local statistics (CBOW & Skip-gram)of a corpus, in order to come up with word vectors.
 * GloVe optimizes the embeddings directly so that the dot product of two word vectors equals the log of the number of times the two words will occur near each other (within a 2-words window, for example). This forces the embeddings vectors to encode the frequency distribution of which words occur near them.
 * GloVe brings up more infrequent similar words that the other models, which becomes quite overwhelming in the tail.
+* Rather than use contextual words, we calculate a co-occurrence matrix of all words. Glove will also take local contexts into account, per a fixed window size, then calculate the covariance matrix. Then, we predict the co-occurence ratio between the words in the neural network. GloVe will learn this matrix and train word vectors that predict co-occurrence ratios. Loss is weighted by word frequency.
 * GloVe (glove.42B.300d): 300-dimensional vectors trained on the 42B token Common Crawl corpus
 
 #### Continuous Bag-of-Words
