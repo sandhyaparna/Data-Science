@@ -69,7 +69,7 @@ When data is missing in the Numeric column - For that column create a new extra 
 ### Categorical 
 https://towardsdatascience.com/all-about-categorical-variable-encoding-305f3361fd02 <br/>
 ![](https://miro.medium.com/max/2100/0*NBVi7M3sGyiUSyd5.png)
-* Encoding - One-hot encoding
+* Encoding - One-hot encoding: This approach can be adopted for any machine learning algorithm that looks at ALL the features at the same time during training. For example, support vector machines and neural networks as well and clustering algorithms. In tree-based methods, we will never consider that additional label if we drop. Thus, if we use the categorical variables in a tree-based learning algorithm, it is good practice to encode it into N binary variables and don’t drop.
 * When data is missing in the category column - A 5 category var usually gets 5 binary columns of one-hot encoding. But if there are missing values then 6 binary variables needs to be created
 * High Cardinal categorical features - 
   * When dealing with a binary target: https://www.kdnuggets.com/2016/08/include-high-cardinality-attributes-predictive-model.html <br/>
