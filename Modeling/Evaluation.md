@@ -41,7 +41,22 @@ Loss functions
 ![](https://miro.medium.com/max/248/1*w-VK4WWmFxE5Gb25BhEY3g.png)
 * where beta is observations where Target=1 / observations where Target=0
 
-
+### Multi-label classification
+* https://towardsdatascience.com/journey-to-the-center-of-multi-label-classification-384c40229bff
+* https://machinelearningmastery.com/multi-label-classification-with-deep-learning/
+* In multi-label classification, a misclassification is no longer a hard wrong or right. A prediction containing a subset of the actual classes should be considered better than a prediction that contains none of them, i.e., predicting two of the three labels correctly this is better than predicting no labels at all.
+* Micro-averaging & Macro-averaging (Label based measures):
+  * In micro-averaging all TPs, TNs, FPs and FNs for each class are summed up and then the average is taken.
+  ![](https://miro.medium.com/max/617/1*nWbsBPAFl3WmU_bgtahqKQ.png)
+  * In micro-averaging method, you sum up the individual true positives, false positives, and false negatives of the system for different sets and the apply them. And the micro-average F1-Score will be simply the harmonic mean of above two equations.
+  * Macro-averaging is straight forward. We just take the average of the precision and recall of the system on different se
+  ![](https://miro.medium.com/max/537/1*AwYON8c48oMm5AcqVxLiWQ.png)
+  * Macro-averaging method can be used when you want to know how the system performs overall across the sets of data. You should not come up with any specific decision with this average. On the other hand, micro-averaging can be a useful measure when your dataset varies in size.
+* Hamming-Loss (Example based measure)
+  * In simplest of terms, Hamming-Loss is the fraction of labels that are incorrectly predicted, i.e., the fraction of the wrong labels to the total number of labels.
+* Exact Match Ratio (Subset accuracy):
+  * It is the most strict metric, indicating the percentage of samples that have all their labels classified correctly.
+  * There is a function in scikit-learn which implements subset accuracy, called as accuracy_score.
 
 
 
