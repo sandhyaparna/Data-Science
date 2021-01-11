@@ -52,7 +52,7 @@ Loss functions
   * Macro-averaging is straight forward. We just take the average of the precision and recall of the system on different se
   ![](https://miro.medium.com/max/537/1*AwYON8c48oMm5AcqVxLiWQ.png)
   * Macro-averaging method can be used when you want to know how the system performs overall across the sets of data. You should not come up with any specific decision with this average. On the other hand, micro-averaging can be a useful measure when your dataset varies in size.
-* Hamming-Loss (Example based measure)
+* Hamming-Loss (Example based measure) Ranges from 0 to 1. Less value implies better model
   * In simplest of terms, Hamming-Loss is the fraction of labels that are incorrectly predicted, i.e., the fraction of the wrong labels to the total number of labels.
 * Exact Match Ratio (Subset accuracy):
   * It is the most strict metric, indicating the percentage of samples that have all their labels classified correctly.
