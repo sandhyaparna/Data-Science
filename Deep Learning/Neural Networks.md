@@ -92,7 +92,17 @@ Common failure modes for Gradient Descent: <br/>
   * Insight: Use Tensorboard to monitor summaries during and after training of our Neural network model. Monitor fraction of zero weights in Tensorboard. <br/>
   * Solution: Lower your learning rates <br/>
  
-### Optimization Algorithms
+### Gradient Descent Optimization Algorithms
+* Improves on the stochastic gradient descent
+#### Adagrad
+Adagrad [9] is an algorithm for gradient-based optimization that does just this: It adapts the learning rate to the parameters, performing smaller updates
+(i.e. low learning rates) for parameters associated with frequently occurring features, and larger updates (i.e. high learning rates) for parameters associated with infrequent features. For this reason, it is well-suited for dealing with sparse data.RMSprop and Adadelta have both been developed independently around the same time stemming from the need to resolve Adagrad's radically diminishing learning rates.
+* Decay the learning rate for parameters in proportion to their update history (more updates means more decay). The smaller the gradient accumulated, leads to a bigger learning rate
+
+#### Adam
+Adaptive Moment Estimation (Adam) [14] is another method that computes adaptive learning rates for each parameter. In addition to storing an exponentially decaying average of past squared gradients like Adadelta and RMSprop, Adam also keeps an exponentially decaying average of past gradients , similar to momentum. 
+* Do everything that RMSProp does to solve the denominator decay problem of AdaGrad. In addition to that, use a cumulative history of gradients.
+
 #### Rprop
 Rprop combines the idea of only using the sign of the gradient with the idea of adapting the step size individually for each weight. So, instead of looking at the magnitude of the gradient, we’ll look at the step size that’s defined for that particular weight. And that step size adapts individually over time, so that we accelerate learning in the direction that we need. To adjust the step size for some weight, the following algorithm is used:
 * First, we look at the signs of the last two gradients for the weight.
@@ -103,6 +113,7 @@ Rprop combines the idea of only using the sign of the gradient with the idea of 
 #### RMSProp 
 Rprop doesn’t really work when we have very large datasets and need to perform mini-batch weights updates. The reason it doesn’t work is that it violates the central idea behind stochastic gradient descent, which is when we have small enough learning rate, it averages the gradients over successive mini-batches. Consider the weight, that gets the gradient 0.1 on nine mini-batches, and the gradient of -0.9 on tenths mini-batch. What we’d like is to those gradients to roughly cancel each other out, so that the stay approximately the same. But it’s not what happens with rprop. With rprop, we increment the weight 9 times and decrement only once, so the weight grows much larger.
 The central idea of RMSprop is keep the moving average of the squared gradients for each weight. And then we divide the gradient by square root the mean square. Which is why it’s called RMSprop(root mean square)
+* AdaGrad decays the learning rate very aggressively (as the denominator grows). As a result, after a while, the frequent parameters will start receiving very small updates because of the decayed learning rate. To avoid this why not decay the denominator and prevent its rapid growth.
 
 ### To-Do when model has High Bias
 * Bigger Network - More hidden layers or more hidden units
