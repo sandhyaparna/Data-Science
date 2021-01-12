@@ -44,7 +44,10 @@ The repeating module in the above LSTM contains four interacting layers
   * Takes both prior info and curent input, proocess and selectively UPDATE cell state
   * Use OUTPUT gatet output certain parts of the cell state 
 * Back propagation from ct to ct-1 doesn't require matrix multiplication: uninterrupted gradient flow
-
+* There are three steps in an LSTM network:
+  * Step 1: The network decides what to forget and what to remember.
+  * Step 2: It selectively updates cell state values.
+  * Step 3: The network decides what part of the current state makes it to the output.
 
 
 
