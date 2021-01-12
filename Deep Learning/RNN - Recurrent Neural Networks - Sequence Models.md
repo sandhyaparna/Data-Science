@@ -39,7 +39,7 @@ The repeating module in a standard RNN contains a single layer like above <br/> 
 ![](http://colah.github.io/posts/2015-08-Understanding-LSTMs/img/LSTM3-chain.png)
 The repeating module in the above LSTM contains four interacting layers
 * They maintain internal cell state ct
-* They use structures called gates to control flow of info (add or remove info to/from cell state) - Model long-term dependencies
+* They use structures called gates to control flow of info (add or remove info to/from cell state) - Model long-term dependencies https://medium.com/@purnasaigudikandula/recurrent-neural-networks-and-lstm-explained-7f51c7f6bbb9
   * LSTMs FORGET irrelevant parts of the previous state
   * Takes both prior info and curent input, proocess and selectively UPDATE cell state
   * Use OUTPUT gatet output certain parts of the cell state 
