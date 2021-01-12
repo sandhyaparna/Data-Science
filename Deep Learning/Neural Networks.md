@@ -94,6 +94,8 @@ Common failure modes for Gradient Descent: <br/>
  
 ### Gradient Descent Optimization Algorithms
 * Improves on the stochastic gradient descent
+* https://towardsdatascience.com/a-visual-explanation-of-gradient-descent-methods-momentum-adagrad-rmsprop-adam-f898b102325c
+* https://towardsdatascience.com/learning-parameters-part-5-65a2f3583f7d
 #### Adagrad
 Adagrad [9] is an algorithm for gradient-based optimization that does just this: It adapts the learning rate to the parameters, performing smaller updates
 (i.e. low learning rates) for parameters associated with frequently occurring features, and larger updates (i.e. high learning rates) for parameters associated with infrequent features. For this reason, it is well-suited for dealing with sparse data.RMSprop and Adadelta have both been developed independently around the same time stemming from the need to resolve Adagrad's radically diminishing learning rates.
