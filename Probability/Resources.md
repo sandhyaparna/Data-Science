@@ -22,7 +22,7 @@
 * https://www.analyticsvidhya.com/blog/2017/04/40-questions-on-probability-for-all-aspiring-data-scientists/
 * https://www.indeed.com/career-advice/interviewing/probability-interview-questions
 * https://www.dezyre.com/article/100-data-science-interview-questions-and-answers-for-2021/184 (at the end there is a separate section)
-* https://www.quora.com/On-a-dating-site-users-can-select-5-out-of-24-adjectives-to-describe-themselves-A-match-is-declared-between-two-users-if-they-match-on-at-least-4-* adjectives-If-Alice-and-Bob-randomly-pick-adjectives-what-is-the-probability-that-they-will-form-a-match
+* https://www.quora.com/On-a-dating-site-users-can-select-5-out-of-24-adjectives-to-describe-themselves-A-match-is-declared-between-two-users-if-they-match-on-at-least-4-adjectives-If-Alice-and-Bob-randomly-pick-adjectives-what-is-the-probability-that-they-will-form-a-match
 * https://github.com/kojino/120-Data-Science-Interview-Questions/blob/master/probability.md
 	* https://www.quora.com/Bobo-the-amoeba-has-a-25-25-and-50-chance-of-producing-0-1-or-2-offspring-respectively-Each-of-Bobos-descendants-also-have-the-same-probabilities-What-is-the-probability-that-Bobos-lineage-dies-out
 * https://www.interviewquery.com/questions?t=probability
