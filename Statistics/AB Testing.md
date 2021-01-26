@@ -28,7 +28,7 @@
   * Remember to state any assumptions or caveats involved in the test. If you are presenting to a non-technical audience, remember to keep things explainable!
 * Use findings to run another test or change a feature.
   * Remember that A/B testing is used to make decisions. If implementing a ‘winner,’ consider using a holdback in your next experiment, depending on business needs.
-##### 
+##### Thoughts
 * Don’t try to look for differences for every possible segment.
 * Be careful about launching things because they wouldn’t hurt: Sometimes implmenting a feature might have negative impact
 * If we have a significant result from the test…: Then comes two questions: 
