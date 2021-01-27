@@ -1,4 +1,10 @@
-
+#### Links
+* https://www.interviewquery.com/course/data-science-course/lessons/statistics-and-ab-testing
+* https://classroom.udacity.com/courses/ud257
+* https://exp-platform.com/2017abtestingtutorial/
+* 5 parts Series: https://medium.com/@mariap_91165
+* Emma Ding https://www.youtube.com/watch?v=X8u6kr4fxXc&feature=emb_logo
+* https://www.youtube.com/watch?v=JEAsoUrX6KQ&feature=emb_logo
 
 
 
