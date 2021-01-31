@@ -178,6 +178,7 @@ Both BIC and AIC attempt to resolve overfitting problem by introducing a penalty
 BIC = -2*ln(likelihood) + ln(N)*p
 
 ### Bullet Points
+* OLS Regression results interpretation: https://medium.com/@jyotiyadav99111/statistics-how-should-i-interpret-results-of-ols-3bde1ebeec01
 * Linear regression will have high bias and low variance
 * Least Square Error is used to identify the line of best fit (minimizes sum of squares prediction errors)
 * Overfitting is more likeley when we 
