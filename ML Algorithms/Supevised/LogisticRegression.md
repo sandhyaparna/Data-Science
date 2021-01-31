@@ -10,6 +10,7 @@ logit(p) = ln(p/(1-p)) = b0+b1X1+b2X2+b3X3....+bkXk <br/>
 
 ### Interpretation of Categorical and Continuous vars of a Logistic Reg
 Odds Ratio = p/(1-p)
+* +ve and -ve coeffs: https://medium.com/ro-data-team-blog/interpret-the-impact-size-with-logistic-regression-coefficients-5eec21baaac8
 * For each predictor u get p-value and OddsRatio=exp(Xi). Xi is coeff. Odds ratio gre than 1 implies positive relation
 * https://stats.idre.ucla.edu/other/mult-pkg/faq/general/faq-how-do-i-interpret-odds-ratios-in-logistic-regression/
   * Female variable is created from gender var. In female var 1=female, 0=male; if coeff of this var is 0.593 i.e log(p/(1-p)) or log of odds ratio is 0.593; odd ratio = e^0.593 i.e 1.809 implies odds for female are 80.9% higher than the odds for males
