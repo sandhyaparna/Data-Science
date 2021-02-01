@@ -1,7 +1,10 @@
 #### How Do You Know You Have Enough Training Data?
 * Computer Vision: For image classification using deep learning, a rule of thumb is 1,000 images per class, where this number can go down significantly if one uses pre-trained models 
 * Estimate training data size by taking into consideration the number of predictor variables, total sample size, and the fraction of positive samples/total sample size
+* There must be x% more examples than input features
+* There must be x independent examples for each parameter in the model
 * Sample size for Hypothesis testing = ( (Z at CI@95% * std dev )/Margin of error )^2
+* Non-linear algos require more data compared to linear algos
 * For balanced classification problems use learning curve : plot of performance vs training size, use training size where performance plateaus
 * For imbalanced classification problems 
 
