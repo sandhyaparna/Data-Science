@@ -1,3 +1,13 @@
+#### How Do You Know You Have Enough Training Data?
+* Computer Vision: For image classification using deep learning, a rule of thumb is 1,000 images per class, where this number can go down significantly if one uses pre-trained models 
+* Estimate training data size by taking into consideration the number of predictor variables, total sample size, and the fraction of positive samples/total sample size
+* Sample size for Hypothesis testing = ( (Z at CI@95% * std dev )/Margin of error )^2
+* For balanced classification problems use learning curve : plot of performance vs training size, use training size where performance plateaus
+* For imbalanced classification problems 
+
+
+
+
 Data Pre-processing http://www.cs.ccsu.edu/~markov/ccsu_courses/datamining-3.html 
 
 * Generalization is very imp - Can be done using regularization
