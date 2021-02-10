@@ -26,5 +26,10 @@ Path to ML:
 * ML
  <br/>
 
+MLOps:
+* Test & validate data, data schemas, code,components and modesl
+* Consider the whole systeme and ML training pipeline
+* Deploy code, constantly monitor, retrain, serve the model
+* Continuous integration, continuous deployment and continuous training
 
 
