@@ -10,6 +10,7 @@ Things to take care of: <br/>
 * Performance metric during Prediction - Speed of response
 * Magic of ML comes with quantity and not complexity
 * simplify user input in APIs
+* In GCP, You can process unstructured data through an ML API and take the reults of the ML API as thr input to your chose model
 
 ML Effort Allocation
 * Defining KPIs
@@ -22,8 +23,8 @@ Path to ML:
 * Individual Contributor
 * Delegation - Adding more people
 * Digitization - Automation
-* Big Data
-* ML
+* Big Data and Analytics - operational or user 
+* ML - predictions, etc
  <br/>
 
 MLOps:
