@@ -2,6 +2,11 @@
 https://towardsdatascience.com/human-interpretable-machine-learning-part-1-the-need-and-importance-of-model-interpretation-2ed758f5f476  <br/>
 https://www.kdnuggets.com/2018/12/explainable-ai-model-interpretation-strategies.html/2  <br/>
 https://towardsdatascience.com/explainable-artificial-intelligence-part-3-hands-on-machine-learning-model-interpretation-e8ebe5afc608  <br/>
+https://www.kaggle.com/learn/machine-learning-explainability  <br/>
+https://www.kdnuggets.com/2018/12/machine-learning-explainability-interpretability-ai.html  <br/>
+https://christophm.github.io/interpretable-ml-book/  <br/>
+https://docs.microsoft.com/en-us/azure/machine-learning/how-to-machine-learning-interpretability  <br/>
+
 
 ### Model Interpretation
 When comparing models, besides model performance, a model is said to have a better interpretability than another model if its decisions are easier to understand by a human than the decisions from the other model.  <br/>
