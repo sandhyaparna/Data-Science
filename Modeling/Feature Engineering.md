@@ -32,9 +32,10 @@ When data is missing in the Numeric column - For that column create a new extra 
   * Log transformation works on only +ve values
   * Box-Cox works on only +ve values (can be used on 0 & -ve values using a constant value)
   * Yeo-Johnson Power Transformations (extension of Box cox transformation that allows for 0 and -ve values) code: PowerTransform and setting the “method” argument to “yeo-johnson” 
-* Scaling - Imp for non-tree based models - Linear, KNN, K-Means, SVM. Without feature scaling, gradient descent will require a lot more steps to reach the minima. Feature scaling is not mandatory to scale the features before training a decision tree or random forest model because their cost function (Gini index, Entropy etc.) is not distance-based
-  * To [0,1] - MinMaxScaler - Diff scaling methods produce different results
-  * StandardScaler - Mean 0, stdv 1
+* Scaling - Imp for non-tree based models - Linear, Logitic, Neural Nets, KNN, K-Means, SVM. Without feature scaling, gradient descent will require a lot more steps to reach the minima. Feature scaling is not mandatory to scale the features before training a decision tree or random forest model because their cost function (Gini index, Entropy etc.) is not distance-based. Decision Tree is only splitting a node based on a single feature, it is not influenced by other features
+  * Fit the scaler on the training data and then use it to transform the testing data
+  * To [0,1] - MinMaxScaler/Normalization - Normalization is good to use when you know that the distribution of your data does not follow a Gaussian distribution. This can be useful in algorithms that do not assume any distribution of the data like K-Nearest Neighbors and Neural Networks.
+  * StandardScaler - Mean 0, stdv 1 - Standardization, on the other hand, can be helpful in cases where the data follows a Gaussian distribution. However, this does not have to be necessarily true. Also, unlike normalization, standardization does not have a bounding range. So, even if you have outliers in your data, they will not be affected by standardization. For SVM, try using StandardScaler as SVM with RBF kernel assumes that all the features are centered around zero and variance is of the same order
   * Robust Scalar: Based on Q1 & Q3
 * Normalization using Standard Deviation
 * Log based feature/Target: use log based features or log based target function
@@ -43,7 +44,7 @@ When data is missing in the Numeric column - For that column create a new extra 
   * Helps with skewness
   * No predetermined range for scaled data
   * Useful only on non-zero, non-negative data
-* Min-Max Scaler
+* Min-Max Scaler or Normalization
   * Rescales to predetermined range [0–1]
   * Doesn’t change distribution’s center (doesn’t correct skewness)
   * Sensitive to outliers
