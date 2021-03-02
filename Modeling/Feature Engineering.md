@@ -32,7 +32,7 @@ When data is missing in the Numeric column - For that column create a new extra 
   * Log transformation works on only +ve values
   * Box-Cox works on only +ve values (can be used on 0 & -ve values using a constant value)
   * Yeo-Johnson Power Transformations (extension of Box cox transformation that allows for 0 and -ve values) code: PowerTransform and setting the “method” argument to “yeo-johnson” 
-* Scaling - Imp for non-tree based models - Linear, KNN
+* Scaling - Imp for non-tree based models - Linear, KNN, K-Means, SVM. Without feature scaling, gradient descent will require a lot more steps to reach the minima. Feature scaling is not mandatory to scale the features before training a decision tree or random forest model because their cost function (Gini index, Entropy etc.) is not distance-based
   * To [0,1] - MinMaxScaler - Diff scaling methods produce different results
   * StandardScaler - Mean 0, stdv 1
   * Robust Scalar: Based on Q1 & Q3
