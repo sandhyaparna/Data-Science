@@ -11,7 +11,7 @@ TEST nor VALIDATION set should never be undersampled or over-sampled. Only Train
 * Use stratify and random state options
 * Repeatable Datasets - use farm_fingerprint function on dates etc
 https://cloud.google.com/bigquery/docs/reference/standard-sql/hash_functions <br/>
-https://github.com/sandhyaparna/training-data-analyst/blob/master/courses/machine_learning/deepdive/02_generalization/repeatable_splitting.ipynb <br/>
+https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/deepdive2/launching_into_ml/solutions/repeatable_splitting.ipynb <br/>
 https://github.com/sandhyaparna/training-data-analyst/blob/master/courses/machine_learning/deepdive/02_generalization/create_datasets.ipynb  <br/>
 https://googlecoursera.qwiklabs.com/focuses/25429?locale=en <br/>
 * Use Train dtaa for EDA but apply Cleaning & Pre-processing on both train & test data 
