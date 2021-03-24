@@ -95,7 +95,11 @@ https://machinelearningknowledge.ai/applications-of-natural-language-processing-
 * ULMFit (FastAI) - Transfer Learning Technique
 * ELMo
 * Transformer (Based on Self-attention mechanism) - Tensor2Tensor package & PyTorch
-* BERT (PyTorch Transformers, HuggingFace Transformers) 
+* BERT (PyTorch Transformers, HuggingFace Transformers) - It is basically a trained Transformer Encoder stack
+  * https://jalammar.github.io/illustrated-bert/
+  * Base - smaller version
+  * Large - Original Version
+  * 
 * Transformer-XL
 * Stanford NLP
 * OpenAI's GPT-2
