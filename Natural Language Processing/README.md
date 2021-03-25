@@ -121,6 +121,11 @@ https://machinelearningknowledge.ai/applications-of-natural-language-processing-
 * Prodigy
 * Doccano
 
+### BERT Fine-tuning
+* https://colab.research.google.com/github/tensorflow/tpu/blob/master/tools/colab/bert_finetuning_with_cloud_tpus.ipynb
+* 
+
+
 
 #### LinkedIn
 https://www.linkedin.com/posts/stevenouri_natural-language-processing-nlp-with-python-ugcPost-6594922762333229056-tHXk
