@@ -12,6 +12,7 @@ https://towardsdatascience.com/understanding-feature-engineering-part-4-deep-lea
 https://towardsdatascience.com/understanding-feature-engineering-part-3-traditional-methods-for-text-data-f6f7d70acd41 <br/>
 GloVe - Pretrained https://nlp.stanford.edu/projects/glove/ <br/>
 NLP Repo https://lnkd.in/fyyvZYt <br/>
+Super Duper NLP Repo https://notebooks.quantumstat.com/ </br>
 
 
 ### Pre-processing
