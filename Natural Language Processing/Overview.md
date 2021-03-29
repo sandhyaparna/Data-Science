@@ -233,7 +233,7 @@ As the input to the biLM is computed from characters rather than words, it captu
 * ELMo word representations take the entire input sentence into equation for calculating the word embeddings. Hence, the term “read” would have different ELMo vectors under different context.
   
 #### BERT (Bidirectional Encoder Representations from Transformers)
-* https://towardsdatascience.com/how-bert-leverage-attention-mechanism-and-transformer-to-learn-word-contextual-relations-5bbee1b6dbdb </br>
+* https://towardsdatascience.com/how-bert-leverage-attention-mechanism-and-transformer-to-learn-word-contextual-relations-5bbee1b6dbdb
 * https://jalammar.github.io/illustrated-bert/
   * Step1: Objeective is to predict the masked word. Data is trained on large amounts of text to learn patterns (Semi-supervised)
   * Step2: Pre-trained model from step1 is used in supervised training, fin-tune the classifier
@@ -257,6 +257,7 @@ As the input to the biLM is computed from characters rather than words, it captu
 * BERT represents inputs as subwords and learns embeddings from subwords
 
 **BERT Fine-tuning**
+* Use pre-trained BERT to create contextualized word embeddings. Then feed these embeddings to the existing model
 * https://colab.research.google.com/github/tensorflow/tpu/blob/master/tools/colab/bert_finetuning_with_cloud_tpus.ipynb
 * https://colab.research.google.com/github/tensorflow/models/blob/master/official/colab/nlp/nlp_modeling_library_intro.ipynb
 * 
