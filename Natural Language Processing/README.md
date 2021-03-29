@@ -88,6 +88,22 @@ https://machinelearningknowledge.ai/applications-of-natural-language-processing-
 * Word2Vec - Distributed representations
 * GloVe
 * FastText
+* BERT (PyTorch Transformers, HuggingFace Transformers) - It is basically a trained Transformer Encoder stack
+  * https://jalammar.github.io/illustrated-bert/
+  * https://jalammar.github.io/a-visual-guide-to-using-bert-for-the-first-time/
+  * Base - smaller version
+  * Large - Original Version
+  * BERT is bi-directional: 
+  * Step1: Objeective is to predict the masked word. Data is trained on large amounts of text to learn patterns (Semi-supervised)
+  * Step2: Pre-trained model from step1 is used in supervised training, fin-tune the classifier
+  * Input token: first position is CLS; Each position outputs a vector of hidden_size (768 in BERT Base). 
+
+
+### BERT Fine-tuning
+* 
+* https://colab.research.google.com/github/tensorflow/tpu/blob/master/tools/colab/bert_finetuning_with_cloud_tpus.ipynb
+* https://colab.research.google.com/github/tensorflow/models/blob/master/official/colab/nlp/nlp_modeling_library_intro.ipynb
+* 
 
 * Byte Pair Encoding is used to out of vocab words
 
@@ -97,9 +113,7 @@ https://machinelearningknowledge.ai/applications-of-natural-language-processing-
 * Transformer (Based on Self-attention mechanism) - Tensor2Tensor package & PyTorch
 * BERT (PyTorch Transformers, HuggingFace Transformers) - It is basically a trained Transformer Encoder stack
   * https://jalammar.github.io/illustrated-bert/
-  * Base - smaller version
-  * Large - Original Version
-  * 
+* OpenAI transformer uses decoder part of transformer for language modeling
 * Transformer-XL
 * Stanford NLP
 * OpenAI's GPT-2
@@ -120,12 +134,6 @@ https://machinelearningknowledge.ai/applications-of-natural-language-processing-
 ### Annotation tools
 * Prodigy
 * Doccano
-
-### BERT Fine-tuning
-* https://colab.research.google.com/github/tensorflow/tpu/blob/master/tools/colab/bert_finetuning_with_cloud_tpus.ipynb
-* 
-
-
 
 #### LinkedIn
 https://www.linkedin.com/posts/stevenouri_natural-language-processing-nlp-with-python-ugcPost-6594922762333229056-tHXk
