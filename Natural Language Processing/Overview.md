@@ -233,8 +233,15 @@ As the input to the biLM is computed from characters rather than words, it captu
 * ELMo word representations take the entire input sentence into equation for calculating the word embeddings. Hence, the term “read” would have different ELMo vectors under different context.
   
 #### BERT (Bidirectional Encoder Representations from Transformers)
-https://towardsdatascience.com/how-bert-leverage-attention-mechanism-and-transformer-to-learn-word-contextual-relations-5bbee1b6dbdb </br>
-* BERT uses Transformer - an attention based model with positional encodings to represent word positions
+* https://towardsdatascience.com/how-bert-leverage-attention-mechanism-and-transformer-to-learn-word-contextual-relations-5bbee1b6dbdb </br>
+* https://jalammar.github.io/illustrated-bert/
+  * Step1: Objeective is to predict the masked word. Data is trained on large amounts of text to learn patterns (Semi-supervised)
+  * Step2: Pre-trained model from step1 is used in supervised training, fin-tune the classifier
+  * Input token: first position is CLS; Each position outputs a vector of hidden_size (768 in BERT Base). 
+* https://jalammar.github.io/a-visual-guide-to-using-bert-for-the-first-time/
+* Base - smaller version
+* Large - Original Version
+* BERT uses Transformer - an attention based model with positional encodings to represent word positions.It is basically a trained Transformer Encoder stack
 * Both ELMo and BERT use bidirectional language model to learn the text representations. However, ELMo use shallow concatenation layer while BERT use deep neural network.
 * BERT use bidirectional transformer (both left-to-right and right-to-left direction) rather than dictional transformer (left-to-right direction). 
 * BERT use three embeddings to compute the input representations. They are token embeddings, segment embeddings and position embeddings. “CLS” is the reserved token to represent the start of sequence while “SEP” separate segment (or sentence). 
@@ -248,6 +255,10 @@ https://towardsdatascience.com/how-bert-leverage-attention-mechanism-and-transfo
 
 
 * BERT represents inputs as subwords and learns embeddings from subwords
+
+**BERT Fine-tuning**
+* https://colab.research.google.com/github/tensorflow/tpu/blob/master/tools/colab/bert_finetuning_with_cloud_tpus.ipynb
+* https://colab.research.google.com/github/tensorflow/models/blob/master/official/colab/nlp/nlp_modeling_library_intro.ipynb
 * 
 
 
