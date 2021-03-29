@@ -276,7 +276,7 @@ As the input to the biLM is computed from characters rather than words, it captu
   * Output from Tokenizer is passed through DistilBERT
   * Passing the input vector through DistilBERT works just like BERT. The output would be a vector for each input token. each vector is made up of 768 numbers (floats)
   * Because this is a sentence classification task, we ignore all except the first vector (the one associated with the [CLS] token). The one vector we pass as the input to the logistic regression model
-
+* Fine-tuning with custom datasets: https://huggingface.co/transformers/custom_datasets.html
 
 #### OpenAI GPT
 * Transformer based approach but only trains a forward language model
