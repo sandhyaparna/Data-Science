@@ -260,7 +260,7 @@ As the input to the biLM is computed from characters rather than words, it captu
 * Use pre-trained BERT to create contextualized word embeddings. Then feed these embeddings to the existing model
 * https://colab.research.google.com/github/tensorflow/tpu/blob/master/tools/colab/bert_finetuning_with_cloud_tpus.ipynb
 * https://colab.research.google.com/github/tensorflow/models/blob/master/official/colab/nlp/nlp_modeling_library_intro.ipynb
-* 
+* https://colab.research.google.com/github/jalammar/jalammar.github.io/blob/master/notebooks/bert/A_Visual_Notebook_to_Using_BERT_for_the_First_Time.ipynb
 
 
 #### OpenAI GPT
