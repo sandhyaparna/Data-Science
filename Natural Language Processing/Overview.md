@@ -239,6 +239,13 @@ As the input to the biLM is computed from characters rather than words, it captu
   * Step2: Pre-trained model from step1 is used in supervised training, fin-tune the classifier
   * Input token: first position is CLS; Each position outputs a vector of hidden_size (768 in BERT Base). 
 * https://jalammar.github.io/a-visual-guide-to-using-bert-for-the-first-time/
+  * BERT tokenizer is used to split words into tokens. 
+  * Then, we add the special tokens needed for sentence classifications (these are [CLS] at the first position, and [SEP] at the end of the sentence)
+  * The third step the tokenizer does is to replace each token with its id from the embedding table which is a component we get with the trained model
+  * Tokenizer does all these steps in a single line of code: tokenizer.encode("a visually stunning rumination on love", add_special_tokens=True)
+  * Output from Tokenizer is passed through DistilBERT
+  * Passing the input vector through DistilBERT works just like BERT. The output would be a vector for each input token. each vector is made up of 768 numbers (floats)
+  * Because this is a sentence classification task, we ignore all except the first vector (the one associated with the [CLS] token). The one vector we pass as the input to the logistic regression model 
 * Base - smaller version
 * Large - Original Version
 * BERT uses Transformer - an attention based model with positional encodings to represent word positions.It is basically a trained Transformer Encoder stack
@@ -260,7 +267,14 @@ As the input to the biLM is computed from characters rather than words, it captu
 * Use pre-trained BERT to create contextualized word embeddings. Then feed these embeddings to the existing model
 * https://colab.research.google.com/github/tensorflow/tpu/blob/master/tools/colab/bert_finetuning_with_cloud_tpus.ipynb
 * https://colab.research.google.com/github/tensorflow/models/blob/master/official/colab/nlp/nlp_modeling_library_intro.ipynb
-* https://colab.research.google.com/github/jalammar/jalammar.github.io/blob/master/notebooks/bert/A_Visual_Notebook_to_Using_BERT_for_the_First_Time.ipynb
+* Pre-trained DistilBERT is used to generate sentence embeddings for sentiment classification. sentence embeddings are used in logitsic reg model https://colab.research.google.com/github/jalammar/jalammar.github.io/blob/master/notebooks/bert/A_Visual_Notebook_to_Using_BERT_for_the_First_Time.ipynb
+  * BERT tokenizer is used to split words into tokens. 
+  * Then, we add the special tokens needed for sentence classifications (these are [CLS] at the first position, and [SEP] at the end of the sentence)
+  * The third step the tokenizer does is to replace each token with its id from the embedding table which is a component we get with the trained model
+  * Tokenizer does all these steps in a single line of code: tokenizer.encode("a visually stunning rumination on love", add_special_tokens=True)
+  * Output from Tokenizer is passed through DistilBERT
+  * Passing the input vector through DistilBERT works just like BERT. The output would be a vector for each input token. each vector is made up of 768 numbers (floats)
+  * Because this is a sentence classification task, we ignore all except the first vector (the one associated with the [CLS] token). The one vector we pass as the input to the logistic regression model
 
 
 #### OpenAI GPT
