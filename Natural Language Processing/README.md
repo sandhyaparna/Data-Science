@@ -100,10 +100,8 @@ https://machinelearningknowledge.ai/applications-of-natural-language-processing-
 
 
 ### BERT Fine-tuning
-* 
 * https://colab.research.google.com/github/tensorflow/tpu/blob/master/tools/colab/bert_finetuning_with_cloud_tpus.ipynb
 * https://colab.research.google.com/github/tensorflow/models/blob/master/official/colab/nlp/nlp_modeling_library_intro.ipynb
-* 
 
 * Byte Pair Encoding is used to out of vocab words
 
