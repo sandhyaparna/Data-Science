@@ -278,6 +278,11 @@ As the input to the biLM is computed from characters rather than words, it captu
   * Passing the input vector through DistilBERT works just like BERT. The output would be a vector for each input token. each vector is made up of 768 numbers (floats)
   * Because this is a sentence classification task, we ignore all except the first vector (the one associated with the [CLS] token). The one vector we pass as the input to the logistic regression model
 * Fine-tuning with custom datasets: https://huggingface.co/transformers/custom_datasets.html
+* https://towardsdatascience.com/understanding-bert-bidirectional-encoder-representations-from-transformers-45ee6cd51eef
+  * IMDB data is converted into suitable objects for the BERT model
+  * Tokernizer and model is used are from Transformers library
+  * similar one https://towardsdatascience.com/first-time-using-and-fine-tuning-the-bert-framework-for-classification-799def68a5e4
+* 
 
 #### OpenAI GPT
 * Transformer based approach but only trains a forward language model
