@@ -236,6 +236,7 @@ As the input to the biLM is computed from characters rather than words, it captu
 #### BERT (Bidirectional Encoder Representations from Transformers)
 * https://towardsdatascience.com/how-bert-leverage-attention-mechanism-and-transformer-to-learn-word-contextual-relations-5bbee1b6dbdb
 * * https://towardsdatascience.com/understanding-bert-bidirectional-encoder-representations-from-transformers-45ee6cd51eef
+* Visualize BERT model https://huggingface.co/exbert/?model=bert-base-uncased&modelKind=bidirectional&sentence=The%20girl%20ran%20to%20a%20local%20pub%20to%20escape%20the%20din%20of%20her%20city.&layer=0&heads=..0,1,2,3,4,5,6,7,8,9,10,11&threshold=0.7&tokenInd=null&tokenSide=null&maskInds=..&hideClsSep=true
 * https://jalammar.github.io/illustrated-bert/
   * Step1: Objeective is to predict the masked word. Data is trained on large amounts of text to learn patterns (Semi-supervised)
   * Step2: Pre-trained model from step1 is used in supervised training, fin-tune the classifier
