@@ -6,6 +6,7 @@ https://www.kaggle.com/learn/machine-learning-explainability  <br/>
 https://www.kdnuggets.com/2018/12/machine-learning-explainability-interpretability-ai.html  <br/>
 https://christophm.github.io/interpretable-ml-book/  <br/>
 https://docs.microsoft.com/en-us/azure/machine-learning/how-to-machine-learning-interpretability  <br/>
+https://www.kdnuggets.com/2021/04/shapash-machine-learning-models-understandable.html </br>
 
 
 ### Model Interpretation
@@ -136,5 +137,6 @@ https://medium.com/@ageitgey/natural-language-processing-is-fun-part-3-explainin
 https://www.analyticsvidhya.com/blog/2017/06/building-trust-in-machine-learning-models/ </br>
 
 
-
+### SHAPASH
+https://www.kdnuggets.com/2021/04/shapash-machine-learning-models-understandable.html  </br>
 
