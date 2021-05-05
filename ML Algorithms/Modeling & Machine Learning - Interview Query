@@ -1,0 +1,60 @@
+## Intro
+Types of Machine Learning Interview Questions
+* Modeling Case Study - Experience related project, etc
+  * Describe how you would build a model to predict Uber ETAs after a rider requests a ride
+  * How would you evaluate the predictions of an Uber ETA model?
+  * What features would you use to predict the Uber ETA for ride requests?
+* Recommendation and Search Engines
+  * How would you build a recommendation engine to recommend news to users on Google?
+  * How would you evaluate a new search engine that your co-worker built?
+* ML Concepts
+* Applied Modeling -  require more contextual knowledge and information gathering from the interviewer
+  * You’re given a model with 90% accuracy, should you deploy it?
+  
+### Modeling Case Study
+* Data Exploration & Pre-Processing
+* Feature Selection & Engineering
+* Model Selection
+* Cross Validation
+* Evaluation Metrics
+* Testing and Roll Out
+
+1. Clarification
+The most common mistake that most people make when facing a modeling case study question is to underestimate the scope of the problem. For example, many inexperienced candidates will dive right into selecting a model.
+Let’s take an example question asked by Uber: How would you build a model to give an estimated time of arrival for selecting a ride?
+* Bad Response: 
+  * I would build a regression model and use features like time of day, passenger location, and driver distance. I would select a neural network architecture that would work well….
+* Good Response
+  * What’s the scope of this model? Is it for a particular city or location, across the entire US, or for the entire world?
+  * Additionally, how many ride ETAs would we have to serve per minute?
+  * Lastly, how much does accuracy matter? Do riders have a propensity to cancel their rides if the estimated time is much longer than the actual estimated time after matching?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
