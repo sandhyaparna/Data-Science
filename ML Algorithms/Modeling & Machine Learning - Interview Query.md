@@ -85,7 +85,7 @@ Our only added points are that we want to make sure:
 #### Multicollinearity in Regression
 * Link: https://www.interviewquery.com/questions/multicollinearity-in-regression
 
-## Model Selection - Explainability, #features, #observations, #categorical vs Numerical, Linear model vs Non-linear, Training speed, Prediction speed & performance
+## Model Selection - Explainability, features count, observations count, categorical vs Numerical, Linear model vs Non-linear, Training speed, Prediction speed & performance
 * Trade-off between explainability and performance / accuracy
 * Link: https://www.interviewquery.com/course/data-science-course/lessons/modeling
 
