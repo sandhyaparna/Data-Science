@@ -23,6 +23,7 @@ Odds Ratio = p/(1-p)
    intercept |  -11.77025 </br>
  * Categorical Var: Group(1) has OddsRatio times greater odds of Target happening, holding all other vars constant https://www.theanalysisfactor.com/odds-ratio-categorical-predictor/
 * Continuous Var: A unit inc of a predictor inc the dependent var by log odds. It will inc the odds of Target happening by a factor of OddsRatio of this var, holding all other vars constant
+* https://www.interviewquery.com/questions/coefficients-of-logistic-regression
 
 ### Effect on coefs, p-value, confidence Interval when there are correlated vars in the model
 https://newonlinecourses.science.psu.edu/stat501/node/346/  <br/>
