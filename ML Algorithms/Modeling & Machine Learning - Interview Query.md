@@ -89,12 +89,51 @@ Our only added points are that we want to make sure:
 * Trade-off between explainability and performance / accuracy
 * Link: https://www.interviewquery.com/course/data-science-course/lessons/modeling
 
+#### Booking Regression
+* Let's say we want to build a model to predict booking prices on Airbnb. Between linear regression and random forest regression, which model would perform better and why?
+* My ideas: If we are trying to compare between linear and bagged non-linear model. We will be interested in understanding if the assumptions of linear regression satisfy or not, i.e Target is having linear relationship with Independent vars; no multicollinearity, which we can work during feature selection; no outliers which depends on the data that we have. We can try Decision tree model, as it captures non-linearity and if the model is overfitting, we can try random forest as it is doing bagging 
+* Link: https://www.interviewquery.com/questions/booking-regression
 
+#### Evaluate News
+* Let’s say you are given a model that predicts whether a piece of news is relevant or not when shared on Twitter. How would you evaluate the model?
+* Link: https://www.interviewquery.com/questions/evaluate-news
 
-
-
-
-
+## Machine Learning Algorithms Framework
+* particular machine learning algorithm: 
+  * What is the big idea of [ML TECHNIQUE]?
+  * Explain step by step how [ML TECHNIQUE] works.
+* Intutive Explanation
+  * What is the intuition behind [ML TECHNIQUE]?
+  * How would you explain this technique to a non-technical person?
+* Difference Between Algorithms
+  * How would you compare [INSERT TECHNIQUE] with a [INSERT SIMILAR TECHNIQUE]?
+  * When would you use [ML TECHNIQUE 1] versus [ML TECHNIQUE 2]?
+* Assumptions
+  * What assumptions does [INSERT TECHNIQUE] make?
+* Tuning and Parameters
+  * What are [INSERT TECHNIQUE]’s parameters and how would you tune them?
+* Pros and Cons
+  * What are [INSERT TECHNIQUE]’s pros and cons?
+  * For example, let’s take a look at Naive Bayes. What are the pros/cons of using Naive Bayes?
+    * Pros:
+      * Fast predictions on test sets.
+      * Works well for multiple classes.
+      * Requires less training data.
+      * Good interpretability.
+    * Cons:
+      * If a class was not observed in training data, the class will have a zero value.
+      * Predicted probabilities are not reliable estimators.
+      * Strong assumptions around normality.
+* Performance
+  * When would [INSERT TECHNIQUE] fail to perform well?
+  * When would [INSERT TECHNIQUE] perform well?
+  * Similar to evaluating pros and cons, we can try to imagine scenarios where a specific algorithm would perform well and scenarios where they would not. For example, if we take linear regression:
+    * Linear regression would perform well if we were in a scenario where we’d want to understand the coefficients of different features and how they relate to the predictor class. Let’s say we wanted to know how neighborhoods affect housing prices in a new city. We can use regression to get a numerical coefficient representing the relative affordability of each neighborhood.
+    * Linear regression would not perform well if any of its assumptions are violated, or if we’re given many more categorical features versus continuous ones.
+* Optimization Speed
+  * What is [INSERT TECHNIQUE]’s optimization speed?
+* Special Features
+  * What are the special cases/features of [INSERT TECHNIQUE]?
 
 
 
