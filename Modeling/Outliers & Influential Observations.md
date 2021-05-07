@@ -51,6 +51,7 @@ Influential Obs: An influential point is any point that has a large effect on th
 * Treat seperately
 * Use algorithms robust to outliers - like Decision trees
 * Build 2 models - 1 for normal values and other for extreme values
+* Weighting mechanism - give more wt to extreme values
 
 ### PyOD Library
 
