@@ -163,7 +163,7 @@ Our only added points are that we want to make sure:
 
 #### Regularization
 * Regularization: Regularization is the act of modifying our objective function by adding a penalty term, to reduce overfitting
-* L1 and L2 Regularization: L1 and L2 regularization are methods used to reduce the overfitting of training data. Least Squares minimizes the sum of the squared residuals, which can result in low bias, but high variance. L2 is less robust, but has a stable solution and always one solution. L1 is more robust but has an unstable solution, and can possibly have multiple solutions.
+* L1 and L2 Regularization: L1 and L2 regularization are methods used to reduce the overfitting of training data. Least Squares minimizes the sum of the squared residuals, which can result in low bias, but high variance. L2 is less robust, but has a stable solution and always one solution. L1 is more robust but has an unstable solution, and can possibly have multiple solutions. L1/Lasso is not differenetiable at 0 and is not stable. L2/Ridge x square function is differentiable at 0 and is stable. L1 does feature selection as (volume of hyper cube - vol of hyper sphere) which is diff / vol of hyper cude tends to 1 as dimensions increase https://tex.stackexchange.com/questions/207772/hypersphere-inscribed-within-hypercube
 * Lasso: If you take the ridge regression penalty and replace it with the absolute value of the slope, then you get Lasso regression or L1 regularization.
   * Pros:
     * Performs feature selection automatically.
