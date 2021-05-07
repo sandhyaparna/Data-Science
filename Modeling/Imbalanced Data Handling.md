@@ -39,9 +39,27 @@ The features of the minority class are treated as noise and are often ignored. T
 * Its a improved version of Smote. What it does is same as SMOTE just with a minor improvement.
 * After creating those sample it adds a random small values to the points thus making it more realistic. In other words instead of all the sample being linearly correlated to the parent they have a little more variance in them i.e they are bit scattered.
 
-### Tomek Links - https://www.analyticsvidhya.com/blog/2020/07/10-techniques-to-deal-with-class-imbalance-in-machine-learning/
+### Tomek Links - under sampling
+https://www.analyticsvidhya.com/blog/2020/07/10-techniques-to-deal-with-class-imbalance-in-machine-learning/
 Tomek links are pairs of very close instances but of opposite classes. Removing the instances of the majority class of each pair increases the space between the two classes, facilitating the classification process.
 Tomek’s link exists if the two samples are the nearest neighbors of each other
+
+### ENN (Edited Nearest Neighbour) - undersampling technique 
+It removes the instances of majority class on the border or boundary whose predictions made by the KNN algorithm are different from the other majority class points.
+
+### Imabalanced data handling - Oversampling & Undersampling combined
+https://towardsdatascience.com/stop-using-smote-to-handle-all-your-imbalanced-data-34403399d3be
+* SMOTE with ENN
+* SMOTE with Tomek
+
+### SMOTE with Tomek
+https://towardsdatascience.com/stop-using-smote-to-handle-all-your-imbalanced-data-34403399d3be </br>
+For an imbalanced dataset, first SMOTE is applied to create new synthetic minority samples to get a balanced distribution. Further, Tomek Links is used in removing the samples close to the boundary of the two classes, to increase the separation between the two classes. </br>
+Implementation: from imblearn.combine import SMOTETomek
+
+### SMOTE with ENN
+https://towardsdatascience.com/stop-using-smote-to-handle-all-your-imbalanced-data-34403399d3be </br>
+First SMOTE is applied to create synthetic data points of minority class samples, then using ENN the data points on the border or boundary are removed to increase the separation of the two classes.
 
 
 ### Evaluation Metrics
