@@ -279,6 +279,33 @@ Computationally it will take longer to train and evaluate models using K-Fold cr
 #### Job Recommendation
 * Link: https://www.interviewquery.com/questions/job-recommendation
 
+## ML System Design
+* Machine Learning System Design: A machine learning model can either serve predictions online or offline. Online would be an API architecture where data gets fed to a model existing on a server and predictions would come back likely in JSON. Offline could be more script based, where the model serves predictions in batches and/or on a regular frequency. </br>
+Relevant questions: How fast do we need to serve predictions? What does the model API do and what does it not do? Does the model need to have a back up in case that it fails or should that exist on the client?
+* Model Deployment: Deployment of a machine learning system can be highly variable. Do we need data scientists to deploy their models to production or is it complicated enough that machine learning engineers would have to re-write the data scientists’ models in another language to speed them up? Could it be as easy as writing the model to some BIN file or would they need to create their own modules to serve predictions? </br>
+Lastly, assuming that the model is hosted on a server, how would we deploy new versions of the model server without downtime? How would deployment cycles work if the machine learning system is serverless?
+* Architecture: Architecture of the machine learning system would involve understanding the pieces of the full lifecycle. Important considerations in play would be whether we would be deploying only one model, or architecting a system for multiple different models on different servers. </br>
+Additionally, we need to think about if we’re building a system just for serving predictions or also for retraining models at some cadence. If we need to constantly retrain models, then we need to build a pipeline system that can automatically pull new training data, retrain the model, validate it, and then serve it in production to replace the old model at some cadence. </br>
+This gets even more complicated when the training data and models themselves are humongous. How do we ensure data quality in the pipeline? How do we parallelize the data processing, feature selection, and model training across multiple servers?
+* Caching: When we’re building models that have to serve predictions in real-time, we’ll likely have to build pipelines where our feature dataset gets cached in order to speed up the predictions. This generally means creating ETL jobs that will update the cache for user objects. </br>
+For example, let’s say we’re building a recommendation engine for users to view listings on Airbnb. We’ll likely need to cache multiple objects: </br>
+User attributes and activity data -> User price range, user preferences, and filters, past listings the user viewed, etc… </br>
+Listings attributes -> Listing prices, bedrooms, bathrooms, latitude, and longitude </br>
+Once we have a cached feature matrix of both objects, all we would need to do is get a user id and a list of listings ids, and the system would pull the cached data out from each and feed it through the model. </br>
+It’s unlikely that each time a user performs a search on Airbnb that we can run every single listing that exists on the platform through the recommendation engine. Therefore, we’ll additionally have to run filtering mechanisms based on location and availability. </br>
+* Logging:Logging data from the model is pertinent towards building a successful feedback loop in the machine learning system. In addition to logging predictions, we would have to think about how we could store the data in a way to save space and interpret the predictions easily later when analyzing the data. Lastly, we would need a way to re-train our dataset later with the logged predictions 
+* Labeling data:One concept that falls under the radar is the engineering required for labeled data to enter the machine learning system. It’s pretty unfeasible to edit data in a SQL database. It’s therefore important to understand how to design a system that can look at past predictions and features, and re-label them to generate actual accuracy metrics. </br>
+For example, let’s say that we have a classifier that detects if an ad is fake news or not. Ideally, we would have user input that could report the ad if it looked nefarious, but generally, this kind of input would be unreliable. We would then have to implement a system that could review the user’s input and label their reports as correct or not and feed it back into our machine learning system </br>
+* Understanding the model:It’s likely that when a model is in production, we would want some business-facing users and clients to understand how well it’s performing. We could accomplish this by building an interface like a dashboard that can demonstrate how the model is improving the product, what metric it’s impacting, and how well the model itself is performing in terms of scalability.
+
+
+## Questions
+#### How would we know if we have enough data to create an accurate enough model?
+* Look at the feature set size to training data size ratio. If we have an extremely high number of features compared to data points, then the model will be prone to overfitting and inaccuracy.
+* Create an existing model off a portion of the data, the training set, and measure performance of the model on the validation sets, otherwise known as using a holdout set. We hold back some subset of the data from the training of the model, and then use this holdout set to check the model performance to get a baseline level.
+* Learning curves. Learning curves help us calculate our accuracy rate by testing data on subsequently larger subsets of data. If we fit our model on 20%, 40%, 60%, 80% of our data size and then cross-validate to determine model accuracy, we can then determine how much more data we need to achieve a certain accuracy level. For example. If we reach 75% accuracy with 500K datapoints but then only 77% accuracy with 1 million datapoints, then we’ll realize that our model is not predicting well enough with it’s existing features since doubling the training data size did not significantly increase the accuracy rate. This would inform us that we need to re-evaluate our features rather than collect more data. 
+
+#### 
 
 
 
