@@ -10,6 +10,9 @@ https://medium.com/open-machine-learning-course/open-machine-learning-course-top
 * Be numeric with meaningful magnitude - Neural networks are weighing and adding machines. Ordinal is not numeric either. Auto-encoding or embedding is used to convert character vars to meaningful numerics
 * Have enough examples - Rule of Thumb is to have atleast 5 examples of any particular value before we use it in the model. Eg-For each category of a variable there should be atleast 5 values of Prediction=0 & Prediction=1. For a numeric value - discretize bands and see if there are atleast 5 examples of each in that particular bin
 * Bring human insight to problem 
+</br>
+Handling diff features: https://github.com/tensorflow/docs/blob/master/site/en/r1/guide/feature_columns.md
+
 
 ### Feature Crosses
 Feature crosses memorize data but goal of ML is generalization. Feature crosses memorize and only work on large datasets. Large the data, more powerful the feature crosses are
