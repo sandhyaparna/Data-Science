@@ -146,6 +146,9 @@ It turns out that we can leverage the gradients in a trained deep neural network
 https://github.com/marcoancona/DeepExplain
 * For multiple inputs/functional API, multimodal https://github.com/marcoancona/DeepExplain/blob/master/examples/multiple_input_keras.ipynb
 
+### path explain
+https://github.com/suinleelab/path_explain
+
 
 ### SHAPASH
 https://www.kdnuggets.com/2021/04/shapash-machine-learning-models-understandable.html  </br>
