@@ -138,6 +138,14 @@ https://medium.com/@ageitgey/natural-language-processing-is-fun-part-3-explainin
 
 https://www.analyticsvidhya.com/blog/2017/06/building-trust-in-machine-learning-models/ </br>
 
+### Gradient Based Explanation
+It turns out that we can leverage the gradients in a trained deep neural network to efficiently infer the relationship between inputs and output. This works because, the gradient quantifies how much a change in each input dimension would change the predictions in a small neighborhood around the input. While this approach is simple, existing research suggest simple gradient explanations are stable, and faithful to the model/data generating process [4] compared to more sophisticated methods (e.g. GradCam and Integrated Gradients).
+* Gradients in TF 2.0 via GradientTape! https://blog.fastforwardlabs.com/2020/06/22/how-to-explain-huggingface-bert-for-question-answering-nlp-models-with-tf-2.0.html
+
+### Deep Explain
+https://github.com/marcoancona/DeepExplain
+* For multiple inputs/functional API, multimodal https://github.com/marcoancona/DeepExplain/blob/master/examples/multiple_input_keras.ipynb
+
 
 ### SHAPASH
 https://www.kdnuggets.com/2021/04/shapash-machine-learning-models-understandable.html  </br>
