@@ -63,8 +63,8 @@ https://www.coursera.org/learn/ai-for-medical-treatment/lecture/ClIGF/shapley-va
 https://towardsdatascience.com/explain-your-model-with-the-shap-values-bc36aac4de3d </br>
 
 https://shap.readthedocs.io/en/latest/index.html SHAP exmples on tabular, text, image data built on diff models
-
-SHAP values are used for both local & global interpretability
+* kernelexplainer is used for models built using Neural Networks
+* SHAP values are used for both local & global interpretability
 
 SHAP value explanation of a single prediction:
 ![](https://i.imgur.com/JVD2U7k.png)
