@@ -55,6 +55,7 @@ https://towardsdatascience.com/a-feature-selection-tool-for-machine-learning-in-
   * PCA is unsupervised, LCA is supervised
   * Principal component analysis involves extracting linear composites of observed variables.
 * t-Distributed Stochastic Neighbor Embedding (t-SNE)
+  * https://distill.pub/2016/misread-tsne/
   * (t-SNE) t-Distributed Stochastic Neighbor Embedding is a non-linear dimensionality reduction algorithm used for exploring high-dimensional data. It maps multi-dimensional data to two or more dimensions suitable for human observation. 
   * t-SNE is based on probability distributions with random walk on neighborhood graphs to find the structure within the data.
   * A major problem with, linear dimensionality (PCA) reduction algorithms is that they concentrate on placing dissimilar data points far apart in a lower dimension representation. But in order to represent high dimension data on low dimension, non-linear manifold, it is important that similar datapoints must be represented close together, which is not what linear dimensionality reduction algorithms do.
