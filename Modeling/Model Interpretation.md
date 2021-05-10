@@ -62,6 +62,8 @@ https://www.coursera.org/learn/ai-for-medical-treatment/lecture/ClIGF/shapley-va
 *** https://towardsdatascience.com/shap-explained-the-way-i-wish-someone-explained-it-to-me-ab81cc69ef30 </br>
 https://towardsdatascience.com/explain-your-model-with-the-shap-values-bc36aac4de3d </br>
 
+https://shap.readthedocs.io/en/latest/index.html SHAP exmples on tabular, text, image data built on diff models
+
 SHAP values are used for both local & global interpretability
 
 SHAP value explanation of a single prediction:
