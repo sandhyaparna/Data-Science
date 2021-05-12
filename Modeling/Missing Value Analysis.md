@@ -31,6 +31,7 @@ Missing values in independent variables are taken into account by using weightag
   * Disadvantages : time consuming on large datasets; on high dimensional data, accuracy can be severely degraded
 * MICE (Multivariate Imputation by Chained Equation). It works on the assumption that missing data are Missing at Random (MAR) </br>
 https://medium.com/swlh/mice-algorithm-to-impute-missing-values-in-a-dataset-c55d555b6fbe </br>
+https://stats.stackexchange.com/questions/421545/multiple-imputation-by-chained-equations-mice-explained </br>
   * Disadvantages : No theoretical justifications as other imputation methods; Data complexities
 * MissForest: imputation algorithm that operates on the Random Forest algorithm </br>
 https://towardsdatascience.com/missforest-the-best-missing-data-imputation-algorithm-4d01182aed3 </br>
