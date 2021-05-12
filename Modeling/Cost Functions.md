@@ -54,7 +54,7 @@ Cross-entropy is the more generic form of logarithmic loss when it comes to mach
 
 ##### Mean Squared Logarithmic Error Loss
 * https://peltarion.com/knowledge-center/documentation/modeling-view/build-an-ai-model/loss-functions/mean-squared-logarithmic-error-(msle)
-* When target value has a spread of values and when predicting a large value, you may not want to punish a model as heavily as mean squared error. It is kind of Normalized MSE.
+* When target value has a spread of values and when predicting a large value, you may not want to punish a model as heavily as mean squared error. It is kind of Normalized MSE. for skewed data
 * first calculates the natural logarithm of each of the predicted values, then calculate the mean squared error
 * model.compile(loss='mean_squared_logarithmic_error')
 
