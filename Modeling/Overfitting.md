@@ -8,6 +8,8 @@ https://ai.googleblog.com/2015/08/the-reusable-holdout-preserving.html <br/>
 * Regularization  (adding a penalty for complexity)
 * Stratified k-fold Cross-Validation
 * Early Stopping - Stopping point should be where Loss on Training set decreases but Validation set increases
+* Increase amount of data
+* Drop out in case of Neural Nets
 * Thresholdout
   * Differential Privacy - On an intuitive level, differential privacy hides the data of any single individual. We are thus interested in pairs of datasets S, S0 that differ in a single element, in which case we say S and S0 are adjacent.
   * Adaptive data analysis: Though we use a holdout set to verify our model built on training set, we use holdout set to revise parameters or algorithm, this frequantly leads to over-fitting on holdout set. Adaptive data analysis is to use a seperate holdout dataset to validate any finding obtained via adaptive analysis.
