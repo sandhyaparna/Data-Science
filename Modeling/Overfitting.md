@@ -9,6 +9,7 @@ https://ai.googleblog.com/2015/08/the-reusable-holdout-preserving.html <br/>
 * Stratified k-fold Cross-Validation
 * Early Stopping - Stopping point should be where Loss on Training set decreases but Validation set increases
 * Increase amount of data
+* Ensemble algorithms like Bagging
 * Drop out in case of Neural Nets
 * Thresholdout
   * Differential Privacy - On an intuitive level, differential privacy hides the data of any single individual. We are thus interested in pairs of datasets S, S0 that differ in a single element, in which case we say S and S0 are adjacent.
