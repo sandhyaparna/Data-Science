@@ -1,6 +1,6 @@
 #### Text similarity metric
 https://www.analyticsvidhya.com/blog/2021/02/a-simple-guide-to-metrics-for-calculating-string-similarity/
-* Cosine Similarity 
+* Cosine Similarity: Measures cosine of the angle between 2 vectors
 * Levenshtein Distance: computes the number of edits required to transform one string to another. Edits can be:
   * Insertion of a character
   * Deletion of a character
