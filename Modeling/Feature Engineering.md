@@ -71,6 +71,38 @@ When data is missing in the Numeric column - For that column create a new extra 
   * Yeo-Johnson or Box-Cox
   * Box-Cox can only be used on non-negative data
 
+
+* Interview Query: Numeric features
+Normalization
+For numeric features, normalization can be done to make the mean equal 0, and the values be in the range [-1, 1]. There are some cases where we want to normalize data between the range [0, 1].
+normalization
+
+where,
+
+v is feature value,
+
+min_of_v is a minimum of feature value,
+
+max_of_v is a maximum of feature value
+
+Standardization
+If features distribution resembles a normal distribution, then we can apply a standardized transformation.
+Standardization
+
+where,
+
+v is feature value,
+
+mean_of_v is a mean of feature value,
+
+std_of_v is the standard deviation of feature value
+
+If feature distribution resembles power laws, then we can transform it by using the formula:
+Standardization
+
+In practice, normalization can cause an issue as the values of min and max are usually outliers. One possible solution is “clipping”, where we choose a “reasonable” value for min and max.
+
+
 ### Categorical 
 https://towardsdatascience.com/all-about-categorical-variable-encoding-305f3361fd02 <br/>
 ![](https://miro.medium.com/max/2100/0*NBVi7M3sGyiUSyd5.png)
