@@ -1,3 +1,6 @@
+## Links
+* https://heartbeat.fritz.ai/5-regression-loss-functions-all-machine-learners-should-know-4fb140e9d4b0
+
 
 ## Regression
 * SSE - Sum of squared errors
@@ -61,7 +64,10 @@ Cross-entropy is the more generic form of logarithmic loss when it comes to mach
 ##### Mean Absolute Error Loss
 * When distribution of the target variable may be mostly Gaussian, but may have outliers, e.g. large or small values far from the mean value. it is more robust to outliers
 * It is calculated as the average of the absolute difference between the actual and predicted values
+* MAE is used when outliers are not imp, MSE should be used when outliers are imp
+* Drawback of MAE is that gradient is the same throughout, which can be compensated by using dynamic learning rate ( dec learning rate as we mov ecloser to the minima)
 * model.compile(loss='mean_absolute_error')
+
 
 ##### Poisson loss function 
 * It is used for regression when modeling count data. Use for data follows the poisson distribution. Ex: churn of customers next week. 
