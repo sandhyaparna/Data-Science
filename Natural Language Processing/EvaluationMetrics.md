@@ -5,7 +5,8 @@ https://www.analyticsvidhya.com/blog/2021/02/a-simple-guide-to-metrics-for-calcu
   * Insertion of a character
   * Deletion of a character
   * Substitution of a character
-* d
+* Jaccards similarity
+* Earth Movers distance
 ![](https://user-images.githubusercontent.com/7243652/118402841-4d367780-b631-11eb-9083-ec965e4b8596.png)
 
 
