@@ -204,6 +204,14 @@ https://www.analyticsvidhya.com/blog/2020/08/top-4-sentence-embedding-techniques
 * InferSent - https://github.com/facebookresearch/InferSent
 * Universal Sentence Encoder
 
+#### Universal Sentence Encoder - USE
+https://amitness.com/2020/06/universal-sentence-encoder/
+* USE has 2 variants: transformer and DAN (Deep Avergae Network)
+* First, the embeddings for word and bi-grams present in a sentence are averaged together. Then, they are passed through 4-layer feed-forward deep DNN to get 512-dimensional sentence embedding as output. The embeddings for word and bi-grams are learned during training.
+![](https://amitness.com/images/use-deep-averaging-network-variant.png)
+
+
+
 #### Doc2Vec
 https://medium.com/scaleabout/a-gentle-introduction-to-doc2vec-db3e8c0cce5e <br/>
 https://medium.com/explorations-in-language-and-learning/how-to-obtain-sentence-vectors-2a6d88bd3c8b <br/>
