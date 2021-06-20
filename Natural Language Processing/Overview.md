@@ -207,9 +207,15 @@ https://www.analyticsvidhya.com/blog/2020/08/top-4-sentence-embedding-techniques
 #### Universal Sentence Encoder - USE
 https://amitness.com/2020/06/universal-sentence-encoder/
 * USE has 2 variants: transformer and DAN (Deep Avergae Network)
-* First, the embeddings for word and bi-grams present in a sentence are averaged together. Then, they are passed through 4-layer feed-forward deep DNN to get 512-dimensional sentence embedding as output. The embeddings for word and bi-grams are learned during training.
+* First, the embeddings for word and bi-grams present in a sentence are averaged together. Then, they are passed through 4-layer feed-forward deep DNN to get 512-dimensional sentence embedding as output. The embeddings for word and bi-grams are learned during training. It has slightly reduced accuracy compared to the transformer variant, but the inference time is very efficient. Since we are only doing feedforward operations, the compute time is of linear complexity in terms of length of the input sequence.
 ![](https://amitness.com/images/use-deep-averaging-network-variant.png)
-
+* To learn the sentence embeddings, the encoder is shared and trained across a range of unsupervised tasks along with supervised training on the SNLI corpus. The tasks are as follows: Training tasks
+  * Modified Skip-thought: Use current sentence to predict the previous and next sentence. USE was trained on this task using the Wikipedia and News corpus.
+  ![](https://amitness.com/images/use-skipthought-task.png)
+  * Conversational Input-Response Prediction: In this task, we need to predict the correct response for a given input among a list of correct responses and other randomly sampled responses. The USE authors use a corpus scraped from web question-answering pages and discussion forums and formulate this task using a sentence encoder. The input sentence is encoded into a vector u. The response is also encoded by the same encoder and response embeddings are passed through a DNN to get vector v. This is done to model the difference in meaning of input and response. The dot product of this two vectors gives the relevance of an input to response. Training is done by taking a batch of K randomly shuffled input-response pairs. In each batch, for a input, its response pair is taken as the correct response and the remaining responses are treated as incorrect. Then, the dot product scores are calculated and converted to probabilities using a softmax function. Model is trained to maximize the log likelihood of the correct response for each input.
+  ![](https://amitness.com/images/use-input-response-prediction.png)
+  * Natural Language Inference: In this task, we need to predict if a hypothesis entails, contradicts, or is neutral to a premise. The authors used the 570K sentence pairs from SNLI corpus to train USE on this task. The sentence pairs are encoded using shared Transformer/DAN encoders and the output 512-dim embeddings u1 and u2 are obtained. Then, they are concatenated along with their L1 distance and their dot product(angle). This concatenated vector is passed through fully-connected layers and softmax is applied to get probability for entailment/contradiction/neutral classes. The idea to learn sentence embedding based on SNLI seems to be inspired by the InferSent paper though the authors don’t cite it.
+  ![](https://amitness.com/images/use-snli-task.png)
 
 
 #### Doc2Vec
