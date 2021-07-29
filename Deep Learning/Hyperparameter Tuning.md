@@ -1,6 +1,6 @@
 ### Links
 * https://towardsdatascience.com/hyper-parameter-tuning-techniques-in-deep-learning-4dad592c63c8
-
+* https://github.com/sandhyaparna/Data-Science/blob/e617d0d1a54293cd157d0ae65477c6a6329625e4/Deep%20Learning/Neural%20Networks.md
 
 
 
@@ -13,10 +13,6 @@ Run Code: code with example in https://github.com/sandhyaparna/Data-Science/blob
 * Run the function here: https://github.com/surmenok/keras_lr_finder/blob/master/keras_lr_finder/lr_finder.py
 * Then run code in README of https://github.com/surmenok/keras_lr_finder
 
-# Train a model with batch size 512 for 5 epochs
-# with learning rate growing exponentially from 0.0001 to 1
-lr_finder.find(x_train, y_train, start_lr=1e-5, end_lr=1, batch_size=512, epochs=5)
-
 ### Optimzation Algos
 * Gradient Descent with Momentum: With each iteration of gradient descent, we move towards the local optima with up and down oscillations. If we use larger learning rate then the vertical oscillation will have higher magnitude. So, this vertical oscillation slows down our gradient descent and prevents us from using a much larger learning rate. Additionally, too small a learning rate makes the gradient descent slower.**We want a slower learning in the vertical direction and a faster learning in the horizontal direction which will help us to reach the global minima much faster**
 
@@ -26,8 +22,10 @@ lr_finder.find(x_train, y_train, start_lr=1e-5, end_lr=1, batch_size=512, epochs
 * Smaller datasets and architectures seem to require larger values for weight decay while larger datasets and deeper architectures seem to require smaller values. Our hypothesis is that complex data provides its own regularization and other regularization should be reduced.
 * The optimal weight decay is different if you search with a constant learning rate versus using a learning rate range. This aligns with our intuition because the larger learning rates provide regularization so a smaller weight decay value is optimal.
 
-
-
+### Batch size
+* larger batch sizes make larger gradient steps than smaller batch sizes
+* Large batch sizes may result in different outputs during run and may fall into local mimima
+* Use smaller batch size for consistent results
 
 
 
