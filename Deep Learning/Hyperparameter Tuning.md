@@ -26,7 +26,7 @@ Run Code: code with example in https://github.com/sandhyaparna/Data-Science/blob
 * larger batch sizes make larger gradient steps than smaller batch sizes
 * Large batch sizes may result in different outputs during run and may fall into local mimima
 * Use smaller batch size for consistent results
-
+* Small batch sizes add regularization while large batch sizes add less, so utilize this while balancing the proper amount of regularization
 
 
 
