@@ -27,6 +27,49 @@ Run Code: code with example in https://github.com/sandhyaparna/Data-Science/blob
 * Large batch sizes may result in different outputs during run and may fall into local mimima
 * Use smaller batch size for consistent results
 * Small batch sizes add regularization while large batch sizes add less, so utilize this while balancing the proper amount of regularization
+* Small batch sizes tend to not get stuck in local minima
+* Large batch sizes can converge on the wrong solution at random
+* Large learning rates can overshoot the correct solution
+* Small learning rates increase training time
+
+### Regularization
+* Prevents overfitting
+* 
+
+### Batch Normalization
+* Used for overfitting - https://machinelearningmastery.com/batch-normalization-for-training-of-deep-neural-networks/
+* Batch normalization is a technique for training very deep neural networks that standardizes the inputs to a layer for each mini-batch. This has the effect of stabilizing the learning process and dramatically reducing the number of training epochs required to train deep networks.  This smoothness induces a more predictive and stable behavior of the gradients, allowing for faster training. standardization refers to rescaling data to have a mean of zero and a standard deviation of one, e.g. a standard Gaussian. This process is also called “whitening” when applied to images in computer vision.
+* Deep neural networks are challenging to train, not least because the input from prior layers can change after weight updates.
+* Batch normalization is a technique to standardize the inputs to a network, applied to ether the activations of a prior layer or inputs directly.
+* Batch normalization accelerates training, in some cases by halving the epochs or better, and provides some regularization, reducing generalization error. 
+* Normalizing the inputs to the layer has an effect on the training of the model, dramatically reducing the number of epochs required. It can also have a regularizing effect, reducing generalization error much like the use of activation regularization.
+* It may be more appropriate **after** the activation function if for s-shaped functions like the hyperbolic tangent and logistic function.
+* It may be appropriate **before** the activation function for activations that may result in non-Gaussian distributions like the rectified linear activation function, the modern default for most network types.
+* Using batch normalization makes the network more stable during training. **This may require the use of much larger than normal learning rates, that in turn may further speed up the learning process.** The faster training also means that the decay rate used for the learning rate may be increased.
+* Deep neural networks can be quite sensitive to the technique used to initialize the weights prior to training. But the stability to training brought by batch normalization can make training deep networks less sensitive to the choice of weight initialization method.
+* It may not be appropriate for variables that have a data distribution that is highly non-Gaussian, in which case it might be better to perform data scaling as a pre-processing step.
+* Batch normalization offers some regularization effect, reducing generalization error, perhaps **no longer requiring the use of dropout** for regularization. The reason is that the statistics used to normalize the activations of the prior layer may become noisy given the random dropping out of nodes during the dropout procedure.
+
+### Vanishing Gradient Problem 
+* Check derivatives computed during training
+* Use LSTM instead of RNN, ResNet instead of CNN
+* Use ReLu
+* Use Multi-level hierarchy: Break up levels into their own sub-networks trained individually
+* Ensemble of shorter networks
+
+### Exploding gradient
+* Identify Exploding gradients:
+  * The model is unable to get traction on your training data (e.g. poor loss).
+  * The model is unstable, resulting in large changes in loss from update to update.
+  * The model loss goes to NaN during training.
+  * The model weights quickly become very large during training
+  * The model weights go to NaN values during training.
+  * The error gradient values are consistently above 1.0 for each node and layer during training.
+* Fix
+  * Re-Design the Network Model: redesigning the network to have fewer layers. **use a smaller batch size**
+  * **Gradient clipping**: Exploding gradients can still occur in very deep Multilayer Perceptron networks with a large batch size and LSTMs with very long input sequence lengths. If exploding gradients are still occurring, you can check for and limit the size of gradients during the training of your network. Specifically, the values of the error gradient are checked against a threshold value and clipped or set to that threshold value if the error gradient exceeds the threshold.In the Keras deep learning library, you can **use gradient clipping by setting the clipnorm or clipvalue arguments on your optimizer** before training. **Good default values are clipnorm=1.0 and clipvalue=0.5**
+  * weight regularization: and often an L1 (absolute weights) or an L2 (squared weights) penalty can be used
+
 
 
 
