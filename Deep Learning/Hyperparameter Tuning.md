@@ -32,6 +32,26 @@ Run Code: code with example in https://github.com/sandhyaparna/Data-Science/blob
 * Large learning rates can overshoot the correct solution
 * Small learning rates increase training time
 
+### Overfitting
+* Identify:
+  * Underfit Model. A model that fails to sufficiently learn the problem and performs poorly on a training dataset and does not perform well on a holdout sample.
+  * Overfit Model. A model that learns the training dataset too well, performing well on the training dataset but does not perform well on a hold out sample.
+  * Good Fit Model. A model that suitably learns the training dataset and generalizes well to the old out dataset.
+* Fix
+  * Regularization
+  * Dropout
+  * Batch Normalization
+  * Early stopping
+  * Reduce overfitting by training the network on more examples.
+  * Reduce overfitting by changing the complexity of the network. 
+  * Recommendations for Multilayer Perceptrons and Convolutional Neural Networks
+    * Classical: use early stopping and weight decay (L2 weight regularization).
+    * Alternate: use early stopping and added noise with a weight constraint.
+    * Modern: use early stopping and dropout, in addition to a weight constraint.
+  * Recommendations for RNN
+    * Classical: use early stopping with added weight noise and a weight constraint such as maximum norm.
+    * Modern: use early stopping with a backpropagation-through-time-aware version of dropout and a weight constraint.
+
 ### Regularization
 * Prevents overfitting
 * L1: Sparse Output, Computationally inefficient
