@@ -2,7 +2,8 @@
 * https://towardsdatascience.com/hyper-parameter-tuning-techniques-in-deep-learning-4dad592c63c8
 * https://github.com/sandhyaparna/Data-Science/blob/e617d0d1a54293cd157d0ae65477c6a6329625e4/Deep%20Learning/Neural%20Networks.md
 
-
+### Activation Functions
+* https://towardsdatascience.com/10-gradient-descent-optimisation-algorithms-86989510b5e9
 
 ### Learning Rate
 * Step size = (Gradient or slope) * (learning rate)
@@ -97,6 +98,23 @@ Run Code: code with example in https://github.com/sandhyaparna/Data-Science/blob
 * **The advantage of multiple layers is that they can learn features at various levels of abstraction.** For example, if you train a deep convolutional neural network to classify images, you will find that the first layer will train itself to recognize very basic things like edges, the next layer will train itself to recognize collections of edges such as shapes, the next layer will train itself to recognize collections of shapes like eyes or noses, and the next layer will learn even higher-order features like faces. **Multiple layers are much better at generalizing because they learn all the intermediate features between the raw data and the high-level classification.**
 * If you build a very wide, very deep network, you run the chance of each layer just memorizing what you want the output to be, and you end up with a neural network that fails to generalize to new data.
 
+### How to configure layers and neurons
+* https://machinelearningmastery.com/how-to-configure-the-number-of-layers-and-nodes-in-a-neural-network/
+* The most reliable way to configure these hyperparameters for your specific predictive modeling problem is via systematic experimentation with a robust test harness.
+* The number of hidden neurons should be between the size of the input layer and the size of the output layer. mean of input and output layers
+* look at your weight matrix after training; look weights very close to zero and remove those. Get weights of layers in Tensorflow https://www.gcptutorials.com/post/how-to-get-weights-of-layers-in-tensorflow
+* The number of hidden neurons should be 2/3 the size of the input layer, plus the size of the output layer.
+* The number of hidden neurons should be less than twice the size of the input layer.
+* Layers:
+  * Input Layer: Input variables, sometimes called the visible layer.
+  * Hidden Layers: Layers of nodes between the input and output layers. There may be one or more of these layers.
+  * Output Layer: A layer of nodes that produce the output variables
+* Terms
+  * Size: The number of nodes in the model.
+  * Width: The number of nodes in a specific layer.
+  * Depth: The number of layers in a neural network.
+  * Capacity: The type or structure of functions that can be learned by a network configuration. Sometimes called “representational capacity“.
+  * Architecture: The specific arrangement of the layers and nodes in the network.
 
 
 
