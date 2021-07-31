@@ -1,5 +1,7 @@
 ### Links
 https://medium.freecodecamp.org/the-penalty-of-missing-values-in-data-science-91b756f95a32 </br>
+https://towardsdatascience.com/6-different-ways-to-compensate-for-missing-values-data-imputation-with-examples-6022d9ca0779
+
 
 ### Handling
 * Do nothing and use ML algos like XGBoost, LightGBM (LightGBM — use_missing=false) that can handle missing values
@@ -14,7 +16,7 @@ https://medium.freecodecamp.org/the-penalty-of-missing-values-in-data-science-91
   * It can introduce bias in the data
 * Similar case Imputation - Group wise imputation 
 * previous or next values
-* Reconstruction - KNN imputation / using predictive model / MICE
+* Reconstruction - KNN imputation / using predictive model / MICE / DeepLearning for Categorical vars using datawig package
 
 Missing data mechanism describes the underlying mechanism that generates missing data and can be categorized into three types — missing completely at random (MCAR), missing at random (MAR), and missing not at random (MNAR).
 
