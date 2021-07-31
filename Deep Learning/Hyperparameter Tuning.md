@@ -101,10 +101,31 @@ Run Code: code with example in https://github.com/sandhyaparna/Data-Science/blob
 ### How to configure layers and neurons
 * https://machinelearningmastery.com/how-to-configure-the-number-of-layers-and-nodes-in-a-neural-network/
 * The most reliable way to configure these hyperparameters for your specific predictive modeling problem is via systematic experimentation with a robust test harness.
-* The number of hidden neurons should be between the size of the input layer and the size of the output layer. mean of input and output layers
-* look at your weight matrix after training; look weights very close to zero and remove those. Get weights of layers in Tensorflow https://www.gcptutorials.com/post/how-to-get-weights-of-layers-in-tensorflow
-* The number of hidden neurons should be 2/3 the size of the input layer, plus the size of the output layer.
-* The number of hidden neurons should be less than twice the size of the input layer.
+* Number of layers:
+  * Well if the data is linearly separable then you don't need any hidden layers at all. 
+  * If data is less complex and is having fewer dimensions or features then neural networks with 1 to 2 hidden layers would work.
+  * If data is having large dimensions or features then to get an optimum solution, 3 to 5 hidden layers can be used. 
+* Number of Neurons
+  * Depends on
+    * number of input and output units 
+    * number of training cases 
+    * amount of noise in the targets 
+    * complexity of the function or classification to be learned 
+    * architecture 
+    * type of hidden unit activation function 
+    * training algorithm 
+    * regularization 
+  * The most appropriate number of hidden neurons is **sqrt(input layer nodes * output layer nodes)**. The number of hidden neurons should keep on decreasing in subsequent layers to get more and more close to pattern and feature extraction and to identify the target class.
+  * The number of hidden neurons should be between the size of the input layer and the size of the output layer. mean of input and output layers
+  * Overall Number of Neurons in hidden layer Nh=(Ns)/(α∗(Ni+No))
+    * Ni = number of input neurons.
+    * No = number of output neurons.
+    * Ns = number of samples in training data set.
+    * α = an arbitrary scaling factor usually 2-10. 
+  * look at your weight matrix after training; look weights very close to zero and remove those. Get weights of layers in Tensorflow https://www.gcptutorials.com/post/how-to-get-weights-of-layers-in-tensorflow
+  * The number of hidden neurons should be 2/3 the size of the input layer, plus the size of the output layer.
+  * The number of hidden neurons should be less than twice the size of the input layer - you will never require more than twice the number of hidden units as you have inputs in an MLP with one hidden layer
+   have inputs
 * Layers:
   * Input Layer: Input variables, sometimes called the visible layer.
   * Hidden Layers: Layers of nodes between the input and output layers. There may be one or more of these layers.
