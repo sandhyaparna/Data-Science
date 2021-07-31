@@ -34,7 +34,8 @@ Run Code: code with example in https://github.com/sandhyaparna/Data-Science/blob
 
 ### Regularization
 * Prevents overfitting
-* 
+* L1: Sparse Output, Computationally inefficient
+* L2: Dense Output, Computationally efficient
 
 ### Batch Normalization
 * Used for overfitting - https://machinelearningmastery.com/batch-normalization-for-training-of-deep-neural-networks/
@@ -70,7 +71,11 @@ Run Code: code with example in https://github.com/sandhyaparna/Data-Science/blob
   * **Gradient clipping**: Exploding gradients can still occur in very deep Multilayer Perceptron networks with a large batch size and LSTMs with very long input sequence lengths. If exploding gradients are still occurring, you can check for and limit the size of gradients during the training of your network. Specifically, the values of the error gradient are checked against a threshold value and clipped or set to that threshold value if the error gradient exceeds the threshold.In the Keras deep learning library, you can **use gradient clipping by setting the clipnorm or clipvalue arguments on your optimizer** before training. **Good default values are clipnorm=1.0 and clipvalue=0.5**
   * weight regularization: and often an L1 (absolute weights) or an L2 (squared weights) penalty can be used
 
-
+### Wide vs Deep Models:
+* Wide (more neurons in a layer) overfits. Model memorizes training points
+* A sufficiently wide neural network with just a single hidden layer can approximate any (reasonable) function given enough training data. There are, however, a few difficulties with using an extremely wide, shallow network. **The main issue is that these very wide, shallow networks are very good at memorization, but not so good at generalization**. So, if you train the network with every possible input value, a super wide network could eventually memorize the corresponding output value that you want. But that's not useful because for any practical application you won't have every possible input value to train with.
+* **The advantage of multiple layers is that they can learn features at various levels of abstraction.** For example, if you train a deep convolutional neural network to classify images, you will find that the first layer will train itself to recognize very basic things like edges, the next layer will train itself to recognize collections of edges such as shapes, the next layer will train itself to recognize collections of shapes like eyes or noses, and the next layer will learn even higher-order features like faces. **Multiple layers are much better at generalizing because they learn all the intermediate features between the raw data and the high-level classification.**
+* If you build a very wide, very deep network, you run the chance of each layer just memorizing what you want the output to be, and you end up with a neural network that fails to generalize to new data.
 
 
 
