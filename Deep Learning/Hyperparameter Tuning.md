@@ -24,6 +24,7 @@ Run Code: code with example in https://github.com/sandhyaparna/Data-Science/blob
 * The optimal weight decay is different if you search with a constant learning rate versus using a learning rate range. This aligns with our intuition because the larger learning rates provide regularization so a smaller weight decay value is optimal.
 
 ### Batch size
+* Good to start with 128/256/512 for a sample of 1M observations. For small datasets use 32/
 * larger batch sizes make larger gradient steps than smaller batch sizes
 * Large batch sizes may result in different outputs during run and may fall into local mimima
 * Use smaller batch size for consistent results
@@ -55,8 +56,8 @@ Run Code: code with example in https://github.com/sandhyaparna/Data-Science/blob
 
 ### Regularization
 * Prevents overfitting
-* L1: Sparse Output, Computationally inefficient
-* L2: Dense Output, Computationally efficient
+* L1 Lasso: Sparse Output, Computationally inefficient. L1 values between 1E-4 and 1E-8 have been found to produce good results. Larger values are likely to produce models that aren't very useful. You can't set both L1 and L2. You must choose one or the other.
+* L2 Ridge: Dense Output, Computationally efficient. L2 values between 1E-2 and 1E-6 have been found to produce good results. Larger values are likely to produce models that aren't very useful.
 
 ### Batch Normalization
 * Used for overfitting - https://machinelearningmastery.com/batch-normalization-for-training-of-deep-neural-networks/
@@ -136,6 +137,15 @@ Run Code: code with example in https://github.com/sandhyaparna/Data-Science/blob
   * Depth: The number of layers in a neural network.
   * Capacity: The type or structure of functions that can be learned by a network configuration. Sometimes called “representational capacity“.
   * Architecture: The specific arrangement of the layers and nodes in the network.
+
+### Epochs
+* In general, data sets with only a few observations typically require more passes over the data to obtain higher model quality. Larger data sets often contain many similar data points, which eliminates the need for a large number of passes. The impact of choosing more data passes over your data is two-fold: model training takes longer, and it costs more
+
+### Data Shuffling
+* Shuffling mixes up the order of your data so that the SGD algorithm doesn't encounter one type of data for too many observations in succession. When model sees similar type of category data, updating of parameters might be difficult when it suddenly encounters new category. 
+* You must shuffle your training data even if you chose the random split option when you split the input datasource into training and evaluation portions. The random split strategy chooses a random subset of the data for each datasource, but it doesn't change the order of the rows in the datasource. 
+
+
 
 
 
