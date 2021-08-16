@@ -5,5 +5,5 @@
   * https://shap-lrjball.readthedocs.io/en/latest/generated/shap.DeepExplainer.html
 
 * SHAP in notebook https://github.com/sandhyaparna/Python-DataScience-CookBook/blob/master/Deep%20Learning/Feature%20Importance.ipynb
-* SHAP using Tensorflow version 2: https://stackoverflow.com/questions/66814523/shap-deepexplainer-with-tensorflow-2-4-error ***
+* **SHAP using Tensorflow version 2**: https://stackoverflow.com/questions/66814523/shap-deepexplainer-with-tensorflow-2-4-error 
 
