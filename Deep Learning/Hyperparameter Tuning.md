@@ -6,6 +6,14 @@
 
 ### Activation Functions
 * https://towardsdatascience.com/10-gradient-descent-optimisation-algorithms-86989510b5e9
+* Choosing an activation function
+  * For multiple classification, use softmax on the output layer
+  * RNN’s do well with Tanh
+  * For everything else
+  * Start with ReLU
+  * If you need to do better, try Leaky ReLU
+  * Last resort: PReLU , Maxout
+  * Swish for really deep networks
 
 ### Summary of hyperparameter tuning
 Most machine learning problems require a lot of hyperparameter tuning. Unfortunately, we can't provide concrete tuning rules for every model. Lowering the learning rate can help one model converge efficiently but make another model converge much too slowly. You must experiment to find the best set of hyperparameters for your dataset. That said, here are a few rules of thumb:
