@@ -8,6 +8,8 @@
 ### Learning Rate
 * Step size = (Gradient or slope) * (learning rate)
 * If learning rate is small, loss keeps decreasing and finally converges, but if learning rate is high, loss oscillates/diverges. But lower learning rate takes more time. Large learning rates help to regularize the training but if the learning rate is too large, the training will diverge. 
+* An oscillating loss curve strongly suggests that the learning rate is too high. https://colab.research.google.com/github/google/eng-edu/blob/main/ml/cc/exercises/linear_regression_with_synthetic_data.ipynb?utm_source=mlcc&utm_campaign=colab-external&utm_medium=referral&utm_content=linear_regression_synthetic_tf2-colab&hl=en
+* https://colab.research.google.com/github/google/eng-edu/blob/main/ml/cc/exercises/linear_regression_with_a_real_dataset.ipynb?utm_source=mlcc&utm_campaign=colab-external&utm_medium=referral&utm_content=linear_regression_real_tf2-colab&hl=en
 ![](https://github.com/sandhyaparna/Data-Science/blob/master/Deep%20Learning/Images/learning%20rate.png)
 
 Run Code: code with example in https://github.com/sandhyaparna/Data-Science/blob/master/Deep%20Learning/Images/Implementing_LR_range_test_Learning_rate_finder.ipynb
