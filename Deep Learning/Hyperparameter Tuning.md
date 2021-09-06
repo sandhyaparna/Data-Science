@@ -81,8 +81,9 @@ Run Code: code with example in https://github.com/sandhyaparna/Data-Science/blob
 
 ### Regularization
 * Prevents overfitting
-* L1 Lasso: Sparse Output, Computationally inefficient. L1 values between 1E-4 and 1E-8 have been found to produce good results. Larger values are likely to produce models that aren't very useful. You can't set both L1 and L2. You must choose one or the other.
+* L1 Lasso: Sparse Output, Computationally inefficient as it is non-differentiable at few points - rhombus kinda. L1 values between 1E-4 and 1E-8 have been found to produce good results. Larger values are likely to produce models that aren't very useful. You can't set both L1 and L2. You must choose one or the other.
 * L2 Ridge: Dense Output, Computationally efficient. L2 values between 1E-2 and 1E-6 have been found to produce good results. Larger values are likely to produce models that aren't very useful.
+* 
 
 ### Batch Normalization
 * Used for overfitting - https://machinelearningmastery.com/batch-normalization-for-training-of-deep-neural-networks/
