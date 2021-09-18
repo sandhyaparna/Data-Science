@@ -27,6 +27,9 @@ Most machine learning problems require a lot of hyperparameter tuning. Unfortuna
 * Setting the batch size to a very small batch number can also cause instability. First, try large batch size values. Then, decrease the batch size until you see degradation.
 * For real-world datasets consisting of a very large number of examples, the entire dataset might not fit into memory. In such cases, you'll need to reduce the batch size to enable a batch to fit into memory.
 * Remember: the ideal combination of hyperparameters is data dependent, so you must always experiment and verify.
+* If loss reaches local minima, training loss doesn't decrease and training stops --> lower learning rate
+* If model takes too long to converge and the error oscillates after more than 10 epochs --> Normalize data/use batch normalization
+* During multiple runs, if loss converges to different, yet stable values --> Reduce batch size and decrease learning rate
 
 ### Learning Rate
 * Step size = (Gradient or slope) * (learning rate)
