@@ -5,6 +5,7 @@
 * Interpreting Loss Curves https://developers.google.com/machine-learning/testing-debugging/metrics/interpretic
 * Hyperparameters AWS Doc https://docs.aws.amazon.com/machine-learning/latest/dg/training-parameters1.html
 * Debugger Rules https://docs.aws.amazon.com/sagemaker/latest/dg/debugger-built-in-rules.html
+* https://github.com/orico/www.mlcompendium.com
 
 ### Activation Functions
 * https://towardsdatascience.com/10-gradient-descent-optimisation-algorithms-86989510b5e9
