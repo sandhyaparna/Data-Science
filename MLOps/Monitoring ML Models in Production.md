@@ -13,7 +13,13 @@
 ### Overview
 * Monitoring Machine Learning Models in Production - Data Drift, Model Drift, 
 * Find and fix data drift, performance degradation, unexpected bias, or data-integrity issues that hurt business outcomes.
-* 
+* Create a baseline from the dataset that was used to train the model - The baseline computes metrics and suggests constraints for the metrics. Real-time predictions from your model are compared to the constraints, and are reported as violations if they are outside the constrained values.
+* Inspect the reports, which compare the latest data with the baseline, and watch for any violations reported and for metrics 
+* Constraint suggestion with baseline/training dataset:
+  * The training dataset data schema and the inference dataset schema should exactly match i.e. the number and order of the features
+  * Name of the feature
+  * inferred_type: "Integral" | "Fractional" | "String" | "Unknown" - 
+  * 
 
 
 
