@@ -35,13 +35,13 @@
        * num_missing
        * distinct count
        * each unique string group count
- * Violation check
-   * data_type_check
-   * completeness_check
-   * baseline_drift_check
-   * missing_column_check
-   * extra_column_check
-   * categorical_values_check
+    * Violation check
+      * data_type_check - If the data types in the current execution are not the same as in the baseline dataset, this violation is flagged. During the baseline step, the generated constraints suggest the inferred data type for each column. The monitoring_config.datatype_check_threshold parameter can be tuned to adjust the threshold on when it is flagged as a violation.
+      * completeness_check - If the completeness (% of non-null items) observed in the current execution exceeds the threshold specified in completeness threshold specified per feature, this violation is flagged. During the baseline step, the generated constraints suggest a completeness value.
+      * baseline_drift_check - If the calculated distribution distance between the current and the baseline datasets is more than the threshold specified in monitoring_config.comparison_threshold, this violation is flagged.
+      * missing_column_check - If the number of columns in the current dataset is less than the number in the baseline dataset, this violation is flagged.
+      * extra_column_check - If the number of columns in the current dataset is more than the number in the baseline, this violation is flagged.      
+      * categorical_values_check - If there are more unknown values in the current dataset than in the baseline dataset, this violation is flagged. This value is dictated by the threshold in monitoring_config.domain_content_threshold.
 * Monitor Model Quality / Model Quality Baseline
    * Model Quality Metrics - https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor-model-quality-metrics.html
       * Regression Metrics: mae, mse, rmse, r2
