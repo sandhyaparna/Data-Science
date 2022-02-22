@@ -87,7 +87,9 @@ https://neptune.ai/blog/how-to-monitor-your-models-in-production-guide </br>
 * Model versions - Monitoring model versions in production are critical if you want to be sure that the right version is deployed.
 * Prediction drift - Track model performance metrics by comparing predictions with actual labels (Different metrics are used for classification, regression, clustering, reinforcement learning, and so on)
 
-![CI/CD Pipeline](https://cloud.google.com/architecture/images/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning-4-ml-automation-ci-cd.svg)
+![](https://cloud.google.com/architecture/images/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning-4-ml-automation-ci-cd.svg)
+*CI/CD Pipeline*
+
 
 ### AWS
 * Monitor Data Quality - Data Quality issues, Data drift, outliers
@@ -133,4 +135,3 @@ https://neptune.ai/blog/how-to-monitor-your-models-in-production-guide </br>
 *  Feature Drift - https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-model-monitor-feature-attribution-drift.html
    * We can detect the drift by comparing how the ranking of the individual features changed from training data to live data. 
    * Model explainability monitor can explain the predictions of a deployed model producing inferences and detect feature attribution drift on a regular basis.
- 
