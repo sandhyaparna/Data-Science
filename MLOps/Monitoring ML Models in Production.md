@@ -29,10 +29,11 @@ https://neptune.ai/blog/how-to-monitor-your-models-in-production-guide </br>
    * Checking schema for semantic errors in terms of feature names,
    * Effective data profiling for complex dependencies in the data pipeline,
    * General integrity checks; does the data meet the requirements of downstream services or consumers?
-* Possible solutions after detecting data quality issues
-   * Provide an alert following a schema change.
-   * Ensure proper data validation practices are implemented by data owners. 
-   * Ensure everyone is aware of their role in getting the data to the pipeline and enable effective communication between data owners so that when a change is made at the data source, the model owner(s) and other service owners are aware.
+   </br>
+   * Possible solutions after detecting data quality issues
+      * Provide an alert following a schema change.
+      * Ensure proper data validation practices are implemented by data owners. 
+      * Ensure everyone is aware of their role in getting the data to the pipeline and enable effective communication between data owners so that when a change is made at the data source, the model owner(s) and other service owners are aware.
 * Data drift - Data drift refers to a meaningful change in distribution between the training data and production data. Changes in input data distribution will affect model performance over time, although it’s a slower process than in the case of data quality issues.
    * To detect data drift, perform distribution tests by measuring distribution changes using distance metrics:
    * Basic statistical metrics you could use to test drift between historical and current features are; mean/average value, standard deviation, minimum and maximum values comparison, and also correlation. 
