@@ -1,3 +1,7 @@
+| ![space-1.jpg](http://www.storywarren.com/wp-content/uploads/2016/09/space-1.jpg) | 
+|:--:| 
+| *Space* |
+
 ### Resources
 * https://huyenchip.com/2022/02/07/data-distribution-shifts-and-monitoring.html
 * https://stanford-cs329s.github.io/syllabus.html
