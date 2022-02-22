@@ -2,6 +2,7 @@
 * https://huyenchip.com/2022/02/07/data-distribution-shifts-and-monitoring.html
 * https://stanford-cs329s.github.io/syllabus.html
 * https://neptune.ai/blog/how-to-monitor-your-models-in-production-guide
+* https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning#mlops_level_2_cicd_pipeline_automation
 * https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-model-monitor.html
     * https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html
     * https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor-data-quality.html
