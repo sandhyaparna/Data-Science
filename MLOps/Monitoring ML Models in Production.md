@@ -88,7 +88,8 @@ https://neptune.ai/blog/how-to-monitor-your-models-in-production-guide </br>
 * Prediction drift - Track model performance metrics by comparing predictions with actual labels (Different metrics are used for classification, regression, clustering, reinforcement learning, and so on)
 
 ![](https://cloud.google.com/architecture/images/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning-4-ml-automation-ci-cd.svg)
-:--: CI/CD Pipeline
+:--: 
+*CI/CD Pipeline*
 
 
 ### AWS
