@@ -6,7 +6,7 @@
 * Hyperparameters AWS Doc https://docs.aws.amazon.com/machine-learning/latest/dg/training-parameters1.html
 * Debugger Rules https://docs.aws.amazon.com/sagemaker/latest/dg/debugger-built-in-rules.html
 * https://github.com/orico/www.mlcompendium.com
-
+* scikit-optimize for classification & regression https://coderzcolumn.com/tutorials/machine-learning/scikit-optimize-guide-to-hyperparameters-optimization
 ### Activation Functions
 * https://towardsdatascience.com/10-gradient-descent-optimisation-algorithms-86989510b5e9
 * Choosing an activation function
