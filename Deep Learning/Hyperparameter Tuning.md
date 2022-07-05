@@ -6,9 +6,12 @@
 * Hyperparameters AWS Doc https://docs.aws.amazon.com/machine-learning/latest/dg/training-parameters1.html
 * Debugger Rules https://docs.aws.amazon.com/sagemaker/latest/dg/debugger-built-in-rules.html
 * https://github.com/orico/www.mlcompendium.com
+* GridsearchCV https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html
+* RandomsearchCV https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.RandomizedSearchCV.html
+* scikit-optimize https://towardsdatascience.com/bayesian-hyper-parameter-optimization-neural-networks-tensorflow-facies-prediction-example-f9c48d21f795
 * scikit-optimize for classification & regression https://coderzcolumn.com/tutorials/machine-learning/scikit-optimize-guide-to-hyperparameters-optimization
 * Ray Tune, Hyper Opt - https://neptune.ai/blog/best-tools-for-model-tuning-and-hyperparameter-optimization
-
+* https://neptune.ai/blog/hyperparameter-tuning-in-python-complete-guide
 
 
 ### Activation Functions
