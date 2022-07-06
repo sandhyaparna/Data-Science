@@ -10,8 +10,10 @@
 * RandomsearchCV https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.RandomizedSearchCV.html
 * scikit-optimize https://towardsdatascience.com/bayesian-hyper-parameter-optimization-neural-networks-tensorflow-facies-prediction-example-f9c48d21f795
 * scikit-optimize for classification & regression https://coderzcolumn.com/tutorials/machine-learning/scikit-optimize-guide-to-hyperparameters-optimization
-* Ray Tune, Hyper Opt - https://neptune.ai/blog/best-tools-for-model-tuning-and-hyperparameter-optimization
-* https://neptune.ai/blog/hyperparameter-tuning-in-python-complete-guide
+* Ray Tune, Hyper Opt, Optuna - https://neptune.ai/blog/best-tools-for-model-tuning-and-hyperparameter-optimization
+* https://github.com/hyperopt/hyperopt
+* https://github.com/fmfn/BayesianOptimization
+* https://github.com/Davisy/Hyperparameter-Optimization-Techniques)
 
 
 ### Activation Functions
