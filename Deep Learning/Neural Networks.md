@@ -7,6 +7,9 @@ Course5 https://www.analyticsvidhya.com/blog/2019/01/sequence-models-deeplearnin
 Intro to NN https://www.kdnuggets.com/2016/11/quick-introduction-neural-networks.html
 
 single vs multi-layer: https://ujjwalkarn.me/2016/08/09/quick-intro-neural-networks/
+A Multi Layer Perceptron (MLP) contains one or more hidden layers (apart from one input and one output layer).  While a single layer perceptron can only learn linear functions, a multi layer perceptron can also learn non – linear functions.
+
+
 ### Intro
 Neural Networks takes input features, automatically identifies hidden features from input and finally generates the output. It is inspired by the way biological neural networks in the human brain process information. <br/>
 
