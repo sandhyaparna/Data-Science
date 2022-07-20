@@ -6,6 +6,7 @@ Course4 https://www.analyticsvidhya.com/blog/2018/12/guide-convolutional-neural-
 Course5 https://www.analyticsvidhya.com/blog/2019/01/sequence-models-deeplearning/ <br/>
 Intro to NN https://www.kdnuggets.com/2016/11/quick-introduction-neural-networks.html
 
+single vs multi-layer: https://ujjwalkarn.me/2016/08/09/quick-intro-neural-networks/
 ### Intro
 Neural Networks takes input features, automatically identifies hidden features from input and finally generates the output. It is inspired by the way biological neural networks in the human brain process information. <br/>
 
