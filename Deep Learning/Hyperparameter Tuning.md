@@ -15,6 +15,12 @@
 * https://github.com/fmfn/BayesianOptimization
 * https://github.com/Davisy/Hyperparameter-Optimization-Techniques)
 
+### Tips - Hyper param tuning proceess
+* hyper parameter tuning is done on train data to identify hyper params other than epochs (use less epochs i.e 500-800)
+- logs are stored in ray_results folder within user folder (RAY TUNE is used to do hyperparam)
+* identify optimized hyperparams not just based on the evaluation metric at the end of epochs used in hyperparam but based on searching for optimized eval metric across the epochs by looking at the tensorboard graph
+* final models are reatrained on the entire data & models are saved. Classification threshold are obtained from the final model 
+
 
 ### Activation Functions
 * https://towardsdatascience.com/10-gradient-descent-optimisation-algorithms-86989510b5e9
