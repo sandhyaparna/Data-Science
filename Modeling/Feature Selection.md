@@ -18,6 +18,8 @@ https://towardsdatascience.com/a-feature-selection-tool-for-machine-learning-in-
 * Low Variance filter - Variance Threshold
 * Remove highly correlated variables
 * Regularization - Lasso
+* Boruta Feature Selection Algorithm - https://medium.com/swlh/feature-importance-hows-and-why-s-3678ede1e58f
+  * Boruta tries to find all features carrying useful information rather than a compact subset of features that give a minimal error.
 * Forward slection, Backward Selection, Stepwise Selection 
   *  Stepwise selection alternates between forward and backward, bringing in and removing variables that meet the criteria for entry or removal, until a stable set of variables is attained.
 * Recursive Feature Elimination (concept is same as Backward selection) https://machinelearningmastery.com/rfe-feature-selection-in-python/
