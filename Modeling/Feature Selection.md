@@ -20,6 +20,8 @@ https://towardsdatascience.com/a-feature-selection-tool-for-machine-learning-in-
 * Regularization - Lasso
 * Boruta Feature Selection Algorithm - https://medium.com/swlh/feature-importance-hows-and-why-s-3678ede1e58f
   * Boruta tries to find all features carrying useful information rather than a compact subset of features that give a minimal error.
+  * Feature Permutation means, for one feature, we randomly shuffle this feature’s order and breaks the relationship between the feature and the target variable. The basic intuition for Feature Permutation is:
+We assume the shuffled feature should have less importance than a good feature, so if one feature has less feature importance than the shuffled feature, then that feature is a candidate to be removed.
   * https://towardsdatascience.com/simple-example-using-boruta-feature-selection-in-python-8b96925d5d7a
   * https://towardsdatascience.com/feature-selection-with-boruta-in-python-676e3877e596
 * Forward slection, Backward Selection, Stepwise Selection 
