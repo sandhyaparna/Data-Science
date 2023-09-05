@@ -16,7 +16,7 @@ Filter, Wrapper Methods https://www.analyticsvidhya.com/blog/2016/12/introductio
 https://towardsdatascience.com/a-feature-selection-tool-for-machine-learning-in-python-b64dd23710f0 </br>
 * Missing value ratio
 * Low Variance filter - Variance Threshold
-* Remove highly correlated variables
+* Remove highly correlated variables among the independent variables
 * Regularization - Lasso
 * Boruta Feature Selection Algorithm - https://medium.com/swlh/feature-importance-hows-and-why-s-3678ede1e58f
   * Boruta tries to find all features carrying useful information rather than a compact subset of features that give a minimal error.
