@@ -97,6 +97,7 @@ Common failure modes for Gradient Descent: <br/>
   * Solution: Lower your learning rates <br/>
  
 ### Gradient Descent Optimization Algorithms
+* Optimizer is like a guide that helps the neural network learn from its mistakes and improve its performance. The optimizer determines how the network updates its parameters based on the error between its predicted output and the actual target.
 * Improves on the stochastic gradient descent
 * Best site: https://medium.com/datadriveninvestor/overview-of-different-optimizers-for-neural-networks-e0ed119440c3
 #### Adagrad
