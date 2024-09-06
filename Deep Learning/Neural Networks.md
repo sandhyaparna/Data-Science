@@ -1,3 +1,5 @@
+!(Krish Naik Deep Learning Notes)[https://github.com/krishnaik06/Complete-Data-Science-With-Machine-Learning-And-NLP-2024/tree/main/27-Deep%20Learning%20Bonus]
+
 ### Links
 Course1 https://www.analyticsvidhya.com/blog/2018/10/introduction-neural-networks-deep-learning/ <br/>
 Course2 https://www.analyticsvidhya.com/blog/2018/11/neural-networks-hyperparameter-tuning-regularization-deeplearning/ <br/>
