@@ -5,7 +5,7 @@ MIT https://www.youtube.com/watch?list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI&v=_h66
 
 LSTM http://blog.echen.me/ <br/> 
 LSTM http://colah.github.io/posts/2015-08-Understanding-LSTMs/ <br/>
- 
+GRU https://medium.com/@anishnama20/understanding-gated-recurrent-unit-gru-in-deep-learning-2e54923f3e2 <br/>
 
 ### Applications
 * Sequential modeling - Predict next word in a sentence. To do sequence modeling, we need to:
